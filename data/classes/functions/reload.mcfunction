@@ -10,6 +10,12 @@ scoreboard objectives add Sneaking minecraft.custom:minecraft.sneak_time
 scoreboard objectives add rightClick minecraft.used:minecraft.warped_fungus_on_a_stick
 scoreboard objectives add Mana dummy
 scoreboard objectives add ManaRegenSec dummy
+scoreboard objectives add currentSpellSel dummy
+scoreboard objectives add emptySlot1 dummy
+scoreboard objectives add emptySlot2 dummy
+scoreboard objectives add emptySlot3 dummy
+scoreboard objectives add emptySlot4 dummy
+scoreboard objectives add cooldown dummy
 
 #Slowcast scoreboards (credit to CloudWolf)
 scoreboard objectives add slowcast dummy

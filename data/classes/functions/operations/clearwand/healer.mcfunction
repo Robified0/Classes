@@ -12,3 +12,9 @@ scoreboard players set @s spellCleanseArea 0
 scoreboard players set @s spellHolyStrike 0
 scoreboard players set @s spellHealerBoon 0
 scoreboard players set @s spellStopUndead 0
+
+#Set empty slots
+scoreboard players set @s emptySlot1 1
+scoreboard players set @s emptySlot2 1
+scoreboard players set @s emptySlot3 1
+scoreboard players set @s emptySlot4 1

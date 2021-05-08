@@ -1,7 +1,10 @@
 
 {
 	"values": [
+		"classes:mage/spells/aoeeffects",
+		"classes:mage/spells/main",
 		"classes:main",
-		"classes:mage/spells/firebolt/zprivate/main"
+		"classes:mage/spells/firebolt/zprivate/main",
+		"classes:mage/spells/levitate/zprivate/main"
 	]
 }

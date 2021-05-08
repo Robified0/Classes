@@ -14,3 +14,10 @@ scoreboard players set @s spellFeather 0
 scoreboard players set @s spellBunnyHop 0
 scoreboard players set @s spellPoison 0
 scoreboard players set @s spellIronFlesh 0
+
+
+#Set empty slots
+scoreboard players set @s emptySlot1 1
+scoreboard players set @s emptySlot2 1
+scoreboard players set @s emptySlot3 1
+scoreboard players set @s emptySlot4 1
