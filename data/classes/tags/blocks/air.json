@@ -1,0 +1,17 @@
+{
+  "values":[
+	"minecraft:air",
+	"minecraft:cave_air",
+  "minecraft:void_air",
+	"minecraft:tall_grass",
+	"minecraft:grass",
+	"#minecraft:flowers",
+	"minecraft:large_fern",
+	"minecraft:ladder",
+  "#minecraft:buttons",
+  "#minecraft:carpets",
+  "#minecraft:crops",
+  "#minecraft:saplings",
+  "#minecraft:pressure_plates"
+  ]
+}
