@@ -11,8 +11,11 @@ execute if entity @s[scores={Mana=1..}] run tag @s remove this
 #Cooldown
 execute as @s[scores={Mana=1..}] run scoreboard players set @s cooldown 20
 
+#Cast Spell Sound Effect
+execute if entity @s[scores={Mana=1..}] at @s run playsound minecraft:entity.illusioner.cast_spell player @a[distance=..10] ~ ~ ~ 1 0.6
+
 #Mana Depletion
 execute if entity @s[scores={Mana=1..}] run scoreboard players remove @s Mana 1
 
 #Spell Cast Notification
-tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Levitate!","bold":true,"color":"#00e8cc"}]
+tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Levitate!","bold":true,"color":"#FFFF80"}]

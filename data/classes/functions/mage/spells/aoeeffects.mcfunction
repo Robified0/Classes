@@ -20,5 +20,5 @@ execute as @e[type=minecraft:area_effect_cloud,tag=wither] at @s run effect give
 execute as @e[type=minecraft:area_effect_cloud,tag=fire] at @s run data merge entity @e[type=!player,type=!minecraft:area_effect_cloud,type=!item,distance=..6,limit=1,sort=random] {Fire:20}
 
 #Sound - Fire
-execute at @e[type=minecraft:area_effect_cloud,tag=fire] run playsound minecraft:block.furnace.fire_crackle ambient @a[distance=..20] ~ ~ ~ 1
-execute at @e[type=minecraft:armor_stand,tag=fire] run playsound minecraft:block.furnace.fire_crackle ambient @a[distance=..20] ~ ~ ~ 1
+execute at @e[type=minecraft:area_effect_cloud,tag=fire] run playsound minecraft:block.furnace.fire_crackle player @a[distance=..20] ~ ~ ~ 1
+execute at @e[type=minecraft:armor_stand,tag=fire] run playsound minecraft:block.furnace.fire_crackle player @a[distance=..20] ~ ~ ~ 1

@@ -8,8 +8,13 @@ execute if entity @s[scores={Mana=1..}] run summon minecraft:marker ~ ~ ~ {Age:-
 execute if entity @s[scores={Mana=1..}] as @e[type=marker,tag=slowcast,tag=new,tag=torch,limit=1] run function classes:mage/spells/firebolt/zprivate/setup
 execute if entity @s[scores={Mana=1..}] run tag @s remove this
 
-#Sound Effect
-execute at @s[scores={Mana=1..}] run playsound minecraft:entity.blaze.shoot ambient @a[distance=..20] ~ ~ ~ 1
+#Cast Spell Sound Effect
+execute if entity @s[scores={Mana=1..}] at @s run playsound minecraft:entity.illusioner.cast_spell player @a[distance=..10] ~ ~ ~ 1 0.6
+
+#Particles
+#execute if entity @s[scores={Mana=1..}] at @s run particle minecraft:witch ~ ~ ~ 0.1 0.5 0.1 1 50 force
+execute if entity @s[scores={Mana=1..}] at @s run particle minecraft:witch ~ ~ ~ 0.5 1 0.5 1.2 40 force
+execute if entity @s[scores={Mana=1..}] at @s run particle minecraft:small_flame ~ ~ ~ 0.3 1 0.3 0.08 50 force
 
 #Cooldown
 execute as @s[scores={Mana=1..}] run scoreboard players set @s cooldown 20
