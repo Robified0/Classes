@@ -3,8 +3,12 @@
 	"values": [
 		"classes:mage/spells/aoeeffects",
 		"classes:mage/spells/main",
+		"classes:mage/spells/effects",
 		"classes:main",
 		"classes:mage/spells/firebolt/zprivate/main",
-		"classes:mage/spells/levitate/zprivate/main"
+		"classes:mage/spells/waterstrike/zprivate/main",
+		"classes:mage/spells/levitate/zprivate/main",
+		"classes:mage/spells/iceshard/zprivate/main",
+		"classes:mage/spells/poison/zprivate/main"
 	]
 }
