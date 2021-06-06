@@ -18,3 +18,4 @@ scoreboard players set @s emptySlot1 1
 scoreboard players set @s emptySlot2 1
 scoreboard players set @s emptySlot3 1
 scoreboard players set @s emptySlot4 1
+scoreboard players set @s emptySlot5 1
