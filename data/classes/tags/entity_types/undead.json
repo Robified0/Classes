@@ -6,6 +6,7 @@
 	"minecraft:skeleton_horse",
 	"minecraft:wither",
 	"minecraft:husk",
-	"minecraft:zombified_piglin"
+	"minecraft:zombified_piglin",
+  "minecraft:zoglin"
   ]
 }
