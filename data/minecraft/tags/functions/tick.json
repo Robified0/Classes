@@ -5,10 +5,13 @@
 		"classes:mage/spells/main",
 		"classes:mage/spells/effects",
 		"classes:main",
-		"classes:mage/spells/firebolt/zprivate/main",
+		"classes:mage/spells/torch/zprivate/main",
+		"classes:mage/spells/fireball/zprivate/main",
 		"classes:mage/spells/waterstrike/zprivate/main",
 		"classes:mage/spells/levitate/zprivate/main",
 		"classes:mage/spells/iceshard/zprivate/main",
-		"classes:mage/spells/poison/zprivate/main"
+		"classes:mage/spells/poison/zprivate/main",
+		"classes:mage/spells/light/zprivate/main",
+		"classes:mage/spells/teleport/zprivate/main"
 	]
 }

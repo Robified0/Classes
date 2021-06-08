@@ -18,11 +18,11 @@ execute as @s[scores={Mana=3..}] run attribute @s minecraft:generic.armor base s
 execute as @a[scores={Mana=3..}] at @s run particle block iron_block ~ ~ ~ 1 1 1 10 40 normal
 
 #Playsound Effect
-execute at @s[scores={Mana=3..}] run playsound minecraft:block.beacon.power_select player @a[distance=..10] ~ ~ ~ 0.2 1.5
-execute at @s[scores={Mana=3..}] run playsound minecraft:entity.zombie_villager.cure player @a[distance=..10] ~ ~ ~ 0.5 1.5
+execute at @s[scores={Mana=3..}] run playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 0.2 1.5
+execute at @s[scores={Mana=3..}] run playsound minecraft:entity.zombie_villager.cure player @a ~ ~ ~ 0.5 1.5
 
 #Cast Spell Sound Effect
-execute if entity @s[scores={Mana=3..}] at @s run playsound minecraft:entity.illusioner.cast_spell player @a[distance=..10] ~ ~ ~ 1 0.6
+execute if entity @s[scores={Mana=5..}] at @s run function classes:mage/spells/all/cast
 
 #Spell Cast Notification
 execute as @s[scores={Mana=3..}] run tellraw @s[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Iron Flesh!","bold":true,"color":"#AAAAAA"}]

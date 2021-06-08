@@ -1,5 +1,5 @@
 #Clear Mage spells
-scoreboard players set @s spellFirebolt 0
+scoreboard players set @s spellTorch 0
 scoreboard players set @s spellFlameBurst 0
 scoreboard players set @s spellBedofCoals 0
 scoreboard players set @s spellWaterStrike 0
@@ -18,6 +18,8 @@ scoreboard players set @s spellStoneFlesh 0
 scoreboard players set @s spellIronFlesh 0
 scoreboard players set @s spellDiaFlesh 0
 scoreboard players set @s spellIronGolem 0
+scoreboard players set @s spellFireball 0
+scoreboard players set @s spellLight 0
 
 #Set empty slots
 scoreboard players set @s emptySlot1 1

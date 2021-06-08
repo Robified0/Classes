@@ -9,11 +9,11 @@ execute as @s[scores={Mana=4..}] run scoreboard players set @s summonCount 1200
 execute as @s[scores={Mana=4..}] as @e[type=snow_golem,tag=summoned] at @s run particle dust 0.129 0.914 1.000 1 ~ ~ ~ 1 1 1 2 30 normal
 
 #Play sound
-execute at @s[scores={Mana=4..}] run playsound minecraft:block.fire.extinguish player @a[distance=..10] ~ ~ ~ 0.1 2
-execute at @s[scores={Mana=4..}] run playsound minecraft:block.amethyst_block.chime player @a[distance=..10] ~ ~ ~ 3 1.5
+execute at @s[scores={Mana=4..}] run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 0.1 2
+execute at @s[scores={Mana=4..}] run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 2 1.5
 
 #Cast Spell Sound Effect
-execute if entity @s[scores={Mana=4..}] at @s run playsound minecraft:entity.illusioner.cast_spell player @a[distance=..10] ~ ~ ~ 1 0.6
+execute if entity @s[scores={Mana=5..}] at @s run function classes:mage/spells/all/cast
 
 #Spell Cast Notification
 execute as @s[scores={Mana=4..}] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Summon Snow Golem!","bold":true,"color":"#0096FF"}]

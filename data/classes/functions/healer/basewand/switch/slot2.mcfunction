@@ -1,3 +1,3 @@
-execute as @s[scores={spellFirebolt=2}] run function classes:mage/spells/firebolt/select
-execute as @s[scores={spellBedofCoals=2}] run function classes:mage/spells/bedofcoals/select
+execute as @s[scores={spellHeal=2}] run function classes:healer/spells/heal/select
+execute as @s[scores={spellFirstAid=2}] run function classes:healer/spells/firstaid/select
 scoreboard players set @s currentSpellSel 2

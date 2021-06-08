@@ -14,11 +14,11 @@ execute as @s[scores={Mana=4..}] run effect give @s minecraft:fire_resistance 20
 execute as @a[scores={Mana=4..}] at @s run particle dust 0.129 0.914 1.000 1 ~ ~ ~ 1.5 1.5 1.5 1 100 normal
 
 #Playsound Effect
-execute at @s[scores={Mana=4..}] run playsound minecraft:block.fire.extinguish player @a[distance=..10] ~ ~ ~ 0.8 2
-execute at @s[scores={Mana=4..}] run playsound minecraft:block.amethyst_block.chime player @a[distance=..10] ~ ~ ~ 5 1.5
+execute at @s[scores={Mana=4..}] run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 0.8 2
+execute at @s[scores={Mana=4..}] run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 5 1.5
 
 #Cast Spell Sound Effect
-execute if entity @s[scores={Mana=4..}] at @s run playsound minecraft:entity.illusioner.cast_spell player @a[distance=..10] ~ ~ ~ 1 0.6
+execute if entity @s[scores={Mana=5..}] at @s run function classes:mage/spells/all/cast
 
 #Spell Cast Notification
 execute as @s[scores={Mana=4..}] run tellraw @s[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Cold Shield!","bold":true,"color":"#0096FF"}]

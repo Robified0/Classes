@@ -1,5 +1,5 @@
 #Particle Effect
-particle dust 0.129 0.914 1.000 1 ^-0.5 ^ ^0.3 0.1 0.1 0.1 2 10 normal
+particle dust 0.129 0.914 1.000 1 ^-0.5 ^ ^0.3 0.1 0.1 0.1 2 10 force
 
 #Do these things when spell hits
 #execute as @e[dx=0,tag=!this,type=creeper,type=!player] positioned ~-0.79 ~-0.79 ~-0.79 if entity @s[dx=0] positioned ~0.79 ~0.79 ~0.79 run function classes:entities/creeper/fire
@@ -14,8 +14,8 @@ execute as @e[dx=0,tag=!this,type=!#classes:nontarget,nbt={AngerTime:0}] positio
 execute as @e[dx=0,tag=!this,type=!#classes:nontarget] positioned ~-0.79 ~-0.79 ~-0.79 if entity @s[dx=0] positioned ~0.79 ~0.79 ~0.79 run kill @e[type=marker,tag=iceshard,sort=nearest,limit=1]
 
 #Play sound
-execute at @s run playsound minecraft:block.fire.extinguish player @a[distance=..10] ~ ~ ~ 0.1 2
-execute at @s run playsound minecraft:block.amethyst_block.chime player @a[distance=..10] ~ ~ ~ 3 1.5
+execute at @s run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 0.1 2
+execute at @s run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 3 1.5
 
 #Only change filepaths for spell
 scoreboard players remove #temp slowcast 1

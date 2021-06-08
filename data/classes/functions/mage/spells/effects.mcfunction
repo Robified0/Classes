@@ -43,3 +43,9 @@ execute if entity @e[type=snow_golem,tag=summoned] run function classes:mage/eff
 
 #Kill summoned mob after time has expired
 execute if entity @e[type=iron_golem,tag=summoned] run function classes:mage/effects/irongolem
+
+#Countdown/kill Light Spell marker
+execute if entity @e[type=marker,tag=light] run function classes:mage/effects/light
+
+#Countdown/kill Light Spell marker
+execute if entity @a[tag=Levitate] run function classes:mage/effects/levitate

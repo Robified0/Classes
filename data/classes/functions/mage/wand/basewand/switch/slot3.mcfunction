@@ -1,5 +1,6 @@
-execute as @s[scores={spellFirebolt=3},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Wand:1b}}}] run function classes:mage/spells/firebolt/select
+execute as @s[scores={spellTorch=3},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Wand:1b}}}] run function classes:mage/spells/torch/select
 execute as @s[scores={spellBedofCoals=3},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Wand:1b}}}] run function classes:mage/spells/bedofcoals/select
+execute as @s[scores={spellFireball=3},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Wand:1b}}}] run function classes:mage/spells/fireball/select
 execute as @s[scores={spellLevitate=3},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Wand:1b}}}] run function classes:mage/spells/levitate/select
 execute as @s[scores={spellFlameBurst=3},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Wand:1b}}}] run function classes:mage/spells/flameburst/select
 execute as @s[scores={spellWaterStrike=3},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Wand:1b}}}] run function classes:mage/spells/waterstrike/select
@@ -17,6 +18,8 @@ execute as @s[scores={spellStoneFlesh=3},nbt={SelectedItem:{id:"minecraft:warped
 execute as @s[scores={spellIronFlesh=3},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Wand:1b}}}] run function classes:mage/spells/ironflesh/select
 execute as @s[scores={spellDiaFlesh=3},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Wand:1b}}}] run function classes:mage/spells/diamondflesh/select
 execute as @s[scores={spellIronGolem=3},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Wand:1b}}}] run function classes:mage/spells/irongolem/select
+execute as @s[scores={spellLight=3},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Wand:1b}}}] run function classes:mage/spells/light/select
+execute as @s[scores={spellTeleport=3},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Wand:1b}}}] run function classes:mage/spells/teleport/select
 
 #Check for empty slot
 execute as @s[scores={emptySlot3=1},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Wand:1b}}}] run function classes:mage/spells/emptyslot

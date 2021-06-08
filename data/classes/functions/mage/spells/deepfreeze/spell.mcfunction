@@ -18,7 +18,7 @@ execute as @s[scores={Mana=6..}] at @e[type=!#classes:nontarget,distance=..10] r
 execute as @s[scores={Mana=6..}] at @s unless entity @e[type=!#classes:nontarget,distance=..10] run playsound minecraft:entity.blaze.shoot player @a[distance=..10] ~ ~ ~ 0.5 2
 
 #Cast Spell Sound Effect
-execute if entity @s[scores={Mana=6..}] at @s run playsound minecraft:entity.illusioner.cast_spell player @a[distance=..10] ~ ~ ~ 1 0.6
+execute if entity @s[scores={Mana=5..}] at @s run function classes:mage/spells/all/cast
 
 #Spell Cast Notification
 execute as @s[scores={Mana=6..}] if entity @e[type=!#classes:nontarget,distance=..10] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Deep Freeze!","bold":true,"color":"#0096FF"}]

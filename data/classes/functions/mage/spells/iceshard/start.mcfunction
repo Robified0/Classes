@@ -12,7 +12,7 @@ execute if entity @s[scores={Mana=2..}] run tag @s remove this
 execute as @s[scores={Mana=2..}] run scoreboard players set @s cooldown 20
 
 #Cast Spell Sound Effect
-execute if entity @s[scores={Mana=2..}] at @s run playsound minecraft:entity.illusioner.cast_spell player @a[distance=..10] ~ ~ ~ 1 0.6
+execute if entity @s[scores={Mana=5..}] at @s run function classes:mage/spells/all/cast
 
 #Particles
 execute if entity @s[scores={Mana=2..}] at @s run particle minecraft:witch ~ ~ ~ 0.5 1 0.5 1.2 40 force

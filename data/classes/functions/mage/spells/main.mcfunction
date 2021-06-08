@@ -12,9 +12,10 @@
 ####################################
 
 #Fire Spells
-execute as @a[scores={cooldown=0,rightClick=1..,Sneaking=0,spellFirebolt=1..},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"Firebolt"}}},nbt=!{Inventory:[{id:"minecraft:shield",Slot:-106b}]}] at @s run function classes:mage/spells/firebolt/spell
+execute as @a[scores={cooldown=0,rightClick=1..,Sneaking=0,spellTorch=1..},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"Torch"}}},nbt=!{Inventory:[{id:"minecraft:shield",Slot:-106b}]}] at @s run function classes:mage/spells/torch/spell
 execute as @a[scores={cooldown=0,rightClick=1..,Sneaking=0,spellBedofCoals=1..},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"BedofCoals"}}},nbt=!{Inventory:[{id:"minecraft:shield",Slot:-106b}]}] at @s run function classes:mage/spells/bedofcoals/spell
 execute as @a[scores={cooldown=0,rightClick=1..,Sneaking=0,spellFlameBurst=1..},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"FlameBurst"}}},nbt=!{Inventory:[{id:"minecraft:shield",Slot:-106b}]}] at @s run function classes:mage/spells/flameburst/spell
+execute as @a[scores={cooldown=0,rightClick=1..,Sneaking=0,spellFireball=1..},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"Fireball"}}},nbt=!{Inventory:[{id:"minecraft:shield",Slot:-106b}]}] at @s run function classes:mage/spells/fireball/spell
 
 #Water Spells
 execute as @a[scores={cooldown=0,rightClick=1..,Sneaking=0,spellWaterStrike=1..},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"WaterStrike"}}},nbt=!{Inventory:[{id:"minecraft:shield",Slot:-106b}]}] at @s run function classes:mage/spells/waterstrike/spell
@@ -37,3 +38,7 @@ execute as @a[scores={cooldown=0,rightClick=1..,Sneaking=0,spellStoneFlesh=1..},
 execute as @a[scores={cooldown=0,rightClick=1..,Sneaking=0,spellIronFlesh=1..},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"IronFlesh"}}},nbt=!{Inventory:[{id:"minecraft:shield",Slot:-106b}]}] at @s run function classes:mage/spells/ironflesh/spell
 execute as @a[scores={cooldown=0,rightClick=1..,Sneaking=0,spellDiaFlesh=1..},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"DiaFlesh"}}},nbt=!{Inventory:[{id:"minecraft:shield",Slot:-106b}]}] at @s run function classes:mage/spells/diamondflesh/spell
 execute as @a[scores={cooldown=0,rightClick=1..,Sneaking=0,spellIronGolem=1..},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"IronGolem"}}},nbt=!{Inventory:[{id:"minecraft:shield",Slot:-106b}]}] at @s run function classes:mage/spells/irongolem/spell
+
+#Light
+execute as @a[scores={cooldown=0,rightClick=1..,Sneaking=0,spellLight=1..},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"Light"}}},nbt=!{Inventory:[{id:"minecraft:shield",Slot:-106b}]}] at @s run function classes:mage/spells/light/spell
+execute as @a[scores={cooldown=0,rightClick=1..,Sneaking=0,spellTeleport=1..},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"Teleport"}}},nbt=!{Inventory:[{id:"minecraft:shield",Slot:-106b}]}] at @s run function classes:mage/spells/teleport/spell

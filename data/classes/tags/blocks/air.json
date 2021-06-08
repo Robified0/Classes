@@ -13,6 +13,7 @@
   "#minecraft:crops",
   "#minecraft:saplings",
   "#minecraft:pressure_plates",
-  "minecraft:snow"
+  "minecraft:snow",
+  "minecraft:light"
   ]
 }

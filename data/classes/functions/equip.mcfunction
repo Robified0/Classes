@@ -2,10 +2,10 @@
 execute if entity @s[scores={loadSpell=0}] run scoreboard players set @s loadSpell 1
 
 #Perform the equipping of fire spells
-execute if entity @s[scores={equipSpell=1}] run function classes:mage/spells/firebolt/equip
+execute if entity @s[scores={equipSpell=1}] run function classes:mage/spells/torch/equip
 execute if entity @s[scores={equipSpell=2}] run function classes:mage/spells/bedofcoals/equip
 execute if entity @s[scores={equipSpell=3}] run function classes:mage/spells/flameburst/equip
-execute if entity @s[scores={equipSpell=4}] run function classes:mage/spells/firebolt/equip
+execute if entity @s[scores={equipSpell=4}] run function classes:mage/spells/fireball/equip
 execute if entity @s[scores={equipSpell=5}] run function classes:mage/spells/firebolt/equip
 execute if entity @s[scores={equipSpell=6}] run function classes:mage/spells/firebolt/equip
 
@@ -30,6 +30,9 @@ execute if entity @s[scores={equipSpell=301}] run function classes:mage/spells/s
 execute if entity @s[scores={equipSpell=302}] run function classes:mage/spells/ironflesh/equip
 execute if entity @s[scores={equipSpell=303}] run function classes:mage/spells/diamondflesh/equip
 execute if entity @s[scores={equipSpell=304}] run function classes:mage/spells/irongolem/equip
+
+execute if entity @s[scores={equipSpell=400}] run function classes:mage/spells/light/equip
+execute if entity @s[scores={equipSpell=401}] run function classes:mage/spells/teleport/equip
 
 #Reset equipSpell back to 0
 scoreboard players set @s equipSpell 0

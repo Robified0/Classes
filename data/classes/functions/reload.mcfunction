@@ -29,6 +29,7 @@ scoreboard objectives add effBunnyHop dummy
 scoreboard objectives add effStoneFlesh dummy
 scoreboard objectives add effIronFlesh dummy
 scoreboard objectives add effDiaFlesh dummy
+scoreboard objectives add effLight dummy
 
 #Slowcast scoreboards (credit to CloudWolf)
 scoreboard objectives add slowcast dummy
@@ -39,8 +40,9 @@ scoreboard objectives add slo_dst dummy
 scoreboard objectives add slo_dst_per dummy
 
 #Mage Spells
-scoreboard objectives add spellFirebolt dummy
+scoreboard objectives add spellTorch dummy
 scoreboard objectives add spellFlameBurst dummy
+scoreboard objectives add spellFireball dummy
 scoreboard objectives add spellBedofCoals dummy
 scoreboard objectives add spellWaterStrike dummy
 scoreboard objectives add spellIceShard dummy
@@ -58,6 +60,8 @@ scoreboard objectives add spellStoneFlesh dummy
 scoreboard objectives add spellIronFlesh dummy
 scoreboard objectives add spellDiaFlesh dummy
 scoreboard objectives add spellIronGolem dummy
+scoreboard objectives add spellLight dummy
+scoreboard objectives add spellTeleport dummy
 
 #Healer Spells
 scoreboard objectives add spellFirstAid dummy

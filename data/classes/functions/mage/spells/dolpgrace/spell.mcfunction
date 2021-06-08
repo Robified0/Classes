@@ -8,11 +8,11 @@ execute as @s[scores={Mana=3..}] run effect give @s minecraft:dolphins_grace 60 
 execute as @a[scores={Mana=3..}] at @s run particle minecraft:falling_water ~ ~ ~ 1 1 1 10 40 normal
 
 #Playsound Effect
-execute at @s[scores={Mana=3..}] run playsound minecraft:block.water.ambient player @a[distance=..10] ~ ~ ~ 1 1
-execute at @s[scores={Mana=3..}] run playsound minecraft:entity.dolphin.play player @a[distance=..10] ~ ~ ~ 1 1
+execute at @s[scores={Mana=3..}] run playsound minecraft:block.water.ambient player @a ~ ~ ~ 1 1
+execute at @s[scores={Mana=3..}] run playsound minecraft:entity.dolphin.play player @a ~ ~ ~ 1 1
 
 #Cast Spell Sound Effect
-execute if entity @s[scores={Mana=3..}] at @s run playsound minecraft:entity.illusioner.cast_spell player @a[distance=..10] ~ ~ ~ 1 0.6
+execute if entity @s[scores={Mana=5..}] at @s run function classes:mage/spells/all/cast
 
 #Spell Cast Notification
 execute as @s[scores={Mana=3..}] run tellraw @s[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Dolphin's Grace!","bold":true,"color":"#0096FF"}]

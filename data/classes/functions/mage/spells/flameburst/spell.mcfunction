@@ -9,11 +9,11 @@ execute as @s[scores={Mana=3..}] at @s run effect give @e[type=#classes:undead,t
 execute as @s[scores={Mana=3..}] at @e[tag=FlameBurst,distance=..5] run particle flame ~ ~ ~ 0.1 0.5 0.1 0.35 100 force
 
 #Cast Spell Sound Effect
-execute if entity @s[scores={Mana=3..}] at @s run playsound minecraft:entity.illusioner.cast_spell player @a[distance=..10] ~ ~ ~ 1 0.6
+execute if entity @s[scores={Mana=5..}] at @s run function classes:mage/spells/all/cast
 
 #Sound effect
-execute as @s[scores={Mana=3..}] at @e[tag=FlameBurst,distance=..5] run playsound minecraft:entity.blaze.shoot player @a[distance=..10] ~ ~ ~ 0.5
-execute as @s[scores={Mana=3..}] at @s unless entity @e[tag=FlameBurst,distance=..5] run playsound minecraft:entity.blaze.shoot player @a[distance=..10] ~ ~ ~ 0.5 2
+execute as @s[scores={Mana=3..}] at @e[tag=FlameBurst,distance=..5] run playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 0.5
+execute as @s[scores={Mana=3..}] at @s unless entity @e[tag=FlameBurst,distance=..5] run playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 0.5 2
 
 #Spell Cast Notification
 execute as @s[scores={Mana=3..}] if entity @e[tag=FlameBurst,distance=..5] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Flame Burst!","bold":true,"color":"#FF3034"}]
