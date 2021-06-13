@@ -19,7 +19,7 @@ execute if entity @s[scores={Mana=8..}] at @e[type=iron_golem,tag=summoned,score
 execute if entity @s[scores={Mana=8..}] at @e[type=iron_golem,tag=summoned,scores={summonCount=600}] run particle minecraft:enchant ~ ~ ~ 0.6 0.4 0.6 5 100 force
 
 #Cast Spell Sound Effect
-execute if entity @s[scores={Mana=5..}] at @s run function classes:mage/spells/all/cast
+execute if entity @s[scores={Mana=8..}] at @s run function classes:mage/spells/all/cast
 
 #Spell Cast Notification
 execute as @s[scores={Mana=8..}] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Summon Iron Golem!","bold":true,"color":"#AAAAAA"}]

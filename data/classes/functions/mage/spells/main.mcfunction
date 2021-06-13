@@ -31,6 +31,7 @@ execute as @a[scores={cooldown=0,rightClick=1..,Sneaking=0,spellLevitate=1..},nb
 execute as @a[scores={cooldown=0,rightClick=1..,Sneaking=0,spellSlowFall=1..},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"SlowFall"}}},nbt=!{Inventory:[{id:"minecraft:shield",Slot:-106b}]}] at @s run function classes:mage/spells/slowfall/spell
 execute as @a[scores={cooldown=0,rightClick=1..,Sneaking=0,spellTailWind=1..},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"TailWind"}}},nbt=!{Inventory:[{id:"minecraft:shield",Slot:-106b}]}] at @s run function classes:mage/spells/tailwind/spell
 execute as @a[scores={cooldown=0,rightClick=1..,Sneaking=0,spellBunnyHop=1..},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"BunnyHop"}}},nbt=!{Inventory:[{id:"minecraft:shield",Slot:-106b}]}] at @s run function classes:mage/spells/bunnyhop/spell
+execute as @a[scores={cooldown=0,rightClick=1..,Sneaking=0,spellWindWard=1..},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"WindWard"}}},nbt=!{Inventory:[{id:"minecraft:shield",Slot:-106b}]}] at @s run function classes:mage/spells/windward/spell
 
 #Earth Spells
 execute as @a[scores={cooldown=0,rightClick=1..,Sneaking=0,spellPoison=1..},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"Poison"}}},nbt=!{Inventory:[{id:"minecraft:shield",Slot:-106b}]}] at @s run function classes:mage/spells/poison/spell

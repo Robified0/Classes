@@ -19,6 +19,10 @@ scoreboard objectives add emptySlot4 dummy
 scoreboard objectives add emptySlot5 dummy
 scoreboard objectives add cooldown dummy
 
+#Scoreboards for settings
+scoreboard objectives add ka.setFire dummy
+execute unless score #ka.settings ka.setFire matches 0 run scoreboard players set #ka.settings ka.setFire 1
+
 #Scoreboards for time based spells
 scoreboard objectives add summonCount dummy
 scoreboard objectives add effColdShield dummy
@@ -62,6 +66,7 @@ scoreboard objectives add spellDiaFlesh dummy
 scoreboard objectives add spellIronGolem dummy
 scoreboard objectives add spellLight dummy
 scoreboard objectives add spellTeleport dummy
+scoreboard objectives add spellWindWard dummy
 
 #Healer Spells
 scoreboard objectives add spellFirstAid dummy

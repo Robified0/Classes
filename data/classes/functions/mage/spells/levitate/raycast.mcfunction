@@ -8,6 +8,7 @@ execute at @s run playsound minecraft:entity.horse.breathe player @a ~ ~ ~ 0.5
 execute as @p[x_rotation=87..90,distance=..1] run effect give @s minecraft:levitation 1 10 true
 execute as @p[x_rotation=87..90,distance=..1] run tag @s add Levitate
 execute as @p[x_rotation=87..90,distance=..1] run kill @e[type=marker,tag=levitate,sort=nearest,limit=1]
+execute as @p[x_rotation=87..90,distance=..1] run scoreboard players reset @s slo_id
 execute as @e[dx=0,tag=!this] positioned ~-0.79 ~-0.79 ~-0.79 if entity @s[dx=0] positioned ~0.79 ~0.79 ~0.79 run effect give @s minecraft:levitation 1 10 false
 execute as @e[dx=0,tag=!this,type=!#classes:nontarget] positioned ~-0.79 ~-0.79 ~-0.79 if entity @s[dx=0] positioned ~0.79 ~0.79 ~0.79 at @s run particle minecraft:cloud ~ ~ ~ 0.5 0.5 0.5 0.1 30 normal
 execute as @e[dx=0,tag=!this,type=!item,nbt={AngerTime:0}] positioned ~-0.79 ~-0.79 ~-0.79 if entity @s[dx=0] positioned ~0.79 ~0.79 ~0.79 run data modify entity @s AngryAt set from entity @p[scores={class=3}] UUID

@@ -23,6 +23,7 @@ execute if entity @s[scores={equipSpell=200}] run function classes:mage/spells/l
 execute if entity @s[scores={equipSpell=201}] run function classes:mage/spells/slowfall/equip
 execute if entity @s[scores={equipSpell=202}] run function classes:mage/spells/tailwind/equip
 execute if entity @s[scores={equipSpell=203}] run function classes:mage/spells/bunnyhop/equip
+execute if entity @s[scores={equipSpell=204}] run function classes:mage/spells/windward/equip
 
 #Perform the equipping of earth spells
 execute if entity @s[scores={equipSpell=300}] run function classes:mage/spells/poison/equip

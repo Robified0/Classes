@@ -20,6 +20,8 @@ scoreboard players set @s spellDiaFlesh 0
 scoreboard players set @s spellIronGolem 0
 scoreboard players set @s spellFireball 0
 scoreboard players set @s spellLight 0
+scoreboard players set @s spellTeleport 0
+scoreboard players set @s spellWindWard 0
 
 #Set empty slots
 scoreboard players set @s emptySlot1 1
