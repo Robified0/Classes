@@ -1,0 +1,28 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Hero of the Kingdom",
+            "color": "green"
+        },
+        "description": {
+            "text": "Save a village 3 times."
+        },
+        "icon": {
+            "item": "minecraft:carved_pumpkin"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "c1": {
+            "trigger": "minecraft:hero_of_the_village"
+        }
+    },
+    "rewards": {
+        "function": "classes:mage/advancements/snowgolem"
+    },
+    "parent": "classes:snowgolem"
+}

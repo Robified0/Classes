@@ -1,1 +1,1 @@
-scoreboard players set @s loadSpell 0
+scoreboard players set @s cl.loadSpell 0

@@ -11,32 +11,32 @@
 ########################################
 
 #Count summon time
-scoreboard players remove @a[scores={summonCount=1..}] summonCount 1
-scoreboard players remove @e[tag=summoned,scores={summonCount=1..}] summonCount 1
+scoreboard players remove @a[scores={cl.summonCount=1..}] cl.summonCount 1
+scoreboard players remove @e[tag=summoned,scores={cl.summonCount=1..}] cl.summonCount 1
 
 #Cold Shield - (tag=ColdShield)
-execute if entity @a[tag=ColdShield,scores={effColdShield=-10..}] run function classes:mage/effects/coldshield
+execute if entity @a[tag=ColdShield,scores={cl.e.ColdShield=-10..}] run function classes:mage/effects/coldshield
 
 #Slow Fall - (tag=SlowFall)
-execute if entity @a[tag=SlowFall,scores={effSlowFall=-10..}] run function classes:mage/effects/slowfall
+execute if entity @a[tag=SlowFall,scores={cl.e.SlowFall=-10..}] run function classes:mage/effects/slowfall
 
 #Tail Wind - (tag=TailWind)
-execute if entity @a[tag=TailWind,scores={effTailWind=-10..}] run function classes:mage/effects/tailwind
+execute if entity @a[tag=TailWind,scores={cl.e.TailWind=-10..}] run function classes:mage/effects/tailwind
 
 #Tail Wind - (tag=BunnyHop)
-execute if entity @a[tag=BunnyHop,scores={effBunnyHop=-10..}] run function classes:mage/effects/bunnyhop
+execute if entity @a[tag=BunnyHop,scores={cl.e.BunnyHop=-10..}] run function classes:mage/effects/bunnyhop
 
 #Stone Flesh - (tag=StoneFlesh)
-execute if entity @a[tag=StoneFlesh,scores={effStoneFlesh=-10..}] run function classes:mage/effects/stoneflesh
+execute if entity @a[tag=StoneFlesh,scores={cl.e.StoneFlesh=-10..}] run function classes:mage/effects/stoneflesh
 
 #Iron Flesh - (tag=IronFlesh)
-execute if entity @a[tag=IronFlesh,scores={effIronFlesh=-10..}] run function classes:mage/effects/ironflesh
+execute if entity @a[tag=IronFlesh,scores={cl.e.IronFlesh=-10..}] run function classes:mage/effects/ironflesh
 
 #Diamond Flesh - (tag=DiamFlesh)
-execute if entity @a[tag=DiaFlesh,scores={effDiaFlesh=-10..}] run function classes:mage/effects/diamondflesh
+execute if entity @a[tag=DiaFlesh,scores={cl.e.DiaFlesh=-10..}] run function classes:mage/effects/diamondflesh
 
 #Deep Freeze - (tag=DeepFreeze)
-execute if entity @e[tag=DeepFreeze,scores={effDeepFreeze=-10..}] run function classes:mage/effects/deepfreeze
+execute if entity @e[tag=DeepFreeze,scores={cl.e.DeepFreeze=-10..}] run function classes:mage/effects/deepfreeze
 
 #Kill summoned mob after time has expired
 execute if entity @e[type=snow_golem,tag=summoned] run function classes:mage/effects/snowgolem

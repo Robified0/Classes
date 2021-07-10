@@ -1,1 +1,1 @@
-playsound minecraft:entity.illusioner.cast_spell player @a[distance=..10] ~ ~ ~ 0.4 0.6
+playsound minecraft:entity.illusioner.cast_spell player @a ~ ~ ~ 0.4 0.6

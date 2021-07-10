@@ -1,1 +1,1 @@
-scoreboard players add @s[scores={loadSpell=..5}] loadSpell 1
+scoreboard players add @s[scores={cl.loadSpell=..5}] cl.loadSpell 1

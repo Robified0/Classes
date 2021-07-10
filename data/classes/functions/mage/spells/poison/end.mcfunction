@@ -1,1 +1,1 @@
-scoreboard players reset @s slo_id
+scoreboard players reset @s cl.slo_id

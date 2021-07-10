@@ -1,1 +1,1 @@
-scoreboard players set @s emptySlot1 0
+scoreboard players set @s cl.emptySlot1 0

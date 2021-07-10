@@ -1,21 +1,21 @@
-#Clear Healing spells
-scoreboard players set @s spellFirstAid 0
-scoreboard players set @s spellHeal 0
-scoreboard players set @s spellInspire 0
-scoreboard players set @s spellFireResist 0
-scoreboard players set @s spellSpeedBoost 0
-scoreboard players set @s spellCureEffects 0
-scoreboard players set @s spellSatiate 0
-scoreboard players set @s spellHealRing 0
-scoreboard players set @s spellGiftHealth 0
-scoreboard players set @s spellCleanseArea 0
-scoreboard players set @s spellHolyStrike 0
-scoreboard players set @s spellHealerBoon 0
-scoreboard players set @s spellStopUndead 0
+#Clear Healing cl.s.s
+scoreboard players set @s cl.s.FirstAid 0
+scoreboard players set @s cl.s.Heal 0
+scoreboard players set @s cl.s.Inspire 0
+scoreboard players set @s cl.s.FireResist 0
+scoreboard players set @s cl.s.SpeedBoost 0
+scoreboard players set @s cl.s.CureEffects 0
+scoreboard players set @s cl.s.Satiate 0
+scoreboard players set @s cl.s.HealRing 0
+scoreboard players set @s cl.s.GiftHealth 0
+scoreboard players set @s cl.s.CleanseArea 0
+scoreboard players set @s cl.s.HolyStrike 0
+scoreboard players set @s cl.s.HealerBoon 0
+scoreboard players set @s cl.s.StopUndead 0
 
 #Set empty slots
-scoreboard players set @s emptySlot1 1
-scoreboard players set @s emptySlot2 1
-scoreboard players set @s emptySlot3 1
-scoreboard players set @s emptySlot4 1
-scoreboard players set @s emptySlot5 1
+scoreboard players set @s cl.emptySlot1 1
+scoreboard players set @s cl.emptySlot2 1
+scoreboard players set @s cl.emptySlot3 1
+scoreboard players set @s cl.emptySlot4 1
+scoreboard players set @s cl.emptySlot5 1

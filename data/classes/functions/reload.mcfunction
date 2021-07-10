@@ -1,84 +1,84 @@
 ##################Set up scoreboards######################
 
 #Set up trigger for equipping spells
-scoreboard objectives add equipSpell trigger
+scoreboard objectives add cl.equipSpell trigger
 
 #Set up other scoreboards
-scoreboard objectives add class dummy
-scoreboard objectives add loadSpell dummy
-scoreboard objectives add Sneaking minecraft.custom:minecraft.sneak_time
-scoreboard objectives add rightClick minecraft.used:minecraft.warped_fungus_on_a_stick
-scoreboard objectives add ReadBook minecraft.used:minecraft.written_book
-scoreboard objectives add Mana dummy
-scoreboard objectives add ManaRegenSec dummy
-scoreboard objectives add currentSpellSel dummy
-scoreboard objectives add emptySlot1 dummy
-scoreboard objectives add emptySlot2 dummy
-scoreboard objectives add emptySlot3 dummy
-scoreboard objectives add emptySlot4 dummy
-scoreboard objectives add emptySlot5 dummy
-scoreboard objectives add cooldown dummy
+scoreboard objectives add cl.Class trigger
+scoreboard objectives add cl.loadSpell dummy
+scoreboard objectives add cl.Sneaking minecraft.custom:minecraft.sneak_time
+scoreboard objectives add cl.rightClick minecraft.used:minecraft.warped_fungus_on_a_stick
+scoreboard objectives add cl.ReadBook minecraft.used:minecraft.written_book
+scoreboard objectives add cl.Mana dummy
+scoreboard objectives add cl.ManaRegenSec dummy
+scoreboard objectives add cl.currSpellSel dummy
+scoreboard objectives add cl.emptySlot1 dummy
+scoreboard objectives add cl.emptySlot2 dummy
+scoreboard objectives add cl.emptySlot3 dummy
+scoreboard objectives add cl.emptySlot4 dummy
+scoreboard objectives add cl.emptySlot5 dummy
+scoreboard objectives add cl.Cooldown dummy
 
 #Scoreboards for settings
-scoreboard objectives add ka.setFire dummy
-execute unless score #ka.settings ka.setFire matches 0 run scoreboard players set #ka.settings ka.setFire 1
+scoreboard objectives add cl.p.setFire dummy
+execute unless score #cl.pref cl.p.setFire matches 0 run scoreboard players set #cl.pref cl.p.setFire 1
 
 #Scoreboards for time based spells
-scoreboard objectives add summonCount dummy
-scoreboard objectives add effColdShield dummy
-scoreboard objectives add effDeepFreeze dummy
-scoreboard objectives add effSlowFall dummy
-scoreboard objectives add effTailWind dummy
-scoreboard objectives add effBunnyHop dummy
-scoreboard objectives add effStoneFlesh dummy
-scoreboard objectives add effIronFlesh dummy
-scoreboard objectives add effDiaFlesh dummy
-scoreboard objectives add effLight dummy
+scoreboard objectives add cl.summonCount dummy
+scoreboard objectives add cl.e.ColdShield dummy
+scoreboard objectives add cl.e.DeepFreeze dummy
+scoreboard objectives add cl.e.SlowFall dummy
+scoreboard objectives add cl.e.TailWind dummy
+scoreboard objectives add cl.e.BunnyHop dummy
+scoreboard objectives add cl.e.StoneFlesh dummy
+scoreboard objectives add cl.e.IronFlesh dummy
+scoreboard objectives add cl.e.DiaFlesh dummy
+scoreboard objectives add cl.e.Light dummy
 
 #Slowcast scoreboards (credit to CloudWolf)
-scoreboard objectives add slowcast dummy
-scoreboard players add dst slowcast 0
-scoreboard players add dst_per slowcast 0
-scoreboard objectives add slo_id dummy
-scoreboard objectives add slo_dst dummy
-scoreboard objectives add slo_dst_per dummy
+scoreboard objectives add cl.slowcast dummy
+scoreboard players add dst cl.slowcast 0
+scoreboard players add dst_per cl.slowcast 0
+scoreboard objectives add cl.slo_id dummy
+scoreboard objectives add cl.slo_dst dummy
+scoreboard objectives add cl.slo_dst_per dummy
 
 #Mage Spells
-scoreboard objectives add spellTorch dummy
-scoreboard objectives add spellFlameBurst dummy
-scoreboard objectives add spellFireball dummy
-scoreboard objectives add spellBedofCoals dummy
-scoreboard objectives add spellWaterStrike dummy
-scoreboard objectives add spellIceShard dummy
-scoreboard objectives add spellColdShield dummy
-scoreboard objectives add spellDeepFreeze dummy
-scoreboard objectives add spellSnowGolem dummy
-scoreboard objectives add spellWaterAir dummy
-scoreboard objectives add spellDolpGrace dummy
-scoreboard objectives add spellLevitate dummy
-scoreboard objectives add spellSlowFall dummy
-scoreboard objectives add spellTailWind dummy
-scoreboard objectives add spellBunnyHop dummy
-scoreboard objectives add spellPoison dummy
-scoreboard objectives add spellStoneFlesh dummy
-scoreboard objectives add spellIronFlesh dummy
-scoreboard objectives add spellDiaFlesh dummy
-scoreboard objectives add spellIronGolem dummy
-scoreboard objectives add spellLight dummy
-scoreboard objectives add spellTeleport dummy
-scoreboard objectives add spellWindWard dummy
+scoreboard objectives add cl.s.Torch dummy
+scoreboard objectives add cl.s.FlameBurst dummy
+scoreboard objectives add cl.s.Fireball dummy
+scoreboard objectives add cl.s.BedofCoals dummy
+scoreboard objectives add cl.s.WaterStrike dummy
+scoreboard objectives add cl.s.IceShard dummy
+scoreboard objectives add cl.s.ColdShield dummy
+scoreboard objectives add cl.s.DeepFreeze dummy
+scoreboard objectives add cl.s.SnowGolem dummy
+scoreboard objectives add cl.s.WaterAir dummy
+scoreboard objectives add cl.s.DolpGrace dummy
+scoreboard objectives add cl.s.Levitate dummy
+scoreboard objectives add cl.s.SlowFall dummy
+scoreboard objectives add cl.s.TailWind dummy
+scoreboard objectives add cl.s.BunnyHop dummy
+scoreboard objectives add cl.s.Poison dummy
+scoreboard objectives add cl.s.StoneFlesh dummy
+scoreboard objectives add cl.s.IronFlesh dummy
+scoreboard objectives add cl.s.DiaFlesh dummy
+scoreboard objectives add cl.s.IronGolem dummy
+scoreboard objectives add cl.s.Light dummy
+scoreboard objectives add cl.s.Teleport dummy
+scoreboard objectives add cl.s.WindWard dummy
 
 #Healer Spells
-scoreboard objectives add spellFirstAid dummy
-scoreboard objectives add spellHeal dummy
-scoreboard objectives add spellInspire dummy
-scoreboard objectives add spellFireResist dummy
-scoreboard objectives add spellSpeedBoost dummy
-scoreboard objectives add spellCureEffects dummy
-scoreboard objectives add spellSatiate dummy
-scoreboard objectives add spellHealRing dummy
-scoreboard objectives add spellGiftHealth dummy
-scoreboard objectives add spellCleanseArea dummy
-scoreboard objectives add spellHolyStrike dummy
-scoreboard objectives add spellHealerBoon dummy
-scoreboard objectives add spellStopUndead dummy
+scoreboard objectives add cl.s.FirstAid dummy
+scoreboard objectives add cl.s.Heal dummy
+scoreboard objectives add cl.s.Inspire dummy
+scoreboard objectives add cl.s.FireResist dummy
+scoreboard objectives add cl.s.SpeedBoost dummy
+scoreboard objectives add cl.s.CureEffects dummy
+scoreboard objectives add cl.s.Satiate dummy
+scoreboard objectives add cl.s.HealRing dummy
+scoreboard objectives add cl.s.GiftHealth dummy
+scoreboard objectives add cl.s.CleanseArea dummy
+scoreboard objectives add cl.s.HolyStrike dummy
+scoreboard objectives add cl.s.HealerBoon dummy
+scoreboard objectives add cl.s.StopUndead dummy
