@@ -22,7 +22,13 @@ scoreboard objectives add cl.Mage.Armor dummy
 
 #Scoreboards for settings
 scoreboard objectives add cl.p.setFire dummy
+scoreboard objectives add cl.p.wPortal dummy
+scoreboard objectives add cl.p.wObsidian dummy
+scoreboard objectives add cl.p.wExtFire dummy
 execute unless score #cl.pref cl.p.setFire matches 0 run scoreboard players set #cl.pref cl.p.setFire 1
+execute unless score #cl.pref cl.p.wPortal matches 0 run scoreboard players set #cl.pref cl.p.wPortal 1
+execute unless score #cl.pref cl.p.wObsidian matches 0 run scoreboard players set #cl.pref cl.p.wObsidian 1
+execute unless score #cl.pref cl.p.wExtFire matches 0 run scoreboard players set #cl.pref cl.p.wExtFire 1
 
 #Scoreboards for time based spells
 scoreboard objectives add cl.summonCount dummy
@@ -83,3 +89,6 @@ scoreboard objectives add cl.s.CleanseArea dummy
 scoreboard objectives add cl.s.HolyStrike dummy
 scoreboard objectives add cl.s.HealerBoon dummy
 scoreboard objectives add cl.s.StopUndead dummy
+
+#Tellraw - DO NOT REMOVE WITHOUT EXPRESS PERMISSION
+tellraw @a ["",{"text":"[Classes]","bold":true,"color":"dark_aqua","clickEvent":{"action":"open_url","value":"https://github.com/KingArvis/Classes"},"hoverEvent":{"action":"show_text","contents":{"text":"An RPG datapack! Click for more!","color":"dark_aqua"}}},{"text":" by","color":"white","clickEvent":{"action":"open_url","value":"https://github.com/KingArvis/Classes"},"hoverEvent":{"action":"show_text","contents":{"text":"An RPG datapack! Click for more!","color":"dark_aqua"}}},{"text":" Robified","color":"green","clickEvent":{"action":"open_url","value":"https://github.com/KingArvis/Classes"},"hoverEvent":{"action":"show_text","contents":{"text":"An RPG datapack! Click for more!","color":"dark_aqua"}}},{"text":" \u27a1","color":"aqua","hoverEvent":{"action":"show_text","contents":{"text":"An RPG datapack! Click for more!","color":"dark_aqua"}}},{"text":" Successfully loaded!","color":"white","hoverEvent":{"action":"show_text","contents":{"text":"An RPG datapack! Click for more!","color":"dark_aqua"}}}]
