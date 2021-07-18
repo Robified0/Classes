@@ -18,6 +18,7 @@ scoreboard objectives add cl.emptySlot3 dummy
 scoreboard objectives add cl.emptySlot4 dummy
 scoreboard objectives add cl.emptySlot5 dummy
 scoreboard objectives add cl.Cooldown dummy
+scoreboard objectives add cl.Mage.Armor dummy
 
 #Scoreboards for settings
 scoreboard objectives add cl.p.setFire dummy
