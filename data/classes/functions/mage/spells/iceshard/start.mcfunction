@@ -9,7 +9,7 @@ execute if entity @s[scores={cl.Mana=2..}] as @e[type=marker,tag=slowcast,tag=ne
 execute if entity @s[scores={cl.Mana=2..}] run tag @s remove this
 
 #Cast Spell Sound Effect
-execute if entity @s[scores={cl.Mana=5..}] at @s run function classes:mage/spells/all/cast
+execute if entity @s[scores={cl.Mana=2..}] at @s run function classes:mage/spells/all/cast
 
 #Particles
 execute if entity @s[scores={cl.Mana=2..}] at @s run particle minecraft:witch ~ ~ ~ 0.5 1 0.5 1.2 40 force

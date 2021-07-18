@@ -14,9 +14,6 @@
 #Stat handling
 execute as @a[scores={cl.Class=3}] run function classes:mage/stats/main
 
-#Handle empty wand slot
-#execute as @a[scores={cl.Cooldown=0,cl.rightClick=1..,cl.Sneaking=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"none"}}},nbt=!{Inventory:[{id:"minecraft:shield",Slot:-106b}]}] at @s run tellraw @s {"text":"No spell equipped.","color":"red"}
-
 #Fire Spells
 execute as @a[scores={cl.Cooldown=0,cl.rightClick=1..,cl.Sneaking=0,cl.s.Torch=1..},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"Torch"}}},nbt=!{Inventory:[{id:"minecraft:shield",Slot:-106b}]}] at @s run function classes:mage/spells/torch/spell
 execute as @a[scores={cl.Cooldown=0,cl.rightClick=1..,cl.Sneaking=0,cl.s.BedofCoals=1..},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"BedofCoals"}}},nbt=!{Inventory:[{id:"minecraft:shield",Slot:-106b}]}] at @s run function classes:mage/spells/bedofcoals/spell

@@ -18,7 +18,7 @@ execute at @s[scores={cl.Mana=4..}] run playsound minecraft:block.fire.extinguis
 execute at @s[scores={cl.Mana=4..}] run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 5 1.5
 
 #Cast Spell Sound Effect
-execute if entity @s[scores={cl.Mana=5..}] at @s run function classes:mage/spells/all/cast
+execute if entity @s[scores={cl.Mana=4..}] at @s run function classes:mage/spells/all/cast
 
 #Spell Cast Notification
 execute as @s[scores={cl.Mana=4..}] run tellraw @s[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Cold Shield!","bold":true,"color":"#0096FF"}]

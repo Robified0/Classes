@@ -12,7 +12,7 @@ execute if entity @s[scores={cl.Mana=1..}] run tag @s remove this
 execute as @s[scores={cl.Mana=1..}] run scoreboard players set @s cl.Cooldown 20
 
 #Cast Spell Sound Effect
-execute if entity @s[scores={cl.Mana=5..}] at @s run function classes:mage/spells/all/cast
+execute if entity @s[scores={cl.Mana=1..}] at @s run function classes:mage/spells/all/cast
 
 #Mana Depletion
 execute if entity @s[scores={cl.Mana=1..}] run scoreboard players remove @s cl.Mana 1

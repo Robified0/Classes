@@ -53,7 +53,7 @@ scoreboard objectives add cl.s.IceShard dummy
 scoreboard objectives add cl.s.ColdShield dummy
 scoreboard objectives add cl.s.DeepFreeze dummy
 scoreboard objectives add cl.s.SnowGolem dummy
-scoreboard objectives add cl.s.WaterAir dummy
+scoreboard objectives add cl.s.WaterBrth dummy
 scoreboard objectives add cl.s.DolpGrace dummy
 scoreboard objectives add cl.s.Levitate dummy
 scoreboard objectives add cl.s.SlowFall dummy
