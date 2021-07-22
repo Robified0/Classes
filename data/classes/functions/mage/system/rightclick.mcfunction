@@ -10,7 +10,7 @@ execute if entity @s[scores={cl.s.IceShard=1..,cl.Mage.Armor=0},nbt={SelectedIte
 execute if entity @s[scores={cl.s.ColdShield=1..,cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"ColdShield"}}}] at @s run function classes:mage/spells/coldshield/spell
 execute if entity @s[scores={cl.s.DeepFreeze=1..,cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"DeepFreeze"}}}] at @s run function classes:mage/spells/deepfreeze/spell
 execute if entity @s[scores={cl.s.SnowGolem=1..,cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"SnowGolem"}}}] at @s run function classes:mage/spells/snowgolem/spell
-execute if entity @s[scores={cl.s.WaterAir=1..,cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"WaterAir"}}}] at @s run function classes:mage/spells/waterbreath/spell
+execute if entity @s[scores={cl.s.WaterBrth=1..,cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"WaterBrth"}}}] at @s run function classes:mage/spells/waterbreath/spell
 execute if entity @s[scores={cl.s.DolpGrace=1..,cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"DolpGrace"}}}] at @s run function classes:mage/spells/dolpgrace/spell
 
 #Air spells

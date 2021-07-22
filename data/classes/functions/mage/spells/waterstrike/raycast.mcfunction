@@ -21,21 +21,5 @@ execute at @s run playsound minecraft:entity.boat.paddle_water player @a ~ ~ ~ 0
 scoreboard players remove #temp cl.slowcast 1
 execute if score #temp cl.slowcast matches ..-1 run tp @s ~ ~ ~
 execute if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ ~ #classes:air run function classes:mage/spells/waterstrike/raycast
-execute if score #cl.pref cl.p.wPortal matches 1 if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:nether_portal run setblock ~ ~ ~ minecraft:air
-execute if score #cl.pref cl.p.wExtFire matches 1 if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ ~ #minecraft:fire run playsound minecraft:block.fire.extinguish ambient @a[distance=..10] ~ ~ ~ 0.4 1
-execute if score #cl.pref cl.p.wExtFire matches 1 if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ ~ #minecraft:fire run setblock ~ ~ ~ minecraft:air
-execute if score #cl.pref cl.p.wExtFire matches 1 if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:campfire[lit=true,facing=north] run setblock ~ ~ ~ minecraft:campfire[lit=false,facing=north]
-execute if score #cl.pref cl.p.wExtFire matches 1 if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:campfire[lit=true,facing=south] run setblock ~ ~ ~ minecraft:campfire[lit=false,facing=south]
-execute if score #cl.pref cl.p.wExtFire matches 1 if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:campfire[lit=true,facing=east] run setblock ~ ~ ~ minecraft:campfire[lit=false,facing=east]
-execute if score #cl.pref cl.p.wExtFire matches 1 if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:campfire[lit=true,facing=west] run setblock ~ ~ ~ minecraft:campfire[lit=false,facing=west]
-execute if score #cl.pref cl.p.wExtFire matches 1 if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:soul_campfire[lit=true,facing=north] run setblock ~ ~ ~ minecraft:soul_campfire[lit=false,facing=north]
-execute if score #cl.pref cl.p.wExtFire matches 1 if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:soul_campfire[lit=true,facing=south] run setblock ~ ~ ~ minecraft:soul_campfire[lit=false,facing=south]
-execute if score #cl.pref cl.p.wExtFire matches 1 if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:soul_campfire[lit=true,facing=east] run setblock ~ ~ ~ minecraft:soul_campfire[lit=false,facing=east]
-execute if score #cl.pref cl.p.wExtFire matches 1 if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:soul_campfire[lit=true,facing=west] run setblock ~ ~ ~ minecraft:soul_campfire[lit=false,facing=west]
-execute if score #cl.pref cl.p.wObsidian matches 1 in minecraft:overworld if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:lava[level=0] run setblock ~ ~ ~ minecraft:obsidian
-execute if score #cl.pref cl.p.wObsidian matches 1 in minecraft:overworld if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:lava unless block ~ ~ ~ minecraft:lava[level=0] run setblock ~ ~ ~ minecraft:cobblestone
-execute if score #cl.pref cl.p.wObsidian matches 1 in minecraft:the_nether if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:lava run setblock ~ ~ ~ minecraft:cobblestone
-execute if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:lava run particle minecraft:large_smoke ^-0.5 ^ ^0.5 0.1 0.1 0.1 0.05 20 normal
-execute if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:lava run playsound minecraft:block.lava.extinguish ambient @a[distance=..10] ~ ~ ~ 1 1
 execute if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:lava run function classes:mage/spells/waterstrike/zprivate/end
 execute if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 unless block ~ ~ ~ #classes:air run function classes:mage/spells/waterstrike/zprivate/end

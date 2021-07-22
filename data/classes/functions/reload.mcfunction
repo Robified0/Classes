@@ -4,7 +4,7 @@
 scoreboard objectives add cl.equipSpell trigger
 
 #Set up other scoreboards
-scoreboard objectives add cl.Class trigger
+scoreboard objectives add cl.Class dummy
 scoreboard objectives add cl.loadSpell dummy
 scoreboard objectives add cl.Sneaking minecraft.custom:minecraft.sneak_time
 scoreboard objectives add cl.rightClick minecraft.used:minecraft.warped_fungus_on_a_stick
@@ -19,6 +19,7 @@ scoreboard objectives add cl.emptySlot4 dummy
 scoreboard objectives add cl.emptySlot5 dummy
 scoreboard objectives add cl.Cooldown dummy
 scoreboard objectives add cl.Mage.Armor dummy
+scoreboard objectives add cl.s.Teleport.t dummy
 
 #Scoreboards for settings
 scoreboard objectives add cl.p.setFire dummy
@@ -89,6 +90,12 @@ scoreboard objectives add cl.s.CleanseArea dummy
 scoreboard objectives add cl.s.HolyStrike dummy
 scoreboard objectives add cl.s.HealerBoon dummy
 scoreboard objectives add cl.s.StopUndead dummy
+
+#Set storage
+function classes:main/setspells/main
+
+#Set keepInventory (temporary)
+gamerule keepInventory true
 
 #Tellraw - DO NOT REMOVE WITHOUT EXPRESS PERMISSION
 tellraw @a ["",{"text":"[Classes]","bold":true,"color":"dark_aqua","clickEvent":{"action":"open_url","value":"https://github.com/KingArvis/Classes"},"hoverEvent":{"action":"show_text","contents":{"text":"An RPG datapack! Click for more!","color":"dark_aqua"}}},{"text":" by","color":"white","clickEvent":{"action":"open_url","value":"https://github.com/KingArvis/Classes"},"hoverEvent":{"action":"show_text","contents":{"text":"An RPG datapack! Click for more!","color":"dark_aqua"}}},{"text":" Robified","color":"green","clickEvent":{"action":"open_url","value":"https://github.com/KingArvis/Classes"},"hoverEvent":{"action":"show_text","contents":{"text":"An RPG datapack! Click for more!","color":"dark_aqua"}}},{"text":" \u27a1","color":"aqua","hoverEvent":{"action":"show_text","contents":{"text":"An RPG datapack! Click for more!","color":"dark_aqua"}}},{"text":" Successfully loaded!","color":"white","hoverEvent":{"action":"show_text","contents":{"text":"An RPG datapack! Click for more!","color":"dark_aqua"}}}]

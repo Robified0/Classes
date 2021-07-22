@@ -10,10 +10,9 @@
 #Function for all new players, to ensure scoreboards are set up
 execute if entity @a[tag=!Joined] as @a[tag=!Joined] run function classes:operations/newplayer
 
-
-#Make sure equipSpell is always enabled for all players when reading a book.
-scoreboard players enable @a[scores={cl.ReadBook=1..}] cl.equipSpell
-scoreboard players set @a[scores={cl.Moved=1..}] cl.ReadBook 0
+#Make sure equipSpell is always enabled for all players when reading/holding spellbook.
+scoreboard players enable @a[predicate=classes:checkarmor/mage/spellbook] cl.equipSpell
+scoreboard players reset @a[predicate=!classes:checkarmor/mage/spellbook] cl.equipSpell
 
 #Display Mana bar to players
 function classes:mage/mana/mana
@@ -35,11 +34,11 @@ execute if entity @a[scores={cl.Sneaking=1..,cl.rightClick=1..,cl.Class=3}] as @
 execute as @a[scores={cl.equipSpell=-1}] run function classes:operations/clearwand
 
 #Check for triggers being activated to equip spell
-execute as @a[scores={cl.equipSpell=1..,cl.loadSpell=0..5}] run function classes:equip
+execute as @a[scores={cl.equipSpell=1..,cl.loadSpell=0..5,cl.ReadBook=1..}] run function classes:equip
 
 #Handle max spells, and messaging.
 execute as @a[scores={cl.equipSpell=1..,cl.loadSpell=6}] run tellraw @s {"text":"You're maxed out. Clear your wand to equip other spells."}
-execute as @a[scores={cl.equipSpell=1..,cl.loadSpell=6}] run scoreboard players set @s cl.equipSpell 0
+execute as @a[scores={cl.equipSpell=1..,cl.loadSpell=6}] run scoreboard players reset @s cl.equipSpell
 
 
 #Reset scoreboards

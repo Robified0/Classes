@@ -3,3 +3,5 @@ execute as @e[type=marker,tag=light,tag=counter,tag=place] at @s run fill ~ ~ ~ 
 execute as @e[type=marker,tag=light,tag=counter,tag=place] run tag @s remove place
 scoreboard players set @e[type=marker,tag=light,tag=counter,sort=nearest,limit=1] cl.e.Light 1200
 scoreboard players reset @s cl.slo_id
+scoreboard players reset @s cl.slo_dst_per
+scoreboard players reset @s cl.slo_dst
