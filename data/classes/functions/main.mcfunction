@@ -14,6 +14,10 @@ execute if entity @a[tag=!Joined] as @a[tag=!Joined] run function classes:operat
 scoreboard players enable @a[predicate=classes:checkarmor/mage/spellbook] cl.equipSpell
 scoreboard players reset @a[predicate=!classes:checkarmor/mage/spellbook] cl.equipSpell
 
+#Super hacky, will delete - gives items after selection of class.
+execute as @a[scores={cl.Class=3},tag=!Equipped] run function classes:operations/give
+execute as @a[scores={cl.Class=3}] run tag @s add Equipped
+
 #Display Mana bar to players
 function classes:mage/mana/mana
 

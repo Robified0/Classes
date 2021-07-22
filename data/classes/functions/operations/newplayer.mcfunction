@@ -3,10 +3,8 @@ scoreboard players set @s cl.ManaRegenSec 0
 scoreboard players set @s cl.currSpellSel 1
 scoreboard players set @s cl.loadSpell 1
 scoreboard players set @s cl.Cooldown 0
-function classes:operations/give
-tellraw @s ["",{"text":"Uses the elements to shape\nthe world around them.","italic":true},{"text":"\n\n"},{"text":"While unable to use weapons,\nthey are capable of aiding\nallies, and damaging enemies\nwith their wands and staves\nto cast potent spells.","italic":true,"color":"dark_aqua"}]
-scoreboard players set @s cl.Class 3
-trigger cl.Class set 3
+scoreboard players enable @s cl.Class
+tellraw @s ["",{"text":"-----------","color":"dark_aqua"},{"text":"\n"},{"text":"Select a class:","color":"green"},{"text":"\n"},{"text":"-----------","color":"dark_aqua"},{"text":"\n"},{"text":"- ","color":"gold","clickEvent":{"action":"run_command","value":"/trigger cl.Class set 3"}},{"text":"Mage","underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger cl.Class set 3"}},{"text":"\n"},{"text":"-----------","color":"dark_aqua"}]
 scoreboard players set @s cl.emptySlot1 1
 scoreboard players set @s cl.emptySlot2 1
 scoreboard players set @s cl.emptySlot3 1
