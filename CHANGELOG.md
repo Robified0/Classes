@@ -1,3 +1,8 @@
+# 0.1.2a (2021-07-24)
+
+**Added Features:**
+- Uninstall datapack option. Removes all objectives, tags of online players, and disables datapack. (/function classes:uninstall/main)
+
 # 0.1.2 (2021-07-24)
 
 **Bug Fixes:**
