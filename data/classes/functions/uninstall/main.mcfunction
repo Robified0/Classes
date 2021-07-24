@@ -87,7 +87,7 @@ scoreboard objectives remove cl.s.HolyStrike
 scoreboard objectives remove cl.s.HealerBoon
 scoreboard objectives remove cl.s.StopUndead
 
-#Remove storage
+#Remove storage and tags
 function classes:uninstall/removespells
 function classes:uninstall/removetags
 
