@@ -1,3 +1,4 @@
+#Remove mage spells
 data remove storage classes:mage/spells/fire/torch pages
 data remove storage classes:mage/spells/fire/bedofcoals pages
 data remove storage classes:mage/spells/fire/flameburst pages
