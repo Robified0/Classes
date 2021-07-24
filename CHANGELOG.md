@@ -1,6 +1,6 @@
 Changelog
 
-#0.1.2 (2021-07-24)#
+# 0.1.2 (2021-07-24)
 
 **Bug Fixes:**
 - Deep Freeze no longer removes the NoAI tag from mobs that had it existing before cast.
