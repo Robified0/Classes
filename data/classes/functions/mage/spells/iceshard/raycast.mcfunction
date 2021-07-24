@@ -1,5 +1,5 @@
 #Particle Effect
-particle dust 0.129 0.914 1.000 1 ^-0.5 ^ ^0.3 0.1 0.1 0.1 2 10 force
+particle dust 0.129 0.914 1.000 1 ^-0.3 ^ ^0.3 0.1 0.1 0.1 2 10 force
 
 #Do these things when spell hits
 execute as @e[dx=0,tag=!this,type=!#classes:nontarget,tag=!summoned] positioned ~-0.79 ~-0.79 ~-0.79 if entity @s[dx=0] positioned ~0.79 ~0.79 ~0.79 run effect give @s minecraft:slowness 10 1 false

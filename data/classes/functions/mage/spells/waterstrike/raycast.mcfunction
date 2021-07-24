@@ -1,5 +1,5 @@
 #Particle Effect
-particle minecraft:falling_water ^-0.5 ^ ^0.3 0.1 0.1 0.1 1 2 force
+particle minecraft:falling_water ^-0.3 ^ ^0.3 0.1 0.1 0.1 1 2 force
 
 #Do these things when spell hits
 execute as @e[dx=0,tag=!this,type=!#classes:nontarget] positioned ~-0.79 ~-0.79 ~-0.79 if entity @s[dx=0] positioned ~0.79 ~0.79 ~0.79 run data merge entity @s {Fire:1}
@@ -12,7 +12,7 @@ execute as @e[dx=0,tag=!this,type=!#classes:nontarget,nbt={AngerTime:0},tag=!sum
 execute as @e[dx=0,tag=!this,type=#classes:neutral,nbt=!{Brain:{memories:{"minecraft:angry_at":{}}}},tag=!summoned] positioned ~-0.79 ~-0.79 ~-0.79 if entity @s[dx=0] positioned ~0.79 ~0.79 ~0.79 run data modify entity @s Brain.memories."minecraft:angry_at".value set from entity @p[scores={cl.Class=3}] UUID
 
 #Edit tag/spellname and uncomment if you want it to end when it hits one target
-execute as @e[dx=0,tag=!this,type=!#classes:nontarget,tag=!summoned] positioned ~-0.79 ~-0.79 ~-0.79 if entity @s[dx=0] positioned ~0.79 ~0.79 ~0.79 run kill @e[type=marker,tag=waterstrike,sort=nearest,limit=1]
+#execute as @e[dx=0,tag=!this,type=!#classes:nontarget,tag=!summoned] positioned ~-0.79 ~-0.79 ~-0.79 if entity @s[dx=0] positioned ~0.79 ~0.79 ~0.79 run kill @e[type=marker,tag=waterstrike,sort=nearest,limit=1]
 
 #Play sound
 execute at @s run playsound minecraft:entity.boat.paddle_water player @a ~ ~ ~ 0.8 1

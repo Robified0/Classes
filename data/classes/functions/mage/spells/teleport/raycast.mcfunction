@@ -1,6 +1,8 @@
 #Particle Effect
 particle reverse_portal ^-0.3 ^ ^0.3 0.1 0.1 0.1 0.03 5 force
 
+#Kill a split second early if no blocks are hit.
+execute if entity @s[scores={cl.slo_dst=1}] run kill @s
 
 #Play sound effect - use here when needing repeat
 #execute at @s run playsound minecraft:entity.blaze.shoot player @a[distance=..10] ~ ~ ~ 0.1

@@ -1,5 +1,5 @@
 #Particle Effect
-particle cloud ^-0.5 ^ ^0.3 0.1 0.1 0.1 0.05 2 force
+particle cloud ^-0.4 ^ ^0.3 0.1 0.1 0.1 0.05 2 force
 
 #Play sound effect - use here when needing repeat
 execute at @s run playsound minecraft:entity.horse.breathe player @a ~ ~ ~ 0.5
@@ -16,5 +16,5 @@ execute as @e[dx=0,tag=!this,type=!#classes:nontarget,tag=!summoned] positioned 
 #Only change paths for spell
 scoreboard players remove #temp cl.slowcast 1
 execute if score #temp cl.slowcast matches ..-1 run tp @s ~ ~ ~
-execute if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 unless block ~ ~ ~ #classes:air run function classes:mage/spells/levitate/zprivate/end
-execute if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ ~ #classes:air run function classes:mage/spells/levitate/raycast
+execute if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 unless block ~ ~ ~ #classes:watercapable run function classes:mage/spells/levitate/zprivate/end
+execute if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ ~ #classes:watercapable run function classes:mage/spells/levitate/raycast
