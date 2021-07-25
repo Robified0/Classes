@@ -44,6 +44,8 @@ execute as @a[scores={cl.equipSpell=1..,cl.loadSpell=0..5,cl.ReadBook=1..}] run 
 execute as @a[scores={cl.equipSpell=1..,cl.loadSpell=6}] run tellraw @s {"text":"You're maxed out. Clear your wand to equip other spells."}
 execute as @a[scores={cl.equipSpell=1..,cl.loadSpell=6}] run scoreboard players reset @s cl.equipSpell
 
+#XP Handling for spells
+execute as @e[type=item,nbt={Item:{id:"minecraft:acacia_button",Count:1b,tag:{XPOrb:1b}}}] run function classes:main/xp/main
 
 #Reset scoreboards
 scoreboard players remove @a[scores={cl.Cooldown=1..}] cl.Cooldown 1
