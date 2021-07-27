@@ -1,9 +1,9 @@
 {
   "values":[
+  "minecraft:axolotl",
 	"minecraft:item_frame",
 	"minecraft:armor_stand",
 	"minecraft:area_effect_cloud",
-	"minecraft:horse",
 	"minecraft:painting",
 	"minecraft:player",
 	"minecraft:potion",
@@ -14,7 +14,6 @@
   "minecraft:snowball",
   "minecraft:wither_skull",
   "#minecraft:arrows",
-  "minecraft:cat",
   "minecraft:marker",
   "minecraft:item",
   "minecraft:fishing_bobber",

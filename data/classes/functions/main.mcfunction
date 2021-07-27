@@ -10,6 +10,9 @@
 #Function for all new players, to ensure scoreboards are set up
 execute if entity @a[tag=!Joined] as @a[tag=!Joined] run function classes:operations/newplayer
 
+#Run loot_table/main if entity exists
+execute if entity @e[tag=HitBySpell,tag=!cl.LTAdjusted] as @e[tag=HitBySpell,tag=!cl.LTAdjusted] run function classes:main/loot_table/main
+
 #Make sure equipSpell is always enabled for all players when reading/holding spellbook.
 scoreboard players enable @a[predicate=classes:checkarmor/mage/spellbook] cl.equipSpell
 scoreboard players reset @a[predicate=!classes:checkarmor/mage/spellbook] cl.equipSpell
@@ -45,7 +48,12 @@ execute as @a[scores={cl.equipSpell=1..,cl.loadSpell=6}] run tellraw @s {"text":
 execute as @a[scores={cl.equipSpell=1..,cl.loadSpell=6}] run scoreboard players reset @s cl.equipSpell
 
 #XP Handling for spells
-execute as @e[type=item,nbt={Item:{id:"minecraft:acacia_button",Count:1b,tag:{XPOrb:1b}}}] run function classes:main/xp/main
+execute as @e[type=item,nbt={Item:{id:"minecraft:acacia_button",Count:1b,tag:{XPOrb:1b}}}] run function classes:main/loot_table/xp
+
+#Tag Owned Pets to Prevent Spell Damage to them
+execute as @e[type=#classes:ownable,tag=!cl.Owned] if data entity @s Owner run tag @s add cl.Owned
+execute as @e[type=iron_golem,tag=!cl.Owned,nbt={PlayerCreated:1b}] run tag @s add cl.Owned
+execute as @e[type=snow_golem,tag=!cl.Owned,nbt={PlayerCreated:1b}] run tag @s add cl.Owned
 
 #Reset scoreboards
 scoreboard players remove @a[scores={cl.Cooldown=1..}] cl.Cooldown 1
