@@ -11,7 +11,7 @@
 execute if entity @a[tag=!Joined] as @a[tag=!Joined] run function classes:operations/newplayer
 
 #Run loot_table/main if entity exists
-execute if entity @e[tag=HitBySpell,tag=!cl.LTAdjusted] as @e[tag=HitBySpell,tag=!cl.LTAdjusted] run function classes:main/loot_table/main
+execute if entity @e[scores={cl.HitBySpell=1..}] as @e[scores={cl.HitBySpell=1..}] run function classes:main/loot_table/main
 
 #Make sure equipSpell is always enabled for all players when reading/holding spellbook.
 scoreboard players enable @a[predicate=classes:checkarmor/mage/spellbook] cl.equipSpell

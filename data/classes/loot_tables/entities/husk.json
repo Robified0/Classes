@@ -54,10 +54,12 @@
       ],
       "conditions": [
         {
-          "condition": "minecraft:entity_properties",
+          "condition": "minecraft:entity_scores",
           "entity": "this",
-          "predicate": {
-            "nbt": "{Tags:[\"HitBySpell\"]}"
+          "scores": {
+            "cl.HitBySpell": {
+              "min": 1
+            }
           }
         },
         {
@@ -103,10 +105,18 @@
       ],
       "conditions": [
         {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "cl.HitBySpell": {
+              "min": 1
+            }
+          }
+        },
+        {
           "condition": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
-            "nbt": "{Tags:[\"HitBySpell\"]}",
             "flags": {
               "is_baby": false
             }

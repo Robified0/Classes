@@ -11,6 +11,9 @@ execute as @s[scores={cl.Mana=3..}] at @e[tag=FlameBurst,distance=..6] run parti
 #Cast Spell Sound Effect
 execute if entity @s[scores={cl.Mana=3..}] at @s run function classes:mage/spells/all/cast
 
+#Hit by player detection
+execute at @s[scores={cl.Mana=3..},distance=..6] as @e[tag=FlameBurst] run scoreboard players set @s cl.HitBySpell 100
+
 #Sound effect
 execute as @s[scores={cl.Mana=3..}] at @e[tag=FlameBurst,distance=..6] run playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 0.5
 execute as @s[scores={cl.Mana=3..}] at @s unless entity @e[tag=FlameBurst,distance=..6] run playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 0.5 2

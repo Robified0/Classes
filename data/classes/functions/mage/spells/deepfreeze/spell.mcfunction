@@ -4,6 +4,7 @@ execute if entity @s[scores={cl.Mana=..4}] run function classes:mage/mana/nomana
 #Damage nearby
 execute as @s[scores={cl.Mana=5..}] run tag @s add GetAngry
 execute as @s[scores={cl.Mana=5..}] at @s run tag @e[type=!#classes:bosses,type=!#classes:nontarget,distance=..3,tag=!summoned,nbt=!{NoAI:1b}] add DeepFreeze
+execute as @s[scores={cl.Mana=5..}] at @s as @e[tag=DeepFreeze,distance=..3] run scoreboard players set @s cl.HitBySpell 100
 execute as @s[scores={cl.Mana=5..}] at @s as @e[tag=DeepFreeze,distance=..3] run scoreboard players set @s cl.e.DeepFreeze 300
 execute as @s[scores={cl.Mana=5..}] at @s as @e[tag=DeepFreeze,distance=..3] run data merge entity @s {NoAI:1b,Silent:1b}
 execute as @s[scores={cl.Mana=5..}] at @e[tag=DeepFreeze,distance=..3] run particle dust 0.129 0.914 1.000 1 ~ ~ ~ 0.5 0.5 0.5 1 100 normal

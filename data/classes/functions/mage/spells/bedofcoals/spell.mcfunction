@@ -2,7 +2,7 @@
 execute if entity @s[scores={cl.Mana=..4}] run function classes:mage/mana/nomana
 
 #Summon AEC
-execute as @s[scores={cl.Mana=5..}] run summon area_effect_cloud ~ ~ ~ {Particle:"flame",ReapplicationDelay:20,Radius:3f,Duration:100,Tags:["fire","angry","fire3"],Effects:[{Id:7b,Amplifier:0b,Duration:20,ShowParticles:0b}]}
+execute as @s[scores={cl.Mana=5..}] run summon area_effect_cloud ~ ~ ~ {Particle:"flame",ReapplicationDelay:20,Radius:3f,Duration:100,Tags:["cl.fire","cl.angry","cl.fire3","cl.HitBySpell"],Effects:[{Id:7b,Amplifier:0b,Duration:20,ShowParticles:0b}]}
 
 #Cast Spell Sound Effect
 execute if entity @s[scores={cl.Mana=5..}] at @s run function classes:mage/spells/all/cast

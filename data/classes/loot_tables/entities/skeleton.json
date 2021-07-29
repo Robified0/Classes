@@ -9,15 +9,6 @@
           "type": "minecraft:loot_table",
           "name": "minecraft:entities/skeleton"
         }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "type": "minecraft:skeleton"
-          }
-        }
       ]
     },
     {
@@ -37,10 +28,12 @@
       ],
       "conditions": [
         {
-          "condition": "minecraft:entity_properties",
+          "condition": "minecraft:entity_scores",
           "entity": "this",
-          "predicate": {
-            "nbt": "{Tags:[\"HitBySpell\"]}"
+          "scores": {
+            "cl.HitBySpell": {
+              "min": 1
+            }
           }
         },
         {
