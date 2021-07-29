@@ -1,0 +1,13 @@
+{
+  "values":[
+	"minecraft:vex",
+  "minecraft:vindicator",
+  "minecraft:witch",
+  "minecraft:wither_skeleton",
+  "minecraft:wither",
+  "minecraft:zombie_villager",
+  "minecraft:zombie",
+  "minecraft:zoglin",
+  "minecraft:zombified_piglin"
+  ]
+}
