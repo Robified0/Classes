@@ -10,8 +10,14 @@ execute positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:soul_campfire[lit=false,fac
 execute positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:soul_campfire[lit=false,facing=south] run setblock ~ ~ ~ minecraft:soul_campfire[lit=true,facing=south]
 execute positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:soul_campfire[lit=false,facing=east] run setblock ~ ~ ~ minecraft:soul_campfire[lit=true,facing=east]
 execute positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:soul_campfire[lit=false,facing=west] run setblock ~ ~ ~ minecraft:soul_campfire[lit=true,facing=west]
+
 #Light obsidian on fire (for lighting nether portals)
 execute positioned ^ ^ ^-0.25 if block ^ ^ ^0.25 obsidian if block ^ ^ ^-0.5 air run setblock ^ ^ ^-0.5 minecraft:fire
+
+#Prevent stray blocks from lighting on fire when setFire = false (This fix applies to lighting portals)
+execute unless score #cl.pref cl.p.setFire matches 1 positioned ^ ^ ^-0.25 run fill ~2 ~2 ~2 ~-4 ~-4 ~-4 minecraft:air replace fire
+
+#Reset Scores
 scoreboard players reset @s cl.slo_id
 scoreboard players reset @s cl.slo_dst_per
 scoreboard players reset @s cl.slo_dst
