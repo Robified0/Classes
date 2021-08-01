@@ -11,7 +11,7 @@ execute positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:soul_campfire[lit=false,fac
 execute positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:soul_campfire[lit=false,facing=east] run setblock ~ ~ ~ minecraft:soul_campfire[lit=true,facing=east]
 execute positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:soul_campfire[lit=false,facing=west] run setblock ~ ~ ~ minecraft:soul_campfire[lit=true,facing=west]
 #Light obsidian on fire (for lighting nether portals)
-execute positioned ^ ^ ^-0.25 if block ^ ^ ^0.25 obsidian if block ^ ^ ^-0.8 air run setblock ^ ^ ^-0.8 minecraft:fire
+execute positioned ^ ^ ^-0.25 if block ^ ^ ^0.25 obsidian if block ^ ^ ^-0.5 air run setblock ^ ^ ^-0.5 minecraft:fire
 scoreboard players reset @s cl.slo_id
 scoreboard players reset @s cl.slo_dst_per
 scoreboard players reset @s cl.slo_dst
