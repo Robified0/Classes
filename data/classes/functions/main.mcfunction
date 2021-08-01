@@ -25,7 +25,7 @@ execute as @a[scores={cl.Class=3}] run tag @s add Equipped
 function classes:mage/mana/mana
 
 #Mage Switching spells
-execute if entity @a[scores={cl.Sneaking=1..,cl.rightClick=1..,cl.Class=3}] as @a[scores={cl.Sneaking=1..,cl.rightClick=1..,cl.Class=3}] run function classes:mage/system/switch
+execute if entity @a[scores={cl.Sneaking=1..,cl.rightClick=1..,cl.Class=3}] as @a[scores={cl.Sneaking=1..,cl.rightClick=1..,cl.Class=3}] run function classes:mage/system/wand/switch/switch
 
 #Healer Switching Spells
 #execute as @a[scores={cl.Sneaking=1..,cl.rightClick=1..,cl.Class=4,cl.currSpellSel=5}] run function classes:healer/wand/basewand/switch/slot1
@@ -39,6 +39,7 @@ execute if entity @a[scores={cl.Sneaking=1..,cl.rightClick=1..,cl.Class=3}] as @
 
 #Check for players selecting "Clear Wand" in book
 execute as @a[scores={cl.equipSpell=-1}] run function classes:operations/clearwand
+execute as @a[scores={cl.equipSpell=-2}] run function classes:mage/system/load-spell-book
 
 #Check for triggers being activated to equip spell
 execute as @a[scores={cl.equipSpell=1..,cl.loadSpell=0..5,cl.ReadBook=1..}] run function classes:equip
