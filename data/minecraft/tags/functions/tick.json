@@ -11,6 +11,7 @@
 		"classes:mage/spells/iceshard/zprivate/main",
 		"classes:mage/spells/poison/zprivate/main",
 		"classes:mage/spells/light/zprivate/main",
-		"classes:mage/spells/teleport/zprivate/main"
+		"classes:mage/spells/teleport/zprivate/main",
+		"classes:items/manapotion/main"
 	]
 }

@@ -15,6 +15,27 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Mana Potion\",\"color\":\"light_purple\"}',Lore:['{\"text\":\"Fully restore your Mana.\",\"color\":\"green\",\"italic\":true}']},HideFlags:32,Enchantments:[{}],Potion:\"minecraft:thick\",CustomPotionColor:16777215}"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.33
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
           "name": "minecraft:acacia_button",
           "functions": [
             {
