@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "  #",
+        " / ",
+        "/  "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:amethyst_shard"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "minecraft:knowledge_book",
+        "Wand": "1b",
+        "count": 1
+    },
+    "group": "Mage"
+}

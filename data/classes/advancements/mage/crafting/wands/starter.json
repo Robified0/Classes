@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "Unlocked": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "classes:mage/crafting/wands/starter"
+            }
+        }
+    },
+    "rewards": {
+        "function": "classes:items/mage/crafting/wands/starter"
+    }
+}
