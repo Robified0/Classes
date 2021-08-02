@@ -19,7 +19,7 @@ execute if entity @s[scores={cl.Mana=2..}] at @s run particle minecraft:cloud ~ 
 execute if entity @s[scores={cl.Mana=2..}] at @s run particle minecraft:witch ~ ~ ~ 0.5 1 0.5 1.2 40 force
 
 #Mana Depletion
-execute if entity @s[scores={cl.Mana=2..}] run scoreboard players remove @s cl.Mana 1
+execute if entity @s[scores={cl.Mana=2..}] run scoreboard players remove @s cl.Mana 2
 
 #Spell Cast Notification
 tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Levitate!","bold":true,"color":"#FFFF80"}]
