@@ -11,6 +11,7 @@ scoreboard objectives add cl.rightClick minecraft.used:minecraft.warped_fungus_o
 scoreboard objectives add cl.ReadBook minecraft.used:minecraft.written_book
 scoreboard objectives add cl.Mana dummy
 scoreboard objectives add cl.ManaRegenSec dummy
+scoreboard objectives add cl.Swimming air
 scoreboard objectives add cl.currSpellSel dummy
 scoreboard objectives add cl.emptySlot1 dummy
 scoreboard objectives add cl.emptySlot2 dummy
@@ -96,6 +97,64 @@ scoreboard objectives add cl.s.StopUndead dummy
 
 #Set storage
 function classes:main/setspells/main
+
+#Set up Oxygen Boss bar
+bossbar add air0 "Oxygen"
+bossbar add air1 "Oxygen"
+bossbar add air2 "Oxygen"
+bossbar add air3 "Oxygen"
+bossbar add air4 "Oxygen"
+bossbar add air5 "Oxygen"
+bossbar add air6 "Oxygen"
+bossbar add air7 "Oxygen"
+bossbar add air7 "Oxygen"
+bossbar add air8 "Oxygen"
+bossbar add air9 "Oxygen"
+bossbar add air10 "Oxygen"
+bossbar set minecraft:air0 max 10
+bossbar set minecraft:air1 max 10
+bossbar set minecraft:air2 max 10
+bossbar set minecraft:air3 max 10
+bossbar set minecraft:air4 max 10
+bossbar set minecraft:air5 max 10
+bossbar set minecraft:air6 max 10
+bossbar set minecraft:air7 max 10
+bossbar set minecraft:air8 max 10
+bossbar set minecraft:air9 max 10
+bossbar set minecraft:air10 max 10
+bossbar set minecraft:air0 value 0
+bossbar set minecraft:air1 value 1
+bossbar set minecraft:air2 value 2
+bossbar set minecraft:air3 value 3
+bossbar set minecraft:air4 value 4
+bossbar set minecraft:air5 value 5
+bossbar set minecraft:air6 value 6
+bossbar set minecraft:air7 value 7
+bossbar set minecraft:air8 value 8
+bossbar set minecraft:air9 value 9
+bossbar set minecraft:air10 value 10
+bossbar set air0 color blue
+bossbar set air1 color blue
+bossbar set air2 color blue
+bossbar set air3 color blue
+bossbar set air4 color blue
+bossbar set air5 color blue
+bossbar set air6 color blue
+bossbar set air7 color blue
+bossbar set air8 color blue
+bossbar set air9 color blue
+bossbar set air10 color blue
+bossbar set minecraft:air0 style notched_10
+bossbar set minecraft:air1 style notched_10
+bossbar set minecraft:air2 style notched_10
+bossbar set minecraft:air3 style notched_10
+bossbar set minecraft:air4 style notched_10
+bossbar set minecraft:air5 style notched_10
+bossbar set minecraft:air6 style notched_10
+bossbar set minecraft:air7 style notched_10
+bossbar set minecraft:air8 style notched_10
+bossbar set minecraft:air9 style notched_10
+bossbar set minecraft:air10 style notched_10
 
 #Set keepInventory (temporary)
 gamerule keepInventory true

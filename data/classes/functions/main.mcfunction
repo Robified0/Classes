@@ -22,7 +22,7 @@ execute as @a[scores={cl.Class=3},tag=!Equipped] run function classes:operations
 execute as @a[scores={cl.Class=3}] run tag @s add Equipped
 
 #Display Mana bar to players
-function classes:mage/mana/mana
+execute as @a[gamemode=!creative,gamemode=!spectator,scores={cl.Class=3}] run function classes:mage/mana/mana
 
 #Mage Switching spells
 execute if entity @a[scores={cl.Sneaking=1..,cl.rightClick=1..,cl.Class=3}] as @a[scores={cl.Sneaking=1..,cl.rightClick=1..,cl.Class=3}] run function classes:mage/system/wand/switch/switch
