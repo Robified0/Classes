@@ -38,5 +38,6 @@ The Miner gets passive bonuses to a variety of things. The deeper they dig, the 
 
 
 **Beastmaster:**
+
 The Beastmaster naturally grants friendly mobs around them passive bonuses to health and damage resistance. Any beneficial potion a Beastmaster drinks, confers the benefit to surrounding friendly animals.
 
