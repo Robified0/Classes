@@ -7,11 +7,12 @@
 #     which is used for specific spells!                          #
 ###################################################################
 
+#Handle scoreboard to time when last hit by player, and run XP convertor function
+scoreboard players remove @s[scores={cl.HitBySpell=1..}] cl.HitBySpell 1
+scoreboard players reset @s[scores={cl.HitBySpell=..0}] cl.HitBySpell
+
 #Function for all new players, to ensure scoreboards are set up
 execute if entity @a[tag=!Joined] as @a[tag=!Joined] run function classes:operations/newplayer
-
-#Run loot_table/main if entity exists
-execute if entity @e[scores={cl.HitBySpell=1..}] as @e[scores={cl.HitBySpell=1..}] run function classes:main/loot_table/main
 
 #Make sure equipSpell is always enabled for all players when reading/holding spellbook.
 scoreboard players enable @a[predicate=classes:checkarmor/mage/spellbook] cl.equipSpell

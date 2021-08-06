@@ -3,6 +3,7 @@ particle dust 0.129 0.914 1.000 1 ^-0.3 ^ ^0.3 0.1 0.1 0.1 2 10 force
 
 #Do these things when spell hits
 execute as @e[dx=0,tag=!this,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] positioned ~-0.25 ~-0.25 ~-0.25 if entity @s[dx=0] positioned ~0.25 ~0.25 ~0.25 run scoreboard players set @s cl.HitBySpell 100
+execute as @e[dx=0,tag=!this,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] positioned ~-0.25 ~-0.25 ~-0.25 if entity @s[dx=0] positioned ~0.25 ~0.25 ~0.25 run function classes:main/loot_table/main
 execute as @e[dx=0,tag=!this,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] positioned ~-0.25 ~-0.25 ~-0.25 if entity @s[dx=0] positioned ~0.25 ~0.25 ~0.25 run effect give @s minecraft:slowness 10 1 false
 execute as @e[dx=0,tag=!this,type=!#classes:undead,type=!#classes:fireproof,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] positioned ~-0.25 ~-0.25 ~-0.25 if entity @s[dx=0] positioned ~0.25 ~0.25 ~0.25 run effect give @s minecraft:instant_damage 1 0 true
 execute as @e[dx=0,tag=!this,type=#classes:undead,type=!#classes:fireproof,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] positioned ~-0.25 ~-0.25 ~-0.25 if entity @s[dx=0] positioned ~0.25 ~0.25 ~0.25 run effect give @s minecraft:instant_health 1 0 true

@@ -3,6 +3,7 @@ particle minecraft:falling_water ^-0.3 ^ ^0.3 0.2 0.2 0.2 1 10 force
 
 #Do these things when spell hits
 execute as @e[dx=0,tag=!this,type=!#classes:nontarget,type=!#classes:waterproof,tag=!summoned,tag=!cl.Owned] positioned ~-0.25 ~-0.25 ~-0.25 if entity @s[dx=0] positioned ~0.25 ~0.25 ~0.25 run scoreboard players set @s cl.HitBySpell 100
+execute as @e[dx=0,tag=!this,type=!#classes:nontarget,type=!#classes:waterproof,tag=!summoned,tag=!cl.Owned] positioned ~-0.25 ~-0.25 ~-0.25 if entity @s[dx=0] positioned ~0.25 ~0.25 ~0.25 run function classes:main/loot_table/main
 execute as @e[dx=0,tag=!this,type=!#classes:nontarget,tag=!cl.Owned] positioned ~-0.25 ~-0.25 ~-0.25 if entity @s[dx=0] positioned ~0.25 ~0.25 ~0.25 run data merge entity @s {Fire:1}
 execute as @e[dx=0,tag=!this,type=#classes:undead,type=!#classes:fireproof,type=!#classes:nontarget,type=!#classes:waterproof,tag=!summoned,tag=!cl.Owned] positioned ~-0.25 ~-0.25 ~-0.25 if entity @s[dx=1] positioned ~0.25 ~0.25 ~0.25 run effect give @s instant_health 1 1 true
 execute as @e[dx=0,tag=!this,type=!#classes:fireproof,type=!#classes:undead,type=!#classes:nontarget,type=!#classes:waterproof,type=!enderman,tag=!summoned,tag=!cl.Owned] positioned ~-0.25 ~-0.25 ~-0.25 if entity @s[dx=1] positioned ~0.25 ~0.25 ~0.25 run effect give @s instant_damage 1 1 true

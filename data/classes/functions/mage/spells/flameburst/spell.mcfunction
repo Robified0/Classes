@@ -3,6 +3,10 @@ execute if entity @s[scores={cl.Mana=..2}] run function classes:mage/mana/nomana
 
 #Damage nearby entities
 execute at @s[scores={cl.Mana=3..}] as @e[type=!#classes:nontarget,type=!#classes:fireproof,distance=..6,sort=random,tag=!summoned] run tag @s add FlameBurst
+
+#Process loot_tables before damage
+execute at @s[scores={cl.Mana=3..},distance=..6] as @e[tag=FlameBurst] run scoreboard players set @s cl.HitBySpell 100
+execute as @s[scores={cl.Mana=3..},distance=..6] as @e[tag=FlameBurst] run function classes:main/loot_table/main
 execute at @s[scores={cl.Mana=3..}] as @e[tag=FlameBurst,distance=..6] run data merge entity @s {Fire:100}
 execute as @s[scores={cl.Mana=3..}] at @s run effect give @e[type=!#classes:undead,tag=FlameBurst,distance=..6] instant_damage 1 1 false
 execute as @s[scores={cl.Mana=3..}] at @s run effect give @e[type=#classes:undead,tag=FlameBurst,distance=..6] instant_health 1 1 false
@@ -10,9 +14,6 @@ execute as @s[scores={cl.Mana=3..}] at @e[tag=FlameBurst,distance=..6] run parti
 
 #Cast Spell Sound Effect
 execute if entity @s[scores={cl.Mana=3..}] at @s run function classes:mage/spells/all/cast
-
-#Hit by player detection
-execute at @s[scores={cl.Mana=3..},distance=..6] as @e[tag=FlameBurst] run scoreboard players set @s cl.HitBySpell 100
 
 #Sound effect
 execute as @s[scores={cl.Mana=3..}] at @e[tag=FlameBurst,distance=..6] run playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 0.5

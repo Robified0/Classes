@@ -1,7 +1,3 @@
-#Handle scoreboard to time when last hit by player
-scoreboard players remove @s[scores={cl.HitBySpell=1..}] cl.HitBySpell 1
-scoreboard players reset @s[scores={cl.HitBySpell=..0}] cl.HitBySpell
-
 ### The mobs are split up to avoid adding to look up times, and mitigate command run per tick ###
 
 #Hostile Mobs
