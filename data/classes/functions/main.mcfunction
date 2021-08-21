@@ -7,9 +7,8 @@
 #     which is used for specific spells!                          #
 ###################################################################
 
-#Handle scoreboard to time when last hit by player, and run XP convertor function
-scoreboard players remove @s[scores={cl.HitBySpell=1..}] cl.HitBySpell 1
-scoreboard players reset @s[scores={cl.HitBySpell=..0}] cl.HitBySpell
+#Handle scoreboard to time when last hit by player, and handle loot_table
+scoreboard players remove @e[scores={cl.HitBySpell=1..}] cl.HitBySpell 1
 
 #Function for all new players, to ensure scoreboards are set up
 execute if entity @a[tag=!Joined] as @a[tag=!Joined] run function classes:operations/newplayer
@@ -56,12 +55,6 @@ execute as @e[type=item,nbt={Item:{id:"minecraft:acacia_button",Count:1b,tag:{XP
 execute as @e[type=#classes:ownable,tag=!cl.Owned] if data entity @s Owner run tag @s add cl.Owned
 execute as @e[type=iron_golem,tag=!cl.Owned,nbt={PlayerCreated:1b}] run tag @s add cl.Owned
 execute as @e[type=snow_golem,tag=!cl.Owned,nbt={PlayerCreated:1b}] run tag @s add cl.Owned
-
-#Reset scoreboards
-scoreboard players remove @a[scores={cl.Cooldown=1..}] cl.Cooldown 1
-scoreboard players set @a cl.rightClick 0
-scoreboard players set @a cl.Sneaking 0
-scoreboard players set @a cl.Moved 0
 
 #Mana Regen (subject to change) ManaRegenSec is 20 * # of seconds for point of Mana to regen every # of seconds (60 = 1 point of Mana every second)
 scoreboard players add @a[scores={cl.ManaRegenSec=..59,cl.Mana=..9}] cl.ManaRegenSec 1
