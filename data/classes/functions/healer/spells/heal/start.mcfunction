@@ -1,5 +1,5 @@
 #Not Enough Mana
-execute if entity @s[scores={cl.Mana=..0}] run function classes:mage/mana/nomana
+execute if entity @s[scores={cl.Mana=0}] run function classes:mage/mana/nomana
 
 #Only change function line for each different spell
 execute if entity @s[scores={cl.Mana=1..}] run scoreboard players add system cl.slo_id 1
@@ -8,8 +8,12 @@ execute if entity @s[scores={cl.Mana=1..}] run summon minecraft:marker ~ ~ ~ {Ag
 execute if entity @s[scores={cl.Mana=1..}] as @e[type=marker,tag=slowcast,tag=new,tag=heal,limit=1] run function classes:healer/spells/heal/zprivate/setup
 execute if entity @s[scores={cl.Mana=1..}] run tag @s remove this
 
-#Sound Effect
+#Cast Spell Sound Effect
+execute if entity @s[scores={cl.Mana=1..}] at @s run function classes:mage/spells/all/cast
 
+#Particles
+execute if entity @s[scores={cl.Mana=1..}] at @s run particle minecraft:end_rod ~ ~ ~ 0.5 1 0.5 0.01 10 force
+execute if entity @s[scores={cl.Mana=1..}] at @s run particle minecraft:happy_villager ~ ~ ~ 0.5 1 0.5 0.08 50 force
 
 #Cooldown
 execute as @s[scores={cl.Mana=1..}] run scoreboard players set @s cl.Cooldown 20

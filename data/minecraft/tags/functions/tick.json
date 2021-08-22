@@ -3,6 +3,7 @@
 		"classes:main",
 		"classes:mage/spells/aoeeffects",
 		"classes:mage/spells/main",
+		"classes:healer/spells/main",
 		"classes:mage/spells/effects",
 		"classes:mage/spells/torch/zprivate/main",
 		"classes:mage/spells/fireball/zprivate/main",
@@ -12,6 +13,8 @@
 		"classes:mage/spells/poison/zprivate/main",
 		"classes:mage/spells/light/zprivate/main",
 		"classes:mage/spells/teleport/zprivate/main",
-		"classes:items/manapotion/main"
+		"classes:healer/spells/heal/zprivate/main",
+		"classes:items/manapotion/main",
+		"classes:end"
 	]
 }

@@ -9,13 +9,14 @@
 
 #Handle scoreboard to time when last hit by player, and handle loot_table
 scoreboard players remove @e[scores={cl.HitBySpell=1..}] cl.HitBySpell 1
+scoreboard players reset @e[scores={cl.HitBySpell=..0}] cl.HitBySpell
 
 #Function for all new players, to ensure scoreboards are set up
 execute if entity @a[tag=!Joined] as @a[tag=!Joined] run function classes:operations/newplayer
 
 #Make sure equipSpell is always enabled for all players when reading/holding spellbook.
-scoreboard players enable @a[predicate=classes:checkarmor/mage/spellbook] cl.equipSpell
-scoreboard players reset @a[predicate=!classes:checkarmor/mage/spellbook] cl.equipSpell
+#scoreboard players enable @a[predicate=classes:checkarmor/mage/spellbook] cl.equipSpell
+#scoreboard players reset @a[predicate=!classes:checkarmor/mage/spellbook] cl.equipSpell
 
 #Super hacky, will delete - gives items after selection of class.
 execute as @a[scores={cl.Class=3},tag=!Equipped] run function classes:operations/give
@@ -28,14 +29,7 @@ execute as @a[gamemode=!creative,gamemode=!spectator,scores={cl.Class=3}] run fu
 execute if entity @a[scores={cl.Sneaking=1..,cl.rightClick=1..,cl.Class=3}] as @a[scores={cl.Sneaking=1..,cl.rightClick=1..,cl.Class=3}] run function classes:mage/system/wand/switch/switch
 
 #Healer Switching Spells
-#execute as @a[scores={cl.Sneaking=1..,cl.rightClick=1..,cl.Class=4,cl.currSpellSel=5}] run function classes:healer/wand/basewand/switch/slot1
-#execute as @a[scores={cl.Sneaking=1..,cl.rightClick=1..,cl.Class=4,cl.currSpellSel=1}] run function classes:healer/wand/basewand/switch/slot2
-#execute as @a[scores={cl.Sneaking=1..,cl.rightClick=1..,cl.Class=4,cl.currSpellSel=2}] run function classes:healer/wand/basewand/switch/slot3
-#execute as @a[scores={cl.Sneaking=1..,cl.rightClick=1..,cl.Class=4,cl.currSpellSel=3}] run function classes:healer/wand/basewand/switch/slot4
-#execute as @a[scores={cl.Sneaking=1..,cl.rightClick=1..,cl.Class=4,cl.currSpellSel=4}] run function classes:healer/wand/basewand/switch/slot5
-#execute as @a[scores={cl.Sneaking=1..,cl.rightClick=1..,cl.Class=4,cl.currSpellSel=1..5}] run scoreboard players add @s cl.currSpellSel 1
-#execute as @a[scores={cl.Sneaking=1..,cl.rightClick=1..,cl.Class=4,cl.currSpellSel=6}] run scoreboard players set @s cl.currSpellSel 1
-#execute as @a[scores={cl.Sneaking=1..,cl.rightClick=1..,cl.Class=4,cl.currSpellSel=0}] run scoreboard players set @s cl.currSpellSel 1
+execute if entity @a[scores={cl.Sneaking=1..,cl.rightClick=1..,cl.Class=4}] as @a[scores={cl.Sneaking=1..,cl.rightClick=1..,cl.Class=4}] run function classes:healer/system/wand/switch/switch
 
 #Check for players selecting "Clear Wand" in book
 execute as @a[scores={cl.equipSpell=-1}] run function classes:operations/clearwand
