@@ -12,4 +12,4 @@ execute if score @s cl.s.BedofCoals matches 4 run function classes:operations/em
 execute if score @s cl.s.BedofCoals matches 5 run function classes:operations/emptyslot/slot5
 
 #Run function to increase current slot # to prepare for next spell equip
-execute if entity @s[tag=BedofCoals] as @s run function classes:operations/increasescore
+execute if entity @s[tag=cl.s.BedofCoals] as @s run function classes:operations/increasescore
