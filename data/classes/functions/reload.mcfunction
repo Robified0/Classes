@@ -1,5 +1,13 @@
 ##################Set up scoreboards######################
 
+scoreboard objectives add motion_x1 dummy
+scoreboard objectives add motion_y1 dummy
+scoreboard objectives add motion_z1 dummy
+
+scoreboard objectives add motion_x2 dummy
+scoreboard objectives add motion_y2 dummy
+scoreboard objectives add motion_z2 dummy
+
 #Set up trigger for equipping spells
 scoreboard objectives add cl.equipSpell trigger
 
@@ -78,11 +86,21 @@ scoreboard objectives add cl.s.DiaFlesh dummy
 scoreboard objectives add cl.s.IronGolem dummy
 scoreboard objectives add cl.s.Light dummy
 scoreboard objectives add cl.s.Teleport dummy
-scoreboard objectives add cl.s.WindWard dummy
+scoreboard objectives add cl.s.Shield dummy
+
+#Shield Spell Objectives
+scoreboard objectives add cl.e.Shield dummy
+scoreboard objectives add cl.e.Shield.m dummy
+scoreboard objectives add cl.e.Shield.m0 dummy
+scoreboard objectives add cl.e.Shield.m1 dummy
+scoreboard objectives add cl.e.Shield.m2 dummy
+scoreboard objectives add cl.e.Shield.p0 dummy
+scoreboard objectives add cl.e.Shield.p1 dummy
+scoreboard objectives add cl.e.Shield.p2 dummy
 
 #Healer Spells
-scoreboard objectives add cl.s.FirstAid dummy
 scoreboard objectives add cl.s.Heal dummy
+scoreboard objectives add cl.s.Guard dummy
 scoreboard objectives add cl.s.Inspire dummy
 scoreboard objectives add cl.s.FireResist dummy
 scoreboard objectives add cl.s.SpeedBoost dummy

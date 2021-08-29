@@ -9,3 +9,6 @@ scoreboard players set @s cl.equipSpell 0
 
 #Reset loadSpell back to 1 (allowing re-equipping of spells)
 scoreboard players set @s cl.loadSpell 0
+
+#Reset loadSpell back to 1 (allowing re-equipping of spells)
+scoreboard players set @s cl.currSpellSel 5

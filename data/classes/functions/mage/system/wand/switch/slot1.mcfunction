@@ -20,7 +20,7 @@ execute as @s[scores={cl.s.DiaFlesh=1},nbt={SelectedItem:{id:"minecraft:warped_f
 execute as @s[scores={cl.s.IronGolem=1},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Wand:1b}}}] run function classes:mage/spells/irongolem/select
 execute as @s[scores={cl.s.Light=1},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Wand:1b}}}] run function classes:mage/spells/light/select
 execute as @s[scores={cl.s.Teleport=1},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Wand:1b}}}] run function classes:mage/spells/teleport/select
-execute as @s[scores={cl.s.WindWard=1},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Wand:1b}}}] run function classes:mage/spells/windward/select
+execute as @s[scores={cl.s.Shield=1},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Wand:1b}}}] run function classes:mage/spells/shield/select
 
 #Check for empty slot
 execute as @s[scores={cl.emptySlot1=1},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Wand:1b}}}] run title @s times 20 100 20

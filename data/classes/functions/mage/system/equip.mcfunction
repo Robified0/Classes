@@ -35,6 +35,7 @@ execute if entity @s[scores={cl.s.IronGolem=0,cl.equipSpell=304}] run function c
 #Perform the equipping of magic/non-elemental spells
 execute if entity @s[scores={cl.s.Light=0,cl.equipSpell=400}] run function classes:mage/spells/light/equip
 execute if entity @s[scores={cl.s.Teleport=0,cl.equipSpell=401}] run function classes:mage/spells/teleport/equip
+execute if entity @s[scores={cl.s.Shield=0,cl.equipSpell=402}] run function classes:mage/spells/shield/equip
 
 #Reset equipSpell back to 0
 scoreboard players set @s cl.equipSpell 0

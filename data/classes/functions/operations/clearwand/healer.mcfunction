@@ -1,5 +1,5 @@
 #Clear Healing cl.s.s
-scoreboard players set @s cl.s.FirstAid 0
+scoreboard players set @s cl.s.Guard 0
 scoreboard players set @s cl.s.Heal 0
 scoreboard players set @s cl.s.Inspire 0
 scoreboard players set @s cl.s.FireResist 0

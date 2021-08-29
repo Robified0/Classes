@@ -24,6 +24,7 @@ execute as @a[scores={cl.Class=3}] run tag @s add Equipped
 
 #Display Mana bar to players
 execute as @a[gamemode=!creative,gamemode=!spectator,scores={cl.Class=3}] run function classes:mage/mana/mana
+execute as @a[gamemode=!creative,gamemode=!spectator,scores={cl.Class=4}] run function classes:mage/mana/mana
 
 #Mage Switching spells
 execute if entity @a[scores={cl.Sneaking=1..,cl.rightClick=1..,cl.Class=3}] as @a[scores={cl.Sneaking=1..,cl.rightClick=1..,cl.Class=3}] run function classes:mage/system/wand/switch/switch
@@ -54,3 +55,5 @@ execute as @e[type=snow_golem,tag=!cl.Owned,nbt={PlayerCreated:1b}] run tag @s a
 scoreboard players add @a[scores={cl.ManaRegenSec=..59,cl.Mana=..9}] cl.ManaRegenSec 1
 scoreboard players add @a[scores={cl.ManaRegenSec=60,cl.Mana=..9}] cl.Mana 1
 scoreboard players set @a[scores={cl.ManaRegenSec=60}] cl.ManaRegenSec 1
+
+execute as @e[tag=motion_projectile,tag=!motion_added] at @s rotated as @p run function classes:operations/apply_motion

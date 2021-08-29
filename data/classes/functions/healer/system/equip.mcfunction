@@ -4,5 +4,8 @@ execute if entity @s[scores={cl.loadSpell=0}] run scoreboard players set @s cl.l
 #Perform the equipping of healing spells
 execute if entity @s[scores={cl.s.Heal=0,cl.equipSpell=500}] run function classes:healer/spells/heal/equip
 
+#Perform the equipping of healing spells
+execute if entity @s[scores={cl.s.Guard=0,cl.equipSpell=501}] run function classes:healer/spells/guard/equip
+
 #Reset equipSpell back to 0
 scoreboard players set @s cl.equipSpell 0

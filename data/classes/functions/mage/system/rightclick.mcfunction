@@ -27,6 +27,7 @@ execute if entity @s[scores={cl.s.IronFlesh=1..,cl.Mage.Armor=0},nbt={SelectedIt
 execute if entity @s[scores={cl.s.DiaFlesh=1..,cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"DiaFlesh"}}}] at @s run function classes:mage/spells/diamondflesh/spell
 execute if entity @s[scores={cl.s.IronGolem=1..,cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"IronGolem"}}}] at @s run function classes:mage/spells/irongolem/spell
 
-#Light
+#Generic Magic Spells
 execute if entity @s[scores={cl.s.Light=1..,cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"Light"}}}] at @s run function classes:mage/spells/light/spell
 execute if entity @s[scores={cl.s.Teleport=1..,cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"Teleport"}}}] at @s run function classes:mage/spells/teleport/spell
+execute if entity @s[scores={cl.s.Shield=1..,cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"Shield"}}}] at @s run function classes:mage/spells/shield/spell

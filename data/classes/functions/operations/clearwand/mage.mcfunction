@@ -21,7 +21,7 @@ scoreboard players set @s cl.s.IronGolem 0
 scoreboard players set @s cl.s.Fireball 0
 scoreboard players set @s cl.s.Light 0
 scoreboard players set @s cl.s.Teleport 0
-scoreboard players set @s cl.s.WindWard 0
+scoreboard players set @s cl.s.Shield 0
 
 #Set empty slots
 scoreboard players set @s cl.emptySlot1 1

@@ -47,5 +47,5 @@ execute if entity @e[type=iron_golem,tag=summoned] run function classes:mage/eff
 #Countdown/kill Light Spell marker
 execute if entity @e[type=marker,tag=light] run function classes:mage/effects/light
 
-#Wind Ward
-execute if entity @e[tag=WindWard] as @e[tag=WindWard] run function classes:mage/effects/windward
+#Cold Shield - (tag=ColdShield)
+execute if entity @a[scores={cl.e.Shield=-10..}] run function classes:healer/effects/shield
