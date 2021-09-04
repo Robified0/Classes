@@ -15,6 +15,7 @@
 		"classes:mage/spells/light/zprivate/main",
 		"classes:mage/spells/teleport/zprivate/main",
 		"classes:healer/spells/heal/zprivate/main",
+		"classes:healer/spells/satiate/zprivate/main",
 		"classes:items/manapotion/main",
 		"classes:end"
 	]

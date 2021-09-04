@@ -1,12 +1,16 @@
 ##################Set up scoreboards######################
 
-scoreboard objectives add motion_x1 dummy
-scoreboard objectives add motion_y1 dummy
-scoreboard objectives add motion_z1 dummy
+scoreboard objectives add cl.motion_x1 dummy
+scoreboard objectives add cl.motion_y1 dummy
+scoreboard objectives add cl.motion_z1 dummy
 
-scoreboard objectives add motion_x2 dummy
-scoreboard objectives add motion_y2 dummy
-scoreboard objectives add motion_z2 dummy
+scoreboard objectives add cl.motion_x2 dummy
+scoreboard objectives add cl.motion_y2 dummy
+scoreboard objectives add cl.motion_z2 dummy
+
+scoreboard objectives add cl.power_0 dummy
+scoreboard objectives add cl.power_1 dummy
+scoreboard objectives add cl.power_2 dummy
 
 #Set up trigger for equipping spells
 scoreboard objectives add cl.equipSpell trigger
@@ -54,6 +58,11 @@ scoreboard objectives add cl.e.StoneFlesh dummy
 scoreboard objectives add cl.e.IronFlesh dummy
 scoreboard objectives add cl.e.DiaFlesh dummy
 scoreboard objectives add cl.e.Light dummy
+scoreboard objectives add cl.e.Inspire dummy
+scoreboard objectives add cl.e.FireResist dummy
+scoreboard objectives add cl.e.SpeedBoost dummy
+scoreboard objectives add cl.e.CureEffects dummy
+scoreboard objectives add cl.e.Vitality dummy
 
 #Slowcast scoreboards (credit to CloudWolf)
 scoreboard objectives add cl.slowcast dummy
@@ -91,12 +100,6 @@ scoreboard objectives add cl.s.Shield dummy
 #Shield Spell Objectives
 scoreboard objectives add cl.e.Shield dummy
 scoreboard objectives add cl.e.Shield.m dummy
-scoreboard objectives add cl.e.Shield.m0 dummy
-scoreboard objectives add cl.e.Shield.m1 dummy
-scoreboard objectives add cl.e.Shield.m2 dummy
-scoreboard objectives add cl.e.Shield.p0 dummy
-scoreboard objectives add cl.e.Shield.p1 dummy
-scoreboard objectives add cl.e.Shield.p2 dummy
 
 #Healer Spells
 scoreboard objectives add cl.s.Heal dummy
@@ -106,8 +109,8 @@ scoreboard objectives add cl.s.FireResist dummy
 scoreboard objectives add cl.s.SpeedBoost dummy
 scoreboard objectives add cl.s.CureEffects dummy
 scoreboard objectives add cl.s.Satiate dummy
-scoreboard objectives add cl.s.HealRing dummy
-scoreboard objectives add cl.s.GiftHealth dummy
+scoreboard objectives add cl.s.HealCircle dummy
+scoreboard objectives add cl.s.Vitality dummy
 scoreboard objectives add cl.s.CleanseArea dummy
 scoreboard objectives add cl.s.HolyStrike dummy
 scoreboard objectives add cl.s.HealerBoon dummy

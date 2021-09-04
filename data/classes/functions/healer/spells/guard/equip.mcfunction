@@ -1,5 +1,5 @@
 #Display message if player hasn't learned the spell.
-execute unless entity @s[tag=cl.s.Guard] run function classes:mage/spells/all/noknowledge
+execute unless entity @s[tag=cl.s.Guard] run function classes:healer/spells/all/noknowledge
 
 #Copy current slot # to spell scoreboard, only if player knows spell.
 execute if entity @s[tag=cl.s.Guard] run scoreboard players operation @s cl.s.Guard = @s cl.loadSpell

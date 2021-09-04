@@ -6,5 +6,5 @@ item replace entity @s[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick
 
 #Title - Show spell name on select
 title @s times 20 100 20
-title @s subtitle {"text":"(3 Mana)","color":"dark_aqua"}
-title @s title {"text":"Flame Burst","color":"red"}
+title @s subtitle {"text":"Scorch all enemies within 6 blocks.","color":"dark_aqua"}
+title @a title ["",{"text":"Flame Burst","color":"red"},{"text":" (3 Mana)","color":"#265ED6"}]

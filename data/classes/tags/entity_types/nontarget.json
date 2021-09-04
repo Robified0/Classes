@@ -1,36 +1,6 @@
 {
   "values":[
-  "minecraft:axolotl",
-	"minecraft:item_frame",
-	"minecraft:armor_stand",
-	"minecraft:area_effect_cloud",
-	"minecraft:painting",
 	"minecraft:player",
-	"minecraft:potion",
-  "minecraft:shulker_bullet",
-  "minecraft:small_fireball",
-  "minecraft:ender_pearl",
-  "minecraft:tnt",
-  "minecraft:snowball",
-  "minecraft:wither_skull",
-  "#minecraft:arrows",
-  "minecraft:marker",
-  "minecraft:item",
-  "minecraft:fishing_bobber",
-  "minecraft:fireball",
-  "minecraft:glow_item_frame",
-  "minecraft:firework_rocket",
-  "minecraft:eye_of_ender",
-  "minecraft:experience_orb",
-  "minecraft:boat",
-  "minecraft:trident",
-  "minecraft:minecart",
-  "minecraft:furnace_minecart",
-  "minecraft:tnt_minecart",
-  "minecraft:hopper_minecart",
-  "minecraft:chest_minecart",
-  "minecraft:leash_knot",
-  "minecraft:end_crystal",
-  "minecraft:dragon_fireball"
+  "#classes:nonmob"
   ]
 }

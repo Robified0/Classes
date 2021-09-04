@@ -10,5 +10,20 @@
 #                                      #
 ########################################
 
-#Wind Ward
+#Guard
 execute if entity @e[tag=Guard] as @e[tag=Guard] run function classes:healer/effects/guard
+
+#Inspire
+execute if entity @e[scores={cl.e.Inspire=1..}] as @e[scores={cl.e.Inspire=1..}] run function classes:healer/effects/inspire
+
+#Fire Resist
+execute if entity @e[scores={cl.e.FireResist=1..}] as @e[scores={cl.e.FireResist=1..}] run function classes:healer/effects/fireresist
+
+#Speed Boost
+execute if entity @e[scores={cl.e.SpeedBoost=1..}] as @e[scores={cl.e.SpeedBoost=1..}] run function classes:healer/effects/speedboost
+
+#Speed Boost
+execute if entity @e[scores={cl.e.CureEffects=1..}] as @e[scores={cl.e.CureEffects=1..}] run function classes:healer/effects/cureeffects
+
+#Vitality
+execute if entity @e[scores={cl.e.Vitality=1..}] as @e[scores={cl.e.Vitality=1..}] run function classes:healer/effects/vitality

@@ -4,7 +4,7 @@ A datapack for an RPG classes system in Minecraft.
 ## !! Important Note !!
 This datapack is under heavy construction, and only the framework is being developed at this time. It is only being developed under Minecraft 1.17+, as it relies heavily on the /item command, which was only added in 1.17!
 
-**The current build is *playable*, but it's just the Mage at this time, and item crafting is non-existant.
+**The current build is *playable*, but it's just the Mage at this time, and item crafting is a work in progress.
 
 This is also my first foray into GitHub, so I'm using this as my chance to experiment and get used to the workflows!
 
@@ -37,7 +37,6 @@ A tanky character with more health, who gains extra benefits when shielding, and
 The Miner gets passive bonuses to a variety of things. The deeper they dig, the tougher they are. Their innate sense of mining bestows them the ability to get more ores from deposits than traditional miners.
 
 
-**Beastmaster:**
+**Ranger:**
 
-The Beastmaster naturally grants friendly mobs around them passive bonuses to health and damage resistance. Any beneficial potion a Beastmaster drinks, confers the benefit to surrounding friendly animals.
-
+The Ranger naturally grants tamed animals around them passive bonuses to health and damage resistance. Any beneficial potion a Ranger drinks, confers the benefit to surrounding tamed animals. They are also able to salvage arrows in the ground.
