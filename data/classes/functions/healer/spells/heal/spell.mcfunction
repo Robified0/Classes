@@ -10,7 +10,7 @@ execute unless entity @s[scores={cl.Mana=1..},x_rotation=87..90] positioned ~ ~1
 #If Player is looking at ground:
 execute if entity @s[scores={cl.Mana=1..},x_rotation=87..90] run effect give @s minecraft:instant_health 2 0 true
 
-#Play sound effect.
+#Play sound effect (played multiple times to amplify volume. Mojang, make this LOUDER!)
 execute if entity @s[scores={cl.Mana=1..},x_rotation=87..90] at @s run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 10 1.5
 execute if entity @s[scores={cl.Mana=1..},x_rotation=87..90] at @s run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 10 1.5
 execute if entity @s[scores={cl.Mana=1..},x_rotation=87..90] at @s run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 10 1.5
