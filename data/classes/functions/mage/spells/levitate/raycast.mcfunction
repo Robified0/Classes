@@ -5,16 +5,16 @@ particle cloud ^-0.4 ^ ^0.3 0.1 0.1 0.1 0.05 2 force
 execute at @s run playsound minecraft:entity.horse.breathe player @a ~ ~ ~ 0.5
 
 #Do these things when spell hits
-execute as @e[dx=0,tag=!this,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] positioned ~-0.25 ~-0.25 ~-0.25 if entity @s[dx=0] positioned ~0.25 ~0.25 ~0.25 run scoreboard players set @s cl.HitBySpell 100
-execute as @e[dx=0,tag=!this,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] positioned ~-0.25 ~-0.25 ~-0.25 if entity @s[dx=0] positioned ~0.25 ~0.25 ~0.25 run function classes:main/loot_table/main
-execute as @e[dx=0,tag=!this,tag=!summoned,tag=!cl.Owned] positioned ~-0.25 ~-0.25 ~-0.25 if entity @s[dx=0] positioned ~0.25 ~0.25 ~0.25 run effect give @s minecraft:levitation 1 10 false
-execute as @e[dx=0,tag=!this,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] positioned ~-0.25 ~-0.25 ~-0.25 if entity @s[dx=0] positioned ~0.25 ~0.25 ~0.25 at @s run particle minecraft:cloud ~ ~ ~ 0.5 0.5 0.5 0.1 30 normal
-execute as @e[dx=0,tag=!this,type=!item,nbt={AngerTime:0},tag=!summoned,tag=!cl.Owned] positioned ~-0.25 ~-0.25 ~-0.25 if entity @s[dx=0] positioned ~0.25 ~0.25 ~0.25 run data modify entity @s AngryAt set from entity @p[scores={cl.Class=3}] UUID
-execute as @e[dx=0,tag=!this,type=#classes:neutral,nbt=!{Brain:{memories:{"minecraft:angry_at":{}}}},tag=!summoned,tag=!cl.Owned] positioned ~-0.25 ~-0.25 ~-0.25 if entity @s[dx=0] positioned ~0.25 ~0.25 ~0.25 run data modify entity @s Brain.memories."minecraft:angry_at".value set from entity @p[scores={cl.Class=3}] UUID
+execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] run scoreboard players set @s cl.HitBySpell 100
+execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] run function classes:main/loot_table/main
+execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,tag=!summoned,tag=!cl.Owned] run effect give @s minecraft:levitation 1 10 false
+execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] at @s run particle minecraft:cloud ~ ~ ~ 0.5 0.5 0.5 0.1 30 normal
+execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!item,nbt={AngerTime:0},tag=!summoned,tag=!cl.Owned] run data modify entity @s AngryAt set from entity @p[scores={cl.Class=3}] UUID
+execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:neutral,nbt=!{Brain:{memories:{"minecraft:angry_at":{}}}},tag=!summoned,tag=!cl.Owned] run data modify entity @s Brain.memories."minecraft:angry_at".value set from entity @p[scores={cl.Class=3}] UUID
 
 #Edit tag/spellname and uncomment if you want it to end when it hits one target
-execute as @e[dx=0,tag=!this,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] positioned ~-0.25 ~-0.25 ~-0.25 if entity @s[dx=0] positioned ~0.25 ~0.25 ~0.25 run particle minecraft:cloud ~ ~ ~ 1 10 1 0.01 100 force @a
-execute as @e[dx=0,tag=!this,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] positioned ~-0.25 ~-0.25 ~-0.25 if entity @s[dx=0] positioned ~0.25 ~0.25 ~0.25 run kill @e[type=marker,tag=levitate,sort=nearest,limit=1]
+execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] run particle minecraft:cloud ~ ~ ~ 1 10 1 0.01 100 force @a
+execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] run kill @e[type=marker,tag=levitate,sort=nearest,limit=1]
 
 #Only change paths for spell
 scoreboard players remove #temp cl.slowcast 1

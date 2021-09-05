@@ -13,7 +13,6 @@ execute if entity @s[scores={cl.slo_dst=1}] run kill @s
 #Only change filepaths for spell
 scoreboard players remove #temp cl.slowcast 1
 execute if score #temp cl.slowcast matches ..-1 run tp @s ~ ~ ~
-#scoreboard players set @p[tag=Teleport] cl.Cooldown 20
 execute if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ ~ lava run kill @s
 execute if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ ~ #classes:air run function classes:mage/spells/teleport/raycast
 execute if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 unless block ~ ~ ~ #classes:air run function classes:mage/spells/teleport/zprivate/end

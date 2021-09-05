@@ -27,3 +27,6 @@ execute if entity @e[scores={cl.e.CureEffects=1..}] as @e[scores={cl.e.CureEffec
 
 #Vitality
 execute if entity @e[scores={cl.e.Vitality=1..}] as @e[scores={cl.e.Vitality=1..}] run function classes:healer/effects/vitality
+
+#Bless
+execute if entity @e[scores={cl.e.Bless=1..}] as @e[scores={cl.e.Bless=1..}] run function classes:healer/effects/bless

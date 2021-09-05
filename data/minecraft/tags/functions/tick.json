@@ -18,6 +18,7 @@
 		"classes:healer/spells/satiate/zprivate/main",
 		"classes:healer/spells/vitality/zprivate/main",
 		"classes:healer/spells/bless/zprivate/main",
+		"classes:healer/spells/holystrike/zprivate/main",
 		"classes:items/manapotion/main",
 		"classes:end"
 	]

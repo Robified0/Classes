@@ -8,3 +8,5 @@ execute if entity @s[scores={cl.s.CureEffects=1..,cl.Mage.Armor=0},nbt={Selected
 execute if entity @s[scores={cl.s.Satiate=1..,cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"Satiate"}}}] at @s run function classes:healer/spells/satiate/spell
 execute if entity @s[scores={cl.s.HealCircle=1..,cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"HealCircle"}}}] at @s run function classes:healer/spells/healcircle/spell
 execute if entity @s[scores={cl.s.Vitality=1..,cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"Vitality"}}}] at @s run function classes:healer/spells/vitality/spell
+execute if entity @s[scores={cl.s.Bless=1..,cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"Bless"}}}] at @s run function classes:healer/spells/bless/spell
+execute if entity @s[scores={cl.s.HolyStrike=1..,cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"HolyStrike"}}}] at @s run function classes:healer/spells/holystrike/spell
