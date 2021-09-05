@@ -1,5 +1,5 @@
 #Not Enough Mana
-execute if entity @s[scores={cl.Mana=..2}] run function classes:mage/mana/nomana
+execute if entity @s[scores={cl.Mana=..2}] run function classes:main/mana_system/nomana
 
 #Damage nearby entities
 execute at @s[scores={cl.Mana=3..}] as @e[type=!#classes:nontarget,type=!#classes:fireproof,distance=..6,sort=random,tag=!summoned] run tag @s add FlameBurst
@@ -21,13 +21,13 @@ execute as @s[scores={cl.Mana=3..}] at @s unless entity @e[tag=FlameBurst,distan
 
 #Spell Cast Notification
 execute as @s[scores={cl.Mana=3..}] if entity @e[tag=FlameBurst,distance=..6] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Flame Burst!","bold":true,"color":"#FF3034"}]
-execute as @s[scores={cl.Mana=3..}] unless entity @e[tag=FlameBurst,distance=..6] run function classes:mage/mana/noneinrange
+execute as @s[scores={cl.Mana=3..}] unless entity @e[tag=FlameBurst,distance=..6] run function classes:main/mana_system/noneinrange
 
 #Cooldown
 execute as @s[scores={cl.Mana=3..}] if entity @e[tag=FlameBurst,distance=..6] run scoreboard players set @s cl.Cooldown 20
 
-#Mana Removal
-execute as @s[scores={cl.Mana=3..}] if entity @e[tag=FlameBurst,distance=..6] run scoreboard players remove @s cl.Mana 3
-
 #Remove Tag
 execute as @s[scores={cl.Mana=3..}] run tag @e[tag=FlameBurst,distance=..6] remove FlameBurst
+
+#Mana Removal
+execute as @s[scores={cl.Mana=3..}] if entity @e[tag=FlameBurst,distance=..6] run scoreboard players remove @s cl.Mana 3

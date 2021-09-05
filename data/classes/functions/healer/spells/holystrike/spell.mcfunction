@@ -1,5 +1,5 @@
 #Check for Mana first
-execute unless entity @s[scores={cl.Mana=2..}] run function classes:mage/mana/nomana
+execute unless entity @s[scores={cl.Mana=2..}] run function classes:main/mana_system/nomana
 
 ##### If Mana is good, continue.
 ### calculations based on a 0.5 raycast stepsize.

@@ -1,5 +1,5 @@
 #Not Enough Mana
-execute if entity @s[scores={cl.Mana=..2}] run function classes:mage/mana/nomana
+execute if entity @s[scores={cl.Mana=..2}] run function classes:main/mana_system/nomana
 
 #Give Player Tag for particle effect
 execute as @s[scores={cl.Mana=3..}] run tag @s add SlowFall

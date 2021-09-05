@@ -11,7 +11,9 @@ execute unless entity @s[scores={cl.Mana=1..},x_rotation=87..90] positioned ~ ~1
 execute if entity @s[scores={cl.Mana=1..},x_rotation=87..90] run effect give @s minecraft:instant_health 2 0 true
 
 #Play sound effect.
-execute if entity @s[scores={cl.Mana=1..},x_rotation=87..90] at @s run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 2 1.5
+execute if entity @s[scores={cl.Mana=1..},x_rotation=87..90] at @s run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 10 1.5
+execute if entity @s[scores={cl.Mana=1..},x_rotation=87..90] at @s run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 10 1.5
+execute if entity @s[scores={cl.Mana=1..},x_rotation=87..90] at @s run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 10 1.5
 
 #Particles
 execute if entity @s[scores={cl.Mana=1..},x_rotation=87..90] at @s run particle minecraft:wax_off ~ ~ ~ 0.5 1 0.5 0.01 50 force
@@ -20,8 +22,8 @@ execute if entity @s[scores={cl.Mana=1..},x_rotation=87..90] at @s run particle 
 #Add Cooldown
 execute if entity @s[scores={cl.Mana=1..},x_rotation=87..90] run scoreboard players set @s cl.Cooldown 20
 
-#Mana Depletion
-execute if entity @s[scores={cl.Mana=1..},x_rotation=87..90] run scoreboard players remove @s cl.Mana 1
-
 #Spell Cast Notification
 execute if entity @s[scores={cl.Mana=1..}] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Heal!","bold":true,"color":"green"}]
+
+#Mana Depletion
+execute if entity @s[scores={cl.Mana=1..},x_rotation=87..90] run scoreboard players remove @s cl.Mana 1

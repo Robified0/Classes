@@ -1,5 +1,5 @@
 #Not Enough Mana
-execute if entity @s[scores={cl.Mana=..3}] run function classes:mage/mana/nomana
+execute if entity @s[scores={cl.Mana=..3}] run function classes:main/mana_system/nomana
 
 #Add score for tracking
 execute if entity @s[scores={cl.Mana=4..}] at @s run summon marker ~ ~1 ~ {Tags:["CureEffects","summoned"]}

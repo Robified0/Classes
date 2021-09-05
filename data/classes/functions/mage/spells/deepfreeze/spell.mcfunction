@@ -1,5 +1,5 @@
 #Not Enough Mana
-execute if entity @s[scores={cl.Mana=..4}] run function classes:mage/mana/nomana
+execute if entity @s[scores={cl.Mana=..4}] run function classes:main/mana_system/nomana
 
 #Damage nearby
 execute as @s[scores={cl.Mana=5..}] run tag @s add GetAngry
@@ -25,7 +25,7 @@ execute if entity @s[scores={cl.Mana=5..}] at @s run function classes:mage/spell
 
 #Spell Cast Notification
 execute as @s[scores={cl.Mana=5..}] if entity @e[tag=DeepFreeze,distance=..3] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Deep Freeze!","bold":true,"color":"#0096FF"}]
-execute as @s[scores={cl.Mana=5..}] unless entity @e[tag=DeepFreeze,distance=..3] run function classes:mage/mana/noneinrange
+execute as @s[scores={cl.Mana=5..}] unless entity @e[tag=DeepFreeze,distance=..3] run function classes:main/mana_system/noneinrange
 
 #Cooldown
 execute as @s[scores={cl.Mana=5..}] if entity @e[tag=DeepFreeze,distance=..3] run scoreboard players set @s cl.Cooldown 20

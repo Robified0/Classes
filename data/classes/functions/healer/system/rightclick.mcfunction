@@ -10,3 +10,4 @@ execute if entity @s[scores={cl.s.HealCircle=1..,cl.Mage.Armor=0},nbt={SelectedI
 execute if entity @s[scores={cl.s.Vitality=1..,cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"Vitality"}}}] at @s run function classes:healer/spells/vitality/spell
 execute if entity @s[scores={cl.s.Bless=1..,cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"Bless"}}}] at @s run function classes:healer/spells/bless/spell
 execute if entity @s[scores={cl.s.HolyStrike=1..,cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"HolyStrike"}}}] at @s run function classes:healer/spells/holystrike/spell
+execute if entity @s[scores={cl.s.StopUndead=1..,cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:"StopUndead"}}}] at @s run function classes:healer/spells/stopundead/spell

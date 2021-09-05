@@ -9,6 +9,7 @@ execute as @s[scores={cl.s.HealCircle=1},nbt={SelectedItem:{id:"minecraft:warped
 execute as @s[scores={cl.s.Vitality=1},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Wand:1b}}}] run function classes:healer/spells/vitality/select
 execute as @s[scores={cl.s.Bless=1},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Wand:1b}}}] run function classes:healer/spells/bless/select
 execute as @s[scores={cl.s.HolyStrike=1},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Wand:1b}}}] run function classes:healer/spells/holystrike/select
+execute as @s[scores={cl.s.StopUndead=1},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Wand:1b}}}] run function classes:healer/spells/stopundead/select
 
 #Check for empty slot
 execute as @s[scores={cl.emptySlot1=1},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Wand:1b}}}] run title @s times 20 100 20

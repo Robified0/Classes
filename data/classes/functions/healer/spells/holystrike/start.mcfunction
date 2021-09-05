@@ -10,7 +10,7 @@ execute if entity @s[scores={cl.Mana=2..}] run tag @s remove this
 
 #Cast Spell Sound Effect
 execute if entity @s[scores={cl.Mana=2..}] at @s run function classes:healer/spells/all/cast
-execute if entity @s[scores={cl.Mana=2..}] at @s run playsound minecraft:entity.illusioner.prepare_mirror player @a ~ ~ ~ 0.5 2
+execute if entity @s[scores={cl.Mana=2..}] at @s run playsound minecraft:entity.ghast.shoot player @a ~ ~ ~ 0.5 0.6
 
 #Particles
 execute if entity @s[scores={cl.Mana=2..}] at @s run particle minecraft:wax_off ~ ~ ~ 0.5 1 0.5 0.01 50 force
@@ -19,8 +19,8 @@ execute if entity @s[scores={cl.Mana=2..}] at @s run particle minecraft:happy_vi
 #Cooldown
 execute as @s[scores={cl.Mana=2..}] run scoreboard players set @s cl.Cooldown 20
 
-#Mana Depletion
-execute if entity @s[scores={cl.Mana=2..}] run scoreboard players remove @s cl.Mana 2
-
 #Spell Cast Notification
 execute if entity @s[scores={cl.Mana=2..}] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Holy Strike!","bold":true,"color":"green"}]
+
+#Mana Depletion
+execute if entity @s[scores={cl.Mana=2..}] run scoreboard players remove @s cl.Mana 2

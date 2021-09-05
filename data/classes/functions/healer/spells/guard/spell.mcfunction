@@ -1,5 +1,5 @@
 #Not Enough Mana
-execute if entity @s[scores={cl.Mana=..4}] run function classes:mage/mana/nomana
+execute if entity @s[scores={cl.Mana=..4}] run function classes:main/mana_system/nomana
 
 #Summon AEC
 execute if entity @s[scores={cl.Mana=5..}] at @s as @e[tag=Guard,tag=summoned] if score @s cl.summonCount = @p cl.summonCount run scoreboard players set @e[tag=Guard,sort=nearest,limit=1] cl.summonCount 1

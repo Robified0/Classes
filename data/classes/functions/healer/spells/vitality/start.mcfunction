@@ -1,5 +1,5 @@
 #Not Enough Mana
-execute if entity @s[scores={cl.Mana=..3}] run function classes:mage/mana/nomana
+execute if entity @s[scores={cl.Mana=..3}] run function classes:main/mana_system/nomana
 
 #Only change function line for each different spell
 execute if entity @s[scores={cl.Mana=4..}] run scoreboard players add system cl.slo_id 1
@@ -18,8 +18,8 @@ execute if entity @s[scores={cl.Mana=4..}] at @s run particle minecraft:happy_vi
 #Cooldown
 execute as @s[scores={cl.Mana=4..}] run scoreboard players set @s cl.Cooldown 20
 
-#Mana Depletion
-execute if entity @s[scores={cl.Mana=4..}] run scoreboard players remove @s cl.Mana 4
-
 #Spell Cast Notification
 execute if entity @s[scores={cl.Mana=4..}] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Satiate!","bold":true,"color":"green"}]
+
+#Mana Depletion
+execute if entity @s[scores={cl.Mana=4..}] run scoreboard players remove @s cl.Mana 4

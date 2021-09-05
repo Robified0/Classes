@@ -1,5 +1,5 @@
 #Not Enough Mana
-execute if entity @s[scores={cl.Mana=..1}] run function classes:mage/mana/nomana
+execute if entity @s[scores={cl.Mana=..1}] run function classes:main/mana_system/nomana
 
 #Only change function line for each different spell
 execute if entity @s[scores={cl.Mana=2..}] run scoreboard players add system cl.slo_id 1
@@ -18,8 +18,8 @@ execute if entity @s[scores={cl.Mana=2..}] at @s run function classes:mage/spell
 execute if entity @s[scores={cl.Mana=2..}] at @s run particle minecraft:cloud ~ ~ ~ 1 1 1 0.1 40 normal
 execute if entity @s[scores={cl.Mana=2..}] at @s run particle minecraft:witch ~ ~ ~ 0.5 1 0.5 1.2 40 force
 
-#Mana Depletion
-execute if entity @s[scores={cl.Mana=2..}] run scoreboard players remove @s cl.Mana 2
-
 #Spell Cast Notification
 tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Levitate!","bold":true,"color":"#FFFF80"}]
+
+#Mana Depletion
+execute if entity @s[scores={cl.Mana=2..}] run scoreboard players remove @s cl.Mana 2

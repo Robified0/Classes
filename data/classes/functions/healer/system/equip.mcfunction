@@ -13,6 +13,7 @@ execute if entity @s[scores={cl.s.HealCircle=0,cl.equipSpell=507}] run function 
 execute if entity @s[scores={cl.s.Vitality=0,cl.equipSpell=508}] run function classes:healer/spells/vitality/equip
 execute if entity @s[scores={cl.s.Bless=0,cl.equipSpell=509}] run function classes:healer/spells/bless/equip
 execute if entity @s[scores={cl.s.HolyStrike=0,cl.equipSpell=510}] run function classes:healer/spells/holystrike/equip
+execute if entity @s[scores={cl.s.StopUndead=0,cl.equipSpell=511}] run function classes:healer/spells/stopundead/equip
 
 #Reset equipSpell back to 0
 scoreboard players set @s cl.equipSpell 0

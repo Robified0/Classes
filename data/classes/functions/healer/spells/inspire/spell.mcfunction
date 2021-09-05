@@ -1,5 +1,5 @@
 #Not Enough Mana
-execute if entity @s[scores={cl.Mana=..2}] run function classes:mage/mana/nomana
+execute if entity @s[scores={cl.Mana=..2}] run function classes:main/mana_system/nomana
 
 #Add score for tracking
 execute if entity @s[scores={cl.Mana=3..}] at @s run scoreboard players set @a[distance=..10,limit=5,sort=nearest] cl.e.Inspire 900

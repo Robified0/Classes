@@ -64,6 +64,7 @@ scoreboard objectives add cl.e.SpeedBoost dummy
 scoreboard objectives add cl.e.CureEffects dummy
 scoreboard objectives add cl.e.Vitality dummy
 scoreboard objectives add cl.e.Bless dummy
+scoreboard objectives add cl.e.StopUndead dummy
 
 #Slowcast scoreboards (credit to CloudWolf)
 scoreboard objectives add cl.slowcast dummy
@@ -114,6 +115,7 @@ scoreboard objectives add cl.s.HealCircle dummy
 scoreboard objectives add cl.s.Vitality dummy
 scoreboard objectives add cl.s.Bless dummy
 scoreboard objectives add cl.s.HolyStrike dummy
+scoreboard objectives add cl.s.StopUndead dummy
 
 #Set storage
 function classes:main/setspells/main

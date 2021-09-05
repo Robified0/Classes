@@ -12,8 +12,8 @@ scoreboard players remove @e[scores={cl.HitBySpell=1..}] cl.HitBySpell 1
 scoreboard players reset @e[scores={cl.HitBySpell=..0}] cl.HitBySpell
 
 #Function for all new players, to ensure scoreboards are set up
-execute if entity @a[tag=!Joined] as @a[tag=!Joined] run function classes:operations/newplayer
-
+execute if entity @a[tag=!Joined] as @a[tag=!Joined] run function classes:main/new_player/main
+execute if entity @a[scores={cl.Class=1..},tag=!ClassSelected] as @a[scores={cl.Class=1..},tag=!ClassSelected] run function classes:main/new_player/classselected
 #Make sure equipSpell is always enabled for all players when reading/holding spellbook.
 #scoreboard players enable @a[predicate=classes:checkarmor/mage/spellbook] cl.equipSpell
 #scoreboard players reset @a[predicate=!classes:checkarmor/mage/spellbook] cl.equipSpell
@@ -22,9 +22,8 @@ execute if entity @a[tag=!Joined] as @a[tag=!Joined] run function classes:operat
 execute as @a[scores={cl.Class=3},tag=!Equipped] run function classes:operations/give
 execute as @a[scores={cl.Class=3}] run tag @s add Equipped
 
-#Display Mana bar to players
-execute as @a[gamemode=!creative,gamemode=!spectator,scores={cl.Class=3}] run function classes:mage/mana/mana
-execute as @a[gamemode=!creative,gamemode=!spectator,scores={cl.Class=4}] run function classes:mage/mana/mana
+#Display Mana bar to players who have Mana score set (spellcasters only)
+execute as @a[gamemode=!creative,gamemode=!spectator,scores={cl.Mana=-5..}] run function classes:main/mana_system/mana
 
 #Mage Switching spells
 execute if entity @a[scores={cl.Sneaking=1..,cl.rightClick=1..,cl.Class=3}] as @a[scores={cl.Sneaking=1..,cl.rightClick=1..,cl.Class=3}] run function classes:mage/system/wand/switch/switch
@@ -51,9 +50,8 @@ execute as @e[type=#classes:ownable,tag=!cl.Owned] if data entity @s Owner run t
 execute as @e[type=iron_golem,tag=!cl.Owned,nbt={PlayerCreated:1b}] run tag @s add cl.Owned
 execute as @e[type=snow_golem,tag=!cl.Owned,nbt={PlayerCreated:1b}] run tag @s add cl.Owned
 
-#Mana Regen (subject to change) ManaRegenSec is 20 * # of seconds for point of Mana to regen every # of seconds (60 = 1 point of Mana every 3 seconds)
-scoreboard players add @a[scores={cl.ManaRegenSec=..59,cl.Mana=..9}] cl.ManaRegenSec 1
-scoreboard players add @a[scores={cl.ManaRegenSec=60,cl.Mana=..9}] cl.Mana 1
-scoreboard players set @a[scores={cl.ManaRegenSec=60}] cl.ManaRegenSec 1
+#Mana Regen
+execute as @a[scores={cl.Class=3..4}] run function classes:main/mana_system/main
 
+#Handle Motion
 execute as @e[tag=motion_projectile,tag=!motion_added] at @s rotated as @p run function classes:operations/apply_motion

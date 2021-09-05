@@ -1,5 +1,5 @@
 #Not Enough Mana
-execute if entity @s[scores={cl.Mana=..2}] run function classes:mage/mana/nomana
+execute if entity @s[scores={cl.Mana=..2}] run function classes:main/mana_system/nomana
 
 #Give Effect
 execute as @s[scores={cl.Mana=3..}] run effect give @s minecraft:water_breathing 60 0 false
