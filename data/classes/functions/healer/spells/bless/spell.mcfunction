@@ -5,13 +5,13 @@ execute unless entity @s[scores={cl.Mana=2..},x_rotation=87..90] run scoreboard 
 # how many half blocks to travel (24*0.5) = 12 blocks
 execute unless entity @s[scores={cl.Mana=2..},x_rotation=87..90] run scoreboard players set dst cl.slowcast 48
 
-execute unless entity @s[scores={cl.Mana=2..},x_rotation=87..90] positioned ~ ~1.45 ~ run function classes:healer/spells/satiate/start
+execute unless entity @s[scores={cl.Mana=2..},x_rotation=87..90] positioned ~ ~1.45 ~ run function classes:healer/spells/bless/start
 
 
 
 #If Player is looking at ground:
-execute if entity @s[scores={cl.Mana=2..},x_rotation=87..90,distance=..1] run effect give @s minecraft:saturation 5 1 true
-
+execute if entity @s[scores={cl.Mana=2..},x_rotation=87..90,distance=..1] run effect give @s minecraft:absorption 20 1 false
+execute if entity @s[scores={cl.Mana=2..},x_rotation=87..90,distance=..1] run scoreboard players set @s cl.e.Bless 400
 #Play sound effect - use here when needing once.
 execute if entity @s[scores={cl.Mana=2..},x_rotation=87..90] at @s run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 10 1.5
 
@@ -26,4 +26,4 @@ execute if entity @s[scores={cl.Mana=2..},x_rotation=87..90] run scoreboard play
 execute if entity @s[scores={cl.Mana=2..},x_rotation=87..90] run scoreboard players remove @s cl.Mana 2
 
 #Spell Cast Notification
-execute if entity @s[scores={cl.Mana=2..}] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Satiate!","bold":true,"color":"green"}]
+execute if entity @s[scores={cl.Mana=2..}] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Bless!","bold":true,"color":"green"}]

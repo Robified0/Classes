@@ -12,7 +12,6 @@ item modify entity @s[tag=cl.s.Levitate] weapon.mainhand classes:mage/spells/air
 item modify entity @s[tag=cl.s.Slowfall] weapon.mainhand classes:mage/spells/air/slowfall
 item modify entity @s[tag=cl.s.TailWind] weapon.mainhand classes:mage/spells/air/tailwind
 item modify entity @s[tag=cl.s.BunnyHop] weapon.mainhand classes:mage/spells/air/bunnyhop
-item modify entity @s[tag=cl.s.WindWard] weapon.mainhand classes:mage/spells/air/windward
 item modify entity @s[tag=cl.s.Poison] weapon.mainhand classes:mage/spells/earth/poison
 item modify entity @s[tag=cl.s.StoneFlesh] weapon.mainhand classes:mage/spells/earth/stoneflesh
 item modify entity @s[tag=cl.s.IronFlesh] weapon.mainhand classes:mage/spells/earth/ironflesh
@@ -20,4 +19,5 @@ item modify entity @s[tag=cl.s.DiaFlesh] weapon.mainhand classes:mage/spells/ear
 item modify entity @s[tag=cl.s.IronGolem] weapon.mainhand classes:mage/spells/earth/irongolem
 item modify entity @s[tag=cl.s.Light] weapon.mainhand classes:mage/spells/magic/light
 item modify entity @s[tag=cl.s.Teleport] weapon.mainhand classes:mage/spells/magic/teleport
+item modify entity @s[tag=cl.s.Shield] weapon.mainhand classes:mage/spells/magic/shield
 scoreboard players set @s cl.equipSpell 0

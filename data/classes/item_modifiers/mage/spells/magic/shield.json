@@ -3,7 +3,7 @@
     "function": "minecraft:copy_nbt",
     "source": {
       "type": "minecraft:storage",
-      "source": "classes:mage/spells/air/windward"
+      "source": "classes:mage/spells/magic/shield"
     },
     "ops": [
       {

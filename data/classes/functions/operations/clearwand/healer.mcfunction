@@ -6,12 +6,9 @@ scoreboard players set @s cl.s.FireResist 0
 scoreboard players set @s cl.s.SpeedBoost 0
 scoreboard players set @s cl.s.CureEffects 0
 scoreboard players set @s cl.s.Satiate 0
-scoreboard players set @s cl.s.HealRing 0
-scoreboard players set @s cl.s.GiftHealth 0
-scoreboard players set @s cl.s.CleanseArea 0
-scoreboard players set @s cl.s.HolyStrike 0
-scoreboard players set @s cl.s.HealerBoon 0
-scoreboard players set @s cl.s.StopUndead 0
+scoreboard players set @s cl.s.HealCircle 0
+scoreboard players set @s cl.s.Vitality 0
+scoreboard players set @s cl.s.Bless 0
 
 #Set empty slots
 scoreboard players set @s cl.emptySlot1 1
