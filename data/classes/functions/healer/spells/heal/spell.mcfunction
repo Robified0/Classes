@@ -14,7 +14,7 @@ execute if entity @s[scores={cl.Mana=1..},x_rotation=87..90] run effect give @s 
 execute if entity @s[scores={cl.Mana=1..},x_rotation=87..90] at @s run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 2 1.5
 
 #Particles
-execute if entity @s[scores={cl.Mana=1..},x_rotation=87..90] at @s run particle minecraft:end_rod ~ ~ ~ 0.5 1 0.5 0.01 10 force
+execute if entity @s[scores={cl.Mana=1..},x_rotation=87..90] at @s run particle minecraft:wax_off ~ ~ ~ 0.5 1 0.5 0.01 50 force
 execute if entity @s[scores={cl.Mana=1..},x_rotation=87..90] at @s run particle minecraft:happy_villager ~ ~ ~ 0.5 1 0.5 0.08 50 force
 
 #Add Cooldown

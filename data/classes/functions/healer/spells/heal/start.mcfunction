@@ -12,7 +12,7 @@ execute if entity @s[scores={cl.Mana=1..}] run tag @s remove this
 execute if entity @s[scores={cl.Mana=1..}] at @s run function classes:healer/spells/all/cast
 
 #Particles
-execute if entity @s[scores={cl.Mana=1..}] at @s run particle minecraft:wax_off ~ ~ ~ 0.5 1 0.5 0.01 10 force
+execute if entity @s[scores={cl.Mana=1..}] at @s run particle minecraft:wax_off ~ ~ ~ 0.5 1 0.5 0.01 50 force
 execute if entity @s[scores={cl.Mana=1..}] at @s run particle minecraft:happy_villager ~ ~ ~ 0.5 1 0.5 0.08 50 force
 
 #Cooldown

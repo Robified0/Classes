@@ -1,5 +1,5 @@
 #Handle Particles
-execute at @s anchored feet run particle minecraft:electric_spark ~ ~0.1 ~ 0.4 0.1 0.4 0.01 1 force
+execute at @s anchored feet run particle minecraft:electric_spark ~ ~0.1 ~ 0.4 0.7 0.4 0.01 2 force
 effect clear @s blindness
 effect clear @s poison
 effect clear @s hunger

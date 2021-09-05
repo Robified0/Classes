@@ -12,7 +12,7 @@ execute if entity @s[scores={cl.Mana=5..}] run scoreboard players set @e[type=ma
 execute if entity @s[scores={cl.Mana=5..}] run scoreboard players set @e[type=marker,tag=GuardSphere,limit=2,sort=nearest] cl.summonCount 400
 
 #Particles
-execute if entity @s[scores={cl.Mana=5..}] at @s run particle minecraft:end_rod ~ ~ ~ 0.5 1 0.5 0.01 10 force
+execute if entity @s[scores={cl.Mana=5..}] at @s run particle minecraft:wax_off ~ ~ ~ 0.5 1 0.5 0.01 50 force
 execute if entity @s[scores={cl.Mana=5..}] at @s run particle minecraft:happy_villager ~ ~ ~ 0.5 1 0.5 0.08 50 force
 
 #Cast Spell Sound Effect
