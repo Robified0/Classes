@@ -5,6 +5,10 @@ scoreboard players set @s cl.emptySlot3 1
 scoreboard players set @s cl.emptySlot4 1
 scoreboard players set @s cl.emptySlot5 1
 
+#Set up Mana scoreboards
+scoreboard players set @s cl.ManaRegenSec 1
+scoreboard players set @s cl.Mana 1
+
 #Set up spell scoreboards
 scoreboard players set @s cl.s.Torch 0
 scoreboard players set @s cl.s.BedofCoals 0

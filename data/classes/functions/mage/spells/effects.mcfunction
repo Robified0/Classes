@@ -48,4 +48,4 @@ execute if entity @e[type=iron_golem,tag=summoned] run function classes:mage/eff
 execute if entity @e[type=marker,tag=light] run function classes:mage/effects/light
 
 #Cold Shield - (tag=ColdShield)
-execute if entity @a[scores={cl.e.Shield=-10..}] run function classes:healer/effects/shield
+execute if entity @a[scores={cl.e.Shield=-10..}] as @a[scores={cl.e.Shield=-10..}] run function classes:mage/effects/shield
