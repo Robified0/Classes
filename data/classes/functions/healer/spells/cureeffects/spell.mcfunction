@@ -2,7 +2,7 @@
 execute if entity @s[scores={cl.Mana=..3}] run function classes:mage/mana/nomana
 
 #Add score for tracking
-execute if entity @s[scores={cl.Mana=3..}] at @s run summon marker ~ ~1 ~ {Tags:["CureEffects","summoned"]}
+execute if entity @s[scores={cl.Mana=4..}] at @s run summon marker ~ ~1 ~ {Tags:["CureEffects","summoned"]}
 execute as @e[type=marker,tag=CureEffects,sort=nearest] at @s run function classes:operations/particles/draw/cureeffects/drawcircle
 execute if entity @s[scores={cl.Mana=4..}] at @s run scoreboard players set @a[distance=..5,limit=5,sort=random] cl.e.CureEffects 900
 
