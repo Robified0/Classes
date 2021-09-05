@@ -6,9 +6,12 @@
 # and the player right clicks with #
 # the wand in hand.                #
 #                                  #
-# All new spells need a line here, #
-# adjusting for scoreboard and     #
-# detected tag on wand.            #
+# New spells need to be added to   #
+# (class)/system/rightclick as     #
+# well as each slot file in the    #
+# (class)/system/wand/switch/slot# #
+# files. Adjust for score as it is #
+# needed.                          #
 ####################################
 
 #Stat handling
