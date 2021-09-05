@@ -1,5 +1,5 @@
 #Not Enough Mana
-execute if entity @s[scores={cl.Mana=..1}] run function classes:mage/mana/nomana
+execute if entity @s[scores={cl.Mana=..0}] run function classes:mage/mana/nomana
 
 #Only change function line for each different spell
 execute if entity @s[scores={cl.Mana=1..}] run scoreboard players add system cl.slo_id 1
