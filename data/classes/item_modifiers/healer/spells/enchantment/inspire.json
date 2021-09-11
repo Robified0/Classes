@@ -1,0 +1,16 @@
+[
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "classes:healer/spells/enchantment/inspire"
+    },
+    "ops": [
+      {
+        "source": "pages[]",
+        "target": "pages",
+        "op": "append"
+      }
+    ]
+  }
+]
