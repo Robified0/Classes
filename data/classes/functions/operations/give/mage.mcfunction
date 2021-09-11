@@ -15,7 +15,6 @@ item modify entity @s weapon.mainhand classes:mage/spells/air/levitate
 item modify entity @s weapon.mainhand classes:mage/spells/air/slowfall
 item modify entity @s weapon.mainhand classes:mage/spells/air/tailwind
 item modify entity @s weapon.mainhand classes:mage/spells/air/bunnyhop
-item modify entity @s weapon.mainhand classes:mage/spells/air/windward
 item modify entity @s weapon.mainhand classes:mage/spells/earth/poison
 item modify entity @s weapon.mainhand classes:mage/spells/earth/stoneflesh
 item modify entity @s weapon.mainhand classes:mage/spells/earth/ironflesh
@@ -23,4 +22,5 @@ item modify entity @s weapon.mainhand classes:mage/spells/earth/diaflesh
 item modify entity @s weapon.mainhand classes:mage/spells/earth/irongolem
 item modify entity @s weapon.mainhand classes:mage/spells/magic/light
 item modify entity @s weapon.mainhand classes:mage/spells/magic/teleport
+item modify entity @s weapon.mainhand classes:mage/spells/magic/shield
 give @s warped_fungus_on_a_stick{CustomModelData:10000,Wand:1b,Type:Starter} 1

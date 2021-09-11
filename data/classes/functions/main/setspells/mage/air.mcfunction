@@ -11,6 +11,3 @@ data modify storage classes:mage/spells/air/tailwind pages set value ['["",{"tex
 
 #Bunny Hop
 data modify storage classes:mage/spells/air/bunnyhop pages set value ['["",{"text":"Bunny Hop","bold":true,"color":"gold"},{"text":"\\n","color":"reset","bold":true},{"text":"(3 Mana)","bold":true,"color":"aqua"},{"text":"\\n\\nGrants caster with Jump Boost II for 45 seconds.\\n\\nBetter to climb mountains with!\\n\\n\\n\\n","color":"reset"},{"text":"EQUIP SPELL","underlined":true,"clickEvent":{"action":"run_command","value":"/trigger cl.equipSpell set 203"}}]']
-
-#Wind Ward
-data modify storage classes:mage/spells/air/windward pages set value ['["",{"text":"Wind Ward","bold":true,"color":"gold"},{"text":"\\n","color":"reset","bold":true},{"text":"(5 Mana)","bold":true,"color":"aqua"},{"text":"\\n\\nSummons a sphere of wind that stops arrows, and blaze/ghast fireballs that try to pass through - in ","color":"reset"},{"text":"and ","italic":true},{"text":"out!\\n\\n\\n\\n","color":"reset"},{"text":"EQUIP SPELL","underlined":true,"clickEvent":{"action":"run_command","value":"/trigger cl.equipSpell set 204"}}]']
