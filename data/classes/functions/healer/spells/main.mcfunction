@@ -15,7 +15,7 @@
 ####################################
 
 #Stat handling
-#execute as @a[scores={cl.Class=4}] run function classes:mage/stats/main
+execute as @a[scores={cl.Class=4}] run function classes:healer/stats/main
 
 #Detect Spells
 execute if entity @a[scores={cl.Class=4,cl.rightClick=1}] as @a[scores={cl.Cooldown=0,cl.rightClick=1..,cl.Sneaking=0,cl.Class=4}] run function classes:healer/system/rightclick

@@ -18,7 +18,7 @@ tag @s remove GetAngry
 execute as @s[scores={cl.Mana=4..}] at @e[tag=StopUndead,distance=..10] run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 5 1.5
 execute as @s[scores={cl.Mana=4..}] at @e[tag=StopUndead,distance=..10] run playsound minecraft:entity.zombie_villager.converted player @a ~ ~ ~ 0.5 2
 #Cast Spell Sound Effect
-execute if entity @s[scores={cl.Mana=4..}] at @s run function classes:healer/spells/all/cast
+execute if entity @s[scores={cl.Mana=4..}] if entity @e[tag=StopUndead,distance=..10] at @s run function classes:healer/spells/all/cast
 
 #Spell Cast Notification
 execute as @s[scores={cl.Mana=4..}] if entity @e[tag=StopUndead,distance=..10] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Deep Freeze!","bold":true,"color":"#0096FF"}]

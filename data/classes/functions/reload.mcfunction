@@ -33,6 +33,7 @@ scoreboard objectives add cl.emptySlot5 dummy
 scoreboard objectives add cl.Cooldown dummy
 scoreboard objectives add cl.HitBySpell dummy
 scoreboard objectives add cl.Mage.Armor dummy
+scoreboard objectives add cl.Healer.Armor dummy
 scoreboard objectives add cl.s.Teleport.t dummy
 scoreboard objectives add cl.i.ManaPotion dummy
 scoreboard objectives add cl.i.usedPotion minecraft.used:minecraft.potion
@@ -42,6 +43,7 @@ scoreboard objectives add cl.p.setFire dummy
 scoreboard objectives add cl.p.wPortal dummy
 scoreboard objectives add cl.p.wObsidian dummy
 scoreboard objectives add cl.p.wExtFire dummy
+scoreboard objectives add cl.p.clericHeal dummy
 execute unless score #cl.pref cl.p.setFire matches 0 run scoreboard players set #cl.pref cl.p.setFire 0
 execute unless score #cl.pref cl.p.wPortal matches 0 run scoreboard players set #cl.pref cl.p.wPortal 1
 execute unless score #cl.pref cl.p.wObsidian matches 0 run scoreboard players set #cl.pref cl.p.wObsidian 1
