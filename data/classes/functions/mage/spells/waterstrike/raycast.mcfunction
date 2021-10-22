@@ -1,5 +1,5 @@
 #Particle Effect
-particle minecraft:falling_water ^-0.3 ^ ^0.3 0.2 0.2 0.2 1 10 force
+particle minecraft:falling_water ^0.4 ^0.2 ^0.3 0.2 0.2 0.2 1 10 force
 
 #Do these things when spell hits
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,type=!#classes:waterproof,tag=!summoned,tag=!cl.Owned] run scoreboard players set @s cl.HitBySpell 100

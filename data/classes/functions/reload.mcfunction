@@ -76,51 +76,9 @@ scoreboard objectives add cl.slo_id dummy
 scoreboard objectives add cl.slo_dst dummy
 scoreboard objectives add cl.slo_dst_per dummy
 
-#Mage Spells
-scoreboard objectives add cl.s.Torch dummy
-scoreboard objectives add cl.s.FlameBurst dummy
-scoreboard objectives add cl.s.Fireball dummy
-scoreboard objectives add cl.s.BedofCoals dummy
-scoreboard objectives add cl.s.WaterStrike dummy
-scoreboard objectives add cl.s.IceShard dummy
-scoreboard objectives add cl.s.ColdShield dummy
-scoreboard objectives add cl.s.DeepFreeze dummy
-scoreboard objectives add cl.s.SnowGolem dummy
-scoreboard objectives add cl.s.WaterBrth dummy
-scoreboard objectives add cl.s.DolpGrace dummy
-scoreboard objectives add cl.s.Levitate dummy
-scoreboard objectives add cl.s.SlowFall dummy
-scoreboard objectives add cl.s.TailWind dummy
-scoreboard objectives add cl.s.BunnyHop dummy
-scoreboard objectives add cl.s.Poison dummy
-scoreboard objectives add cl.s.StoneFlesh dummy
-scoreboard objectives add cl.s.IronFlesh dummy
-scoreboard objectives add cl.s.DiaFlesh dummy
-scoreboard objectives add cl.s.IronGolem dummy
-scoreboard objectives add cl.s.Light dummy
-scoreboard objectives add cl.s.Teleport dummy
-scoreboard objectives add cl.s.Shield dummy
-
 #Shield Spell Objectives
 scoreboard objectives add cl.e.Shield dummy
 scoreboard objectives add cl.e.Shield.m dummy
-
-#Healer Spells
-scoreboard objectives add cl.s.Heal dummy
-scoreboard objectives add cl.s.Guard dummy
-scoreboard objectives add cl.s.Inspire dummy
-scoreboard objectives add cl.s.FireResist dummy
-scoreboard objectives add cl.s.SpeedBoost dummy
-scoreboard objectives add cl.s.CureEffects dummy
-scoreboard objectives add cl.s.Satiate dummy
-scoreboard objectives add cl.s.HealCircle dummy
-scoreboard objectives add cl.s.Vitality dummy
-scoreboard objectives add cl.s.Bless dummy
-scoreboard objectives add cl.s.HolyStrike dummy
-scoreboard objectives add cl.s.StopUndead dummy
-
-#Set storage
-function classes:main/setspells/main
 
 #Set up Oxygen Boss bar
 bossbar add air0 "Oxygen"
@@ -179,6 +137,12 @@ bossbar set minecraft:air7 style notched_10
 bossbar set minecraft:air8 style notched_10
 bossbar set minecraft:air9 style notched_10
 bossbar set minecraft:air10 style notched_10
+
+#Custom mob spawning scoreboard.
+scoreboard objectives add cl.customMob dummy
+
+#Initiate scores for custom mobs
+scoreboard players add #cl.ZombieKing cl.customMob 0
 
 #Set keepInventory (temporary)
 gamerule keepInventory true

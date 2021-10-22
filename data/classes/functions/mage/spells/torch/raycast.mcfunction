@@ -1,5 +1,5 @@
 #Particle Effect
-particle flame ^-0.3 ^ ^0.3 0.25 0.25 0.25 0.03 2 force
+particle flame ^0.4 ^0.2 ^0.3 0.25 0.25 0.25 0.03 2 force
 
 
 #Play sound effect - use here when needing repeat
@@ -9,7 +9,7 @@ execute at @s run playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 0.08
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:fireproof,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] run scoreboard players set @s cl.HitBySpell 100
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:fireproof,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] run function classes:main/loot_table/main
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:fireproof,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] run data merge entity @s {Fire:200}
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=creeper] run function classes:entities/creeper/fire
+execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=creeper] run function classes:entities/vanilla/creeper/fire
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:undead,type=!#classes:nontarget,type=!#classes:fireproof,type=!creeper,tag=!summoned,tag=!cl.Owned] run effect give @s minecraft:instant_damage 1 1 true
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead,type=!#classes:nontarget,type=!#classes:fireproof,tag=!cl.Owned] run effect give @s minecraft:instant_health 1 1 true
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=witch] run effect give @s minecraft:instant_damage 1 3 true

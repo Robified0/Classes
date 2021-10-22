@@ -10,7 +10,7 @@ execute as @s[scores={cl.Mana=3..}] run scoreboard players set @s cl.e.SlowFall 
 execute as @s[scores={cl.Mana=3..}] run effect give @s minecraft:slow_falling 45 0 true
 
 #Particle effect
-execute as @a[scores={cl.Mana=3..}] at @s run particle minecraft:cloud ~ ~ ~ 1 1 1 10 40 normal
+execute as @a[scores={cl.Mana=3..}] at @s run particle minecraft:cloud ~ ~ ~ 0.5 0.75 0.5 0.25 100 force
 
 #Playsound Effect
 execute at @s[scores={cl.Mana=3..}] run playsound minecraft:entity.horse.breathe player @a ~ ~ ~ 0.5 1

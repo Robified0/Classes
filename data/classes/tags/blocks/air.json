@@ -6,6 +6,7 @@
 	"minecraft:tall_grass",
 	"minecraft:grass",
 	"#minecraft:flowers",
+  "#minecraft:climbable",
 	"minecraft:large_fern",
 	"minecraft:ladder",
   "#minecraft:buttons",

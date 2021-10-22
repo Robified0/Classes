@@ -20,6 +20,7 @@
 		"classes:healer/spells/bless/zprivate/main",
 		"classes:healer/spells/holystrike/zprivate/main",
 		"classes:items/manapotion/main",
+		"classes:entities/custom/loopsummon",
 		"classes:end"
 	]
 }

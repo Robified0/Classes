@@ -1,5 +1,5 @@
 #Particle Effect
-particle dust 0.129 0.914 1.000 1 ^-0.3 ^ ^0.3 0.1 0.1 0.1 2 10 force
+particle dust 0.129 0.914 1.000 1 ^0.4 ^0.2 ^0.3 0.1 0.1 0.1 2 10 force
 
 #Do these things when spell hits
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] run scoreboard players set @s cl.HitBySpell 100

@@ -1,0 +1,27 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Become a Mage",
+            "color": "gold",
+            "bold": true
+        },
+        "description": {
+            "text": "Select Mage as your class"
+        },
+        "icon": {
+            "item": "minecraft:written_book",
+            "nbt": "{CustomModelData:60000}"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/lapis_block.png"
+    },
+    "criteria": {
+        "mage": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

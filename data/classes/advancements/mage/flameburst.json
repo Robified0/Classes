@@ -1,0 +1,28 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Learn Flame Burst",
+            "color": "green"
+        },
+        "description": {
+            "text": "Learn its ways."
+        },
+        "icon": {
+            "item": "minecraft:blaze_powder"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "flameburst": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "classes:mage/spells/flameburst"
+            }
+        }
+    },
+    "parent": "classes:mage/root"
+}

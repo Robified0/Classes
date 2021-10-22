@@ -18,4 +18,4 @@
 execute as @a[scores={cl.Class=3}] run function classes:mage/stats/main
 
 #Fire Spells
-execute if entity @a[scores={cl.Class=3,cl.rightClick=1}] as @a[scores={cl.Cooldown=0,cl.rightClick=1..,cl.Sneaking=0,cl.Class=3}] run function classes:mage/system/rightclick
+execute if entity @a[scores={cl.Class=3}] as @a[nbt={Inventory:[{id:"minecraft:warped_fungus_on_a_stick",Slot:-106b,Count:1b,tag:{Wand:1b}}]},scores={cl.Cooldown=0,cl.Class=3}] run function classes:mage/system/rightclick
