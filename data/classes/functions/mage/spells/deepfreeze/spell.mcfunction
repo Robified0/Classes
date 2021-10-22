@@ -7,7 +7,8 @@ execute as @s[scores={cl.Mana=5..}] at @s run tag @e[type=!#classes:bosses,type=
 execute as @s[scores={cl.Mana=5..}] at @s as @e[tag=DeepFreeze,distance=..3] run scoreboard players set @s cl.HitBySpell 100
 execute as @s[scores={cl.Mana=5..}] at @s as @e[tag=DeepFreeze,distance=..3] run function classes:main/loot_table/main
 execute as @s[scores={cl.Mana=5..}] at @s as @e[tag=DeepFreeze,distance=..3] run scoreboard players set @s cl.e.DeepFreeze 300
-execute as @s[scores={cl.Mana=5..}] at @s as @e[tag=DeepFreeze,distance=..3] run data merge entity @s {NoAI:1b,Silent:1b}
+execute as @s[scores={cl.Mana=5..}] at @s as @e[tag=DeepFreeze,distance=..3] run data merge entity @s {NoAI:1b,Silent:1b,Invulnerable:1b}
+execute as @s[scores={cl.Mana=5..}] at @s as @e[tag=DeepFreeze,distance=..3] at @s run fill ~ ~ ~ ~ ~1 ~ ice keep
 execute as @s[scores={cl.Mana=5..}] at @e[tag=DeepFreeze,distance=..3] run particle dust 0.129 0.914 1.000 1 ~ ~ ~ 0.5 0.5 0.5 1 100 normal
 
 #Get mobs angry if not already
