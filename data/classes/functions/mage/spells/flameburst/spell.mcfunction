@@ -27,8 +27,8 @@ execute as @s[scores={cl.Mana=3..}] unless entity @e[tag=FlameBurst] run functio
 #Cooldown
 execute as @s[scores={cl.Mana=3..}] if entity @e[tag=FlameBurst] run scoreboard players set @s cl.Cooldown 20
 
-#Remove Tag
-execute as @s[scores={cl.Mana=3..}] run tag @e[tag=FlameBurst] remove FlameBurst
-
 #Mana Removal
 execute as @s[scores={cl.Mana=3..}] if entity @e[tag=FlameBurst] run scoreboard players remove @s cl.Mana 3
+
+#Remove Tag
+execute as @s[scores={cl.Mana=3..}] run tag @e[tag=FlameBurst] remove FlameBurst
