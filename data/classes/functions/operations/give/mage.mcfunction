@@ -27,6 +27,9 @@ give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Water Breathing","colo
 #Deep Freeze
 give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Deep Freeze","color":"blue"},{"text":" - ","color":"white","bold":false},{"text":"4 Mana","color":"aqua","bold":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','[{"text":"Element: ","color":"dark_aqua"},{"text":"Water","color":"blue"}]','{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Freezes all hostile mobs within 3 blocks in place.","color":"aqua"}']},CustomModelData:62003,Spell:1b} 1
 
+#Snow Golem
+give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Snow Golem","color":"blue"},{"text":" - ","color":"white","bold":false},{"text":"4 Mana","color":"aqua","bold":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','[{"text":"Element: ","color":"dark_aqua"},{"text":"Water","color":"blue"}]','{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Summons a snow golem to fend off enemies.","color":"aqua"}']},CustomModelData:62004,Spell:1b} 1
+
 #Slow Fall
 give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Slow Fall","color":"yellow"},{"text":" - ","color":"white","bold":false},{"text":"3 Mana","color":"aqua","bold":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','[{"text":"Element: ","color":"dark_aqua"},{"text":"Air","color":"yellow"}]','{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Grants the caster Slow Fall for 45 seconds.","color":"yellow"}']},CustomModelData:63001,Spell:1b} 1
 
@@ -36,11 +39,32 @@ give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Bunny Hop","color":"ye
 #Tail Wind
 give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Tail Wind","color":"yellow"},{"text":" - ","color":"white","bold":false},{"text":"3 Mana","color":"aqua","bold":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','[{"text":"Element: ","color":"dark_aqua"},{"text":"Air","color":"yellow"}]','{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Grants the caster Speed 2 for 20 seconds, allowing you to run away!","color":"yellow"}']},CustomModelData:63002,Spell:1b} 1
 
+#Stone Flesh
+give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Stone Flesh","color":"dark_green"},{"text":" - ","color":"white","bold":false},{"text":"1 Mana","color":"aqua","bold":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','[{"text":"Element: ","color":"dark_aqua"},{"text":"Earth","color":"dark_green"}]','{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Provides two full armor points for 3 minutes.","color":"dark_green"}']},CustomModelData:64001,Spell:1b} 1
+
+#Iron Flesh
+give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Iron Flesh","color":"dark_green"},{"text":" - ","color":"white","bold":false},{"text":"2 Mana","color":"aqua","bold":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','[{"text":"Element: ","color":"dark_aqua"},{"text":"Earth","color":"dark_green"}]','{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Provides four full armor points for 3 minutes.","color":"dark_green"}']},CustomModelData:64002,Spell:1b} 1
+
+#Diamond Flesh
+give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Diamond Flesh","color":"dark_green"},{"text":" - ","color":"white","bold":false},{"text":"3 Mana","color":"aqua","bold":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','[{"text":"Element: ","color":"dark_aqua"},{"text":"Earth","color":"dark_green"}]','{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Provides six full armor points for 3 minutes.","color":"dark_green"}']},CustomModelData:64003,Spell:1b} 1
+
 #Iron Golem
 give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Summon Iron Golem","color":"dark_green"},{"text":" - ","color":"white","bold":false},{"text":"8 Mana","color":"aqua","bold":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','[{"text":"Element: ","color":"dark_aqua"},{"text":"Earth","color":"dark_green"}]','{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Summon an Iron Golem to come to your aid!","color":"dark_green"}']},CustomModelData:64004,Spell:1b} 1
 
+#Light
+give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Light","color":"light_purple"},{"text":" - ","color":"white","bold":false},{"text":"1 Mana","color":"aqua","bold":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','[{"text":"Element: ","color":"dark_aqua"},{"text":"Magic","color":"light_purple"}]','{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Creates light source where it ends.","color":"light_purple"}']},CustomModelData:65000,Spell:1b} 1
+
 #Teleport
 give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Teleport","color":"light_purple"},{"text":" - ","color":"white","bold":false},{"text":"2 Mana","color":"aqua","bold":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','[{"text":"Element: ","color":"dark_aqua"},{"text":"Magic","color":"light_purple"}]','{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Teleport to the targeted location - must hit a block.","color":"light_purple"}']},CustomModelData:65001,Spell:1b} 1
+
+#Shield
+give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Shield","color":"light_purple"},{"text":" - ","color":"white","bold":false},{"text":"1 Mana/2 sec","color":"aqua","bold":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','[{"text":"Element: ","color":"dark_aqua"},{"text":"Magic","color":"light_purple"}]','{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Reflects projectiles coming at the direction the caster is facing.","color":"light_purple"}']},CustomModelData:65002,Spell:1b} 1
+
+#Invisibility
+give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Invisibility","color":"light_purple"},{"text":" - ","color":"white","bold":false},{"text":"2 Mana","color":"aqua","bold":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','[{"text":"Element: ","color":"dark_aqua"},{"text":"Magic","color":"light_purple"}]','{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Grants the caster invisibility for 20 seconds.","color":"light_purple"}']},CustomModelData:65003,Spell:1b} 1
+
+#Mend
+give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Mend","color":"light_purple"},{"text":" - ","color":"white","bold":false},{"text":"2 Mana","color":"aqua","bold":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','[{"text":"Element: ","color":"dark_aqua"},{"text":"Magic","color":"light_purple"}]','{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Heals caster for four hearts.","color":"light_purple"}']},CustomModelData:65004,Spell:1b} 1
 
 # Poison
 give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Poison","color":"green"},{"text":" - ","color":"white","bold":false},{"text":"1 Mana","color":"aqua","bold":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','[{"text":"Element: ","color":"dark_aqua"},{"text":"Earth","color":"green"}]','{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Poisons hit mobs for 5 seconds.","color":"gold"}']},CustomModelData:64000,Spell:1b} 1
