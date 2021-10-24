@@ -7,7 +7,7 @@ execute if entity @s[scores={cl.Mana=3..}] run tag @s add SlowFall
 execute if entity @s[scores={cl.Mana=3..}] run scoreboard players set @s cl.e.SlowFall 900
 
 #Give Effect
-execute if entity @s[scores={cl.Mana=3..}] run effect give @s minecraft:slow_falling 45 0 true
+execute if entity @s[scores={cl.Mana=3..}] run effect give @s minecraft:slow_falling 45 0 false
 
 #Particle effect
 execute if entity @s[scores={cl.Mana=3..}] at @s run particle minecraft:cloud ~ ~ ~ 0.5 0.75 0.5 0.25 100 force
