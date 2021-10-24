@@ -10,7 +10,7 @@ function classes:mage/spells/all/cast
 
 #Particles
 particle minecraft:witch ~ ~ ~ 0.5 1 0.5 1.2 40 force
-particle minecraft:end_rod ~ ~0.5 ~ 0.3 1 0.3 0.03 50 force
+particle minecraft:end_rod ~ ~ ~ 0.3 0.5 0.3 0.03 25 force
 
 #Cooldown
 scoreboard players set @s cl.Cooldown 20
