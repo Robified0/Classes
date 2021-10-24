@@ -21,6 +21,9 @@ execute if entity @s[scores={cl.Mana=2..},x_rotation=87..90,distance=..1] at @s 
 execute if entity @s[scores={cl.Mana=2..},x_rotation=87..90,distance=..1] at @s run particle minecraft:cloud ~ ~ ~ 1 1 1 0.1 40 normal
 execute if entity @s[scores={cl.Mana=2..},x_rotation=87..90,distance=..1] at @s run particle minecraft:witch ~ ~ ~ 0.5 1 0.5 1.2 40 force
 
+#Cooldown
+execute if entity @s[scores={cl.Mana=2..},x_rotation=87..90,distance=..1] run scoreboard players set @s cl.Cooldown 2
+
 #Spell Cast Notification
 tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Levitate!","bold":true,"color":"#FFFF80"}]
 
