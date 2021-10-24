@@ -14,7 +14,7 @@ execute as @s[scores={cl.Mana=3..}] at @s run effect give @e[type=#classes:undea
 execute as @s[scores={cl.Mana=3..}] at @e[tag=FlameBurst] run particle flame ~ ~ ~ 0.1 0.5 0.1 0.35 100 force
 
 #Cast Spell Sound Effect
-execute if entity @s[scores={cl.Mana=3..}] at @s run function classes:mage/spells/all/cast
+execute if entity @s[scores={cl.Mana=3..}] at @s if entity @e[tag=FlameBurst,distance=..6] run function classes:mage/spells/all/cast
 
 #Sound effect
 execute as @s[scores={cl.Mana=3..}] at @e[tag=FlameBurst] run playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 0.5

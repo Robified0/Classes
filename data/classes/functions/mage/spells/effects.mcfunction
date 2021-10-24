@@ -14,8 +14,8 @@
 scoreboard players remove @a[scores={cl.summonCount=1..}] cl.summonCount 1
 scoreboard players remove @e[tag=summoned,scores={cl.summonCount=1..}] cl.summonCount 1
 
-#Cold Shield - (tag=ColdShield)
-execute if entity @a[tag=ColdShield,scores={cl.e.ColdShield=-10..}] run function classes:mage/effects/coldshield
+#Fire Shield - (tag=FireShield)
+execute if entity @a[tag=FireShield,scores={cl.e.FireShield=-10..}] run function classes:mage/effects/fireshield
 
 #Slow Fall - (tag=SlowFall)
 execute if entity @a[tag=SlowFall,scores={cl.e.SlowFall=-10..}] run function classes:mage/effects/slowfall
@@ -47,5 +47,5 @@ execute if entity @e[type=iron_golem,tag=summoned] run function classes:mage/eff
 #Countdown/kill Light Spell marker
 execute if entity @e[type=marker,tag=light] run function classes:mage/effects/light
 
-#Cold Shield - (tag=ColdShield)
+#Cold Shield - (tag=FireShield)
 execute if entity @a[scores={cl.e.Shield=-10..}] as @a[scores={cl.e.Shield=-10..}] run function classes:mage/effects/shield
