@@ -1,3 +1,6 @@
+#Not Enough Mana
+execute unless entity @s[scores={cl.Mana=2..}] run function classes:main/mana_system/nomana
+
 ### calculations based on a 0.5 raycast stepsize.
 ### if you change raycast stepsize, change *0.5 accordingly
 # how many half blocks per step (4*0.5) = 2 blocks per tick
@@ -5,11 +8,11 @@ execute unless entity @s[scores={cl.Mana=2..},x_rotation=87..90] run scoreboard 
 # how many half blocks to travel (24*0.5) = 12 blocks
 execute unless entity @s[scores={cl.Mana=2..},x_rotation=87..90] run scoreboard players set dst cl.slowcast 48
 
-execute unless entity @s[scores={cl.Mana=2..},x_rotation=87..90] positioned ~ ~1.45 ~ run function classes:mage/spells/levitate/start
+execute if entity @s[scores={cl.Mana=2..}] unless entity @s[x_rotation=87..90] at @s positioned ~ ~1.45 ~ run function classes:mage/spells/levitate/start
 
 #If Player is looking at ground:
-execute if entity @s[scores={cl.Mana=2..},x_rotation=87..90,distance=..1] run effect give @s minecraft:levitation 1 10 true
-execute if entity @s[scores={cl.Mana=2..},x_rotation=87..90,distance=..1] run effect give @s minecraft:slow_falling 3 0 true
+execute if entity @s[scores={cl.Mana=2..},x_rotation=87..90,distance=..1] run effect give @s minecraft:levitation 1 10 false
+execute if entity @s[scores={cl.Mana=2..},x_rotation=87..90,distance=..1] run effect give @s minecraft:slow_falling 3 0 false
 
 #Play sound effect - use here when needing repeat
 execute if entity @s[scores={cl.Mana=2..},x_rotation=87..90,distance=..1] at @s run playsound minecraft:entity.horse.breathe player @a ~ ~ ~ 1

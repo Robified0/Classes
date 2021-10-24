@@ -31,3 +31,4 @@ execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:l
 execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:lapis_lazuli",tag:{CustomModelData:65000}}}] at @s run function classes:mage/spells/light/spell
 execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:lapis_lazuli",tag:{CustomModelData:65001}}}] at @s run function classes:mage/spells/teleport/spell
 execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:lapis_lazuli",tag:{CustomModelData:65002}}}] at @s run function classes:mage/spells/shield/spell
+execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:lapis_lazuli",tag:{CustomModelData:65003}}}] at @s run function classes:mage/spells/invisibility/spell
