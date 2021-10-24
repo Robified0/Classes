@@ -51,7 +51,7 @@ execute unless score #cl.pref cl.p.wExtFire matches 0 run scoreboard players set
 
 #Scoreboards for time based spells
 scoreboard objectives add cl.summonCount dummy
-scoreboard objectives add cl.e.ColdShield dummy
+scoreboard objectives add cl.e.FireShield dummy
 scoreboard objectives add cl.e.DeepFreeze dummy
 scoreboard objectives add cl.e.SlowFall dummy
 scoreboard objectives add cl.e.TailWind dummy

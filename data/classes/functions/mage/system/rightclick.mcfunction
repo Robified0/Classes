@@ -3,11 +3,11 @@ execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:l
 execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:lapis_lazuli",tag:{CustomModelData:61001}}}] at @s run function classes:mage/spells/bedofcoals/spell
 execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:lapis_lazuli",tag:{CustomModelData:61002}}}] at @s run function classes:mage/spells/flameburst/spell
 execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:lapis_lazuli",tag:{CustomModelData:61003}}}] at @s run function classes:mage/spells/fireball/spell
+execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:lapis_lazuli",tag:{CustomModelData:61004}}}] at @s run function classes:mage/spells/fireshield/spell
 
 #Water Spells
 execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:lapis_lazuli",tag:{CustomModelData:62000}}}] at @s run function classes:mage/spells/waterstrike/spell
 execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:lapis_lazuli",tag:{CustomModelData:62001}}}] at @s run function classes:mage/spells/iceshard/spell
-execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:lapis_lazuli",tag:{CustomModelData:62002}}}] at @s run function classes:mage/spells/coldshield/spell
 execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:lapis_lazuli",tag:{CustomModelData:62003}}}] at @s run function classes:mage/spells/deepfreeze/spell
 execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:lapis_lazuli",tag:{CustomModelData:62004}}}] at @s run function classes:mage/spells/snowgolem/spell
 execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:lapis_lazuli",tag:{CustomModelData:62005}}}] at @s run function classes:mage/spells/waterbreath/spell
