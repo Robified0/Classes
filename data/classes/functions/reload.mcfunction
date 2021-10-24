@@ -24,12 +24,7 @@ scoreboard objectives add cl.ReadBook minecraft.used:minecraft.written_book
 scoreboard objectives add cl.Mana dummy
 scoreboard objectives add cl.ManaRegenSec dummy
 scoreboard objectives add cl.Swimming air
-scoreboard objectives add cl.currSpellSel dummy
-scoreboard objectives add cl.emptySlot1 dummy
-scoreboard objectives add cl.emptySlot2 dummy
-scoreboard objectives add cl.emptySlot3 dummy
-scoreboard objectives add cl.emptySlot4 dummy
-scoreboard objectives add cl.emptySlot5 dummy
+scoreboard objectives add cl.health health
 scoreboard objectives add cl.Cooldown dummy
 scoreboard objectives add cl.HitBySpell dummy
 scoreboard objectives add cl.Mage.Armor dummy
