@@ -32,3 +32,4 @@ execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:w
 execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:65001}}}] at @s run function classes:mage/spells/teleport/spell
 execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:65002}}}] at @s run function classes:mage/spells/shield/spell
 execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:65003}}}] at @s run function classes:mage/spells/invisibility/spell
+execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:65004}}}] at @s run function classes:mage/spells/mend/spell
