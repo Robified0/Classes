@@ -15,7 +15,7 @@ execute if entity @s[scores={cl.Mana=3..}] at @s run particle minecraft:witch ~ 
 
 #Cast Spell Sound Effect
 execute if entity @s[scores={cl.Mana=3..}] at @s run function classes:mage/spells/all/cast
-execute if entity @s[scores={cl.Mana=3..}] at @s run playsound minecraft:entity.horse.breathe player @a ~ ~ ~ 0.5 1
+execute if entity @s[scores={cl.Mana=3..}] at @s run playsound minecraft:entity.horse.breathe player @a ~ ~ ~ 1 1
 
 #Spell Cast Notification
 execute as @s[scores={cl.Mana=3..}] run tellraw @s[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Bunny Hop!","bold":true,"color":"#FFFF80"}]
