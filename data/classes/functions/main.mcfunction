@@ -33,6 +33,12 @@ execute as @a[scores={cl.equipSpell=1..,cl.loadSpell=6}] run tellraw @s {"text":
 #XP Handling for spells
 execute as @e[type=item,nbt={Item:{id:"minecraft:acacia_button",Count:1b,tag:{XPOrb:1b}}}] run function classes:main/loot_table/xp
 
+#Handle Anger quickly
+execute as @e[type=#classes:passive,nbt=!{Brain:{memories:{"minecraft:angry_at":{}}}},tag=!cl.isAngry] run tag @s add cl.isAngry
+execute as @e[type=#classes:passive,nbt=!{AngerTime:0},tag=!cl.isAngry] run tag @s add cl.isAngry
+execute as @e[type=#classes:passive,nbt={Brain:{memories:{"minecraft:angry_at":{}}}},tag=cl.isAngry] run tag @s remove cl.isAngry
+execute as @e[type=#classes:passive,nbt={AngerTime:0},tag=cl.isAngry] run tag @s remove cl.isAngry
+
 #Tag Owned Pets to Prevent Spell Damage to them
 execute as @e[type=#classes:ownable,tag=!cl.Owned] if data entity @s Owner run tag @s add cl.Owned
 execute as @e[type=iron_golem,tag=!cl.Owned,nbt={PlayerCreated:1b}] run tag @s add cl.Owned

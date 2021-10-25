@@ -6,14 +6,16 @@ particle electric_spark ^-0.3 ^ ^0.3 0.3 0.3 0.3 0.1 1 force
 execute at @s run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 2 1.5
 
 #Do these things when spell hits
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] run scoreboard players set @s cl.HitBySpell 100
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] run function classes:main/loot_table/main
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,type=!#classes:undead] run effect give @s minecraft:instant_health 1 1 true
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead,tag=!summoned,tag=!cl.Owned] run effect give @s minecraft:instant_health 2 1 true
+execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead,tag=!summoned,tag=!cl.Owned] run scoreboard players set @s cl.HitBySpell 100
+execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead,tag=!summoned,tag=!cl.Owned] run function classes:main/loot_table/main
+execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,tag=!cl.isAngry] run effect give @s minecraft:instant_health 1 1 true
+execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead,tag=!summoned,tag=!cl.Owned] run effect give @s minecraft:instant_health 1 1 true
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=player] run effect give @s minecraft:instant_health 2 0 true
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] at @s run particle minecraft:composter ~ ~ ~ 0.5 1 0.5 0.1 30 normal
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] at @s run particle minecraft:electric_spark ~ ~ ~ 0.5 1 0.5 0.1 10 normal
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead,tag=!summoned,tag=!cl.Owned] run data modify entity @s AngryAt set from entity @p[scores={cl.Class=3}] UUID
+execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,tag=!cl.isAngry,tag=!summoned,tag=!cl.Owned] at @s run particle minecraft:composter ~ ~ ~ 0.5 1 0.5 0.1 30 normal
+execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,tag=!cl.isAngry,tag=!summoned,tag=!cl.Owned] at @s run particle minecraft:electric_spark ~ ~ ~ 0.5 1 0.5 0.1 10 normal
+execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead,tag=!summoned,tag=!cl.Owned] at @s run particle minecraft:composter ~ ~ ~ 0.5 1 0.5 0.1 30 normal
+execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead,tag=!summoned,tag=!cl.Owned] at @s run particle minecraft:electric_spark ~ ~ ~ 0.5 1 0.5 0.1 10 normal
+execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead,tag=!summoned,tag=!cl.Owned] run data modify entity @s AngryAt set from entity @p[scores={cl.Class=4}] UUID
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead,nbt=!{Brain:{memories:{"minecraft:angry_at":{}}}},tag=!summoned,tag=!cl.Owned] run data modify entity @s Brain.memories."minecraft:angry_at".value set from entity @p[scores={cl.Class=4}] UUID
 
 #Edit tag/spellname and uncomment if you want it to end when it hits one target
