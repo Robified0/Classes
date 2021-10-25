@@ -3,7 +3,7 @@ execute if entity @s[scores={cl.Mana=..2}] run function classes:main/mana_system
 
 #Add score for tracking
 execute if entity @s[scores={cl.Mana=3..}] at @s run summon marker ~ ~1 ~ {Tags:["HealCircle","summoned"]}
-execute as @e[type=marker,tag=HealCircle,sort=nearest] at @s run function classes:operations/particles/draw/healcircle/drawcircle
+execute if entity @s[scores={cl.Mana=3..}] at @s as @e[type=marker,tag=HealCircle,sort=nearest] at @s run function classes:operations/particles/draw/healcircle/drawcircle
 execute if entity @s[scores={cl.Mana=3..}] at @s run effect give @a[distance=..5] instant_health 1 1 true
 execute if entity @s[scores={cl.Mana=3..}] at @s run effect give @e[type=!player,distance=..5,tag=summoned] instant_health 1 1 true
 execute if entity @s[scores={cl.Mana=3..}] at @s run effect give @e[type=!player,distance=..5,tag=cl.Owned] instant_health 1 1 true

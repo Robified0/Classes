@@ -27,22 +27,8 @@ execute as @a[scores={cl.Class=3..4}] run tag @s add Equipped
 #Display Mana bar to players who have Mana score set (spellcasters only)
 execute as @a[gamemode=!creative,gamemode=!spectator,scores={cl.Mana=-5..}] run function classes:main/mana_system/mana
 
-#Mage Switching spells
-execute if entity @a[scores={cl.Sneaking=1..,cl.rightClick=1..,cl.Class=3}] as @a[scores={cl.Sneaking=1..,cl.rightClick=1..,cl.Class=3}] run function classes:mage/system/wand/switch/switch
-
-#Healer Switching Spells
-execute if entity @a[scores={cl.Sneaking=1..,cl.rightClick=1..,cl.Class=4}] as @a[scores={cl.Sneaking=1..,cl.rightClick=1..,cl.Class=4}] run function classes:healer/system/wand/switch/switch
-
-#Check for players selecting "Clear Wand" in book
-execute as @a[scores={cl.equipSpell=-1}] run function classes:operations/clearwand
-execute as @a[scores={cl.equipSpell=-2}] run function classes:mage/system/load-spell-book
-
-#Check for triggers being activated to equip spell
-execute as @a[scores={cl.equipSpell=1..,cl.loadSpell=0..5,cl.ReadBook=1..}] run function classes:equip
-
 #Handle max spells, and messaging.
 execute as @a[scores={cl.equipSpell=1..,cl.loadSpell=6}] run tellraw @s {"text":"You're maxed out. Clear your wand to equip other spells."}
-execute as @a[scores={cl.equipSpell=1..,cl.loadSpell=6}] run scoreboard players reset @s cl.equipSpell
 
 #XP Handling for spells
 execute as @e[type=item,nbt={Item:{id:"minecraft:acacia_button",Count:1b,tag:{XPOrb:1b}}}] run function classes:main/loot_table/xp

@@ -9,3 +9,4 @@ effect clear @s nausea
 effect clear @s unluck
 effect clear @s wither
 scoreboard players remove @s[scores={cl.e.CureEffects=1..}] cl.e.CureEffects 1
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{Spell:1b}}}] run effect give @s minecraft:mining_fatigue 1 200 true

@@ -3,8 +3,8 @@ execute if entity @s[scores={cl.Mana=..3}] run function classes:main/mana_system
 
 #Add score for tracking
 execute if entity @s[scores={cl.Mana=4..}] at @s run summon marker ~ ~1 ~ {Tags:["CureEffects","summoned"]}
-execute as @e[type=marker,tag=CureEffects,sort=nearest] at @s run function classes:operations/particles/draw/cureeffects/drawcircle
-execute if entity @s[scores={cl.Mana=4..}] at @s run scoreboard players set @a[distance=..5,limit=5,sort=random] cl.e.CureEffects 900
+execute if entity @s[scores={cl.Mana=4..}] as @e[type=marker,tag=CureEffects,sort=nearest] at @s run function classes:operations/particles/draw/cureeffects/drawcircle
+execute if entity @s[scores={cl.Mana=4..}] at @s run scoreboard players set @a[distance=..5,limit=5,sort=random] cl.e.CureEffects 600
 
 #Cast Spell Sound Effect
 execute if entity @s[scores={cl.Mana=4..}] at @s run function classes:healer/spells/all/cast

@@ -1,3 +1,6 @@
+#Check for Mana
+execute unless entity @s[scores={cl.Mana=4..}] run function classes:main/mana_system/nomana
+
 ### calculations based on a 0.5 raycast stepsize.
 ### if you change raycast stepsize, change *0.5 accordingly
 # how many half blocks per step (4*0.5) = 2 blocks per tick
@@ -5,7 +8,7 @@ execute unless entity @s[scores={cl.Mana=4..},x_rotation=87..90] run scoreboard 
 # how many half blocks to travel (24*0.5) = 12 blocks
 execute unless entity @s[scores={cl.Mana=4..},x_rotation=87..90] run scoreboard players set dst cl.slowcast 48
 
-execute unless entity @s[scores={cl.Mana=4..},x_rotation=87..90] positioned ~ ~1.45 ~ run function classes:healer/spells/vitality/start
+execute unless entity @s[scores={cl.Mana=4..},x_rotation=87..90] at @s positioned ~ ~1.45 ~ run function classes:healer/spells/vitality/start
 
 
 
