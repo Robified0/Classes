@@ -48,6 +48,7 @@ execute unless score #cl.pref cl.p.wExtFire matches 0 run scoreboard players set
 scoreboard objectives add cl.summonCount dummy
 scoreboard objectives add cl.e.FireShield dummy
 scoreboard objectives add cl.e.DeepFreeze dummy
+scoreboard objectives add cl.e.IceWalker dummy
 scoreboard objectives add cl.e.SlowFall dummy
 scoreboard objectives add cl.e.TailWind dummy
 scoreboard objectives add cl.e.BunnyHop dummy

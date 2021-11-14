@@ -15,6 +15,9 @@ scoreboard players remove @a[scores={cl.summonCount=1..}] cl.summonCount 1
 scoreboard players remove @e[tag=summoned,scores={cl.summonCount=1..}] cl.summonCount 1
 
 #Fire Shield - (tag=FireShield)
+execute if entity @a[tag=IceWalker,scores={cl.e.FireShield=-10..}] run function classes:mage/effects/icewalker
+
+#Fire Shield - (tag=FireShield)
 execute if entity @a[tag=FireShield,scores={cl.e.FireShield=-10..}] run function classes:mage/effects/fireshield
 
 #Slow Fall - (tag=SlowFall)
