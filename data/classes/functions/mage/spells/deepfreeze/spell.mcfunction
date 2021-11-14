@@ -10,6 +10,7 @@ execute if entity @s[scores={cl.Mana=4..}] at @s as @e[tag=DeepFreeze,distance=.
 execute if entity @s[scores={cl.Mana=4..}] at @s as @e[tag=DeepFreeze,distance=..5] run data merge entity @s {NoAI:1b,Silent:1b,Invulnerable:1b}
 execute if entity @s[scores={cl.Mana=4..}] as @e[tag=DeepFreeze,distance=..5] at @s run fill ~ ~ ~ ~ ~1 ~ packed_ice keep
 execute if entity @s[scores={cl.Mana=4..}] at @e[tag=DeepFreeze,distance=..5] run particle dust 0.129 0.914 1.000 1 ~ ~ ~ 0.5 0.5 0.5 1 100 normal
+execute if entity @s[scores={cl.Mana=4..}] if entity @e[tag=DeepFreeze,distance=..5] run particle dust 0.129 0.914 1.000 1 ~ ~ ~ 5 0.75 5 0.01 500 normal
 
 #Get mobs angry if not already
 execute if entity @s[scores={cl.Mana=4..}] at @s as @e[type=!#classes:nontarget,distance=..3,nbt={AngerTime:0},tag=!summoned] run data modify entity @s AngryAt set from entity @p[tag=GetAngry] UUID
