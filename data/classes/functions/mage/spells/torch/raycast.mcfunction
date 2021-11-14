@@ -13,7 +13,7 @@ execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=creeper] run fu
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:undead,type=!#classes:nontarget,type=!#classes:fireproof,type=!creeper,tag=!summoned,tag=!cl.Owned] run effect give @s minecraft:instant_damage 2 0 true
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead,type=!#classes:nontarget,type=!#classes:fireproof,tag=!cl.Owned] run effect give @s minecraft:instant_health 2 0 true
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=witch] run effect give @s minecraft:instant_damage 1 3 true
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] at @s run particle minecraft:small_flame ~ ~ ~ 0.5 0.5 0.5 0.5 30 normal
+execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] at @s run particle minecraft:small_flame ~ ~ ~ 0.5 0.5 0.5 0.01 30 normal
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,nbt={AngerTime:0},tag=!summoned,tag=!cl.Owned] run data modify entity @s AngryAt set from entity @p[scores={cl.Class=3}] UUID
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:neutral,nbt=!{Brain:{memories:{"minecraft:angry_at":{}}}},tag=!summoned,tag=!cl.Owned] run data modify entity @s Brain.memories."minecraft:angry_at".value set from entity @p[scores={cl.Class=3}] UUID
 
