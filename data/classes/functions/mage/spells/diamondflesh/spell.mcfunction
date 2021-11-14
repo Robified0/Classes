@@ -2,9 +2,9 @@
 execute if entity @s[scores={cl.Mana=..2}] run function classes:main/mana_system/nomana
 
 #Remove other Flesh spells
-execute if entity @s[scores={cl.Mana=3..}] run scoreboard players set @s cl.e.StoneFlesh 0
+execute if entity @s[scores={cl.Mana=3..}] run scoreboard players set @s cl.e.GoldFlesh 0
 execute if entity @s[scores={cl.Mana=3..}] run scoreboard players set @s cl.e.IronFlesh 0
-execute if entity @s[scores={cl.Mana=3..}] run tag @s remove StoneFlesh
+execute if entity @s[scores={cl.Mana=3..}] run tag @s remove Goldflesh
 execute if entity @s[scores={cl.Mana=3..}] run tag @s remove IronFlesh
 
 #Give Player Tag for particle effect

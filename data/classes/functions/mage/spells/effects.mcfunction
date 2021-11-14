@@ -26,13 +26,13 @@ execute if entity @a[tag=TailWind,scores={cl.e.TailWind=-10..}] run function cla
 #Tail Wind - (tag=BunnyHop)
 execute if entity @a[tag=BunnyHop,scores={cl.e.BunnyHop=-10..}] run function classes:mage/effects/bunnyhop
 
-#Stone Flesh - (tag=StoneFlesh)
-execute if entity @a[tag=StoneFlesh,scores={cl.e.StoneFlesh=-10..}] run function classes:mage/effects/stoneflesh
-
 #Iron Flesh - (tag=IronFlesh)
 execute if entity @a[tag=IronFlesh,scores={cl.e.IronFlesh=-10..}] run function classes:mage/effects/ironflesh
 
-#Diamond Flesh - (tag=DiamFlesh)
+#Gold Flesh - (tag=GoldFlesh)
+execute if entity @a[tag=GoldFlesh,scores={cl.e.GoldFlesh=-10..}] run function classes:mage/effects/goldflesh
+
+#Diamond Flesh - (tag=DiaFlesh)
 execute if entity @a[tag=DiaFlesh,scores={cl.e.DiaFlesh=-10..}] run function classes:mage/effects/diamondflesh
 
 #Deep Freeze - (tag=DeepFreeze)
