@@ -49,3 +49,8 @@ execute as @a[scores={cl.Class=3..4}] run function classes:main/mana_system/main
 
 #Handle Motion
 execute as @e[tag=motion_projectile,tag=!motion_added] at @s rotated as @p run function classes:operations/apply_motion
+
+#Kill fireballs that have been deflected
+execute as @e[type=fireball,tag=cl.newFireball] run scoreboard players add @s cl.newFireball 1
+execute as @e[type=fireball,tag=cl.newFireball,scores={cl.newFireball=60..}] at @s run particle flame ~ ~ ~ 1 1 1 1 100 force @a
+execute as @e[type=fireball,tag=cl.newFireball,scores={cl.newFireball=60..}] at @s run kill @s
