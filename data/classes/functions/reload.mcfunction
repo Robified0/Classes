@@ -11,7 +11,7 @@ scoreboard objectives add cl.motion_z2 dummy
 scoreboard objectives add cl.power_0 dummy
 scoreboard objectives add cl.power_1 dummy
 scoreboard objectives add cl.power_2 dummy
-
+scoreboard objectives add cl.newFireball dummy
 #Set up trigger for equipping spells
 scoreboard objectives add cl.equipSpell trigger
 
@@ -51,7 +51,7 @@ scoreboard objectives add cl.e.DeepFreeze dummy
 scoreboard objectives add cl.e.SlowFall dummy
 scoreboard objectives add cl.e.TailWind dummy
 scoreboard objectives add cl.e.BunnyHop dummy
-scoreboard objectives add cl.e.StoneFlesh dummy
+scoreboard objectives add cl.e.GoldFlesh dummy
 scoreboard objectives add cl.e.IronFlesh dummy
 scoreboard objectives add cl.e.DiaFlesh dummy
 scoreboard objectives add cl.e.Light dummy
