@@ -8,7 +8,7 @@ execute if entity @s[scores={cl.Mana=4..}] at @s as @e[tag=DeepFreeze,distance=.
 execute if entity @s[scores={cl.Mana=4..}] at @s as @e[tag=DeepFreeze,distance=..5] run function classes:main/loot_table/main
 execute if entity @s[scores={cl.Mana=4..}] at @s as @e[tag=DeepFreeze,distance=..5] run scoreboard players set @s cl.e.DeepFreeze 300
 execute if entity @s[scores={cl.Mana=4..}] at @s as @e[tag=DeepFreeze,distance=..5] run data merge entity @s {NoAI:1b,Silent:1b,Invulnerable:1b}
-execute if entity @s[scores={cl.Mana=4..}] as @e[tag=DeepFreeze,distance=..5] at @s run fill ~ ~ ~ ~ ~1 ~ ice keep
+execute if entity @s[scores={cl.Mana=4..}] as @e[tag=DeepFreeze,distance=..5] at @s run fill ~ ~ ~ ~ ~1 ~ packed_ice keep
 execute if entity @s[scores={cl.Mana=4..}] at @e[tag=DeepFreeze,distance=..5] run particle dust 0.129 0.914 1.000 1 ~ ~ ~ 0.5 0.5 0.5 1 100 normal
 
 #Get mobs angry if not already
