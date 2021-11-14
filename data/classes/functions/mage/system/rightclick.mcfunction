@@ -22,8 +22,8 @@ execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:w
 
 #Earth Spells
 execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:64000}}}] at @s run function classes:mage/spells/poison/spell
-execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:64001}}}] at @s run function classes:mage/spells/stoneflesh/spell
-execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:64002}}}] at @s run function classes:mage/spells/ironflesh/spell
+execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:64001}}}] at @s run function classes:mage/spells/ironflesh/spell
+execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:64002}}}] at @s run function classes:mage/spells/goldflesh/spell
 execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:64003}}}] at @s run function classes:mage/spells/diamondflesh/spell
 execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:64004}}}] at @s run function classes:mage/spells/irongolem/spell
 
