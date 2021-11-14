@@ -8,6 +8,7 @@ execute if score #cl.pref cl.p.wExtFire matches 1 positioned ^ ^ ^0.5 if block ~
 execute if score #cl.pref cl.p.wExtFire matches 1 positioned ^ ^ ^0.5 if block ~ ~ ~ #minecraft:fire run setblock ~ ~ ~ minecraft:air
 
 #Extinguish campfires
+execute if score #cl.pref cl.p.wExtFire matches 1 positioned ^ ^ ^0.5 if block ~ ~ ~ #minecraft:candles run function classes:blocks/candles/extinguish
 execute if score #cl.pref cl.p.wExtFire matches 1 positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:campfire[lit=true,facing=north] run setblock ~ ~ ~ minecraft:campfire[lit=false,facing=north]
 execute if score #cl.pref cl.p.wExtFire matches 1 positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:campfire[lit=true,facing=south] run setblock ~ ~ ~ minecraft:campfire[lit=false,facing=south]
 execute if score #cl.pref cl.p.wExtFire matches 1 positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:campfire[lit=true,facing=east] run setblock ~ ~ ~ minecraft:campfire[lit=false,facing=east]
