@@ -11,7 +11,7 @@ execute positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:soul_campfire[lit=false,fac
 execute positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:soul_campfire[lit=false,facing=east] run setblock ~ ~ ~ minecraft:soul_campfire[lit=true,facing=east]
 execute positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:soul_campfire[lit=false,facing=west] run setblock ~ ~ ~ minecraft:soul_campfire[lit=true,facing=west]
 execute positioned ^ ^ ^0.5 if block ~ ~ ~ #minecraft:candles[lit=false] run function classes:blocks/candles/light
-execute positioned ^ ^ ^0.5 if block ~ ~ ~ #minecraft:candles[lit=false] run say Hit unlit candle
+
 #Light obsidian on fire (for lighting nether portals)
 execute positioned ^ ^ ^-0.25 if block ^ ^ ^0.25 obsidian if block ^ ^ ^-0.5 air run setblock ^ ^ ^-0.5 minecraft:fire
 
