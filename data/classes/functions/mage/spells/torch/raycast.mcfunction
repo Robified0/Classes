@@ -8,6 +8,7 @@ execute at @s run playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 0.08
 #Do these things when spell hits
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:fireproof,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] run scoreboard players set @s cl.HitBySpell 100
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:fireproof,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] run function classes:main/loot_table/main
+execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:fireproof,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] run playsound minecraft:entity.blaze.burn player @a ~ ~ ~ 5 1.3
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:fireproof,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] run data merge entity @s {Fire:200}
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=creeper] run function classes:entities/vanilla/creeper/fire
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:undead,type=!#classes:nontarget,type=!#classes:fireproof,type=!creeper,tag=!summoned,tag=!cl.Owned] run effect give @s minecraft:instant_damage 2 0 true
