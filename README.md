@@ -19,17 +19,12 @@ The mage commands the elements of earth, air, fire, and water. Using their magic
 
 **Healer:**
 
-A potent user in healing magic, the Healer is able to heal allies, fight the undead, and grant wide area buffs to surrounding players. The Healer focuses on keeping those around them alive.
+A potent user in healing magic, the Healer is able to heal allies, deal heavy damage to the undead, and grant wide area buffs to surrounding players. The Healer focuses on keeping those around them alive.
 
 
 **Knight:**
 
 A warrior inside and out, the Knight has powerful attacks and a natural resistance to damage.
-
-
-**Defender:**
-
-A tanky character with more health, who gains extra benefits when shielding, and when around more players.
 
 
 **Miner:**
