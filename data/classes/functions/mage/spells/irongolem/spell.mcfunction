@@ -3,7 +3,7 @@ execute if entity @s[scores={cl.Mana=..7}] run function classes:main/mana_system
 
 #Summon AEC
 execute if entity @s[scores={cl.Mana=8..}] at @s as @e[tag=summoned] if score @s cl.summonCount = @p cl.summonCount run scoreboard players set @e[tag=summoned,sort=nearest,limit=1] cl.summonCount 1
-execute if entity @s[scores={cl.Mana=8..}] at @s positioned ^ ^ ^3 run summon iron_golem ~ ~1 ~ {DeathLootTable:"none",PlayerCreated:1b,Tags:["summoned"]}
+execute if entity @s[scores={cl.Mana=8..}] at @s run summon iron_golem ~ ~ ~ {DeathLootTable:"none",PlayerCreated:1b,Tags:["summoned"]}
 execute if entity @s[scores={cl.Mana=8..}] run scoreboard players set @e[type=iron_golem,tag=summoned,limit=1,sort=nearest] cl.summonCount 600
 execute if entity @s[scores={cl.Mana=8..}] run scoreboard players set @s cl.summonCount 600
 execute if entity @s[scores={cl.Mana=8..}] as @e[type=iron_golem,tag=summoned] at @s run particle dust 0.129 0.914 1.000 1 ~ ~ ~ 1 1 1 2 30 normal
