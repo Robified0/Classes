@@ -49,6 +49,8 @@ scoreboard objectives add cl.summonCount dummy
 scoreboard objectives add cl.e.FireShield dummy
 scoreboard objectives add cl.e.DeepFreeze dummy
 scoreboard objectives add cl.e.IceWalker dummy
+scoreboard objectives add cl.e.Blizzard.m dummy
+scoreboard objectives add cl.e.Blizzard dummy
 scoreboard objectives add cl.e.SlowFall dummy
 scoreboard objectives add cl.e.TailWind dummy
 scoreboard objectives add cl.e.BunnyHop dummy

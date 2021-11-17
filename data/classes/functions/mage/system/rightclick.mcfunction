@@ -14,6 +14,7 @@ execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:w
 execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:62006}}}] at @s run function classes:mage/spells/dolpgrace/spell
 execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:62007}}}] at @s run function classes:mage/spells/icewalker/spell
 execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:62008}}}] at @s run function classes:mage/spells/extinguish/spell
+execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:62009}}}] at @s run function classes:mage/spells/blizzard/spell
 
 #Air spells
 execute if entity @s[scores={cl.Mage.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:63000}}}] at @s run function classes:mage/spells/levitate/spell

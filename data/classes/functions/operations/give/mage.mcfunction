@@ -27,15 +27,22 @@ give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Water Breathing","colo
 #Dolphins Grace
 give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Dolphins Grace","color":"blue"},{"text":" - ","color":"white","bold":false},{"text":"3 Mana","color":"aqua","bold":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','[{"text":"Element: ","color":"dark_aqua"},{"text":"Water","color":"blue"}]','{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Swim like a dolphin for 60 seconds.","color":"aqua"}']},CustomModelData:62006,Spell:1b} 1
 
-
 #Deep Freeze
 give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Deep Freeze","color":"blue"},{"text":" - ","color":"white","bold":false},{"text":"4 Mana","color":"aqua","bold":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','[{"text":"Element: ","color":"dark_aqua"},{"text":"Water","color":"blue"}]','{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Freezes all hostile mobs within 3 blocks in place.","color":"aqua"}']},CustomModelData:62003,Spell:1b} 1
 
 #Snow Golem
 give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Snow Golem","color":"blue"},{"text":" - ","color":"white","bold":false},{"text":"4 Mana","color":"aqua","bold":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','[{"text":"Element: ","color":"dark_aqua"},{"text":"Water","color":"blue"}]','{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Summons a snow golem to fend off enemies.","color":"aqua"}']},CustomModelData:62004,Spell:1b} 1
 
+#Ice Walker
+give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Ice Walker","color":"blue"},{"text":" - ","color":"white","bold":false},{"text":"3 Mana","color":"aqua","bold":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','[{"text":"Element: ","color":"dark_aqua"},{"text":"Water","color":"blue"}]','{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Turns still water at your feet to ice for 1 minute.","color":"aqua"}']},CustomModelData:62007,Spell:1b} 1
+
+
 #Extinguish
 give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Extinguish","color":"blue"},{"text":" - ","color":"white","bold":false},{"text":"2 Mana","color":"aqua","bold":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','[{"text":"Element: ","color":"dark_aqua"},{"text":"Water","color":"blue"}]','{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Extinguish fires within 10 blocks.","color":"aqua"}']},CustomModelData:62008,Spell:1b} 1
+
+#Blizzard
+give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Blizzard","color":"blue"},{"text":" - ","color":"white","bold":false},{"text":"1 Mana/sec","color":"aqua","bold":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','[{"text":"Element: ","color":"dark_aqua"},{"text":"Water","color":"blue"}]','{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Slow, damage, and blow enemies within 10 blocks backwards.","color":"aqua"}']},CustomModelData:62009,Spell:1b} 1
+
 
 #Slow Fall
 give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Slow Fall","color":"yellow"},{"text":" - ","color":"white","bold":false},{"text":"3 Mana","color":"aqua","bold":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','[{"text":"Element: ","color":"dark_aqua"},{"text":"Air","color":"yellow"}]','{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Grants the caster Slow Fall for 45 seconds.","color":"yellow"}']},CustomModelData:63001,Spell:1b} 1

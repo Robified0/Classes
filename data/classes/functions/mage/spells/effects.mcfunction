@@ -14,8 +14,11 @@
 scoreboard players remove @a[scores={cl.summonCount=1..}] cl.summonCount 1
 scoreboard players remove @e[tag=summoned,scores={cl.summonCount=1..}] cl.summonCount 1
 
-#Fire Shield - (tag=FireShield)
-execute if entity @a[tag=IceWalker,scores={cl.e.FireShield=-10..}] run function classes:mage/effects/icewalker
+#Ice Walker (tag=IceWalker)
+execute if entity @a[tag=IceWalker,scores={cl.e.IceWalker=-10..}] run function classes:mage/effects/icewalker
+
+#Blizzard
+execute if entity @a[scores={cl.e.Blizzard=-10..}] as @a[scores={cl.e.Blizzard=-10..}] run function classes:mage/effects/blizzard
 
 #Fire Shield - (tag=FireShield)
 execute if entity @a[tag=FireShield,scores={cl.e.FireShield=-10..}] run function classes:mage/effects/fireshield
@@ -41,6 +44,9 @@ execute if entity @a[tag=DiaFlesh,scores={cl.e.DiaFlesh=-10..}] run function cla
 #Deep Freeze - (tag=DeepFreeze)
 execute if entity @e[tag=DeepFreeze,scores={cl.e.DeepFreeze=-10..}] run function classes:mage/effects/deepfreeze
 
+#Shield Spell
+execute if entity @a[scores={cl.e.Shield=-10..}] as @a[scores={cl.e.Shield=-10..}] run function classes:mage/effects/shield
+
 #Kill summoned mob after time has expired
 execute if entity @e[type=snow_golem,tag=summoned] run function classes:mage/effects/snowgolem
 
@@ -49,6 +55,3 @@ execute if entity @e[type=iron_golem,tag=summoned] run function classes:mage/eff
 
 #Countdown/kill Light Spell marker
 execute if entity @e[type=marker,tag=light] run function classes:mage/effects/light
-
-#Cold Shield - (tag=FireShield)
-execute if entity @a[scores={cl.e.Shield=-10..}] as @a[scores={cl.e.Shield=-10..}] run function classes:mage/effects/shield
