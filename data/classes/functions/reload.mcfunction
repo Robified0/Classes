@@ -60,6 +60,9 @@ scoreboard objectives add cl.e.DiaFlesh dummy
 scoreboard objectives add cl.e.Light dummy
 scoreboard objectives add cl.e.Inspire dummy
 scoreboard objectives add cl.e.Inspire.m dummy
+scoreboard objectives add cl.e.Mending dummy
+scoreboard objectives add cl.e.Mending.m dummy
+scoreboard objectives add cl.e.Mending.t dummy
 scoreboard objectives add cl.e.FireResist dummy
 scoreboard objectives add cl.e.SpeedBoost dummy
 scoreboard objectives add cl.e.CureEffects dummy
