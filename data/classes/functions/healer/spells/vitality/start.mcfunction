@@ -9,8 +9,8 @@ tag @s remove this
 function classes:healer/spells/all/cast
 
 #Particles
-particle minecraft:wax_off ~ ~ ~ 0.5 1 0.5 0.01 50 force
-particle minecraft:happy_villager ~ ~ ~ 0.5 1 0.5 0.08 50 force
+particle minecraft:wax_off ~ ~-1 ~ 0.5 0.3 0.5 0.01 50 force
+particle minecraft:happy_villager ~ ~-1 ~ 0.5 0.3 0.5 0.08 50 force
 
 #Cooldown
 scoreboard players set @s cl.Cooldown 20
