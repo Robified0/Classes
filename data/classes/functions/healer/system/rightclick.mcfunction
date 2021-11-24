@@ -3,6 +3,8 @@ execute if entity @s[scores={cl.Healer.Armor=0},nbt={SelectedItem:{id:"minecraft
 execute if entity @s[scores={cl.Healer.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:71001}}}] at @s run function classes:healer/spells/healcircle/spell
 execute if entity @s[scores={cl.Healer.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:71002}}}] at @s run function classes:healer/spells/satiate/spell
 execute if entity @s[scores={cl.Healer.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:71003}}}] at @s run function classes:healer/spells/cureeffects/spell
+execute if entity @s[scores={cl.Healer.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:71004}}}] at @s run function classes:healer/spells/mending/spell
+
 
 # Protection
 execute if entity @s[scores={cl.Healer.Armor=0},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:72000}}}] at @s run function classes:healer/spells/guard/spell

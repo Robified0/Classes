@@ -9,6 +9,10 @@ give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Bless","color":"green"
 # Cure Effects
 give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Cure Effects","color":"green"},{"text":" - ","color":"white","bold":false},{"text":"4 Mana","color":"aqua","bold":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Buffs all players within 5 blocks. Cures all effects for 30 seconds.","color":"green"}']},CustomModelData:71003,Spell:1b} 1
 
+# Mending
+give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Mending","color":"green"},{"text":" - ","color":"white","bold":false},{"text":"1 Mana/sec","color":"aqua","bold":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Give all allies within 10 blocks Regeneration II.","color":"green"}']},CustomModelData:71004,Spell:1b} 1
+
+
 # Fire Resist
 give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Fire Resist","color":"green"},{"text":" - ","color":"white","bold":false},{"text":"3 Mana","color":"aqua","bold":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"All players within 5 blocks gain Fire Resistance for 45 seconds.","color":"green"}']},CustomModelData:72001,Spell:1b} 1
 

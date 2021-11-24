@@ -16,6 +16,9 @@ execute if entity @e[tag=Guard] as @e[tag=Guard] run function classes:healer/eff
 #Inspire
 execute if entity @e[scores={cl.e.Inspire=1..}] as @e[scores={cl.e.Inspire=1..}] run function classes:healer/effects/inspire
 
+#Mending
+execute if entity @e[scores={cl.e.Mending=1..}] as @e[scores={cl.e.Mending=1..}] run function classes:healer/effects/mending
+
 #Fire Resist
 execute if entity @e[scores={cl.e.FireResist=1..}] as @e[scores={cl.e.FireResist=1..}] run function classes:healer/effects/fireresist
 
