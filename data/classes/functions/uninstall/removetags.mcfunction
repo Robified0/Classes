@@ -22,3 +22,6 @@ tag @a remove cl.s.IronGolem
 tag @a remove cl.s.Light
 tag @a remove cl.s.Teleport
 tag @a remove Joined
+tag @a remove Equipped
+tag @a remove ClassSelected
+tag @a remove SpellNotify
