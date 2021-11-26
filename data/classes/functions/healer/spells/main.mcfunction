@@ -18,4 +18,4 @@
 execute as @a[scores={cl.Class=4}] run function classes:healer/stats/main
 
 #Right-click detection
-execute if entity @a[scores={cl.Class=4,cl.rightClick=1..}] as @a[nbt={Inventory:[{id:"minecraft:warped_fungus_on_a_stick",Slot:-106b,Count:1b,tag:{Wand:1b}}]},scores={cl.Cooldown=0,cl.Class=4}] run function classes:healer/system/rightclick
+execute if entity @a[scores={cl.Class=4,cl.rightClick=1..}] as @a[nbt={Inventory:[{id:"minecraft:warped_fungus_on_a_stick",Slot:-106b,Count:1b,tag:{Wand:1b}}]},scores={cl.Cooldown=0,cl.Class=4,cl.rightClick=1..}] run function classes:healer/system/rightclick

@@ -18,4 +18,7 @@
 execute as @a[scores={cl.Class=3}] run function classes:mage/stats/main
 
 #Right-click detection
-execute if entity @a[scores={cl.Class=3,cl.rightClick=1..}] as @a[nbt={Inventory:[{id:"minecraft:warped_fungus_on_a_stick",Slot:-106b,Count:1b,tag:{Wand:1b}}]},scores={cl.Cooldown=0,cl.Class=3}] run function classes:mage/system/rightclick
+execute if entity @a[scores={cl.Class=3,cl.rightClick=1..}] as @a[nbt={Inventory:[{id:"minecraft:warped_fungus_on_a_stick",Slot:-106b,Count:1b,tag:{Wand:1b}}]},scores={cl.Cooldown=0,cl.Class=3,cl.rightClick=1..}] run function classes:mage/system/rightclick
+
+#AOE Effect detection
+execute if entity @e[type=area_effect_cloud] run function classes:mage/spells/aoeeffects
