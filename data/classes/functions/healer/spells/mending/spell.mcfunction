@@ -20,4 +20,5 @@ execute if entity @s[scores={cl.Mana=1..,cl.e.Mending.t=6..}] run scoreboard pla
 execute if entity @s[scores={cl.Mana=1..}] run scoreboard players remove @s[scores={cl.e.Mending.m=4}] cl.Mana 1
 execute if entity @s[scores={cl.Mana=1..}] run scoreboard players set @s[scores={cl.e.Mending.m=4..}] cl.e.Mending.m 0
 
+#Modify item (for spell versioning)
 item modify entity @s weapon.mainhand classes:healer/spells/mending

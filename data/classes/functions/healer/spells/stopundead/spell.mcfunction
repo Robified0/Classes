@@ -29,3 +29,6 @@ execute as @s[scores={cl.Mana=4..}] if entity @e[tag=StopUndead,distance=..10] r
 
 #Mana Removal
 execute as @s[scores={cl.Mana=4..}] if entity @e[tag=StopUndead,distance=..10] run scoreboard players remove @s cl.Mana 4
+
+#Modify item (for spell versioning)
+item modify entity @s weapon.mainhand classes:healer/spells/stopundead

@@ -31,3 +31,5 @@ execute if entity @s[scores={cl.Mana=4..}] run tellraw @a[tag=SpellNotify,distan
 
 #Mana Depletion
 execute if entity @s[scores={cl.Mana=4..},x_rotation=87..90] run scoreboard players remove @s cl.Mana 4
+
+item modify entity @s weapon.mainhand classes:healer/spells/vitality

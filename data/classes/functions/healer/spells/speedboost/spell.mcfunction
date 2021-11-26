@@ -20,3 +20,6 @@ execute if entity @s[scores={cl.Mana=2..}] run scoreboard players set @s cl.Cool
 
 #Mana Removal
 execute if entity @s[scores={cl.Mana=2..}] run scoreboard players remove @s cl.Mana 2
+
+#Modify item (for spell versioning)
+item modify entity @s weapon.mainhand classes:healer/spells/speedboost
