@@ -1,13 +1,12 @@
 {
 	"values": [
 		"classes:main",
-		"classes:mage/spells/aoeeffects",
 		"classes:mage/spells/main",
 		"classes:healer/spells/main",
+		"classes:ranger/main",
 		"classes:mage/spells/effects",
 		"classes:healer/spells/effects",
 		"classes:mage/spells/torch/zprivate/main",
-		"classes:mage/spells/fireball/zprivate/main",
 		"classes:mage/spells/waterstrike/zprivate/main",
 		"classes:mage/spells/levitate/zprivate/main",
 		"classes:mage/spells/iceshard/zprivate/main",
