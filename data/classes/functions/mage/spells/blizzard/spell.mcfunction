@@ -6,7 +6,7 @@ execute if entity @s[scores={cl.Mana=1..,cl.e.Blizzard=1..}] at @s unless block 
 execute if entity @s[scores={cl.Mana=1..,cl.e.Blizzard=1..}] at @s run effect give @s minecraft:slow_falling 1 0 true
 
 #Sound Effect
-execute if entity @s[scores={cl.Mana=1..,cl.e.Blizzard=1..}] at @s run playsound minecraft:entity.horse.breathe player @a ~ ~ ~ 0.5 0.1 0.3
+execute if entity @s[scores={cl.Mana=1..,cl.e.Blizzard=1..}] at @s run playsound minecraft:entity.horse.breathe player @a[distance=..10] ~ ~ ~ 0.5 0.1 0.3
 execute if entity @s[scores={cl.Mana=1..,cl.e.Blizzard=1..}] at @s run particle minecraft:snowflake ~ ~ ~ 5 5 5 0.40 200 force
 
 #Give Slowness
