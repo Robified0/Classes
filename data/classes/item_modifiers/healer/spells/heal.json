@@ -1,0 +1,6 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{display:{Name:'[{\"text\":\"Heal\",\"color\":\"green\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"1 Mana\",\"color\":\"aqua\",\"bold\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Heals friendly hit targets, and damages undead.\",\"color\":\"green\"}','{\"text\":\" \"}','[{\"text\":\"\"},{\"text\":\"Self Cast:\"}]','{\"text\":\"Cast while looking at the ground to heal yourself.\",\"color\":\"green\"}']},CustomModelData:71000,Spell:1b}"
+  }
+]
