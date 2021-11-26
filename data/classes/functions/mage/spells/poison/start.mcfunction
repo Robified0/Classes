@@ -12,7 +12,7 @@ scoreboard players set @s cl.Cooldown 20
 function classes:mage/spells/all/cast
 
 #Spell Cast Notification
-tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Poison!","bold":true,"color":"#03800F"}]
+tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Poison!","bold":true,"color":"#03800F"}]
 
 #Mana Depletion
 scoreboard players remove @s cl.Mana 1

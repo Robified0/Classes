@@ -21,7 +21,7 @@ execute if entity @s[scores={cl.Mana=3..}] at @e[tag=FlameBurst] run playsound m
 execute if entity @s[scores={cl.Mana=3..}] at @s unless entity @e[tag=FlameBurst] run playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 0.5 2
 
 #Spell Cast Notification
-execute if entity @s[scores={cl.Mana=3..}] if entity @e[tag=FlameBurst] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Flame Burst!","bold":true,"color":"#FF3034"}]
+execute if entity @s[scores={cl.Mana=3..}] if entity @e[tag=FlameBurst] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Flame Burst!","bold":true,"color":"#FF3034"}]
 execute if entity @s[scores={cl.Mana=3..}] unless entity @e[tag=FlameBurst] run function classes:main/mana_system/noneinrange
 
 #Cooldown

@@ -20,7 +20,7 @@ execute if entity @s[scores={cl.Mana=5..}] at @s run function classes:healer/spe
 execute if entity @s[scores={cl.Mana=5..}] at @s run playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 0.6 1.5
 
 #Spell Cast Notification
-execute if entity @s[scores={cl.Mana=5..}] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Guard!","bold":true,"color":"green"}]
+execute if entity @s[scores={cl.Mana=5..}] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Guard!","bold":true,"color":"green"}]
 
 #Cooldown
 execute if entity @s[scores={cl.Mana=5..}] run scoreboard players set @s cl.Cooldown 20

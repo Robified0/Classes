@@ -18,7 +18,7 @@ execute if entity @s[scores={cl.Mana=4..}] at @s run function classes:mage/spell
 execute if entity @s[scores={cl.Mana=4..}] at @s run playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 0.08
 
 #Spell Cast Notification
-execute if entity @s[scores={cl.Mana=4..}] run tellraw @s[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Fire Shield!","bold":true,"color":"#0096FF"}]
+execute if entity @s[scores={cl.Mana=4..}] run tellraw @s[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Fire Shield!","bold":true,"color":"#0096FF"}]
 
 #Cooldown
 execute if entity @s[scores={cl.Mana=4..}] run scoreboard players set @s cl.Cooldown 20

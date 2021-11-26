@@ -16,7 +16,7 @@ particle minecraft:falling_water ~ ~ ~ 0.5 1 0.5 10 50 force
 scoreboard players set @s cl.Cooldown 20
 
 #Spell Cast Notification
-tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Water Strike!","bold":true,"color":"#0096FF"}]
+tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Water Strike!","bold":true,"color":"#0096FF"}]
 
 #Mana Depletion
 scoreboard players remove @s cl.Mana 1

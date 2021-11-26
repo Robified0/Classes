@@ -21,7 +21,7 @@ execute as @s[scores={cl.Mana=4..}] at @e[tag=StopUndead,distance=..10] run play
 execute if entity @s[scores={cl.Mana=4..}] if entity @e[tag=StopUndead,distance=..10] at @s run function classes:healer/spells/all/cast
 
 #Spell Cast Notification
-execute as @s[scores={cl.Mana=4..}] if entity @e[tag=StopUndead,distance=..10] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Deep Freeze!","bold":true,"color":"#0096FF"}]
+execute as @s[scores={cl.Mana=4..}] if entity @e[tag=StopUndead,distance=..10] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Deep Freeze!","bold":true,"color":"#0096FF"}]
 execute as @s[scores={cl.Mana=4..}] unless entity @e[tag=StopUndead,distance=..10] run function classes:main/mana_system/noneinrange
 
 #Cooldown

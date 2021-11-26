@@ -26,7 +26,7 @@ execute if entity @s[scores={cl.Mana=4..}] at @s unless entity @e[tag=DeepFreeze
 execute if entity @s[scores={cl.Mana=4..}] if entity @e[tag=DeepFreeze,distance=..5] at @s run function classes:mage/spells/all/cast
 
 #Spell Cast Notification
-execute if entity @s[scores={cl.Mana=4..}] if entity @e[tag=DeepFreeze,distance=..5] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Deep Freeze!","bold":true,"color":"#0096FF"}]
+execute if entity @s[scores={cl.Mana=4..}] if entity @e[tag=DeepFreeze,distance=..5] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Deep Freeze!","bold":true,"color":"#0096FF"}]
 execute if entity @s[scores={cl.Mana=4..}] unless entity @e[tag=DeepFreeze,distance=..5] run function classes:main/mana_system/noneinrange
 
 #Cooldown

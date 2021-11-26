@@ -21,7 +21,7 @@ scoreboard players set @s cl.Cooldown 20
 tag @s add Teleport
 
 #Spell Cast Notification
-tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Teleport!","bold":true,"color":"light_purple"}]
+tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Teleport!","bold":true,"color":"light_purple"}]
 
 #Mana Depletion
 scoreboard players remove @s cl.Mana 2

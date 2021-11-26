@@ -11,7 +11,7 @@ execute if entity @s[scores={cl.Mana=2..}] at @s run function classes:mage/spell
 execute if entity @s[scores={cl.Mana=2..}] at @s run particle minecraft:witch ~ ~ ~ 0.5 1 0.5 1.2 40 force
 
 #Spell Cast Notification
-execute if entity @s[scores={cl.Mana=2..}] run tellraw @s[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Mend!","bold":true,"color":"light_purple"}]
+execute if entity @s[scores={cl.Mana=2..}] run tellraw @s[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Mend!","bold":true,"color":"light_purple"}]
 
 #Cooldown
 execute if entity @s[scores={cl.Mana=2..}] run scoreboard players set @s cl.Cooldown 20

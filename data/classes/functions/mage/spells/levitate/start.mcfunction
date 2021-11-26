@@ -16,7 +16,7 @@ particle minecraft:cloud ~ ~ ~ 1 1 1 0.1 40 normal
 particle minecraft:witch ~ ~ ~ 0.5 1 0.5 1.2 40 force
 
 #Spell Cast Notification
-tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Levitate!","bold":true,"color":"#FFFF80"}]
+tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Levitate!","bold":true,"color":"#FFFF80"}]
 
 #Mana Depletion
 scoreboard players remove @s cl.Mana 2

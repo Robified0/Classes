@@ -24,7 +24,7 @@ execute if entity @s[scores={cl.Mana=4..}] at @e[type=snow_golem,tag=summoned,sc
 execute if entity @s[scores={cl.Mana=4..}] at @e[type=snow_golem,tag=summoned,scores={cl.summonCount=600}] run particle minecraft:enchant ~ ~ ~ 0.6 0.4 0.6 5 100 force
 
 #Spell Cast Notification
-execute if entity @s[scores={cl.Mana=4..}] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Summon Snow Golem!","bold":true,"color":"#0096FF"}]
+execute if entity @s[scores={cl.Mana=4..}] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Summon Snow Golem!","bold":true,"color":"#0096FF"}]
 
 #Cooldown
 execute if entity @s[scores={cl.Mana=4..}] run scoreboard players set @s cl.Cooldown 20

@@ -25,7 +25,7 @@ execute if entity @s[scores={cl.Mana=1..}] run playsound minecraft:entity.zombie
 execute if entity @s[scores={cl.Mana=1..}] at @s run function classes:mage/spells/all/cast
 
 #Spell Cast Notification
-execute if entity @s[scores={cl.Mana=1..}] run tellraw @s[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Iron Flesh!","bold":true,"color":"#AAAAAA"}]
+execute if entity @s[scores={cl.Mana=1..}] run tellraw @s[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Iron Flesh!","bold":true,"color":"#AAAAAA"}]
 
 #Cooldown
 execute if entity @s[scores={cl.Mana=1..}] run scoreboard players set @s cl.Cooldown 20

@@ -20,7 +20,7 @@ execute if entity @s[scores={cl.Mana=8..}] at @e[type=iron_golem,tag=summoned,sc
 execute if entity @s[scores={cl.Mana=8..}] at @e[type=iron_golem,tag=summoned,scores={cl.summonCount=600}] run particle minecraft:enchant ~ ~ ~ 0.6 0.4 0.6 5 100 force
 
 #Spell Cast Notification
-execute if entity @s[scores={cl.Mana=8..}] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Summon Iron Golem!","bold":true,"color":"#AAAAAA"}]
+execute if entity @s[scores={cl.Mana=8..}] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Summon Iron Golem!","bold":true,"color":"#AAAAAA"}]
 
 #Cooldown
 execute if entity @s[scores={cl.Mana=8..}] run scoreboard players set @s cl.Cooldown 20

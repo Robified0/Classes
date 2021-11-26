@@ -19,7 +19,7 @@ particle dust 0.129 0.914 1.000 1 ~ ~ ~ 0.5 1 0.5 1 50 force
 scoreboard players set @s cl.Cooldown 20
 
 #Spell Cast Notification
-tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Ice Shard!","bold":true,"color":"#0096FF"}]
+tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Ice Shard!","bold":true,"color":"#0096FF"}]
 
 #Mana Depletion
 scoreboard players remove @s cl.Mana 2

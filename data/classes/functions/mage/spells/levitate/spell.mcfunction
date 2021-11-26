@@ -25,7 +25,7 @@ execute if entity @s[scores={cl.Mana=2..},x_rotation=87..90] at @s run particle 
 execute if entity @s[scores={cl.Mana=2..},x_rotation=87..90] run scoreboard players set @s cl.Cooldown 20
 
 #Spell Cast Notification
-tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Levitate!","bold":true,"color":"#FFFF80"}]
+tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Levitate!","bold":true,"color":"#FFFF80"}]
 
 #Mana Depletion
 execute if entity @s[scores={cl.Mana=2..},x_rotation=87..90] run scoreboard players remove @s cl.Mana 2

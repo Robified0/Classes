@@ -17,7 +17,7 @@ particle minecraft:happy_villager ~ ~ ~ 0.5 1 0.5 0.08 50 force
 scoreboard players set @s cl.Cooldown 20
 
 #Spell Cast Notification
-tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Holy Strike!","bold":true,"color":"green"}]
+tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Holy Strike!","bold":true,"color":"green"}]
 
 #Mana Depletion
 scoreboard players remove @s cl.Mana 2

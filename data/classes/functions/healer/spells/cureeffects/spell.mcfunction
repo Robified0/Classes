@@ -15,7 +15,7 @@ execute if entity @s[scores={cl.Mana=4..}] at @s run particle minecraft:wax_off 
 execute if entity @s[scores={cl.Mana=4..}] at @s run particle minecraft:happy_villager ~ ~ ~ 0.5 1 0.5 0.08 50 force
 
 #Spell Cast Notification
-execute if entity @s[scores={cl.Mana=4..}] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Cure Effects!","bold":true,"color":"green"}]
+execute if entity @s[scores={cl.Mana=4..}] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Cure Effects!","bold":true,"color":"green"}]
 
 #Cooldown
 execute if entity @s[scores={cl.Mana=4..}] run scoreboard players set @s cl.Cooldown 20

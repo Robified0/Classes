@@ -16,7 +16,7 @@ particle minecraft:small_flame ~ ~ ~ 0.3 0.75 0.3 0.08 50 force
 scoreboard players set @s cl.Cooldown 20
 
 #Spell Cast Notification
-tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Torch!","bold":true,"color":"red"}]
+tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Torch!","bold":true,"color":"red"}]
 
 #Mana Depletion
 scoreboard players remove @s cl.Mana 1

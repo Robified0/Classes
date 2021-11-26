@@ -15,7 +15,7 @@ execute if entity @s[scores={cl.Mana=3..}] run playsound minecraft:entity.dolphi
 execute if entity @s[scores={cl.Mana=3..}] at @s run function classes:mage/spells/all/cast
 
 #Spell Cast Notification
-execute if entity @s[scores={cl.Mana=3..}] run tellraw @s[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" casted","color":"green"},{"text":" Dolphin's Grace!","bold":true,"color":"#0096FF"}]
+execute if entity @s[scores={cl.Mana=3..}] run tellraw @s[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Dolphin's Grace!","bold":true,"color":"#0096FF"}]
 
 #Cooldown
 execute if entity @s[scores={cl.Mana=3..}] run scoreboard players set @s cl.Cooldown 20

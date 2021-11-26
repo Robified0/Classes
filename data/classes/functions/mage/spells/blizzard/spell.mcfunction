@@ -1,5 +1,5 @@
 #Spell Cast Notification
-execute if entity @s[scores={cl.Mana=1..,cl.e.Blizzard=0}] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" is casting","color":"green"},{"text":" Blizzard!","bold":true,"color":"light_purple"}]
+execute if entity @s[scores={cl.Mana=1..,cl.e.Blizzard=0}] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" is casting","color":"green"},{"text":" Blizzard!","bold":true,"color":"#0096FF"}]
 
 #levitate
 execute if entity @s[scores={cl.Mana=1..,cl.e.Blizzard=1..}] at @s unless block ~ ~-1 ~ #classes:air run effect give @s minecraft:levitation 1 0 true
