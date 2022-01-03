@@ -29,3 +29,6 @@ tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast",
 
 #Mana Depletion
 execute if entity @s[scores={cl.Mana=2..},x_rotation=87..90] run scoreboard players remove @s cl.Mana 2
+
+#Modify item (for spell versioning)
+item modify entity @s weapon.mainhand classes:mage/spells/levitate

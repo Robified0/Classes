@@ -34,3 +34,6 @@ execute if entity @s[scores={cl.Mana=4..}] if entity @e[tag=DeepFreeze,distance=
 
 #Mana Removal
 execute if entity @s[scores={cl.Mana=4..}] if entity @e[tag=DeepFreeze,distance=..5] run scoreboard players remove @s cl.Mana 4
+
+#Modify item (for spell versioning)
+item modify entity @s weapon.mainhand classes:mage/spells/deepfreeze

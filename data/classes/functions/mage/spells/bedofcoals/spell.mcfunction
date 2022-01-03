@@ -19,3 +19,6 @@ execute if entity @s[scores={cl.Mana=5..}] run scoreboard players set @s cl.Cool
 
 #Mana Removal
 execute if entity @s[scores={cl.Mana=5..}] run scoreboard players remove @s cl.Mana 5
+
+#Modify item (for spell versioning)
+item modify entity @s weapon.mainhand classes:mage/spells/bedofcoals

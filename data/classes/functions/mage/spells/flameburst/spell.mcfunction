@@ -32,3 +32,6 @@ execute if entity @s[scores={cl.Mana=3..}] if entity @e[tag=FlameBurst] run scor
 
 #Remove Tag
 execute if entity @s[scores={cl.Mana=3..}] run tag @e[tag=FlameBurst] remove FlameBurst
+
+#Modify item (for spell versioning)
+item modify entity @s weapon.mainhand classes:mage/spells/flameburst

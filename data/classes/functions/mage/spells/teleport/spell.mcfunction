@@ -9,3 +9,6 @@ execute if entity @s[scores={cl.Mana=2..}] run scoreboard players set dst_per cl
 execute if entity @s[scores={cl.Mana=2..}] run scoreboard players set dst cl.slowcast 100
 
 execute if entity @s[scores={cl.Mana=2..}] at @s positioned ~ ~1.45 ~ run function classes:mage/spells/teleport/start
+
+#Modify item (for spell versioning)
+item modify entity @s weapon.mainhand classes:mage/spells/teleport

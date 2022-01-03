@@ -9,3 +9,7 @@ execute if entity @s[scores={cl.Mana=1..}] run scoreboard players set dst_per cl
 execute if entity @s[scores={cl.Mana=1..}] run scoreboard players set dst cl.slowcast 48
 
 execute if entity @s[scores={cl.Mana=1..}] at @s positioned ~ ~1.45 ~ run function classes:mage/spells/torch/start
+
+#Modify item (for spell versioning)
+execute if score #cl.pref cl.p.setFire matches 0 run item modify entity @s weapon.mainhand classes:mage/spells/torch/noblock
+execute if score #cl.pref cl.p.setFire matches 1 run item modify entity @s weapon.mainhand classes:mage/spells/torch/lightblocks

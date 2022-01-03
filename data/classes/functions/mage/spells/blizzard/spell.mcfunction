@@ -6,7 +6,8 @@ execute if entity @s[scores={cl.Mana=1..,cl.e.Blizzard=1..}] at @s unless block 
 execute if entity @s[scores={cl.Mana=1..,cl.e.Blizzard=1..}] at @s run effect give @s minecraft:slow_falling 1 0 true
 
 #Sound Effect
-execute if entity @s[scores={cl.Mana=1..,cl.e.Blizzard=1..}] at @s run playsound minecraft:entity.horse.breathe player @a[distance=..10] ~ ~ ~ 0.5 0.1 0.3
+execute if entity @s[scores={cl.Mana=1..,cl.e.Blizzard=1..}] at @s run playsound minecraft:entity.horse.breathe player @a[distance=..10] ~ ~ ~ 0.8 0.1 0.3
+execute if entity @s[scores={cl.Mana=1..,cl.e.Blizzard=1..}] at @s run playsound minecraft:block.amethyst_block.chime player @a[distance=..10] ~ ~ ~ 0.8 0.1 0.3
 execute if entity @s[scores={cl.Mana=1..,cl.e.Blizzard=1..}] at @s run particle minecraft:snowflake ~ ~ ~ 5 5 5 0.40 200 force
 
 #Give Slowness
@@ -23,3 +24,6 @@ execute if entity @s[scores={cl.Mana=1..}] run scoreboard players set @s cl.e.Bl
 execute if entity @s[scores={cl.Mana=1..}] run scoreboard players add @s cl.e.Blizzard.m 1
 execute if entity @s[scores={cl.Mana=1..}] run scoreboard players remove @s[scores={cl.e.Blizzard.m=4}] cl.Mana 1
 execute if entity @s[scores={cl.Mana=1..}] run scoreboard players set @s[scores={cl.e.Blizzard.m=4..}] cl.e.Blizzard.m 0
+
+#Modify item (for spell versioning)
+item modify entity @s weapon.mainhand classes:mage/spells/blizzard

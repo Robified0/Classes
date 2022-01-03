@@ -1,0 +1,6 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{display:{Name:'[{\"text\":\"Ice Walker\",\"color\":\"blue\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"3 Mana\",\"color\":\"aqua\",\"bold\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','[{\"text\":\"Element: \",\"color\":\"dark_aqua\"},{\"text\":\"Water\",\"color\":\"blue\"}]','{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Turns still water at your feet to ice for 1 minute.\",\"color\":\"aqua\"}']},CustomModelData:62007,Spell:1b}"
+  }
+]
