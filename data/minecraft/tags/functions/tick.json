@@ -1,6 +1,7 @@
 {
 	"values": [
 		"classes:main",
+		"classes:crafting/magictable/main",
 		"classes:mage/spells/main",
 		"classes:healer/spells/main",
 		"classes:ranger/main",
