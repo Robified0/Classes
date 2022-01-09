@@ -7,8 +7,9 @@ execute if entity @s[scores={cl.Mana=1..,cl.e.Mending=0}] run tellraw @a[tag=Spe
 execute if entity @s[scores={cl.Mana=1..}] run scoreboard players set @s cl.e.Mending 10
 
 #Sound Effect
-execute if entity @s[scores={cl.Mana=1..,cl.e.Mending=1..}] at @s run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 0.15 0.2 0.15
+execute if entity @s[scores={cl.Mana=1..,cl.e.Mending.t=5}] at @s run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 5 0.2
 execute if entity @s[scores={cl.Mana=1..,cl.e.Mending=1..}] at @s run particle wax_off ~ ~ ~ 10 10 10 0.25 200 force
+execute if entity @s[scores={cl.Mana=1..,cl.e.Mending=1..}] at @s run particle composter ~ ~ ~ 10 10 10 0.25 200 force
 
 #Boost Strength of nearby allies
 execute if entity @s[scores={cl.Mana=1..,cl.e.Mending.t=5}] at @s run effect give @a[distance=..10] minecraft:instant_health 1 0
