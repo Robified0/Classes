@@ -6,7 +6,7 @@ execute if entity @s[scores={cl.Mana=1..,cl.e.Inspire=1..}] at @s run playsound 
 execute if entity @s[scores={cl.Mana=1..,cl.e.Inspire=1..}] at @s run particle dust 0.576 0.141 0.137 2 ~ ~ ~ 10 10 20 0.25 200 force
 
 #Boost Strength of nearby allies
-execute if entity @s[scores={cl.Mana=1..,cl.e.Inspire=1..}] at @s run effect give @a[distance=..10] minecraft:strength 1 1
+execute if entity @s[scores={cl.Mana=1..,cl.e.Inspire=1..}] at @s run effect give @a[distance=..10] minecraft:strength 2 1
 
 #Spell Handling
 execute if entity @s[scores={cl.Mana=1..}] run scoreboard players set @s cl.e.Inspire 10
