@@ -15,6 +15,8 @@ execute if entity @s[scores={cl.Mana=3..}] at @s run effect give @e[type=#classe
 execute if entity @s[scores={cl.Mana=3..}] at @s run function classes:healer/spells/all/cast
 
 #Particles
+execute if entity @s[scores={cl.Mana=3..}] at @s run particle wax_off ~ ~ ~ 4 0.1 4 0.25 200 force
+execute if entity @s[scores={cl.Mana=3..}] at @s run particle happy_villager ~ ~ ~ 4 0.1 4 0.25 200 force
 execute if entity @s[scores={cl.Mana=3..}] at @s run particle minecraft:wax_off ~ ~ ~ 0.5 1 0.5 0.08 50 force
 execute if entity @s[scores={cl.Mana=3..}] at @s run particle minecraft:happy_villager ~ ~ ~ 0.5 1 0.5 0.08 50 force
 
