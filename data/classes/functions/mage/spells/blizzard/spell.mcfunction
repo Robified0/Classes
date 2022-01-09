@@ -9,9 +9,12 @@ execute if entity @s[scores={cl.Mana=1..,cl.e.Blizzard=1..}] at @s run effect gi
 execute if entity @s[scores={cl.Mana=1..,cl.e.Blizzard=1..}] at @s run playsound minecraft:entity.horse.breathe player @a[distance=..10] ~ ~ ~ 0.8 0.1 0.3
 execute if entity @s[scores={cl.Mana=1..,cl.e.Blizzard=1..}] at @s run playsound minecraft:block.amethyst_block.chime player @a[distance=..10] ~ ~ ~ 0.8 0.1 0.3
 execute if entity @s[scores={cl.Mana=1..,cl.e.Blizzard=1..}] at @s run particle minecraft:snowflake ~ ~ ~ 5 5 5 0.40 200 force
+execute if entity @s[scores={cl.Mana=1..,cl.e.Blizzard=1..}] at @s run particle minecraft:end_rod ~ ~0.5 ~ 0.1 0.1 0.1 2 10 force
 
 #Give Slowness
 execute if entity @s[scores={cl.Mana=1..,cl.e.Blizzard=1..}] at @s run effect give @e[type=!#classes:nontarget,type=!player,tag=!summoned,tag=!cl.Owned,distance=..10] minecraft:slowness 1 3
+
+#TP mob backwards, but not if there are blocks behind them
 execute if entity @s[scores={cl.Mana=1..,cl.e.Blizzard=6}] at @s as @e[type=!#classes:nontarget,type=!player,tag=!summoned,tag=!cl.Owned,distance=..5] at @s if block ^ ^1 ^-1 #classes:air run tp @s ^ ^0.5 ^-0.5 facing entity @p[scores={cl.e.Blizzard=6}]
 
 #Damage entities in range
