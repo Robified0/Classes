@@ -19,7 +19,7 @@ execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead,nbt=!{Brain:{memories:{"minecraft:angry_at":{}}}},tag=!summoned,tag=!cl.Owned] run data modify entity @s Brain.memories."minecraft:angry_at".value set from entity @p[scores={cl.Class=4}] UUID
 
 #Edit tag/spellname and uncomment if you want it to end when it hits one target
-#execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] run kill @e[type=marker,tag=heal,sort=nearest,limit=1]
+execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] run kill @e[type=marker,tag=heal,sort=nearest,limit=1]
 
 #Only change filepaths for spell
 scoreboard players remove #temp cl.slowcast 1
