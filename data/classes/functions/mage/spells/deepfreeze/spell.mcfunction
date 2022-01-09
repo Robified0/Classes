@@ -4,7 +4,7 @@ execute if entity @s[scores={cl.Mana=..3}] run function classes:main/mana_system
 #Damage nearby
 execute if entity @s[scores={cl.Mana=4..}] run tag @s add GetAngry
 execute if entity @s[scores={cl.Mana=4..}] at @s run tag @e[type=!#classes:bosses,type=!#classes:nontarget,distance=..5,tag=!summoned,nbt=!{NoAI:1b}] add DeepFreeze
-execute if entity @s[scores={cl.Mana=4..}] at @s as @e[tag=DeepFreeze,distance=..5] run scoreboard players set @s cl.HitBySpell 100
+execute if entity @s[scores={cl.Mana=4..}] at @s as @e[tag=DeepFreeze,distance=..5] run scoreboard players set @s cl.HitBySpell 400
 execute if entity @s[scores={cl.Mana=4..}] at @s as @e[tag=DeepFreeze,distance=..5] run function classes:main/loot_table/main
 execute if entity @s[scores={cl.Mana=4..}] at @s as @e[tag=DeepFreeze,distance=..5] run scoreboard players set @s cl.e.DeepFreeze 300
 execute if entity @s[scores={cl.Mana=4..}] at @s as @e[tag=DeepFreeze,distance=..5] run data merge entity @s {NoAI:1b,Silent:1b,Invulnerable:1b}
