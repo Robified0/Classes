@@ -15,7 +15,7 @@ execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead,tag=!summoned,tag=!cl.Owned] run data modify entity @s AngryAt set from entity @p[scores={cl.Class=3}] UUID
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead,nbt=!{Brain:{memories:{"minecraft:angry_at":{}}}},tag=!summoned,tag=!cl.Owned] run data modify entity @s Brain.memories."minecraft:angry_at".value set from entity @p[scores={cl.Class=4}] UUID
 
-#Edit tag/spellname and uncomment if you want it to end when it hits one target
+#Edit tag/spellname and comment if you want it to hit more than one target
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead,tag=!summoned,tag=!cl.Owned] run kill @e[type=marker,tag=holystrike,sort=nearest,limit=1]
 
 #Only change filepaths for spell
