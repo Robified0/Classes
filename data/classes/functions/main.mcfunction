@@ -46,6 +46,9 @@ execute as @a[scores={cl.Class=3..4}] run function classes:main/mana_system/main
 #Prevent Spell Drops
 execute if entity @e[type=item,tag=!cl.o.item.processed] as @e[type=item,tag=!cl.o.item.processed] run function classes:operations/preventspelldrops
 
+#If player isn't around (dead), and keepInventory is off, display particles for dropped spells
+execute if entity @e[type=item,tag=cl.o.item.processed] as @e[type=item,tag=cl.o.item.processed] at @s run particle minecraft:portal ~ ~0.1 ~ 0.04 0.05 0.04 0.1 1 force
+
 #Kill fireballs that have been deflected
 scoreboard players add @e[type=fireball,tag=cl.newFireball] cl.newFireball 1
 execute as @e[type=fireball,tag=cl.newFireball,scores={cl.newFireball=60..}] at @s run particle flame ~ ~ ~ 1 1 1 1 100 force @a
