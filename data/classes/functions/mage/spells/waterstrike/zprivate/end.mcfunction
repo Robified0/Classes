@@ -26,7 +26,7 @@ execute if score #cl.pref cl.p.wObsidian matches 1 in minecraft:overworld if sco
 execute if score #cl.pref cl.p.wObsidian matches 1 in minecraft:the_nether if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:lava[level=0] run setblock ~ ~ ~ minecraft:cobblestone
 
 #Sound effect for hitting lava.
-execute if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:lava run particle minecraft:large_smoke ^ ^ ^0.5 0.1 0.1 0.1 0.05 20 normal
+execute if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:lava run particle minecraft:large_smoke ^ ^ ^-0.5 0.1 0.1 0.1 0.05 20 normal
 execute if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:lava run playsound minecraft:block.lava.extinguish ambient @a ~ ~ ~ 1 0.2
 
 #Reset
