@@ -1,0 +1,5 @@
+#Replace
+data merge block ~ ~ ~ {Items:[{Slot:4b,id:"minecraft:warped_fungus_on_a_stick",tag:{display:{Name:'[{"text":"Poison","color":"green"},{"text":" - ","color":"white","bold":false},{"text":"1 Mana","color":"aqua","bold":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','[{"text":"Element: ","color":"dark_aqua"},{"text":"Earth","color":"green"}]','{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Poisons hit mobs for 5 seconds.","color":"gold"}']},CustomModelData:64000,Spell:1b},Count:1b}]}
+
+#Playsound
+playsound minecraft:entity.horse.breathe player @a ~ ~ ~ 0.2 1
