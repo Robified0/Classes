@@ -2,7 +2,7 @@
 particle dust 0.173 1.000 0.078 1 ^0.4 ^0.2 ^0.3 0.1 0.1 0.1 1 2 force
 
 #Play sound effect - use here when needing repeat
-execute at @s run playsound minecraft:entity.witch.drink player @a ~ ~ ~ 0.5 0.01
+execute at @s run playsound minecraft:entity.witch.drink player @a ~ ~ ~ 0.15 0.01
 
 #Do these things when spell hits
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] run scoreboard players set @s cl.HitBySpell 100
