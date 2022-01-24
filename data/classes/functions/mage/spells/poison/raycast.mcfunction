@@ -18,5 +18,5 @@ execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nonta
 #Only change paths for spell
 scoreboard players remove #temp cl.slowcast 1
 execute if score #temp cl.slowcast matches ..-1 run tp @s ~ ~ ~
-execute if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 unless block ~ ~ ~ #classes:air run function classes:mage/spells/poison/zprivate/end
-execute if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ ~ #classes:air run function classes:mage/spells/poison/raycast
+execute if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 unless block ~ ~ ~ #classes:watercapable run function classes:mage/spells/poison/zprivate/end
+execute if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ ~ #classes:watercapable run function classes:mage/spells/poison/raycast
