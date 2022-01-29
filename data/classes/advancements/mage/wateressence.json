@@ -1,0 +1,26 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Obtain Water Essence",
+            "color": "blue"
+        },
+        "description": {
+            "text": "Gain Water Essence from killing a mob."
+        },
+        "icon": {
+            "item": "minecraft:structure_block",
+            "nbt": "{CustomModelData:102}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "Water Essence": {
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "parent": "classes:mage/root"
+}

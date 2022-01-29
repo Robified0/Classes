@@ -1,0 +1,26 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Obtain Earth Essence",
+            "color": "dark_green"
+        },
+        "description": {
+            "text": "Gain Earth Essence from killing a mob."
+        },
+        "icon": {
+            "item": "minecraft:structure_block",
+            "nbt": "{CustomModelData:104}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "Earth Essence": {
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "parent": "classes:mage/root"
+}
