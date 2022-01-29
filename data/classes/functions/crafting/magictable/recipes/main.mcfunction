@@ -19,6 +19,9 @@ execute if entity @p[tag=cl.l.Levitate,distance=..3] if block ~ ~ ~ dropper{Item
 #Water Strike
 execute if entity @p[tag=cl.l.WaterStrike,distance=..3] if block ~ ~ ~ dropper{Items:[{id:"minecraft:lapis_lazuli",Count:1b,Slot:1b},{Count:1b,Slot:3b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:4b,id:"minecraft:structure_block",tag:{Water:1b}},{Count:1b,Slot:5b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:7b,id:"minecraft:lapis_lazuli"}]} unless data block ~ ~ ~ {Items:[{Slot:0b}]} unless data block ~ ~ ~ {Items:[{Slot:2b}]} unless data block ~ ~ ~ {Items:[{Slot:6b}]} unless data block ~ ~ ~ {Items:[{Slot:8b}]} run function classes:crafting/magictable/recipes/waterstrike
 
+#Water Strike
+execute if entity @p[tag=cl.l.WaterStrike,distance=..3] if block ~ ~ ~ dropper{Items:[{Count:1b,Slot:0b,id:"minecraft:structure_block",tag:{Water:1b}},{id:"minecraft:lapis_lazuli",Count:1b,Slot:1b},{Count:1b,Slot:2b,id:"minecraft:structure_block",tag:{Water:1b}},{Count:1b,Slot:3b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:4b,id:"minecraft:packed_ice"},{Count:1b,Slot:5b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:6b,id:"minecraft:structure_block",tag:{Water:1b}},{Count:1b,Slot:7b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:8b,id:"minecraft:structure_block",tag:{Water:1b}}]} run function classes:crafting/magictable/recipes/iceshard
+
 # Ice Walker
 execute if entity @p[tag=cl.l.Torch,distance=..3] if block ~ ~ ~ dropper{Items:[{id:"minecraft:lapis_lazuli",Count:1b,Slot:0b},{id:"minecraft:lapis_lazuli",Count:1b,Slot:1b},{id:"minecraft:lapis_lazuli",Count:1b,Slot:2b},{Count:1b,Slot:3b,id:"minecraft:ice"},{Count:1b,Slot:4b,id:"minecraft:ice"},{Count:1b,Slot:5b,id:"minecraft:ice"},{Count:1b,Slot:6b,id:"minecraft:structure_block",tag:{Water:1b}},{Count:1b,Slot:7b,id:"minecraft:structure_block",tag:{Water:1b}},{Count:1b,Slot:8b,id:"minecraft:structure_block",tag:{Water:1b}}]} run function classes:crafting/magictable/recipes/icewalker
 
