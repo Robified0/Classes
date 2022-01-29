@@ -1,6 +1,6 @@
 [
   {
     "function": "minecraft:set_nbt",
-    "tag": "{display:{Name:'[{\"text\":\"Blizzard\",\"color\":\"blue\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"1 Mana/sec\",\"color\":\"aqua\",\"bold\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','[{\"text\":\"Element: \",\"color\":\"dark_aqua\"},{\"text\":\"Water\",\"color\":\"blue\"}]','{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Slow, damage, and blow enemies within 10 blocks backwards.\",\"color\":\"aqua\"}']},CustomModelData:62009,Spell:1b}"
+    "tag": "{display:{Name:'[{\"text\":\"Blizzard\",\"color\":\"blue\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"1 Mana/sec\",\"color\":\"aqua\",\"bold\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','[{\"text\":\"Element: \",\"color\":\"dark_aqua\"},{\"text\":\"Water\",\"color\":\"blue\"}]','{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Slow, damage, and blow enemies within 10 blocks backwards.\",\"color\":\"aqua\"}']},CustomModelData:60308,Spell:1b}"
   }
 ]

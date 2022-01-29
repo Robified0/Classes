@@ -1,6 +1,6 @@
 [
   {
     "function": "minecraft:set_nbt",
-    "tag": "{display:{Name:'[{\"text\":\"Mending\",\"color\":\"green\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"1 Mana/sec\",\"color\":\"aqua\",\"bold\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Give all allies within 10 blocks Regeneration II.\",\"color\":\"green\"}']},CustomModelData:71004,Spell:1b}"
+    "tag": "{display:{Name:'[{\"text\":\"Mending\",\"color\":\"green\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"1 Mana/sec\",\"color\":\"aqua\",\"bold\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Give all allies within 10 blocks Regeneration II.\",\"color\":\"green\"}']},CustomModelData:60704,Spell:1b}"
   }
 ]
