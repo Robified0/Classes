@@ -6,6 +6,7 @@ execute if entity @s[scores={cl.Mana=2..}] run effect give @s minecraft:instant_
 
 #Cast Spell Sound Effect
 execute if entity @s[scores={cl.Mana=2..}] at @s run function classes:mage/spells/all/cast
+execute if entity @s[scores={cl.Mana=2..}] at @s run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 10 1
 
 #Particle Effect
 execute if entity @s[scores={cl.Mana=2..}] at @s run particle minecraft:witch ~ ~ ~ 0.5 1 0.5 1.2 40 force
