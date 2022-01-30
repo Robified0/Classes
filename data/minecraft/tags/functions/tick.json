@@ -2,7 +2,7 @@
 	"values": [
 		"classes:main",
 		"classes:crafting/magictable/main",
-		"classes:mage/spells/main",
+		"classes:mage/system/main",
 		"classes:healer/spells/main",
 		"classes:ranger/main",
 		"classes:mage/spells/effects",

@@ -15,8 +15,8 @@ scoreboard players remove @e[scores={cl.HitBySpell=1..}] cl.HitBySpell 1
 scoreboard players reset @e[scores={cl.HitBySpell=..0}] cl.HitBySpell
 
 #Function for all new players, to ensure scoreboards are set up
-execute if entity @a[tag=!Joined] as @a[tag=!Joined] run function classes:main/new_player/main
-execute if entity @a[scores={cl.Class=1..},tag=!ClassSelected] as @a[scores={cl.Class=1..},tag=!ClassSelected] run function classes:main/new_player/classselected
+execute if entity @a[tag=!cl.o.Joined] as @a[tag=!Joined] run function classes:main/new_player/main
+execute if entity @a[scores={cl.Class=1..},tag=!cl.o.ClassSelected] as @a[scores={cl.Class=1..},tag=!cl.o.ClassSelected] run function classes:main/new_player/classselected
 
 #Display Mana bar to players who have Mana score set (spellcasters only)
 execute as @a[gamemode=!creative,gamemode=!spectator,scores={cl.Mana=-5..}] run function classes:main/mana_system/mana

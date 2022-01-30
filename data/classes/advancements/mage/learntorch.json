@@ -6,12 +6,12 @@
             "color": "light_purple"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE003\n\n\n\n",
+            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE200\n\n\n\n",
             "color": "white"
         },
         "icon": {
             "item": "minecraft:warped_fungus_on_a_stick",
-            "nbt": "{CustomModelData:61000}"
+            "nbt": "{CustomModelData:60200}"
         },
         "frame": "task",
         "show_toast": true,
@@ -19,9 +19,9 @@
         "hidden": true
     },
     "criteria": {
-        "Teleport": {
+        "Torch": {
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "classes:mage/magicessence"
+    "parent": "classes:mage/fireessence"
 }

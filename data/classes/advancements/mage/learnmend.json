@@ -6,12 +6,12 @@
             "color": "light_purple"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE004\n\n\n\n",
+            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE604\n\n\n\n",
             "color": "white"
         },
         "icon": {
             "item": "minecraft:warped_fungus_on_a_stick",
-            "nbt": "{CustomModelData:65004}"
+            "nbt": "{CustomModelData:60604}"
         },
         "frame": "task",
         "show_toast": true,
@@ -19,7 +19,7 @@
         "hidden": true
     },
     "criteria": {
-        "mend": {
+        "Mend": {
             "trigger": "minecraft:impossible"
         }
     },

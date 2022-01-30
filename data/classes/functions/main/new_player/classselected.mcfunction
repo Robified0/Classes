@@ -1,6 +1,5 @@
 #Check class, run appropiate setup.
-execute if entity @s[scores={cl.Class=3}] run function classes:main/new_player/mage
-execute if entity @s[scores={cl.Class=4}] run function classes:main/new_player/healer
+execute if entity @s[scores={cl.Class=3..4}] run function classes:main/new_player/setmana
 
 #Tag player
-tag @s add ClassSelected
+tag @s add cl.o.ClassSelected

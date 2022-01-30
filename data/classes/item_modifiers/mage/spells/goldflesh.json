@@ -1,6 +1,0 @@
-[
-  {
-    "function": "minecraft:set_nbt",
-    "tag": "{display:{Name:'[{\"text\":\"Gold Flesh\",\"color\":\"dark_green\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"2 Mana\",\"color\":\"aqua\",\"bold\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','[{\"text\":\"Element: \",\"color\":\"dark_aqua\"},{\"text\":\"Earth\",\"color\":\"dark_green\"}]','{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Provides four full armor points for 3 minutes.\",\"color\":\"dark_green\"}']},CustomModelData:60502,Spell:1b}"
-  }
-]

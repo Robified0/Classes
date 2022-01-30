@@ -1,83 +1,20 @@
-#Wand
-execute if block ~ ~ ~ dropper{Items:[{Count:1b,Slot:2b,id:"minecraft:amethyst_shard"},{Count:1b,Slot:4b,id:"minecraft:stick"},{Count:1b,Slot:6b,id:"minecraft:stick"}]} unless data block ~ ~ ~ {Items:[{Slot:0b}]} unless data block ~ ~ ~ {Items:[{Slot:1b}]} unless data block ~ ~ ~ {Items:[{Slot:3b}]} unless data block ~ ~ ~ {Items:[{Slot:5b}]} unless data block ~ ~ ~ {Items:[{Slot:7b}]} unless data block ~ ~ ~ {Items:[{Slot:8b}]} run function classes:crafting/magictable/recipes/wand
+## Split up for optimization. It will detect the primary essence in the inventory to start firing off a
+## smaller set of set of recipe commands for that specific type of magic.
 
-# Torch
-execute if entity @p[tag=cl.l.Torch,distance=..3] if block ~ ~ ~ dropper{Items:[{id:"minecraft:lapis_lazuli",Count:1b,Slot:1b},{Count:1b,Slot:3b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:4b,id:"minecraft:structure_block",tag:{Fire:1b}},{Count:1b,Slot:5b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:7b,id:"minecraft:lapis_lazuli"}]} unless data block ~ ~ ~ {Items:[{Slot:0b}]} unless data block ~ ~ ~ {Items:[{Slot:2b}]} unless data block ~ ~ ~ {Items:[{Slot:6b}]} unless data block ~ ~ ~ {Items:[{Slot:8b}]} run function classes:crafting/magictable/recipes/torch
+#Check for Fire Spells
+execute as @e[type=marker,tag=cl.magicTable] at @s if data block ~ ~ ~ Items[{id:"minecraft:structure_block",tag:{Fire:1b}}] run function classes:crafting/magictable/check/mage/spells/fire
 
-# Bed of Coals
-execute if entity @p[tag=cl.l.Torch,distance=..3] if block ~ ~ ~ dropper{Items:[{id:"minecraft:lapis_lazuli",Count:1b,Slot:0b},{id:"minecraft:lapis_lazuli",Count:1b,Slot:1b},{id:"minecraft:lapis_lazuli",Count:1b,Slot:2b},{Count:1b,Slot:3b,id:"minecraft:structure_block",tag:{Fire:1b}},{Count:1b,Slot:4b,id:"minecraft:structure_block",tag:{Fire:1b}},{Count:1b,Slot:5b,id:"minecraft:structure_block",tag:{Fire:1b}},{Count:1b,Slot:6b,id:"minecraft:coal"},{Count:1b,Slot:7b,id:"minecraft:coal"},{Count:1b,Slot:8b,id:"minecraft:coal"}]} run function classes:crafting/magictable/recipes/bedofcoals
+#Check for Water Spells
+execute as @e[type=marker,tag=cl.magicTable] at @s if data block ~ ~ ~ Items[{id:"minecraft:structure_block",tag:{Water:1b}}] run function classes:crafting/magictable/check/mage/spells/water
 
-# Flame Burst
-execute if entity @p[tag=cl.l.Torch,distance=..3] if block ~ ~ ~ dropper{Items:[{Count:1b,Slot:0b,id:"minecraft:structure_block",tag:{Fire:1b}},{id:"minecraft:lapis_lazuli",Count:1b,Slot:1b},{Count:1b,Slot:2b,id:"minecraft:structure_block",tag:{Fire:1b}},{Count:1b,Slot:3b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:4b,id:"minecraft:fire_charge"},{Count:1b,Slot:5b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:6b,id:"minecraft:structure_block",tag:{Fire:1b}},{Count:1b,Slot:7b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:8b,id:"minecraft:structure_block",tag:{Fire:1b}}]} run function classes:crafting/magictable/recipes/flameburst
+#Check for Air Spells
+execute as @e[type=marker,tag=cl.magicTable] at @s if data block ~ ~ ~ Items[{id:"minecraft:structure_block",tag:{Air:1b}}] run function classes:crafting/magictable/check/mage/spells/air
 
-# Fire Shield
-execute if entity @p[tag=cl.l.Torch,distance=..3] if block ~ ~ ~ dropper{Items:[{Count:1b,Slot:0b,id:"minecraft:structure_block",tag:{Fire:1b}},{id:"minecraft:lapis_lazuli",Count:1b,Slot:1b},{Count:1b,Slot:2b,id:"minecraft:structure_block",tag:{Fire:1b}},{Count:1b,Slot:3b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:4b,id:"minecraft:shield"},{Count:1b,Slot:5b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:6b,id:"minecraft:structure_block",tag:{Fire:1b}},{Count:1b,Slot:7b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:8b,id:"minecraft:structure_block",tag:{Fire:1b}}]} run function classes:crafting/magictable/recipes/fireshield
+#Check for Earth Spells
+execute as @e[type=marker,tag=cl.magicTable] at @s if data block ~ ~ ~ Items[{id:"minecraft:structure_block",tag:{Earth:1b}}] run function classes:crafting/magictable/check/mage/spells/earth
 
-#Levitate
-execute if entity @p[tag=cl.l.Levitate,distance=..3] if block ~ ~ ~ dropper{Items:[{id:"minecraft:lapis_lazuli",Count:1b,Slot:1b},{Count:1b,Slot:3b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:4b,id:"minecraft:structure_block",tag:{Air:1b}},{Count:1b,Slot:5b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:7b,id:"minecraft:lapis_lazuli"}]} unless data block ~ ~ ~ {Items:[{Slot:0b}]} unless data block ~ ~ ~ {Items:[{Slot:2b}]} unless data block ~ ~ ~ {Items:[{Slot:6b}]} unless data block ~ ~ ~ {Items:[{Slot:8b}]} run function classes:crafting/magictable/recipes/levitate
+#Check for Magic Spells
+execute as @e[type=marker,tag=cl.magicTable] at @s if data block ~ ~ ~ Items[{id:"minecraft:structure_block",tag:{Magic:1b}}] run function classes:crafting/magictable/check/mage/spells/magic
 
-#Water Strike
-execute if entity @p[tag=cl.l.WaterStrike,distance=..3] if block ~ ~ ~ dropper{Items:[{id:"minecraft:lapis_lazuli",Count:1b,Slot:1b},{Count:1b,Slot:3b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:4b,id:"minecraft:structure_block",tag:{Water:1b}},{Count:1b,Slot:5b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:7b,id:"minecraft:lapis_lazuli"}]} unless data block ~ ~ ~ {Items:[{Slot:0b}]} unless data block ~ ~ ~ {Items:[{Slot:2b}]} unless data block ~ ~ ~ {Items:[{Slot:6b}]} unless data block ~ ~ ~ {Items:[{Slot:8b}]} run function classes:crafting/magictable/recipes/waterstrike
-
-#Water Strike
-execute if entity @p[tag=cl.l.WaterStrike,distance=..3] if block ~ ~ ~ dropper{Items:[{Count:1b,Slot:0b,id:"minecraft:structure_block",tag:{Water:1b}},{id:"minecraft:lapis_lazuli",Count:1b,Slot:1b},{Count:1b,Slot:2b,id:"minecraft:structure_block",tag:{Water:1b}},{Count:1b,Slot:3b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:4b,id:"minecraft:packed_ice"},{Count:1b,Slot:5b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:6b,id:"minecraft:structure_block",tag:{Water:1b}},{Count:1b,Slot:7b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:8b,id:"minecraft:structure_block",tag:{Water:1b}}]} run function classes:crafting/magictable/recipes/iceshard
-
-# Ice Walker
-execute if entity @p[tag=cl.l.Torch,distance=..3] if block ~ ~ ~ dropper{Items:[{id:"minecraft:lapis_lazuli",Count:1b,Slot:0b},{id:"minecraft:lapis_lazuli",Count:1b,Slot:1b},{id:"minecraft:lapis_lazuli",Count:1b,Slot:2b},{Count:1b,Slot:3b,id:"minecraft:ice"},{Count:1b,Slot:4b,id:"minecraft:ice"},{Count:1b,Slot:5b,id:"minecraft:ice"},{Count:1b,Slot:6b,id:"minecraft:structure_block",tag:{Water:1b}},{Count:1b,Slot:7b,id:"minecraft:structure_block",tag:{Water:1b}},{Count:1b,Slot:8b,id:"minecraft:structure_block",tag:{Water:1b}}]} run function classes:crafting/magictable/recipes/icewalker
-
-# Water Breathing
-execute if entity @p[tag=cl.l.Torch,distance=..3] if block ~ ~ ~ dropper{Items:[{Count:1b,Slot:0b,id:"minecraft:structure_block",tag:{Water:1b}},{id:"minecraft:lapis_lazuli",Count:1b,Slot:1b},{Count:1b,Slot:2b,id:"minecraft:structure_block",tag:{Water:1b}},{Count:1b,Slot:3b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:4b,id:"minecraft:nautilus_shell"},{Count:1b,Slot:5b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:6b,id:"minecraft:structure_block",tag:{Water:1b}},{Count:1b,Slot:7b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:8b,id:"minecraft:structure_block",tag:{Water:1b}}]} run function classes:crafting/magictable/recipes/waterbreathing
-
-# Dolphin's Grace
-execute if entity @p[tag=cl.l.Torch,distance=..3] if block ~ ~ ~ dropper{Items:[{Count:1b,Slot:0b,id:"minecraft:structure_block",tag:{Water:1b}},{id:"minecraft:lapis_lazuli",Count:1b,Slot:1b},{Count:1b,Slot:2b,id:"minecraft:structure_block",tag:{Water:1b}},{Count:1b,Slot:3b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:4b,id:"minecraft:sea_lantern"},{Count:1b,Slot:5b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:6b,id:"minecraft:structure_block",tag:{Water:1b}},{Count:1b,Slot:7b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:8b,id:"minecraft:structure_block",tag:{Water:1b}}]} run function classes:crafting/magictable/recipes/dolpgrace
-
-# Snow Golem
-execute if entity @p[tag=cl.l.Torch,distance=..3] if block ~ ~ ~ dropper{Items:[{Count:1b,Slot:0b,id:"minecraft:structure_block",tag:{Water:1b}},{id:"minecraft:lapis_lazuli",Count:1b,Slot:1b},{Count:1b,Slot:2b,id:"minecraft:structure_block",tag:{Water:1b}},{Count:1b,Slot:3b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:4b,id:"minecraft:snow_block"},{Count:1b,Slot:5b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:6b,id:"minecraft:structure_block",tag:{Water:1b}},{Count:1b,Slot:7b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:8b,id:"minecraft:structure_block",tag:{Water:1b}}]} run function classes:crafting/magictable/recipes/snowgolem
-
-# Deep Freeze
-execute if entity @p[tag=cl.l.Torch,distance=..3] if block ~ ~ ~ dropper{Items:[{Count:1b,Slot:0b,id:"minecraft:structure_block",tag:{Water:1b}},{id:"minecraft:lapis_lazuli",Count:1b,Slot:1b},{Count:1b,Slot:2b,id:"minecraft:structure_block",tag:{Water:1b}},{Count:1b,Slot:3b,id:"minecraft:lapis_lazuli"},{Count:10b,Slot:4b,id:"minecraft:packed_ice"},{Count:1b,Slot:5b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:6b,id:"minecraft:structure_block",tag:{Water:1b}},{Count:1b,Slot:7b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:8b,id:"minecraft:structure_block",tag:{Water:1b}}]} run function classes:crafting/magictable/recipes/deepfreeze
-
-# Blizzard
-execute if entity @p[tag=cl.l.Torch,distance=..3] if block ~ ~ ~ dropper{Items:[{Count:1b,Slot:0b,id:"minecraft:structure_block",tag:{Water:1b}},{id:"minecraft:lapis_block",Count:1b,Slot:1b},{Count:1b,Slot:2b,id:"minecraft:structure_block",tag:{Water:1b}},{Count:1b,Slot:3b,id:"minecraft:lapis_block"},{Count:10b,Slot:4b,id:"minecraft:snow_block"},{Count:1b,Slot:5b,id:"minecraft:lapis_block"},{Count:1b,Slot:6b,id:"minecraft:structure_block",tag:{Water:1b}},{Count:1b,Slot:7b,id:"minecraft:lapis_block"},{Count:1b,Slot:8b,id:"minecraft:structure_block",tag:{Water:1b}}]} run function classes:crafting/magictable/recipes/blizzard
-
-#Water Strike
-execute if entity @p[tag=cl.l.WaterStrike,distance=..3] if block ~ ~ ~ dropper{Items:[{Count:1b,Slot:1b,id:"minecraft:structure_block",tag:{Water:1b}},{Count:1b,Slot:3b,id:"minecraft:structure_block",tag:{Water:1b}},{Count:1b,Slot:4b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:5b,id:"minecraft:structure_block",tag:{Water:1b}},{Count:1b,Slot:7b,id:"minecraft:structure_block",tag:{Water:1b}}]} unless data block ~ ~ ~ {Items:[{Slot:0b}]} unless data block ~ ~ ~ {Items:[{Slot:2b}]} unless data block ~ ~ ~ {Items:[{Slot:6b}]} unless data block ~ ~ ~ {Items:[{Slot:8b}]} run function classes:crafting/magictable/recipes/extinguish
-
-# Slow Fall
-execute if entity @p[tag=cl.l.Torch,distance=..3] if block ~ ~ ~ dropper{Items:[{Count:1b,Slot:0b,id:"minecraft:structure_block",tag:{Air:1b}},{id:"minecraft:lapis_lazuli",Count:1b,Slot:1b},{Count:1b,Slot:2b,id:"minecraft:structure_block",tag:{Air:1b}},{Count:1b,Slot:3b,id:"minecraft:lapis_lazuli"},{Count:10b,Slot:4b,id:"minecraft:phantom_membrane"},{Count:1b,Slot:5b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:6b,id:"minecraft:structure_block",tag:{Air:1b}},{Count:1b,Slot:7b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:8b,id:"minecraft:structure_block",tag:{Air:1b}}]} run function classes:crafting/magictable/recipes/slowfall
-
-# Bunny Hop
-execute if entity @p[tag=cl.l.Torch,distance=..3] if block ~ ~ ~ dropper{Items:[{Count:1b,Slot:0b,id:"minecraft:structure_block",tag:{Air:1b}},{id:"minecraft:lapis_lazuli",Count:1b,Slot:1b},{Count:1b,Slot:2b,id:"minecraft:structure_block",tag:{Air:1b}},{Count:1b,Slot:3b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:4b,id:"minecraft:rabbit_foot"},{Count:1b,Slot:5b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:6b,id:"minecraft:structure_block",tag:{Air:1b}},{Count:1b,Slot:7b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:8b,id:"minecraft:structure_block",tag:{Air:1b}}]} run function classes:crafting/magictable/recipes/bunnyhop
-
-# Tail Wind
-execute if entity @p[tag=cl.l.Torch,distance=..3] if block ~ ~ ~ dropper{Items:[{Count:1b,Slot:0b,id:"minecraft:structure_block",tag:{Air:1b}},{id:"minecraft:lapis_lazuli",Count:1b,Slot:1b},{Count:1b,Slot:2b,id:"minecraft:structure_block",tag:{Air:1b}},{Count:1b,Slot:3b,id:"minecraft:lapis_lazuli"},{Count:10b,Slot:4b,id:"minecraft:sugar"},{Count:1b,Slot:5b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:6b,id:"minecraft:structure_block",tag:{Air:1b}},{Count:1b,Slot:7b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:8b,id:"minecraft:structure_block",tag:{Air:1b}}]} run function classes:crafting/magictable/recipes/tailwind
-
-#Poison
-execute if entity @p[tag=cl.l.Torch,distance=..3] if block ~ ~ ~ dropper{Items:[{id:"minecraft:lapis_lazuli",Count:1b,Slot:1b},{Count:1b,Slot:3b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:4b,id:"minecraft:structure_block",tag:{Earth:1b}},{Count:1b,Slot:5b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:7b,id:"minecraft:lapis_lazuli"}]} unless data block ~ ~ ~ {Items:[{Slot:0b}]} unless data block ~ ~ ~ {Items:[{Slot:2b}]} unless data block ~ ~ ~ {Items:[{Slot:6b}]} unless data block ~ ~ ~ {Items:[{Slot:8b}]} run function classes:crafting/magictable/recipes/poison
-
-# Iron Flesh
-execute if entity @p[tag=cl.l.Torch,distance=..3] if block ~ ~ ~ dropper{Items:[{Count:1b,Slot:0b,id:"minecraft:structure_block",tag:{Earth:1b}},{id:"minecraft:lapis_lazuli",Count:1b,Slot:1b},{Count:1b,Slot:2b,id:"minecraft:structure_block",tag:{Earth:1b}},{Count:1b,Slot:3b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:4b,id:"minecraft:iron_block"},{Count:1b,Slot:5b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:6b,id:"minecraft:structure_block",tag:{Earth:1b}},{Count:1b,Slot:7b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:8b,id:"minecraft:structure_block",tag:{Earth:1b}}]} run function classes:crafting/magictable/recipes/ironflesh
-
-# Gold Flesh
-execute if entity @p[tag=cl.l.Torch,distance=..3] if block ~ ~ ~ dropper{Items:[{Count:1b,Slot:0b,id:"minecraft:structure_block",tag:{Earth:1b}},{id:"minecraft:lapis_lazuli",Count:1b,Slot:1b},{Count:1b,Slot:2b,id:"minecraft:structure_block",tag:{Earth:1b}},{Count:1b,Slot:3b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:4b,id:"minecraft:gold_block"},{Count:1b,Slot:5b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:6b,id:"minecraft:structure_block",tag:{Earth:1b}},{Count:1b,Slot:7b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:8b,id:"minecraft:structure_block",tag:{Earth:1b}}]} run function classes:crafting/magictable/recipes/goldflesh
-
-# Diamond Flesh
-execute if entity @p[tag=cl.l.Torch,distance=..3] if block ~ ~ ~ dropper{Items:[{Count:1b,Slot:0b,id:"minecraft:structure_block",tag:{Earth:1b}},{id:"minecraft:lapis_lazuli",Count:1b,Slot:1b},{Count:1b,Slot:2b,id:"minecraft:structure_block",tag:{Earth:1b}},{Count:1b,Slot:3b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:4b,id:"minecraft:diamond_block"},{Count:1b,Slot:5b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:6b,id:"minecraft:structure_block",tag:{Earth:1b}},{Count:1b,Slot:7b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:8b,id:"minecraft:structure_block",tag:{Earth:1b}}]} run function classes:crafting/magictable/recipes/diamondflesh
-
-# Diamond Flesh
-execute if entity @p[tag=cl.l.Torch,distance=..3] if block ~ ~ ~ dropper{Items:[{Count:1b,Slot:0b,id:"minecraft:structure_block",tag:{Earth:1b}},{id:"minecraft:carved_pumpkin",Count:1b,Slot:1b},{Count:1b,Slot:2b,id:"minecraft:structure_block",tag:{Earth:1b}},{Count:1b,Slot:3b,id:"minecraft:structure_block",tag:{Earth:1b}},{Count:1b,Slot:4b,id:"minecraft:lapis_block"},{Count:1b,Slot:5b,id:"minecraft:structure_block",tag:{Earth:1b}},{Count:1b,Slot:6b,id:"minecraft:structure_block",tag:{Earth:1b}},{Count:1b,Slot:7b,id:"minecraft:iron_block"},{Count:1b,Slot:8b,id:"minecraft:structure_block",tag:{Earth:1b}}]} run function classes:crafting/magictable/recipes/irongolem
-
-# Light
-execute if entity @p[tag=cl.l.Torch,distance=..3] if block ~ ~ ~ dropper{Items:[{Count:1b,Slot:0b,id:"minecraft:structure_block",tag:{Magic:1b}},{id:"minecraft:lapis_lazuli",Count:1b,Slot:1b},{Count:1b,Slot:2b,id:"minecraft:structure_block",tag:{Magic:1b}},{Count:1b,Slot:3b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:4b,id:"minecraft:torch"},{Count:1b,Slot:5b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:6b,id:"minecraft:structure_block",tag:{Magic:1b}},{Count:1b,Slot:7b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:8b,id:"minecraft:structure_block",tag:{Magic:1b}}]} run function classes:crafting/magictable/recipes/light
-
-# Teleport
-execute if entity @p[tag=cl.l.Torch,distance=..3] if block ~ ~ ~ dropper{Items:[{Count:1b,Slot:0b,id:"minecraft:structure_block",tag:{Magic:1b}},{id:"minecraft:lapis_lazuli",Count:1b,Slot:1b},{Count:1b,Slot:2b,id:"minecraft:structure_block",tag:{Magic:1b}},{Count:1b,Slot:3b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:4b,id:"minecraft:ender_pearl"},{Count:1b,Slot:5b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:6b,id:"minecraft:structure_block",tag:{Magic:1b}},{Count:1b,Slot:7b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:8b,id:"minecraft:structure_block",tag:{Magic:1b}}]} run function classes:crafting/magictable/recipes/teleport
-
-# Shield
-execute if entity @p[tag=cl.l.Torch,distance=..3] if block ~ ~ ~ dropper{Items:[{Count:1b,Slot:0b,id:"minecraft:structure_block",tag:{Magic:1b}},{id:"minecraft:lapis_lazuli",Count:1b,Slot:1b},{Count:1b,Slot:2b,id:"minecraft:structure_block",tag:{Magic:1b}},{Count:1b,Slot:3b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:4b,id:"minecraft:shield"},{Count:1b,Slot:5b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:6b,id:"minecraft:structure_block",tag:{Magic:1b}},{Count:1b,Slot:7b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:8b,id:"minecraft:structure_block",tag:{Magic:1b}}]} run function classes:crafting/magictable/recipes/shield
-
-# Invisibility
-execute if entity @p[tag=cl.l.Torch,distance=..3] if block ~ ~ ~ dropper{Items:[{Count:1b,Slot:0b,id:"minecraft:structure_block",tag:{Magic:1b}},{id:"minecraft:lapis_lazuli",Count:1b,Slot:1b},{Count:1b,Slot:2b,id:"minecraft:structure_block",tag:{Magic:1b}},{Count:1b,Slot:3b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:4b,id:"minecraft:ender_eye"},{Count:1b,Slot:5b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:6b,id:"minecraft:structure_block",tag:{Magic:1b}},{Count:1b,Slot:7b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:8b,id:"minecraft:structure_block",tag:{Magic:1b}}]} run function classes:crafting/magictable/recipes/invisibility
-
-# Mend
-execute if entity @p[tag=cl.l.Torch,distance=..3] if block ~ ~ ~ dropper{Items:[{Count:1b,Slot:0b,id:"minecraft:structure_block",tag:{Magic:1b}},{id:"minecraft:lapis_lazuli",Count:1b,Slot:1b},{Count:1b,Slot:2b,id:"minecraft:structure_block",tag:{Magic:1b}},{Count:1b,Slot:3b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:4b,id:"minecraft:glistering_melon_slice"},{Count:1b,Slot:5b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:6b,id:"minecraft:structure_block",tag:{Magic:1b}},{Count:1b,Slot:7b,id:"minecraft:lapis_lazuli"},{Count:1b,Slot:8b,id:"minecraft:structure_block",tag:{Magic:1b}}]} run function classes:crafting/magictable/recipes/mend
+#Check for Wands
+execute as @e[type=marker,tag=cl.magicTable] at @s if data block ~ ~ ~ Items[{id:"minecraft:amethyst_shard"}] run function classes:crafting/magictable/check/items/wands

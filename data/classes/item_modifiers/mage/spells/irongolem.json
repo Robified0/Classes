@@ -1,6 +1,0 @@
-[
-  {
-    "function": "minecraft:set_nbt",
-    "tag": "{display:{Name:'[{\"text\":\"Summon Iron Golem\",\"color\":\"dark_green\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"8 Mana\",\"color\":\"aqua\",\"bold\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','[{\"text\":\"Element: \",\"color\":\"dark_aqua\"},{\"text\":\"Earth\",\"color\":\"dark_green\"}]','{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Summon an Iron Golem to come to your aid!\",\"color\":\"dark_green\"}']},CustomModelData:60504,Spell:1b}"
-  }
-]

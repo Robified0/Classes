@@ -1,0 +1,6 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{display:{Name:'[{\"text\":\"Water Strike\",\"color\":\"blue\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"1 Mana\",\"color\":\"aqua\",\"bold\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','[{\"text\":\"Element: \",\"color\":\"dark_aqua\"},{\"text\":\"Water\",\"color\":\"blue\"}]','{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Shoots a jet of water that damages any hostile mob in its path.\",\"color\":\"aqua\"}','{\"text\":\" \"}','[{\"text\":\"\"},{\"text\":\"Other Effects:\"}]','{\"text\":\"- Turns lava into cobblestone/obsidian.\",\"color\":\"aqua\"}']},CustomModelData:60300,Spell:1b,Water:1b,WaterStrike:1b}"
+  }
+]
