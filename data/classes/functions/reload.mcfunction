@@ -34,6 +34,8 @@ scoreboard objectives add cl.i.ManaPotion dummy
 scoreboard objectives add cl.i.usedPotion minecraft.used:minecraft.potion
 
 #Set up stat tracking
+scoreboard objectives add cl.o.statx100 dummy
+scoreboard players set #cl.statx100 cl.o.statx100 100
 scoreboard objectives add cl.o.genAtkDmg dummy
 scoreboard objectives add cl.o.genAtkSpd dummy
 

@@ -1,6 +1,6 @@
-execute store result score @s cl.o.genAtkSpd run attribute @s minecraft:generic.attack_speed get
-execute store result score @s cl.o.genAtkDmg run attribute @s minecraft:generic.attack_damage get
-execute unless entity @s[scores={cl.o.getAtkSpd=3}] run attribute @s minecraft:generic.attack_speed base set 3
+execute store result score @s cl.o.genAtkSpd run attribute @s minecraft:generic.attack_speed base get 100
+execute store result score @s cl.o.genAtkDmg run attribute @s minecraft:generic.attack_damage base get 100
+execute unless entity @s[scores={cl.o.getAtkSpd=370}] run attribute @s minecraft:generic.attack_speed base set 3.7
 execute unless entity @s[scores={cl.o.getAtkDmg=0}] run attribute @s minecraft:generic.attack_damage base set 0
 
 #Set Mage Armor score to 0 first
