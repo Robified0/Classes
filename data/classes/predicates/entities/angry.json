@@ -1,0 +1,19 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Brain:{memories:{\"minecraft:angry_at\":{}}}}"
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{AngerTime:0}"
+      }
+    }
+  ]
+}

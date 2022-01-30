@@ -1,5 +1,5 @@
 #Test for potion being held
-scoreboard players set @a[nbt={SelectedItem:{id:"minecraft:potion",Count:1b,tag:{Potion:"minecraft:thick",CustomPotionColor:16777215}}}] cl.i.ManaPotion 1
+scoreboard players set @a[predicate=classes:items/manapotion] cl.i.ManaPotion 1
 
 #Restore Mana if potion is drank
 execute as @a[scores={cl.i.ManaPotion=1,cl.i.usedPotion=1..}] run scoreboard players set @s cl.Mana 10
@@ -11,4 +11,4 @@ execute as @a[scores={cl.i.ManaPotion=1,cl.i.usedPotion=1..}] run playsound mine
 scoreboard players set @a cl.i.usedPotion 0
 
 #Remove score if potion not selected.
-scoreboard players set @a[nbt=!{SelectedItem:{id:"minecraft:potion",Count:1b,tag:{Potion:Mana,Potion:"minecraft:thick",CustomPotionColor:16777215}}}] cl.i.ManaPotion 0
+scoreboard players set @a[predicate=!classes:items/manapotion] cl.i.ManaPotion 0

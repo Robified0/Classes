@@ -7,8 +7,9 @@
 #     which is used for specific spells!                          #
 ###################################################################
 
+execute if entity @e[type=marker,tag=slowcast] run function classes:operations/raycast/main
 #Handle Motion
-execute if entity @e[type=#classes:motionaffected] as @e[tag=motion_projectile,tag=!motion_added] run function classes:operations/motion/motion
+execute if entity @e[type=#classes:motionaffected] as @e[type=#classes:motionaffected,tag=motion_projectile,tag=!motion_added] run function classes:operations/motion/motion
 
 #Handle scoreboard to time when last hit by player, and handle loot_table
 scoreboard players remove @e[scores={cl.HitBySpell=1..}] cl.HitBySpell 1
@@ -25,10 +26,10 @@ execute as @a[gamemode=!creative,gamemode=!spectator,scores={cl.Mana=-5..}] run 
 execute as @e[type=item,nbt={Item:{id:"minecraft:acacia_button",Count:1b,tag:{XPOrb:1b}}}] run function classes:main/loot_table/xp
 
 #Handle Anger quickly
-execute as @e[type=#classes:passive,nbt=!{Brain:{memories:{"minecraft:angry_at":{}}}},tag=!cl.isAngry] run tag @s add cl.isAngry
-execute as @e[type=#classes:passive,nbt=!{AngerTime:0},tag=!cl.isAngry] run tag @s add cl.isAngry
-execute as @e[type=#classes:passive,nbt={Brain:{memories:{"minecraft:angry_at":{}}}},tag=cl.isAngry] run tag @s remove cl.isAngry
-execute as @e[type=#classes:passive,nbt={AngerTime:0},tag=cl.isAngry] run tag @s remove cl.isAngry
+#execute as @e[type=#classes:passive,nbt=!{Brain:{memories:{"minecraft:angry_at":{}}}},tag=!cl.isAngry] run tag @s add cl.isAngry
+#execute as @e[type=#classes:passive,nbt=!{AngerTime:0},tag=!cl.isAngry] run tag @s add cl.isAngry
+#execute as @e[type=#classes:passive,nbt={Brain:{memories:{"minecraft:angry_at":{}}}},tag=cl.isAngry] run tag @s remove cl.isAngry
+#execute as @e[type=#classes:passive,nbt={AngerTime:0},tag=cl.isAngry] run tag @s remove cl.isAngry
 
 #Tag Owned Pets to Prevent Spell Damage to them
 execute if entity @e[type=#classes:ownable,tag=!cl.Owned] as @e[type=#classes:ownable,tag=!cl.Owned] if data entity @s Owner run tag @s add cl.Owned

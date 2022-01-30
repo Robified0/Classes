@@ -1,5 +1,7 @@
-execute unless data entity @s Attributes[{Base: 3.0d,Name:"minecraft:generic.attack_speed"}] run attribute @s minecraft:generic.attack_speed base set 3
-execute unless data entity @s Attributes[{Base: -1.0d,Name:"minecraft:generic.attack_damage"}] run attribute @s minecraft:generic.attack_damage base set -1
+execute store result score @s cl.o.genAtkSpd run attribute @s minecraft:generic.attack_speed get
+execute store result score @s cl.o.genAtkDmg run attribute @s minecraft:generic.attack_damage get
+execute unless entity @s[scores={cl.o.getAtkSpd=3}] run attribute @s minecraft:generic.attack_speed base set 3
+execute unless entity @s[scores={cl.o.getAtkDmg=0}] run attribute @s minecraft:generic.attack_damage base set 0
 
 #Set Mage Armor score to 0 first
 scoreboard players set @s cl.Mage.Armor 0

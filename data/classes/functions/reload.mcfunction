@@ -33,6 +33,10 @@ scoreboard objectives add cl.s.Teleport.t dummy
 scoreboard objectives add cl.i.ManaPotion dummy
 scoreboard objectives add cl.i.usedPotion minecraft.used:minecraft.potion
 
+#Set up stat tracking
+scoreboard objectives add cl.o.genAtkDmg dummy
+scoreboard objectives add cl.o.genAtkSpd dummy
+
 #Scoreboards for settings
 scoreboard objectives add cl.p.setFire dummy
 scoreboard objectives add cl.p.wPortal dummy
