@@ -20,7 +20,15 @@
     },
     "criteria": {
         "Magic Essence": {
-            "trigger": "minecraft:inventory_changed"
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:structure_block",
+                        "nbt": "{CustomModelData:100}"
+                    }
+                ]
+            }
         }
     },
     "parent": "classes:mage/root"

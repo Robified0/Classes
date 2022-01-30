@@ -19,7 +19,15 @@
     },
     "criteria": {
         "Water Essence": {
-            "trigger": "minecraft:inventory_changed"
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:structure_block",
+                        "nbt": "{CustomModelData:102}"
+                    }
+                ]
+            }
         }
     },
     "parent": "classes:mage/root"
