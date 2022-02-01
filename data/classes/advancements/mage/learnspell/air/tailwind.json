@@ -2,16 +2,16 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "Teleport",
-            "color": "light_purple"
+            "text": "Tail Wind",
+            "color": "yellow"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE601\n\n\n\n",
+            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE402\n\n\n\n",
             "color": "white"
         },
         "icon": {
             "item": "minecraft:warped_fungus_on_a_stick",
-            "nbt": "{CustomModelData:60601}"
+            "nbt": "{CustomModelData:60402}"
         },
         "frame": "task",
         "show_toast": true,
@@ -19,9 +19,9 @@
         "hidden": true
     },
     "criteria": {
-        "Teleport": {
+        "Tail Wind": {
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "classes:mage/magicessence"
+    "parent": "classes:mage/learnspell/air/bunnyhop"
 }

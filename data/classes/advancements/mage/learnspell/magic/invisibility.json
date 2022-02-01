@@ -1,0 +1,27 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Invisibility",
+            "color": "light_purple"
+        },
+        "description": {
+            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE603\n\n\n\n",
+            "color": "white"
+        },
+        "icon": {
+            "item": "minecraft:warped_fungus_on_a_stick",
+            "nbt": "{CustomModelData:60603}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria": {
+        "Invisibility": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "classes:mage/learnspell/magic/teleport"
+}

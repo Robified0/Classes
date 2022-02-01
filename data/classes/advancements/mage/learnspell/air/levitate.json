@@ -2,16 +2,16 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "Torch",
-            "color": "light_purple"
+            "text": "Levitate",
+            "color": "yellow"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE200\n\n\n\n",
+            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE400\n\n\n\n",
             "color": "white"
         },
         "icon": {
             "item": "minecraft:warped_fungus_on_a_stick",
-            "nbt": "{CustomModelData:60200}"
+            "nbt": "{CustomModelData:60400}"
         },
         "frame": "task",
         "show_toast": true,
@@ -19,9 +19,9 @@
         "hidden": true
     },
     "criteria": {
-        "Torch": {
+        "Levitate": {
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "classes:mage/fireessence"
+    "parent": "classes:mage/essence/airessence"
 }
