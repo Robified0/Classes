@@ -19,7 +19,7 @@ execute if entity @s[scores={cl.Mana=2..}] at @s run particle block gold_block ~
 
 #Playsound Effect
 execute if entity @s[scores={cl.Mana=2..}] run playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 0.2 1.5
-execute if entity @s[scores={cl.Mana=2..}] run playsound minecraft:entity.zombie_villager.cure player @a ~ ~ ~ 0.5 1.5
+execute if entity @s[scores={cl.Mana=2..}] run playsound minecraft:block.respawn_anchor.set_spawn player @a ~ ~ ~ 0.5 1.2
 
 #Cast Spell Sound Effect
 execute if entity @s[scores={cl.Mana=2..}] at @s run function classes:mage/spells/all/cast
