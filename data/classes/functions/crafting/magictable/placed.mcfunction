@@ -5,6 +5,10 @@ stopsound @a * minecraft:entity.glow_item_frame.place
 
 #Play different one
 playsound minecraft:block.stone.place block @a ~ ~ ~ 1 1
+playsound minecraft:block.amethyst_cluster.hit block @a ~ ~ ~ 1 0.5
+
+#Particles
+particle minecraft:witch ~ ~-1 ~ 1 1 1 1 10 force
 
 #Summon marker in middle of block, slightly elevated
 execute align xz run summon minecraft:marker ~0.5 ~0.75 ~0.5 {Tags:["cl.magicTable"]}
