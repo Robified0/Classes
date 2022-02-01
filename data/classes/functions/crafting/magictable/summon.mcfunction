@@ -6,7 +6,7 @@ setblock ~ ~ ~ minecraft:dropper[facing=up]{CustomName:'{"text":"Magic Table"}'}
 execute align xz positioned ~0.5 ~ ~0.5 run summon glow_item_frame ~ ~ ~ {Tags:["cl.magicTable","cl.magicTablePlaced"],Facing:1b,Invulnerable:1b,Invisible:0b,Fixed:1b,Item:{id:"minecraft:glow_item_frame",Count:1b,tag:{CustomModelData:59999}}}
 
 #Give player advancement
-advancement grant @p only classes:mage/magictable
+advancement grant @p only classes:mage/craft/magictable
 
 #For killing the item if it was run from the item drop
 kill @s[type=item]

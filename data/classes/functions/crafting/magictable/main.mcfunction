@@ -1,5 +1,5 @@
 # Item drop summon
-execute as @e[type=item,nbt={Item:{id:"minecraft:lapis_block",Count:1b}}] at @s positioned ~ ~ ~ if block ~ ~ ~ enchanting_table run function classes:crafting/magictable/summon
+execute as @e[type=item,nbt={Item:{id:"minecraft:lapis_block",Count:1b}}] at @s positioned ~ ~-0.25 ~ if block ~ ~ ~ crafting_table run function classes:crafting/magictable/summon
 
 #If picked up and replaced
 execute as @e[type=glow_item_frame,tag=cl.magicTable,tag=!cl.magicTablePlaced] at @s run function classes:crafting/magictable/placed
