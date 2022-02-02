@@ -1,0 +1,269 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+      {
+        "type": "minecraft:item",
+        "name": "minecraft:warped_fungus_on_a_stick",
+        "functions": [
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{display:{Name:'{\"text\":\"Torch\",\"color\":\"light_purple\"}'},CustomModelData:60100,LearnSpell:1b,Torch:1b}"
+          }
+        ]
+      },
+      {
+        "type": "minecraft:item",
+        "name": "minecraft:warped_fungus_on_a_stick",
+        "functions": [
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{display:{Name:'{\"text\":\"Bed of Coals\",\"color\":\"light_purple\"}'},CustomModelData:60100,LearnSpell:1b,BedOfCoals:1b}"
+          }
+        ]
+      },
+      {
+        "type": "minecraft:item",
+        "name": "minecraft:warped_fungus_on_a_stick",
+        "functions": [
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{display:{Name:'{\"text\":\"Flame Burst\",\"color\":\"light_purple\"}'},CustomModelData:60100,LearnSpell:1b,FlameBurst:1b}"
+          }
+        ]
+      },
+      {
+        "type": "minecraft:item",
+        "name": "minecraft:warped_fungus_on_a_stick",
+        "functions": [
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{display:{Name:'{\"text\":\"Fire Shield\",\"color\":\"light_purple\"}'},CustomModelData:60100,LearnSpell:1b,FireShield:1b}"
+          }
+        ]
+      },
+      {
+        "type": "minecraft:item",
+        "name": "minecraft:warped_fungus_on_a_stick",
+        "functions": [
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{display:{Name:'{\"text\":\"Water Strike\",\"color\":\"light_purple\"}'},CustomModelData:60100,LearnSpell:1b,WaterStrike:1b}"
+          }
+        ]
+      },
+      {
+        "type": "minecraft:item",
+        "name": "minecraft:warped_fungus_on_a_stick",
+        "functions": [
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{display:{Name:'{\"text\":\"Ice Shard\",\"color\":\"light_purple\"}'},CustomModelData:60100,LearnSpell:1b,IceShard:1b}"
+          }
+        ]
+      },
+      {
+        "type": "minecraft:item",
+        "name": "minecraft:warped_fungus_on_a_stick",
+        "functions": [
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{display:{Name:'{\"text\":\"Deep Freeze\",\"color\":\"light_purple\"}'},CustomModelData:60100,LearnSpell:1b,DeepFreeze:1b}"
+          }
+        ]
+      },
+      {
+        "type": "minecraft:item",
+        "name": "minecraft:warped_fungus_on_a_stick",
+        "functions": [
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{display:{Name:'{\"text\":\"Snow Golem\",\"color\":\"light_purple\"}'},CustomModelData:60100,LearnSpell:1b,SnowGolem:1b}"
+          }
+        ]
+      },
+      {
+        "type": "minecraft:item",
+        "name": "minecraft:warped_fungus_on_a_stick",
+        "functions": [
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{display:{Name:'{\"text\":\"Water Breathing\",\"color\":\"light_purple\"}'},CustomModelData:60100,LearnSpell:1b,WaterBreath:1b}"
+          }
+        ]
+      },
+      {
+        "type": "minecraft:item",
+        "name": "minecraft:warped_fungus_on_a_stick",
+        "functions": [
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{display:{Name:'{\"text\":\"Dolphins Grace\",\"color\":\"light_purple\"}'},CustomModelData:60100,LearnSpell:1b,DolpGrace:1b}"
+          }
+        ]
+      },
+      {
+        "type": "minecraft:item",
+        "name": "minecraft:warped_fungus_on_a_stick",
+        "functions": [
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{display:{Name:'{\"text\":\"Ice Walker\",\"color\":\"light_purple\"}'},CustomModelData:60100,LearnSpell:1b,IceWalker:1b}"
+          }
+        ]
+      },
+      {
+        "type": "minecraft:item",
+        "name": "minecraft:warped_fungus_on_a_stick",
+        "functions": [
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{display:{Name:'{\"text\":\"Extinguish\",\"color\":\"light_purple\"}'},CustomModelData:60100,LearnSpell:1b,Extinguish:1b}"
+          }
+        ]
+      },
+      {
+        "type": "minecraft:item",
+        "name": "minecraft:warped_fungus_on_a_stick",
+        "functions": [
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{display:{Name:'{\"text\":\"Blizzard\",\"color\":\"light_purple\"}'},CustomModelData:60100,LearnSpell:1b,Blizzard:1b}"
+          }
+        ]
+      },
+      {
+        "type": "minecraft:item",
+        "name": "minecraft:warped_fungus_on_a_stick",
+        "functions": [
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{display:{Name:'{\"text\":\"Levitate\",\"color\":\"light_purple\"}'},CustomModelData:60100,LearnSpell:1b,Levitate:1b}"
+          }
+        ]
+      },
+      {
+        "type": "minecraft:item",
+        "name": "minecraft:warped_fungus_on_a_stick",
+        "functions": [
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{display:{Name:'{\"text\":\"Slow Fall\",\"color\":\"light_purple\"}'},CustomModelData:60100,LearnSpell:1b,Slowfall:1b}"
+          }
+        ]
+      },
+      {
+        "type": "minecraft:item",
+        "name": "minecraft:warped_fungus_on_a_stick",
+        "functions": [
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{display:{Name:'{\"text\":\"Tail Wind\",\"color\":\"light_purple\"}'},CustomModelData:60100,LearnSpell:1b,TailWind:1b}"
+          }
+        ]
+      },
+      {
+        "type": "minecraft:item",
+        "name": "minecraft:warped_fungus_on_a_stick",
+        "functions": [
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{display:{Name:'{\"text\":\"Bunny Hop\",\"color\":\"light_purple\"}'},CustomModelData:60100,LearnSpell:1b,BunnyHop:1b}"
+          }
+        ]
+      },
+      {
+        "type": "minecraft:item",
+        "name": "minecraft:warped_fungus_on_a_stick",
+        "functions": [
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{display:{Name:'{\"text\":\"Poison\",\"color\":\"light_purple\"}'},CustomModelData:60100,LearnSpell:1b,Poison:1b}"
+          }
+        ]
+      },
+      {
+        "type": "minecraft:item",
+        "name": "minecraft:warped_fungus_on_a_stick",
+        "functions": [
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{display:{Name:'{\"text\":\"Iron Flesh\",\"color\":\"light_purple\"}'},CustomModelData:60100,LearnSpell:1b,IronFlesh:1b}"
+          }
+        ]
+      },
+      {
+        "type": "minecraft:item",
+        "name": "minecraft:warped_fungus_on_a_stick",
+        "functions": [
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{display:{Name:'{\"text\":\"Gold Flesh\",\"color\":\"light_purple\"}'},CustomModelData:60100,LearnSpell:1b,GoldFlesh:1b}"
+          }
+        ]
+      },
+      {
+        "type": "minecraft:item",
+        "name": "minecraft:warped_fungus_on_a_stick",
+        "functions": [
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{display:{Name:'{\"text\":\"Diamond Flesh\",\"color\":\"light_purple\"}'},CustomModelData:60100,LearnSpell:1b,DiamondFlesh:1b}"
+          }
+        ]
+      },
+      {
+        "type": "minecraft:item",
+        "name": "minecraft:warped_fungus_on_a_stick",
+        "functions": [
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{display:{Name:'{\"text\":\"Iron Golem\",\"color\":\"light_purple\"}'},CustomModelData:60100,LearnSpell:1b,IronGolem:1b}"
+          }
+        ]
+      },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Teleport\",\"color\":\"light_purple\"}'},CustomModelData:60100,LearnSpell:1b,Teleport:1b}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Shield\",\"color\":\"light_purple\"}'},CustomModelData:60100,LearnSpell:1b,Shield:1b}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Invisibility\",\"color\":\"light_purple\"}'},CustomModelData:60100,LearnSpell:1b,Invisibility:1b}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Mend\",\"color\":\"light_purple\"}'},CustomModelData:60100,LearnSpell:1b,Mend:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
