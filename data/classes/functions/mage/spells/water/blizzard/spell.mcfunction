@@ -18,7 +18,7 @@ execute if entity @s[scores={cl.Mana=1..,cl.e.Blizzard=1..}] at @s run effect gi
 execute if entity @s[scores={cl.Mana=1..,cl.e.Blizzard=6}] at @s as @e[type=!#classes:nontarget,type=!player,tag=!summoned,tag=!cl.Owned,distance=..9] at @s if block ^ ^1 ^-1 #classes:air run tp @s ^ ^0.5 ^-0.5 facing entity @p[scores={cl.e.Blizzard=6}]
 
 #Damage entities in range
-execute if entity @s[scores={cl.Mana=1..,cl.e.Blizzard=1..}] at @s run effect give @e[type=!#classes:nontarget,type=!player,tag=!cl.Owned,distance=..10] minecraft:wither 1 4
+execute if entity @s[scores={cl.Mana=1..,cl.e.Blizzard=1..}] at @s run effect give @e[type=!#classes:nontarget,tag=!cl.Owned,distance=..10] minecraft:wither 1 4
 
 #Spell Handling
 execute if entity @s[scores={cl.Mana=1..}] run scoreboard players set @s cl.e.Blizzard 10
