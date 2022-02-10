@@ -14,7 +14,7 @@
 execute as @e[type=minecraft:area_effect_cloud,tag=cl.HitBySpell] positioned ~-0.79 ~-0.79 ~-0.79 if entity @s[dx=0] positioned ~0.79 ~0.79 ~0.79 run scoreboard players set @s cl.HitBySpell 100
 
 #AEC - Angry At - (tag=cl.angry)
-execute as @e[type=minecraft:area_effect_cloud,tag=cl.angry] at @s run data modify entity @e[type=!#classes:nontarget,type=!minecraft:area_effect_cloud,type=!item,distance=..3,limit=1,sort=random,nbt={AngerTime:0},tag=!summoned,tag=!cl.Owned] AngryAt set from entity @p[scores={cl.Class=3}] UUID
+execute as @e[type=minecraft:area_effect_cloud,tag=cl.angry] at @s as @e[type=!#classes:nontarget,type=!minecraft:area_effect_cloud,distance=..3,sort=random,predicate=classes:entities/angry,tag=!summoned,tag=!cl.Owned] run function classes:entities/vanilla/angry
 
 #AEC - Wither - (tag=cl.wither)
 execute as @e[type=minecraft:area_effect_cloud,tag=cl.wither3] at @s run effect give @e[type=!#classes:nontarget,type=!minecraft:area_effect_cloud,distance=..3,sort=nearest,tag=!summoned,tag=!cl.Owned] minecraft:wither 3 4 true

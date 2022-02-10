@@ -18,15 +18,15 @@ execute if entity @s[scores={cl.Mana=1..,cl.e.Blizzard=1..}] at @s run effect gi
 execute if entity @s[scores={cl.Mana=1..,cl.e.Blizzard=6}] at @s as @e[type=!#classes:nontarget,type=!player,tag=!summoned,tag=!cl.Owned,distance=..9] at @s if block ^ ^1 ^-1 #classes:air run tp @s ^ ^0.5 ^-0.5 facing entity @p[scores={cl.e.Blizzard=6}]
 
 #Damage entities in range
-execute if entity @s[scores={cl.Mana=1..,cl.e.Blizzard=1..}] at @s run effect give @e[type=!#classes:nontarget,type=!player,tag=!cl.Owned,distance=..10] minecraft:wither 1 3
+execute if entity @s[scores={cl.Mana=1..,cl.e.Blizzard=1..}] at @s run effect give @e[type=!#classes:nontarget,type=!player,tag=!cl.Owned,distance=..10] minecraft:wither 1 4
 
 #Spell Handling
 execute if entity @s[scores={cl.Mana=1..}] run scoreboard players set @s cl.e.Blizzard 10
 
 #Handle Mana drain over time. Set cl.e.Blizzard.m=# in the selectors to a higher number to slow down drain rate.
 execute if entity @s[scores={cl.Mana=1..}] run scoreboard players add @s cl.e.Blizzard.m 1
-execute if entity @s[scores={cl.Mana=1..}] run scoreboard players remove @s[scores={cl.e.Blizzard.m=3}] cl.Mana 1
-execute if entity @s[scores={cl.Mana=1..}] run scoreboard players set @s[scores={cl.e.Blizzard.m=3..}] cl.e.Blizzard.m 0
+execute if entity @s[scores={cl.Mana=1..}] run scoreboard players remove @s[scores={cl.e.Blizzard.m=4}] cl.Mana 1
+execute if entity @s[scores={cl.Mana=1..}] run scoreboard players set @s[scores={cl.e.Blizzard.m=4..}] cl.e.Blizzard.m 0
 
 #Modify item (for spell versioning)
 item modify entity @s weapon.mainhand classes:mage/spells/water/blizzard

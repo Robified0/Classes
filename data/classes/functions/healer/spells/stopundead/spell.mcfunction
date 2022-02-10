@@ -10,9 +10,7 @@ execute as @s[scores={cl.Mana=4..}] at @s as @e[tag=StopUndead,distance=..10] ru
 execute as @s[scores={cl.Mana=4..}] at @e[tag=StopUndead,distance=..10] run particle minecraft:end_rod ~ ~ ~ 0.1 0.1 0.1 0.1 20 normal
 
 #Get mobs angry if not already
-execute as @s[scores={cl.Mana=4..}] at @s as @e[type=#classes:undead,distance=..10,nbt={AngerTime:0},tag=!summoned] run data modify entity @s AngryAt set from entity @p[tag=GetAngry] UUID
-execute as @s[scores={cl.Mana=4..}] at @s as @e[type=#classes:undead,nbt=!{Brain:{memories:{"minecraft:angry_at":{}}}},tag=!summoned] run data modify entity @s Brain.memories."minecraft:angry_at".value set from entity @p[tag=GetAngry] UUID
-tag @s remove GetAngry
+execute if entity @s[scores={cl.Mana=4..}] at @s as @e[type=#classes:undead,predicate=classes:entities/angry,tag=StopUndead] at @s run function classes:entities/vanilla/angry
 
 #Sound effect
 execute as @s[scores={cl.Mana=4..}] at @e[tag=StopUndead,distance=..10] run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 5 1.5

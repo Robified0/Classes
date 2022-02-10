@@ -13,6 +13,10 @@ execute if entity @s[scores={cl.Mana=3..}] run effect give @e[type=!#classes:und
 execute if entity @s[scores={cl.Mana=3..}] run effect give @e[type=#classes:undead,tag=FlameBurst] instant_health 1 1 false
 execute if entity @s[scores={cl.Mana=3..}] at @e[tag=FlameBurst] run particle flame ~ ~ ~ 0.1 0.5 0.1 0.35 100 force
 
+#Make Mob Angry
+execute if entity @s[scores={cl.Mana=3..}] as @e[predicate=classes:entities/angry,tag=!summoned,tag=!cl.Owned,tag=FlameBurst] run data modify entity @s AngryAt set from entity @p[scores={cl.Class=3}] UUID
+execute if entity @s[scores={cl.Mana=3..}] as @e[predicate=classes:entities/angry,tag=!summoned,tag=!cl.Owned,tag=FlameBurst] run data modify entity @s Brain.memories."minecraft:angry_at".value set from entity @p[scores={cl.Class=3}] UUID
+
 #Cast Spell Sound Effect
 execute if entity @s[scores={cl.Mana=3..}] at @s if entity @e[tag=FlameBurst,distance=..6] run function classes:mage/spells/all/cast
 

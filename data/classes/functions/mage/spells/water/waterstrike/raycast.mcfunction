@@ -12,8 +12,7 @@ execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=enderman] posit
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:fireproof,type=!#classes:undead,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] positioned ~-0.25 ~-0.25 ~-0.25 if entity @s[dx=1] positioned ~0.25 ~0.25 ~0.25 run effect give @s instant_damage 1 1 true
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:fireproof,type=#classes:undead,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] positioned ~-0.25 ~-0.25 ~-0.25 if entity @s[dx=1] positioned ~0.25 ~0.25 ~0.25 run effect give @s instant_health 1 2 true
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] at @s run particle minecraft:falling_water ~ ~ ~ 1 1 1 10 30 normal
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,nbt={AngerTime:0},tag=!summoned,tag=!cl.Owned] run data modify entity @s AngryAt set from entity @p[scores={cl.Class=3}] UUID
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:neutral,nbt=!{Brain:{memories:{"minecraft:angry_at":{}}}},tag=!summoned,tag=!cl.Owned] run data modify entity @s Brain.memories."minecraft:angry_at".value set from entity @p[scores={cl.Class=3}] UUID
+execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,predicate=classes:entities/angry,tag=!summoned,tag=!cl.Owned] at @s run function classes:entities/vanilla/angry
 
 #Edit tag/spellname and uncomment if you want it to end when it hits one target
 #execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,tag=!summoned] run kill @e[type=marker,tag=waterstrike,sort=nearest,limit=1]

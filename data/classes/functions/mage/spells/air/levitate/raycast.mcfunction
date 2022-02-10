@@ -11,8 +11,7 @@ execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nonta
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=player] run effect give @s minecraft:levitation 1 10 false
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=player] run effect give @s minecraft:slow_falling 3 0 false
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] at @s run particle minecraft:cloud ~ ~ ~ 0.5 0.5 0.5 0.1 30 normal
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!item,nbt={AngerTime:0},tag=!summoned,tag=!cl.Owned] run data modify entity @s AngryAt set from entity @p[scores={cl.Class=3}] UUID
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:neutral,nbt=!{Brain:{memories:{"minecraft:angry_at":{}}}},tag=!summoned,tag=!cl.Owned] run data modify entity @s Brain.memories."minecraft:angry_at".value set from entity @p[scores={cl.Class=3}] UUID
+execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,predicate=classes:entities/angry,tag=!summoned,tag=!cl.Owned] at @s run function classes:entities/vanilla/angry
 
 #Edit tag/spellname and uncomment if you want it to end when it hits one target
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] run particle minecraft:cloud ~ ~ ~ 1 5 1 0.01 50 force @a

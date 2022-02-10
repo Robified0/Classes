@@ -12,8 +12,7 @@ execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=wither] run effect give @s minecraft:instant_health 1 2 true
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead,tag=!summoned,tag=!cl.Owned] at @s run particle minecraft:happy_villager ~ ~ ~ 0.5 1 0.5 1 30 normal
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead,tag=!summoned,tag=!cl.Owned] at @s run particle minecraft:end_rod ~ ~ ~ 0.5 1 0.5 0.25 10 normal
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead,tag=!summoned,tag=!cl.Owned] run data modify entity @s AngryAt set from entity @p[scores={cl.Class=3}] UUID
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead,nbt=!{Brain:{memories:{"minecraft:angry_at":{}}}},tag=!summoned,tag=!cl.Owned] run data modify entity @s Brain.memories."minecraft:angry_at".value set from entity @p[scores={cl.Class=4}] UUID
+execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,predicate=classes:entities/angry,tag=!summoned,tag=!cl.Owned] at @s run function classes:entities/vanilla/angry
 
 #Edit tag/spellname and comment if you want it to hit more than one target
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead,tag=!summoned,tag=!cl.Owned] run kill @e[type=marker,tag=holystrike,sort=nearest,limit=1]

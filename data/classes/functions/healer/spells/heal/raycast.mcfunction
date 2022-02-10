@@ -15,8 +15,7 @@ execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nonta
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,tag=!cl.isAngry,tag=!summoned,tag=!cl.Owned] at @s run particle minecraft:electric_spark ~ ~ ~ 0.5 1 0.5 0.1 10 normal
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead,tag=!summoned,tag=!cl.Owned] at @s run particle minecraft:composter ~ ~ ~ 0.5 1 0.5 0.1 30 normal
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead,tag=!summoned,tag=!cl.Owned] at @s run particle minecraft:electric_spark ~ ~ ~ 0.5 1 0.5 0.1 10 normal
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead,tag=!summoned,tag=!cl.Owned] run data modify entity @s AngryAt set from entity @p[scores={cl.Class=4}] UUID
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead,nbt=!{Brain:{memories:{"minecraft:angry_at":{}}}},tag=!summoned,tag=!cl.Owned] run data modify entity @s Brain.memories."minecraft:angry_at".value set from entity @p[scores={cl.Class=4}] UUID
+execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,predicate=classes:entities/angry,tag=!summoned,tag=!cl.Owned] at @s run function classes:entities/vanilla/angry
 
 #Edit tag/spellname and uncomment if you want it to end when it hits one target
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] run kill @e[type=marker,tag=heal,sort=nearest,limit=1]
