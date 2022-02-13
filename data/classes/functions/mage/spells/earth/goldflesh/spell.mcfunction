@@ -2,8 +2,10 @@
 execute if entity @s[scores={cl.Mana=..7}] run function classes:main/mana_system/nomana
 
 #Remove other Flesh spells
+execute if entity @s[scores={cl.Mana=8..}] run scoreboard players set @s cl.e.MageArmor 0
 execute if entity @s[scores={cl.Mana=8..}] run scoreboard players set @s cl.e.IronFlesh 0
 execute if entity @s[scores={cl.Mana=8..}] run scoreboard players set @s cl.e.DiaFlesh 0
+execute if entity @s[scores={cl.Mana=8..}] run tag @s remove MageArmor
 execute if entity @s[scores={cl.Mana=8..}] run tag @s remove IronFlesh
 execute if entity @s[scores={cl.Mana=8..}] run tag @s remove DiaFlesh
 
@@ -12,7 +14,7 @@ execute if entity @s[scores={cl.Mana=8..}] run tag @s add GoldFlesh
 execute if entity @s[scores={cl.Mana=8..}] run scoreboard players set @s cl.e.GoldFlesh 12000
 
 #Change base attribute
-execute if entity @s[scores={cl.Mana=8..}] run attribute @s minecraft:generic.armor base set 8
+execute if entity @s[scores={cl.Mana=8..}] run attribute @s minecraft:generic.armor base set 16
 
 #Particle effect
 execute if entity @s[scores={cl.Mana=8..}] at @s run particle block gold_block ~ ~ ~ 1 1 1 10 40 normal
