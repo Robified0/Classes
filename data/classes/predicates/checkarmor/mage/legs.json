@@ -5,6 +5,7 @@
       "equipment": {
         "legs": {
           "items": [
+            "minecraft:leather_leggings",
             "minecraft:netherite_leggings",
             "minecraft:chainmail_leggings",
             "minecraft:iron_leggings",

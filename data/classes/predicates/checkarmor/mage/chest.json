@@ -5,6 +5,7 @@
       "equipment": {
         "chest": {
           "items": [
+            "minecraft:leather_chestplate",
             "minecraft:golden_chestplate",
             "minecraft:chainmail_chestplate",
             "minecraft:netherite_chestplate",
