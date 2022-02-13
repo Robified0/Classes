@@ -18,6 +18,10 @@ execute positioned ^ ^ ^-0.25 if block ^ ^ ^0.25 obsidian if block ^ ^ ^-0.5 air
 #Prevent stray blocks from lighting on fire when setFire = false (This fix applies to lighting portals)
 execute unless score #cl.pref cl.p.setFire matches 1 positioned ^ ^ ^-0.25 run fill ~2 ~2 ~2 ~-4 ~-4 ~-4 minecraft:air replace fire
 
+#Hit water?
+execute positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:water run particle minecraft:large_smoke ^ ^ ^-0.5 0.1 0.1 0.1 0.05 20 normal
+execute positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:water run playsound minecraft:block.lava.extinguish ambient @a ~ ~ ~ 1 0.2
+
 #Reset Scores
 scoreboard players reset @s cl.slo_id
 scoreboard players reset @s cl.slo_dst_per
