@@ -21,6 +21,10 @@ tag @a remove cl.s.DiaFlesh
 tag @a remove cl.s.IronGolem
 tag @a remove cl.s.Light
 tag @a remove cl.s.Teleport
+tag @a remove IronFlesh
+tag @a remove GoldFlesh
+tag @a remove DiaFlesh
+tag @a remove MageArmor
 tag @a remove Joined
 tag @a remove Equipped
 tag @a remove ClassSelected
