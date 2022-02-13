@@ -14,7 +14,7 @@ This is also my first foray into GitHub, so I'm using this as my chance to exper
 
 **Mage:**
 
-The mage commands the elements of earth, air, fire, and water. Using their magic, they are able to will the elements to do their bidding and do massive damage to enemies or give buffs to themselves. They have a lower attack speed and attack damage, and are unable to wear anything heavier than leather armor (though they have spells to increase their defense!).
+The mage commands the elements of earth, air, fire, and water. Using their magic, they are able to will the elements to do their bidding and do massive damage to enemies or give buffs to themselves. They have a lower attack speed and attack damage, and are unable to wear armor (though they have spells to replicate it!).
 
 
 **Healer:**
