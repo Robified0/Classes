@@ -4,3 +4,4 @@ execute if entity @s[predicate=classes:checkspell/mage/magic/teleport] at @s run
 execute if entity @s[predicate=classes:checkspell/mage/magic/shield] at @s run function classes:mage/spells/magic/shield/spell
 execute if entity @s[predicate=classes:checkspell/mage/magic/invisibility] at @s run function classes:mage/spells/magic/invisibility/spell
 execute if entity @s[predicate=classes:checkspell/mage/magic/mend] at @s run function classes:mage/spells/magic/mend/spell
+execute if entity @s[predicate=classes:checkspell/mage/magic/magearmor] at @s run function classes:mage/spells/magic/magearmor/spell

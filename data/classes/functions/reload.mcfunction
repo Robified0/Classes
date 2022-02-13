@@ -12,15 +12,13 @@ scoreboard objectives add cl.power_0 dummy
 scoreboard objectives add cl.power_1 dummy
 scoreboard objectives add cl.power_2 dummy
 scoreboard objectives add cl.newFireball dummy
-#Set up trigger for equipping spells
-scoreboard objectives add cl.equipSpell trigger
+
 
 #Set up other scoreboards
 scoreboard objectives add cl.Class trigger
 scoreboard objectives add cl.loadSpell dummy
 scoreboard objectives add cl.Sneaking minecraft.custom:minecraft.sneak_time
 scoreboard objectives add cl.rightClick minecraft.used:minecraft.warped_fungus_on_a_stick
-scoreboard objectives add cl.ReadBook minecraft.used:minecraft.written_book
 scoreboard objectives add cl.Mana dummy
 scoreboard objectives add cl.ManaRegenSec dummy
 scoreboard objectives add cl.Swimming air
@@ -44,7 +42,6 @@ scoreboard objectives add cl.p.setFire dummy
 scoreboard objectives add cl.p.wPortal dummy
 scoreboard objectives add cl.p.wObsidian dummy
 scoreboard objectives add cl.p.wExtFire dummy
-scoreboard objectives add cl.p.clericHeal dummy
 execute unless score #cl.pref cl.p.setFire matches 0 run scoreboard players set #cl.pref cl.p.setFire 0
 execute unless score #cl.pref cl.p.wPortal matches 0 run scoreboard players set #cl.pref cl.p.wPortal 1
 execute unless score #cl.pref cl.p.wObsidian matches 0 run scoreboard players set #cl.pref cl.p.wObsidian 1
@@ -60,6 +57,7 @@ scoreboard objectives add cl.e.Blizzard dummy
 scoreboard objectives add cl.e.SlowFall dummy
 scoreboard objectives add cl.e.TailWind dummy
 scoreboard objectives add cl.e.BunnyHop dummy
+scoreboard objectives add cl.e.MageArmor dummy
 scoreboard objectives add cl.e.GoldFlesh dummy
 scoreboard objectives add cl.e.IronFlesh dummy
 scoreboard objectives add cl.e.DiaFlesh dummy
