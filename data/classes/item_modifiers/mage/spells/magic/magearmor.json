@@ -1,6 +1,6 @@
 [
   {
     "function": "minecraft:set_nbt",
-    "tag": "{display:{Name:'[{\"text\":\"Mage Armor\",\"color\":\"light_purple\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"\uE003 x 4\",\"color\":\"aqua\",\"bold\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','[{\"text\":\"Element: \",\"color\":\"dark_aqua\"},{\"text\":\"Magic\",\"color\":\"light_purple\"}]','{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Grants the caster 4 Armor.\",\"color\":\"light_purple\"}']},CustomModelData:60605,Spell:1b,Magic:1b,MageArmor:1b}"
+    "tag": "{display:{Name:'[{\"text\":\"Mage Armor\",\"color\":\"light_purple\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"\uE003 x 4\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','[{\"text\":\"Element: \",\"color\":\"dark_aqua\"},{\"text\":\"Magic\",\"color\":\"light_purple\"}]','{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Grants the caster 4 Armor.\",\"color\":\"light_purple\"}']},CustomModelData:60605,Spell:1b,Magic:1b,MageArmor:1b}"
   }
 ]
