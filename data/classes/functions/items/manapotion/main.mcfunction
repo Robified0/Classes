@@ -2,7 +2,7 @@
 scoreboard players set @a[predicate=classes:items/manapotion] cl.i.ManaPotion 1
 
 #Restore Mana if potion is drank
-execute as @a[scores={cl.i.ManaPotion=1,cl.i.usedPotion=1..}] run scoreboard players set @s cl.Mana 10
+execute as @a[scores={cl.i.ManaPotion=1,cl.i.usedPotion=1..}] run scoreboard players set @s cl.Mana 20
 
 #Sound effect if potion drank
 execute as @a[scores={cl.i.ManaPotion=1,cl.i.usedPotion=1..}] run playsound minecraft:entity.player.levelup ambient @s ~ ~ ~ 1 2
