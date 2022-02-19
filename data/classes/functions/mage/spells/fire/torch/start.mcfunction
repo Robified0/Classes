@@ -7,6 +7,7 @@ tag @s remove this
 
 #Cast Spell Sound Effect
 function classes:mage/spells/all/cast
+playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 0.5 
 
 #Particles
 particle minecraft:witch ~ ~ ~ 0.5 1 0.5 1.2 40 force
