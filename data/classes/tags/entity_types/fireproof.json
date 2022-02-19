@@ -4,6 +4,7 @@
 	"minecraft:blaze",
 	"minecraft:ghast",
   "minecraft:wither_skeleton",
-  "minecraft:wither"
+  "minecraft:wither",
+  "minecraft:zombified_piglin"
   ]
 }
