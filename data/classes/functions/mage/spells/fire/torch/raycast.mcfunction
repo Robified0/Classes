@@ -3,7 +3,7 @@ particle flame ^0.4 ^0.2 ^0.3 0.25 0.25 0.25 0.03 2 force
 
 
 #Play sound effect - use here when needing repeat
-execute at @s run playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 0.08
+#execute at @s run playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 0.08
 
 #Do these things when spell hits
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:fireproof,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] run scoreboard players set @s cl.HitBySpell 100
