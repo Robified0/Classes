@@ -1,0 +1,15 @@
+{
+  "values":[
+	"minecraft:player",
+	"minecraft:wolf",
+	"minecraft:cat",
+  "minecraft:villager",
+  "minecraft:iron_golem",
+  "minecraft:horse",
+  "minecraft:donkey",
+  "minecraft:mule",
+  "minecraft:llama",
+  "minecraft:parrot",
+  "minecraft:trader_llama"
+  ]
+}

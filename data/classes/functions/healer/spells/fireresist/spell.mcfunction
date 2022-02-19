@@ -2,7 +2,7 @@
 execute if entity @s[scores={cl.Mana=..2}] run function classes:main/mana_system/nomana
 
 #Add score for tracking
-execute if entity @s[scores={cl.Mana=3..}] at @s run scoreboard players set @e[distance=..10,limit=5,sort=random] cl.e.FireResist 900
+execute if entity @s[scores={cl.Mana=3..}] at @s run scoreboard players set @e[type=#classes:healertargets,distance=..10,limit=5,sort=random,tag=cl.Owned] cl.e.FireResist 900
 execute as @e[scores={cl.e.FireResist=900}] run effect give @s minecraft:fire_resistance 45 0 false
 
 #Cast Spell Sound Effect

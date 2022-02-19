@@ -12,7 +12,7 @@ execute if entity @s[scores={cl.Mana=1..,cl.e.Mending=1..}] at @s run particle w
 execute if entity @s[scores={cl.Mana=1..,cl.e.Mending=1..}] at @s run particle composter ~ ~ ~ 10 10 10 0.25 200 force
 
 #Boost Strength of nearby allies
-execute if entity @s[scores={cl.Mana=1..,cl.e.Mending.t=5}] at @s run effect give @a[distance=..10] minecraft:instant_health 1 0
+execute if entity @s[scores={cl.Mana=1..,cl.e.Mending.t=5}] at @s run effect give @e[type=#classes:healertargets,distance=..10,tag=cl.Owned] minecraft:instant_health 1 0
 
 #Handle Mana drain over time. Set cl.e.Mending.m=# to a higher number to slow down drain rate.
 execute if entity @s[scores={cl.Mana=1..}] run scoreboard players add @s cl.e.Mending.m 1
