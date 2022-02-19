@@ -42,10 +42,10 @@ scoreboard objectives add cl.p.setFire dummy
 scoreboard objectives add cl.p.wPortal dummy
 scoreboard objectives add cl.p.wObsidian dummy
 scoreboard objectives add cl.p.wExtFire dummy
-execute unless score #cl.pref cl.p.setFire matches 0 run scoreboard players set #cl.pref cl.p.setFire 0
-execute unless score #cl.pref cl.p.wPortal matches 0 run scoreboard players set #cl.pref cl.p.wPortal 1
-execute unless score #cl.pref cl.p.wObsidian matches 0 run scoreboard players set #cl.pref cl.p.wObsidian 1
-execute unless score #cl.pref cl.p.wExtFire matches 0 run scoreboard players set #cl.pref cl.p.wExtFire 1
+execute unless score #cl.pref cl.p.setFire matches 0..1 run scoreboard players set #cl.pref cl.p.setFire 0
+execute unless score #cl.pref cl.p.wPortal matches 0..1 run scoreboard players set #cl.pref cl.p.wPortal 1
+execute unless score #cl.pref cl.p.wObsidian matches 0..1 run scoreboard players set #cl.pref cl.p.wObsidian 1
+execute unless score #cl.pref cl.p.wExtFire matches 0..1 run scoreboard players set #cl.pref cl.p.wExtFire 1
 
 #Scoreboards for time based spells
 scoreboard objectives add cl.summonCount dummy
