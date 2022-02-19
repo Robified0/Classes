@@ -19,4 +19,4 @@ scoreboard players set @s cl.Cooldown 20
 tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Water Strike!","bold":true,"color":"#0096FF"}]
 
 #Mana Depletion
-scoreboard players remove @s cl.Mana 1
+scoreboard players remove @s cl.Mana 2
