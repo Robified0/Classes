@@ -1,6 +1,6 @@
 [
   {
     "function": "minecraft:set_nbt",
-    "tag": "{display:{Name:'[{\"text\":\"Deep Freeze\",\"color\":\"blue\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"4 Mana\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','[{\"text\":\"Element: \",\"color\":\"dark_aqua\"},{\"text\":\"Water\",\"color\":\"blue\"}]','{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Freezes all hostile mobs within 5 blocks in place.\",\"color\":\"aqua\"}']},CustomModelData:60302,Spell:1b,DeepFreeze:1b}"
+    "tag": "{display:{Name:'[{\"text\":\"Deep Freeze\",\"color\":\"blue\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"\uE003 x 3\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','[{\"text\":\"Element: \",\"color\":\"dark_aqua\"},{\"text\":\"Water\",\"color\":\"blue\"}]','{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Freezes all hostile mobs within 5 blocks in place.\",\"color\":\"aqua\"}']},CustomModelData:60302,Spell:1b,DeepFreeze:1b}"
   }
 ]

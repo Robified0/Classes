@@ -1,5 +1,5 @@
 #Not Enough Mana
-execute if entity @s[scores={cl.Mana=..1}] run function classes:main/mana_system/nomana
+execute unless entity @s[scores={cl.Mana=2..}] run function classes:main/mana_system/nomana
 
 #Give Effect
 execute if entity @s[scores={cl.Mana=2..}] run effect give @s minecraft:invisibility 20 1 false

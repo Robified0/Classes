@@ -1,5 +1,5 @@
 #Not Enough Mana
-execute if entity @s[scores={cl.Mana=..7}] run function classes:main/mana_system/nomana
+execute unless entity @s[scores={cl.Mana=8..}] run function classes:main/mana_system/nomana
 
 #Remove other Flesh spells
 execute if entity @s[scores={cl.Mana=8..}] run scoreboard players set @s cl.e.MageArmor 0

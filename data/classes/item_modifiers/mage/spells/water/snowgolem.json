@@ -1,6 +1,6 @@
 [
   {
     "function": "minecraft:set_nbt",
-    "tag": "{display:{Name:'[{\"text\":\"Snow Golem\",\"color\":\"blue\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"4 Mana\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','[{\"text\":\"Element: \",\"color\":\"dark_aqua\"},{\"text\":\"Water\",\"color\":\"blue\"}]','{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Summons a snow golem to fend off enemies.\",\"color\":\"aqua\"}']},CustomModelData:60303,Spell:1b,SnowGolem:1b}"
+    "tag": "{display:{Name:'[{\"text\":\"Snow Golem\",\"color\":\"blue\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"\uE003 x 2\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','[{\"text\":\"Element: \",\"color\":\"dark_aqua\"},{\"text\":\"Water\",\"color\":\"blue\"}]','{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Summons a snow golem to fend off enemies.\",\"color\":\"aqua\"}']},CustomModelData:60303,Spell:1b,SnowGolem:1b}"
   }
 ]

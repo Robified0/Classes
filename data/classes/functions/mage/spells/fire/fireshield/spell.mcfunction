@@ -1,5 +1,5 @@
 #Not Enough Mana
-execute if entity @s[scores={cl.Mana=..3}] run function classes:main/mana_system/nomana
+execute unless entity @s[scores={cl.Mana=4..}] run function classes:main/mana_system/nomana
 
 #Give Effect
 execute if entity @s[scores={cl.Mana=4..}] run tag @s add FireShield
