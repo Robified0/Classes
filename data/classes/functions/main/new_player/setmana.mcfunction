@@ -2,6 +2,7 @@
 scoreboard players set @s cl.ManaRegenSec 1
 scoreboard players set @s cl.Mana 20
 
+advancement grant @s[scores={cl.Class=3}] only classes:mage/root
 advancement grant @s[scores={cl.Class=3}] only classes:mage/learnspell/magic/magearmor
 advancement grant @s[scores={cl.Class=3}] only classes:mage/learnspell/fire/torch
 
