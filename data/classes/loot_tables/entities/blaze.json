@@ -5,12 +5,27 @@
       "rolls": 1,
       "entries": [
         {
+          "type": "minecraft:loot_table",
+          "name": "classes:essences/fire"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.02
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
           "type": "minecraft:item",
           "name": "minecraft:acacia_button",
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{XPOrb:1b,XPValue:10}"
+              "tag": "{cl.Custom:1b,cl.XPOrb:1b,cl.XPValue:10}"
             }
           ]
         }

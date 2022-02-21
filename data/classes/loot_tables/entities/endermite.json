@@ -19,7 +19,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{XPOrb:1b,XPValue:3}"
+              "tag": "{cl.Custom:1b,cl.XPOrb:1b,cl.XPValue:3}"
             }
           ]
         }

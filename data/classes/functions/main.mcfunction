@@ -23,7 +23,7 @@ execute if entity @a[scores={cl.Class=1..},tag=!cl.o.ClassSelected] as @a[scores
 execute as @a[gamemode=!creative,gamemode=!spectator,scores={cl.Mana=-5..}] run function classes:main/mana_system/mana
 
 #XP Handling for spells
-execute as @e[type=item,nbt={Item:{id:"minecraft:acacia_button",Count:1b,tag:{XPOrb:1b}}}] run function classes:main/loot_table/xp
+execute as @e[type=item,nbt={Item:{id:"minecraft:acacia_button",Count:1b,tag:{cl.Custom:1b}}}] run function classes:main/loot_table/acacia_button/main
 
 #Mana Regen
 execute as @a[scores={cl.Class=3..4}] run function classes:main/mana_system/main
@@ -38,3 +38,6 @@ execute if entity @e[type=item,tag=cl.o.item.spell] as @e[type=item,tag=cl.o.ite
 scoreboard players add @e[type=fireball,tag=cl.newFireball] cl.newFireball 1
 execute as @e[type=fireball,tag=cl.newFireball,scores={cl.newFireball=60..}] at @s run particle flame ~ ~ ~ 1 1 1 1 100 force @a
 execute as @e[type=fireball,tag=cl.newFireball,scores={cl.newFireball=60..}] run kill @s
+
+#Essences
+execute as @e[type=marker,tag=cl.EssenceMarker] run function classes:main/essences/main
