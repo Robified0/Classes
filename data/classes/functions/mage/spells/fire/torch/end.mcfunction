@@ -22,7 +22,7 @@ execute unless score #cl.pref cl.p.setFire matches 1 positioned ^ ^ ^-0.25 run f
 
 #Hit water?
 execute positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:water run particle minecraft:large_smoke ^ ^ ^-0.5 0.1 0.1 0.1 0.05 20 normal
-execute positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:water run playsound minecraft:block.lava.extinguish ambient @a ~ ~ ~ 1.2 0.8
+execute positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:water run playsound minecraft:block.fire.extinguish ambient @a ~ ~ ~ 1.2 1.5
 
 #Reset Scores
 scoreboard players reset @s cl.slo_id
