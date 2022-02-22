@@ -16,7 +16,7 @@ scoreboard objectives add cl.newFireball dummy
 
 #Set up other scoreboards
 scoreboard objectives add cl.Class trigger
-scoreboard objectives add cl.EssenceCount dummy
+scoreboard objectives add cl.EssenceSound dummy
 scoreboard objectives add cl.Sneaking minecraft.custom:minecraft.sneak_time
 scoreboard objectives add cl.rightClick minecraft.used:minecraft.warped_fungus_on_a_stick
 scoreboard objectives add cl.Mana dummy

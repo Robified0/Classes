@@ -6,7 +6,13 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "minecraft:entities/ghast"
+          "name": "classes:essences/fire"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.02
         }
       ]
     },

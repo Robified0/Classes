@@ -6,6 +6,27 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
+          "weight": 2,
+          "name": "classes:essences/basic"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "classes:essences/fire"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.02
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
           "name": "minecraft:entities/zombified_piglin"
         }
       ]

@@ -1,1 +1,1 @@
-execute at @s positioned ~ ~1 ~ run summon marker ~ ~ ~ {CustomNameVisible:1b,Tags:["cl.EssenceMarker","cl.ess.Fire","cl.ess.Torch"],CustomName:'{"text":"Torch Essence","color":"red"}'}
+execute at @s positioned ~ ~1 ~ run summon area_effect_cloud ~ ~ ~ {CustomNameVisible:1b,Tags:["cl.EssenceMarker","cl.ess.Fire","cl.ess.Torch"],Radius:0f,RadiusPerTick:0f,RadiusOnUse:0f,Duration:3600,Age:0,CustomName:'{"text":"Torch","color":"red"}'}

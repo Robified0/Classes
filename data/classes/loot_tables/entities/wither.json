@@ -6,6 +6,21 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
+          "name": "classes:essences/bosslevel"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
           "name": "minecraft:entities/wither"
         }
       ]

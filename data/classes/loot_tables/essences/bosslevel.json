@@ -1,0 +1,64 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:acacia_button",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{cl.Custom:1b,cl.Essence:1b,cl.ess.Earth:1b,cl.ess.DiamondFlesh:1b}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:acacia_button",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{cl.Custom:1b,cl.Essence:1b,cl.ess.Earth:1b,cl.ess.IronGolem:1b}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:acacia_button",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{cl.Custom:1b,cl.Essence:1b,cl.ess.Water:1b,cl.ess.DeepFreeze:1b}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:acacia_button",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{cl.Custom:1b,cl.Essence:1b,cl.ess.Fire:1b,cl.ess.FlameBurst:1b}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:acacia_button",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{cl.Custom:1b,cl.Essence:1b,cl.ess.Water:1b,cl.ess.Blizzard:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

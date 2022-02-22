@@ -1,8 +1,8 @@
-#Set score of marker
-execute unless entity @s[scores={cl.EssenceCount=1..}] run scoreboard players set @s cl.EssenceCount 3600
+#Set scores of marker
+execute unless entity @s[scores={cl.EssenceSound=1..}] run scoreboard players set @s cl.EssenceSound 100
 
 #Reduce score of marker
-execute as @s[scores={cl.EssenceCount=1..}] run scoreboard players remove @s cl.EssenceCount 1
+execute as @s[scores={cl.EssenceSound=1..}] run scoreboard players remove @s cl.EssenceSound 1
 
 #Soul Particles
 execute at @s run particle minecraft:soul ~ ~ ~ 0 0.05 0 0.01 2 force
@@ -17,10 +17,14 @@ execute as @s[tag=cl.ess.Water] at @s run particle minecraft:dripping_dripstone_
 
 #Earth (no sound currently - working on finding good one)
 execute as @s[tag=cl.ess.Earth] at @s run particle minecraft:falling_spore_blossom ~ ~ ~ 0.2 0.3 0.2 0.01 1 force
-
+execute as @s[tag=cl.ess.Earth,scores={cl.EssenceSound=99}] at @s run playsound minecraft:block.respawn_anchor.set_spawn ambient @a ~ ~ ~ 0.3 0.1
 #Air
 execute as @s[tag=cl.ess.Air] at @s run particle minecraft:dust 1 1 1 1 ~ ~ ~ 0.2 0.3 0.2 0.01 1 force
 execute as @s[tag=cl.ess.Air] at @s run playsound minecraft:entity.horse.breathe ambient @a ~ ~ ~ 0.3 0.5
+
+#Magic
+execute as @s[tag=cl.ess.Magic] at @s run particle minecraft:reverse_portal ~ ~ ~ 0.2 0.2 0.2 0.01 1 force
+execute as @s[tag=cl.ess.Magic,scores={cl.EssenceSound=99}] at @s run playsound minecraft:block.portal.ambient ambient @a ~ ~ ~ 0.5 0.5
 
 #Detect player
 execute at @s positioned ~ ~-1 ~ if entity @p[distance=..1] run function classes:main/essences/learn

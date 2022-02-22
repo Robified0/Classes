@@ -6,6 +6,22 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "classes:essences/all"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.03
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
           "name": "minecraft:entities/illusioner"
         }
       ]

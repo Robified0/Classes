@@ -3,6 +3,21 @@
   "pools": [
     {
       "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "classes:essences/basic"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.02
+        }
+      ]
+    },
+    {
+      "rolls": 1,
       "bonus_rolls": 0,
       "entries": [
         {

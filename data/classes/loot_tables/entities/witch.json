@@ -6,13 +6,14 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "classes:essences/fire"
+          "weight": 1,
+          "name": "classes:essences/all"
         }
       ],
       "conditions": [
         {
           "condition": "minecraft:random_chance",
-          "chance": 0.03
+          "chance": 0.05
         }
       ]
     },
