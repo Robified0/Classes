@@ -40,4 +40,4 @@ execute as @e[type=fireball,tag=cl.newFireball,scores={cl.newFireball=60..}] at 
 execute as @e[type=fireball,tag=cl.newFireball,scores={cl.newFireball=60..}] run kill @s
 
 #Essences
-execute as @e[type=marker,tag=cl.EssenceMarker] run function classes:main/essences/main
+execute as @e[type=area_effect_cloud,tag=cl.EssenceMarker] run function classes:main/essences/main
