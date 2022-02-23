@@ -4,9 +4,9 @@ execute if entity @s[scores={cl.Mana=..1}] run function classes:main/mana_system
 #Only change function line for each different spell
 scoreboard players add system cl.slo_id 1
 scoreboard players operation @s cl.slo_id = system cl.slo_id
-summon minecraft:marker ~ ~ ~ {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["new","slowcast", "iceshard"]}
-execute as @e[type=marker,tag=slowcast,tag=new,tag=iceshard,limit=1] run function classes:mage/spells/water/iceshard/zprivate/setup
-tag @s remove this
+summon minecraft:marker ~ ~ ~ {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["cl.new","cl.slowcast", "cl.iceshard"]}
+execute as @e[type=marker,tag=cl.slowcast,tag=cl.new,tag=cl.iceshard,limit=1] run function classes:mage/spells/water/iceshard/zprivate/setup
+tag @s remove cl.this
 
 #Cast Spell Sound Effect
 function classes:mage/spells/all/cast

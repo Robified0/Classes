@@ -10,7 +10,7 @@ execute if entity @s[scores={cl.Mana=8..}] run tag @s remove DiaFlesh
 execute if entity @s[scores={cl.Mana=8..}] run tag @s remove IronFlesh
 
 #Give Player Tag for particle effect
-execute if entity @s[scores={cl.Mana=8..}] run tag @s add MageArmor
+execute if entity @s[scores={cl.Mana=8..}] run tag @s add cl.s.MageArmor
 execute if entity @s[scores={cl.Mana=8..}] run scoreboard players set @s cl.e.MageArmor 24000
 
 #Change base attribute

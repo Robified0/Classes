@@ -1,12 +1,14 @@
-execute if entity @e[type=marker,tag=slowcast,tag=torch] as @e[type=marker,tag=slowcast,tag=torch] at @s run function classes:mage/spells/fire/torch/zprivate/launch
-execute if entity @e[type=marker,tag=slowcast,tag=waterstrike] as @e[type=marker,tag=slowcast,tag=waterstrike] at @s run function classes:mage/spells/water/waterstrike/zprivate/launch
-execute if entity @e[type=marker,tag=slowcast,tag=levitate] as @e[type=marker,tag=slowcast,tag=levitate] at @s run function classes:mage/spells/air/levitate/zprivate/launch
-execute if entity @e[type=marker,tag=slowcast,tag=iceshard] as @e[type=marker,tag=slowcast,tag=iceshard] at @s run function classes:mage/spells/water/iceshard/zprivate/launch
-execute if entity @e[type=marker,tag=slowcast,tag=poison] as @e[type=marker,tag=slowcast,tag=poison] at @s run function classes:mage/spells/earth/poison/zprivate/launch
-execute if entity @e[type=marker,tag=slowcast,tag=light] as @e[type=marker,tag=slowcast,tag=light] at @s run function classes:mage/spells/magic/light/zprivate/launch
-execute if entity @e[type=marker,tag=slowcast,tag=teleport] as @e[type=marker,tag=slowcast,tag=teleport] at @s run function classes:mage/spells/magic/teleport/zprivate/launch
-execute if entity @e[type=marker,tag=slowcast,tag=heal] as @e[type=marker,tag=slowcast,tag=heal] at @s run function classes:healer/spells/heal/zprivate/launch
-execute if entity @e[type=marker,tag=slowcast,tag=satiate] as @e[type=marker,tag=slowcast,tag=satiate] at @s run function classes:healer/spells/satiate/zprivate/launch
-execute if entity @e[type=marker,tag=slowcast,tag=vitality] as @e[type=marker,tag=slowcast,tag=vitality] at @s run function classes:healer/spells/vitality/zprivate/launch
-execute if entity @e[type=marker,tag=slowcast,tag=bless] as @e[type=marker,tag=slowcast,tag=bless] at @s run function classes:healer/spells/bless/zprivate/launch
-execute if entity @e[type=marker,tag=slowcast,tag=holystrike] as @e[type=marker,tag=slowcast,tag=holystrike] at @s run function classes:healer/spells/holystrike/zprivate/launch
+##Executing as slowcast marker (root/main)
+
+execute if entity @s[tag=cl.torch] run function classes:mage/spells/fire/torch/zprivate/launch
+execute if entity @s[tag=cl.waterstrike] run function classes:mage/spells/water/waterstrike/zprivate/launch
+execute if entity @s[tag=cl.levitate] run function classes:mage/spells/air/levitate/zprivate/launch
+execute if entity @s[tag=cl.iceshard] run function classes:mage/spells/water/iceshard/zprivate/launch
+execute if entity @s[tag=cl.poison] run function classes:mage/spells/earth/poison/zprivate/launch
+execute if entity @s[tag=cl.light] run function classes:mage/spells/magic/light/zprivate/launch
+execute if entity @s[tag=cl.teleport] run function classes:mage/spells/magic/teleport/zprivate/launch
+execute if entity @s[tag=cl.heal] run function classes:healer/spells/heal/zprivate/launch
+execute if entity @s[tag=cl.satiate] run function classes:healer/spells/satiate/zprivate/launch
+execute if entity @s[tag=cl.vitality] run function classes:healer/spells/vitality/zprivate/launch
+execute if entity @s[tag=cl.bless] run function classes:healer/spells/bless/zprivate/launch
+execute if entity @s[tag=cl.holystrike] run function classes:healer/spells/holystrike/zprivate/launch

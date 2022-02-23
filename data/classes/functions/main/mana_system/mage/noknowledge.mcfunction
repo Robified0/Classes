@@ -1,5 +1,10 @@
 #Tells players they don't have the knowledge
-tellraw @s {"text":"You do not have the knowledge to use this spell!","italic":true,"color":"red"}
+title @s times 20 100 20
+title @s subtitle {"text":"You do not have the knowledge to cast this spell!","color":"red"}
+title @s title {"text":""}
+
+#Cooldown
+scoreboard players set @s cl.Cooldown 20
 
 #Spell backfire
 effect give @s minecraft:instant_damage 1 0 true
