@@ -1,0 +1,18 @@
+##### Classes Datapack #####
+
+First off, thank YOU for downloading this datapack and supporting this massive endeavour. While it's still in it's infancy, there is so
+much more to come, and I'm happy you're here for it!
+
+Next, thank you to CloudWolf (https://www.youtube.com/c/CloudWolfMinecraft) for all of his amazing content. Content that I not only turned to as
+I was coding this, but also even used in all of the raycast spells in the pack. I was super impressed with the system he created, and it saved me
+SO much time from having to code it myself. And also to TimberForge (https://www.youtube.com/c/TimberForge) for his content which also helped me
+so much! (Custom Block Models!)
+
+Third, is a huge thank you to the r/MinecraftCommands community for all the help they offer to others, which I ended up finding when doing searches
+on how to solve an issue.
+
+Lastly, is a thank you to Mojang for making all of this possible. This size of this project just simply wouldn't be possible with the old command
+block system, or all of the systems they have added since. Their incredible hard work does not go unnoticed on that. And for creating this game.
+Without it, this wouldn't exist at all.
+
+To all of you, again: thank you, thank you, THANK YOU!
