@@ -8,7 +8,7 @@
 ###################################################################
 
 #Handle Raycasts
-execute as @e[type=marker,tag=cl.slowcast] at @s run function classes:operations/raycast/main
+execute as @e[type=marker,tag=cl.r.slowcast] at @s run function classes:operations/raycast/main
 
 #Handle Motion
 execute if entity @e[type=#classes:motionaffected] as @e[type=#classes:motionaffected,tag=motion_projectile,tag=!motion_added] run function classes:operations/motion/motion

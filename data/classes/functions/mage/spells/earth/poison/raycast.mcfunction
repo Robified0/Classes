@@ -2,10 +2,10 @@
 particle dust 0.173 1.000 0.078 1 ^0.4 ^0.2 ^0.3 0.1 0.1 0.1 1 2 force
 
 #Play sound effect - use here when needing repeat
-execute at @s run playsound minecraft:entity.witch.drink player @a ~ ~ ~ 0.15 0.01
+playsound minecraft:entity.witch.drink player @a ~ ~ ~ 0.15 0.01
 
 #Detect entity, then do effects
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!cl.this,type=!#classes:nontarget,tag=!cl.summoned,tag=!cl.Owned] at @s run function classes:mage/spells/earth/poison/effects/mob
+execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!cl.r.this,type=!#classes:nontarget,tag=!cl.t.summoned,tag=!cl.t.Owned] at @s run function classes:mage/spells/earth/poison/effects/mob
 
 #Only change paths for spell
 scoreboard players remove #temp cl.slowcast 1

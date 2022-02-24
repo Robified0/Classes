@@ -1,9 +1,8 @@
 #Remove other Flesh spells
 function classes:mage/system/armorspells
 
-#Give Player Tag for particle effect
-tag @s add cl.s.GoldFlesh
-scoreboard players set @s cl.e.GoldFlesh 12000
+#Give Player score for particle effect
+scoreboard players set @s cl.e.GoldFlesh 24000
 
 #Change base attribute
 attribute @s minecraft:generic.armor base set 16
@@ -19,7 +18,7 @@ playsound minecraft:block.respawn_anchor.set_spawn player @a ~ ~ ~ 0.5 1.2
 function classes:main/mana_system/mage/cast
 
 #Spell Cast Notification
-tellraw @a[tag=cl.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Gold Flesh!","bold":true,"color":"dark_green"}]
+tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Gold Flesh!","bold":true,"color":"dark_green"}]
 
 #Cooldown
 scoreboard players set @s cl.Cooldown 20

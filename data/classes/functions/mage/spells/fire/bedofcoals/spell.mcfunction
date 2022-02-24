@@ -9,7 +9,7 @@ particle minecraft:witch ~ ~ ~ 0.5 1 0.5 1.2 40 force
 particle minecraft:small_flame ~ ~ ~ 0.3 1 0.3 0.08 50 force
 
 #Spell Cast Notification
-tellraw @a[tag=cl.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Bed of Coals!","bold":true,"color":"#FF3034"}]
+tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Bed of Coals!","bold":true,"color":"#FF3034"}]
 
 #Cooldown
 scoreboard players set @s cl.Cooldown 20

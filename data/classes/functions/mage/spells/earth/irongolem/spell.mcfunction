@@ -1,9 +1,9 @@
 ## Executing as player casting the spell
 
 #Summon Iron Golem and set equal scores for player and golem
-execute as @e[tag=summoned,sort=nearest] if score @s cl.summonCount = @p cl.summonCount run scoreboard players set @e[tag=cl.summoned,sort=nearest,limit=1] cl.summonCount 1
-summon iron_golem ~ ~ ~ {DeathLootTable:"none",PlayerCreated:1b,Tags:["cl.summoned"]}
-scoreboard players set @e[type=iron_golem,tag=cl.summoned,limit=1,sort=nearest] cl.summonCount 600
+execute as @e[type=#classes:summonable,tag=cl.t.summoned,sort=nearest] if score @s cl.summonCount = @p cl.summonCount run scoreboard players set @e[type=#classes:summonable,tag=cl.t.summoned,sort=nearest,limit=1] cl.summonCount 1
+summon iron_golem ~ ~ ~ {DeathLootTable:"none",PlayerCreated:1b,Tags:["cl.t.summoned"]}
+scoreboard players set @e[type=iron_golem,tag=cl.t.summoned,limit=1,sort=nearest] cl.summonCount 600
 scoreboard players set @s cl.summonCount 600
 
 #Cast Spell Sound Effect
@@ -14,11 +14,11 @@ playsound minecraft:entity.iron_golem.death player @a ~ ~ ~ 0.8 2
 #Particles
 particle minecraft:enchant ~ ~ ~ 1 1 1 1 40 normal
 particle minecraft:witch ~ ~ ~ 0.5 1 0.5 1.2 40 force
-execute at @e[type=iron_golem,tag=cl.summoned,scores={cl.summonCount=600}] run particle minecraft:witch ~ ~ ~ 0.1 1 0.1 0.1 100 force
-execute at @e[type=iron_golem,tag=cl.summoned,scores={cl.summonCount=600}] run particle minecraft:enchant ~ ~ ~ 0.6 0.4 0.6 5 100 force
+execute at @e[type=iron_golem,tag=cl.t.summoned,scores={cl.summonCount=600}] run particle minecraft:witch ~ ~ ~ 0.1 1 0.1 0.1 100 force
+execute at @e[type=iron_golem,tag=cl.t.summoned,scores={cl.summonCount=600}] run particle minecraft:enchant ~ ~ ~ 0.6 0.4 0.6 5 100 force
 
 #Spell Cast Notification
-tellraw @a[tag=cl.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Summon Iron Golem!","bold":true,"color":"dark_green"}]
+tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Summon Iron Golem!","bold":true,"color":"dark_green"}]
 
 #Cooldown
 scoreboard players set @s cl.Cooldown 20

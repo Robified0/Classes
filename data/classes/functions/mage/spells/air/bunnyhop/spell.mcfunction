@@ -1,8 +1,5 @@
 ##Cast Spell
 
-#Give Player Tag for particle effect
-tag @s add BunnyHop
-
 #Set scoreboard timer - must match effect time below multiplied by 20.
 scoreboard players set @s cl.e.BunnyHop 900
 
@@ -18,7 +15,7 @@ function classes:main/mana_system/mage/cast
 playsound minecraft:entity.horse.breathe player @a ~ ~ ~ 1 1
 
 #Spell Cast Notification
-tellraw @a[tag=cl.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Bunny Hop!","bold":true,"color":"#FFFF80"}]
+tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Bunny Hop!","bold":true,"color":"#FFFF80"}]
 
 #Cooldown
 scoreboard players set @s cl.Cooldown 20

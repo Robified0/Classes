@@ -1,15 +1,13 @@
-#Not Enough Mana
-execute unless entity @s[scores={cl.Mana=2..}] run function classes:main/mana_system/nomana
+##Executing as player who just right-clicked (mage/system/castspell/waterspell)
 
-### calculations based on a 0.5 raycast stepsize.
-### if you change raycast stepsize, change *0.5 accordingly
-# how many half blocks per step (4*0.5) = 2 blocks per tick
-execute if entity @s[scores={cl.Mana=2..}] run scoreboard players set dst_per cl.slowcast 4
-# how many half blocks to travel (24*0.5) = 12 blocks
-execute if entity @s[scores={cl.Mana=2..}] run scoreboard players set dst cl.slowcast 48
+#Check for Mana - display error if not enough
+execute unless entity @s[scores={cl.Mana=2..},advancements={classes:mage/learnspell/water/waterstrike=true}] run function classes:main/mana_system/nomana
 
-#Cast if there is enough Mana.
-execute if entity @s[scores={cl.Mana=2..}] at @s positioned ~ ~1.45 ~ run function classes:mage/spells/water/waterstrike/start
+#Check for Mana - cast spell
+execute if entity @s[scores={cl.Mana=2..},advancements={classes:mage/learnspell/water/waterstrike=true}] at @s run function classes:mage/spells/water/waterstrike/zprivate/setparams
+
+#Punish for casting without knowing the spell
+execute if entity @s[scores={cl.Mana=2..},advancements={classes:mage/learnspell/water/waterstrike=false}] at @s run function classes:main/mana_system/mage/noknowledge
 
 #Modify item (for spell versioning)
 #Water Strike (only fire extinguish on)

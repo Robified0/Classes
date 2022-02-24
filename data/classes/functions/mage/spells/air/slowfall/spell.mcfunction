@@ -1,6 +1,3 @@
-#Give Player Tag for particle effect
-tag @s add SlowFall
-
 #Set scoreboard timer - must match effect time below multiplied by 20.
 scoreboard players set @s cl.e.SlowFall 900
 
@@ -17,7 +14,7 @@ playsound minecraft:entity.horse.breathe player @a ~ ~ ~ 0.5 1
 function classes:main/mana_system/mage/cast
 
 #Spell Cast Notification
-tellraw @a[tag=cl.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Slow Fall!","bold":true,"color":"#FFFF80"}]
+tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Slow Fall!","bold":true,"color":"#FFFF80"}]
 
 #Cooldown
 scoreboard players set @s cl.Cooldown 20

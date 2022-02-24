@@ -1,1 +1,1 @@
-execute as @e[type=marker,tag=cl.slowcast,tag=cl.poison] at @s run function classes:mage/spells/earth/poison/zprivate/launch
+execute as @e[type=marker,tag=cl.r.slowcast,tag=cl.r.poison] at @s run function classes:mage/spells/earth/poison/zprivate/launch

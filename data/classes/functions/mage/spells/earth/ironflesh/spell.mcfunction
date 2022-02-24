@@ -1,8 +1,7 @@
 #Remove other Flesh spells
 function classes:mage/system/armorspells
 
-#Give Player Tag for particle effect
-tag @s add cl.s.IronFlesh
+#Give Player score for particle effect
 scoreboard players set @s cl.e.IronFlesh 24000
 
 #Change base attribute
@@ -19,7 +18,7 @@ playsound minecraft:block.respawn_anchor.set_spawn player @a ~ ~ ~ 0.5 1.2
 function classes:main/mana_system/mage/cast
 
 #Spell Cast Notification
-tellraw @a[tag=cl.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Iron Flesh!","bold":true,"color":"dark_green"}]
+tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Iron Flesh!","bold":true,"color":"dark_green"}]
 
 #Cooldown
 scoreboard players set @s cl.Cooldown 20

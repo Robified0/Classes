@@ -9,3 +9,6 @@ execute as @s[type=#classes:undead] run effect give @s minecraft:instant_health 
 execute as @s[type=witch] run effect give @s minecraft:instant_damage 1 3 true
 execute as @s at @s run particle minecraft:small_flame ~ ~ ~ 0.5 0.5 0.5 0.01 30 normal
 execute as @s[predicate=classes:entities/angry] at @s run function classes:entities/vanilla/angry
+
+#Edit tag/spellname and uncomment if you want it to end when it hits one target
+#execute as @e[type=marker,tag=cl.r.torch,sort=nearest,limit=1] run function classes:mage/spells/fire/torch/zprivate/end

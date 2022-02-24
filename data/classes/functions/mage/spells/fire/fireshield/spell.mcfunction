@@ -1,6 +1,3 @@
-#Give Effect
-tag @s add FireShield
-
 #Set scoreboard timer - must match effect time below multiplied by 20.
 scoreboard players set @s cl.e.FireShield 900
 

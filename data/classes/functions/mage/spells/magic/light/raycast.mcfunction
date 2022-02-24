@@ -4,9 +4,6 @@ particle end_rod ^0.4 ^0.2 ^0.3 0.01 0.01 0.01 0.01 1 force
 #Sound
 execute at @s run playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 0.05 2
 
-#Edit tag/spellname and uncomment if you want it to end when it hits one target
-execute as @e[dx=0,tag=!cl.this,type=!#classes:nontarget] positioned ~-0.79 ~-0.79 ~-0.79 if entity @s[dx=0] positioned ~0.79 ~0.79 ~0.79 run kill @e[type=marker,tag=cl.light,sort=nearest,limit=1]
-
 #Only change filepaths for spell
 scoreboard players remove #temp cl.slowcast 1
 execute if score #temp cl.slowcast matches ..-1 run tp @s ~ ~ ~

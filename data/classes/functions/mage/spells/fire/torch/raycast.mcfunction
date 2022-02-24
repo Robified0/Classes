@@ -6,13 +6,10 @@ particle small_flame ^0.4 ^0.2 ^0.3 0 0 0 0.005 2 force
 #execute at @s run playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 0.08
 
 #Detect mob & bosses
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!cl.this,type=!#classes:nontarget,type=!#classes:fireproof,tag=!cl.summoned,tag=!cl.Owned] at @s run function classes:mage/spells/fire/torch/effects/mob
+execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!cl.r.this,type=!#classes:nontarget,type=!#classes:fireproof,tag=!cl.t.summoned,tag=!cl.t.Owned] at @s run function classes:mage/spells/fire/torch/effects/mob
 
 #Detect boss - Wither is immune to fire.
-execute positioned ~ ~-0.5 ~ as @e[dx=0,tag=!cl.this,type=ender_dragon] at @s run function classes:mage/spells/fire/torch/effects/boss
-
-#Edit tag/spellname and uncomment if you want it to end when it hits one target
-#execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!cl.this,type=!#classes:nontarget,tag=!cl.summoned,tag=!cl.Owned] run kill @e[type=marker,tag=cl.torch,sort=nearest,limit=1]
+execute positioned ~ ~-0.5 ~ as @e[dx=0,tag=!cl.r.this,type=ender_dragon] at @s run function classes:mage/spells/fire/torch/effects/boss
 
 #Only change filepaths for spell
 scoreboard players remove #temp cl.slowcast 1
