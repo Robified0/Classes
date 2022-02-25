@@ -86,6 +86,10 @@ scoreboard objectives add cl.slo_dst_per dummy
 scoreboard objectives add cl.e.Shield dummy
 scoreboard objectives add cl.e.Shield.m dummy
 
+##Tracking Scoreboards
+#Tick Tracking
+scoreboard objectives add cl.t.Tick dummy
+
 #Set up Oxygen Boss bar
 bossbar add air0 "Oxygen"
 bossbar add air1 "Oxygen"

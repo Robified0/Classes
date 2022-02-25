@@ -8,14 +8,13 @@
 ###################################################################
 
 #Handle Raycasts
-execute as @e[type=marker,tag=cl.r.slowcast] at @s run function classes:operations/raycast/main
+execute if entity @e[type=marker,tag=cl.r.slowcast] as @e[type=marker,tag=cl.r.slowcast] at @s run function classes:operations/raycast/main
 
 #Handle Motion
-execute if entity @e[type=#classes:motionaffected] as @e[type=#classes:motionaffected,tag=motion_projectile,tag=!motion_added] run function classes:operations/motion/motion
+execute if entity @e[type=#classes:motionaffected,tag=motion_projectile,tag=!motion_added] as @e[type=#classes:motionaffected,tag=motion_projectile,tag=!motion_added] run function classes:operations/motion/motion
 
 #Handle scoreboard to time when last hit by player, and handle loot_table
-scoreboard players remove @e[scores={cl.HitBySpell=1..}] cl.HitBySpell 1
-scoreboard players reset @e[scores={cl.HitBySpell=..0}] cl.HitBySpell
+execute if entity @e[type=!#nontarget,scores={cl.HitBySpell=0..}] as @e[type=!#nontarget,scores={cl.HitBySpell=0..}] run function classes:operations/hitbyspell
 
 #Function for all new players, to ensure scoreboards are set up
 execute if entity @a[tag=!cl.o.Joined] as @a[tag=!cl.o.Joined] run function classes:main/new_player/main
@@ -24,8 +23,8 @@ execute if entity @a[scores={cl.Class=1..},tag=!cl.o.ClassSelected] as @a[scores
 #Display Mana bar to players who have Mana score set (spellcasters only)
 execute as @a[gamemode=!creative,gamemode=!spectator,scores={cl.Mana=-5..}] run function classes:main/mana_system/mana
 
-#XP Handling for spells
-execute as @e[type=item,nbt={Item:{tag:{cl.Custom:1b}}}] run function classes:main/loot_table/acacia_button/main
+#XP Handling for spells/Essence Summon Handling
+execute if entity @e[type=item,predicate=classes:items/acacia_button] as @e[type=item,predicate=classes:items/acacia_button] run function classes:main/loot_table/acacia_button/main
 
 #Mana Regen
 execute as @a[scores={cl.Class=3..4}] run function classes:main/mana_system/main

@@ -30,7 +30,7 @@ execute if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ 
 execute if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:lava run playsound minecraft:block.lava.extinguish ambient @a ~ ~ ~ 1 0.2
 
 #Reset
-execute as @e[tag=!cl.r.slowcast,scores={cl.slo_id=1..}] if score @s cl.slo_id = @e[type=marker,tag=cl.r.slowcast,tag=cl.r.waterstrike,limit=1,sort=nearest] cl.slo_id run function classes:mage/spells/water/waterstrike/end
+execute as @a[tag=!cl.r.slowcast,scores={cl.slo_id=1..}] if score @s cl.slo_id = @e[type=marker,tag=cl.r.slowcast,tag=cl.r.waterstrike,limit=1,sort=nearest] cl.slo_id run function classes:mage/spells/water/waterstrike/end
 scoreboard players reset @s cl.slo_dst
 scoreboard players reset @s cl.slo_dst_per
 kill @s

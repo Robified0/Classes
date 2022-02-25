@@ -11,4 +11,4 @@ particle minecraft:witch ~ ~-1 ~ 1 1 1 1 10 force
 advancement grant @p only classes:mage/craft/magictable
 
 #For killing the item if it was run from the item drop
-kill @s[type=item]
+kill @s

@@ -12,7 +12,7 @@ execute as @e[type=marker,tag=cl.magicTable] at @s run particle enchant ~ ~0.5 ~
 execute as @e[type=marker,tag=cl.magicTable] at @s run particle reverse_portal ~ ~0.5 ~ 0 0 0 0.01 1 force
 
 #Handle Table being broken
-execute as @e[type=marker,tag=cl.magicTable] at @s positioned ~ ~ ~ unless block ~ ~ ~ dropper[facing=up]{CustomName:'{"text":"Magic Table"}'} run summon item ~ ~ ~ {Item:{id:"minecraft:glow_item_frame",Count:1b,tag:{display:{Name:'{"text":"Magic Table"}'},CustomModelData:59999,EntityTag:{Tags:["cl.magicTable"]}}}}
+execute as @e[type=marker,tag=cl.magicTable] at @s positioned ~ ~ ~ unless block ~ ~ ~ dropper[facing=up]{CustomName:'{"text":"Magic Table"}'} run summon item ~ ~ ~ {Facing:1b,Item:{id:"minecraft:glow_item_frame",Count:1b,tag:{display:{Name:'{"text":"Magic Table"}'},CustomModelData:59999,EntityTag:{Tags:["cl.magicTable"]}}}}
 execute as @e[type=marker,tag=cl.magicTable] at @s positioned ~ ~ ~ unless block ~ ~ ~ dropper[facing=up]{CustomName:'{"text":"Magic Table"}'} as @e[type=item,nbt={Item:{id:"minecraft:dropper",Count:1b}}] run kill @s
 execute as @e[type=marker,tag=cl.magicTable] at @s positioned ~ ~ ~ unless block ~ ~ ~ dropper[facing=up]{CustomName:'{"text":"Magic Table"}'} run kill @e[type=glow_item_frame,limit=1,sort=nearest,tag=cl.magicTable,distance=..1]
 execute as @e[type=marker,tag=cl.magicTable] at @s positioned ~ ~ ~ unless block ~ ~ ~ dropper[facing=up]{CustomName:'{"text":"Magic Table"}'} run kill @s

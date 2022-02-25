@@ -11,7 +11,7 @@ playsound minecraft:block.amethyst_cluster.hit block @a ~ ~ ~ 1 0.5
 particle minecraft:witch ~ ~-1 ~ 1 1 1 1 10 force
 
 #Summon marker in middle of block, slightly elevated
-execute align xz run summon minecraft:marker ~0.5 ~0.75 ~0.5 {Tags:["cl.magicTable"]}
+execute align xyz run summon minecraft:marker ~0.5 ~0.75 ~0.5 {Tags:["cl.magicTable"]}
 
 #Set the dropper
 setblock ~ ~ ~ minecraft:dropper[facing=up]{CustomName:'{"text":"Magic Table"}'}
