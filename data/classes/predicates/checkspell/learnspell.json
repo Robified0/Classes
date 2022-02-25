@@ -7,7 +7,7 @@
         "items": [
           "minecraft:warped_fungus_on_a_stick"
         ],
-        "nbt": "{LearnSpell:1b}"
+        "nbt": "{cl.s.LearnSpell:1b}"
       }
     }
   }

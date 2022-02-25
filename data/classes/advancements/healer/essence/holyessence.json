@@ -1,0 +1,34 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Obtain Air Essence",
+            "color": "yellow"
+        },
+        "description": {
+            "text": "Obtain Air Essence by killing a mob."
+        },
+        "icon": {
+            "item": "minecraft:structure_block",
+            "nbt": "{CustomModelData:105}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "airessence": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:structure_block",
+                        "nbt": "{CustomModelData:105}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "classes:healer/root"
+}

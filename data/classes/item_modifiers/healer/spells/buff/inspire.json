@@ -1,0 +1,6 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{display:{Name:'[{\"text\":\"Inspire\",\"color\":\"green\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"3 Mana\",\"color\":\"aqua\",\"bold\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"All players within 10 blocks gain Strength I for 45 seconds.\",\"color\":\"green\"}']},CustomModelData:60803,cl.s.Spell:1b,cl.s.Buff:1b,cl.s.Inspire:1b}"
+  }
+]

@@ -7,7 +7,7 @@
         "items": [
           "minecraft:warped_fungus_on_a_stick"
         ],
-        "nbt": "{Shield:1b}"
+        "nbt": "{cl.s.Shield:1b}"
       }
     }
   }

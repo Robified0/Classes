@@ -1,6 +1,0 @@
-[
-  {
-    "function": "minecraft:set_nbt",
-    "tag": "{display:{Name:'[{\"text\":\"Bless\",\"color\":\"green\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"2 Mana\",\"color\":\"aqua\",\"bold\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Gives 4 absorption hearts to the target.\",\"color\":\"green\"}','{\"text\":\" \"}','[{\"text\":\"\"},{\"text\":\"Self Cast:\"}]','{\"text\":\"Cast at the ground to cast it on yourself.\",\"color\":\"green\"}']},CustomModelData:60805,Spell:1b}"
-  }
-]

@@ -1,6 +1,0 @@
-[
-  {
-    "function": "minecraft:set_nbt",
-    "tag": "{display:{Name:'[{\"text\":\"Stop Undead\",\"color\":\"green\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"4 Mana\",\"color\":\"aqua\",\"bold\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Normal undead within 10 blocks stop moving. They can still attack.\",\"color\":\"green\"}']},CustomModelData:60901,Spell:1b}"
-  }
-]

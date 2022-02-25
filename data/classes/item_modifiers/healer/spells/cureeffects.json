@@ -1,6 +1,0 @@
-[
-  {
-    "function": "minecraft:set_nbt",
-    "tag": "{display:{Name:'[{\"text\":\"Cure Effects\",\"color\":\"green\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"4 Mana\",\"color\":\"aqua\",\"bold\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Buffs all players within 5 blocks. Cures all effects for 30 seconds.\",\"color\":\"green\"}']},CustomModelData:60703,Spell:1b}"
-  }
-]

@@ -1,6 +1,6 @@
 [
   {
     "function": "minecraft:set_nbt",
-    "tag": "{display:{Name:'[{\"text\":\"Tail Wind\",\"color\":\"yellow\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"\uE003 x 2\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','[{\"text\":\"Element: \",\"color\":\"dark_aqua\"},{\"text\":\"Air\",\"color\":\"yellow\"}]','{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Grants the caster Speed 2 for 20 seconds, allowing you to run away!\",\"color\":\"yellow\"}']},CustomModelData:60402,Spell:1b,Air:1b,TailWind:1b}"
+    "tag": "{display:{Name:'[{\"text\":\"Tail Wind\",\"color\":\"yellow\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"\uE003 x 2\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','[{\"text\":\"Element: \",\"color\":\"dark_aqua\"},{\"text\":\"Air\",\"color\":\"yellow\"}]','{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Grants the caster Speed 2 for 20 seconds, allowing you to run away!\",\"color\":\"yellow\"}']},CustomModelData:60402,cl.s.Spell:1b,cl.s.Air:1b,cl.s.TailWind:1b}"
   }
 ]

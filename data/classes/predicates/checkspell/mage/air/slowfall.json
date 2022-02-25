@@ -7,7 +7,7 @@
         "items": [
           "minecraft:warped_fungus_on_a_stick"
         ],
-        "nbt": "{Slowfall:1b}"
+        "nbt": "{cl.s.Slowfall:1b}"
       }
     }
   }

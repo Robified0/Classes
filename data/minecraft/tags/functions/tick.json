@@ -1,11 +1,11 @@
 {
 	"values": [
 		"classes:main",
+		"classes:crafting/magictable/main",
 		"classes:operations/delay/main",
 		"classes:mage/system/main",
-		"classes:healer/spells/main",
+		"classes:healer/system/main",
 		"classes:ranger/main",
-		"classes:healer/spells/effects",
 		"classes:items/manapotion/main",
 		"classes:entities/custom/loopsummon",
 		"classes:end"
