@@ -5,6 +5,7 @@ scoreboard players set @s cl.Mana 20
 advancement grant @s[scores={cl.Class=3}] only classes:mage/root
 advancement grant @s[scores={cl.Class=3}] only classes:mage/learnspell/magic/magearmor
 advancement grant @s[scores={cl.Class=3}] only classes:mage/learnspell/fire/torch
+execute if entity @s[scores={cl.Class=3}] run function classes:mage/stats/main
 
 ###Give base Mage spells
 

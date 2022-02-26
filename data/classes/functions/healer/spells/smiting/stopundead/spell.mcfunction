@@ -1,32 +1,8 @@
-#Not Enough Mana
-execute if entity @s[scores={cl.Mana=..3}] run function classes:main/mana_system/nomana
+#Execute player sounds/particles if entity found.
+execute if entity @e[type=#classes:undead,distance=..10,sort=random,tag=!cl.t.summoned,tag=!cl.t.Owned,limit=1,nbt=!{NoAI:1b}] run function classes:healer/spells/smiting/stopundead/effects/player
 
-#Damage nearby
-execute as @s[scores={cl.Mana=4..}] run tag @s add GetAngry
-execute as @s[scores={cl.Mana=4..}] at @s run tag @e[type=#classes:undead,distance=..10,tag=!summoned] add StopUndead
-execute as @s[scores={cl.Mana=4..}] at @s as @e[tag=StopUndead,distance=..10] run scoreboard players set @s cl.HitBySpell 100
-execute as @s[scores={cl.Mana=4..}] at @s as @e[tag=StopUndead,distance=..10] run function classes:main/loot_table/main
-execute as @s[scores={cl.Mana=4..}] at @s as @e[tag=StopUndead,distance=..10] run scoreboard players set @s cl.e.StopUndead 200
-execute as @s[scores={cl.Mana=4..}] at @e[tag=StopUndead,distance=..10] run particle minecraft:end_rod ~ ~ ~ 0.1 0.1 0.1 0.1 20 normal
+#Sound effect if entity is not found.
+execute unless entity @e[type=#classes:undead,distance=..10,sort=random,tag=!cl.t.summoned,limit=1,nbt=!{NoAI:1b}] run function classes:healer/spells/smiting/stopundead/effects/nomob
 
-#Get mobs angry if not already
-execute if entity @s[scores={cl.Mana=4..}] at @s as @e[type=#classes:undead,predicate=classes:entities/angry,tag=StopUndead] at @s run function classes:entities/vanilla/angry
-
-#Sound effect
-execute as @s[scores={cl.Mana=4..}] at @e[tag=StopUndead,distance=..10] run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 5 1.5
-execute as @s[scores={cl.Mana=4..}] at @e[tag=StopUndead,distance=..10] run playsound minecraft:entity.zombie_villager.converted player @a ~ ~ ~ 0.5 2
-#Cast Spell Sound Effect
-execute if entity @s[scores={cl.Mana=4..}] if entity @e[tag=StopUndead,distance=..10] at @s run function classes:healer/spells/all/cast
-
-#Spell Cast Notification
-execute as @s[scores={cl.Mana=4..}] if entity @e[tag=StopUndead,distance=..10] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Deep Freeze!","bold":true,"color":"#0096FF"}]
-execute as @s[scores={cl.Mana=4..}] unless entity @e[tag=StopUndead,distance=..10] run function classes:main/mana_system/noneinrange
-
-#Cooldown
-execute as @s[scores={cl.Mana=4..}] if entity @e[tag=StopUndead,distance=..10] run scoreboard players set @s cl.Cooldown 20
-
-#Mana Removal
-execute as @s[scores={cl.Mana=4..}] if entity @e[tag=StopUndead,distance=..10] run scoreboard players remove @s cl.Mana 4
-
-#Modify item (for spell versioning)
-item modify entity @s weapon.mainhand classes:healer/spells/stopundead
+#Run mob function to apply effects.
+execute as @e[type=#classes:undead,distance=..10,tag=!cl.t.summoned,nbt=!{NoAI:1b}] at @s run function classes:healer/spells/smiting/stopundead/effects/undead

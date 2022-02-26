@@ -14,9 +14,6 @@
 # needed.                          #
 ####################################
 
-#Stat handling
-execute as @a[scores={cl.Class=4}] run function classes:healer/stats/main
-
 #Right-click detection
 #Display message if armor is equipped (and wand is equipped)
 execute if entity @a[scores={cl.Class=4,cl.rightClick=1..}] as @a[predicate=classes:checkwand/wand,scores={cl.Class=4,cl.rightClick=1..,cl.Healer.Armor=1..}] at @s run function classes:main/mana_system/armor
@@ -26,4 +23,4 @@ execute if entity @a[scores={cl.Class=4,cl.rightClick=1..}] as @a[predicate=clas
 execute if entity @a[scores={cl.Class=4,cl.rightClick=1..}] as @a[predicate=!classes:checkwand/wand,scores={cl.Class=4,cl.rightClick=1..}] run function classes:main/mana_system/equipwand
 
 #Effect detection
-execute as @a run function classes:healer/system/effects/effects
+execute as @a at @s run function classes:healer/system/effects/effects

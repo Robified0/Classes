@@ -14,8 +14,7 @@
 # needed.                          #
 ####################################
 
-#Stat handling
-execute as @a[scores={cl.Class=3}] run function classes:mage/stats/main
+
 
 
 #Learn Spell detection
@@ -25,7 +24,7 @@ execute if entity @a[scores={cl.Class=3,cl.rightClick=1..}] as @a[predicate=clas
 #Display message if armor is equipped (and wand is equipped)
 execute if entity @a[scores={cl.Class=3,cl.rightClick=1..}] as @a[predicate=classes:checkwand/wand,scores={cl.Class=3,cl.rightClick=1..,cl.Mage.Armor=1..}] at @s run function classes:main/mana_system/armor
 #Detect Wand
-execute if entity @a[scores={cl.Class=3,cl.rightClick=1..}] as @a[predicate=classes:checkwand/wand,scores={cl.Cooldown=0,cl.Class=3,cl.rightClick=1..}] run function classes:mage/system/rightclick
+execute if entity @a[scores={cl.Class=3,cl.rightClick=1..}] as @a[predicate=classes:checkwand/wand,scores={cl.Cooldown=0,cl.Class=3,cl.rightClick=1..}] at @s run function classes:mage/system/rightclick
 #Detect No Wand
 execute if entity @a[scores={cl.Class=3,cl.rightClick=1..}] as @a[predicate=!classes:checkwand/wand,scores={cl.Class=3,cl.rightClick=1..}] run function classes:main/mana_system/equipwand
 

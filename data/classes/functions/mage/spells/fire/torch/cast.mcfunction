@@ -4,10 +4,10 @@
 execute unless entity @s[scores={cl.Mana=2..},advancements={classes:mage/learnspell/fire/torch=true}] run function classes:main/mana_system/nomana
 
 #Check for Mana - cast spell
-execute if entity @s[scores={cl.Mana=2..},advancements={classes:mage/learnspell/fire/torch=true}] at @s run function classes:mage/spells/fire/torch/zprivate/setparams
+execute if entity @s[scores={cl.Mana=2..},advancements={classes:mage/learnspell/fire/torch=true}] run function classes:mage/spells/fire/torch/zprivate/setparams
 
 #Punish for casting without knowing the spell
-execute if entity @s[scores={cl.Mana=2..},advancements={classes:mage/learnspell/fire/torch=false}] at @s run function classes:main/mana_system/mage/noknowledge
+execute if entity @s[scores={cl.Mana=2..},advancements={classes:mage/learnspell/fire/torch=false}] run function classes:main/mana_system/mage/noknowledge
 
 #Modify item (for spell versioning)
 execute if score #cl.pref cl.p.setFire matches 0 run item modify entity @s weapon.mainhand classes:mage/spells/fire/torch/noblock

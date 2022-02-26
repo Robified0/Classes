@@ -5,11 +5,9 @@
   "minecraft:zombie_villager",
 	"minecraft:drowned",
 	"minecraft:skeleton_horse",
-	"minecraft:wither",
 	"minecraft:husk",
 	"minecraft:zombified_piglin",
   "minecraft:zoglin",
-  "minecraft:phantom",
-  "minecraft:wither"
+  "minecraft:phantom"
   ]
 }

@@ -13,6 +13,3 @@ execute if entity @s[predicate=classes:entities/angry] run function classes:enti
 playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 0.8 2
 playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 5 1.5
 playsound minecraft:entity.blaze.shoot player @s ~ ~ ~ 0.5 2
-
-#Spell Cast Notification
-execute if entity @s[scores={cl.Mana=6..}] if entity @e[tag=DeepFreeze,distance=..5] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Deep Freeze!","bold":true,"color":"#0096FF"}]

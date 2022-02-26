@@ -1,9 +1,12 @@
-execute unless data entity @s Attributes[{Base: -8.0d,Name:"minecraft:generic.attack_damage"}] run attribute @s minecraft:generic.attack_damage base set -4
-execute if entity @s[nbt=!{Health:20.0f}] run attribute @s minecraft:generic.max_health base set 20
+### Executing as Mage player (operations/delay/20)
 
+#Grab the current base stats. Compare to set values, and if not equal, then set.
+execute store result score @s cl.o.genAtkSpd run attribute @s minecraft:generic.attack_speed base get 100
+execute store result score @s cl.o.genAtkDmg run attribute @s minecraft:generic.attack_damage base get 100
+execute unless entity @s[scores={cl.o.getAtkSpd=370}] run attribute @s minecraft:generic.attack_speed base set 3.7
+execute unless entity @s[scores={cl.o.getAtkDmg=100}] run attribute @s minecraft:generic.attack_damage base set 1
 
-
-#Set Mage Armor score to 0 first
+#Set Healer Armor score to 0 first
 scoreboard players set @s cl.Healer.Armor 0
 
 #Check for Armor

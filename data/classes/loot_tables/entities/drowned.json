@@ -8,11 +8,6 @@
           "type": "minecraft:loot_table",
           "weight": 2,
           "name": "classes:essences/basic"
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 1,
-          "name": "classes:essences/water"
         }
       ],
       "conditions": [

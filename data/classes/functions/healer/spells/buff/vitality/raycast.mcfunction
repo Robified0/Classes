@@ -7,12 +7,7 @@ particle dust 1.000 0.000 0.000 0.5 ^-0.3 ^ ^0.3 0.3 0.3 0.3 0.25 20 force
 execute at @s run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 2 1.5
 
 #Do these things when spell hits
-execute as @e[dx=0,tag=!this,type=player] positioned ~-0.89 ~-0.89 ~-0.89 if entity @s[dx=0] positioned ~0.89 ~0.89 ~0.89 run effect give @s minecraft:health_boost 60 1 false
-execute as @e[dx=0,tag=!this,type=player] positioned ~-0.89 ~-0.89 ~-0.89 if entity @s[dx=0] positioned ~0.89 ~0.89 ~0.89 run effect give @s minecraft:instant_health 1 1 true
-execute as @e[dx=0,tag=!this,type=player] positioned ~-0.89 ~-0.89 ~-0.89 if entity @s[dx=0] positioned ~0.89 ~0.89 ~0.89 run scoreboard players set @s cl.e.Vitality 1200
-
-#Edit tag/spellname and uncomment if you want it to end when it hits one target
-execute as @e[dx=0,tag=!this,type=player] positioned ~-0.89 ~-0.89 ~-0.89 if entity @s[dx=0] positioned ~0.89 ~0.89 ~0.89 run kill @e[type=marker,tag=vitality,sort=nearest,limit=1]
+execute as @a[dx=0,tag=!cl.r.this] positioned ~-0.89 ~-0.89 ~-0.89 if entity @s[dx=0] positioned ~0.89 ~0.89 ~0.89 run function classes:healer/spells/buff/vitality/player
 
 #Only change filepaths for spell
 scoreboard players remove #temp cl.slowcast 1

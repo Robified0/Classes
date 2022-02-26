@@ -6,19 +6,11 @@ particle electric_spark ^-0.3 ^ ^0.3 0.3 0.3 0.3 0.1 1 force
 execute at @s run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 2 1.5
 
 #Do these things when spell hits
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead,tag=!summoned,tag=!cl.Owned] run scoreboard players set @s cl.HitBySpell 100
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead,tag=!summoned,tag=!cl.Owned] run function classes:main/loot_table/main
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,tag=!cl.isAngry] run effect give @s minecraft:instant_health 1 1 true
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead,tag=!summoned,tag=!cl.Owned] run effect give @s minecraft:instant_health 1 1 true
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=player] run effect give @s minecraft:instant_health 2 0 true
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,tag=!cl.isAngry,tag=!summoned,tag=!cl.Owned] at @s run particle minecraft:composter ~ ~ ~ 0.5 1 0.5 0.1 30 normal
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,tag=!cl.isAngry,tag=!summoned,tag=!cl.Owned] at @s run particle minecraft:electric_spark ~ ~ ~ 0.5 1 0.5 0.1 10 normal
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead,tag=!summoned,tag=!cl.Owned] at @s run particle minecraft:composter ~ ~ ~ 0.5 1 0.5 0.1 30 normal
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=#classes:undead,tag=!summoned,tag=!cl.Owned] at @s run particle minecraft:electric_spark ~ ~ ~ 0.5 1 0.5 0.1 10 normal
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,predicate=classes:entities/angry,tag=!summoned,tag=!cl.Owned] at @s run function classes:entities/vanilla/angry
+execute positioned ~ ~-0.5 ~ as @a[distance=..1.3,tag=!cl.r.this] at @s run function classes:healer/spells/healing/heal/effects/player
+execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!cl.r.this,type=#classes:passive,predicate=classes:entities/angry,tag=!cl.t.summoned,tag=!cl.t.Owned] at @s run function classes:healer/spells/healing/heal/effects/mob
+execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!cl.r.this,type=#classes:passive,tag=cl.t.Owned] at @s run function classes:healer/spells/healing/heal/effects/mob
+execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!cl.r.this,type=#classes:undead,tag=!cl.t.summoned,tag=!cl.t.Owned] run function classes:healer/spells/healing/heal/effects/undead
 
-#Edit tag/spellname and uncomment if you want it to end when it hits one target
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!this,type=!#classes:nontarget,tag=!summoned,tag=!cl.Owned] run kill @e[type=marker,tag=heal,sort=nearest,limit=1]
 
 #Only change filepaths for spell
 scoreboard players remove #temp cl.slowcast 1

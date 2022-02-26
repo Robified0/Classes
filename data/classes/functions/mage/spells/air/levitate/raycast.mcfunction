@@ -7,8 +7,6 @@ execute at @s run playsound minecraft:entity.horse.breathe player @a ~ ~ ~ 0.5
 #Detect mobs, then do effects
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!cl.r.this,type=!#classes:nonmob,tag=!cl.t.summoned,tag=!cl.t.Owned] at @s run function classes:mage/spells/air/levitate/effects/mob
 
-#execute positioned ~ ~-0.5 ~ if entity @e[distance=..1.3,tag=!cl.r.this,type=!#classes:nonmob,tag=!cl.t.summoned,tag=!cl.t.Owned] run function classes:mage/spells/air/levitate/zprivate/end
-
 #Only change paths for spell
 scoreboard players remove #temp cl.slowcast 1
 execute if score #temp cl.slowcast matches ..-1 run tp @s ~ ~ ~

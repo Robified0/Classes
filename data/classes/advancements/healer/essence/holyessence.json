@@ -2,11 +2,11 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "Obtain Air Essence",
-            "color": "yellow"
+            "text": "Obtain Holy Essence",
+            "color": "green"
         },
         "description": {
-            "text": "Obtain Air Essence by killing a mob."
+            "text": "Obtain Holy Essence by killing a mob."
         },
         "icon": {
             "item": "minecraft:structure_block",
@@ -18,7 +18,7 @@
         "hidden": false
     },
     "criteria": {
-        "airessence": {
+        "holyessence": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [

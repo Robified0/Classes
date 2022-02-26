@@ -1,33 +1,27 @@
-#Not Enough Mana
-execute if entity @s[scores={cl.Mana=..2}] run function classes:main/mana_system/nomana
-
 #Add score for tracking
-execute if entity @s[scores={cl.Mana=3..}] at @s run summon marker ~ ~1 ~ {Tags:["HealCircle","summoned"]}
-execute if entity @s[scores={cl.Mana=3..}] at @s as @e[type=marker,tag=HealCircle,sort=nearest] at @s run function classes:operations/particles/draw/healcircle/drawcircle
-execute if entity @s[scores={cl.Mana=3..}] at @s run effect give @a[distance=..5] instant_health 1 1 true
-execute if entity @s[scores={cl.Mana=3..}] at @s run effect give @e[type=!player,distance=..5,tag=summoned] instant_health 1 1 true
-execute if entity @s[scores={cl.Mana=3..}] at @s run effect give @e[type=!player,distance=..5,tag=cl.Owned] instant_health 1 1 true
-execute if entity @s[scores={cl.Mana=3..}] at @s run scoreboard players set @e[type=#classes:undead,distance=..5] cl.HitBySpell 100
-execute if entity @s[scores={cl.Mana=3..}] at @s as @e[type=#classes:undead,scores={cl.HitBySpell=100},distance=..5] run function classes:main/loot_table/main
-execute if entity @s[scores={cl.Mana=3..}] at @s run effect give @e[type=#classes:undead,distance=..5] instant_health 2 1 true
+summon marker ~ ~1 ~ {Tags:["cl.t.HealCircle","cl.t.summoned"]}
+execute as @e[type=marker,tag=cl.t.HealCircle,sort=nearest,limit=1] at @s run function classes:operations/particles/draw/healcircle/drawcircle
+
+#Do the healing
+execute if entity @a[distance=..5] as @a[distance=..5] at @s run function classes:healer/spells/healing/healcircle/effects/player
+execute as @e[type=#classes:passive,distance=..5,predicate=classes:entities/angry,tag=!cl.t.summoned,tag=!cl.t.Owned] at @s run function classes:healer/spells/healing/healcircle/effects/mob
+execute as @e[type=#classes:passive,distance=..5,tag=cl.t.Owned] at @s run function classes:healer/spells/healing/healcircle/effects/mob
+execute if entity @e[type=#classes:undead,distance=..5] as @e[type=#classes:undead,distance=..5] run function classes:healer/spells/healing/healcircle/effects/undead
 
 #Cast Spell Sound Effect
-execute if entity @s[scores={cl.Mana=3..}] at @s run function classes:healer/spells/all/cast
+function classes:main/mana_system/healer/cast
 
 #Particles
-execute if entity @s[scores={cl.Mana=3..}] at @s run particle wax_off ~ ~ ~ 4 0.1 4 0.25 200 force
-execute if entity @s[scores={cl.Mana=3..}] at @s run particle happy_villager ~ ~ ~ 4 0.1 4 0.25 200 force
-execute if entity @s[scores={cl.Mana=3..}] at @s run particle minecraft:wax_off ~ ~ ~ 0.5 1 0.5 0.08 50 force
-execute if entity @s[scores={cl.Mana=3..}] at @s run particle minecraft:happy_villager ~ ~ ~ 0.5 1 0.5 0.08 50 force
+particle wax_off ~ ~ ~ 4 0.1 4 0.25 200 force
+particle happy_villager ~ ~ ~ 4 0.1 4 0.25 200 force
+particle minecraft:wax_off ~ ~ ~ 0.5 1 0.5 0.08 50 force
+particle minecraft:happy_villager ~ ~ ~ 0.5 1 0.5 0.08 50 force
 
 #Spell Cast Notification
-execute if entity @s[scores={cl.Mana=3..}] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Healing Circle!","bold":true,"color":"green"}]
+tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Healing Circle!","bold":true,"color":"green"}]
 
 #Cooldown
-execute if entity @s[scores={cl.Mana=3..}] run scoreboard players set @s cl.Cooldown 20
+scoreboard players set @s cl.Cooldown 20
 
 #Mana Removal
-execute if entity @s[scores={cl.Mana=3..}] run scoreboard players remove @s cl.Mana 3
-
-#Modify item (for spell versioning)
-item modify entity @s weapon.mainhand classes:healer/spells/healcircle
+scoreboard players remove @s cl.Mana 4

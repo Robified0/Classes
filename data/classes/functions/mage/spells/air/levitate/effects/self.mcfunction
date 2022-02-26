@@ -6,11 +6,11 @@ effect give @s minecraft:levitation 1 10 false
 effect give @s minecraft:slow_falling 3 0 false
 
 #Play sound effect
-execute at @s run playsound minecraft:entity.horse.breathe player @a ~ ~ ~ 1
+playsound minecraft:entity.horse.breathe player @a ~ ~ ~ 1
 
 #Particles
-execute at @s run particle minecraft:cloud ~ ~ ~ 1 1 1 0.1 40 normal
-execute at @s run particle minecraft:witch ~ ~ ~ 0.5 1 0.5 1.2 40 force
+particle minecraft:cloud ~ ~ ~ 1 1 1 0.1 40 normal
+particle minecraft:witch ~ ~ ~ 0.5 1 0.5 1.2 40 force
 
 #Cooldown
 scoreboard players set @s cl.Cooldown 20

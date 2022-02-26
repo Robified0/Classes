@@ -4,10 +4,10 @@
 execute unless entity @s[scores={cl.Mana=1..},advancements={classes:mage/learnspell/earth/poison=true}] run function classes:main/mana_system/nomana
 
 #Raycast
-execute if entity @s[scores={cl.Mana=1..},advancements={classes:mage/learnspell/earth/poison=true}] at @s run function classes:mage/spells/earth/poison/zprivate/setparams
+execute if entity @s[scores={cl.Mana=1..},advancements={classes:mage/learnspell/earth/poison=true}] run function classes:mage/spells/earth/poison/zprivate/setparams
 
 #Punish for casting without knowing the spell
-execute if entity @s[scores={cl.Mana=1..},advancements={classes:mage/learnspell/earth/poison=false}] at @s run function classes:main/mana_system/mage/noknowledge
+execute if entity @s[scores={cl.Mana=1..},advancements={classes:mage/learnspell/earth/poison=false}] run function classes:main/mana_system/mage/noknowledge
 
 #Modify item (for spell versioning)
 item modify entity @s weapon.mainhand classes:mage/spells/earth/poison

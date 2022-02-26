@@ -1,0 +1,27 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Heal Circle",
+            "color": "green"
+        },
+        "description": {
+            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE701\n\n\n\n",
+            "color": "white"
+        },
+        "icon": {
+            "item": "minecraft:warped_fungus_on_a_stick",
+            "nbt": "{CustomModelData:60701}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria": {
+        "Heal Circle": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "classes:healer/learnspell/healing/cureeffects"
+}
