@@ -1,6 +1,5 @@
 ##Executing as undead enemy raycast has hit (healer/spells/healing/heal/raycast)
 
-scoreboard players set @s cl.HitBySpell 100
 function classes:main/loot_table/main
 effect give @s minecraft:instant_health 1 1 true
 function classes:entities/vanilla/angry

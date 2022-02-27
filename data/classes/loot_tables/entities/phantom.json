@@ -85,15 +85,6 @@
       ],
       "conditions": [
         {
-          "condition": "minecraft:entity_scores",
-          "entity": "this",
-          "scores": {
-            "cl.HitBySpell": {
-              "min": 1
-            }
-          }
-        },
-        {
           "condition": "minecraft:inverted",
           "term": {
             "condition": "minecraft:killed_by_player"
@@ -130,15 +121,6 @@
         }
       ],
       "conditions": [
-        {
-          "condition": "minecraft:entity_scores",
-          "entity": "this",
-          "scores": {
-            "cl.HitBySpell": {
-              "min": 1
-            }
-          }
-        },
         {
           "condition": "minecraft:inverted",
           "term": {

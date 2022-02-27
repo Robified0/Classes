@@ -24,7 +24,6 @@ scoreboard objectives add cl.ManaRegenSec dummy
 scoreboard objectives add cl.Swimming air
 scoreboard objectives add cl.health health
 scoreboard objectives add cl.Cooldown dummy
-scoreboard objectives add cl.HitBySpell dummy
 scoreboard objectives add cl.Mage.Armor dummy
 scoreboard objectives add cl.Healer.Armor dummy
 scoreboard objectives add cl.s.Teleport.t dummy

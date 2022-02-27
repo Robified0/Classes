@@ -6,6 +6,3 @@ scoreboard players set @a cl.rightClick 0
 scoreboard players set @a cl.Sneaking 0
 scoreboard players set @a cl.Moved 0
 scoreboard players set @e[type=player] cl.o.DeathCount 0
-
-#Remove mob from cl.HitBySpell if score=0
-scoreboard players reset @s[scores={cl.HitBySpell=..0}] cl.HitBySpell

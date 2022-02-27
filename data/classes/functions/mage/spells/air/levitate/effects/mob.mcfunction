@@ -1,6 +1,5 @@
 ### Apply Effects
 ## Executing as hit entity
-execute if entity @s[type=!player] run scoreboard players set @s cl.HitBySpell 100
 execute if entity @s[type=!player] run function classes:main/loot_table/main
 effect give @s minecraft:levitation 1 10 false
 execute if entity @s[type=player] run effect give @s minecraft:slow_falling 3 0 false

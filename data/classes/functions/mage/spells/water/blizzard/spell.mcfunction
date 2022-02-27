@@ -3,7 +3,7 @@ execute if entity @s[scores={cl.e.Blizzard=10}] run tag @s add cl.s.Blizzard
 
 
 #Spell Cast Notification
-execute if entity @s[scores={cl.e.Blizzard=0}] run tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" is casting","color":"green"},{"text":" Blizzard!","bold":true,"color":"#0096FF"}]
+execute if entity @s[scores={cl.e.Blizzard=0}] run tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" is casting","color":"green"},{"text":" Blizzard!","bold":true,"color":"#0096FF"}]
 
 #levitate
 execute if entity @s[scores={cl.e.Blizzard=1..}] unless block ~ ~-1 ~ #classes:air run effect give @s minecraft:levitation 1 0 true
@@ -16,13 +16,15 @@ execute if entity @s[scores={cl.e.Blizzard=1..}] run particle minecraft:snowflak
 execute if entity @s[scores={cl.e.Blizzard=1..}] run particle minecraft:white_ash ~ ~0.5 ~ 5 5 5 0.1 100 force
 
 #Give Slowness
-execute if entity @s[scores={cl.e.Blizzard=1..}] run effect give @e[type=!#classes:nontarget,type=!player,tag=!summoned,tag=!cl.Owned,distance=..10] minecraft:slowness 1 3
+execute if entity @s[scores={cl.e.Blizzard=1..}] run effect give @e[type=!#classes:nontarget,type=!player,tag=!cl.t.summoned,tag=!cl.t.Owned,distance=..10] minecraft:slowness 1 3
 
 #TP mob backwards, but not if there are blocks behind them
-execute if entity @s[scores={cl.e.Blizzard=1..}] as @e[type=!#classes:nontarget,type=!player,tag=!summoned,tag=!cl.Owned,distance=..9] at @s if block ^ ^1 ^-1 #classes:air run tp @s ^ ^0.5 ^-0.5 facing entity @p[scores={cl.e.Blizzard=1..},limit=1]
+execute if entity @s[scores={cl.e.Blizzard=1..}] as @e[type=!#classes:nontarget,type=!player,tag=!cl.t.summoned,tag=!cl.t.Owned,distance=..9] at @s if block ^ ^1 ^-1 #classes:air run tp @s ^ ^0.5 ^-0.5 facing entity @p[scores={cl.e.Blizzard=1..},limit=1]
 
 #Damage entities in range
-execute if entity @s[scores={cl.e.Blizzard=1..}] run effect give @e[type=!#classes:nontarget,tag=!cl.Owned,distance=..10] minecraft:wither 1 4
+execute if entity @s[scores={cl.e.Blizzard=1..}] run effect give @e[type=!#classes:nontarget,tag=!cl.t.summoned,tag=!cl.t.Owned,distance=..10] minecraft:wither 1 4
+
+execute if entity @s[scores=cl.e.Blizzard=1..}] as @e[type=!#classes:nontarget,tag=!cl.t.summoned,tag=!cl.t.Owned,distance=..10] run function classes:main/loot_table/main
 
 #Spell Handling
 scoreboard players set @s cl.e.Blizzard 10

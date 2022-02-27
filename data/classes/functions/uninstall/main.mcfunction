@@ -12,7 +12,6 @@ scoreboard objectives remove cl.Mage.Armor
 scoreboard objectives remove cl.Swimming
 scoreboard objectives remove cl.health
 scoreboard objectives remove cl.Cooldown
-scoreboard objectives remove cl.HitBySpell
 scoreboard objectives remove cl.Mage.Armor
 scoreboard objectives remove cl.Healer.Armor
 scoreboard objectives remove cl.s.Teleport.t

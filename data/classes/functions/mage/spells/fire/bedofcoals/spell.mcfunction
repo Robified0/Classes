@@ -1,5 +1,5 @@
 #Summon AEC
-summon area_effect_cloud ~ ~ ~ {Particle:"flame",ReapplicationDelay:20,Radius:3f,Duration:200,Tags:["cl.damage1","cl.fire","cl.angry","cl.fire","cl.HitBySpell"]}
+summon area_effect_cloud ~ ~ ~ {Particle:"flame",ReapplicationDelay:20,Radius:3f,Duration:200,Tags:["cl.damage1","cl.fire","cl.angry"]}
 
 #Cast Spell Sound Effect
 function classes:main/mana_system/mage/cast

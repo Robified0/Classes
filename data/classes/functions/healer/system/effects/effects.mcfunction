@@ -32,7 +32,7 @@ execute if entity @s[scores={cl.e.CureEffects=1..}] run function classes:healer/
 execute if entity @s[scores={cl.e.Vitality=1..}] run function classes:healer/effects/vitality
 
 #Bless
-execute if entity @s[scores={cl.e.Bless=1..}] run function classes:healer/effects/bless
+execute if entity @s[scores={cl.e.Bless=1..}] run function classes:healer/effects/bless/main
 
 #Stop Undead
 execute if entity @e[type=#classes:undead,scores={cl.e.StopUndead=1..}] as @e[type=#classes:undead,scores={cl.e.StopUndead=1..}] at @s run function classes:healer/effects/stopundead

@@ -10,22 +10,18 @@
 #                                      #
 ########################################
 
-#XP Handle
-execute as @e[type=minecraft:area_effect_cloud,tag=cl.HitBySpell] positioned ~-0.79 ~-0.79 ~-0.79 if entity @s[dx=0] positioned ~0.79 ~0.79 ~0.79 run scoreboard players set @s cl.HitBySpell 100
-
 #AEC - Angry At - (tag=cl.angry)
-execute as @e[type=minecraft:area_effect_cloud,tag=cl.angry] at @s as @e[type=!#classes:nontarget,type=!minecraft:area_effect_cloud,distance=..3,sort=random,predicate=classes:entities/angry,tag=!summoned,tag=!cl.Owned] run function classes:entities/vanilla/angry
+execute if entity @s[type=minecraft:area_effect_cloud,tag=cl.angry] as @e[type=!#classes:nontarget,type=!minecraft:area_effect_cloud,distance=..3,sort=random,predicate=classes:entities/angry,tag=!summoned,tag=!cl.Owned] run function classes:entities/vanilla/angry
 
 #AEC - Wither - (tag=cl.wither)
-execute as @e[type=minecraft:area_effect_cloud,tag=cl.wither3] at @s run effect give @e[type=!#classes:nontarget,type=!minecraft:area_effect_cloud,distance=..3,sort=nearest,tag=!summoned,tag=!cl.Owned] minecraft:wither 3 4 true
+execute if entity @s[type=minecraft:area_effect_cloud,tag=cl.wither3] run effect give @e[type=!#classes:nontarget,type=!minecraft:area_effect_cloud,distance=..3,sort=nearest,tag=!summoned,tag=!cl.Owned] minecraft:wither 3 4 true
 
 #AEC - Fire - (tag=cl.fire)
-execute as @e[type=minecraft:area_effect_cloud,tag=cl.fire] at @s run data merge entity @e[type=!player,type=!#classes:nontarget,type=!#classes:fireproof,type=!minecraft:area_effect_cloud,type=!item,distance=..3,limit=1,sort=random,tag=!summoned,tag=!cl.Owned] {Fire:80}
+execute if entity @s[type=minecraft:area_effect_cloud,tag=cl.fire] run data merge entity @e[type=!#classes:nontarget,type=!#classes:fireproof,distance=..3,limit=1,sort=random,tag=!summoned,tag=!cl.Owned] {Fire:80}
 
 #AEC - Fire Damage (tag=cl.damage)
-execute as @e[type=minecraft:area_effect_cloud,tag=cl.damage1] at @s run effect give @e[type=!player,type=!#classes:undead,type=!#classes:nontarget,type=!#classes:fireproof,type=!minecraft:area_effect_cloud,distance=..3,limit=1,sort=random,tag=!summoned,tag=!cl.Owned] minecraft:instant_damage 1 0 true
-execute as @e[type=minecraft:area_effect_cloud,tag=cl.damage1] at @s run effect give @e[type=#classes:undead,type=!#classes:fireproof,type=!minecraft:area_effect_cloud,distance=..3,limit=1,sort=random,tag=!summoned,tag=!cl.Owned] minecraft:instant_health 1 0 true
-
+execute if entity @s[type=minecraft:area_effect_cloud,tag=cl.damage1] run effect give @e[type=!#classes:undead,type=!#classes:nontarget,type=!#classes:fireproof,distance=..3,limit=1,sort=random,tag=!summoned,tag=!cl.Owned] minecraft:instant_damage 1 0 true
+execute if entity @s[type=minecraft:area_effect_cloud,tag=cl.damage1] run effect give @e[type=#classes:undead,type=!#classes:fireproof,distance=..3,limit=1,sort=random,tag=!summoned,tag=!cl.Owned] minecraft:instant_health 1 0 true
 
 #Sound - Fire
-execute at @e[type=minecraft:area_effect_cloud,tag=cl.fire] run playsound minecraft:block.furnace.fire_crackle player @a ~ ~ ~ 1
+execute if entity @s[type=minecraft:area_effect_cloud,tag=cl.fire] run playsound minecraft:block.furnace.fire_crackle player @a ~ ~ ~ 1

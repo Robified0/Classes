@@ -2,7 +2,6 @@
 ## Executing as hit entity
 
 #Set Score, and apply loot table
-scoreboard players set @s cl.HitBySpell 100
 function classes:main/loot_table/main
 
 #Play sound

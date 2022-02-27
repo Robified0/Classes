@@ -1,5 +1,4 @@
 #Do these things when spell hits
-scoreboard players set @s cl.HitBySpell 100
 function classes:main/loot_table/main
 effect give @s minecraft:instant_health 1 2 true
 particle minecraft:happy_villager ~ ~ ~ 0.5 1 0.5 1 10 normal

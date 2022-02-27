@@ -13,9 +13,6 @@ execute if entity @e[type=marker,tag=cl.r.slowcast] as @e[type=marker,tag=cl.r.s
 #Handle Motion
 execute if entity @e[type=#classes:motionaffected,tag=cl.t.motion_projectile,tag=!cl.t.motion_added] as @e[type=#classes:motionaffected,tag=cl.t.motion_projectile,tag=!cl.t.motion_added] run function classes:operations/motion/motion
 
-#Handle scoreboard to time when last hit by player, and handle loot_table
-execute if entity @e[type=!#nontarget,scores={cl.HitBySpell=0..}] as @e[type=!#nontarget,scores={cl.HitBySpell=0..}] run function classes:operations/hitbyspell
-
 #Function for all new players, to ensure scoreboards are set up
 execute if entity @a[tag=!cl.o.Joined] as @a[tag=!cl.o.Joined] run function classes:main/new_player/main
 execute if entity @a[scores={cl.Class=1..},tag=!cl.o.ClassSelected] as @a[scores={cl.Class=1..},tag=!cl.o.ClassSelected] run function classes:main/new_player/classselected

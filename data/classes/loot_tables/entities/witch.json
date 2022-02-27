@@ -21,7 +21,6 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "weight": 1,
           "name": "classes:essences/all"
         }
       ],
@@ -77,15 +76,6 @@
         }
       ],
       "conditions": [
-        {
-          "condition": "minecraft:entity_scores",
-          "entity": "this",
-          "scores": {
-            "cl.HitBySpell": {
-              "min": 1
-            }
-          }
-        },
         {
           "condition": "minecraft:inverted",
           "term": {

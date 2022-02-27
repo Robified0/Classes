@@ -1,7 +1,6 @@
 ##Executing as undead mob within 10 blocks of player (healer/spells/smiting/stopundead/spell)
 
 #Set loot table stuff
-scoreboard players set @s cl.HitBySpell 100
 function classes:main/loot_table/main
 
 #Stop Undead

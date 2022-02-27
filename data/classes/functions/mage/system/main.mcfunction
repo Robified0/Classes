@@ -29,7 +29,7 @@ execute if entity @a[scores={cl.Class=3,cl.rightClick=1..}] as @a[predicate=clas
 execute if entity @a[scores={cl.Class=3,cl.rightClick=1..}] as @a[predicate=!classes:checkwand/wand,scores={cl.Class=3,cl.rightClick=1..}] run function classes:main/mana_system/equipwand
 
 #AOE Effect detection
-execute if entity @e[type=area_effect_cloud] run function classes:mage/system/effects/aoeeffects
+execute if entity @e[type=area_effect_cloud] as @e[type=area_effect_cloud] at @s run function classes:mage/system/effects/aoeeffects
 
 #Effect detection
 execute as @a run function classes:mage/system/effects/effects

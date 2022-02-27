@@ -1,5 +1,4 @@
 #Apply Effects
-scoreboard players set @s cl.HitBySpell 100
 function classes:main/loot_table/main
 playsound minecraft:entity.blaze.burn player @a ~ ~ ~ 0.5 1.3
 data merge entity @s {Fire:200}

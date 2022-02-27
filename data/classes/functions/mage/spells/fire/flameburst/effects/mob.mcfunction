@@ -1,5 +1,4 @@
 #Process loot_tables before damage
-scoreboard players set @s cl.HitBySpell 100
 function classes:main/loot_table/main
 data merge entity @s {Fire:100}
 execute as @s[type=creeper] run function classes:entities/vanilla/creeper/fire

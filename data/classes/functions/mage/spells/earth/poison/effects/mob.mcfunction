@@ -4,8 +4,7 @@
 #Display particles
 particle dust 0.173 1.000 0.078 1 ~ ~ ~ 0.5 1 0.5 0.1 30 normal
 
-#Set Score, and apply loot table
-scoreboard players set @s cl.HitBySpell 100
+#Apply loot table
 function classes:main/loot_table/main
 
 #Apply effect - undead immune
