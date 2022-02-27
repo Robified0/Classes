@@ -2,11 +2,11 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "Iron Flesh",
+            "text": "Iron Flesh       ",
             "color": "green"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE501\n\n\n\n",
+            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE501\n\n\n\n\n\n\n\n",
             "color": "white"
         },
         "icon": {

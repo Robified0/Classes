@@ -9,10 +9,6 @@ tag @s remove cl.r.this
 function classes:main/mana_system/healer/cast
 playsound minecraft:entity.ghast.shoot player @a ~ ~ ~ 0.2 0.6
 
-#Particles
-particle minecraft:wax_off ~ ~ ~ 0.5 1 0.5 0.01 50 force
-particle minecraft:happy_villager ~ ~ ~ 0.5 1 0.5 0.08 50 force
-
 #Cooldown
 scoreboard players set @s cl.Cooldown 20
 
@@ -20,4 +16,4 @@ scoreboard players set @s cl.Cooldown 20
 tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Holy Strike!","bold":true,"color":"green"}]
 
 #Mana Depletion
-scoreboard players remove @s cl.Mana 2
+scoreboard players remove @s cl.Mana 4

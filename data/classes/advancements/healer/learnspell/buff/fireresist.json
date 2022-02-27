@@ -2,11 +2,11 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "Fire Resist",
+            "text": "Fire Resist       ",
             "color": "green"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE801\n\n\n\n",
+            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE801\n\n\n\n\n\n\n\n",
             "color": "white"
         },
         "icon": {

@@ -2,11 +2,11 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "Ice Shard",
+            "text": "Ice Shard        ",
             "color": "blue"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE301\n\n\n\n",
+            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE301\n\n\n\n\n\n\n\n",
             "color": "white"
         },
         "icon": {

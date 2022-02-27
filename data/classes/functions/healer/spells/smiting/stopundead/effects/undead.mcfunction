@@ -5,7 +5,7 @@ scoreboard players set @s cl.HitBySpell 100
 function classes:main/loot_table/main
 
 #Stop Undead
-data merge entity @s {NoAI:1b,Silent:1b,Invulnerable:1b}
+data merge entity @s {NoAI:1b}
 
 #Set counter
 scoreboard players set @s cl.e.StopUndead 200

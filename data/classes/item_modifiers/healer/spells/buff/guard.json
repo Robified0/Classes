@@ -1,6 +1,6 @@
 [
   {
     "function": "minecraft:set_nbt",
-    "tag": "{display:{Name:'[{\"text\":\"Guard\",\"color\":\"green\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"5 Mana\",\"color\":\"aqua\",\"bold\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Places down a barrier that cancels all projectiles in its radius.\",\"color\":\"green\"}']},CustomModelData:60800,cl.s.Spell:1b,cl.s.Buff:1b,cl.s.Guard:1b}"
+    "tag": "{display:{Name:'[{\"text\":\"Guard\",\"color\":\"green\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"\uE003 x 3\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Places down a barrier that removes all projectiles in its radius.\",\"color\":\"green\"}']},CustomModelData:60800,cl.s.Spell:1b,cl.s.Buff:1b,cl.s.Guard:1b}"
   }
 ]

@@ -10,10 +10,6 @@ scoreboard players set @s cl.summonCount 400
 scoreboard players set @e[type=marker,tag=cl.t.Guard,limit=1,sort=nearest] cl.summonCount 400
 scoreboard players set @e[type=marker,tag=cl.t.GuardSphere,limit=2,sort=nearest] cl.summonCount 400
 
-#Particles
-particle minecraft:wax_off ~ ~ ~ 0.5 1 0.5 0.01 50 force
-particle minecraft:happy_villager ~ ~ ~ 0.5 1 0.5 0.08 50 force
-
 #Cast Spell Sound Effect
 function classes:main/mana_system/healer/cast
 playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 0.6 1.5
@@ -25,4 +21,4 @@ tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" c
 scoreboard players set @s cl.Cooldown 20
 
 #Mana Removal
-scoreboard players remove @s cl.Mana 8
+scoreboard players remove @s cl.Mana 6

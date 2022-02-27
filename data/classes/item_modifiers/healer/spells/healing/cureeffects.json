@@ -1,6 +1,6 @@
 [
   {
     "function": "minecraft:set_nbt",
-    "tag": "{display:{Name:'[{\"text\":\"Cure Effects\",\"color\":\"green\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"4 Mana\",\"color\":\"aqua\",\"bold\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Buffs all players within 5 blocks. Cures all effects for 30 seconds.\",\"color\":\"green\"}']},CustomModelData:60703,cl.s.Spell:1b,cl.s.Healing:1b,cl.s.CureEffects:1b}"
+    "tag": "{display:{Name:'[{\"text\":\"Cure Effects\",\"color\":\"green\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"\uE003 x 2\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Buffs all players within 5 blocks. Cures all effects (except fire) for 30 seconds.\",\"color\":\"green\"}']},CustomModelData:60703,cl.s.Spell:1b,cl.s.Healing:1b,cl.s.CureEffects:1b}"
   }
 ]

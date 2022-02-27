@@ -26,8 +26,17 @@ execute as @s[tag=cl.ess.Air] at @s run playsound minecraft:entity.horse.breathe
 execute as @s[tag=cl.ess.Magic] at @s run particle minecraft:reverse_portal ~ ~ ~ 0.2 0.2 0.2 0.01 1 force
 execute as @s[tag=cl.ess.Magic,scores={cl.EssenceSound=99}] at @s run playsound minecraft:block.portal.ambient ambient @a ~ ~ ~ 0.5 0.5
 
+#Buff
+execute as @s[tag=cl.ess.Buff] at @s run particle minecraft:wax_on ~ ~ ~ 0.2 0.2 0.2 0.01 1 force
+execute as @s[tag=cl.ess.Buff,scores={cl.EssenceSound=99}] at @s run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 1 1.5
+
+#Healing
+execute as @s[tag=cl.ess.Healing] at @s run particle minecraft:happy_villager ~ ~ ~ 0.2 0.2 0.2 0.01 1 force
+execute as @s[tag=cl.ess.Healing,scores={cl.EssenceSound=99}] at @s run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 1 1.5
+
+#Smiting
+execute as @s[tag=cl.ess.Smiting] at @s run particle minecraft:end_rod ~ ~ ~ 0.2 0.2 0.2 0.01 1 force
+execute as @s[tag=cl.ess.Smiting,scores={cl.EssenceSound=99}] at @s run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 1 1.5
+
 #Detect player
 execute at @s positioned ~ ~-1 ~ if entity @p[distance=..1] run function classes:main/essences/learn
-
-#Kill Essence
-execute as @s[scores={cl.EssenceCount=..0}] run kill @s

@@ -1,6 +1,6 @@
 [
   {
     "function": "minecraft:set_nbt",
-    "tag": "{display:{Name:'[{\"text\":\"Mending\",\"color\":\"green\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"1 Mana/sec\",\"color\":\"aqua\",\"bold\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Give all allies within 10 blocks Regeneration II.\",\"color\":\"green\"}']},CustomModelData:60704,cl.s.Spell:1b,cl.s.Healing:1b,cl.s.Mending:1b}"
+    "tag": "{display:{Name:'[{\"text\":\"Mending\",\"color\":\"green\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"\uE003/1 Sec\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Heals all allies within 10 blocks 2 Hearts/sec.\",\"color\":\"green\"}']},CustomModelData:60704,cl.s.Spell:1b,cl.s.Healing:1b,cl.s.Mending:1b}"
   }
 ]

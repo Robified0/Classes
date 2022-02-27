@@ -1,6 +1,6 @@
 [
   {
     "function": "minecraft:set_nbt",
-    "tag": "{display:{Name:'[{\"text\":\"Vitality\",\"color\":\"green\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"4 Mana\",\"color\":\"aqua\",\"bold\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Hit player gets 4 extra hearts for 60 seconds.\",\"color\":\"green\"}','{\"text\":\" \"}','[{\"text\":\"\"},{\"text\":\"Self Cast:\"}]','{\"text\":\"Cast while looking at the ground.\",\"color\":\"green\"}']},CustomModelData:60804,cl.s.Spell:1b,cl.s.Buff:1b,cl.s.Vitality:1b}"
+    "tag": "{display:{Name:'[{\"text\":\"Vitality\",\"color\":\"green\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"\uE003 x 2\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Hit player gets 4 extra hearts for 60 seconds.\",\"color\":\"green\"}','{\"text\":\" \"}','[{\"text\":\"\"},{\"text\":\"Self Cast:\"}]','{\"text\":\"Cast while looking at the ground.\",\"color\":\"green\"}']},CustomModelData:60804,cl.s.Spell:1b,cl.s.Buff:1b,cl.s.Vitality:1b}"
   }
 ]

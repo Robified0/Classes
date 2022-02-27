@@ -1,0 +1,24 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 8,
+          "name": "classes:essences/buff"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 12,
+          "name": "classes:essences/healing"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "classes:essences/smiting"
+        }
+      ]
+    }
+  ]
+}

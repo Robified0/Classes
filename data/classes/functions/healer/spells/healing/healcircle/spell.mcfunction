@@ -14,8 +14,6 @@ function classes:main/mana_system/healer/cast
 #Particles
 particle wax_off ~ ~ ~ 4 0.1 4 0.25 200 force
 particle happy_villager ~ ~ ~ 4 0.1 4 0.25 200 force
-particle minecraft:wax_off ~ ~ ~ 0.5 1 0.5 0.08 50 force
-particle minecraft:happy_villager ~ ~ ~ 0.5 1 0.5 0.08 50 force
 
 #Spell Cast Notification
 tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Healing Circle!","bold":true,"color":"green"}]
@@ -24,4 +22,4 @@ tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" c
 scoreboard players set @s cl.Cooldown 20
 
 #Mana Removal
-scoreboard players remove @s cl.Mana 4
+scoreboard players remove @s cl.Mana 6
