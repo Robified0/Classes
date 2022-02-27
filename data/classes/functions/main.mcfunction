@@ -10,9 +10,6 @@
 #Handle Raycasts
 execute if entity @e[type=marker,tag=cl.r.slowcast] as @e[type=marker,tag=cl.r.slowcast] at @s run function classes:operations/raycast/main
 
-#Handle Motion
-execute if entity @e[type=#classes:motionaffected,tag=cl.t.motion_projectile,tag=!cl.t.motion_added] as @e[type=#classes:motionaffected,tag=cl.t.motion_projectile,tag=!cl.t.motion_added] run function classes:operations/motion/motion
-
 #Function for all new players, to ensure scoreboards are set up
 execute if entity @a[tag=!cl.o.Joined] as @a[tag=!cl.o.Joined] run function classes:main/new_player/main
 execute if entity @a[scores={cl.Class=1..},tag=!cl.o.ClassSelected] as @a[scores={cl.Class=1..},tag=!cl.o.ClassSelected] run function classes:main/new_player/classselected
