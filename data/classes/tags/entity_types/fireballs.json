@@ -1,6 +1,7 @@
 {
   "values":[
   "minecraft:small_fireball",
-	"minecraft:fireball"
+	"minecraft:fireball",
+  "minecraft:dragon_fireball"
   ]
 }

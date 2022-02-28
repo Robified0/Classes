@@ -29,6 +29,10 @@ scoreboard objectives add cl.Healer.Armor dummy
 scoreboard objectives add cl.s.Teleport.t dummy
 scoreboard objectives add cl.i.ManaPotion dummy
 scoreboard objectives add cl.i.usedPotion minecraft.used:minecraft.potion
+scoreboard objectives add cl.t.PotionEff dummy
+scoreboard objectives add cl.t.RangerID dummy
+execute unless score #cl.t.RangerID cl.t.RangerID matches 1.. run scoreboard players set #cl.t.RangerID cl.t.RangerID 1
+scoreboard objectives add cl.t.dropItem minecraft.custom:minecraft.drop
 
 #Set up stat tracking
 scoreboard objectives add cl.o.statx100 dummy

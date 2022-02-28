@@ -17,6 +17,8 @@ scoreboard objectives remove cl.Healer.Armor
 scoreboard objectives remove cl.s.Teleport.t
 scoreboard objectives remove cl.i.ManaPotion
 scoreboard objectives remove cl.i.usedPotion
+scoreboard objectives remove cl.t.PotionEff
+scoreboard objectives remove cl.t.RangerID
 
 #Remove motion Scoreboards
 scoreboard objectives remove cl.motion_x1
