@@ -2,9 +2,9 @@
 A datapack for an RPG classes system in Minecraft.
 
 ## !! Important Note !!
-This datapack is under heavy construction, and only the framework is being developed at this time. It is only being developed under Minecraft 1.17+. Backporting will NOT happen at this time (I'm one person).
+This datapack is under heavy construction, and only the framework is being developed at this time. It is only being developed under Minecraft 1.18+. Backporting will NOT happen at this time (I'm one person).
 
-**The current build is *playable*, but it's just the Mage and Healer at this time, and item crafting is a work in progress.
+**The current build is *playable*, but it's just the Mage, Healer, and Ranger at this time. Ranger is still missing passive bonuses to animals.
 
 This is also my first foray into GitHub, so I'm using this as my chance to experiment and get used to the workflows!
 
@@ -14,7 +14,7 @@ This is also my first foray into GitHub, so I'm using this as my chance to exper
 
 **Mage:**
 
-The mage commands the elements of earth, air, fire, and water. Using their magic, they are able to will the elements to do their bidding and do massive damage to enemies or give buffs to themselves. They have a lower attack speed and attack damage, and are unable to wear armor (though they have spells to replicate it!).
+The mage commands the elements of earth, air, fire, and water. Using their magic, they are able to will the elements to do their bidding and do massive damage to enemies or give buffs to themselves. They have a lower attack speed and attack damage. Due to needing freedom to cast spell, they are unable to wear armor (though they have spells to replicate it!).
 
 
 **Healer:**
