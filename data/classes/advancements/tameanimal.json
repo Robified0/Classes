@@ -23,6 +23,6 @@
     ]
   ],
   "rewards": {
-    "function": "classes:entities/vanilla/owned"
+    "function": "classes:entities/taming/tamed"
   }
 }

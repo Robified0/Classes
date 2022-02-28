@@ -9,4 +9,4 @@ execute as @a[scores={cl.Class=2}] unless score @s cl.Class matches 2 run tag @s
 execute as @a[scores={cl.Class=2}] unless score @s cl.t.RangerID matches 1.. run function classes:ranger/stats/id
 
 
-execute at @a[scores={cl.Class=2,cl.i.usedPotion=1..}] as @e[distance=..15,type=#classes:ranger/canown,tag=cl.t.Owned] at @s run function classes:ranger/system/potion/checkowner
+execute at @a[scores={cl.Class=2,cl.i.usedPotion=1..}] as @e[distance=..15,type=wolf,tag=cl.t.Owned] at @s run function classes:ranger/system/potion/checkowner

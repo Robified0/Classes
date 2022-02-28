@@ -34,4 +34,4 @@ The Miner gets passive bonuses to a variety of things. The deeper they dig, the 
 
 **Ranger:**
 
-The Ranger naturally grants tamed animals around them passive bonuses to health and damage resistance. Any beneficial potion a Ranger drinks, confers the benefit to surrounding tamed animals. They are also able to salvage arrows in the ground.
+The Ranger has an particular affinity with nature. Any wolf they tame or breed gains higher attack, health, and a gains natural armor. Any beneficial potion a Ranger drinks, confers the benefit to the wolves they have tamed/bred. They are also able to salvage arrows in the ground.

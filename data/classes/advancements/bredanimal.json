@@ -1,0 +1,48 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:wheat"
+    },
+    "title": "Bred Animal",
+    "description": "",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "minecraft:story/root",
+  "criteria": {
+    "bred": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "parent": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:wolf"
+            }
+          }
+        ],
+        "partner": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:wolf"
+            }
+          }
+        ],
+        "child": []
+      }
+    }
+  },
+  "requirements": [
+    [
+      "bred"
+    ]
+  ],
+  "rewards": {
+    "function": "classes:entities/taming/bred/delay"
+  }
+}
