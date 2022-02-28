@@ -27,7 +27,7 @@ A potent user in healing magic, the Healer is able to heal allies, deal heavy da
 A warrior inside and out, the Knight has powerful attacks and a natural resistance to damage.
 
 
-**Miner:**
+**Miner:** (Coming in v1.1)
 
 The Miner gets passive bonuses to a variety of things. The deeper they dig, the tougher they are. Their innate sense of mining bestows them the ability to get more ores from deposits than traditional miners.
 
