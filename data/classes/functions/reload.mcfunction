@@ -22,7 +22,6 @@ scoreboard objectives add cl.rightClick minecraft.used:minecraft.warped_fungus_o
 scoreboard objectives add cl.Mana dummy
 scoreboard objectives add cl.ManaRegenSec dummy
 scoreboard objectives add cl.Swimming air
-scoreboard objectives add cl.health health
 scoreboard objectives add cl.Cooldown dummy
 scoreboard objectives add cl.Mage.Armor dummy
 scoreboard objectives add cl.Healer.Armor dummy
@@ -33,12 +32,16 @@ scoreboard objectives add cl.t.PotionEff dummy
 scoreboard objectives add cl.t.RangerID dummy
 execute unless score #cl.t.RangerID cl.t.RangerID matches 1.. run scoreboard players set #cl.t.RangerID cl.t.RangerID 1
 scoreboard objectives add cl.t.dropItem minecraft.custom:minecraft.drop
+scoreboard objectives add cl.t.usedBow minecraft.used:minecraft.bow
 
 #Set up stat tracking
 scoreboard objectives add cl.o.statx100 dummy
 scoreboard players set #cl.statx100 cl.o.statx100 100
 scoreboard objectives add cl.o.genAtkDmg dummy
 scoreboard objectives add cl.o.genAtkSpd dummy
+scoreboard objectives add cl.o.maxHealth dummy
+scoreboard objectives add cl.o.health health {"text":"\u2764","color":"red"}
+scoreboard objectives setdisplay belowName cl.o.health
 
 #Scoreboards for settings
 scoreboard objectives add cl.p.setFire dummy

@@ -7,3 +7,4 @@ scoreboard players set @a cl.Sneaking 0
 scoreboard players set @a cl.Moved 0
 scoreboard players set @a cl.i.usedPotion 0
 scoreboard players set @a cl.t.dropItem 0
+scoreboard players set @a cl.t.usedBow 0

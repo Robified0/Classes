@@ -2,7 +2,6 @@
 
 #Run function when #cl.t.5Tick score hits 5 (operations/delay/main)
 
-#Prevent Spell Drops
 
 #Reset score
 scoreboard players set #cl.t.5Tick cl.t.Tick 0

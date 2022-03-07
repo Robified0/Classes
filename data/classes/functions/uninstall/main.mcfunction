@@ -10,7 +10,6 @@ scoreboard objectives remove cl.ManaRegenSec
 scoreboard objectives remove cl.Cooldown
 scoreboard objectives remove cl.Mage.Armor
 scoreboard objectives remove cl.Swimming
-scoreboard objectives remove cl.health
 scoreboard objectives remove cl.Cooldown
 scoreboard objectives remove cl.Mage.Armor
 scoreboard objectives remove cl.Healer.Armor
@@ -71,6 +70,8 @@ scoreboard objectives remove cl.e.StopUndead
 scoreboard objectives remove cl.o.statx100
 scoreboard objectives remove cl.o.genAtkDmg
 scoreboard objectives remove cl.o.genAtkSpd
+scoreboard objectives add cl.o.maxHealth dummy
+scoreboard objectives add cl.o.health health
 
 #Slowcast scoreboards (credit to CloudWolf)
 scoreboard objectives remove cl.slowcast

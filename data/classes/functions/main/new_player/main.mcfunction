@@ -1,8 +1,9 @@
-scoreboard players set @s cl.Mana 0
-scoreboard players set @s cl.ManaRegenSec 0
-scoreboard players set @s cl.currSpellSel 1
-scoreboard players set @s cl.loadSpell 1
-scoreboard players set @s cl.Cooldown 0
+##Executing as player who has just joined (root/main)
+
+#Enable Class trigger, to allow selecting of class
 scoreboard players enable @s cl.Class
-tellraw @s ["",{"text":"-----------","color":"dark_aqua"},{"text":"\n"},{"text":"Select a class:","color":"green"},{"text":"\n"},{"text":"-----------","color":"dark_aqua"},{"text":"\n"},{"text":"- Mage","underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger cl.Class set 3"}},{"text":"\n"},{"text":"- Healer","underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger cl.Class set 4"}},{"text":"\n"},{"text":"- Ranger","underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger cl.Class set 2"}},{"text":"\n"},{"text":"-----------","color":"dark_aqua"}]
+
+#Tellraw Class selection
+tellraw @s ["",{"text":"=====================","color":"dark_aqua"},{"text":"\n\n"},{"text":"Select your class:","color":"green"},{"text":"\n\n"},{"text":"=====================","color":"dark_aqua"},{"text":"\n\n"},{"text":"\u2b25 ","color":"gold"},{"text":"Knight","color":"gold","clickEvent":{"action":"run_command","value":"/trigger cl.Class set 1"},"hoverEvent":{"action":"show_text","contents":"A powerful warrior, focused on protecting his allies and dealing melee damage."}},{"text":"\n"},{"text":"\u2b25 ","color":"gold"},{"text":"Ranger","color":"gold","clickEvent":{"action":"run_command","value":"/trigger cl.Class set 2"},"hoverEvent":{"action":"show_text","contents":"Proficient with bows, and grants bonuses to animals they tame."}},{"text":"\n"},{"text":"\u2b25 ","color":"gold"},{"text":"Mage","color":"gold","clickEvent":{"action":"run_command","value":"/trigger cl.Class set 3"},"hoverEvent":{"action":"show_text","contents":"Controls the elements to deal damage to enemies, and gain buffs."}},{"text":"\n"},{"text":"\u2b25 ","color":"gold"},{"text":"Healer","color":"gold","clickEvent":{"action":"run_command","value":"/trigger cl.Class set 4"},"hoverEvent":{"action":"show_text","contents":"Heals and buffs their allies using holy magic."}},{"text":"\n\n"},{"text":"=====================","color":"dark_aqua"}]
+#Tag player to avoid spam
 tag @s add cl.o.Joined

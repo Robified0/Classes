@@ -2,9 +2,11 @@
 A datapack for an RPG classes system in Minecraft.
 
 ## !! Important Note !!
-This datapack is under heavy construction, and only the framework is being developed at this time. It is only being developed under Minecraft 1.18+. Backporting will NOT happen at this time (I'm one person).
+This datapack is under heavy construction, and only the framework is being developed at this time.
 
-**The current build is *playable*, but it's just the Mage, Healer, and Ranger at this time. Ranger is still missing passive bonuses to animals.
+It is only being developed under Minecraft 1.18+. Backporting will NOT happen, ever. A lot of the functions used are only available in current versions, and I'll continue to add more features as Mojang adds even more. When that happens, legacy versions will be unsupported.
+
+**The current build is *playable*, but it's just the Mage, Healer, and Ranger at this time.
 
 This is also my first foray into GitHub, so I'm using this as my chance to experiment and get used to the workflows!
 
@@ -26,12 +28,17 @@ A potent user in healing magic, the Healer is able to heal allies, deal heavy da
 
 A warrior inside and out, the Knight has powerful attacks and a natural resistance to damage.
 
+Because they are skilled in physical combat, they are able to do more damage with melee weapons and attack faster. They also have knockback resistance, preventing them from being pushed around.
 
-**Miner:** (Coming in v1.1)
+Holding up a shield also protects your allies by giving them resistance against damage.
 
-The Miner gets passive bonuses to a variety of things. The deeper they dig, the tougher they are. Their innate sense of mining bestows them the ability to get more ores from deposits than traditional miners.
+In addition, Illagers fear the noble Knight, and when they are raiding a village, they suffer from slowness and weakness when a Knight is near them. The Knight, enraged, gains strength and speed boosts when around raiding Illagers.
 
 
 **Ranger:**
 
-The Ranger has an particular affinity with nature. Any wolf they tame or breed gains higher attack, health, and a gains natural armor. Any beneficial potion a Ranger drinks, confers the benefit to the wolves they have tamed/bred. They are also able to salvage arrows in the ground.
+The Ranger has an particular affinity with nature. Any wolf they tame or breed gains higher attack, health, and gains natural armor. Any beneficial potion a Ranger drinks, confers the benefit to the wolves they have tamed/bred.
+
+They also naturally channel energies around them, allowing to passively heal animals near them. This only applies to animals that will follow the Ranger naturally, or that the Ranger can ride.
+
+Rangers can salvage arrows in the ground when crouching, and can pierce multiple enemies with arrows.
