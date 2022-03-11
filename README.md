@@ -28,9 +28,9 @@ A potent user in healing magic, the Healer is able to heal allies, deal heavy da
 
 A warrior inside and out, the Knight has powerful attacks and a natural resistance to damage.
 
-Because they are skilled in physical combat, they are able to do more damage with melee weapons and attack faster. They also have knockback resistance, preventing them from being pushed around.
+Because they are skilled in physical combat, they are able to do more damage with melee weapons and attack faster. They also have natural knockback resistance, preventing them from being pushed around.
 
-Holding up a shield also protects your allies by giving them resistance against damage.
+Holding up a shield also protects your allies, within 10 blocks, by giving them resistance against damage.
 
 In addition, Illagers fear the noble Knight, and when they are raiding a village, they suffer from slowness and weakness when a Knight is near them. The Knight, enraged, gains strength and speed boosts when around raiding Illagers.
 
@@ -39,6 +39,6 @@ In addition, Illagers fear the noble Knight, and when they are raiding a village
 
 The Ranger has an particular affinity with nature. Any wolf they tame or breed gains higher attack, health, and gains natural armor. Any beneficial potion a Ranger drinks, confers the benefit to the wolves they have tamed/bred.
 
-They also naturally channel energies around them, allowing to passively heal animals near them. This only applies to animals that will follow the Ranger naturally, or that the Ranger can ride.
+They also channel natures energies around them, allowing them to passively heal nearby animals. This only applies to animals that will follow the Ranger naturally, or that the Ranger can ride.
 
 Rangers can salvage arrows in the ground when crouching, and can pierce multiple enemies with arrows.

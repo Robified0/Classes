@@ -12,3 +12,4 @@ execute if entity @s[tag=cl.r.satiate] run function classes:healer/spells/healin
 execute if entity @s[tag=cl.r.vitality] run function classes:healer/spells/buff/vitality/zprivate/launch
 execute if entity @s[tag=cl.r.bless] run function classes:healer/spells/buff/bless/zprivate/launch
 execute if entity @s[tag=cl.r.holystrike] run function classes:healer/spells/smiting/holystrike/zprivate/launch
+execute if entity @s[tag=cl.r.bolt] run function classes:healer/spells/smiting/bolt/zprivate/launch

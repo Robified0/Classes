@@ -5,7 +5,7 @@
 ## Tag raiders
 
 #Tag Vex separately, since it won't have RaidId
-tag @s[type=vex,predicate=!classes:entities/vexraider] add cl.t.
+tag @s[type=vex,predicate=!classes:entities/vexraider] add cl.t.Raider
 
 #If Illager has RaidId, it is raiding. Tag it and bag it.
 execute if data entity @s RaidId run tag @s add cl.t.Raider

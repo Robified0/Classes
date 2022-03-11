@@ -39,6 +39,7 @@ scoreboard objectives add cl.o.statx100 dummy
 scoreboard players set #cl.statx100 cl.o.statx100 100
 scoreboard objectives add cl.o.genAtkDmg dummy
 scoreboard objectives add cl.o.genAtkSpd dummy
+scoreboard objectives add cl.o.knockBack dummy
 scoreboard objectives add cl.o.maxHealth dummy
 scoreboard objectives add cl.o.health health {"text":"\u2764","color":"red"}
 scoreboard objectives setdisplay belowName cl.o.health
