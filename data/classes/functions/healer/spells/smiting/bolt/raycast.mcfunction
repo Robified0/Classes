@@ -1,6 +1,5 @@
 #Particle Effect
-particle end_rod ^0.4 ^0.2 ^0.3 0.1 0.1 0.1 0.005 1 force
-particle end_rod ^0.4 ^0.2 ^0.3 0 0 0 0.005 1 force
+particle end_rod ^0.4 ^0.2 ^0.3 0 0 0 0.05 1 force
 
 #Play sound effect - use here when needing repeat
 execute at @s run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 1 1.5
