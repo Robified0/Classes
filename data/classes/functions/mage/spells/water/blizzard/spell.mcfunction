@@ -33,3 +33,4 @@ scoreboard players set @s cl.e.Blizzard 10
 scoreboard players add @s cl.e.Blizzard.m 1
 scoreboard players remove @s[scores={cl.e.Blizzard.m=4}] cl.Mana 1
 scoreboard players set @s[scores={cl.e.Blizzard.m=4..}] cl.e.Blizzard.m 0
+scoreboard players set @s cl.ManaRegenSec 1

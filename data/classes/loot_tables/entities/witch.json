@@ -2,6 +2,21 @@
   "type": "minecraft:entity",
   "pools": [
     {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "classes:essences/items/all"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.1
+        }
+      ]
+    },
+    {
       "rolls": 1,
       "entries": [
         {
@@ -49,7 +64,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Mana Potion\",\"color\":\"light_purple\"}',Lore:['{\"text\":\"Fully restore your Mana.\",\"color\":\"green\",\"italic\":true}']},HideFlags:32,Enchantments:[{}],Potion:\"minecraft:thick\",CustomPotionColor:16777215}"
+              "tag": "{display:{Name:'{\"text\":\"Mana Potion (5/5)\",\"color\":\"light_purple\"}',Lore:['{\"text\":\"Fully restore your Mana.\",\"color\":\"green\",\"italic\":true}']},HideFlags:32,Enchantments:[{}],Potion:\"minecraft:thick\",CustomPotionColor:16777215,ManaPotion:1b,ManaPotionUses:5}"
             }
           ]
         }
@@ -57,7 +72,7 @@
       "conditions": [
         {
           "condition": "minecraft:random_chance",
-          "chance": 0.5
+          "chance": 1
         }
       ]
     },

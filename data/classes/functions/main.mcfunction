@@ -18,7 +18,7 @@ execute if entity @a[scores={cl.Class=1..},tag=!cl.o.ClassSelected] as @a[scores
 execute as @a[predicate=classes:checkplayer/spellcaster] run function classes:main/mana_system/main
 
 #Display Mana bar to players who have Mana score set (spellcasters only)
-execute as @a[gamemode=!creative,gamemode=!spectator,predicate=classes:checkplayer/spellcaster] run function classes:main/mana_system/mana
+execute as @a[predicate=classes:checkplayer/spellcaster] run function classes:main/mana_system/mana
 
 #XP Handling for spells/Essence Summon Handling
 execute if entity @e[type=item,nbt={Item:{tag:{cl.Custom:1b}}},tag=!cl.t.processed] as @e[type=item,nbt={Item:{tag:{cl.Custom:1b}}}] run function classes:main/loot_table/acacia_button/main

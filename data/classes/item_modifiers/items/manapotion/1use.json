@@ -1,0 +1,6 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{display:{Name:'[{\"text\":\"Mana Potion (1/5)\",\"color\":\"light_purple\"}]',Lore:['{\"text\":\"Fully recover your Mana\",\"color\":\"green\"}']},HideFlags:32,Enchantments:[{}],Potion:\"minecraft:thick\",CustomPotionColor:16777215,ManaPotion:1b,ManaPotionUses:1}"
+  }
+]

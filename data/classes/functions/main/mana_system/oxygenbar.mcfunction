@@ -1,0 +1,12 @@
+#Handle Oxygen Bar
+bossbar set minecraft:air0 players @s[scores={cl.Swimming=..0}]
+bossbar set minecraft:air1 players @s[scores={cl.Swimming=1..29}]
+bossbar set minecraft:air2 players @s[scores={cl.Swimming=30..59}]
+bossbar set minecraft:air3 players @s[scores={cl.Swimming=60..89}]
+bossbar set minecraft:air4 players @s[scores={cl.Swimming=90..119}]
+bossbar set minecraft:air5 players @s[scores={cl.Swimming=120..149}]
+bossbar set minecraft:air6 players @s[scores={cl.Swimming=150..179}]
+bossbar set minecraft:air7 players @s[scores={cl.Swimming=180..209}]
+bossbar set minecraft:air8 players @s[scores={cl.Swimming=210..239}]
+bossbar set minecraft:air9 players @s[scores={cl.Swimming=240..269}]
+bossbar set minecraft:air10 players @s[scores={cl.Swimming=270..299}]

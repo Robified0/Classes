@@ -36,5 +36,8 @@ execute as @e[type=#classes:illagers,tag=!cl.t.Raider,tag=!cl.t.NotRaider] run f
 #Handle Knight bonuses for Raids
 execute as @a[scores={cl.Class=1}] at @s if entity @e[type=#classes:illagers,tag=cl.t.Raider,distance=..10] run function classes:knight/system/raid/main
 
+#Mana Potion Use Check
+execute as @a run function classes:items/manapotion/checkuse
+
 #Reset score
 scoreboard players set #cl.t.20Tick cl.t.Tick 0

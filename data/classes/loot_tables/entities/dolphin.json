@@ -6,6 +6,21 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
+          "name": "classes:essences/items/water"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.02
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
           "name": "minecraft:entities/dolphin"
         }
       ]

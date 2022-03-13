@@ -6,6 +6,27 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
+          "weight": 5,
+          "name": "classes:essences/items/holy"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 5,
+          "name": "classes:essences/items/earth"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.05
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
           "name": "minecraft:entities/trader_llama"
         }
       ]

@@ -9,7 +9,7 @@ execute at @s run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~
 execute positioned ~ ~-0.5 ~ as @a[distance=..1.3,tag=!cl.r.this] at @s run function classes:healer/spells/healing/heal/effects/player
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!cl.r.this,type=#classes:passive,predicate=classes:entities/angry,tag=!cl.t.summoned,tag=!cl.t.Owned] at @s run function classes:healer/spells/healing/heal/effects/mob
 execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!cl.r.this,type=#classes:passive,tag=cl.t.Owned] at @s run function classes:healer/spells/healing/heal/effects/mob
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!cl.r.this,type=#classes:undead,tag=!cl.t.summoned,tag=!cl.t.Owned] run function classes:healer/spells/healing/heal/effects/undead
+execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!cl.r.this,type=#classes:undead,tag=!cl.t.summoned,tag=!cl.t.Owned] at @s run function classes:healer/spells/healing/heal/effects/undead
 
 
 #Only change filepaths for spell

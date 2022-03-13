@@ -6,6 +6,32 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "classes:essences/items/holy"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 4,
+          "name": "classes:essences/items/earth"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 5,
+          "name": "classes:essences/items/fire"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.5
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
           "name": "classes:essences/allhealer"
         }
       ],

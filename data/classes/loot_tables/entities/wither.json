@@ -2,6 +2,21 @@
   "type": "minecraft:entity",
   "pools": [
     {
+      "rolls": 20,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "classes:essences/items/all"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 1
+        }
+      ]
+    },
+    {
       "rolls": 1,
       "entries": [
         {

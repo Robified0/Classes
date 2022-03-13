@@ -2,6 +2,27 @@
   "type": "minecraft:entity",
   "pools": [
     {
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "minecraft:loot_table",
+      "weight": 3,
+      "name": "classes:essences/items/holy"
+    },
+    {
+      "type": "minecraft:loot_table",
+      "weight": 3,
+      "name": "classes:essences/items/earth"
+    }
+  ],
+  "conditions": [
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.02
+    }
+  ]
+},
+    {
       "rolls": 1,
       "entries": [
         {
