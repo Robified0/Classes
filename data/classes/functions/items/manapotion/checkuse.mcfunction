@@ -15,6 +15,6 @@ execute if entity @s[nbt={Inventory:[{id:"minecraft:potion",Slot:-106b,tag:{Mana
 execute if entity @s[nbt={Inventory:[{id:"minecraft:potion",Slot:-106b,tag:{ManaPotion:1b,ManaPotionUses:4}}]}] run scoreboard players set @s cl.i.ManaPtnUseOff 4
 execute if entity @s[nbt={Inventory:[{id:"minecraft:potion",Slot:-106b,tag:{ManaPotion:1b,ManaPotionUses:5}}]}] run scoreboard players set @s cl.i.ManaPtnUseOff 5
 
-#Reset scores if not set
+#Reset scores if ManaPotion is not selected.
 execute if entity @s[nbt=!{SelectedItem:{id:"minecraft:potion",Count:1b,tag:{ManaPotion:1b}}}] run scoreboard players reset @s cl.i.ManaPtnUse
 execute if entity @s[nbt=!{Inventory:[{id:"minecraft:potion",Slot:-106b,tag:{ManaPotion:1b}}]}] run scoreboard players reset @s cl.i.ManaPtnUseOff
