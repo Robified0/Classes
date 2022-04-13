@@ -6,7 +6,7 @@ execute if entity @p[advancements={classes:mage/learnspell/water/waterbreath=fal
 execute if entity @p[advancements={classes:mage/learnspell/water/waterbreath=false},scores={cl.Class=3}] run kill @e[type=area_effect_cloud,tag=cl.ess.WaterBreath,sort=nearest,limit=1]
 
 #Display message if player already knows the spell
-execute as @p[advancements={classes:mage/learnspell/water/waterbreath=true},scores={cl.Class=3}] run function classes:main/mana_system/learnedspell
+execute as @p[advancements={classes:mage/learnspell/water/waterbreath=true},scores={cl.Class=3}] run function classes:main/essences/mage/water/waterbreath/known
 
 #Display message if player not Mage
 execute unless score @p cl.Class matches 3 as @p run function classes:main/mana_system/cantlearn

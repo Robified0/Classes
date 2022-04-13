@@ -5,7 +5,7 @@
 execute if entity @p[advancements={classes:mage/learnspell/magic/shield=false},scores={cl.Class=3}] run kill @s
 
 #Display message if player already knows the spell
-execute as @p[advancements={classes:mage/learnspell/magic/shield=true},scores={cl.Class=3}] run function classes:main/mana_system/learnedspell
+execute as @p[advancements={classes:mage/learnspell/magic/shield=true},scores={cl.Class=3}] run function classes:main/essences/mage/magic/shield/known
 
 #Display message if player not Mage
 execute unless score @p cl.Class matches 3 run function classes:main/mana_system/cantlearn
