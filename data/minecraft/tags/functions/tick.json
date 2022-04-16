@@ -7,7 +7,6 @@
 		"classes:healer/system/main",
 		"classes:ranger/main",
 		"classes:items/manapotion/main",
-		"classes:entities/custom/loopsummon",
 		"classes:end"
 	]
 }
