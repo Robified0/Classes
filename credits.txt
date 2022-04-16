@@ -9,7 +9,7 @@ SO much time from having to code it myself. And also to TimberForge (https://www
 so much! (Custom Block Models!)
 
 Third, is a huge thank you to the r/MinecraftCommands community for all the help they offer to others, which I ended up finding when doing searches
-on how to solve an issue.
+on how to solve all the issues I came across.
 
 Lastly, is a thank you to Mojang for making all of this possible. This size of this project just simply wouldn't be possible with the old command
 block system, or all of the systems they have added since. Their incredible hard work does not go unnoticed on that. And for creating this game.
