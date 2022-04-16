@@ -8,6 +8,7 @@ scoreboard players set @s cl.Cooldown 0
 #Give advancements
 advancement grant @s only classes:healer/root
 advancement grant @s only classes:healer/learnspell/healing/heal
+advancement grant @s only classes:healer/learnspell/smiting/bolt
 function classes:healer/stats/main
 
 ##Give Heal
