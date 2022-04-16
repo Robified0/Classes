@@ -2,7 +2,7 @@
 function classes:main/loot_table/main
 effect give @s minecraft:instant_health 1 0 true
 particle minecraft:end_rod ~ ~ ~ 0.2 0.2 0.2 0.05 5 normal
-function classes:entities/vanilla/
+function classes:entities/vanilla/angry
 
 #Playsound
 execute at @s run playsound minecraft:block.amethyst_cluster.step player @a ~ ~ ~ 1 2
