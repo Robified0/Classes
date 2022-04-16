@@ -1,27 +1,26 @@
 {
-    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
-    "display": {
-        "title": {
-            "text": "Become a Healer",
-            "color": "gold",
-            "bold": true
-        },
-        "description": {
-            "text": "Select Healer as your class!"
-        },
-        "icon": {
-            "item": "minecraft:warped_fungus_on_a_stick",
-            "nbt": "{CustomModelData:60000}"
-        },
-        "frame": "goal",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false,
-        "background": "minecraft:textures/block/lapis_block.png"
+  "display": {
+    "icon": {
+      "item": "minecraft:warped_fungus_on_a_stick",
+      "nbt": "{CustomModelData:60000}"
     },
-    "criteria": {
-        "mage": {
-            "trigger": "minecraft:impossible"
-        }
+    "title": {
+      "text": "Become a Healer",
+      "color": "gold",
+      "bold": true
+    },
+    "description": {
+      "text": "Select Healer as your class!"
+    },
+    "background": "minecraft:textures/block/lapis_block.png",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "mage": {
+      "trigger": "minecraft:impossible"
     }
+  }
 }

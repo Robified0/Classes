@@ -8,4 +8,4 @@ function classes:entities/vanilla/angry
 execute at @s run playsound minecraft:block.amethyst_cluster.step player @a ~ ~ ~ 1 2
 
 #Edit comment/uncomment if you want it to continue/end when it hits a target
-#execute at @s as @e[type=marker,tag=cl.r.bolt,sort=nearest,limit=1] run function classes:healer/spells/smiting/bolt/zprivate/end
+execute at @s as @e[type=marker,tag=cl.r.bolt,sort=nearest,limit=1] run function classes:healer/spells/smiting/bolt/zprivate/end

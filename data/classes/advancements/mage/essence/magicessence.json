@@ -1,35 +1,42 @@
 {
-    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
-    "display": {
-        "title": {
-            "text": "Obtain Magic Essence",
-            "color": "light_purple"
-        },
-        "description": {
-            "text": "Gain Magic Essence from killing a mob.",
-            "color": "white"
-        },
-        "icon": {
-            "item": "minecraft:structure_block",
-            "nbt": "{CustomModelData:100}"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": false,
-        "hidden": true
+  "display": {
+    "icon": {
+      "item": "minecraft:structure_block",
+      "nbt": "{CustomModelData:100}"
     },
-    "criteria": {
-        "Magic Essence": {
-            "trigger": "minecraft:inventory_changed",
-            "conditions": {
-                "items": [
-                    {
-                        "item": "minecraft:structure_block",
-                        "nbt": "{CustomModelData:100}"
-                    }
-                ]
+    "title": {
+      "text": "Obtain Magic Essence",
+      "color": "light_purple"
+    },
+    "description": {
+      "text": "Gain Magic Essence from killing a mob.",
+      "color": "white"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "classes:mage/root",
+  "criteria": {
+    "Magic Essence": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "cl.Class": 3
             }
-        }
-    },
-    "parent": "classes:mage/root"
+          }
+        ],
+        "items": [
+          {
+            "nbt": "{CustomModelData:100}"
+          }
+        ]
+      }
+    }
+  }
 }
