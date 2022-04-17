@@ -10,7 +10,7 @@
         },
         "icon": {
             "item": "minecraft:warped_fungus_on_a_stick",
-            "nbt": "{CustomModelData:60605}"
+            "nbt": "{CustomModelData:60606}"
         },
         "frame": "task",
         "show_toast": true,
@@ -18,9 +18,9 @@
         "hidden": true
     },
     "criteria": {
-        "MageArmor": {
+        "MagicMissile": {
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "classes:mage/learnspell/magic/magicmissile"
+    "parent": "classes:mage/essence/magicessence"
 }

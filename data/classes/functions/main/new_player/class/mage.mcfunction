@@ -8,17 +8,13 @@ scoreboard players set @s cl.Cooldown 0
 #Give advancements
 advancement grant @s only classes:mage/root
 advancement grant @s only classes:mage/learnspell/magic/magearmor
-advancement grant @s only classes:mage/learnspell/fire/torch
+advancement grant @s only classes:mage/learnspell/magic/magicmissile
 function classes:mage/stats/main
 
 ###Give base Mage spells
 
-##Give Torch
-#If setFire is on
-execute if score #cl.pref cl.p.setFire matches 1 run give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Torch","color":"dark_red"},{"text":" - ","color":"white","bold":false},{"text":"\\uE003 x 1","color":"aqua","bold":false,"italic":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}]','[{"text":"Element: ","color":"dark_aqua"},{"text":"Fire","color":"red"}]','{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Lights hit mobs on fire, and damages them.","color":"red"}','{"text":" "}','[{"text":""},{"text":"Other Effects:"}]','{"text":"Lights blocks on fire. Also lights Nether portals, candles, and campfires.","color":"red"}']},CustomModelData:60200,cl.s.Spell:1b,cl.s.Fire:1b,cl.s.Torch:1b}
-
-#If setFire is off
-execute if score #cl.pref cl.p.setFire matches 0 run give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Torch","color":"dark_red"},{"text":" - ","color":"white","bold":false},{"text":"\\uE003 x 1","color":"aqua","bold":false,"italic":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','[{"text":"Element: ","color":"dark_aqua"},{"text":"Fire","color":"red"}]','{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Lights hit mobs on fire, and damages them.","color":"red"}','{"text":" "}','[{"text":""},{"text":"Other Effects:"}]','{"text":"Lights Nether portals, candles, and campfires.","color":"red"}']},CustomModelData:60200,cl.s.Spell:1b,cl.s.Fire:1b,cl.s.Torch:1b}
+##Give Magic Missle
+give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Magic Missile","color":"light_purple"},{"text":" - ","color":"white","bold":false},{"text":"\\uE003 x 1","color":"aqua","bold":false,"italic":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','[{"text":"Element: ","color":"dark_aqua"},{"text":"Magic","color":"light_purple"}]','{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Deals non-elemental damage to mobs it hits.","color":"light_purple"}']},CustomModelData:60606,cl.s.Spell:1b,cl.s.Magic:1b,cl.s.MagicMissile:1b}
 
 ##Give Mage Armor
 give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Mage Armor","color":"light_purple"},{"text":" - ","color":"white","bold":false},{"text":"\\uE003 x 4","color":"aqua","bold":false,"italic":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','[{"text":"Element: ","color":"dark_aqua"},{"text":"Magic","color":"light_purple"}]','{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Grants the caster 4 Armor for 20 minutes.","color":"light_purple"}']},CustomModelData:60605,cl.s.Spell:1b,cl.s.Magic:1b,cl.s.MageArmor:1b}

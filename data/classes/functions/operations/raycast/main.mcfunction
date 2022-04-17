@@ -7,6 +7,7 @@ execute if entity @s[tag=cl.r.iceshard] run function classes:mage/spells/water/i
 execute if entity @s[tag=cl.r.poison] run function classes:mage/spells/earth/poison/zprivate/launch
 execute if entity @s[tag=cl.r.light] run function classes:mage/spells/magic/light/zprivate/launch
 execute if entity @s[tag=cl.r.teleport] run function classes:mage/spells/magic/teleport/zprivate/launch
+execute if entity @s[tag=cl.r.magicmissile] run function classes:mage/spells/magic/magicmissile/zprivate/launch
 execute if entity @s[tag=cl.r.heal] run function classes:healer/spells/healing/heal/zprivate/launch
 execute if entity @s[tag=cl.r.satiate] run function classes:healer/spells/healing/satiate/zprivate/launch
 execute if entity @s[tag=cl.r.vitality] run function classes:healer/spells/buff/vitality/zprivate/launch

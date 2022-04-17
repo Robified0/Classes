@@ -5,3 +5,4 @@ execute if entity @s[predicate=classes:checkspell/mage/magic/shield] run functio
 execute if entity @s[predicate=classes:checkspell/mage/magic/invisibility] run function classes:mage/spells/magic/invisibility/cast
 execute if entity @s[predicate=classes:checkspell/mage/magic/mend] run function classes:mage/spells/magic/mend/cast
 execute if entity @s[predicate=classes:checkspell/mage/magic/magearmor] run function classes:mage/spells/magic/magearmor/cast
+execute if entity @s[predicate=classes:checkspell/mage/magic/magicmissile] run function classes:mage/spells/magic/magicmissile/cast
