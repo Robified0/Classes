@@ -10,4 +10,4 @@ particle minecraft:small_flame ~ ~ ~ 0.5 0.5 0.5 0.01 30 normal
 execute as @s[predicate=classes:entities/angry] run function classes:entities/vanilla/angry
 
 #Edit tag/spellname and uncomment if you want it to end when it hits one target
-#execute as @e[type=marker,tag=cl.r.torch,sort=nearest,limit=1] run function classes:mage/spells/fire/torch/zprivate/end
+execute as @e[type=marker,tag=cl.r.torch,sort=nearest,limit=1] run function classes:mage/spells/fire/torch/zprivate/end

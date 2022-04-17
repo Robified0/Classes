@@ -9,3 +9,6 @@ execute if entity @s[type=#classes:fireproof,type=!#classes:undead] run effect g
 execute if entity @s[type=#classes:fireproof,type=#classes:undead] run effect give @s instant_health 1 1 true
 particle minecraft:falling_water ~ ~ ~ 1 1 1 10 30 normal
 execute if entity @s[predicate=classes:entities/angry] run function classes:entities/vanilla/angry
+
+#Edit tag/spellname and uncomment if you want it to end when it hits one target
+execute as @e[type=marker,tag=cl.r.waterstrike,sort=nearest,limit=1] run function classes:mage/spells/water/waterstrike/zprivate/end
