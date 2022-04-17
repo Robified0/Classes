@@ -5,7 +5,7 @@
 execute if entity @p[advancements={classes:healer/learnspell/healing/mending=false},scores={cl.Class=4}] run kill @s
 
 #Display message if player already knows the spell
-execute as @p[advancements={classes:healer/learnspell/healing/mending=true},scores={cl.Class=4}] run function classes:main/mana_system/learnedspell
+execute as @p[advancements={classes:healer/learnspell/healing/mending=true},scores={cl.Class=4}] run function classes:main/essences/healer/healing/mending/known
 
 #Display message if player not healer
 execute unless score @p cl.Class matches 4 as @p run function classes:main/mana_system/cantlearn
