@@ -55,6 +55,9 @@ execute unless score @p[scores={cl.Class=3},distance=..2] cl.item.research.iron_
 # Lapis Block
 execute unless score @p[scores={cl.Class=3},distance=..2] cl.item.research.lapis_block matches 1 if block ~ ~ ~ dropper{Items:[{id:"minecraft:lapis_block",Count:1b},{id:"minecraft:writable_book",Count:1b}]} run function classes:blocks/magictable/research/mage/items/lapis_block
 
+# Lapis Lazuli
+execute unless score @p[scores={cl.Class=3},distance=..2] cl.item.research.lapis_lazuli matches 1 if block ~ ~ ~ dropper{Items:[{id:"minecraft:lapis_lazuli",Count:1b},{id:"minecraft:writable_book",Count:1b}]} run function classes:blocks/magictable/research/mage/items/lapis_lazuli
+
 # Magma Cream
 execute unless score @p[scores={cl.Class=3},distance=..2] cl.item.research.magma_cream matches 1 if block ~ ~ ~ dropper{Items:[{id:"minecraft:magma_cream",Count:1b},{id:"minecraft:writable_book",Count:1b}]} run function classes:blocks/magictable/research/mage/items/magma_cream
 
