@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:110,cl.SpiritEssence:1b}"
+              "tag": "{display:{Name:'{\"text\":\"Spirit Essence\",\"color\":\"white\",\"italic\":true}'},HideFlags:127,CustomModelData:110,cl.SpiritEssence:1b,Enchantments:[{}]}"
             }
           ]
         }
