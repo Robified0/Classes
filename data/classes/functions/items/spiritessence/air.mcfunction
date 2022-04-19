@@ -1,6 +1,9 @@
 # Display Particles
 particle minecraft:cloud ~ ~ ~ 0.1 0.1 0.1 0.1 10
 
+# Play sound as it works
+execute if entity @s[scores={cl.item.spiritessence=..5}] run playsound minecraft:entity.horse.breathe player @a ~ ~ ~ 10 0.7
+
 # Play sound when it finishes
 execute if entity @s[scores={cl.item.spiritessence=5..}] run playsound minecraft:entity.horse.breathe player @a ~ ~ ~ 10 0.7
 

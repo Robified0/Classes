@@ -46,6 +46,7 @@ scoreboard objectives add cl.o.maxHealth dummy
 scoreboard objectives add cl.o.health health {"text":"\u2764","color":"red"}
 scoreboard objectives setdisplay belowName cl.o.health
 scoreboard objectives add cl.item.spiritessence dummy
+scoreboard objectives add cl.t.magic_essence dummy
 
 #Scoreboards for settings
 scoreboard objectives add cl.p.setFire dummy
@@ -120,7 +121,7 @@ scoreboard objectives add cl.item.research.sea_lantern dummy
 scoreboard objectives add cl.item.research.snow_block dummy
 scoreboard objectives add cl.item.research.sugar dummy
 scoreboard objectives add cl.item.research.water_essence dummy
-
+scoreboard objectives add cl.item.research.lapis_lazuli dummy
 
 #Shield Spell Objectives
 scoreboard objectives add cl.e.Shield dummy

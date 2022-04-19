@@ -5,9 +5,9 @@
     "equipment": {
       "mainhand": {
         "items": [
-          "minecraft:warped_fungus_on_a_stick"
+          "minecraft:structure_block"
         ],
-        "nbt": "{cl.i.SpiritEssence:1b}"
+        "nbt": "{cl.SpiritEssence:1b}"
       }
     }
   }

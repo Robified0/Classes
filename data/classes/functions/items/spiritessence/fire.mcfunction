@@ -1,5 +1,8 @@
 # Display Particles
-particle minecraft:small_flame ~ ~ ~ 0.1 0.1 0.1 0.1 10
+particle minecraft:small_flame ~ ~ ~ 0.2 0.2 0.2 0.02 100
+
+# Play sound as it works
+execute if entity @s[scores={cl.item.spiritessence=..5}] run playsound minecraft:block.fire.ambient player @a ~ ~ ~ 5 1
 
 # Play sound when it finishes
 execute if entity @s[scores={cl.item.spiritessence=5..}] run playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 1 0.5
