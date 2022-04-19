@@ -6,83 +6,13 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "weight": 1,
-          "name": "classes:essences/items/holy"
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 4,
-          "name": "classes:essences/items/earth"
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 5,
-          "name": "classes:essences/items/fire"
+          "name": "classes:essences/items/spiritessence"
         }
       ],
       "conditions": [
         {
           "condition": "minecraft:random_chance",
           "chance": 0.5
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "classes:essences/allhealer"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.2
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "weight": 2,
-          "name": "minecraft:acacia_button",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{cl.Custom:1b,cl.Essence:1b,cl.ess.Earth:1b,cl.ess.DiamondFlesh:1b}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 4,
-          "name": "minecraft:acacia_button",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{cl.Custom:1b,cl.Essence:1b,cl.ess.Earth:1b,cl.ess.GoldFlesh:1b}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 14,
-          "name": "minecraft:acacia_button",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{cl.Custom:1b,cl.Essence:1b,cl.ess.Earth:1b,cl.ess.IronFlesh:1b}"
-            }
-          ]
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.2
         }
       ]
     },

@@ -1,0 +1,2 @@
+#Wand
+execute if block ~ ~ ~ dropper{Items:[{Count:1b,Slot:2b,id:"minecraft:amethyst_shard"},{Count:1b,Slot:4b,id:"minecraft:stick"},{Count:1b,Slot:6b,id:"minecraft:stick"}]} unless data block ~ ~ ~ {Items:[{Slot:0b}]} unless data block ~ ~ ~ {Items:[{Slot:1b}]} unless data block ~ ~ ~ {Items:[{Slot:3b}]} unless data block ~ ~ ~ {Items:[{Slot:5b}]} unless data block ~ ~ ~ {Items:[{Slot:7b}]} unless data block ~ ~ ~ {Items:[{Slot:8b}]} run function classes:blocks/magictable/recipes/items/wands/starterwand

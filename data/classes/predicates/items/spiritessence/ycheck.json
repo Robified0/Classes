@@ -1,0 +1,16 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:item",
+    "nbt": "{OnGround:1b}",
+    "location": {
+      "position": {
+        "y": {
+          "min": 192,
+          "max": 350
+        }
+      }
+    }
+  }
+}

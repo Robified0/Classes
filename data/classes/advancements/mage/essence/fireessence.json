@@ -9,14 +9,14 @@
       "color": "red"
     },
     "description": {
-      "text": "Gain Fire Essence from killing a mob."
+      "text": "Throw Spirit Essence into lava, to have it turn into Fire Essence."
     },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": false,
-    "hidden": true
+    "hidden": false
   },
-  "parent": "classes:mage/root",
+  "parent": "classes:mage/researchlapis",
   "criteria": {
     "Fire Essence": {
       "trigger": "minecraft:inventory_changed",

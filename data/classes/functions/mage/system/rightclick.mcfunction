@@ -12,3 +12,6 @@ execute if entity @s[scores={cl.Mage.Armor=0},predicate=classes:checkspell/mage/
 
 #Generic Magic Spells
 execute if entity @s[scores={cl.Mage.Armor=0},predicate=classes:checkspell/mage/magicspell] run function classes:mage/system/castspell/magicspell
+
+#Magic Essence
+execute if entity @s[scores={cl.Mage.Armor=0},predicate=classes:checkspell/mage/magicessence] run function classes:mage/system/castspell/magicessence

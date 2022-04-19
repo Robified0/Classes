@@ -9,15 +9,15 @@
       "color": "light_purple"
     },
     "description": {
-      "text": "Gain Magic Essence from killing a mob.",
+      "text": "Hold Spirit Essence in your mainhand, and click-hold your staff to channel pure magic into it, turning it to Magic Essence.",
       "color": "white"
     },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": false,
-    "hidden": true
+    "hidden": false
   },
-  "parent": "classes:mage/root",
+  "parent": "classes:mage/researchlapis",
   "criteria": {
     "Magic Essence": {
       "trigger": "minecraft:inventory_changed",

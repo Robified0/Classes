@@ -16,7 +16,7 @@
     "announce_to_chat": false,
     "hidden": true
   },
-  "parent": "classes:healer/root",
+  "parent": "classes:healer/craft/magictable",
   "criteria": {
     "holyessence": {
       "trigger": "minecraft:inventory_changed",

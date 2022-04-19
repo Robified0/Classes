@@ -6,43 +6,13 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "classes:essences/items/all"
+          "name": "classes:essences/items/spiritessence"
         }
       ],
       "conditions": [
         {
           "condition": "minecraft:random_chance",
           "chance": 0.1
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "classes:essences/allhealer"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.05
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "classes:essences/all"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.05
         }
       ]
     },
@@ -64,7 +34,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Mana Potion\",\"color\":\"light_purple\"}',Lore:['{\"text\":\"Fully restore your Mana.\",\"color\":\"green\",\"italic\":true}']},HideFlags:32,Enchantments:[{}],Potion:\"minecraft:thick\",CustomPotionColor:16777215}"
+              "tag": "{display:{Name:'{\"text\":\"Mana Potion (5/5)\",\"color\":\"light_purple\"}',Lore:['{\"text\":\"Fully restore your Mana.\",\"color\":\"green\",\"italic\":true}']},HideFlags:32,Enchantments:[{}],Potion:\"minecraft:thick\",CustomPotionColor:16777215,ManaPotion:1b,ManaPotionUses:5}"
             }
           ]
         }
@@ -72,7 +42,7 @@
       "conditions": [
         {
           "condition": "minecraft:random_chance",
-          "chance": 0.5
+          "chance": 0.33
         }
       ]
     },

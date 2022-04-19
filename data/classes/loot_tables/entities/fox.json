@@ -6,18 +6,7 @@
   "entries": [
     {
       "type": "minecraft:loot_table",
-      "weight": 3,
-      "name": "classes:essences/items/holy"
-    },
-    {
-      "type": "minecraft:loot_table",
-      "weight": 3,
-      "name": "classes:essences/items/air"
-    },
-    {
-      "type": "minecraft:loot_table",
-      "weight": 3,
-      "name": "classes:essences/items/earth"
+      "name": "classes:essences/items/spiritessence"
     }
   ],
   "conditions": [

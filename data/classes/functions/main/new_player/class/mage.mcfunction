@@ -21,3 +21,8 @@ give @s warped_fungus_on_a_stick{display:{Name:'[{"text":"Mage Armor","color":"l
 
 ##Give wand
 give @s warped_fungus_on_a_stick{display:{Name:'{"text":"Starter Wand","color":"light_purple"}'},Unbreakable:1b,CustomModelData:60000,cl.s.Wand:1b}
+
+
+#Set scoreboards
+scoreboard players set cl.item.research.nautilus_shell 0
+scoreboard players set cl.item.research.glistering_melon 0

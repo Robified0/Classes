@@ -10,6 +10,9 @@
 #Handle Raycasts
 execute if entity @e[type=marker,tag=cl.r.slowcast] as @e[type=marker,tag=cl.r.slowcast] at @s run function classes:operations/raycast/main
 
+# Stop SpiritEssence from burning
+execute as @e[type=item,tag=!cl.t.processed,predicate=classes:items/spiritessence/invulnerablecheck] run data merge entity @s {Invulnerable:1b}
+
 #Function for all new players, to ensure scoreboards are set up
 execute if entity @a[tag=!cl.o.Joined] as @a[tag=!cl.o.Joined] run function classes:main/new_player/main
 execute if entity @a[scores={cl.Class=1..},tag=!cl.o.ClassSelected] as @a[scores={cl.Class=1..},tag=!cl.o.ClassSelected] run function classes:main/new_player/classselected
@@ -21,7 +24,7 @@ execute as @a[predicate=classes:checkplayer/spellcaster] run function classes:ma
 execute as @a[predicate=classes:checkplayer/spellcaster] run function classes:main/mana_system/mana
 
 #XP Handling for spells/Essence Summon Handling
-execute if entity @e[type=item,nbt={Item:{tag:{cl.Custom:1b}}},tag=!cl.t.processed] as @e[type=item,nbt={Item:{tag:{cl.Custom:1b}}}] run function classes:main/loot_table/acacia_button/main
+execute if entity @e[type=item,tag=!cl.t.processed,nbt={Item:{tag:{cl.Custom:1b}}}] as @e[type=item,nbt={Item:{tag:{cl.Custom:1b}}}] run function classes:main/loot_table/acacia_button/main
 execute if entity @a[scores={cl.t.dropItem=1..}] as @e[type=item,nbt={Item:{tag:{cl.s.Spell:1b}}}] run function classes:operations/items/preventspelldrops
 
 #Check for arrows shot

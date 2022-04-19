@@ -6,22 +6,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "classes:essences/items/all"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 1
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "classes:essences/bosslevel"
+          "name": "classes:essences/items/spiritessence"
         }
       ],
       "conditions": [

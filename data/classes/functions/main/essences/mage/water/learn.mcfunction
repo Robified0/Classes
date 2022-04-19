@@ -1,9 +1,0 @@
-execute if entity @s[tag=cl.ess.Blizzard] run function classes:main/essences/mage/water/blizzard/learn
-execute if entity @s[tag=cl.ess.DeepFreeze] run function classes:main/essences/mage/water/deepfreeze/learn
-execute if entity @s[tag=cl.ess.DolpGrace] run function classes:main/essences/mage/water/dolpgrace/learn
-execute if entity @s[tag=cl.ess.Extinguish] run function classes:main/essences/mage/water/extinguish/learn
-execute if entity @s[tag=cl.ess.IceShard] run function classes:main/essences/mage/water/iceshard/learn
-execute if entity @s[tag=cl.ess.IceWalker] run function classes:main/essences/mage/water/icewalker/learn
-execute if entity @s[tag=cl.ess.SnowGolem] run function classes:main/essences/mage/water/snowgolem/learn
-execute if entity @s[tag=cl.ess.WaterBreath] run function classes:main/essences/mage/water/waterbreath/learn
-execute if entity @s[tag=cl.ess.WaterStrike] run function classes:main/essences/mage/water/waterstrike/learn

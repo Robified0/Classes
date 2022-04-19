@@ -6,66 +6,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "classes:essences/items/all"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.05
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "classes:essences/allhealer"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.02
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "weight": 10,
-          "name": "minecraft:acacia_button",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{cl.Custom:1b,cl.Essence:1b,cl.ess.Earth:1b,cl.ess.IronFlesh:1b}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 4,
-          "name": "minecraft:acacia_button",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{cl.Custom:1b,cl.Essence:1b,cl.ess.Earth:1b,cl.ess.GoldFlesh:1b}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:acacia_button",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{cl.Custom:1b,cl.Essence:1b,cl.ess.Earth:1b,cl.ess.DiamondFlesh:1b}"
-            }
-          ]
+          "name": "classes:essences/items/spiritessence"
         }
       ],
       "conditions": [

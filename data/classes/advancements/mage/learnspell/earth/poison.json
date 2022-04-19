@@ -22,5 +22,5 @@
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "classes:mage/essence/earthessence"
+    "parent": "classes:mage/essence/researchearthessence"
 }

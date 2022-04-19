@@ -9,14 +9,14 @@
       "color": "blue"
     },
     "description": {
-      "text": "Gain Water Essence from killing a mob."
+      "text": "Throw Spirit Essence into some water, to turn it into Water Essence."
     },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": false,
-    "hidden": true
+    "hidden": false
   },
-  "parent": "classes:mage/root",
+  "parent": "classes:mage/researchlapis",
   "criteria": {
     "Water Essence": {
       "trigger": "minecraft:inventory_changed",

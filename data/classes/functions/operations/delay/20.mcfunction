@@ -1,13 +1,16 @@
 ### Runs commands here once every second (20 ticks)
 
 #Run function when #cl.t.20Tick score hits 20 (operations/delay/main)
-execute as @e[type=marker,tag=cl.magicTable] at @s if data block ~ ~ ~ Items[0] run function classes:crafting/magictable/recipes/main
+execute as @e[type=marker,tag=cl.magicTable] at @s if entity @p[predicate=classes:checkplayer/spellcaster,distance=..3] if data block ~ ~ ~ Items[0] run function classes:blocks/magictable/recipes/main
 
 #Stat handling
 execute as @a[scores={cl.Class=1}] run function classes:knight/stats/main
 execute as @a[scores={cl.Class=2}] run function classes:ranger/stats/main
 execute as @a[scores={cl.Class=3}] run function classes:mage/stats/main
 execute as @a[scores={cl.Class=4}] run function classes:healer/stats/main
+
+#Run turning Spirit Essences into Elemental Essences login
+execute as @e[type=item,nbt={Item:{tag:{cl.SpiritEssence:1b}}}] at @s run function classes:items/spiritessence/main
 
 #Check for items
 execute as @e[type=item,tag=!cl.o.item.spell,tag=!cl.t.processed] run function classes:operations/items/tag
@@ -28,7 +31,7 @@ execute as @a[scores={cl.Class=2}] run function classes:ranger/stats/bow
 execute as @a[scores={cl.Class=1,cl.t.blocking=1..}] at @s run function classes:knight/system/blocking
 
 #Check if Knight is low on Health
-execute as @a[scores={cl.Class=1,cl.t.blocking=1..}] at @s run function classes:knight/system/blocking
+execute as @a[scores={cl.Class=1,cl.o.health=..6}] at @s run function classes:knight/system/lowhealth
 
 #Take Raiders for Knight ability
 execute as @e[type=#classes:illagers,tag=!cl.t.Raider,tag=!cl.t.NotRaider] run function classes:operations/entities/raiders/tag

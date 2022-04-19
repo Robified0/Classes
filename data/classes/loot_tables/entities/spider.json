@@ -6,102 +6,13 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "weight": 2,
-          "name": "classes:essences/items/holy"
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 8,
-          "name": "classes:essences/items/earth"
+          "name": "classes:essences/items/spiritessence"
         }
       ],
       "conditions": [
         {
           "condition": "minecraft:random_chance",
           "chance": 0.05
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "classes:essences/allhealer"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.02
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:acacia_button",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{cl.Custom:1b,cl.Essence:1b,cl.ess.Earth:1b,cl.ess.Poison:1b}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:acacia_button",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{cl.Custom:1b,cl.Essence:1b,cl.ess.Air:1b,cl.ess.TailWind:1b}"
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type": "minecraft:spider",
-                "effects": {
-                  "minecraft:speed": {}
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:acacia_button",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{cl.Custom:1b,cl.Essence:1b,cl.ess.Magic:1b,cl.ess.Invisibility:1b}"
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type": "minecraft:spider",
-                "effects": {
-                  "minecraft:invisibility": {}
-                }
-              }
-            }
-          ]
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.02
         }
       ]
     },

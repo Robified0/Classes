@@ -45,6 +45,7 @@ scoreboard objectives add cl.o.knockBack dummy
 scoreboard objectives add cl.o.maxHealth dummy
 scoreboard objectives add cl.o.health health {"text":"\u2764","color":"red"}
 scoreboard objectives setdisplay belowName cl.o.health
+scoreboard objectives add cl.item.spiritessence dummy
 
 #Scoreboards for settings
 scoreboard objectives add cl.p.setFire dummy
@@ -90,6 +91,36 @@ scoreboard players add dst_per cl.slowcast 0
 scoreboard objectives add cl.slo_id dummy
 scoreboard objectives add cl.slo_dst dummy
 scoreboard objectives add cl.slo_dst_per dummy
+
+#Set up Item Research tracking
+scoreboard objectives add cl.item.research.air_essence dummy
+scoreboard objectives add cl.item.research.carved_pumpkin dummy
+scoreboard objectives add cl.item.research.coal_block dummy
+scoreboard objectives add cl.item.research.diamond_block dummy
+scoreboard objectives add cl.item.research.earth_essence dummy
+scoreboard objectives add cl.item.research.end_crystal dummy
+scoreboard objectives add cl.item.research.ender_eye dummy
+scoreboard objectives add cl.item.research.fire_charge dummy
+scoreboard objectives add cl.item.research.fire_essence dummy
+scoreboard objectives add cl.item.research.glistering_melon dummy
+scoreboard objectives add cl.item.research.glowstone dummy
+scoreboard objectives add cl.item.research.gold_block dummy
+scoreboard objectives add cl.item.research.golden_carrot dummy
+scoreboard objectives add cl.item.research.ice dummy
+scoreboard objectives add cl.item.research.iron_block dummy
+scoreboard objectives add cl.item.research.lapis_block dummy
+scoreboard objectives add cl.item.research.magic_essence dummy
+scoreboard objectives add cl.item.research.magma_cream dummy
+scoreboard objectives add cl.item.research.nautilus_shell dummy
+scoreboard objectives add cl.item.research.nether_star dummy
+scoreboard objectives add cl.item.research.packed_ice dummy
+scoreboard objectives add cl.item.research.phantom_membrane dummy
+scoreboard objectives add cl.item.research.rabbit_foot dummy
+scoreboard objectives add cl.item.research.sea_lantern dummy
+scoreboard objectives add cl.item.research.snow_block dummy
+scoreboard objectives add cl.item.research.sugar dummy
+scoreboard objectives add cl.item.research.water_essence dummy
+
 
 #Shield Spell Objectives
 scoreboard objectives add cl.e.Shield dummy

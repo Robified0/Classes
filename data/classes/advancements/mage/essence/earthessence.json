@@ -9,14 +9,14 @@
       "color": "dark_green"
     },
     "description": {
-      "text": "Gain Earth Essence from killing a mob."
+      "text": "Throw Spirit Essence on a piece of farmland that has a fully grown crop, to turn it to Earth Essence."
     },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": false,
-    "hidden": true
+    "hidden": false
   },
-  "parent": "classes:mage/root",
+  "parent": "classes:mage/researchlapis",
   "criteria": {
     "Earth Essence": {
       "trigger": "minecraft:inventory_changed",

@@ -6,77 +6,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "classes:essences/items/water"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 1
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "classes:essences/allhealer"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.1
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "weight": 10,
-          "name": "minecraft:acacia_button",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{cl.Custom:1b,cl.Essence:1b,cl.ess.Water:1b,cl.ess.WaterStrike:1b}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:acacia_button",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{cl.Custom:1b,cl.Essence:1b,cl.ess.Water:1b,cl.ess.Blizzard:1b}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 8,
-          "name": "minecraft:acacia_button",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{cl.Custom:1b,cl.Essence:1b,cl.ess.Water:1b,cl.ess.DolpGrace:1b}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 5,
-          "name": "minecraft:acacia_button",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{cl.Custom:1b,cl.Essence:1b,cl.ess.Water:1b,cl.ess.WaterBreath:1b}"
-            }
-          ]
+          "name": "classes:essences/items/spiritessence"
         }
       ],
       "conditions": [

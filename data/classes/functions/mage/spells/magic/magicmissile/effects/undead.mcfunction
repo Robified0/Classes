@@ -1,7 +1,7 @@
 #Do these things when spell hits
 function classes:main/loot_table/main
 effect give @s minecraft:instant_health 1 0 true
-particle minecraft:end_rod ~ ~ ~ 0.2 0.2 0.2 0.05 5 normal
+particle minecraft:firework ~ ~ ~ 0.1 0.1 0.1 0.1 30 force
 function classes:entities/vanilla/angry
 
 #Playsound

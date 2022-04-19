@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:structure_block",
+      "nbt": "{CustomModelData:102}"
+    },
+    "title": {
+      "text": "Research Water Essence",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Lapis Lazuli is infused with magical energy, and forms the basis of many spells.\n\nBe sure to study it by placing it in a Magic Table with a Book & Quill."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "classes:mage/magictable",
+  "criteria": {
+    "researchwateressence": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:structure_block",
+      "nbt": "{CustomModelData:100}"
+    },
+    "title": {
+      "text": "Research Magic Essence",
+      "color": "light_purple"
+    },
+    "description": {
+      "text": "Study Magic Essence on the Magic Table using a book and quill."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "classes:mage/essence/researchmagicessence",
+  "criteria": {
+    "researchmagicessence": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

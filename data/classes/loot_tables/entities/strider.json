@@ -6,13 +6,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "weight": 2,
-          "name": "classes:essences/items/holy"
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 8,
-          "name": "classes:essences/items/fire"
+          "name": "classes:essences/items/spiritessence"
         }
       ],
       "conditions": [
@@ -36,6 +30,7 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "weight": 1,
           "name": "minecraft:acacia_button",
           "functions": [
             {
@@ -46,6 +41,7 @@
         },
         {
           "type": "minecraft:item",
+          "weight": 1,
           "name": "minecraft:acacia_button",
           "functions": [
             {

@@ -1,0 +1,21 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:item",
+        "nbt": "{Item:{tag:{Fire:1b}}}"
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:item",
+        "nbt": "{Item:{tag:{cl.SpiritEssence:1b}}}"
+      }
+    }
+  ]
+}

@@ -7,88 +7,13 @@
         {
           "type": "minecraft:loot_table",
           "weight": 3,
-          "name": "classes:essences/items/holy"
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 7,
-          "name": "classes:essences/items/fire"
+          "name": "classes:essences/items/spiritessence"
         }
       ],
       "conditions": [
         {
           "condition": "minecraft:random_chance",
           "chance": 0.05
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "classes:essences/allhealer"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.02
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:acacia_button",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{cl.Custom:1b,cl.Essence:1b,cl.ess.Fire:1b,cl.ess.FlameBurst:1b}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 4,
-          "name": "minecraft:acacia_button",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{cl.Custom:1b,cl.Essence:1b,cl.ess.Fire:1b,cl.ess.FireShield:1b}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:acacia_button",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{cl.Custom:1b,cl.Essence:1b,cl.ess.Fire:1b,cl.ess.BedofCoals:1b}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 6,
-          "name": "minecraft:acacia_button",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{cl.Custom:1b,cl.Essence:1b,cl.ess.Fire:1b,cl.ess.Torch:1b}"
-            }
-          ]
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.02
         }
       ]
     },
