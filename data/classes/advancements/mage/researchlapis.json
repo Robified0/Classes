@@ -1,11 +1,10 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:structure_block",
-      "nbt": "{CustomModelData:102}"
+      "item": "minecraft:lapis_lazuli"
     },
     "title": {
-      "text": "Research Water Essence",
+      "text": "Research Lapis Lazuli",
       "color": "blue"
     },
     "description": {
@@ -16,7 +15,7 @@
     "announce_to_chat": false,
     "hidden": false
   },
-  "parent": "classes:mage/magictable",
+  "parent": "classes:mage/essence/spiritessence",
   "criteria": {
     "researchwateressence": {
       "trigger": "minecraft:impossible"

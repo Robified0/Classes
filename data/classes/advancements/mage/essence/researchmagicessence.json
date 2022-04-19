@@ -16,7 +16,7 @@
     "announce_to_chat": false,
     "hidden": false
   },
-  "parent": "classes:mage/essence/researchmagicessence",
+  "parent": "classes:mage/essence/magicessence",
   "criteria": {
     "researchmagicessence": {
       "trigger": "minecraft:impossible"

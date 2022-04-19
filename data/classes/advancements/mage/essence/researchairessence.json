@@ -16,7 +16,7 @@
     "announce_to_chat": false,
     "hidden": false
   },
-  "parent": "classes:mage/essence/researchairessence",
+  "parent": "classes:mage/essence/airessence",
   "criteria": {
     "researchwateressence": {
       "trigger": "minecraft:impossible"
