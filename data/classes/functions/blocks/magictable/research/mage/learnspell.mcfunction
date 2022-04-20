@@ -32,7 +32,7 @@ execute if entity @s[scores={cl.item.research.ice=1,cl.item.research.water_essen
 execute if entity @s[scores={cl.item.research.nautilus_shell=1,cl.item.research.water_essence=1,cl.item.research.lapis_lazuli=1}] run advancement grant @s only classes:mage/learnspell/water/waterbreath
 
 # Dolphins Grace
-execute if entity @s[scores={cl.item.research.sea_lantern=1,cl.item.research.water_essence=1,cl.item.research.lapis_lazuli=1}] run advancement grant @s only classes:mage/learnspell/water/sea_lantern
+execute if entity @s[scores={cl.item.research.sea_lantern=1,cl.item.research.water_essence=1,cl.item.research.lapis_lazuli=1}] run advancement grant @s only classes:mage/learnspell/water/dolpgrace
 
 # Levitate
 execute if entity @s[scores={cl.item.research.air_essence=1,cl.item.research.lapis_lazuli=1}] run advancement grant @s only classes:mage/learnspell/air/levitate
