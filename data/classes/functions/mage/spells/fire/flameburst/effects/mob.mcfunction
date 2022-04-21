@@ -4,7 +4,7 @@ data merge entity @s {Fire:100}
 execute as @s[type=creeper] run function classes:entities/vanilla/creeper/fire
 effect give @s[type=!#classes:undead] instant_damage 1 1 false
 effect give @s[type=#classes:undead] instant_health 1 1 false
-particle flame ~ ~ ~ 0.1 0.5 0.1 0.35 100 force
+particle flame ~ ~0.3 ~ 0.1 0.5 0.1 0.1 100 force
 
 #Make Mob Angry
 execute if entity @s[predicate=classes:entities/angry] run function classes:entities/vanilla/angry
