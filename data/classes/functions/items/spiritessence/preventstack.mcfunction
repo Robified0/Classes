@@ -9,6 +9,7 @@ execute if entity @s[scores={cl.item.spiritessence=5}] run data merge entity @s 
 execute if entity @s[scores={cl.item.spiritessence=6}] run data merge entity @s {Item:{tag:{cl.SpiritCount:3}}}
 execute if entity @s[scores={cl.item.spiritessence=7}] run data merge entity @s {Item:{tag:{cl.SpiritCount:4}}}
 execute if entity @s[scores={cl.item.spiritessence=8}] run data merge entity @s {Item:{tag:{cl.SpiritCount:5}}}
+execute if entity @s[scores={cl.item.spiritessence=8..}] run data remove entity @s Item.tag."cl.SpiritCount"
 
 #Allow player to pick it up after it's transformed.
-execute if entity @s[scores={cl.item.spiritessence=8}] run data merge entity @s {PickupDelay:10}
+execute if entity @s[scores={cl.item.spiritessence=8..}] run data merge entity @s {PickupDelay:10}

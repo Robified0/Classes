@@ -12,7 +12,6 @@ execute if entity @s[scores={cl.item.spiritessence=8..}] run playsound minecraft
 
 # Remove cl.SpiritEssence tag
 execute if entity @s[scores={cl.item.spiritessence=8..}] run data remove entity @s Item.tag."cl.SpiritEssence"
-execute if entity @s[scores={cl.item.spiritessence=8..}] run data remove entity @s Item.tag."cl.SpiritCount"
 
 # Merge appropriate info to it
 execute if entity @s[scores={cl.item.spiritessence=8..}] run data merge entity @s {Item:{tag:{CustomModelData:104,Earth:1b,display:{Name:'{"text":"Earth Essence","color":"green","italic":true}'}}}}
