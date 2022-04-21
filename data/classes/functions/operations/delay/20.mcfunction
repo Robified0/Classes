@@ -42,5 +42,8 @@ execute as @a[scores={cl.Class=1}] at @s if entity @e[type=#classes:illagers,tag
 #Mana Potion Use Check
 execute as @a run function classes:items/manapotion/checkuse
 
+#Remove score counting Magic Essence transform if they aren't holding spirit essence anymore.
+execute as @a[predicate=!classes:checkspell/mage/magicessence] run scoreboard players set @s cl.t.magic_essence 0
+
 #Reset score
 scoreboard players set #cl.t.20Tick cl.t.Tick 0
