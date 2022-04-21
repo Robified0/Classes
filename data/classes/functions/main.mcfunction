@@ -30,8 +30,5 @@ execute if entity @a[scores={cl.t.dropItem=1..}] as @e[type=item,nbt={Item:{tag:
 #Check for arrows shot
 execute as @a[scores={cl.t.usedBow=1..},predicate=classes:items/infinitybow] at @s run function classes:operations/items/infinitybow
 
-#Kill fireballs that have been deflected
-execute if entity @e[type=#classes:fireballs,tag=cl.t.newFireball] as @e[type=#classes:fireballs,tag=cl.t.newFireball] at @s run function classes:operations/motion/killfireball
-
 #Essences
 execute as @e[type=area_effect_cloud,tag=cl.EssenceMarker] run function classes:main/essences/main
