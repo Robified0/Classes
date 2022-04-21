@@ -53,6 +53,7 @@ scoreboard objectives add cl.pref.setFire dummy
 scoreboard objectives add cl.pref.wPortal dummy
 scoreboard objectives add cl.pref.wObsidian dummy
 scoreboard objectives add cl.pref.wExtFire dummy
+scoreboard objectives add cl.pref.creeperIgnite dummy
 execute unless score #cl.pref cl.pref.setFire matches 0..1 run scoreboard players set #cl.pref cl.pref.setFire 0
 execute unless score #cl.pref cl.pref.creeperIgnite matches 0..1 run scoreboard players set #cl.pref cl.pref.creeperIgnite 1
 execute unless score #cl.pref cl.pref.wPortal matches 0..1 run scoreboard players set #cl.pref cl.pref.wPortal 1

@@ -36,6 +36,7 @@ scoreboard objectives remove cl.pref.setFire
 scoreboard objectives remove cl.pref.wPortal
 scoreboard objectives remove cl.pref.wObsidian
 scoreboard objectives remove cl.pref.wExtFire
+scoreboard objectives remove cl.pref.creeperIgnite
 
 #Scoreboards for time based spells
 scoreboard objectives remove cl.summonCount
@@ -84,11 +85,8 @@ scoreboard objectives remove cl.slo_dst_per
 #Remove Custom mob spawning scoreboard.
 scoreboard objectives remove cl.customMob
 
-#Remove storage and tags
+#Remove tags
 function classes:uninstall/removetags
-
-#Tellraw - DO NOT REMOVE WITHOUT EXPRESS PERMISSION
-tellraw @a ["",{"text":"[Classes]","bold":true,"color":"dark_aqua","clickEvent":{"action":"open_url","value":"https://github.com/KingArvis/Classes"},"hoverEvent":{"action":"show_text","contents":{"text":"An RPG datapack! Click for more!","color":"dark_aqua"}}},{"text":" by","color":"white","clickEvent":{"action":"open_url","value":"https://github.com/KingArvis/Classes"},"hoverEvent":{"action":"show_text","contents":{"text":"An RPG datapack! Click for more!","color":"dark_aqua"}}},{"text":" Robified","color":"green","clickEvent":{"action":"open_url","value":"https://github.com/KingArvis/Classes"},"hoverEvent":{"action":"show_text","contents":{"text":"An RPG datapack! Click for more!","color":"dark_aqua"}}},{"text":" \u27a1","color":"aqua","hoverEvent":{"action":"show_text","contents":{"text":"An RPG datapack! Click for more!","color":"dark_aqua"}}},{"text":" Successfully removed!","color":"red","hoverEvent":{"action":"show_text","contents":{"text":"An RPG datapack! Click for more!","color":"dark_aqua"}}}]
 
 #Disable datapack
 datapack disable "file/Classes"
