@@ -5,7 +5,7 @@ particle minecraft:small_flame ~ ~ ~ 0.2 0.2 0.2 0.02 100
 function classes:items/spiritessence/preventstack
 
 # Play sound as it works
-execute if entity @s[scores={cl.item.spiritessence=..8}] run playsound minecraft:block.fire.ambient player @a ~ ~ ~ 5 1
+execute if entity @s[scores={cl.item.spiritessence=8..}] run playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 0.3 0.5
 
 # Play sound when it finishes
 execute if entity @s[scores={cl.item.spiritessence=8..}] run playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 1 0.5
