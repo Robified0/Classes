@@ -1,2 +1,2 @@
-scoreboard players set #cl.pref cl.p.wPortal 1
+scoreboard players set #cl.pref cl.pref.wPortal 1
 execute as @s run function classes:settings/main

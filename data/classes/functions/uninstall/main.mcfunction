@@ -32,10 +32,10 @@ scoreboard objectives remove cl.power_2
 scoreboard objectives remove cl.newFireball
 
 #Scoreboards for settings
-scoreboard objectives remove cl.p.setFire
-scoreboard objectives remove cl.p.wPortal
-scoreboard objectives remove cl.p.wObsidian
-scoreboard objectives remove cl.p.wExtFire
+scoreboard objectives remove cl.pref.setFire
+scoreboard objectives remove cl.pref.wPortal
+scoreboard objectives remove cl.pref.wObsidian
+scoreboard objectives remove cl.pref.wExtFire
 
 #Scoreboards for time based spells
 scoreboard objectives remove cl.summonCount

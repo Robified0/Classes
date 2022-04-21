@@ -11,25 +11,25 @@ execute if entity @s[scores={cl.Mana=2..},advancements={classes:mage/learnspell/
 
 #Modify item (for spell versioning)
 #Water Strike (only fire extinguish on)
-execute if score #cl.pref cl.p.wExtFire matches 1 if score #cl.pref cl.p.wPortal matches 0 if score #cl.pref cl.p.wObsidian matches 0 run item modify entity @s weapon.mainhand classes:mage/spells/water/waterstrike/onlyextinguish
+execute if score #cl.pref cl.pref.wExtFire matches 1 if score #cl.pref cl.pref.wPortal matches 0 if score #cl.pref cl.pref.wObsidian matches 0 run item modify entity @s weapon.mainhand classes:mage/spells/water/waterstrike/onlyextinguish
 
 #Water Strike (only breaking portals is on)
-execute if score #cl.pref cl.p.wExtFire matches 0 if score #cl.pref cl.p.wPortal matches 1 if score #cl.pref cl.p.wObsidian matches 0 run item modify entity @s weapon.mainhand classes:mage/spells/water/waterstrike/onlyportals
+execute if score #cl.pref cl.pref.wExtFire matches 0 if score #cl.pref cl.pref.wPortal matches 1 if score #cl.pref cl.pref.wObsidian matches 0 run item modify entity @s weapon.mainhand classes:mage/spells/water/waterstrike/onlyportals
 
 #Water Strike (only lava convert is on)
-execute if score #cl.pref cl.p.wExtFire matches 0 if score #cl.pref cl.p.wPortal matches 0 if score #cl.pref cl.p.wObsidian matches 1 run item modify entity @s weapon.mainhand classes:mage/spells/water/waterstrike/onlylava
+execute if score #cl.pref cl.pref.wExtFire matches 0 if score #cl.pref cl.pref.wPortal matches 0 if score #cl.pref cl.pref.wObsidian matches 1 run item modify entity @s weapon.mainhand classes:mage/spells/water/waterstrike/onlylava
 
 #Water Strike (fire extinguish and lava convert)
-execute if score #cl.pref cl.p.wExtFire matches 1 if score #cl.pref cl.p.wPortal matches 0 if score #cl.pref cl.p.wObsidian matches 1 run item modify entity @s weapon.mainhand classes:mage/spells/water/waterstrike/extandlava
+execute if score #cl.pref cl.pref.wExtFire matches 1 if score #cl.pref cl.pref.wPortal matches 0 if score #cl.pref cl.pref.wObsidian matches 1 run item modify entity @s weapon.mainhand classes:mage/spells/water/waterstrike/extandlava
 
 #Water Strike (fire extinguish and breaking portals)
-execute if score #cl.pref cl.p.wExtFire matches 1 if score #cl.pref cl.p.wPortal matches 1 if score #cl.pref cl.p.wObsidian matches 0 run item modify entity @s weapon.mainhand classes:mage/spells/water/waterstrike/extandportals
+execute if score #cl.pref cl.pref.wExtFire matches 1 if score #cl.pref cl.pref.wPortal matches 1 if score #cl.pref cl.pref.wObsidian matches 0 run item modify entity @s weapon.mainhand classes:mage/spells/water/waterstrike/extandportals
 
 #Water Strike (breaking portals and lava convert)
-execute if score #cl.pref cl.p.wExtFire matches 0 if score #cl.pref cl.p.wPortal matches 1 if score #cl.pref cl.p.wObsidian matches 1 run item modify entity @s weapon.mainhand classes:mage/spells/water/waterstrike/portalsandlava
+execute if score #cl.pref cl.pref.wExtFire matches 0 if score #cl.pref cl.pref.wPortal matches 1 if score #cl.pref cl.pref.wObsidian matches 1 run item modify entity @s weapon.mainhand classes:mage/spells/water/waterstrike/portalsandlava
 
 #Water Strike (fire extinguish, breaking portals, lava convert on)
-execute if score #cl.pref cl.p.wExtFire matches 1 if score #cl.pref cl.p.wPortal matches 1 if score #cl.pref cl.p.wObsidian matches 1 run item modify entity @s weapon.mainhand classes:mage/spells/water/waterstrike/extportlava
+execute if score #cl.pref cl.pref.wExtFire matches 1 if score #cl.pref cl.pref.wPortal matches 1 if score #cl.pref cl.pref.wObsidian matches 1 run item modify entity @s weapon.mainhand classes:mage/spells/water/waterstrike/extportlava
 
 #Water Strike (all pref off)
-execute if score #cl.pref cl.p.wExtFire matches 0 if score #cl.pref cl.p.wPortal matches 0 if score #cl.pref cl.p.wObsidian matches 0 run item modify entity @s weapon.mainhand classes:mage/spells/water/waterstrike/alloff
+execute if score #cl.pref cl.pref.wExtFire matches 0 if score #cl.pref cl.pref.wPortal matches 0 if score #cl.pref cl.pref.wObsidian matches 0 run item modify entity @s weapon.mainhand classes:mage/spells/water/waterstrike/alloff
