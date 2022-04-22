@@ -34,8 +34,8 @@ execute unless score @p[scores={cl.Class=3},distance=..2] cl.item.research.ender
 # Fire Charge
 execute unless score @p[scores={cl.Class=3},distance=..2] cl.item.research.fire_charge matches 1 if block ~ ~ ~ dropper{Items:[{id:"minecraft:fire_charge",Count:1b},{id:"minecraft:writable_book",Count:1b}]} run function classes:blocks/magictable/research/mage/items/fire_charge
 
-# Glistering Melon
-execute unless score @p[scores={cl.Class=3},distance=..2] cl.item.research.glistering_melon matches 1 if block ~ ~ ~ dropper{Items:[{id:"minecraft:glistering_melon",Count:1b},{id:"minecraft:writable_book",Count:1b}]} run function classes:blocks/magictable/research/mage/items/glistering_melon
+# Glistering Melon Slice
+execute unless score @p[scores={cl.Class=3},distance=..2] cl.item.research.glistering_melon_slice matches 1 if block ~ ~ ~ dropper{Items:[{id:"minecraft:glistering_melon_slice",Count:1b},{id:"minecraft:writable_book",Count:1b}]} run function classes:blocks/magictable/research/mage/items/glistering_melon_slice
 
 # Glowstone
 execute unless score @p[scores={cl.Class=3},distance=..2] cl.item.research.glowstone matches 1 if block ~ ~ ~ dropper{Items:[{id:"minecraft:glowstone",Count:1b},{id:"minecraft:writable_book",Count:1b}]} run function classes:blocks/magictable/research/mage/items/glowstone

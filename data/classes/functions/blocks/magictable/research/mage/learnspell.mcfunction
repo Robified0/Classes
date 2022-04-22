@@ -68,7 +68,7 @@ execute if entity @s[scores={cl.item.research.golden_carrot=1,cl.item.research.m
 execute if entity @s[scores={cl.item.research.glowstone=1,cl.item.research.magic_essence=1,cl.item.research.lapis_lazuli=1}] run advancement grant @s only classes:mage/learnspell/magic/light
 
 # Mend
-execute if entity @s[scores={cl.item.research.glistering_melon=1,cl.item.research.magic_essence=1,cl.item.research.lapis_lazuli=1}] run advancement grant @s only classes:mage/learnspell/magic/mend
+execute if entity @s[scores={cl.item.research.glistering_melon_slice=1,cl.item.research.magic_essence=1,cl.item.research.lapis_lazuli=1}] run advancement grant @s only classes:mage/learnspell/magic/mend
 
 # Shield
 execute if entity @s[scores={cl.item.research.end_crystal=1,cl.item.research.magic_essence=1,cl.item.research.lapis_lazuli=1}] run advancement grant @s only classes:mage/learnspell/magic/shield
