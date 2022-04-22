@@ -1,6 +1,7 @@
 {
   "values":[
 	"minecraft:player",
+  "minecraft:villager",
   "#classes:nonmob"
   ]
 }
