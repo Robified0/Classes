@@ -2,23 +2,23 @@
   "display": {
     "icon": {
       "item": "minecraft:structure_block",
-      "nbt": "{CustomModelData:105}"
+      "nbt": "{CustomModelData:110}"
     },
     "title": {
-      "text": "Obtain Holy Essence",
-      "color": "green"
+      "text": "Obtain Spirit Essence",
+      "color": "white"
     },
     "description": {
-      "text": "Obtain Holy Essence by killing a mob."
+      "text": "Spirit Essence makes up all living and dead things. It sometimes drops from the mobs you have slain."
     },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": false,
-    "hidden": true
+    "hidden": false
   },
-  "parent": "classes:healer/researchlapis",
+  "parent": "classes:healer/magictable",
   "criteria": {
-    "holyessence": {
+    "airessence": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "player": [
@@ -32,7 +32,7 @@
         ],
         "items": [
           {
-            "nbt": "{CustomModelData:105}"
+            "nbt": "{CustomModelData:110}"
           }
         ]
       }

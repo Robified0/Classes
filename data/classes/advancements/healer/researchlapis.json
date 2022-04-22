@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "title": {
+      "text": "Research Lapis Lazuli",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Lapis Lazuli is infused with magical energy, and forms the basis of many spells.\n\nBe sure to study it by placing it in a Magic Table with a Book & Quill."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "classes:healer/essence/spiritessence",
+  "criteria": {
+    "researchwateressence": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

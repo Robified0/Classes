@@ -8,7 +8,7 @@ title @p[scores={cl.Class=4},distance=..2] subtitle {"text":"You learned about H
 title @p[scores={cl.Class=4},distance=..2] title {"text":""}
 
 # Handle the scoreboard.
-scoreboard players set @p[scores={cl.Class=4},distance=..2] cl.item.research.magic_essence 1
+scoreboard players set @p[scores={cl.Class=4},distance=..2] cl.item.research.holy_essence 1
 
 #Give advancement
 advancement grant @p[scores={cl.Class=4},distance=..2] only classes:healer/essence/researchholyessence

@@ -1,24 +1,24 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:structure_block",
-      "nbt": "{CustomModelData:105}"
+      "item": "minecraft:warped_fungus_on_a_stick",
+      "nbt": "{CustomModelData:60000}"
     },
     "title": {
-      "text": "Obtain Holy Essence",
-      "color": "green"
+      "text": "Craft a backup wand.",
+      "color": "white"
     },
     "description": {
-      "text": "Obtain Holy Essence by killing a mob."
+      "text": "A basic wand for casting spells. Must be crafted in the Magic Table."
     },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": false,
-    "hidden": true
+    "hidden": false
   },
-  "parent": "classes:healer/researchlapis",
+  "parent": "classes:mage/magictable",
   "criteria": {
-    "holyessence": {
+    "starterwand": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "player": [
@@ -26,13 +26,13 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "cl.Class": 4
+              "cl.Class": 3
             }
           }
         ],
         "items": [
           {
-            "nbt": "{CustomModelData:105}"
+            "nbt": "{CustomModelData:60000}"
           }
         ]
       }

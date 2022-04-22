@@ -5,20 +5,20 @@
       "nbt": "{CustomModelData:103}"
     },
     "title": {
-      "text": "Research Air Essence",
-      "color": "yellow"
+      "text": "Research Holy Essence",
+      "color": "white"
     },
     "description": {
-      "text": "Study Air Essence on the Magic Table using a book and quill."
+      "text": "Study Holy Essence on the Magic Table using a book and quill."
     },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": false,
     "hidden": false
   },
-  "parent": "classes:mage/essence/airessence",
+  "parent": "classes:healer/essence/holyessence",
   "criteria": {
-    "researchairessence": {
+    "researchholyessence": {
       "trigger": "minecraft:impossible"
     }
   }
