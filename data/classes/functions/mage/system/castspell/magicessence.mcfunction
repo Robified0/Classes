@@ -15,7 +15,7 @@ execute if score @s cl.t.magic_essence matches 10 run playsound minecraft:block.
 execute if score @s cl.t.magic_essence matches 10 run clear @s minecraft:structure_block{CustomModelData:110} 1
 
 # Merge appropriate info to it
-execute if score @s cl.t.magic_essence matches 10 at @s run summon item ~ ~ ~ {Item:{id:"minecraft:structure_block",Count:1b,tag:{display:{Name:'{"text":"Magic Essence","color":"light_purple","italic":true}'},CustomModelData:100,Magic:1b}}}
+execute if score @s cl.t.magic_essence matches 10 at @s run summon item ~ ~ ~ {Item:{id:"minecraft:structure_block",Count:1b,tag:{display:{Name:'{"text":"Magic Essence","color":"light_purple","italic":true}'},HideFlags:127,CustomModelData:100,Magic:1b,Enchantments:[{}]}}}
 
 #Reset score
 execute if score @s cl.t.magic_essence matches 10.. run scoreboard players set @s cl.t.magic_essence 0
