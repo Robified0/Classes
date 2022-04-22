@@ -9,7 +9,7 @@
       "color": "dark_green"
     },
     "description": {
-      "text": "Throw Spirit Essence on a piece of farmland that has a fully grown crop, to turn it to Earth Essence."
+      "text": "Throw Spirit Essence on a piece of farmland that has a crop planted, to turn it to Earth Essence."
     },
     "frame": "task",
     "show_toast": true,

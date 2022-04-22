@@ -9,7 +9,7 @@
       "color": "yellow"
     },
     "description": {
-      "text": "Throw Spirit Essence on the ground when above the clouds. Within a few seconds, it will turn to Air Essence."
+      "text": "Throw Spirit Essence on the ground when above y 120. Within a few seconds, it will turn to Air Essence."
     },
     "frame": "task",
     "show_toast": true,
