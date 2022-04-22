@@ -8,7 +8,8 @@ playsound minecraft:block.amethyst_cluster.hit block @a ~ ~ ~ 1 0.5
 particle minecraft:witch ~ ~-1 ~ 1 1 1 1 10 force
 
 #Give player advancement
-advancement grant @p only classes:mage/magictable
+execute if score @p cl.Class matches 3 run advancement grant @p only classes:mage/magictable
+execute if score @p cl.Class matches 4 run advancement grant @p only classes:healer/magictable
 
 #For killing the item if it was run from the item drop
 kill @s
