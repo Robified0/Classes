@@ -25,6 +25,8 @@
   "minecraft:glow_lichen",
   "minecraft:moss_carpet",
   "minecraft:torch",
-  "minecraft:soul_torch"
+  "minecraft:soul_torch",
+  "minecraft:wall_torch",
+  "minecraft:soul_wall_torch"
   ]
 }
