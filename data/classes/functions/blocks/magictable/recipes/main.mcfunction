@@ -30,4 +30,4 @@ execute if data block ~ ~ ~ Items[{id:"minecraft:writable_book"}] at @s if entit
 ## Items ------------------------
 
 #Check for Wands
-execute as @e[type=marker,tag=cl.magicTable] at @s if data block ~ ~ ~ Items[{id:"minecraft:amethyst_shard"}] run function classes:blocks/magictable/check/items/wands
+execute as @e[type=marker,tag=cl.magicTable] at @s if data block ~ ~ ~ Items[{id:"minecraft:stick"}] run function classes:blocks/magictable/check/items/wands

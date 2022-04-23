@@ -2,3 +2,7 @@ data merge block ~ ~ ~ {Items:[{Slot:4b,id:"minecraft:warped_fungus_on_a_stick",
 
 #Playsound
 playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 0.2 1
+
+#Crafted the wand, give them the advancement
+execute if score @p cl.Class matches 3 run advancement grant @p only classes:mage/wands/starter
+execute if score @p cl.Class matches 4 run advancement grant @p only classes:healer/wands/starter
