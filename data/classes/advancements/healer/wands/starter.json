@@ -17,7 +17,7 @@
     "announce_to_chat": false,
     "hidden": false
   },
-  "parent": "classes:mage/magictable",
+  "parent": "classes:healer/magictable",
   "criteria": {
     "starterwand": {
       "trigger": "minecraft:inventory_changed",
@@ -27,7 +27,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "cl.Class": 3
+              "cl.Class": 4
             }
           }
         ],
