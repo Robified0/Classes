@@ -8,7 +8,7 @@ title @p[scores={cl.Class=4},distance=..2] subtitle {"text":"You learned about G
 title @p[scores={cl.Class=4},distance=..2] title {"text":""}
 
 # Handle the scoreboard.
-scoreboard players set @p[scores={cl.Class=4},distance=..2] cl.item.research.glistering_melon 1
+scoreboard players set @p[scores={cl.Class=4},distance=..2] cl.item.research.glistering_melon_slice 1
 
 #Run the learnspell function on all players who are Healers (for good measure)
 execute as @a[scores={cl.Class=4}] run function classes:blocks/magictable/research/healer/learnspell
