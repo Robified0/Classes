@@ -6,3 +6,6 @@ execute if entity @s[scores={cl.Healer.Armor=0},predicate=classes:checkspell/hea
 
 #Buff Spells
 execute if entity @s[scores={cl.Healer.Armor=0},predicate=classes:checkspell/healer/buffspell] run function classes:healer/system/castspell/buffspell
+
+#Holy Essence
+execute if entity @s[scores={cl.Healer.Armor=0},predicate=classes:checkspell/healer/holyessence] run function classes:healer/system/castspell/holyessence
