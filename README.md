@@ -4,9 +4,9 @@ A datapack for an RPG classes system in Minecraft.
 ## !! Important Note !!
 This datapack is under heavy construction, and only the framework is being developed at this time.
 
-It is only being developed under Minecraft 1.18+. Backporting will NOT happen, ever. A lot of the functions used are only available in current versions, and I'll continue to add more features as Mojang adds even more. When that happens, legacy versions will be unsupported.
+It is only being developed under Minecraft 1.18+. **Backporting will NOT happen, ever**. A lot of the functions used are only available in current versions, and I'll continue to add more features as Mojang adds even more. When that happens, *legacy versions will be unsupported*.
 
-**The current build is *playable*, but it's just the Mage, Healer, and Ranger at this time.
+**The current build is *playable*, but it's being *actively* worked on, so expect bugs.
 
 This is also my first foray into GitHub, so I'm using this as my chance to experiment and get used to the workflows!
 
