@@ -2,7 +2,7 @@
   "display": {
     "icon": {
       "item": "minecraft:structure_block",
-      "nbt": "{CustomModelData:103}"
+      "nbt": "{CustomModelData:105}"
     },
     "title": {
       "text": "Research Holy Essence",

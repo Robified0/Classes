@@ -9,12 +9,12 @@
       "color": "green"
     },
     "description": {
-      "text": "Obtain Holy Essence by killing a mob."
+      "text": "Hold Spirit Essence in your mainhand, and click-hold your staff to channel pure power into it, turning it to Holy Essence."
     },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": false,
-    "hidden": true
+    "hidden": false
   },
   "parent": "classes:healer/researchlapis",
   "criteria": {
