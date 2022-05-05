@@ -1,6 +1,7 @@
 [
   {
     "function": "minecraft:set_nbt",
+    "id": "minecraft:warped_fungus_on_a_stick",
     "tag": "{display:{Name:'[{\"text\":\"Bunny Hop\",\"color\":\"yellow\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"\uE003 x 2\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','[{\"text\":\"Element: \",\"color\":\"dark_aqua\"},{\"text\":\"Air\",\"color\":\"yellow\"}]','{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Grants the caster Jump Boost II for 45 seconds.\",\"color\":\"yellow\"}']},CustomModelData:60403,cl.s.Spell:1b,cl.s.Air:1b,cl.s.BunnyHop:1b}"
   }
 ]
