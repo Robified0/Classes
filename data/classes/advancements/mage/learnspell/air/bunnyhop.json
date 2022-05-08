@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "text": "Bunny Hop        ",
+            "text": "Bunny Hop",
             "color": "yellow"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE403\n\n\n\n\n\n\n\n",
+            "text": "Learn Bunny Hop",
             "color": "white"
         },
         "icon": {

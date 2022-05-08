@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "text": "Magic Missile      ",
+            "text": "Magic Missile",
             "color": "light_purple"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE606\n\n\n\n\n\n\n\n",
+            "text": "Learn Magic Missile",
             "color": "white"
         },
         "icon": {

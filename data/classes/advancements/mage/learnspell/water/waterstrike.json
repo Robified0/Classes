@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "text": "Water Strike     ",
+            "text": "Water Strike",
             "color": "blue"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE300\n\n\n\n\n\n\n\n",
+            "text": "Learn Water Strike",
             "color": "white"
         },
         "icon": {

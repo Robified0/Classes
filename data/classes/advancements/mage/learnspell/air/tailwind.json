@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "text": "Tail Wind        ",
+            "text": "Tail Wind",
             "color": "yellow"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE402\n\n\n\n\n\n\n\n",
+            "text": "Learn Tail Wind",
             "color": "white"
         },
         "icon": {

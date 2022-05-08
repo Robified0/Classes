@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "text": "Blizzard         ",
+            "text": "Blizzard",
             "color": "blue"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE308\n\n\n\n\n\n\n\n",
+            "text": "Learn Blizzard",
             "color": "white"
         },
         "icon": {

@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "text": "Mend             ",
+            "text": "Mend",
             "color": "light_purple"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE604\n\n\n\n\n\n\n\n",
+            "text": "Learn Mend",
             "color": "white"
         },
         "icon": {

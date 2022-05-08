@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "text": "Teleport         ",
+            "text": "Teleport",
             "color": "light_purple"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE601\n\n\n\n\n\n\n\n",
+            "text": "Learn Teleport",
             "color": "white"
         },
         "icon": {

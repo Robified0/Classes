@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "text": "Light            ",
+            "text": "Light",
             "color": "light_purple"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE600\n\n\n\n\n\n\n\n",
+            "text": "Learn Light",
             "color": "white"
         },
         "icon": {

@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "text": "Snow Golem       ",
+            "text": "Snow Golem",
             "color": "blue"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE303\n\n\n\n\n\n\n\n",
+            "text": "Learn Snow Golem",
             "color": "white"
         },
         "icon": {

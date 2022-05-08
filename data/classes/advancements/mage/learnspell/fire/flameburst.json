@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "text": "Flame Burst      ",
+            "text": "Flame Burst",
             "color": "red"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE202\n\n\n\n\n\n\n\n",
+            "text": "Learn Flame Burst",
             "color": "white"
         },
         "icon": {

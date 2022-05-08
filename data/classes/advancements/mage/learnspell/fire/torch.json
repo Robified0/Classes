@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "text": "Torch            ",
+            "text": "Torch",
             "color": "red"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE200\n\n\n\n\n\n\n\n",
+            "text": "Learn Torch",
             "color": "white"
         },
         "icon": {

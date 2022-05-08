@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "text": "Bed of Coals     ",
+            "text": "Bed of Coals",
             "color": "red"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE201\n\n\n\n\n\n\n\n",
+            "text": "Learn Bed of Coals",
             "color": "white"
         },
         "icon": {
