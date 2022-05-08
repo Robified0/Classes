@@ -27,4 +27,5 @@ execute if entity @s[scores={cl.spellMenu=0..}] run function classes:mage/system
 execute if entity @s[scores={cl.spellMenu=-4}] at @s run function classes:mage/system/spellequip/logic/restore/restore
 
 execute if score @s cl.spellMenu matches -4 run scoreboard players reset @s cl.spellMenu
+execute if score @s cl.spellMenu matches -2 run scoreboard players reset @s cl.spellMenu
 advancement revoke @s only classes:mage/newshit
