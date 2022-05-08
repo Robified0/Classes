@@ -12,13 +12,20 @@ scoreboard objectives add cl.power_0 dummy
 scoreboard objectives add cl.power_1 dummy
 scoreboard objectives add cl.power_2 dummy
 scoreboard objectives add cl.newFireball dummy
-
+scoreboard objectives add cl.slot.selected dummy
+scoreboard objectives add cl.spell.selected dummy
+scoreboard objectives add cl.wand.slot1 dummy
+scoreboard objectives add cl.wand.slot2 dummy
+scoreboard objectives add cl.wand.slot3 dummy
+scoreboard objectives add cl.wand.slot4 dummy
+scoreboard objectives add cl.wand.slot5 dummy
+scoreboard objectives add cl.detect.book dummy
 
 #Set up other scoreboards
 scoreboard objectives add cl.Class trigger
 scoreboard objectives add cl.spellMenu dummy
 scoreboard objectives add cl.EssenceSound dummy
-scoreboard objectives add cl.Sneaking minecraft.custom:minecraft.sneak_time
+scoreboard objectives add cl.track.sneak minecraft.custom:minecraft.sneak_time
 scoreboard objectives add cl.rightClick minecraft.used:minecraft.warped_fungus_on_a_stick
 scoreboard objectives add cl.Mana dummy
 scoreboard objectives add cl.ManaRegenSec dummy

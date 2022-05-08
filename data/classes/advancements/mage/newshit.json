@@ -24,6 +24,6 @@
     }
   },
   "rewards": {
-    "function": "classes:operations/spellequip/player/mage/detect"
+    "function": "classes:mage/system/spellequip/logic/detect"
   }
 }

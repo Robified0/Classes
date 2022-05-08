@@ -10,5 +10,5 @@ execute if entity @s[scores={cl.Mana=2..},advancements={classes:mage/learnspell/
 execute if entity @s[scores={cl.Mana=2..},advancements={classes:mage/learnspell/fire/torch=false}] run function classes:main/mana_system/mage/noknowledge
 
 #Modify item (for spell versioning)
-execute if score #cl.pref cl.pref.setFire matches 0 run item modify entity @s weapon.mainhand classes:mage/spells/fire/torch/noblock
-execute if score #cl.pref cl.pref.setFire matches 1 run item modify entity @s weapon.mainhand classes:mage/spells/fire/torch/lightblocks
+#execute if score #cl.pref cl.pref.setFire matches 0 run item modify entity @s weapon.mainhand classes:mage/spells/fire/torch/noblock
+#execute if score #cl.pref cl.pref.setFire matches 1 run item modify entity @s weapon.mainhand classes:mage/spells/fire/torch/lightblocks

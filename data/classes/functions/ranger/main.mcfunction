@@ -1,5 +1,5 @@
 #Arrow Pickup if Ranger is sneaking
-execute as @a[scores={cl.Class=2,cl.Sneaking=1..}] run function classes:ranger/system/arrowpickup
+execute as @a[scores={cl.Class=2,cl.track.sneak=1..}] run function classes:ranger/system/arrowpickup
 
 #Unlock custom recipes
 execute as @a[scores={cl.Class=2},tag=!cl.Ranger] run function classes:ranger/system/recipeunlock
