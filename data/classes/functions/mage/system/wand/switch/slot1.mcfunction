@@ -1,7 +1,7 @@
 execute as @s[scores={cl.wand.slot1=200}] run function classes:mage/spells/fire/torch/select
 execute as @s[scores={cl.wand.slot1=201}] run function classes:mage/spells/fire/bedofcoals/select
 execute as @s[scores={cl.wand.slot1=202}] run function classes:mage/spells/fire/flameburst/select
-execute as @s[scores={cl.wand.slot1=203}] run function classes:mage/spells/fire/fireshield/select
+execute as @s[scores={cl.wand.slot1=204}] run function classes:mage/spells/fire/fireshield/select
 execute as @s[scores={cl.wand.slot1=300}] run function classes:mage/spells/water/waterstrike/select
 execute as @s[scores={cl.wand.slot1=301}] run function classes:mage/spells/water/iceshard/select
 execute as @s[scores={cl.wand.slot1=302}] run function classes:mage/spells/water/deepfreeze/select
