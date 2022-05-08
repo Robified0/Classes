@@ -1,6 +1,0 @@
-[
-  {
-    "function": "minecraft:set_nbt",
-    "tag": "{display:{Name:'[{\"text\":\"Levitate\",\"color\":\"yellow\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"\uE003 x 1\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','[{\"text\":\"Element: \",\"color\":\"dark_aqua\"},{\"text\":\"Air\",\"color\":\"yellow\"}]','{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Lifts enemies into the air,\",\"color\":\"gold\"}','{\"text\":\" and drops them.\",\"color\":\"gold\"}','{\"text\":\" \"}','[{\"text\":\"\"},{\"text\":\"Self Cast:\"}]','{\"text\":\"Cast at the ground to lift\",\"color\":\"gold\"}','{\"text\":\" yourself up in the air.\",\"color\":\"gold\"}','{\"text\":\" Gives brief slow fall.\",\"color\":\"gold\"}']},CustomModelData:60400,cl.s.Spell:1b,cl.s.Air:1b,cl.s.Levitate:1b}"
-  }
-]

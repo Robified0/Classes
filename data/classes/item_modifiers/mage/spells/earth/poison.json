@@ -1,6 +1,0 @@
-[
-  {
-    "function": "minecraft:set_nbt",
-    "tag": "{display:{Name:'[{\"text\":\"Poison\",\"color\":\"green\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"\uE004 x 1\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','[{\"text\":\"Element: \",\"color\":\"dark_aqua\"},{\"text\":\"Earth\",\"color\":\"green\"}]','{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Inflicts hit mob with Poison for 15 seconds.\",\"color\":\"gold\"}']},CustomModelData:60500,cl.s.Spell:1b,cl.s.Earth:1b,cl.s.Poison:1b}"
-  }
-]
