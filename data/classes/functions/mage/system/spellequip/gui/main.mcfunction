@@ -1,4 +1,3 @@
-say set main
 #Set score for page
 scoreboard players set @s cl.spellMenu -1
 

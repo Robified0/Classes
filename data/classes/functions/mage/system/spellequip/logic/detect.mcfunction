@@ -28,4 +28,4 @@ execute if entity @s[scores={cl.spellMenu=-4}] at @s run function classes:mage/s
 
 execute if score @s cl.spellMenu matches -4 run scoreboard players reset @s cl.spellMenu
 execute if score @s cl.spellMenu matches -2 run scoreboard players reset @s cl.spellMenu
-advancement revoke @s only classes:mage/newshit
+advancement revoke @s only classes:mage/spellequip

@@ -1,4 +1,4 @@
-scoreboard players reset @s change
+scoreboard players reset @s cl.spell.equip.start
 clear @s
 
 execute positioned ~ -70 ~ run function classes:mage/system/spellequip/logic/restore/restoreinventory
