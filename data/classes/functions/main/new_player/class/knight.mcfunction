@@ -1,5 +1,9 @@
 ## Set up Knight stats
 
+#Get rid of Class selection book
+clear @s minecraft:written_book{cl.item.classselect:1b}
+
+
 function classes:knight/stats/main
 
 #Give basic equipment

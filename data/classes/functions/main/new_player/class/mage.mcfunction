@@ -1,5 +1,8 @@
 ##Execute as player who has just selected Mage. (main/new_player/setmana)
 
+#Get rid of Class selection book
+clear @s minecraft:written_book{cl.item.classselect:1b}
+
 #Set up Mana scoreboards
 scoreboard players set @s cl.ManaRegenSec 1
 scoreboard players set @s cl.Mana 20

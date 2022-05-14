@@ -1,5 +1,8 @@
 ## Set up Ranger stats
 
+#Get rid of Class selection book
+clear @s minecraft:written_book{cl.item.classselect:1b}
+
 function classes:ranger/stats/main
 
 ##Give Bow & Arrows
