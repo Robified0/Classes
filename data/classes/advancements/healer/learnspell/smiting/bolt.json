@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "text": "Bolt             ",
+            "text": "Bolt",
             "color": "green"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE902\n\n\n\n\n\n\n\n",
+            "text": "Learn Bolt",
             "color": "white"
         },
         "icon": {

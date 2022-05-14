@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "text": "Stop Undead      ",
+            "text": "Stop Undead",
             "color": "green"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE901\n\n\n\n\n\n\n\n",
+            "text": "Learn Stop Undead",
             "color": "white"
         },
         "icon": {

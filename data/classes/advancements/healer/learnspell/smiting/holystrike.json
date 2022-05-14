@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "text": "Holy Strike      ",
+            "text": "Holy Strike",
             "color": "green"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE900\n\n\n\n\n\n\n\n",
+            "text": "Learn Holy Strike",
             "color": "white"
         },
         "icon": {

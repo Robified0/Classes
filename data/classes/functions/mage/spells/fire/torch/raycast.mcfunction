@@ -1,6 +1,6 @@
 #Particle Effect
-particle small_flame ^0.4 ^0.2 ^0.3 0.25 0.25 0.25 0.005 2 force
-particle small_flame ^0.4 ^0.2 ^0.3 0 0 0 0.005 2 force
+particle small_flame ^-0.4 ^0.2 ^0.3 0.25 0.25 0.25 0.005 2 force
+particle small_flame ^-0.4 ^0.2 ^0.3 0 0 0 0.005 2 force
 
 #Play sound effect - use here when needing repeat
 #execute at @s run playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 0.08

@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "text": "Satiate          ",
+            "text": "Satiate",
             "color": "green"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE702\n\n\n\n\n\n\n\n",
+            "text": "Learn Satiate",
             "color": "white"
         },
         "icon": {

@@ -5,9 +5,9 @@
     "equipment": {
       "offhand": {
         "items": [
-          "minecraft:book"
+          "minecraft:structure_block"
         ],
-        "nbt": "{cl.item.spellbook:1b}"
+        "nbt": "{cl.SpiritEssence:1b}"
       }
     }
   }

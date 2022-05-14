@@ -1,6 +1,6 @@
 #Particle Effect
-particle composter ^0.4 ^0.2 ^0.3 0.3 0.3 0.3 1 3 force
-particle electric_spark ^0.4 ^0.2 ^0.3 0.3 0.3 0.3 0.1 1 force
+particle composter ^-0.4 ^0.2 ^0.3 0.3 0.3 0.3 1 3 force
+particle electric_spark ^-0.4 ^0.2 ^0.3 0.3 0.3 0.3 0.1 1 force
 
 #Play sound effect - use here when needing repeat
 execute at @s run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 2 1.5

@@ -1,5 +1,5 @@
 #Particle Effect
-particle dust 0.129 0.914 1.000 1 ^0.4 ^0.2 ^0.3 0.1 0.1 0.1 2 10 force
+particle dust 0.129 0.914 1.000 1 ^-0.4 ^0.2 ^0.3 0.1 0.1 0.1 2 10 force
 
 #Play sound effect - use here when needing repeat
 playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 0.1 2
