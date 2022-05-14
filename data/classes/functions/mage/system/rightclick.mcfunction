@@ -1,17 +1,17 @@
 #Fire Spells
-execute if entity @s[scores={cl.Mage.Armor=0,cl.spell.selected=200..299},nbt=!{SelectedItem:{id:"minecraft:book"}}] run function classes:mage/system/castspell/firespell
+execute if entity @s[scores={cl.Mage.Armor=0,cl.spell.selected=200..299},predicate=!classes:items/books/spellbook] run function classes:mage/system/castspell/firespell
 
 #Water Spells
-execute if entity @s[scores={cl.Mage.Armor=0,cl.spell.selected=300..399},nbt=!{SelectedItem:{id:"minecraft:book"}}] run function classes:mage/system/castspell/waterspell
+execute if entity @s[scores={cl.Mage.Armor=0,cl.spell.selected=300..399},predicate=!classes:items/books/spellbook] run function classes:mage/system/castspell/waterspell
 
 #Air Spells
-execute if entity @s[scores={cl.Mage.Armor=0,cl.spell.selected=400..499},nbt=!{SelectedItem:{id:"minecraft:book"}}] run function classes:mage/system/castspell/airspell
+execute if entity @s[scores={cl.Mage.Armor=0,cl.spell.selected=400..499},predicate=!classes:items/books/spellbook] run function classes:mage/system/castspell/airspell
 
 #Earth Spells
-execute if entity @s[scores={cl.Mage.Armor=0,cl.spell.selected=500..599},nbt=!{SelectedItem:{id:"minecraft:book"}}] run function classes:mage/system/castspell/earthspell
+execute if entity @s[scores={cl.Mage.Armor=0,cl.spell.selected=500..599},predicate=!classes:items/books/spellbook] run function classes:mage/system/castspell/earthspell
 
 #Generic Magic Spells
-execute if entity @s[scores={cl.Mage.Armor=0,cl.spell.selected=600..699},nbt=!{SelectedItem:{id:"minecraft:book"}}] run function classes:mage/system/castspell/magicspell
+execute if entity @s[scores={cl.Mage.Armor=0,cl.spell.selected=600..699},predicate=!classes:items/books/spellbook] run function classes:mage/system/castspell/magicspell
 
 #Magic Essence
 execute if entity @s[scores={cl.Mage.Armor=0},predicate=classes:checkspell/mage/magicessence,predicate=!classes:items/books/spellbook] run function classes:mage/system/castspell/magicessence

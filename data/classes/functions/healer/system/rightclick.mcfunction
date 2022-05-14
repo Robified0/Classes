@@ -1,11 +1,11 @@
 #Healing Spells
-execute if entity @s[scores={cl.Healer.Armor=0},predicate=classes:checkspell/healer/healingspell] run function classes:healer/system/castspell/healingspell
-
-#Smiting Spells
-execute if entity @s[scores={cl.Healer.Armor=0},predicate=classes:checkspell/healer/smitingspell] run function classes:healer/system/castspell/smitingspell
+execute if entity @s[scores={cl.Healer.Armor=0,cl.spell.selected=700..799},predicate=!classes:items/books/spellbook] run function classes:healer/system/castspell/healingspell
 
 #Buff Spells
-execute if entity @s[scores={cl.Healer.Armor=0},predicate=classes:checkspell/healer/buffspell] run function classes:healer/system/castspell/buffspell
+execute if entity @s[scores={cl.Healer.Armor=0,cl.spell.selected=800..899},predicate=!classes:items/books/spellbook] run function classes:healer/system/castspell/buffspell
+
+#Smiting Spells
+execute if entity @s[scores={cl.Healer.Armor=0,cl.spell.selected=900..999},predicate=!classes:items/books/spellbook] run function classes:healer/system/castspell/smitingspell
 
 #Holy Essence
 execute if entity @s[scores={cl.Healer.Armor=0},predicate=classes:checkspell/healer/holyessence] run function classes:healer/system/castspell/holyessence
