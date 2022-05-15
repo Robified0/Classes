@@ -1,8 +1,8 @@
 ##Set Buff Spells to inventory - only placing them if the spell has been learned, and isn't currently in their hotbar.
 #Bless
 item replace entity @s[advancements={classes:healer/learnspell/buff/bless=true}] inventory.0 with minecraft:warped_fungus_on_a_stick{display:{Name:'[{"text":"Bless","color":"green"},{"text":" - ","color":"white","bold":false},{"text":"\\uE003 x 2","color":"aqua","bold":false,"italic":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Gives 6 absorption hearts to the target for 10 minutes.","color":"green"}','{"text":" "}','[{"text":""},{"text":"Self Cast:"}]','{"text":"Cast at the ground to cast it on yourself.","color":"green"}']},CustomModelData:60805,cl.s.Spell:1b,cl.s.Buff:1b,cl.s.Bless:1b,cl.spell.number:805}
-execute if entity @s[advancements={classes:healer/learnspell/buff/bless=false}] run item replace entity @s inventory.0 with minecraft:air
-execute if entity @s[predicate=classes:spellselect/hotbarcheck/healer/buff/bless] run item replace entity @s inventory.0 with minecraft:air
+execute if entity @s[advancements={classes:healer/learnspell/buff/bless=false}] run item replace entity @s inventory.0 with minecraft:black_stained_glass_pane{cl.item.noDrop:1b}
+execute if entity @s[predicate=classes:spellselect/hotbarcheck/healer/buff/bless] run item replace entity @s inventory.0 with minecraft:black_stained_glass_pane{cl.item.noDrop:1b}
 
 #Fire Resist
 item replace entity @s[advancements={classes:healer/learnspell/buff/fireresist=true}] inventory.1 with minecraft:warped_fungus_on_a_stick{display:{Name:'[{"text":"Fire Resist","color":"green"},{"text":" - ","color":"white","bold":false},{"text":"\\uE003 x 3","color":"aqua","bold":false,"italic":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"All players within 5 blocks gain Fire Resistance for 5 minutes.","color":"green"}']},CustomModelData:60801,cl.s.Spell:1b,cl.s.Buff:1b,cl.s.FireResist:1b,cl.spell.number:801}
