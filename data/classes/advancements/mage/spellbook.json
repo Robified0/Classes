@@ -1,15 +1,15 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:warped_fungus_on_a_stick",
-      "nbt": "{CustomModelData:60000}"
+      "item": "minecraft:book",
+      "nbt": "{CustomModelData:99}"
     },
     "title": {
-      "text": "Craft a backup wand",
+      "text": "Create a spellbook",
       "color": "white"
     },
     "description": {
-      "text": "A basic wand for casting spells. Must be crafted in the Magic Table.\n\uE100\n\n\n\n\n\n\n\n\n",
+      "text": "Hold a single plain book in your offhand, and right-click with your wand.",
       "color": "white"
     },
     "frame": "task",
@@ -19,7 +19,7 @@
   },
   "parent": "classes:mage/magictable",
   "criteria": {
-    "starterwand": {
+    "spellbook": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "player": [
@@ -33,7 +33,10 @@
         ],
         "items": [
           {
-            "nbt": "{CustomModelData:60000}"
+            "items": [
+              "minecraft:book"
+            ],
+            "nbt": "{CustomModelData:99}"
           }
         ]
       }
