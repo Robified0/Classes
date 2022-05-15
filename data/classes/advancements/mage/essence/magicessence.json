@@ -9,7 +9,7 @@
       "color": "light_purple"
     },
     "description": {
-      "text": "Hold Spirit Essence in your mainhand, and click-hold your staff to channel pure magic into it, turning it to Magic Essence.",
+      "text": "Hold Spirit Essence in your offhand, and click-hold your staff to channel pure magic into it, turning it to Magic Essence.",
       "color": "white"
     },
     "frame": "task",

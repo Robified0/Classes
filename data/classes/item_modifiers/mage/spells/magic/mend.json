@@ -1,6 +1,0 @@
-[
-  {
-    "function": "minecraft:set_nbt",
-    "tag": "{display:{Name:'[{\"text\":\"Mend\",\"color\":\"light_purple\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"\uE003 x 1\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','[{\"text\":\"Element: \",\"color\":\"dark_aqua\"},{\"text\":\"Magic\",\"color\":\"light_purple\"}]','{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Heals caster for four hearts.\",\"color\":\"light_purple\"}']},CustomModelData:60604,cl.s.Spell:1b,cl.s.Magic:1b,cl.s.Mend:1b}"
-  }
-]

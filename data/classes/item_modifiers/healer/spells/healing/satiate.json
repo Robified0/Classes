@@ -1,6 +1,0 @@
-[
-  {
-    "function": "minecraft:set_nbt",
-    "tag": "{display:{Name:'[{\"text\":\"Satiate\",\"color\":\"green\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"\uE003 x 1\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"Restores 4 Hunger to the target.\",\"color\":\"green\"}','{\"text\":\" \"}','[{\"text\":\"\"},{\"text\":\"Self Cast:\"}]','{\"text\":\"Cast while looking at the ground.\",\"color\":\"green\"}']},CustomModelData:60702,cl.s.Spell:1b,cl.s.Healing:1b,cl.s.Satiate:1b}"
-  }
-]

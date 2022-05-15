@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "text": "Speed Boost      ",
+            "text": "Speed Boost",
             "color": "green"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE802\n\n\n\n\n\n\n\n",
+            "text": "Learn Speed Boost",
             "color": "white"
         },
         "icon": {

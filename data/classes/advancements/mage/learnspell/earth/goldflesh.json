@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "text": "Gold Flesh       ",
+            "text": "Gold Flesh",
             "color": "green"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE502\n\n\n\n\n\n\n\n",
+            "text": "Learn Gold Flesh",
             "color": "white"
         },
         "icon": {

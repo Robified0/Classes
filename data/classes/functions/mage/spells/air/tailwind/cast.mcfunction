@@ -8,6 +8,3 @@ execute if entity @s[scores={cl.Mana=4..},advancements={classes:mage/learnspell/
 
 #Punish for casting without knowing the spell
 execute if entity @s[scores={cl.Mana=4..},advancements={classes:mage/learnspell/air/tailwind=false}] run function classes:main/mana_system/mage/noknowledge
-
-#Modify item (for spell versioning)
-item modify entity @s weapon.mainhand classes:mage/spells/air/tailwind

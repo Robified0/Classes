@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "text": "Mage Armor       ",
+            "text": "Mage Armor",
             "color": "light_purple"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE605\n\n\n\n\n\n\n\n",
+            "text": "Learn Mage Armor",
             "color": "white"
         },
         "icon": {

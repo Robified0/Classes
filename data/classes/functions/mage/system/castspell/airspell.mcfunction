@@ -1,5 +1,5 @@
 #Air spells
-execute if entity @s[predicate=classes:checkspell/mage/air/levitate] run function classes:mage/spells/air/levitate/cast
-execute if entity @s[predicate=classes:checkspell/mage/air/slowfall] run function classes:mage/spells/air/slowfall/cast
-execute if entity @s[predicate=classes:checkspell/mage/air/tailwind] run function classes:mage/spells/air/tailwind/cast
-execute if entity @s[predicate=classes:checkspell/mage/air/bunnyhop] run function classes:mage/spells/air/bunnyhop/cast
+execute if entity @s[scores={cl.spell.selected=400}] run function classes:mage/spells/air/levitate/cast
+execute if entity @s[scores={cl.spell.selected=401}] run function classes:mage/spells/air/slowfall/cast
+execute if entity @s[scores={cl.spell.selected=402}] run function classes:mage/spells/air/tailwind/cast
+execute if entity @s[scores={cl.spell.selected=403}] run function classes:mage/spells/air/bunnyhop/cast

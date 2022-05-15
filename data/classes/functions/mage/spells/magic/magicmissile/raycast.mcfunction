@@ -1,5 +1,5 @@
 #Particle Effect
-particle firework ^0.4 ^0.2 ^0.3 0 0 0 0.05 1 force
+particle firework ^-0.4 ^0.2 ^0.3 0 0 0 0.05 1 force
 
 #Play sound effect - use here when needing repeat
 

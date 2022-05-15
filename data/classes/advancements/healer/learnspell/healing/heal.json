@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "text": "Heal             ",
+            "text": "Heal",
             "color": "green"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE700\n\n\n\n\n\n\n\n",
+            "text": "Learn Heal",
             "color": "white"
         },
         "icon": {

@@ -1,6 +1,0 @@
-[
-  {
-    "function": "minecraft:set_nbt",
-    "tag": "{display:{Name:'[{\"text\":\"Fire Resist\",\"color\":\"green\"},{\"text\":\" - \",\"color\":\"white\",\"bold\":false},{\"text\":\"\uE003 x 3\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}]',Lore:['{\"text\":\"------------------\",\"color\":\"dark_aqua\"}','{\"text\":\" \"}','{\"text\":\"Effect:\"}','{\"text\":\"All players within 5 blocks gain Fire Resistance for 5 minutes.\",\"color\":\"green\"}']},CustomModelData:60801,cl.s.Spell:1b,cl.s.Buff:1b,cl.s.FireResist:1b}"
-  }
-]

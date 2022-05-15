@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "text": "Mending          ",
+            "text": "Mending",
             "color": "green"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE704\n\n\n\n\n\n\n\n",
+            "text": "Learn Mending",
             "color": "white"
         },
         "icon": {

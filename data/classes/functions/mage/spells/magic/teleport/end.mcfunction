@@ -11,6 +11,8 @@ particle minecraft:flash ~ ~ ~ 1 1 1 0.1 10 force
 #Remove tag to target next player
 tag @s remove cl.t.Teleport
 
+execute at @s unless block ~ ~ ~ #classes:air run tp @s ~ ~1 ~
+
 #Reset
 scoreboard players reset @s cl.slo_id
 scoreboard players reset @s cl.s.Teleport.t

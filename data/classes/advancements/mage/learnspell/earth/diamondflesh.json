@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "text": "Diamond Flesh    ",
+            "text": "Diamond Flesh",
             "color": "green"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE503\n\n\n\n\n\n\n\n",
+            "text": "Learn Diamond Flesh",
             "color": "white"
         },
         "icon": {

@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "text": "Invisibility     ",
+            "text": "Invisibility",
             "color": "light_purple"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE603\n\n\n\n\n\n\n\n",
+            "text": "Learn Invisibility",
             "color": "white"
         },
         "icon": {

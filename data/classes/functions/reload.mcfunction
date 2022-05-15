@@ -12,12 +12,21 @@ scoreboard objectives add cl.power_0 dummy
 scoreboard objectives add cl.power_1 dummy
 scoreboard objectives add cl.power_2 dummy
 scoreboard objectives add cl.newFireball dummy
-
+scoreboard objectives add cl.slot.selected dummy
+scoreboard objectives add cl.spell.selected dummy
+scoreboard objectives add cl.wand.slot1 dummy
+scoreboard objectives add cl.wand.slot2 dummy
+scoreboard objectives add cl.wand.slot3 dummy
+scoreboard objectives add cl.wand.slot4 dummy
+scoreboard objectives add cl.wand.slot5 dummy
+scoreboard objectives add cl.detect.book dummy
+scoreboard objectives add cl.spell.equip.start dummy
 
 #Set up other scoreboards
 scoreboard objectives add cl.Class trigger
+scoreboard objectives add cl.spellMenu dummy
 scoreboard objectives add cl.EssenceSound dummy
-scoreboard objectives add cl.Sneaking minecraft.custom:minecraft.sneak_time
+scoreboard objectives add cl.track.sneak minecraft.custom:minecraft.sneak_time
 scoreboard objectives add cl.rightClick minecraft.used:minecraft.warped_fungus_on_a_stick
 scoreboard objectives add cl.Mana dummy
 scoreboard objectives add cl.ManaRegenSec dummy
@@ -48,6 +57,37 @@ scoreboard objectives setdisplay belowName cl.o.health
 scoreboard objectives add cl.item.spiritessence dummy
 scoreboard objectives add cl.t.magic_essence dummy
 scoreboard objectives add cl.t.holy_essence dummy
+scoreboard objectives add cl.track.walk minecraft.custom:minecraft.walk_one_cm
+scoreboard objectives add cl.track.sprint minecraft.custom:minecraft.sprint_one_cm
+scoreboard objectives add cl.track.aviate minecraft.custom:minecraft.aviate_one_cm
+scoreboard objectives add cl.track.boating minecraft.custom:minecraft.boat_one_cm
+scoreboard objectives add cl.track.fall minecraft.custom:minecraft.fall_one_cm
+scoreboard objectives add cl.track.flying minecraft.custom:minecraft.fly_one_cm
+scoreboard objectives add cl.track.climbing minecraft.custom:minecraft.climb_one_cm
+scoreboard objectives add cl.track.horse minecraft.custom:minecraft.horse_one_cm
+scoreboard objectives add cl.track.jump minecraft.custom:minecraft.jump
+scoreboard objectives add cl.track.minecart minecraft.custom:minecraft.minecart_one_cm
+scoreboard objectives add cl.track.pig minecraft.custom:minecraft.pig_one_cm
+scoreboard objectives add cl.track.swimming minecraft.custom:minecraft.swim_one_cm
+scoreboard objectives add cl.track.walk_water minecraft.custom:minecraft.walk_under_water_one_cm
+
+scoreboard objectives add cl.track.open.trappedchest minecraft.custom:minecraft.trigger_trapped_chest
+scoreboard objectives add cl.track.interact.anvil minecraft.custom:minecraft.interact_with_anvil
+scoreboard objectives add cl.track.interact.craftingtable minecraft.custom:minecraft.interact_with_crafting_table
+scoreboard objectives add cl.track.interact.furnace minecraft.custom:minecraft.interact_with_furnace
+scoreboard objectives add cl.track.interact.blastfurnace minecraft.custom:minecraft.interact_with_blast_furnace
+scoreboard objectives add cl.track.open.barrel minecraft.custom:minecraft.open_barrel
+scoreboard objectives add cl.track.open.chest minecraft.custom:minecraft.open_chest
+scoreboard objectives add cl.track.open.enderchest minecraft.custom:minecraft.open_enderchest
+scoreboard objectives add cl.track.open.shulkerbox minecraft.custom:minecraft.open_shulker_box
+scoreboard objectives add cl.track.interact.grindstone minecraft.custom:minecraft.interact_with_grindstone
+scoreboard objectives add cl.track.interact.smithing minecraft.custom:minecraft.interact_with_smithing_table
+scoreboard objectives add cl.track.interact.smoker minecraft.custom:minecraft.interact_with_smoker
+scoreboard objectives add cl.track.interact.stonecutter minecraft.custom:minecraft.interact_with_stonecutter
+scoreboard objectives add cl.track.interact.dispenser minecraft.custom:minecraft.inspect_dispenser
+scoreboard objectives add cl.track.interact.hopper minecraft.custom:minecraft.inspect_hopper
+scoreboard objectives add cl.track.interact.dropper minecraft.custom:minecraft.inspect_dropper
+scoreboard objectives add cl.track.interact dummy
 
 #Scoreboards for settings
 scoreboard objectives add cl.pref.setFire dummy
@@ -141,6 +181,10 @@ scoreboard objectives add cl.e.Shield.m dummy
 ##Tracking Scoreboards
 #Tick Tracking
 scoreboard objectives add cl.t.Tick dummy
+
+#Get gamerules
+scoreboard objectives add cl.track.commandFeedback dummy
+execute store result score #cl.pref cl.track.commandFeedback run gamerule sendCommandFeedback
 
 #Set up Oxygen Boss bar
 bossbar add air0 "Oxygen"

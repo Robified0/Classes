@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "text": "Dolphin's Grace  ",
+            "text": "Dolphin's Grace",
             "color": "blue"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE305\n\n\n\n\n\n\n\n",
+            "text": "Learn Dolphin's Grace",
             "color": "white"
         },
         "icon": {

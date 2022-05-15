@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "text": "Guard             ",
+            "text": "Guard",
             "color": "green"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE800\n\n\n\n\n\n\n\n",
+            "text": "Learn Guard",
             "color": "white"
         },
         "icon": {

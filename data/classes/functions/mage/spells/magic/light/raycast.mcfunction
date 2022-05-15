@@ -1,5 +1,5 @@
 #Particle Effect
-particle end_rod ^0.4 ^0.2 ^0.3 0.01 0.01 0.01 0.01 1 force
+particle end_rod ^-0.4 ^0.2 ^0.3 0.01 0.01 0.01 0.01 1 force
 
 #Sound
 execute at @s run playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 0.05 2

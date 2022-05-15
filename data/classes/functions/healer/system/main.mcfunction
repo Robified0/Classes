@@ -14,13 +14,18 @@
 # needed.                          #
 ####################################
 
+#Detect No Wand
+execute if entity @a[scores={cl.track.sneak=0,cl.Class=4,cl.rightClick=1..}] as @a[predicate=classes:checkwand/offwand,scores={cl.Class=4,cl.rightClick=1..}] run function classes:main/mana_system/equipwand
+
+#Detect sneaking for changing Spells
+execute if entity @a[scores={cl.track.sneak=1..,cl.Class=4,cl.rightClick=1..}] as @a[predicate=classes:checkwand/wand,scores={cl.track.sneak=1..,cl.Class=4,cl.rightClick=1..}] run function classes:healer/system/wand/switch/switch
+
 #Right-click detection
 #Display message if armor is equipped (and wand is equipped)
-execute if entity @a[scores={cl.Class=4,cl.rightClick=1..}] as @a[predicate=classes:checkwand/wand,scores={cl.Class=4,cl.rightClick=1..,cl.Healer.Armor=1..}] at @s run function classes:main/mana_system/armor
+execute if entity @a[scores={cl.track.sneak=0,cl.Class=4,cl.rightClick=1..}] as @a[predicate=classes:checkwand/wand,scores={cl.Class=4,cl.rightClick=1..,cl.Healer.Armor=1..}] at @s run function classes:main/mana_system/armor
 #Detect Wand
-execute if entity @a[scores={cl.Class=4,cl.rightClick=1..}] as @a[predicate=classes:checkwand/wand,scores={cl.Cooldown=0,cl.Class=4,cl.rightClick=1..}] at @s run function classes:healer/system/rightclick
-#Detect No Wand
-execute if entity @a[scores={cl.Class=4,cl.rightClick=1..}] as @a[predicate=!classes:checkwand/wand,scores={cl.Class=4,cl.rightClick=1..}] run function classes:main/mana_system/equipwand
+execute if entity @a[scores={cl.track.sneak=0,cl.Class=4,cl.rightClick=1..}] as @a[predicate=classes:checkwand/wand,scores={cl.Cooldown=0,cl.Class=4,cl.rightClick=1..}] at @s run function classes:healer/system/rightclick
+
 
 #Effect detection
 execute as @a at @s run function classes:healer/system/effects/effects

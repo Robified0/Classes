@@ -1,5 +1,5 @@
 #Particle Effect
-particle cloud ^0.4 ^0.2 ^0.3 0.1 0.1 0.1 0.05 2 force
+particle cloud ^-0.4 ^0.2 ^0.3 0.1 0.1 0.1 0.05 2 force
 
 #Play sound effect - use here when needing repeat
 execute at @s run playsound minecraft:entity.horse.breathe player @a ~ ~ ~ 0.5

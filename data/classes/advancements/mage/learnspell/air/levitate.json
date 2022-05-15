@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "text": "Levitate         ",
+            "text": "Levitate",
             "color": "yellow"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE400\n\n\n\n\n\n\n\n",
+            "text": "Learn Levitate",
             "color": "white"
         },
         "icon": {

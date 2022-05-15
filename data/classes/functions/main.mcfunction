@@ -18,17 +18,14 @@ execute if entity @a[tag=!cl.o.Joined] as @a[tag=!cl.o.Joined] run function clas
 execute if entity @a[scores={cl.Class=1..},tag=!cl.o.ClassSelected] as @a[scores={cl.Class=1..},tag=!cl.o.ClassSelected] run function classes:main/new_player/classselected
 
 #Mana Regen
-execute as @a[predicate=classes:checkplayer/spellcaster] run function classes:main/mana_system/main
+execute as @a[predicate=classes:checkclass/spellcaster] run function classes:main/mana_system/main
 
 #Display Mana bar to players who have Mana score set (spellcasters only)
-execute as @a[predicate=classes:checkplayer/spellcaster] run function classes:main/mana_system/mana
+execute as @a[predicate=classes:checkclass/spellcaster] run function classes:main/mana_system/mana
 
 #XP Handling for spells/Essence Summon Handling
 execute if entity @e[type=item,tag=!cl.t.processed,nbt={Item:{tag:{cl.Custom:1b}}}] as @e[type=item,nbt={Item:{tag:{cl.Custom:1b}}}] run function classes:main/loot_table/acacia_button/main
-execute if entity @a[scores={cl.t.dropItem=1..}] as @e[type=item,nbt={Item:{tag:{cl.s.Spell:1b}}}] run function classes:operations/items/preventspelldrops
+execute if entity @a[scores={cl.t.dropItem=1..}] as @e[type=item,nbt={Item:{tag:{cl.item.noDrop:1b}}}] run function classes:operations/items/preventspelldrops
 
 #Check for arrows shot
 execute as @a[scores={cl.t.usedBow=1..},predicate=classes:items/infinitybow] at @s run function classes:operations/items/infinitybow
-
-#Essences
-execute as @e[type=area_effect_cloud,tag=cl.EssenceMarker] run function classes:main/essences/main

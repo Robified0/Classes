@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "text": "Inspire          ",
+            "text": "Inspire",
             "color": "green"
         },
         "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE803\n\n\n\n\n\n\n\n",
+            "text": "Learn Inspire",
             "color": "white"
         },
         "icon": {
