@@ -17,7 +17,7 @@
 #Right-click detection
 
 #Detect No Wand
-execute if entity @a[scores={cl.track.sneak=0,cl.Class=3,cl.rightClick=1..}] as @a[predicate=!classes:checkwand/wand,predicate=!classes:items/books/spellbook,scores={cl.Class=3,cl.rightClick=1..}] run function classes:main/mana_system/equipwand
+execute if entity @a[scores={cl.track.sneak=0,cl.Class=3,cl.rightClick=1..}] as @a[predicate=classes:checkwand/wandoffhand,scores={cl.Class=3,cl.rightClick=1..}] run function classes:main/mana_system/equipwand
 
 #Detect sneaking for changing Spells
 execute if entity @a[scores={cl.track.sneak=1..,cl.Class=3,cl.rightClick=1..}] as @a[predicate=classes:checkwand/wand,scores={cl.track.sneak=1..,cl.Class=3,cl.rightClick=1..}] run function classes:mage/system/wand/switch/switch

@@ -1,18 +1,18 @@
 ##Set Smiting Spells to inventory - only placing them if the spell has been learned, and isn't currently in their hotbar.
 #Bolt
 item replace entity @s[advancements={classes:healer/learnspell/smiting/bolt=true}] inventory.0 with minecraft:warped_fungus_on_a_stick{display:{Name:'[{"text":"Bolt","color":"green"},{"text":" - ","color":"white","bold":false},{"text":"\\uE003 x 1","color":"aqua","bold":false,"italic":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Deals minor holy damage to enemies.","color":"green"}']},CustomModelData:60902,cl.s.Spell:1b,cl.s.Smiting:1b,cl.s.Bolt:1b,cl.spell.number:902}
-execute if entity @s[advancements={classes:healer/learnspell/smiting/bolt=false}] run item replace entity @s inventory.0 with minecraft:air
-execute if entity @s[predicate=classes:spellselect/hotbarcheck/healer/smiting/bolt] run item replace entity @s inventory.0 with minecraft:air
+execute if entity @s[advancements={classes:healer/learnspell/smiting/bolt=false}] run item replace entity @s inventory.0 with minecraft:black_stained_glass_pane{cl.item.noDrop:1b}
+execute if entity @s[predicate=classes:spellselect/hotbarcheck/healer/smiting/bolt] run item replace entity @s inventory.0 with minecraft:black_stained_glass_pane{cl.item.noDrop:1b}
 
 #Bolt
 item replace entity @s[advancements={classes:healer/learnspell/smiting/holystrike=true}] inventory.1 with minecraft:warped_fungus_on_a_stick{display:{Name:'[{"text":"Holy Strike","color":"green"},{"text":" - ","color":"white","bold":false},{"text":"\\uE003 x 2","color":"aqua","bold":false,"italic":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Smites undead it hits. Can hit multiple in a line.","color":"green"}']},CustomModelData:60900,cl.s.Spell:1b,cl.s.Smiting:1b,cl.s.HolyStrike:1b,cl.spell.number:900}
-execute if entity @s[advancements={classes:healer/learnspell/smiting/holystrike=false}] run item replace entity @s inventory.1 with minecraft:air
-execute if entity @s[predicate=classes:spellselect/hotbarcheck/healer/smiting/holystrike] run item replace entity @s inventory.1 with minecraft:air
+execute if entity @s[advancements={classes:healer/learnspell/smiting/holystrike=false}] run item replace entity @s inventory.1 with minecraft:black_stained_glass_pane{cl.item.noDrop:1b}
+execute if entity @s[predicate=classes:spellselect/hotbarcheck/healer/smiting/holystrike] run item replace entity @s inventory.1 with minecraft:black_stained_glass_pane{cl.item.noDrop:1b}
 
 #Bolt
 item replace entity @s[advancements={classes:healer/learnspell/smiting/stopundead=true}] inventory.2 with minecraft:warped_fungus_on_a_stick{display:{Name:'[{"text":"Stop Undead","color":"green"},{"text":" - ","color":"white","bold":false},{"text":"\\uE003 x 3","color":"aqua","bold":false,"italic":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Normal undead within 10 blocks freeze in place.","color":"green"}']},CustomModelData:60901,cl.s.Spell:1b,cl.s.Smiting:1b,cl.s.StopUndead:1b,cl.spell.number:901}
-execute if entity @s[advancements={classes:healer/learnspell/smiting/stopundead=false}] run item replace entity @s inventory.2 with minecraft:air
-execute if entity @s[predicate=classes:spellselect/hotbarcheck/healer/smiting/stopundead] run item replace entity @s inventory.2 with minecraft:air
+execute if entity @s[advancements={classes:healer/learnspell/smiting/stopundead=false}] run item replace entity @s inventory.2 with minecraft:black_stained_glass_pane{cl.item.noDrop:1b}
+execute if entity @s[predicate=classes:spellselect/hotbarcheck/healer/smiting/stopundead] run item replace entity @s inventory.2 with minecraft:black_stained_glass_pane{cl.item.noDrop:1b}
 
 item replace entity @s inventory.3 with minecraft:black_stained_glass_pane{cl.item.noDrop:1b}
 item replace entity @s inventory.4 with minecraft:black_stained_glass_pane{cl.item.noDrop:1b}
