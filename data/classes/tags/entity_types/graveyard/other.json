@@ -1,0 +1,6 @@
+{
+  "values":[
+      {"id":"graveyard:corrupted_pillager","required":false},
+      {"id":"graveyard:corrupted_vindicator","required":false}
+    ]
+}

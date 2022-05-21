@@ -1,0 +1,10 @@
+{
+  "values":[
+      {"id":"graveyard:ghoul","required":false},
+      {"id":"graveyard:revenant","required":false},
+      {"id":"graveyard:revenant","required":false},
+      {"id":"graveyard:skeleton_creeper","required":false},
+      {"id":"graveyard:reaper","required":false},
+      {"id":"graveyard:wraith","required":false}
+    ]
+}

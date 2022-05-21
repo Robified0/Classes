@@ -6,6 +6,7 @@
   "minecraft:witch",
   "minecraft:ravager",
   "minecraft:evoker",
-  "minecraft:vex"
+  "minecraft:vex",
+  {"id":"#classes:graveyard/other","required":false}
   ]
 }
