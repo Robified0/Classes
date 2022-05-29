@@ -13,6 +13,9 @@ execute if entity @s[scores={cl.item.research.magma_cream=1,cl.item.research.fir
 # Water Strike
 execute if entity @s[scores={cl.item.research.water_essence=1,cl.item.research.lapis_lazuli=1}] run advancement grant @s only classes:mage/learnspell/water/waterstrike
 
+# Extinguish
+execute if entity @s[scores={cl.item.research.water_essence=1,cl.item.research.lapis_lazuli=1}] run advancement grant @s only classes:mage/learnspell/water/extinguish
+
 # Ice Shard
 execute if entity @s[scores={cl.item.research.packed_ice=1,cl.item.research.water_essence=1,cl.item.research.lapis_lazuli=1}] run advancement grant @s only classes:mage/learnspell/water/iceshard
 
