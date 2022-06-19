@@ -9,14 +9,8 @@ execute as @a[scores={cl.Class=2}] run function classes:ranger/stats/main
 execute as @a[scores={cl.Class=3}] run function classes:mage/stats/main
 execute as @a[scores={cl.Class=4}] run function classes:healer/stats/main
 
-#Run turning Spirit Essences into Elemental Essences login
+#Run turning Spirit Essences into Elemental Essences
 execute as @e[type=item,nbt={Item:{tag:{cl.SpiritEssence:1b}}}] at @s run function classes:items/spiritessence/main
-
-#Check for items
-execute as @e[type=item,tag=!cl.o.item.spell,tag=!cl.t.processed] run function classes:operations/items/tag
-
-#If player died, and keepInventory is off, display particles for dropped spells
-execute as @e[type=item,tag=cl.o.item.spell] at @s run particle minecraft:portal ~ ~0.1 ~ 0.04 0.05 0.04 0.1 50 force
 
 #Bless handling
 execute as @a[scores={cl.e.Bless=1..}] run function classes:operations/checks/bless
