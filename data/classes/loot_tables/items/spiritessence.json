@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:structure_block",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Spirit Essence\",\"color\":\"white\",\"italic\":true}'},HideFlags:127,CustomModelData:110,cl.SpiritEssence:1b,Enchantments:[{}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

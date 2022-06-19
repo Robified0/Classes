@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "classes:essences/items/spiritessence"
+          "name": "classes:items/spiritessence"
         }
       ],
       "conditions": [

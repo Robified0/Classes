@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "classes:essences/items/spiritessence"
+          "name": "classes:items/spiritessence"
         }
       ],
       "conditions": [
@@ -29,8 +29,8 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:potion",
+          "type": "minecraft:loot_table",
+          "name": "classes:items/manapotion",
           "functions": [
             {
               "function": "minecraft:set_nbt",

@@ -6,43 +6,13 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "classes:essences/items/spiritessence"
+          "name": "classes:items/spiritessence"
         }
       ],
       "conditions": [
         {
           "condition": "minecraft:random_chance",
           "chance": 0.05
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "classes:essences/allhealer"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.02
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "classes:essences/basic"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.02
         }
       ]
     },
