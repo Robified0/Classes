@@ -16,10 +16,9 @@ execute if entity @s[scores={cl.Mage.Armor=0,cl.spell.selected=600..699},predica
 #Magic Essence
 execute if entity @s[scores={cl.Mage.Armor=0},predicate=classes:items/spiritessence/spiritessence,predicate=!classes:items/books/spellbook] run function classes:mage/system/castspell/magicessence
 
-#Spellbook
-execute if entity @s[scores={cl.Mage.Armor=0},predicate=classes:items/books/book,predicate=!classes:items/books/spellbook] run function classes:mage/system/castspell/spellbook
-
-
 #Handle spell selection (summon minecart, copy items, write to inventory, set score, and then clear the left over slots in the hotbar).
 execute positioned ~ -70 ~ if entity @e[type=minecraft:chest_minecart,distance=..2] at @s if entity @s[predicate=classes:items/books/spellbook] run function classes:operations/track/spellequip/minecart/existing
 execute positioned ~ -70 ~ unless entity @e[type=minecraft:chest_minecart,distance=..2] at @s if entity @s[predicate=classes:items/books/spellbook] run function classes:operations/track/spellequip/minecart/main
+
+#Spellbook
+execute if entity @s[scores={cl.Mage.Armor=0},predicate=classes:items/books/book,predicate=!classes:items/books/spellbook] run function classes:mage/system/castspell/spellbook
