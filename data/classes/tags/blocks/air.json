@@ -12,7 +12,7 @@
   "minecraft:fern",
 	"minecraft:ladder",
   "#minecraft:buttons",
-  "#minecraft:carpets",
+  "#minecraft:wool_carpets",
   "#minecraft:crops",
   "#minecraft:saplings",
   "#minecraft:pressure_plates",
@@ -27,6 +27,7 @@
   "minecraft:torch",
   "minecraft:soul_torch",
   "minecraft:wall_torch",
-  "minecraft:soul_wall_torch"
+  "minecraft:soul_wall_torch",
+  "minecraft:sculk_vein"
   ]
 }
