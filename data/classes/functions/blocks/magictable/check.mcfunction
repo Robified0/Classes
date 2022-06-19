@@ -1,0 +1,6 @@
+execute unless block ~ ~ ~ dropper{Items:[{Slot:1b}]} run item replace block ~ ~ ~ container.1 with minecraft:black_stained_glass_pane{display:{Name:'{"text":""}'},CustomModelData:2,cl.item.noDrop:1b}
+execute unless block ~ ~ ~ dropper{Items:[{Slot:3b}]} run item replace block ~ ~ ~ container.3 with minecraft:black_stained_glass_pane{display:{Name:'{"text":""}'},CustomModelData:1,cl.item.noDrop:1b}
+execute unless block ~ ~ ~ dropper{Items:[{Slot:4b}]} run item replace block ~ ~ ~ container.4 with minecraft:black_stained_glass_pane{display:{Name:'{"text":""}'},CustomModelData:3,cl.item.noDrop:1b}
+execute unless block ~ ~ ~ dropper{Items:[{Slot:5b}]} run item replace block ~ ~ ~ container.5 with minecraft:black_stained_glass_pane{display:{Name:'{"text":""}'},CustomModelData:1,cl.item.noDrop:1b}
+execute unless block ~ ~ ~ dropper{Items:[{Slot:6b}]} run item replace block ~ ~ ~ container.6 with minecraft:black_stained_glass_pane{display:{Name:'{"text":""}'},CustomModelData:1,cl.item.noDrop:1b}
+execute unless block ~ ~ ~ dropper{Items:[{Slot:8b}]} run item replace block ~ ~ ~ container.8 with minecraft:black_stained_glass_pane{display:{Name:'{"text":""}'},CustomModelData:1,cl.item.noDrop:1b}

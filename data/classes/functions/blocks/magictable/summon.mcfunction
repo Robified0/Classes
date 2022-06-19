@@ -2,8 +2,14 @@
 
 #Set up the Magic Table
 execute align xz positioned ~0.5 ~ ~0.5 run summon minecraft:marker ~ ~ ~ {Tags:["cl.magicTable"]}
-setblock ~ ~ ~ minecraft:dropper[facing=up]{CustomName:'{"text":"Magic Table"}'} replace
+
+#Set Magic Table block
+setblock ~ ~ ~ dropper[facing=up]{Items:[{Slot:1b,id:"minecraft:black_stained_glass_pane",Count:1b,tag:{display:{Name:'{"text":" "}'},CustomModelData:1,cl.item.noDrop:1b}},{Slot:3b,id:"minecraft:black_stained_glass_pane",Count:1b,tag:{display:{Name:'{"text":" "}'},CustomModelData:1,cl.item.noDrop:1b}}],CustomName:'{"text":"Magic Table"}'} replace
+
+#Place Item Frame that holds the Resource Pack cover ;)
 execute align xz positioned ~0.5 ~ ~0.5 run summon glow_item_frame ~ ~ ~ {Tags:["cl.magicTable","cl.magicTablePlaced"],Facing:1b,Invulnerable:1b,Invisible:0b,Fixed:1b,Item:{id:"minecraft:glow_item_frame",Count:1b,tag:{CustomModelData:59999}}}
+
+#Give player visual and auditory feedback
 playsound minecraft:block.amethyst_cluster.hit block @a ~ ~ ~ 1 0.5
 particle minecraft:witch ~ ~-1 ~ 1 1 1 1 10 force
 
