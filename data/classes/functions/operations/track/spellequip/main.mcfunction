@@ -1,4 +1,4 @@
-#Run appropriate tracking (operations/delay/10/main)
+#Run appropriate tracking (root/main)
 function classes:operations/track/spellequip/interact
 
 execute if score @s cl.track.interact matches 1.. run function classes:operations/track/spellequip/restore/restorecheck

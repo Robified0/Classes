@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:stone"
+    },
+    "title": "Reset Items",
+    "description": "If you see this advancement, Robified screwed up.",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "minecraft:story/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed"
+    },
+    "resetinventory": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "cl.spell.equip.start": {
+                  "min": -5,
+                  "max": 10
+                }
+              }
+            }
+          }
+        ],
+        "items": [
+          {
+            "nbt": "{cl.item.noDrop:2b}"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "classes:main/clearitems"
+  }
+}
