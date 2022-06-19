@@ -26,7 +26,7 @@ scoreboard players set @s cl.wand.slot2 605
 loot spawn ~ ~ ~ loot classes:items/wands/starterwand
 
 ##Give spellbook
-loot spawn ~ ~ ~ loot classes:items/spellbook
+loot spawn ~ ~ ~ loot classes:items/books/spellbook
 
 ##Give guide
 loot spawn ~ ~ ~ loot classes:items/books/spellguide
