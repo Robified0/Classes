@@ -1,6 +1,7 @@
 {
   "values":[
 	"minecraft:player",
+  "minecraft:allay",
 	"minecraft:wolf",
 	"minecraft:cat",
   "minecraft:villager",
