@@ -42,5 +42,11 @@ execute as @a[predicate=!classes:checkspell/mage/magicessence] run scoreboard pl
 #Kill fireballs that have been deflected
 execute as @e[type=#classes:fireballs,tag=cl.t.newFireball] at @s run function classes:operations/motion/killfireball
 
+#Clear Specific Items
+execute as @a unless entity @s[scores={cl.spellMenu=-10..}] run function classes:main/clearitems
+
+#Check the state of the Dropper
+execute as @a at @s as @e[type=marker,tag=cl.magicTable,distance=..5] at @s if block ~ ~ ~ dropper[facing=up] run function classes:blocks/magictable/check
+
 #Reset score
 scoreboard players set #cl.t.20Tick cl.t.Tick 0
