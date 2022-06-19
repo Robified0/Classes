@@ -1,6 +1,5 @@
 # Reset the GUI
-setblock ~ ~ ~ air
-setblock ~ ~ ~ dropper[facing=up]{CustomName:'{"text":"Magic Table"}'} replace
+function classes:blocks/magictable/replace
 
 # Handle messaging
 title @p[scores={cl.Class=3},distance=..2,limit=1] times 20 100 20
