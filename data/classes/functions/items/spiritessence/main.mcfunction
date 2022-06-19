@@ -12,4 +12,4 @@ execute if entity @s[scores={cl.item.spiritessence=3..}] if block ~ ~1 ~ #minecr
 execute if entity @s[predicate=classes:items/spiritessence/firecheck,scores={cl.item.spiritessence=3..}] run function classes:items/spiritessence/fire
 
 # Water
-execute if entity @s[scores={cl.item.spiritessence=3..}] if block ~ ~ ~ minecraft:water run function classes:items/spiritessence/water
+execute if entity @s[predicate=classes:items/spiritessence/watercheck,scores={cl.item.spiritessence=3..}] run function classes:items/spiritessence/water
