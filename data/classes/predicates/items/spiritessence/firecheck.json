@@ -1,15 +1,35 @@
 {
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
-  "predicate": {
-    "type": "minecraft:item",
-    "location": {
-      "fluid": {
-        "tag": "minecraft:lava"
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "fluid": {
+            "tag": "minecraft:lava"
+          }
+        },
+        "flags": {
+          "is_on_fire": true
+        }
       }
     },
-    "flags": {
-      "is_on_fire": true
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "minecraft:lava_cauldron"
+            ]
+          }
+        },
+        "flags": {
+          "is_on_fire": true
+        }
+      }
     }
-  }
+  ]
 }

@@ -1,12 +1,29 @@
 {
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
-  "predicate": {
-    "type": "minecraft:item",
-    "location": {
-      "fluid": {
-        "fluid": "minecraft:water"
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "fluid": {
+            "fluid": "minecraft:water"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "block": {
+            "blocks": [
+              "minecraft:water_cauldron"
+            ]
+          }
+        }
       }
     }
-  }
+  ]
 }
