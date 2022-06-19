@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Starter Wand\",\"color\":\"light_purple\"}'},Unbreakable:1b,CustomModelData:60000,cl.s.Wand:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
