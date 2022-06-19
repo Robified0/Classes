@@ -1,7 +1,6 @@
 {
 	"values": [
 		"classes:main",
-		"classes:blocks/magictable/main",
 		"classes:operations/delay/main",
 		"classes:mage/system/main",
 		"classes:healer/system/main",
