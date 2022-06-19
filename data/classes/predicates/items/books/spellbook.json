@@ -3,9 +3,9 @@
   "entity": "this",
   "predicate": {
     "equipment": {
-      "offhand": {
+      "mainhand": {
         "items": [
-          "minecraft:book"
+          "minecraft:warped_fungus_on_a_stick"
         ],
         "nbt": "{cl.item.spellbook:1b}"
       }

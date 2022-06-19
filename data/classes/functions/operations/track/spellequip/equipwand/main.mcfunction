@@ -12,7 +12,7 @@ execute unless entity @s[nbt={Inventory:[{Slot:2b,tag:{cl.s.Spell:1b}}]}] run sc
 execute unless entity @s[nbt={Inventory:[{Slot:3b,tag:{cl.s.Spell:1b}}]}] run scoreboard players reset @s cl.wand.slot4
 execute unless entity @s[nbt={Inventory:[{Slot:4b,tag:{cl.s.Spell:1b}}]}] run scoreboard players reset @s cl.wand.slot5
 
-function classes:operations/track/spellequip/restore/restore
+function classes:operations/track/spellequip/restore/restorecheck
 
 scoreboard players set @s cl.slot.selected 5
 execute if score @s cl.Class matches 3 run function classes:mage/system/wand/switch/switch

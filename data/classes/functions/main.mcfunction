@@ -7,12 +7,16 @@
 #     which is used for specific spells!                          #
 ###################################################################
 
+
+#Track activity of Spellcasters for Spell Equip system
+execute as @a[scores={cl.spell.equip.start=1..},predicate=classes:checkclass/spellcaster] at @s run function classes:operations/track/spellequip/main
+
 #Handle Raycasts
 execute as @e[type=marker,tag=cl.r.slowcast] at @s run function classes:operations/raycast/main
 
 #Magic table
 execute as @e[type=glow_item_frame,tag=cl.magicTable,tag=!cl.magicTablePlaced] at @s run function classes:blocks/magictable/placed
-execute as @e[type=marker,tag=cl.magicTable] at @s run function classes:blocks/magictable/main
+execute as @a at @s as @e[type=marker,tag=cl.magicTable] at @s run function classes:blocks/magictable/main
 
 # Stop SpiritEssence from burning
 execute as @e[type=item,tag=!cl.t.processed,predicate=classes:items/spiritessence/invulnerablecheck] run data merge entity @s {Invulnerable:1b}
@@ -32,6 +36,7 @@ execute as @e[type=item,tag=!cl.t.processed,nbt={Item:{tag:{cl.Custom:1b}}}] run
 
 #Check for arrows shot
 execute as @a[scores={cl.t.usedBow=1..},predicate=classes:items/infinitybow] at @s run function classes:operations/items/infinitybow
+
 
 #Tag items
 execute as @e[type=item,tag=!cl.t.processed] run tag @s add cl.t.processed
