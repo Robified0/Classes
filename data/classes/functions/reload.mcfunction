@@ -42,7 +42,6 @@ scoreboard objectives add cl.i.ManaPtnUseOff dummy
 scoreboard objectives add cl.t.PotionEff dummy
 scoreboard objectives add cl.t.RangerID dummy
 execute unless score #cl.t.RangerID cl.t.RangerID matches 1.. run scoreboard players set #cl.t.RangerID cl.t.RangerID 1
-scoreboard objectives add cl.t.dropItem minecraft.custom:minecraft.drop
 scoreboard objectives add cl.t.usedBow minecraft.used:minecraft.bow
 
 #Set up stat tracking
