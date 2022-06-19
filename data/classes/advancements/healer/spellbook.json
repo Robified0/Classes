@@ -1,8 +1,8 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:book",
-      "nbt": "{CustomModelData:99}"
+      "item": "minecraft:warped_fungus_on_a_stick",
+      "nbt": "{CustomModelData:59999}"
     },
     "title": {
       "text": "Create a spellbook",
