@@ -1,26 +1,26 @@
 {
-    "display": {
-        "title": {
-            "text": "Snow Golem",
-            "color": "blue"
-        },
-        "description": {
-            "text": "Learn Snow Golem",
-            "color": "white"
-        },
-        "icon": {
-            "item": "minecraft:warped_fungus_on_a_stick",
-            "nbt": "{CustomModelData:60303}"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": false,
-        "hidden": true
+  "display": {
+    "icon": {
+      "item": "minecraft:warped_fungus_on_a_stick",
+      "nbt": "{CustomModelData:60303}"
     },
-    "criteria": {
-        "Snow Golem": {
-            "trigger": "minecraft:impossible"
-        }
+    "title": {
+      "text": "Snow Golem",
+      "color": "blue"
     },
-    "parent": "classes:mage/essence/researchwateressence"
+    "description": {
+      "text": "Summon a Snow Golem to distract enemies.",
+      "color": "white"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "classes:mage/essence/researchwateressence",
+  "criteria": {
+    "Snow Golem": {
+      "trigger": "minecraft:impossible"
+    }
+  }
 }

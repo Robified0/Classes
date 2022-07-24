@@ -1,26 +1,26 @@
 {
-    "display": {
-        "title": {
-            "text": "Extinguish",
-            "color": "blue"
-        },
-        "description": {
-            "text": "Learn Extinguish",
-            "color": "white"
-        },
-        "icon": {
-            "item": "minecraft:warped_fungus_on_a_stick",
-            "nbt": "{CustomModelData:60307}"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": false,
-        "hidden": true
+  "display": {
+    "icon": {
+      "item": "minecraft:warped_fungus_on_a_stick",
+      "nbt": "{CustomModelData:60307}"
     },
-    "criteria": {
-        "Extinguish": {
-            "trigger": "minecraft:impossible"
-        }
+    "title": {
+      "text": "Extinguish",
+      "color": "blue"
     },
-    "parent": "classes:mage/learnspell/water/snowgolem"
+    "description": {
+      "text": "Extinguish all blocks on fire within 10 blocks of you.",
+      "color": "white"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "classes:mage/learnspell/water/snowgolem",
+  "criteria": {
+    "Extinguish": {
+      "trigger": "minecraft:impossible"
+    }
+  }
 }

@@ -1,26 +1,26 @@
 {
-    "display": {
-        "title": {
-            "text": "Iron Flesh",
-            "color": "green"
-        },
-        "description": {
-            "text": "Iron Flesh",
-            "color": "white"
-        },
-        "icon": {
-            "item": "minecraft:warped_fungus_on_a_stick",
-            "nbt": "{CustomModelData:60501}"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": false,
-        "hidden": true
+  "display": {
+    "icon": {
+      "item": "minecraft:warped_fungus_on_a_stick",
+      "nbt": "{CustomModelData:60501}"
     },
-    "criteria": {
-        "Iron Flesh": {
-            "trigger": "minecraft:impossible"
-        }
+    "title": {
+      "text": "Iron Flesh",
+      "color": "green"
     },
-    "parent": "classes:mage/essence/researchearthessence"
+    "description": {
+      "text": "Grants a moderate amount of armor for 20 seconds.",
+      "color": "white"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "classes:mage/essence/researchearthessence",
+  "criteria": {
+    "Iron Flesh": {
+      "trigger": "minecraft:impossible"
+    }
+  }
 }

@@ -1,26 +1,26 @@
 {
-    "display": {
-        "title": {
-            "text": "Fire Shield",
-            "color": "red"
-        },
-        "description": {
-            "text": "Learn Fire Shield",
-            "color": "white"
-        },
-        "icon": {
-            "item": "minecraft:warped_fungus_on_a_stick",
-            "nbt": "{CustomModelData:60204}"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": false,
-        "hidden": true
+  "display": {
+    "icon": {
+      "item": "minecraft:warped_fungus_on_a_stick",
+      "nbt": "{CustomModelData:60204}"
     },
-    "criteria": {
-        "Fire Shield": {
-            "trigger": "minecraft:impossible"
-        }
+    "title": {
+      "text": "Fire Shield",
+      "color": "red"
     },
-    "parent": "classes:mage/essence/researchfireessence"
+    "description": {
+      "text": "Grants you immunity to fire for 45 seconds.",
+      "color": "white"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "classes:mage/essence/researchfireessence",
+  "criteria": {
+    "Fire Shield": {
+      "trigger": "minecraft:impossible"
+    }
+  }
 }

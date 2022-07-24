@@ -1,26 +1,26 @@
 {
-    "display": {
-        "title": {
-            "text": "Teleport",
-            "color": "light_purple"
-        },
-        "description": {
-            "text": "Learn Teleport",
-            "color": "white"
-        },
-        "icon": {
-            "item": "minecraft:warped_fungus_on_a_stick",
-            "nbt": "{CustomModelData:60601}"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": false,
-        "hidden": true
+  "display": {
+    "icon": {
+      "item": "minecraft:warped_fungus_on_a_stick",
+      "nbt": "{CustomModelData:60601}"
     },
-    "criteria": {
-        "Teleport": {
-            "trigger": "minecraft:impossible"
-        }
+    "title": {
+      "text": "Teleport",
+      "color": "light_purple"
     },
-    "parent": "classes:mage/essence/researchmagicessence"
+    "description": {
+      "text": "Teleports you to where it is cast. Must hit a block to work.",
+      "color": "white"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "classes:mage/essence/researchmagicessence",
+  "criteria": {
+    "Teleport": {
+      "trigger": "minecraft:impossible"
+    }
+  }
 }

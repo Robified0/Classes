@@ -1,26 +1,26 @@
 {
-    "display": {
-        "title": {
-            "text": "Tail Wind",
-            "color": "yellow"
-        },
-        "description": {
-            "text": "Learn Tail Wind",
-            "color": "white"
-        },
-        "icon": {
-            "item": "minecraft:warped_fungus_on_a_stick",
-            "nbt": "{CustomModelData:60402}"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": false,
-        "hidden": true
+  "display": {
+    "icon": {
+      "item": "minecraft:warped_fungus_on_a_stick",
+      "nbt": "{CustomModelData:60402}"
     },
-    "criteria": {
-        "Tail Wind": {
-            "trigger": "minecraft:impossible"
-        }
+    "title": {
+      "text": "Tail Wind",
+      "color": "yellow"
     },
-    "parent": "classes:mage/learnspell/air/bunnyhop"
+    "description": {
+      "text": "Grants Speed II for 20 seconds.",
+      "color": "white"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "classes:mage/learnspell/air/bunnyhop",
+  "criteria": {
+    "Tail Wind": {
+      "trigger": "minecraft:impossible"
+    }
+  }
 }

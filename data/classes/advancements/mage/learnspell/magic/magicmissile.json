@@ -1,26 +1,26 @@
 {
-    "display": {
-        "title": {
-            "text": "Magic Missile",
-            "color": "light_purple"
-        },
-        "description": {
-            "text": "Learn Magic Missile",
-            "color": "white"
-        },
-        "icon": {
-            "item": "minecraft:warped_fungus_on_a_stick",
-            "nbt": "{CustomModelData:60606}"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": false,
-        "hidden": true
+  "display": {
+    "icon": {
+      "item": "minecraft:warped_fungus_on_a_stick",
+      "nbt": "{CustomModelData:60606}"
     },
-    "criteria": {
-        "MagicMissile": {
-            "trigger": "minecraft:impossible"
-        }
+    "title": {
+      "text": "Magic Missile",
+      "color": "light_purple"
     },
-    "parent": "classes:mage/essence/researchmagicessence"
+    "description": {
+      "text": "Small non-elemental damage to whatever entity it hits.",
+      "color": "white"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "classes:mage/essence/researchmagicessence",
+  "criteria": {
+    "MagicMissile": {
+      "trigger": "minecraft:impossible"
+    }
+  }
 }

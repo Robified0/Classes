@@ -1,26 +1,26 @@
 {
-    "display": {
-        "title": {
-            "text": "Ice Walker",
-            "color": "blue"
-        },
-        "description": {
-            "text": "Learn Ice Walker",
-            "color": "white"
-        },
-        "icon": {
-            "item": "minecraft:warped_fungus_on_a_stick",
-            "nbt": "{CustomModelData:60306}"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": false,
-        "hidden": true
+  "display": {
+    "icon": {
+      "item": "minecraft:warped_fungus_on_a_stick",
+      "nbt": "{CustomModelData:60306}"
     },
-    "criteria": {
-        "Ice Walker": {
-            "trigger": "minecraft:impossible"
-        }
+    "title": {
+      "text": "Ice Walker",
+      "color": "blue"
     },
-    "parent": "classes:mage/learnspell/water/extinguish"
+    "description": {
+      "text": "Surface water will turn to ice as you walk over it.",
+      "color": "white"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "classes:mage/learnspell/water/extinguish",
+  "criteria": {
+    "Ice Walker": {
+      "trigger": "minecraft:impossible"
+    }
+  }
 }

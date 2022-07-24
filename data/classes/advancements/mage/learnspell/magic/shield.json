@@ -1,26 +1,26 @@
 {
-    "display": {
-        "title": {
-            "text": "Shield",
-            "color": "light_purple"
-        },
-        "description": {
-            "text": "§aRecipe:§f\nMust be crafted using a Magic Table.\n\uE602\n\n\n\n\n\n\n\n",
-            "color": "white"
-        },
-        "icon": {
-            "item": "minecraft:warped_fungus_on_a_stick",
-            "nbt": "{CustomModelData:60602}"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": false,
-        "hidden": true
+  "display": {
+    "icon": {
+      "item": "minecraft:warped_fungus_on_a_stick",
+      "nbt": "{CustomModelData:60602}"
     },
-    "criteria": {
-        "Shield": {
-            "trigger": "minecraft:impossible"
-        }
+    "title": {
+      "text": "Shield",
+      "color": "light_purple"
     },
-    "parent": "classes:mage/learnspell/magic/light"
+    "description": {
+      "text": "Hold to cast. Reflects projectiles to roughly where you are looking.",
+      "color": "white"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "classes:mage/learnspell/magic/light",
+  "criteria": {
+    "Shield": {
+      "trigger": "minecraft:impossible"
+    }
+  }
 }

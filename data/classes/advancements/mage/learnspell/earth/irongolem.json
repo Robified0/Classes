@@ -1,26 +1,26 @@
 {
-    "display": {
-        "title": {
-            "text": "Summon Iron Golem",
-            "color": "green"
-        },
-        "description": {
-            "text": "Learn Summon Iron Golem",
-            "color": "white"
-        },
-        "icon": {
-            "item": "minecraft:warped_fungus_on_a_stick",
-            "nbt": "{CustomModelData:60504}"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": false,
-        "hidden": true
+  "display": {
+    "icon": {
+      "item": "minecraft:warped_fungus_on_a_stick",
+      "nbt": "{CustomModelData:60504}"
     },
-    "criteria": {
-        "Iron Golem": {
-            "trigger": "minecraft:impossible"
-        }
+    "title": {
+      "text": "Summon Iron Golem",
+      "color": "green"
     },
-    "parent": "classes:mage/learnspell/earth/poison"
+    "description": {
+      "text": "Summons an Iron Golem to aid you in battle. Lasts for 30 seconds, or until defeated.",
+      "color": "white"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "classes:mage/learnspell/earth/poison",
+  "criteria": {
+    "Iron Golem": {
+      "trigger": "minecraft:impossible"
+    }
+  }
 }
