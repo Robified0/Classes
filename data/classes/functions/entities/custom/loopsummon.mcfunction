@@ -1,2 +1,4 @@
-#Zombie King Spawn
-execute as @e[type=zombie,tag=!cl.customProc,sort=random] at @s run function classes:entities/custom/zombieking/summon
+## Run in operations/delay/20
+
+#Spirit Spawn
+function classes:entities/custom/spirit/check

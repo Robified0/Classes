@@ -1,0 +1,3 @@
+execute if predicate classes:checktime/night as @e[type=zombie,predicate=classes:mobspawn/zombie_dark_forest,tag=!cl.customMob,tag=!cl.mobCheck,sort=random] at @s unless block ~ ~-1 ~ minecraft:grass_block run tag @s add cl.mobCheck
+execute if predicate classes:checktime/night as @e[type=zombie,predicate=classes:mobspawn/zombie_dark_forest,tag=!cl.customMob,tag=!cl.mobCheck,sort=random] at @s if block ~ ~-1 ~ minecraft:grass_block run function classes:entities/custom/spirit/summon
+execute unless predicate classes:checktime/night as @e[type=vex,tag=cl.isCustomMob,tag=!cl.mobCheck] at @s run function classes:entities/custom/spirit/vanish
