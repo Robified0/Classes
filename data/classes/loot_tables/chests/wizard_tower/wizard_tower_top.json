@@ -4,6 +4,18 @@
     {
       "rolls": {
         "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "classes:items/books/teaching/mage/main"
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
         "max": 5
       },
       "entries": [
