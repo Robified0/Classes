@@ -24,8 +24,6 @@ execute if entity @s[scores={cl.e.Blizzard=1..}] as @e[type=!#classes:nontarget,
 #Damage entities in range
 execute if entity @s[scores={cl.e.Blizzard=1..}] run effect give @e[type=!#classes:nontarget,tag=!cl.t.summoned,tag=!cl.t.Owned,distance=..10] minecraft:wither 1 4
 
-execute if entity @s[scores={cl.e.Blizzard=1..}] as @e[type=!#classes:nontarget,tag=!cl.t.summoned,tag=!cl.t.Owned,distance=..10] run function classes:main/loot_table/main
-
 #Spell Handling
 scoreboard players set @s cl.e.Blizzard 10
 

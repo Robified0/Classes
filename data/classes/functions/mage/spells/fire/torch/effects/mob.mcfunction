@@ -1,5 +1,4 @@
 #Apply Effects
-function classes:main/loot_table/main
 playsound minecraft:entity.blaze.burn player @a ~ ~ ~ 0.5 1.3
 data merge entity @s {Fire:200}
 execute as @s[type=creeper] run function classes:entities/vanilla/creeper/fire

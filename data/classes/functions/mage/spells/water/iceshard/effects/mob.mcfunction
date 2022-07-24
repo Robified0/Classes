@@ -1,9 +1,6 @@
 ### Apply Effects
 ## Executing as hit entity
 
-#Set Score, and apply loot table
-function classes:main/loot_table/main
-
 #Play sound
 playsound minecraft:block.glass.break player @a ~ ~ ~ 0.25 1.2
 

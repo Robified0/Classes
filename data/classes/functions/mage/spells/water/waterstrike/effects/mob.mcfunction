@@ -1,5 +1,4 @@
 #Do these things when spell hits
-function classes:main/loot_table/main
 playsound minecraft:entity.fish.swim player @a ~ ~ ~ 0.4 0.7
 execute if entity @s[type=#classes:undead,type=!#classes:fireproof] run effect give @s instant_health 2 0 true
 execute if entity @s[type=!#classes:fireproof,type=!#classes:undead,type=!enderman] run effect give @s instant_damage 2 0 true

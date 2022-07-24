@@ -1,5 +1,4 @@
 #Do these things when spell hits
-function classes:main/loot_table/main
 effect give @s minecraft:instant_health 1 0 true
 particle minecraft:firework ~ ~ ~ 0.1 0.1 0.1 0.1 30 force
 function classes:entities/vanilla/angry

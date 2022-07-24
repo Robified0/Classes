@@ -4,9 +4,6 @@
 #Display particles
 particle dust 0.173 1.000 0.078 1 ~ ~ ~ 0.5 1 0.5 0.1 30 normal
 
-#Apply loot table
-function classes:main/loot_table/main
-
 #Apply effect - undead immune
 execute if entity @s[type=!#classes:undead] run effect give @s minecraft:poison 15 2 true
 

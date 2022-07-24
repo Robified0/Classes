@@ -1,4 +1,3 @@
-function classes:main/loot_table/main
 scoreboard players set @s cl.e.DeepFreeze 300
 data merge entity @s {NoAI:1b,Silent:1b,Invulnerable:1b}
 fill ~ ~ ~ ~ ~1 ~ packed_ice keep

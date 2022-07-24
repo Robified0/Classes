@@ -1,6 +1,5 @@
 ### Apply Effects
 ## Executing as hit entity
-execute if entity @s[type=!player] run function classes:main/loot_table/main
 effect give @s minecraft:levitation 1 10 false
 execute if entity @s[type=player] run effect give @s minecraft:slow_falling 3 0 false
 particle minecraft:cloud ~ ~ ~ 0.5 0.5 0.5 0.1 30 normal

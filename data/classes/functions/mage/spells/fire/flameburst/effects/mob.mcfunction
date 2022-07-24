@@ -1,5 +1,4 @@
-#Process loot_tables before damage
-function classes:main/loot_table/main
+#Process the damage/effects
 data merge entity @s {Fire:100}
 execute as @s[type=creeper] run function classes:entities/vanilla/creeper/fire
 effect give @s[type=!#classes:undead] instant_damage 1 1 false
