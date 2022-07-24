@@ -1,5 +1,4 @@
 #Do these things when spell hits
-function classes:main/loot_table/main
 effect give @s minecraft:instant_health 1 2 true
 particle minecraft:happy_villager ~ ~ ~ 0.5 1 0.5 1 10 normal
 particle minecraft:electric_spark ^-0.3 ^ ^0.3 0.3 0.3 0.3 1 20 force

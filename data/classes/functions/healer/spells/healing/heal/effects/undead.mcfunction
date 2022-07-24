@@ -1,6 +1,5 @@
 ##Executing as undead enemy raycast has hit (healer/spells/healing/heal/raycast)
 
-function classes:main/loot_table/main
 effect give @s minecraft:instant_health 1 1 true
 function classes:entities/vanilla/angry
 particle minecraft:composter ~ ~ ~ 0.5 1 0.5 0.1 30 normal

@@ -1,8 +1,5 @@
 ##Executing as undead mob within 10 blocks of player (healer/spells/smiting/stopundead/spell)
 
-#Set loot table stuff
-function classes:main/loot_table/main
-
 #Stop Undead
 data merge entity @s {NoAI:1b}
 
