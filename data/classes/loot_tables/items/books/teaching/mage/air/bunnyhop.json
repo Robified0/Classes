@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Bunny Hop Scroll\",\"color\":\"yellow\"}'},CustomModelData:65000,cl.bookSpellTaught:403,cl.bookTeachSpell:1b,cl.bookTeachElement:Air}"
+              "tag": "{display:{Name:'{\"text\":\"Bunny Hop Scroll\",\"color\":\"yellow\"}',Lore:['{\"text\":\"Right-click with this in your main hand to learn this spell.\",\"color\":\"gray\",\"italic\":true}']},CustomModelData:65000,cl.bookSpellTaught:403,cl.bookTeachSpell:1b,cl.bookTeachElement:Air}"
             }
           ]
         }

@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Levitate Scroll\",\"color\":\"yellow\"}'},CustomModelData:65000,cl.bookSpellTaught:400,cl.bookTeachSpell:1b,cl.bookTeachElement:Air}"
+              "tag": "{display:{Name:'{\"text\":\"Levitate Scroll\",\"color\":\"yellow\"}',Lore:['{\"text\":\"Right-click with this in your main hand to learn this spell.\",\"color\":\"gray\",\"italic\":true}']},CustomModelData:65000,cl.bookSpellTaught:400,cl.bookTeachSpell:1b,cl.bookTeachElement:Air}"
             }
           ]
         }

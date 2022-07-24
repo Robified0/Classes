@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Deep Freeze Scroll\",\"color\":\"blue\"}'},CustomModelData:65000,cl.bookSpellTaught:302,cl.bookTeachSpell:1b,cl.bookTeachElement:Water}"
+              "tag": "{display:{Name:'{\"text\":\"Deep Freeze Scroll\",\"color\":\"blue\"}',Lore:['{\"text\":\"Right-click with this in your main hand to learn this spell.\",\"color\":\"gray\",\"italic\":true}']},CustomModelData:65000,cl.bookSpellTaught:302,cl.bookTeachSpell:1b,cl.bookTeachElement:Water}"
             }
           ]
         }

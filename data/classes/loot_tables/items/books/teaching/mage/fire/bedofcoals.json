@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Bed of Coals Scroll\",\"color\":\"red\"}'},CustomModelData:65000,cl.bookSpellTaught:201,cl.bookTeachSpell:1b,cl.bookTeachElement:Fire}"
+              "tag": "{display:{Name:'{\"text\":\"Bed of Coals Scroll\",\"color\":\"red\"}',Lore:['{\"text\":\"Right-click with this in your main hand to learn this spell.\",\"color\":\"gray\",\"italic\":true}']},CustomModelData:65000,cl.bookSpellTaught:201,cl.bookTeachSpell:1b,cl.bookTeachElement:Fire}"
             }
           ]
         }
