@@ -7,7 +7,7 @@
     {
       "type": "minecraft:loot_table",
       "weight": 5,
-      "name": "classes:items/spiritessence"
+      "name": "classes:items/essences/spirit"
     }
   ],
   "conditions": [
