@@ -1,6 +1,14 @@
 ### Runs commands here once every second (20 ticks)
 
 #Run function when #cl.t.20Tick score hits 20 (operations/delay/main)
+
+#Handle custom spawning of mobs
+function classes:entities/custom/loopsummon
+
+#Handle loot table merging
+execute as @e[type=!#classes:nontarget,tag=!cl.t.summoned,tag=!cl.isCustomMob,tag=!cl.LTAdjusted] run function classes:main/loot_table/main
+
+#Handle logic for Magic table.
 execute as @e[type=marker,tag=cl.magicTable] at @s if entity @p[predicate=classes:checkclass/spellcaster,distance=..3] if data block ~ ~ ~ Items[0] run function classes:blocks/magictable/recipes/main
 
 #Stat handling
