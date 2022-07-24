@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:structure_block",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Fire Essence\",\"color\":\"red\",\"italic\":true}'},HideFlags:127,CustomModelData:101,Fire:1b,Enchantments:[{}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

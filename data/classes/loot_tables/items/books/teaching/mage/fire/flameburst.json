@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Flame Burst Scroll\",\"color\":\"red\"}'},CustomModelData:65000,cl.bookSpellTaught:202,cl.bookTeachSpell:1b,cl.bookTeachElement:Fire}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

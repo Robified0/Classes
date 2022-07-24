@@ -3,6 +3,38 @@
   "pools": [
     {
       "rolls": {
+        "min": 1,
+        "max": 5
+      },
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "classes:items/essences/fire"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "classes:items/essences/water"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "classes:items/essences/air"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "classes:items/essences/earth"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "classes:items/essences/magic"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "classes:items/essences/holy"
+        }
+      ]
+    },
+    {
+      "rolls": {
         "type": "minecraft:uniform",
         "min": 5,
         "max": 10
@@ -45,26 +77,8 @@
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
-                "max": 5
+                "max": 2
               }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:structure_block",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 0,
-                "max": 3
-              }
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:103,Air:1b,display:{Name:'{\"text\":\"Air Essence\",\"color\":\"yellow\",\"italic\":true}'}}"
             }
           ]
         }

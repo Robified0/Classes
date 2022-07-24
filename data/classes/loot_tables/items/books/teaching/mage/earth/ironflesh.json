@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Iron Flesh Scroll\",\"color\":\"green\"}'},CustomModelData:65000,cl.bookSpellTaught:501,cl.bookTeachSpell:1b,cl.bookTeachElement:Earth}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

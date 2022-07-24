@@ -2,6 +2,7 @@
   "values":[
 	"minecraft:player",
   "minecraft:villager",
+  "minecraft:allay",
   "#classes:nonmob"
   ]
 }
