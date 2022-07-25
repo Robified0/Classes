@@ -10,10 +10,7 @@
     },
     "description": [
       {
-        "text": "Throws hit target into air. When hitting players, gives slowfall briefly."
-      },
-      {
-        "text": "Look directly down to cast it on yourself.",
+        "text": "Throws hit target into air. When hitting players, gives slowfall briefly.\n\nLook directly down to cast it on yourself.",
         "color": "white"
       }
     ],
