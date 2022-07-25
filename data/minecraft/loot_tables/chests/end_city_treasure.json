@@ -9,7 +9,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "classes:items/books/teaching/mage/main"
+          "name": "classes:items/scrolls/mage/main"
         }
       ],
       "conditions": [
