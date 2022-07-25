@@ -6,6 +6,21 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
+          "name": "classes:items/scrolls/mage/main"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.05
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
           "name": "classes:items/essences/spirit"
         }
       ],
