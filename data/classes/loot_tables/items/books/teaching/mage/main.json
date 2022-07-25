@@ -5,12 +5,12 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "weight": 10,
+          "weight": 20,
           "name": "classes:items/books/teaching/mage/fire/torch"
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 6,
+          "weight": 8,
           "name": "classes:items/books/teaching/mage/fire/bedofcoals"
         },
         {
@@ -20,37 +20,37 @@
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 6,
+          "weight": 10,
           "name": "classes:items/books/teaching/mage/fire/fireshield"
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 10,
+          "weight": 20,
           "name": "classes:items/books/teaching/mage/water/waterstrike"
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 6,
+          "weight": 8,
           "name": "classes:items/books/teaching/mage/water/iceshard"
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 4,
+          "weight": 5,
           "name": "classes:items/books/teaching/mage/water/deepfreeze"
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 6,
+          "weight": 10,
           "name": "classes:items/books/teaching/mage/water/snowgolem"
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 6,
+          "weight": 10,
           "name": "classes:items/books/teaching/mage/water/waterbreath"
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 6,
+          "weight": 8,
           "name": "classes:items/books/teaching/mage/water/dolpgrace"
         },
         {
@@ -60,7 +60,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 7,
+          "weight": 10,
           "name": "classes:items/books/teaching/mage/water/extinguish"
         },
         {
@@ -70,72 +70,72 @@
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 10,
+          "weight": 20,
           "name": "classes:items/books/teaching/mage/air/levitate"
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 6,
+          "weight": 5,
           "name": "classes:items/books/teaching/mage/air/slowfall"
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 6,
+          "weight": 10,
           "name": "classes:items/books/teaching/mage/air/tailwind"
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 6,
+          "weight": 15,
           "name": "classes:items/books/teaching/mage/air/bunnyhop"
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 10,
+          "weight": 20,
           "name": "classes:items/books/teaching/mage/earth/poison"
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 7,
+          "weight": 15,
           "name": "classes:items/books/teaching/mage/earth/ironflesh"
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 5,
+          "weight": 10,
           "name": "classes:items/books/teaching/mage/earth/goldflesh"
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 3,
+          "weight": 5,
           "name": "classes:items/books/teaching/mage/earth/diamondflesh"
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 2,
+          "weight": 3,
           "name": "classes:items/books/teaching/mage/earth/irongolem"
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 9,
+          "weight": 12,
           "name": "classes:items/books/teaching/mage/magic/light"
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 4,
+          "weight": 8,
           "name": "classes:items/books/teaching/mage/magic/teleport"
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 3,
+          "weight": 5,
           "name": "classes:items/books/teaching/mage/magic/shield"
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 6,
+          "weight": 10,
           "name": "classes:items/books/teaching/mage/magic/invisibility"
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 7,
+          "weight": 8,
           "name": "classes:items/books/teaching/mage/magic/mend"
         }
       ]
