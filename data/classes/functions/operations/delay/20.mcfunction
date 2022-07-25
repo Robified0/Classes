@@ -18,7 +18,7 @@ execute as @a[scores={cl.Class=3}] run function classes:mage/stats/main
 execute as @a[scores={cl.Class=4}] run function classes:healer/stats/main
 
 #Run turning Spirit Essences into Elemental Essences
-execute as @e[type=item,nbt={Item:{tag:{cl.SpiritEssence:1b}}}] at @s run function classes:items/spiritessence/main
+execute as @e[type=item,nbt={Item:{tag:{cl.SpiritEssence:1b}}}] at @s if data entity @s Thrower run function classes:items/spiritessence/main
 
 #Bless handling
 execute as @a[scores={cl.e.Bless=1..}] run function classes:operations/checks/bless
