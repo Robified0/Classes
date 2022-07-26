@@ -2,6 +2,9 @@
 #Quick reset
 function classes:operations/track/spellequip/reset
 
+#Use Shulker Boxes
+execute in overworld run function classes:operations/track/spell/shulkers/main
+
 #Do this in the Overworld
 execute if entity @s[predicate=classes:check/dimension/overworld,gamemode=!creative,gamemode=!spectator] at @s positioned ~ -70 ~ if entity @e[type=minecraft:chest_minecart,distance=..2] if entity @s[predicate=classes:items/books/spellbook] run function classes:operations/track/spellequip/minecart/existing
 execute if entity @s[predicate=classes:check/dimension/overworld,gamemode=!creative,gamemode=!spectator] at @s positioned ~ -70 ~ unless entity @e[type=minecraft:chest_minecart,distance=..2] if entity @s[predicate=classes:items/books/spellbook] run function classes:operations/track/spellequip/minecart/main
