@@ -30,6 +30,8 @@ execute if entity @a[scores={cl.track.sneak=0,cl.Class=4,cl.rightClick=1..}] as 
 #Detect Wand
 execute if entity @a[scores={cl.track.sneak=0,cl.Class=4,cl.rightClick=1..}] as @a[predicate=classes:checkwand/wand,scores={cl.Cooldown=0,cl.Class=4,cl.rightClick=1..}] at @s run function classes:healer/system/rightclick
 
+#Learn Spell
+execute if entity @a[scores={cl.track.sneak=0,cl.Class=4,cl.rightClick=1..}] as @a[predicate=classes:items/scrolls/learnspell] run function classes:healer/system/learnspell/main
 
 #Effect detection
 execute as @a at @s run function classes:healer/system/effects/effects

@@ -32,7 +32,7 @@ execute if entity @a[scores={cl.track.sneak=0,cl.Class=3,cl.rightClick=1..}] as 
 execute if entity @a[scores={cl.track.sneak=0,cl.Class=3,cl.rightClick=1..}] as @a[predicate=classes:checkwand/wand,scores={cl.Cooldown=0,cl.Class=3,cl.rightClick=1..}] at @s run function classes:mage/system/rightclick
 
 #Learn Spell
-execute if entity @a[scores={cl.track.sneak=0,cl.Class=3,cl.rightClick=1..}] as @a[predicate=classes:items/books/spelllearn] run function classes:mage/system/learnspell/main
+execute if entity @a[scores={cl.track.sneak=0,cl.Class=3,cl.rightClick=1..}] as @a[predicate=classes:items/scrolls/learnspell] run function classes:mage/system/learnspell/main
 
 
 #AOE Effect detection

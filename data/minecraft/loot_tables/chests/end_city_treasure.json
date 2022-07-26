@@ -9,7 +9,13 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
+          "weight": 3,
           "name": "classes:items/scrolls/mage/main"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "classes:items/scrolls/healer/main"
         }
       ],
       "conditions": [
