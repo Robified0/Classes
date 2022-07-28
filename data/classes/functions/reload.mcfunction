@@ -88,6 +88,14 @@ scoreboard objectives add cl.track.interact.hopper minecraft.custom:minecraft.in
 scoreboard objectives add cl.track.interact.dropper minecraft.custom:minecraft.inspect_dropper
 scoreboard objectives add cl.track.interact dummy
 
+# Sets up the shulker boxes.
+scoreboard objectives add cl.track.shulkerStorage dummy
+execute unless score #cl.track.shulkerStorage cl.track.shulkerStorage matches 0..51 run forceload add 0 0 15 15
+execute unless score #cl.track.shulkerStorage cl.track.shulkerStorage matches 0..51 run fill 3 -64 3 12 -64 12 minecraft:gray_shulker_box[facing=down]
+execute unless score #cl.track.shulkerStorage cl.track.shulkerStorage matches 0..51 run fill 0 -63 0 15 -62 15 minecraft:bedrock
+execute unless score #cl.track.shulkerStorage cl.track.shulkerStorage matches 0..51 run scoreboard players set #cl.track.shulkerStorage cl.track.shulkerStorage 1
+
+
 #Scoreboards for settings
 scoreboard objectives add cl.pref.setFire dummy
 scoreboard objectives add cl.pref.wPortal dummy

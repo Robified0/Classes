@@ -22,7 +22,7 @@ execute unless score @s cl.spellMenu matches -2 unless score @s cl.spellMenu mat
 execute if entity @s[scores={cl.spellMenu=-1}] run function classes:healer/system/spellequip/gui/main
 execute unless score @s cl.spellMenu matches -2 unless score @s cl.spellMenu matches -4 unless entity @s[scores={cl.spellMenu=0..}] run function classes:healer/system/spellequip/gui/main
 execute if entity @s[scores={cl.spellMenu=0..}] run function classes:healer/system/spellequip/logic/spellselect
-execute if entity @s[scores={cl.spellMenu=-4}] at @s run function classes:operations/track/spellequip/restore/restorecheck
+execute if entity @s[scores={cl.spellMenu=-4}] at @s run function classes:operations/track/spellequip/shulkers/restore
 
 execute if score @s cl.spellMenu matches -4 run scoreboard players reset @s cl.spellMenu
 execute if score @s cl.spellMenu matches -2 run scoreboard players reset @s cl.spellMenu
