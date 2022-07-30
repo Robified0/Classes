@@ -1,6 +1,6 @@
 #Do these things when spell hits
 effect give @s minecraft:instant_damage 1 0 true
-particle minecraft:end_rod ~ ~ ~ 0.2 0.2 0.2 0.05 5 normal
+particle minecraft:end_rod ~ ~1 ~ 0.2 0.2 0.2 0.05 5 normal
 function classes:entities/vanilla/angry
 
 #Playsound

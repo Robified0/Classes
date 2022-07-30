@@ -7,7 +7,7 @@ particle dust 1.000 0.000 0.000 0.5 ^-0.4 ^0.2 ^0.3 0.3 0.3 0.3 0.25 20 force
 execute at @s run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 2 1.5
 
 #Do these things when spell hits
-execute as @a[dx=0,tag=!cl.r.this] positioned ~-0.89 ~-0.89 ~-0.89 if entity @s[dx=0] positioned ~0.89 ~0.89 ~0.89 run function classes:healer/spells/buff/vitality/player
+execute positioned ~-1 ~-1 ~-1 as @a[tag=!cl.r.this,dx=1,dy=1,dz=1] at @s run function classes:healer/spells/buff/vitality/player
 
 #Only change filepaths for spell
 scoreboard players remove #temp cl.slowcast 1

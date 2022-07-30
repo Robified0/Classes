@@ -5,8 +5,8 @@ particle end_rod ^-0.4 ^0.2 ^0.3 0 0 0 0.05 1 force
 execute at @s run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 1 1.5
 
 #Do these things when spell hits
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!cl.r.this,type=!#classes:nontarget,type=!#classes:undead,tag=!cl.t.summoned,tag=!cl.t.Owned] run function classes:healer/spells/smiting/bolt/effects/mob
-execute positioned ~ ~-0.5 ~ as @e[distance=..1.3,tag=!cl.r.this,type=#classes:undead,tag=!cl.t.summoned,tag=!cl.t.Owned] run function classes:healer/spells/smiting/bolt/effects/undead
+execute positioned ~-1 ~-1 ~-1 as @e[tag=!cl.r.this,type=!#classes:nontarget,type=!#classes:undead,tag=!cl.t.summoned,tag=!cl.t.Owned,dx=1,dy=1,dz=1] at @s run function classes:healer/spells/smiting/bolt/effects/mob
+execute positioned ~-1 ~-1 ~-1 as @e[tag=!cl.r.this,type=#classes:undead,tag=!cl.t.summoned,tag=!cl.t.Owned,dx=1,dy=1,dz=1] at @s run function classes:healer/spells/smiting/bolt/effects/undead
 
 #Only change filepaths for spell
 scoreboard players remove #temp cl.slowcast 1

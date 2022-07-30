@@ -1,7 +1,7 @@
 #Do these things when spell hits
 effect give @s minecraft:instant_health 1 2 true
-particle minecraft:happy_villager ~ ~ ~ 0.5 1 0.5 1 10 normal
-particle minecraft:electric_spark ^-0.3 ^ ^0.3 0.3 0.3 0.3 1 20 force
+particle minecraft:happy_villager ~ ~1 ~ 0.5 1 0.5 1 10 normal
+particle minecraft:electric_spark ~ ~1 ~ 0.3 0.3 0.3 1 20 force
 function classes:entities/vanilla/angry
 
 #Edit comment/uncomment if you want it to continue/end when it hits a target
