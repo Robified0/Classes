@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Bolt Scroll\",\"color\":\"yellow\"}',Lore:['{\"text\":\"Right-click with this in your main hand to learn this spell.\",\"color\":\"gray\",\"italic\":true}']},CustomModelData:65000,cl.bookSpellTaught:902,cl.bookTeachSpell:1b,cl.bookTeachElement:Smiting}"
+              "tag": "{display:{Name:'{\"text\":\"Bolt Scroll\",\"color\":\"yellow\"}',Lore:['{\"text\":\"Right-click with this in your main hand to learn this spell.\",\"color\":\"gray\",\"italic\":true}']},CustomModelData:65000,cl.bookSpellTaught:902,cl.bookTeachSpell:1b,cl.bookTeachElement:Smiting,cl.classScroll:Healer}"
             }
           ]
         }
