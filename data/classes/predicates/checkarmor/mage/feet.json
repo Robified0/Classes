@@ -5,7 +5,6 @@
       "equipment": {
         "feet": {
           "items": [
-            "minecraft:leather_boots",
             "minecraft:iron_boots",
             "minecraft:chainmail_boots",
             "minecraft:golden_boots",
