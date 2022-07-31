@@ -24,4 +24,4 @@ scoreboard players set @s cl.Cooldown 20
 scoreboard players remove @s cl.Mana 8
 
 #Change base attribute
-execute as @s run attribute @s minecraft:generic.armor base set 6
+execute as @s run attribute @s minecraft:generic.armor base set 2

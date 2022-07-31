@@ -5,7 +5,7 @@ function classes:mage/system/armorspells
 scoreboard players set @s cl.e.DiaFlesh 24000
 
 #Change base attribute
-attribute @s minecraft:generic.armor base set 12
+attribute @s minecraft:generic.armor base set 8
 
 #Particle effect
 particle block diamond_block ~ ~ ~ 1 1 1 10 40 normal

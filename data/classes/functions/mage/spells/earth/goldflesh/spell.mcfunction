@@ -5,7 +5,7 @@ function classes:mage/system/armorspells
 scoreboard players set @s cl.e.GoldFlesh 24000
 
 #Change base attribute
-attribute @s minecraft:generic.armor base set 10
+attribute @s minecraft:generic.armor base set 6
 
 #Particle effect
 particle block gold_block ~ ~ ~ 1 1 1 10 40 normal
