@@ -17,7 +17,7 @@
     "announce_to_chat": false,
     "hidden": true
   },
-  "parent": "classes:mage/essence/researchwateressence",
+  "parent": "classes:mage/essence/wateressence",
   "criteria": {
     "Water Breathing": {
       "trigger": "minecraft:impossible"

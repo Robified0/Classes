@@ -19,7 +19,7 @@
     "announce_to_chat": false,
     "hidden": true
   },
-  "parent": "classes:mage/essence/researchairessence",
+  "parent": "classes:mage/essence/airessence",
   "criteria": {
     "Levitate": {
       "trigger": "minecraft:impossible"

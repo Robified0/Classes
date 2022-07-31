@@ -16,7 +16,7 @@
     "announce_to_chat": false,
     "hidden": false
   },
-  "parent": "classes:mage/researchlapis",
+  "parent": "classes:mage/essence/spiritessence",
   "criteria": {
     "Water Essence": {
       "trigger": "minecraft:inventory_changed",

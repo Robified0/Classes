@@ -16,9 +16,9 @@
     "announce_to_chat": false,
     "hidden": false
   },
-  "parent": "classes:mage/researchlapis",
+  "parent": "classes:mage/essence/spiritessence",
   "criteria": {
-    "airessence": {
+    "Air Essence": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "player": [

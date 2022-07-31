@@ -16,7 +16,7 @@
     "announce_to_chat": false,
     "hidden": false
   },
-  "parent": "classes:healer/researchlapis",
+  "parent": "classes:healer/essence/spiritessence",
   "criteria": {
     "holyessence": {
       "trigger": "minecraft:inventory_changed",
