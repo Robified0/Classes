@@ -15,4 +15,4 @@ tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" c
 scoreboard players set @s cl.Cooldown 20
 
 #Mana Removal
-scoreboard players remove @s cl.Mana 2
+scoreboard players remove @s cl.Mana 6
