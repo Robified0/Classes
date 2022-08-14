@@ -1,3 +1,7 @@
+#Reset
+scoreboard players reset @s cl.slo_dst
+scoreboard players reset @s cl.slo_dst_per
+
 #Destroy Nether Portal
 execute if score #cl.pref cl.pref.wPortal matches 1 positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:nether_portal run setblock ~ ~ ~ minecraft:air
 
@@ -29,8 +33,4 @@ execute if score #cl.pref cl.pref.wObsidian matches 1 in minecraft:the_nether if
 execute if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:lava run particle minecraft:large_smoke ^ ^ ^-0.5 0.1 0.1 0.1 0.05 20 normal
 execute if score #temp cl.slowcast matches 0.. positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:lava run playsound minecraft:block.lava.extinguish ambient @a ~ ~ ~ 1 0.2
 
-#Reset
-execute as @a[tag=!cl.r.slowcast,scores={cl.slo_id=1..}] if score @s cl.slo_id = @e[type=marker,tag=cl.r.slowcast,tag=cl.r.waterstrike,limit=1,sort=nearest] cl.slo_id run function classes:mage/spells/water/waterstrike/end
-scoreboard players reset @s cl.slo_dst
-scoreboard players reset @s cl.slo_dst_per
 kill @s
