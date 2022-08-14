@@ -1,3 +1,6 @@
+#Plain candles
+execute if block ~ ~ ~ minecraft:candle run function classes:blocks/candles/colors/plain/extinguish
+
 #Red candles
 execute if block ~ ~ ~ minecraft:red_candle run function classes:blocks/candles/colors/red/extinguish
 
