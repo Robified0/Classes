@@ -2,7 +2,7 @@
 function classes:mage/system/armorspells
 
 #Give Player score for particle effect
-scoreboard players set @s cl.e.IronFlesh 24000
+scoreboard players set @s cl.e.IronFlesh 12000
 
 #Change base attribute
 attribute @s minecraft:generic.armor base set 4

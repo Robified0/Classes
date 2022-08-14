@@ -2,7 +2,7 @@
 function classes:mage/system/armorspells
 
 #Give Player Tag for particle effect
-scoreboard players set @s cl.e.MageArmor 24000
+scoreboard players set @s cl.e.MageArmor 12000
 
 #Particle effect
 particle witch ~ ~ ~ 1 1 1 10 40 normal
