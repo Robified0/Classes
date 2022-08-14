@@ -5,7 +5,7 @@ particle cloud ^-0.4 ^0.2 ^0.3 0.1 0.1 0.1 0.05 2 force
 execute at @s run playsound minecraft:entity.horse.breathe player @a ~ ~ ~ 0.5
 
 #Detect mobs, then do effects
-execute positioned ~-1 ~-1 ~-1 as @e[tag=!cl.r.this,type=!#classes:nonmob,tag=!cl.t.summoned,tag=!cl.t.Owned,dx=1,dy=1,dz=1] at @s run function classes:mage/spells/air/levitate/effects/mob
+execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[tag=!cl.r.this,type=!#classes:nonmob,tag=!cl.t.summoned,tag=!cl.t.Owned,dx=0,dy=0,dz=0] at @s run function classes:mage/spells/air/levitate/effects/mob
 
 #Only change paths for spell
 scoreboard players remove #temp cl.slowcast 1
