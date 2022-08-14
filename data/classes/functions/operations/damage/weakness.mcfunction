@@ -1,7 +1,7 @@
 # Run the function again to double the effective damage.
 
 #Start damage
-scoreboard players operation @s cl.CurrentHealth -= @e[type=marker,tag=cl.r.slowcast,limit=1,sort=nearest] cl.damageRandom
+scoreboard players operation @s cl.CurrentHealth -= @e[type=marker,tag=cl.r.customDamage,limit=1,sort=nearest] cl.damageRandom
 
 # Will the mob be zero health? If so, kill it, unless it's the ender dragon.
 # Ender dragon will just disappear with kill, and not activate animation.

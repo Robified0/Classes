@@ -3,7 +3,7 @@ execute if entity @s[tag=!cl.LTAdjusted] run function classes:main/loot_table/ma
 
 #Start damage
 execute store result score @s cl.CurrentHealth run data get entity @s Health 1
-scoreboard players operation @s cl.CurrentHealth -= @e[type=marker,tag=cl.r.slowcast,limit=1,sort=nearest] cl.damageRandom
+scoreboard players operation @s cl.CurrentHealth -= @e[type=marker,tag=cl.r.customDamage,limit=1,sort=nearest] cl.damageRandom
 
 #Handle elemental weakness (set in effect file of spell for extra damage given)
 execute if score @s cl.damageWeakness matches 1.. run function classes:operations/damage/weakness
