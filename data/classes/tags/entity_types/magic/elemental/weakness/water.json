@@ -1,0 +1,12 @@
+{
+  "values":[
+  "minecraft:enderman",
+	"minecraft:magma_cube",
+	"minecraft:blaze",
+	"minecraft:ghast",
+  "minecraft:wither_skeleton",
+  "minecraft:wither",
+  "minecraft:zombified_piglin",
+  "minecraft:warden"
+  ]
+}
