@@ -7,11 +7,11 @@ execute if entity @s[predicate=classes:entities/angry] run function classes:enti
 
 ## Get damage score
 # Set top damage first (this is the range minus the random below)
-execute as @e[type=marker,tag=cl.r.flameburst,sort=nearest,limit=1] run scoreboard players set @s cl.damageRange 4
+execute as @e[type=marker,tag=cl.r.flameburst,tag=cl.r.customDamage,sort=nearest,limit=1] run scoreboard players set @s cl.damageRange 4
 # Run randomize function
-execute as @e[type=marker,tag=cl.r.flameburst,sort=nearest,limit=1] run function classes:operations/damage/random
+execute as @e[type=marker,tag=cl.r.flameburst,tag=cl.r.customDamage,sort=nearest,limit=1] run function classes:operations/damage/random
 #Boost it by the below to make sure it always does at *least* this amount
-execute as @e[type=marker,tag=cl.r.flameburst,sort=nearest,limit=1] run scoreboard players add @s cl.damageRandom 4
+execute as @e[type=marker,tag=cl.r.flameburst,tag=cl.r.customDamage,sort=nearest,limit=1] run scoreboard players add @s cl.damageRandom 4
 
 #Handle elemental weaknesses
 execute if entity @s[type=#classes:magic/elemental/weakness/fire] run scoreboard players set @s cl.damageWeakness 1
