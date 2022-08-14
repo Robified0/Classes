@@ -5,11 +5,10 @@ particle small_flame ^-0.4 ^0.2 ^0.3 0 0 0 0.005 2 force
 #Play sound effect - use here when needing repeat
 #execute at @s run playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 0.08
 
-#Detect mob & bosses
-execute positioned ~-1 ~-1 ~-1 as @e[tag=!cl.r.this,type=!#classes:nontarget,type=!#classes:fireproof,tag=!cl.t.summoned,tag=!cl.t.Owned,dx=1,dy=1,dz=1] at @s run function classes:mage/spells/fire/torch/effects/mob
-
-#Detect boss - Wither is immune to fire.
-execute positioned ~-1 ~-1 ~-1 as @e[tag=!cl.r.this,type=ender_dragon,dx=1,dy=1,dz=1] at @s run function classes:mage/spells/fire/torch/effects/boss
+#Detect mob
+execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[tag=!cl.r.this,type=!#classes:nontarget,type=!#classes:fireproof,tag=!cl.t.summoned,tag=!cl.t.Owned,dx=0,dy=0,dz=0] unless score @s cl.slo_id = @e[type=marker,tag=cl.r.torch,sort=nearest,limit=1] cl.slo_id at @s run function classes:mage/spells/fire/torch/effects/mob
+# Kill Marker to avoid re-runs
+execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[tag=!cl.r.this,type=!#classes:nontarget,type=!#classes:fireproof,tag=!cl.t.summoned,tag=!cl.t.Owned,dx=0,dy=0,dz=0] run function classes:mage/spells/fire/torch/zprivate/end
 
 #Only change filepaths for spell
 scoreboard players remove #temp cl.slowcast 1

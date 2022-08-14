@@ -28,3 +28,4 @@ execute positioned ^ ^ ^0.5 if block ~ ~ ~ minecraft:water run playsound minecra
 scoreboard players reset @s cl.slo_id
 scoreboard players reset @s cl.slo_dst_per
 scoreboard players reset @s cl.slo_dst
+kill @s
