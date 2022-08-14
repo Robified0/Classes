@@ -1,4 +1,8 @@
 ##################Set up scoreboards######################
+scoreboard objectives add cl.CurrentHealth dummy
+scoreboard objectives add cl.damageRange dummy
+scoreboard objectives add cl.damageRandom dummy
+scoreboard objectives add cl.damageWeakness dummy
 
 scoreboard objectives add cl.motion_x1 dummy
 scoreboard objectives add cl.motion_y1 dummy
