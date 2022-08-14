@@ -6,3 +6,6 @@ execute unless entity @e[type=!#classes:nontarget,type=!#classes:fireproof,dista
 
 #Run mob function to apply effects.
 execute as @e[type=!#classes:nontarget,type=!#classes:fireproof,distance=..6,sort=random,tag=!cl.t.summoned,tag=!cl.t.Owned] at @s run function classes:mage/spells/fire/flameburst/effects/mob
+
+#Kill Marker
+execute as @e[type=marker,tag=cl.r.flameburst,distance=..1] run kill @s
