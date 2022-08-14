@@ -1,10 +1,14 @@
-#Do these things when spell hits
-effect give @s minecraft:instant_damage 1 0 true
-particle minecraft:firework ~ ~1 ~ 0.1 0.1 0.1 0.1 30 force
+#Give ID of marker to avoid multiple hits
+scoreboard players operation @s cl.slo_id = @e[type=marker,tag=cl.r.magicmissile,sort=nearest,limit=1] cl.slo_id
+
+#Apple effects
 function classes:entities/vanilla/angry
 
-#Playsound
-playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 0.5 1
+# Calculate damage
+function classes:operations/damage/apply
 
-#Edit comment/uncomment if you want it to continue/end when it hits a target
-execute as @e[type=marker,tag=cl.r.magicmissile,sort=nearest,limit=1] run function classes:mage/spells/magic/magicmissile/zprivate/end
+# Particle effect
+particle minecraft:firework ~ ~1 ~ 0.1 0.1 0.1 0.1 30 force
+
+# Playsound
+playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 0.5 1

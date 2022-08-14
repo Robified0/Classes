@@ -5,8 +5,12 @@ particle firework ^-0.4 ^0.2 ^0.3 0 0 0 0.05 1 force
 
 
 #Do these things when spell hits
-execute positioned ~-1 ~-1 ~-1 as @e[tag=!cl.r.this,type=!#classes:nontarget,type=!#classes:undead,tag=!cl.t.summoned,tag=!cl.t.Owned,dx=1,dy=1,dz=1] at @s run function classes:mage/spells/magic/magicmissile/effects/mob
-execute positioned ~-1 ~-1 ~-1 as @e[tag=!cl.r.this,type=#classes:undead,tag=!cl.t.summoned,tag=!cl.t.Owned,dx=1,dy=1,dz=1] at @s run function classes:mage/spells/magic/magicmissile/effects/undead
+execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[tag=!cl.r.this,type=!#classes:nontarget,tag=!cl.t.summoned,tag=!cl.t.Owned,dx=0,dy=0,dz=0] unless score @s cl.slo_id = @e[type=marker,tag=cl.r.magicmissile,sort=nearest,limit=1] cl.slo_id at @s run function classes:mage/spells/magic/magicmissile/effects/mob
+
+#Edit comment/uncomment if you want it to continue/end when it hits a target
+# Kill Marker to avoid re-runs
+execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[tag=!cl.r.this,type=!#classes:nontarget,tag=!cl.t.summoned,tag=!cl.t.Owned,dx=0,dy=0,dz=0] run function classes:mage/spells/magic/magicmissile/zprivate/end
+
 
 #Only change filepaths for spell
 scoreboard players remove #temp cl.slowcast 1
