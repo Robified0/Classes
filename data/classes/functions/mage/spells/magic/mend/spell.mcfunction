@@ -1,5 +1,5 @@
 #Give Effect
-effect give @s minecraft:instant_health 1 0
+effect give @s minecraft:regeneration 10 2
 
 #Cast Spell Sound Effect
 function classes:main/mana_system/mage/cast
@@ -15,4 +15,4 @@ tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" c
 scoreboard players set @s cl.Cooldown 20
 
 #Mana Removal
-scoreboard players remove @s cl.Mana 1
+scoreboard players remove @s cl.Mana 2
