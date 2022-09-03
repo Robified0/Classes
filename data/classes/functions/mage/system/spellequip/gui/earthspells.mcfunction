@@ -1,4 +1,4 @@
-##Set Air Spells to inventory - only placing them if the spell has been learned, and isn't currently in their hotbar.
+##Set Earth Spells to inventory - only placing them if the spell has been learned, and isn't currently in their hotbar.
 #Poison
 item replace entity @s[advancements={classes:mage/learnspell/earth/poison=true}] inventory.0 with minecraft:warped_fungus_on_a_stick{display:{Name:'[{"text":"Poison","color":"dark_green"},{"text":" - ","color":"white","bold":false},{"text":"\\uE004 x 1","color":"aqua","bold":false,"italic":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','[{"text":"Element: ","color":"dark_aqua"},{"text":"Earth","color":"dark_green"}]','{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Inflicts hit mob with Poison for 15 seconds.","color":"dark_green"}']},CustomModelData:60500,cl.s.Spell:1b,cl.s.Earth:1b,cl.s.Poison:1b,cl.spell.number:500}
 execute if entity @s[advancements={classes:mage/learnspell/earth/poison=false}] run item replace entity @s inventory.0 with minecraft:black_stained_glass_pane{display:{Name:'{"text":""}'},cl.item.noDrop:1b}
