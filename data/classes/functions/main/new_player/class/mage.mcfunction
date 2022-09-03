@@ -12,15 +12,17 @@ scoreboard players set @s cl.Cooldown 0
 advancement grant @s only classes:mage/root
 advancement grant @s only classes:mage/learnspell/magic/magearmor
 advancement grant @s only classes:mage/learnspell/magic/magicmissile
+advancement grant @s only classes:mage/learnspell/magic/mend
 function classes:mage/stats/main
 
 #Set first slot spell as selected
 scoreboard players set @s cl.slot.selected 1
 
-###Give base Mage spells (Magic Missle & Mage Armor)
+###Give base Mage spells (Magic Missile, Mage Armor, and Mend)
 scoreboard players set @s cl.spell.selected 606
 scoreboard players set @s cl.wand.slot1 606
 scoreboard players set @s cl.wand.slot2 605
+scoreboard players set @s cl.wand.slot3 604
 
 ##Give wand
 loot spawn ~ ~ ~ loot classes:items/wands/starterwand
