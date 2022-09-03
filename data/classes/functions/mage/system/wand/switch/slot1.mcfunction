@@ -20,6 +20,7 @@ execute as @s[scores={cl.wand.slot1=501}] run function classes:mage/spells/earth
 execute as @s[scores={cl.wand.slot1=502}] run function classes:mage/spells/earth/goldflesh/select
 execute as @s[scores={cl.wand.slot1=503}] run function classes:mage/spells/earth/diamondflesh/select
 execute as @s[scores={cl.wand.slot1=504}] run function classes:mage/spells/earth/irongolem/select
+execute as @s[scores={cl.wand.slot1=505}] run function classes:mage/spells/earth/mine/select
 execute as @s[scores={cl.wand.slot1=600}] run function classes:mage/spells/magic/light/select
 execute as @s[scores={cl.wand.slot1=601}] run function classes:mage/spells/magic/teleport/select
 execute as @s[scores={cl.wand.slot1=602}] run function classes:mage/spells/magic/shield/select
