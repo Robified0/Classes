@@ -10,9 +10,6 @@ execute positioned ~-0.5 ~-0.5 ~-0.5 as @a[tag=!cl.r.this] run effect clear @s f
 #Play sound
 execute at @s run playsound minecraft:entity.boat.paddle_water player @a ~ ~ ~ 0.8 1
 
-# Kill Marker to avoid re-runs
-execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[tag=!cl.r.this,type=!#classes:nontarget,type=!#classes:waterproof,tag=!cl.t.summoned,tag=!cl.t.Owned,dx=0,dy=0,dz=0] run function classes:mage/spells/water/waterstrike/zprivate/end
-
 #Only change filepaths for spell
 scoreboard players remove #temp cl.slowcast 1
 execute if score #temp cl.slowcast matches ..-1 run tp @s ~ ~ ~
