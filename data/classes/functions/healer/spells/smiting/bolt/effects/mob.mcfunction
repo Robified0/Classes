@@ -1,9 +1,6 @@
 #Do these things when spell hits
 function classes:entities/vanilla/angry
 
-#Edit comment/uncomment if you want it to continue/end when it hits a target
-execute at @s as @e[type=marker,tag=cl.r.bolt,sort=nearest,limit=1] run function classes:healer/spells/smiting/bolt/zprivate/end
-
 #Give ID of marker to avoid multiple hits
 scoreboard players operation @s cl.slo_id = @e[type=marker,tag=cl.r.bolt,sort=nearest,limit=1] cl.slo_id
 
