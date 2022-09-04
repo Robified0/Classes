@@ -14,5 +14,5 @@ scoreboard players set @s cl.e.Inspire 10
 
 #Handle Mana drain over time. Set cl.e.Inspire.m=# to a higher number to slow down drain rate.
 scoreboard players add @s cl.e.Inspire.m 1
-scoreboard players remove @s[scores={cl.e.Inspire.m=2}] cl.Mana 1
-scoreboard players set @s[scores={cl.e.Inspire.m=2..}] cl.e.Inspire.m 0
+scoreboard players remove @s[scores={cl.e.Inspire.m=4}] cl.Mana 1
+scoreboard players set @s[scores={cl.e.Inspire.m=4..}] cl.e.Inspire.m 0
