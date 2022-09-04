@@ -1,5 +1,5 @@
 #Merge loot table for proper drops
-execute if entity @s[tag=!cl.LTAdjusted] run function classes:main/loot_table/main
+execute if entity @s[tag=!cl.LTAdjusted,tag=!cl.isCustomMob] run function classes:main/loot_table/main
 
 #Start damage
 execute store result score @s cl.CurrentHealth run data get entity @s Health 1
