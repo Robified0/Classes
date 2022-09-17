@@ -9,7 +9,7 @@
       "color": "blue"
     },
     "description": {
-      "text": "Throw a Lapis Block on top of a Smithing Table to transform it into a Magic Table.\n\nPlace items with a book to study and learn about them.\n\nOnce all the items for a spell are researched, you can create them in the Magic Table!"
+      "text": "Throw a Lapis Block on top of a Smithing Table to transform it into a Magic Table.\n\nTry a stick and an iron ingot to make a backup wand..."
     },
     "frame": "task",
     "show_toast": true,
