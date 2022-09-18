@@ -6,6 +6,6 @@
   "minecraft:wither_skeleton",
   "minecraft:wither",
   "minecraft:zombified_piglin",
-  "minecraft:warden"
+  {"id":"minecraft:warden","required":false}
   ]
 }

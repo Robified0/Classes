@@ -2,13 +2,13 @@
   "values":[
 	"minecraft:vex",
   "minecraft:vindicator",
-  "minecraft:warden",
   "minecraft:witch",
   "minecraft:wither_skeleton",
   "minecraft:wither",
   "minecraft:zombie_villager",
   "minecraft:zombie",
   "minecraft:zoglin",
-  "minecraft:zombified_piglin"
+  "minecraft:zombified_piglin",
+  {"id":"minecraft:warden","required":false}
   ]
 }

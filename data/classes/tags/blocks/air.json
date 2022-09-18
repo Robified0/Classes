@@ -12,7 +12,6 @@
   "minecraft:fern",
 	"minecraft:ladder",
   "#minecraft:buttons",
-  "#minecraft:wool_carpets",
   "#minecraft:crops",
   "#minecraft:saplings",
   "#minecraft:pressure_plates",
@@ -28,6 +27,8 @@
   "minecraft:soul_torch",
   "minecraft:wall_torch",
   "minecraft:soul_wall_torch",
-  "minecraft:sculk_vein"
+  {"id":"minecraft:sculk_vein","required":false},
+  {"id":"#minecraft:wool_carpets","required":false},
+  {"id":"#minecraft:carpets","required":false}
   ]
 }
