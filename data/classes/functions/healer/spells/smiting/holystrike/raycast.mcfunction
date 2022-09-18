@@ -6,9 +6,7 @@ particle wax_off ^-0.4 ^0.2 ^0.3 0.3 0.3 0.3 0.1 1 force
 execute at @s run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 1 1.5
 
 #Detect mob
-execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[tag=!cl.r.this,type=!#classes:nontarget,tag=!cl.t.summoned,tag=!cl.t.Owned,dx=0,dy=0,dz=0] unless score @s cl.slo_id = @e[type=marker,tag=cl.r.holystrike,sort=nearest,limit=1] cl.slo_id at @s run function classes:healer/spells/smiting/holystrike/effects/mob
-# Kill Marker to avoid re-runs
-execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[tag=!cl.r.this,type=!#classes:nontarget,tag=!cl.t.summoned,tag=!cl.t.Owned,dx=0,dy=0,dz=0] run function classes:healer/spells/smiting/holystrike/zprivate/end
+execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[tag=!cl.r.this,type=#classes:undead,tag=!cl.t.summoned,tag=!cl.t.Owned,dx=0,dy=0,dz=0] unless score @s cl.slo_id = @e[type=marker,tag=cl.r.holystrike,sort=nearest,limit=1] cl.slo_id at @s run function classes:healer/spells/smiting/holystrike/effects/mob
 
 #Only change filepaths for spell
 scoreboard players remove #temp cl.slowcast 1
