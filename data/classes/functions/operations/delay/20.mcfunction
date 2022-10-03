@@ -53,5 +53,8 @@ execute as @a unless entity @s[scores={cl.spellMenu=-10..}] run function classes
 #Check the state of the Dropper
 execute as @a at @s as @e[type=marker,tag=cl.magicTable,distance=..5] at @s if block ~ ~ ~ dropper[facing=up] run function classes:blocks/magictable/check
 
+#Handle Slimes & Armor Stands for Earth wall
+execute as @e[type=#classes:mage/spell/earthwall,scores={cl.spell.earthWall=0..}] at @s run function classes:mage/effects/earthwall
+
 #Reset score
 scoreboard players set #cl.t.20Tick cl.t.Tick 0

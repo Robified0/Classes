@@ -1,5 +1,5 @@
 #Give Effect
-effect give @s minecraft:regeneration 5 2
+effect give @s minecraft:regeneration 5 1
 
 #Cast Spell Sound Effect
 function classes:main/mana_system/mage/cast

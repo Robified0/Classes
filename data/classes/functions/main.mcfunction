@@ -37,6 +37,12 @@ execute as @e[type=item,tag=!cl.t.processed,nbt={Item:{tag:{cl.Custom:1b}}}] run
 #Check for arrows shot
 execute as @a[scores={cl.t.usedBow=1..},predicate=classes:items/infinitybow] at @s run function classes:operations/items/infinitybow
 
+#TP Markers to Earth Wall falling blocks
+execute as @e[type=slime,scores={cl.spell.earthWall.move=1..}] at @s run function classes:mage/spells/earth/wall/place/move
+execute as @e[type=armor_stand,scores={cl.spell.earthWall.move=1..}] at @s run function classes:mage/spells/earth/wall/place/move
+
+#Handle Slimes & Armor Stands for Earth wall
+execute as @e[type=slime,scores={cl.spell.earthWall=0..}] at @s run function classes:mage/spells/earth/wall/place/remove
 
 #Tag items
 execute as @e[type=item,tag=!cl.t.processed] run tag @s add cl.t.processed

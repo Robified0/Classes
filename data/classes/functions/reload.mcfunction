@@ -137,6 +137,8 @@ scoreboard objectives add cl.e.CureEffects dummy
 scoreboard objectives add cl.e.Vitality dummy
 scoreboard objectives add cl.e.Bless dummy
 scoreboard objectives add cl.e.StopUndead dummy
+scoreboard objectives add cl.spell.earthWall dummy
+scoreboard objectives add cl.spell.earthWall.move dummy
 
 #Slowcast scoreboards (credit to CloudWolf)
 scoreboard objectives add cl.slowcast dummy

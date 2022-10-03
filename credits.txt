@@ -8,7 +8,11 @@ I was coding this, but also even used in all of the raycast spells in the pack. 
 SO much time from having to code it myself. And also to TimberForge (https://www.youtube.com/c/TimberForge) for his content which also helped me
 so much! (Custom Block Models!)
 
-Third, is a huge thank you to the r/MinecraftCommands community for all the help they offer to others, which I ended up finding when doing searches
+Another thank you goes out to ERROR 422 (https://www.planetminecraft.com/member/error_422/) and their work in their own magic datapack. I drew several
+of their ideas into this datapack, while adopting them to my own mission with this one. They were so kind as to allow me to use some of their code in
+this, to save me hours of testing.
+
+Last, is a huge thank you to the r/MinecraftCommands community for all the help they offer to others, which I ended up finding when doing searches
 on how to solve all the issues I came across, or when asking myself. Huge shoutout to vdvman1 on his help fine tuning the hitbox detection!
 
 Lastly, is a thank you to Mojang for making all of this possible. This size of this project just simply wouldn't be possible with the old command
