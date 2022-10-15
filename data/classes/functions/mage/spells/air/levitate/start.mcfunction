@@ -19,4 +19,4 @@ particle minecraft:witch ~ ~ ~ 0.5 1 0.5 1.2 40 force
 tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Levitate!","bold":true,"color":"#FFFF80"}]
 
 #Mana Depletion
-scoreboard players remove @s cl.Mana 2
+scoreboard players remove @s cl.Mana 4
