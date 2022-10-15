@@ -1,8 +1,8 @@
 #Set scoreboard timer - must match effect time below multiplied by 20.
-scoreboard players set @s cl.e.SlowFall 900
+scoreboard players set @s cl.e.SlowFall 200
 
 #Give Effect
-effect give @s minecraft:slow_falling 45 0 false
+execute at @s run effect give @a[distance=..5] minecraft:slow_falling 10 0 false
 
 #Particle effect
 particle minecraft:cloud ~ ~ ~ 0.5 0.75 0.5 0.25 100 force
