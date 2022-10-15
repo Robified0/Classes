@@ -1,8 +1,8 @@
 #Set scoreboard timer - must match effect time below multiplied by 20.
-scoreboard players set @s cl.e.TailWind 400
+scoreboard players set @s cl.e.TailWind 200
 
 #Give Effect
-effect give @s minecraft:speed 20 1 false
+attribute @s minecraft:generic.movement_speed modifier add 02eaa265-68d9-4906-8095-6ea88b0e906d TailWind .01 add
 
 #Particle effect
 particle minecraft:cloud ^0.5 ^ ^-0.5 1 1 1 10 40 normal
