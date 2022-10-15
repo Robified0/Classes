@@ -17,3 +17,7 @@ execute if entity @s[advancements={classes:mage/learnspell/earth/diamondflesh=fa
 ## Summon Iron Golem
 execute if entity @s[advancements={classes:mage/learnspell/earth/irongolem=true},nbt={SelectedItem:{tag:{cl.bookSpellTaught:504}}}] run function classes:main/mana_system/knownspell
 execute if entity @s[advancements={classes:mage/learnspell/earth/irongolem=false},nbt={SelectedItem:{tag:{cl.bookSpellTaught:504}}}] run function classes:mage/system/learnspell/earth/irongolem
+
+## Wall
+execute if entity @s[advancements={classes:mage/learnspell/earth/wall=true},nbt={SelectedItem:{tag:{cl.bookSpellTaught:505}}}] run function classes:main/mana_system/knownspell
+execute if entity @s[advancements={classes:mage/learnspell/earth/wall=false},nbt={SelectedItem:{tag:{cl.bookSpellTaught:505}}}] run function classes:mage/system/learnspell/earth/wall

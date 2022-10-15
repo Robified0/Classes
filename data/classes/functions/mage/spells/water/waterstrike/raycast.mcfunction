@@ -6,6 +6,7 @@ execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[tag=!cl.r.this,type=!#classes:nontarg
 execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[tag=!cl.r.this,type=!#classes:nontarget,tag=cl.t.Owned,dx=0,dy=0,dz=0] run data merge entity @s {Fire:1}
 execute positioned ~-0.5 ~-0.5 ~-0.5 as @a[tag=!cl.r.this] run effect give @s fire_resistance 1 0 true
 execute positioned ~-0.5 ~-0.5 ~-0.5 as @a[tag=!cl.r.this] run effect clear @s fire_resistance
+execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[tag=cl.spell.noPassthrough,dx=0,dy=0,dz=0] run kill @s
 
 #Play sound
 execute at @s run playsound minecraft:entity.boat.paddle_water player @a ~ ~ ~ 0.8 1

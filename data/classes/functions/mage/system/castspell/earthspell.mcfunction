@@ -4,4 +4,4 @@ execute if entity @s[scores={cl.spell.selected=501}] run function classes:mage/s
 execute if entity @s[scores={cl.spell.selected=502}] run function classes:mage/spells/earth/goldflesh/cast
 execute if entity @s[scores={cl.spell.selected=503}] run function classes:mage/spells/earth/diamondflesh/cast
 execute if entity @s[scores={cl.spell.selected=504}] run function classes:mage/spells/earth/irongolem/cast
-execute if entity @s[scores={cl.spell.selected=505}] run function classes:mage/spells/earth/mine/cast
+execute if entity @s[scores={cl.spell.selected=505}] run function classes:mage/spells/earth/wall/cast

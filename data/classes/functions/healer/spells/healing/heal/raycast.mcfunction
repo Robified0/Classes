@@ -10,6 +10,8 @@ execute positioned ~-1 ~-1 ~-1 as @a[tag=!cl.r.this,dx=1,dy=1,dz=1] at @s run fu
 execute positioned ~-1 ~-1 ~-1 as @e[tag=!cl.r.this,type=#classes:passive,tag=!cl.t.summoned,dx=1,dy=1,dz=1] at @s run function classes:healer/spells/healing/heal/effects/mob
 execute positioned ~-1 ~-1 ~-1 as @e[tag=!cl.r.this,type=#classes:undead,tag=!cl.t.summoned,tag=!cl.t.Owned,dx=1,dy=1,dz=1] at @s run function classes:healer/spells/healing/heal/effects/undead
 
+#Stop spell from going through certain spells
+execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[tag=cl.spell.noPassthrough,dx=0,dy=0,dz=0] run kill @s
 
 #Only change filepaths for spell
 scoreboard players remove #temp cl.slowcast 1

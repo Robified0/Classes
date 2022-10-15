@@ -2,14 +2,14 @@
   "display": {
     "icon": {
       "item": "minecraft:warped_fungus_on_a_stick",
-      "nbt": "{CustomModelData:60500}"
+      "nbt": "{CustomModelData:60505}"
     },
     "title": {
-      "text": "Mine",
+      "text": "Earth Wall",
       "color": "green"
     },
     "description": {
-      "text": "Breaks up to 3 simple blocks.",
+      "text": "Conjure up an Earth Wall to protect you for 15 seconds.",
       "color": "white"
     },
     "frame": "task",
