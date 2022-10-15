@@ -2,10 +2,10 @@
 function classes:mage/system/armorspells
 
 #Give Player score for particle effect
-scoreboard players set @s cl.e.GoldFlesh 12000
+scoreboard players set @s cl.e.GoldFlesh 300
 
 #Change base attribute
-attribute @s minecraft:generic.armor base set 6
+attribute @s minecraft:generic.armor base set 12
 
 #Particle effect
 particle block gold_block ~ ~ ~ 1 1 1 10 40 normal
@@ -24,4 +24,4 @@ tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" c
 scoreboard players set @s cl.Cooldown 20
 
 #Mana Removal
-scoreboard players remove @s cl.Mana 8
+scoreboard players remove @s cl.Mana 4
