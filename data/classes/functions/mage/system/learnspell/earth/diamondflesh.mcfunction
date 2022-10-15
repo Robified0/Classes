@@ -1,5 +1,5 @@
 #Grant the spell
-advancement grant @s only classes:mage/learnspell/earth/goldflesh
+advancement grant @s only classes:mage/learnspell/earth/diamondflesh
 
 #Playsound Effect
 playsound minecraft:block.respawn_anchor.set_spawn player @a ~ ~ ~ 0.5 1.2
