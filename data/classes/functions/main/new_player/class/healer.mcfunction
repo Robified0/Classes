@@ -8,6 +8,9 @@ scoreboard players set @s cl.ManaRegenSec 1
 scoreboard players set @s cl.Mana 20
 scoreboard players set @s cl.Cooldown 0
 
+#Halve armor
+attribute @s generic.armor modifier add f836241b-d712-463d-b80f-77705fddad01 half -0.5 multiply
+
 #Give advancements
 advancement grant @s only classes:healer/root
 advancement grant @s only classes:healer/learnspell/healing/heal
