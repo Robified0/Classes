@@ -9,6 +9,7 @@
 	"minecraft:zombified_piglin",
   "minecraft:zoglin",
   "minecraft:phantom",
+  "minecraft:wither",
   {"id":"#classes:graveyard/undead","required":false}
   ]
 }
