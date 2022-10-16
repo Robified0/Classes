@@ -11,5 +11,8 @@ execute unless entity @s[scores={cl.o.maxHealth=20}] run attribute @s minecraft:
 #Set Healer Armor score to 0 first
 scoreboard players set @s cl.Healer.Armor 0
 
+#Halve armor
+attribute @s generic.armor modifier add f836241b-d712-463d-b80f-77705fddad01 half -0.5 multiply
+
 #Check for Armor
 scoreboard players set @s[predicate=classes:checkarmor/healer/shield] cl.Healer.Armor 1

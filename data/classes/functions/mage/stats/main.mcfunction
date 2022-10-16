@@ -8,4 +8,7 @@ execute unless entity @s[scores={cl.o.getAtkSpd=370}] run attribute @s minecraft
 execute unless entity @s[scores={cl.o.getAtkDmg=0}] run attribute @s minecraft:generic.attack_damage base set 0
 execute unless entity @s[scores={cl.o.maxHealth=20}] run attribute @s minecraft:generic.max_health base set 20
 
+#Halve armor
+attribute @s generic.armor modifier add f836241b-d712-463d-b80f-77705fddad01 half -0.5 multiply
+
 scoreboard players set @s[predicate=classes:checkarmor/mage/shield] cl.Mage.Armor 1
