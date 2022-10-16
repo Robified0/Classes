@@ -9,7 +9,7 @@
       "color": "red"
     },
     "description": {
-      "text": "Grants you immunity to fire for 45 seconds.",
+      "text": "Grants you immunity to fire for 5 seconds, and ignites mobs around you.",
       "color": "white"
     },
     "frame": "task",
