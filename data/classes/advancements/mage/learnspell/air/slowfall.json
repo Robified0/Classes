@@ -9,7 +9,7 @@
       "color": "yellow"
     },
     "description": {
-      "text": "Grants Slow Fall for 45 seconds.",
+      "text": "Grants Slow Fall to caster and allies within 5 blocks for 10 seconds.",
       "color": "white"
     },
     "frame": "task",
