@@ -19,4 +19,4 @@ scoreboard players set @s cl.Cooldown 20
 tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Levitate!","bold":true,"color":"#FFFF80"}]
 
 #Mana Depletion
-scoreboard players remove @s cl.Mana 2
+scoreboard players remove @s cl.Mana 4
