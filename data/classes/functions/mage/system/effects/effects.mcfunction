@@ -24,7 +24,10 @@ execute if entity @s[scores={cl.e.IceWalker=0..}] at @s run function classes:mag
 execute if entity @s[scores={cl.e.Blizzard=0..}] at @s run function classes:mage/effects/blizzard
 
 #Fire Shield - (tag=FireShield)
-execute if entity @s[scores={cl.e.FireShield=0..}] at @s run function classes:mage/effects/fireshield
+execute if entity @s[scores={cl.e.FireShield=0..}] at @s run function classes:mage/effects/fireshield/main
+
+#Fireball
+execute as @e[type=marker,tag=cl.spell.Fireball.rider,predicate=classes:check/vehicle/fireball] at @s run function classes:mage/effects/fireball
 
 #Slow Fall - (tag=SlowFall)
 execute if entity @s[scores={cl.e.SlowFall=0..}] at @s run function classes:mage/effects/slowfall
