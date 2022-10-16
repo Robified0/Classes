@@ -1,5 +1,5 @@
 #Restore Mana if potion is drank
-scoreboard players set @s cl.Mana 20
+scoreboard players add @s cl.Mana 8
 
 #Sound effect if potion drank
 playsound minecraft:entity.player.levelup ambient @s ~ ~ ~ 10 2
