@@ -4,6 +4,7 @@ execute if entity @s[tag=cl.r.torch] run function classes:mage/spells/fire/torch
 execute if entity @s[tag=cl.r.waterstrike] run function classes:mage/spells/water/waterstrike/zprivate/launch
 execute if entity @s[tag=cl.r.levitate] run function classes:mage/spells/air/levitate/zprivate/launch
 execute if entity @s[tag=cl.r.iceshard] run function classes:mage/spells/water/iceshard/zprivate/launch
+execute if entity @s[tag=cl.r.deepfreeze] run function classes:mage/spells/water/deepfreeze/zprivate/launch
 execute if entity @s[tag=cl.r.poison] run function classes:mage/spells/earth/poison/zprivate/launch
 execute if entity @s[tag=cl.r.mine] run function classes:mage/spells/earth/mine/zprivate/launch
 execute if entity @s[tag=cl.r.light] run function classes:mage/spells/magic/light/zprivate/launch

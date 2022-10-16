@@ -51,8 +51,7 @@ execute if entity @s[scores={cl.e.GoldFlesh=0..}] at @s run function classes:mag
 execute if entity @s[scores={cl.e.DiaFlesh=0..}] at @s run function classes:mage/effects/diamondflesh
 
 #Deep Freeze - (tag=DeepFreeze) - needs score here to avoid running deduction per entity
-execute if entity @s[scores={cl.e.DeepFreeze=0..}] as @e[type=!#classes:nontarget,scores={cl.e.DeepFreeze=0..}] at @s run function classes:mage/effects/deepfreeze
-execute if entity @s[scores={cl.e.DeepFreeze=0..}] run scoreboard players remove @s cl.e.DeepFreeze 1
+execute as @e[type=!#classes:nontarget,scores={cl.e.DeepFreeze=0..}] at @s run function classes:mage/effects/deepfreeze
 
 #Shield Spell
 execute if entity @s[scores={cl.e.Shield=0..}] at @s run function classes:mage/effects/shield

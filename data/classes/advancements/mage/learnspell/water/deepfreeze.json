@@ -9,7 +9,7 @@
       "color": "blue"
     },
     "description": {
-      "text": "Freeze enemies within 5 blocks solid for 15 seconds.",
+      "text": "Freezes target in place for 10 seconds. They are unable to be hit while frozen.",
       "color": "white"
     },
     "frame": "task",

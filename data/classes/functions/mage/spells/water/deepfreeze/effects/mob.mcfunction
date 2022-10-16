@@ -1,8 +1,6 @@
-scoreboard players set @s cl.e.DeepFreeze 300
-data merge entity @s {NoAI:1b,Silent:1b,Invulnerable:1b}
+scoreboard players set @s cl.e.DeepFreeze 200
 fill ~ ~ ~ ~ ~1 ~ packed_ice keep
 particle dust 0.129 0.914 1.000 1 ~ ~ ~ 0.5 0.5 0.5 1 100 normal
-particle dust 0.129 0.914 1.000 1 ~ ~ ~ 5 0.75 5 0.01 500 normal
 
 # Make mob AI trigger for combat/fleeing
 function classes:entities/vanilla/angry
