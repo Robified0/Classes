@@ -1,4 +1,8 @@
+#Check if mob is Invulnerable
 execute if entity @s[nbt={Invulnerable:1b}] run tag @s add cl.track.Invulnerable
+
+#Sometimes mobs don't get untagged, let's check that too.
+execute if entity @s[nbt={Invulnerable:0b}] run tag @s remove cl.track.Invulnerable
 
 #Merge loot table for proper drops
 execute if entity @s[tag=!cl.LTAdjusted,tag=!cl.isCustomMob,tag=!cl.track.Invulnerable] run function classes:main/loot_table/main
