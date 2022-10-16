@@ -6,8 +6,8 @@ data merge entity @s {NoAI:1b}
 #Set counter
 scoreboard players set @s cl.e.StopUndead 200
 
-#Make them angry if they aren't already
-execute if entity @s[predicate=classes:entities/angry] run function classes:entities/vanilla/angry
+# Make mob AI trigger for combat/fleeing
+function classes:entities/vanilla/angry
 
 #Particle effects
 particle minecraft:end_rod ~ ~ ~ 0.1 0.1 0.1 0.1 20 normal

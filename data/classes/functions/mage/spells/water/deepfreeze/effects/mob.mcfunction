@@ -4,8 +4,8 @@ fill ~ ~ ~ ~ ~1 ~ packed_ice keep
 particle dust 0.129 0.914 1.000 1 ~ ~ ~ 0.5 0.5 0.5 1 100 normal
 particle dust 0.129 0.914 1.000 1 ~ ~ ~ 5 0.75 5 0.01 500 normal
 
-#Get mobs angry if not already
-execute if entity @s[predicate=classes:entities/angry] run function classes:entities/vanilla/angry
+# Make mob AI trigger for combat/fleeing
+function classes:entities/vanilla/angry
 
 #Sound effect
 playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 0.8 2

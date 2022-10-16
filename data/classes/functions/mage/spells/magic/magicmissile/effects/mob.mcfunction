@@ -1,7 +1,7 @@
 #Give ID of marker to avoid multiple hits
 scoreboard players operation @s cl.slo_id = @e[type=marker,tag=cl.r.magicmissile,sort=nearest,limit=1] cl.slo_id
 
-#Apple effects
+# Make mob AI trigger for combat/fleeing
 function classes:entities/vanilla/angry
 
 # Calculate damage

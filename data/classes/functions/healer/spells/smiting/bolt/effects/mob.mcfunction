@@ -4,8 +4,8 @@ function classes:entities/vanilla/angry
 #Give ID of marker to avoid multiple hits
 scoreboard players operation @s cl.slo_id = @e[type=marker,tag=cl.r.bolt,sort=nearest,limit=1] cl.slo_id
 
-#Apply Effects
-execute as @s[predicate=classes:entities/angry] run function classes:entities/vanilla/angry
+# Make mob AI trigger for combat/fleeing
+function classes:entities/vanilla/angry
 
 #Handle elemental weaknesses
 execute if entity @s[type=#classes:magic/elemental/weakness/holy] run scoreboard players set @s cl.damageWeakness 1

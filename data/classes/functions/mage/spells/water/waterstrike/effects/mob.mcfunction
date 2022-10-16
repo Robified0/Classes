@@ -1,9 +1,11 @@
 #Give ID of marker to avoid multiple hits
 scoreboard players operation @s cl.slo_id = @e[type=marker,tag=cl.r.waterstrike,sort=nearest,limit=1] cl.slo_id
 
-#Apply Effects
-data merge entity @s {Fire:1}
-execute as @s[predicate=classes:entities/angry] run function classes:entities/vanilla/angry
+# Make mob AI trigger for combat/fleeing
+function classes:entities/vanilla/angry
+
+# Apply Effects
+data merge entity @s {Fire:-1}
 
 #Handle elemental weaknesses
 execute if entity @s[type=#classes:magic/elemental/weakness/water] run scoreboard players set @s cl.damageWeakness 1

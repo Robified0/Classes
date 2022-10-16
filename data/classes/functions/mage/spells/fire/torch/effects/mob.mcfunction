@@ -4,7 +4,9 @@ scoreboard players operation @s cl.slo_id = @e[type=marker,tag=cl.r.torch,sort=n
 #Apply Effects
 data merge entity @s {Fire:100}
 execute as @s[type=creeper] run function classes:entities/vanilla/creeper/fire
-execute as @s[predicate=classes:entities/angry] run function classes:entities/vanilla/angry
+
+# Make mob AI trigger for combat/fleeing
+function classes:entities/vanilla/angry
 
 #Handle elemental weaknesses
 execute if entity @s[type=#classes:magic/elemental/weakness/water] run scoreboard players set @s cl.damageWeakness 1

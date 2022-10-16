@@ -2,8 +2,8 @@
 data merge entity @s {Fire:100}
 execute as @s[type=creeper] run function classes:entities/vanilla/creeper/fire
 
-#Make Mob Angry
-execute if entity @s[predicate=classes:entities/angry] run function classes:entities/vanilla/angry
+# Make mob AI trigger for combat/fleeing
+function classes:entities/vanilla/angry
 
 ## Get damage score
 # Set top damage first (this is the range minus the random below)
