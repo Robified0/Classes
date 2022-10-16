@@ -19,7 +19,7 @@
   },
   "parent": "classes:mage/essence/earthessence",
   "criteria": {
-    "Poison": {
+    "EarthWall": {
       "trigger": "minecraft:impossible"
     }
   }
