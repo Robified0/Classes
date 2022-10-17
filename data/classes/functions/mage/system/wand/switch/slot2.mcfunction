@@ -16,6 +16,7 @@ execute as @s[scores={cl.wand.slot2=400}] run function classes:mage/spells/air/l
 execute as @s[scores={cl.wand.slot2=401}] run function classes:mage/spells/air/slowfall/select
 execute as @s[scores={cl.wand.slot2=402}] run function classes:mage/spells/air/tailwind/select
 execute as @s[scores={cl.wand.slot2=403}] run function classes:mage/spells/air/bunnyhop/select
+execute as @s[scores={cl.wand.slot2=404}] run function classes:mage/spells/air/wind/select
 execute as @s[scores={cl.wand.slot2=500}] run function classes:mage/spells/earth/poison/select
 execute as @s[scores={cl.wand.slot2=501}] run function classes:mage/spells/earth/ironflesh/select
 execute as @s[scores={cl.wand.slot2=502}] run function classes:mage/spells/earth/goldflesh/select

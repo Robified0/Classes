@@ -19,8 +19,11 @@ item replace entity @s[advancements={classes:mage/learnspell/air/bunnyhop=true}]
 execute if entity @s[advancements={classes:mage/learnspell/air/bunnyhop=false}] run item replace entity @s inventory.3 with minecraft:black_stained_glass_pane{display:{Name:'{"text":""}'},cl.item.noDrop:1b}
 execute if entity @s[predicate=classes:spellselect/hotbarcheck/mage/air/bunnyhop] run item replace entity @s inventory.3 with minecraft:black_stained_glass_pane{display:{Name:'{"text":""}'},cl.item.noDrop:1b}
 
+#Bunny Hop
+item replace entity @s[advancements={classes:mage/learnspell/air/wind=true}] inventory.4 with minecraft:warped_fungus_on_a_stick{display:{Name:'[{"text":"Wind","color":"yellow"},{"text":" - ","color":"white","bold":false},{"text":"\\uE003 x 1","color":"aqua","bold":false,"italic":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','[{"text":"Element: ","color":"dark_aqua"},{"text":"Air","color":"yellow"}]','{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Knocks enemies around you back 5 blocks.","color":"yellow"}']},CustomModelData:60404,cl.s.Spell:1b,cl.s.Air:1b,cl.s.Wind:1b,cl.spell.number:404}
+execute if entity @s[advancements={classes:mage/learnspell/air/wind=false}] run item replace entity @s inventory.4 with minecraft:black_stained_glass_pane{display:{Name:'{"text":""}'},cl.item.noDrop:1b}
+execute if entity @s[predicate=classes:spellselect/hotbarcheck/mage/air/wind] run item replace entity @s inventory.4 with minecraft:black_stained_glass_pane{display:{Name:'{"text":""}'},cl.item.noDrop:1b}
 
-item replace entity @s inventory.4 with minecraft:black_stained_glass_pane{display:{Name:'{"text":""}'},cl.item.noDrop:1b}
 item replace entity @s inventory.5 with minecraft:black_stained_glass_pane{display:{Name:'{"text":""}'},cl.item.noDrop:1b}
 item replace entity @s inventory.6 with minecraft:black_stained_glass_pane{display:{Name:'{"text":""}'},cl.item.noDrop:1b}
 item replace entity @s inventory.7 with minecraft:black_stained_glass_pane{display:{Name:'{"text":""}'},cl.item.noDrop:1b}
