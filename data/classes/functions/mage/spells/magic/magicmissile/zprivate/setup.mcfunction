@@ -7,7 +7,7 @@ tag @s remove cl.r.new
 
 ##Get damage score
 # Set top damage first (Take both numbers below and add them to get the true range/top damagea)
-scoreboard players set @s cl.damageRange 4
+scoreboard players set @s cl.damageRange 2
 # Run randomize function
 function classes:operations/damage/random
 #Boost it by the below to make sure it always does at *least* this amount
