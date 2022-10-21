@@ -11,7 +11,7 @@ scoreboard players set @s cl.damageRange 2
 # Run randomize function
 function classes:operations/damage/random
 #Boost it by the below to make sure it always does at *least* this amount
-scoreboard players add @s cl.damageRandom 2
+scoreboard players add @s cl.damageRandom 3
 
 
 function classes:mage/spells/water/iceshard/zprivate/launch
