@@ -2,7 +2,7 @@
 function classes:mage/system/armorspells
 
 #Give Player Tag for particle effect
-scoreboard players set @s cl.e.MageArmor 12000
+scoreboard players set @s cl.e.MageArmor 300
 
 #Particle effect
 particle witch ~ ~ ~ 1 1 1 10 40 normal
@@ -24,4 +24,4 @@ scoreboard players set @s cl.Cooldown 20
 scoreboard players remove @s cl.Mana 8
 
 #Change base attribute
-execute as @s run attribute @s minecraft:generic.armor base set 2
+execute as @s run attribute @s minecraft:generic.armor base set 4
