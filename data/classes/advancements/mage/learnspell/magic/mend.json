@@ -9,7 +9,7 @@
       "color": "light_purple"
     },
     "description": {
-      "text": "Heals you for 4 hearts.",
+      "text": "Heals you for 2 hearts over 5 seconds.",
       "color": "white"
     },
     "frame": "task",
