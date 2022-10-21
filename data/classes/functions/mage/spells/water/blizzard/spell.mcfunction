@@ -18,12 +18,11 @@ execute if entity @s[scores={cl.e.Blizzard=1..}] run particle minecraft:white_as
 #Give Slowness
 execute if entity @s[scores={cl.e.Blizzard=1..}] run effect give @e[type=!#classes:nontarget,type=!player,tag=!cl.t.summoned,tag=!cl.t.Owned,distance=..10] minecraft:slowness 1 3
 
-#TP mob backwards, but not if there are blocks behind them
-execute if entity @s[scores={cl.e.Blizzard=1..}] as @e[type=!#classes:nontarget,type=!player,tag=!cl.t.summoned,tag=!cl.t.Owned,distance=..9] at @s if block ^ ^1 ^-1 #classes:air run tp @s ^ ^0.5 ^-0.5 facing entity @p[scores={cl.e.Blizzard=1..},limit=1]
+#Freeze their butts
+execute if entity @s[scores={cl.e.Blizzard=1..}] as @e[type=!#classes:nontarget,type=!player,tag=!cl.t.summoned,tag=!cl.t.Owned,distance=..9] at @s run data merge entity @s {TicksFrozen:250}
 
 #Damage entities in range
-execute if entity @s[scores={cl.e.Blizzard=1..}] run effect give @e[type=!#classes:nontarget,tag=!cl.t.summoned,tag=!cl.t.Owned,distance=..10] minecraft:wither 1 4
-execute as @e[type=!#classes:nontarget,tag=!cl.t.summoned,tag=!cl.t.Owned,distance=..10] run function classes:entities/vanilla/angry
+execute if entity @s[scores={cl.e.Blizzard=1..}] run effect give @e[type=!#classes:nontarget,tag=!cl.t.summoned,tag=!cl.t.Owned,distance=..10] minecraft:wither 1 1
 
 #Spell Handling
 scoreboard players set @s cl.e.Blizzard 10
