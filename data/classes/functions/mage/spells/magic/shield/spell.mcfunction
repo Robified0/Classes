@@ -7,5 +7,5 @@ scoreboard players set @s cl.e.Shield 10
 
 #Handle Mana drain over time. Set cl.e.Shield.m=# to a higher number to slow down drain rate.
 scoreboard players add @s cl.e.Shield.m 1
-scoreboard players remove @s[scores={cl.e.Shield.m=5}] cl.Mana 1
-scoreboard players set @s[scores={cl.e.Shield.m=5..}] cl.e.Shield.m 0
+scoreboard players remove @s[scores={cl.e.Shield.m=2}] cl.Mana 1
+scoreboard players set @s[scores={cl.e.Shield.m=2..}] cl.e.Shield.m 0
