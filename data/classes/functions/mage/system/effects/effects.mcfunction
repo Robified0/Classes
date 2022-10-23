@@ -60,7 +60,4 @@ execute if entity @s[scores={cl.e.Shield=0..}] at @s run function classes:mage/e
 execute if entity @s[scores={cl.summonCount=0..}] as @e[type=snow_golem,tag=cl.t.summoned] at @s run function classes:mage/effects/snowgolem
 
 #Handle logic for summoned Iron Golem
-execute if entity @s[scores={cl.summonCount=0..}] as @e[type=iron_golem,tag=cl.t.summoned] at @s run function classes:mage/effects/irongolem
-
-#Handle logic for Light Spell marker
-execute if entity @e[type=marker,tag=cl.t.light] as @e[type=marker,tag=cl.t.light] at @s run function classes:mage/effects/light
+execute if entity @s[scores={cl.summonCount=0..}] as @e[type=iron_golem,tag=cl.t.summoned] at @s run function classes:mage/effects/

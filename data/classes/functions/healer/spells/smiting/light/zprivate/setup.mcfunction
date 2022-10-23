@@ -5,4 +5,4 @@ scoreboard players operation @s cl.slo_dst_per = #dst_per cl.slowcast
 tp @s ~ ~ ~ ~ ~
 tag @s remove cl.r.new
 
-function classes:mage/spells/magic/light/zprivate/launch
+function classes:healer/spells/smiting/light/zprivate/launch

@@ -6,4 +6,4 @@ scoreboard players set #dst_per cl.slowcast 4
 scoreboard players set #dst cl.slowcast 48
 
 #Start raycast
-execute positioned ~ ~1.45 ~ run function classes:mage/spells/magic/light/start
+execute positioned ~ ~1.45 ~ run function classes:healer/spells/smiting/light/start

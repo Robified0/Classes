@@ -12,6 +12,7 @@ execute as @s[scores={cl.wand.slot1=805}] run function classes:healer/spells/buf
 execute as @s[scores={cl.wand.slot1=900}] run function classes:healer/spells/smiting/holystrike/select
 execute as @s[scores={cl.wand.slot1=901}] run function classes:healer/spells/smiting/stopundead/select
 execute as @s[scores={cl.wand.slot1=902}] run function classes:healer/spells/smiting/bolt/select
+execute as @s[scores={cl.wand.slot1=903}] run function classes:healer/spells/smiting/light/select
 
 #Check for empty slot
 execute unless entity @s[scores={cl.wand.slot1=1..}] run title @s times 20 100 20

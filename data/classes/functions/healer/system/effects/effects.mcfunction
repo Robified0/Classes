@@ -37,3 +37,6 @@ execute if entity @s[scores={cl.e.Bless=1..}] run function classes:healer/effect
 #Stop Undead
 execute if entity @s[scores={cl.e.StopUndead=0..}] as @e[type=#classes:undead,scores={cl.e.StopUndead=1..}] at @s run function classes:healer/effects/stopundead
 execute if entity @s[scores={cl.e.StopUndead=0..}] run scoreboard players remove @s cl.e.StopUndead 1
+
+#Handle logic for Light Spell marker
+execute if entity @e[type=marker,tag=cl.t.light] as @e[type=marker,tag=cl.t.light] at @s run function classes:healer/effects/light
