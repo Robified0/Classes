@@ -1,7 +1,3 @@
-## Light
-execute if entity @s[advancements={classes:mage/learnspell/magic/light=true},nbt={SelectedItem:{tag:{cl.bookSpellTaught:600}}}] run function classes:main/mana_system/knownspell
-execute if entity @s[advancements={classes:mage/learnspell/magic/light=false},nbt={SelectedItem:{tag:{cl.bookSpellTaught:600}}}] run function classes:mage/system/learnspell/magic/light
-
 ## Teleport
 execute if entity @s[advancements={classes:mage/learnspell/magic/teleport=true},nbt={SelectedItem:{tag:{cl.bookSpellTaught:601}}}] run function classes:main/mana_system/knownspell
 execute if entity @s[advancements={classes:mage/learnspell/magic/teleport=false},nbt={SelectedItem:{tag:{cl.bookSpellTaught:601}}}] run function classes:mage/system/learnspell/magic/teleport
