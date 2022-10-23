@@ -7,6 +7,9 @@ execute if entity @s[scores={cl.e.Light=1..}] run particle end_rod ~ ~0.5 ~ 0.1 
 #Play sound - low distance to keep audio channels open
 execute if entity @s[scores={cl.e.Light=1..}] run playsound minecraft:block.amethyst_block.chime player @a[distance=..1] ~ ~ ~ 0.1 0.1
 
+#Give invisible entities Glowing effect
+execute if entity @s[scores={cl.e.Light=1..}] as @e[type=!#classes:nontarget,predicate=classes:check/effects/invisibility,distance=..10] run effect give @s minecraft:glowing 1 0
+
 #Kill marker if the light is covered up.
 execute if entity @s[scores={cl.e.Light=1..}] unless block ~ ~ ~ minecraft:light unless block ~ ~1 ~ minecraft:light unless block ~ ~-1 ~ minecraft:light unless block ~-1 ~ ~ minecraft:light unless block ~1 ~ ~ minecraft:light unless block ~ ~ ~-1 minecraft:light unless block ~ ~ ~1 minecraft:light run kill @s
 
