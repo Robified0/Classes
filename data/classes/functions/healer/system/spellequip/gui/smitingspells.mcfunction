@@ -6,7 +6,7 @@ execute if entity @s[predicate=classes:spellselect/hotbarcheck/healer/smiting/bo
 
 
 #Light
-item replace entity @s[advancements={classes:healer/learnspell/smiting/light=true}] inventory.1 with minecraft:warped_fungus_on_a_stick{display:{Name:'[{"text":"Light","color":"light_purple"},{"text":" - ","color":"white","bold":false},{"text":"\\uE004 x 1","color":"aqua","bold":false,"italic":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Creates light source where it ends for 1 minute. Also reveals hidden entities within 10 blocks.","color":"green"}']},CustomModelData:60903,cl.s.Spell:1b,cl.s.Smiting:1b,cl.s.Light:1b,cl.spell.number:903}
+item replace entity @s[advancements={classes:healer/learnspell/smiting/light=true}] inventory.1 with minecraft:warped_fungus_on_a_stick{display:{Name:'[{"text":"Light","color":"green"},{"text":" - ","color":"white","bold":false},{"text":"\\uE004 x 1","color":"aqua","bold":false,"italic":false}]',Lore:['{"text":"------------------","color":"dark_aqua"}','{"text":" "}','{"text":"Effect:"}','{"text":"Creates light source where it ends for 1 minute. Also reveals hidden entities within 10 blocks.","color":"green"}']},CustomModelData:60903,cl.s.Spell:1b,cl.s.Smiting:1b,cl.s.Light:1b,cl.spell.number:903}
 execute if entity @s[advancements={classes:healer/learnspell/smiting/light=false}] run item replace entity @s inventory.1 with minecraft:black_stained_glass_pane{display:{Name:'{"text":""}'},cl.item.noDrop:1b}
 execute if entity @s[predicate=classes:spellselect/hotbarcheck/healer/magic/light] run item replace entity @s inventory.1 with minecraft:black_stained_glass_pane{display:{Name:'{"text":""}'},cl.item.noDrop:1b}
 
