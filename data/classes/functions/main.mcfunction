@@ -22,7 +22,7 @@ execute as @a at @s as @e[type=marker,tag=cl.magicTable] at @s run function clas
 execute as @e[type=item,tag=!cl.t.processed,predicate=classes:items/spiritessence/invulnerablecheck] run data merge entity @s {Invulnerable:1b}
 
 #Function for all new players, to ensure scoreboards are set up
-execute as @a[tag=!cl.o.Joined] at @s run function classes:main/new_player/main
+execute as @a unless score @s cl.Class matches 1.. at @s run function classes:main/new_player/main
 execute as @a[scores={cl.Class=1..},tag=!cl.o.ClassSelected] at @s run function classes:main/new_player/classselected
 
 #Mana Regen
