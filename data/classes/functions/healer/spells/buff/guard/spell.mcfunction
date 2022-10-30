@@ -6,9 +6,9 @@ execute as @e[tag=cl.t.GuardSphere,tag=cl.t.summoned] if score @s cl.summonCount
 summon marker ~ ~1 ~ {Tags:["cl.t.Guard","cl.t.summoned"]}
 summon marker ~ ~1 ~ {Tags:["cl.t.GuardSphere","cl.t.sphere","cl.t.ball2","cl.t.summoned"]}
 summon marker ~ ~1 ~ {Tags:["cl.t.GuardSphere","cl.t.sphere","cl.t.ball1","cl.t.summoned"]}
-scoreboard players set @s cl.summonCount 400
-scoreboard players set @e[type=marker,tag=cl.t.Guard,limit=1,sort=nearest] cl.summonCount 400
-scoreboard players set @e[type=marker,tag=cl.t.GuardSphere,limit=2,sort=nearest] cl.summonCount 400
+scoreboard players set @s cl.summonCount 200
+scoreboard players set @e[type=marker,tag=cl.t.Guard,limit=1,sort=nearest] cl.summonCount 200
+scoreboard players set @e[type=marker,tag=cl.t.GuardSphere,limit=2,sort=nearest] cl.summonCount 200
 
 #Cast Spell Sound Effect
 function classes:main/mana_system/healer/cast

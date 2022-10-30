@@ -1,4 +1,4 @@
-#Handle Particles
+#Handle Particles and sound
 execute as @e[type=minecraft:marker,tag=cl.t.GuardSphere] at @s positioned ~ ~ ~ run function classes:operations/particles/draw/guard/drawsphere
 
 #Handle functionality
