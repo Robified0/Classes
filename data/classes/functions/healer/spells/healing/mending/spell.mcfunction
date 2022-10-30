@@ -8,12 +8,12 @@ scoreboard players set @s cl.e.Mending 10
 
 #Sound Effect
 execute if entity @s[scores={cl.e.Mending.t=5}] run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 5 0.2
-execute if entity @s[scores={cl.e.Mending=1..}] run particle wax_off ~ ~ ~ 10 10 10 0.25 200 force
-execute if entity @s[scores={cl.e.Mending=1..}] run particle composter ~ ~ ~ 10 10 10 0.25 200 force
+execute if entity @s[scores={cl.e.Mending=1..}] run particle wax_off ~ ~ ~ 5 5 5 0.25 200 force
+execute if entity @s[scores={cl.e.Mending=1..}] run particle composter ~ ~ ~ 5 5 5 0.25 200 force
 
 #Boost Strength of nearby allies
-execute if entity @s[scores={cl.e.Mending.t=5}] run effect give @e[type=#classes:healertargets,distance=..10,tag=cl.t.Owned] minecraft:instant_health 1 0
-execute if entity @s[scores={cl.e.Mending.t=5}] run effect give @a[distance=..10] minecraft:instant_health 1 0
+execute if entity @s[scores={cl.e.Mending.t=5}] run effect give @e[type=#classes:healertargets,distance=..5,tag=cl.t.Owned] minecraft:instant_health 1 0
+execute if entity @s[scores={cl.e.Mending.t=5}] run effect give @a[distance=..5] minecraft:instant_health 1 0
 
 #Handle Mana drain over time. Set cl.e.Mending.m=# to a higher number to slow down drain rate.
 scoreboard players add @s cl.e.Mending.m 1
