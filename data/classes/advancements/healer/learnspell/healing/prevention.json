@@ -1,0 +1,26 @@
+{
+    "display": {
+        "title": {
+            "text": "Cure Effects",
+            "color": "green"
+        },
+        "description": {
+            "text": "Learn Cure Effects",
+            "color": "white"
+        },
+        "icon": {
+            "item": "minecraft:warped_fungus_on_a_stick",
+            "nbt": "{CustomModelData:60703}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria": {
+        "Cure Effects": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "classes:healer/learnspell/healing/purify"
+}
