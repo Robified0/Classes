@@ -11,6 +11,3 @@ execute if entity @s[scores={cl.Mana=2..},advancements={classes:healer/learnspel
 
 #Punish for casting without knowing the spell
 execute if entity @s[scores={cl.Mana=2..},advancements={classes:healer/learnspell/healing/heal=false}] run function classes:main/mana_system/healer/noknowledge
-
-#Modify item (for spell versioning)
-item modify entity @s weapon.mainhand classes:healer/spells/healing/heal
