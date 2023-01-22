@@ -1,0 +1,17 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "head": {
+        "items": [
+          "minecraft:iron_helmet",
+          "minecraft:golden_helmet",
+          "minecraft:diamond_helmet",
+          "minecraft:netherite_helmet",
+          "minecraft:chainmail_helmet"
+        ]
+      }
+    }
+  }
+}
