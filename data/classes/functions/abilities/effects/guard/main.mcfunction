@@ -2,7 +2,7 @@
 execute as @e[type=minecraft:marker,tag=cl.t.GuardSphere] at @s positioned ~ ~ ~ run function classes:operations/particles/draw/guard/drawsphere
 
 #Handle functionality
-execute if entity @e[type=#classes:guardprojectiles,distance=..4] as @e[type=#classes:guardprojectiles,distance=..4] at @s run function classes:healer/effects/guard/effect
+execute if entity @e[type=#classes:guardprojectiles,distance=..4] as @e[type=#classes:guardprojectiles,distance=..4] at @s run function classes:abilities/effects/guard/effect
 
 #Kill spell when expired
 execute as @s[scores={cl.summonCount=..0}] run kill @s

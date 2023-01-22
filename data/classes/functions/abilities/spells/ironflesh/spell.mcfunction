@@ -1,5 +1,5 @@
 #Remove other Flesh spells
-function classes:mage/system/armorspells
+function classes:abilities/effects/armorspells
 
 #Give Player score for particle effect
 scoreboard players set @s cl.e.IronFlesh 300
