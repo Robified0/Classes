@@ -1,8 +1,6 @@
 {
 	"values": [
 		"classes:main",
-		"classes:mage/system/main",
-		"classes:healer/system/main",
 		"classes:ranger/main",
 		"classes:items/manapotion/main",
 		"classes:operations/delay/main",
