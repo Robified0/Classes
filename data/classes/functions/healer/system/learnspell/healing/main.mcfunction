@@ -1,19 +1,19 @@
 ## Heal
-execute if entity @s[advancements={classes:healer/learnspell/healing/heal=true},nbt={SelectedItem:{tag:{cl.bookSpellTaught:700}}}] run function classes:main/mana_system/knownspell
-execute if entity @s[advancements={classes:healer/learnspell/healing/heal=false},nbt={SelectedItem:{tag:{cl.bookSpellTaught:700}}}] run function classes:healer/system/learnspell/healing/heal
+execute if entity @s[tag=cl.knowsSpell.Heal,nbt={SelectedItem:{tag:{cl.bookSpellTaught:700}}}] run function classes:main/mana_system/knownspell
+execute if entity @s[tag=!cl.knowsSpell.Heal,nbt={SelectedItem:{tag:{cl.bookSpellTaught:700}}}] run function classes:healer/system/learnspell/healing/heal
 
-## Heal Circle
-execute if entity @s[advancements={classes:healer/learnspell/healing/healcircle=true},nbt={SelectedItem:{tag:{cl.bookSpellTaught:701}}}] run function classes:main/mana_system/knownspell
-execute if entity @s[advancements={classes:healer/learnspell/healing/healcircle=false},nbt={SelectedItem:{tag:{cl.bookSpellTaught:701}}}] run function classes:healer/system/learnspell/healing/healcircle
+## Healplosion
+execute if entity @s[tag=cl.knowsSpell.Healplosion,nbt={SelectedItem:{tag:{cl.bookSpellTaught:701}}}] run function classes:main/mana_system/knownspell
+execute if entity @s[tag=!cl.knowsSpell.HealPlosion,nbt={SelectedItem:{tag:{cl.bookSpellTaught:701}}}] run function classes:healer/system/learnspell/healing/healplosion
 
-## Satiate
-execute if entity @s[advancements={classes:healer/learnspell/healing/satiate=true},nbt={SelectedItem:{tag:{cl.bookSpellTaught:702}}}] run function classes:main/mana_system/knownspell
-execute if entity @s[advancements={classes:healer/learnspell/healing/satiate=false},nbt={SelectedItem:{tag:{cl.bookSpellTaught:702}}}] run function classes:healer/system/learnspell/healing/satiate
+## Purify
+execute if entity @s[tag=cl.knowsSpell.Purify,nbt={SelectedItem:{tag:{cl.bookSpellTaught:702}}}] run function classes:main/mana_system/knownspell
+execute if entity @s[tag=!cl.knowsSpell.Purify,nbt={SelectedItem:{tag:{cl.bookSpellTaught:702}}}] run function classes:healer/system/learnspell/healing/purify
 
-## Cure Effects
-execute if entity @s[advancements={classes:healer/learnspell/healing/cureeffects=true},nbt={SelectedItem:{tag:{cl.bookSpellTaught:703}}}] run function classes:main/mana_system/knownspell
-execute if entity @s[advancements={classes:healer/learnspell/healing/cureeffects=false},nbt={SelectedItem:{tag:{cl.bookSpellTaught:703}}}] run function classes:healer/system/learnspell/healing/cureeffects
+## Prevention
+execute if entity @s[tag=cl.knowsSpell.Prevention,nbt={SelectedItem:{tag:{cl.bookSpellTaught:703}}}] run function classes:main/mana_system/knownspell
+execute if entity @s[tag=!cl.knowsSpell.Prevention,nbt={SelectedItem:{tag:{cl.bookSpellTaught:703}}}] run function classes:healer/system/learnspell/healing/prevention
 
 ## Mending
-execute if entity @s[advancements={classes:healer/learnspell/healing/mending=true},nbt={SelectedItem:{tag:{cl.bookSpellTaught:704}}}] run function classes:main/mana_system/knownspell
-execute if entity @s[advancements={classes:healer/learnspell/healing/mending=false},nbt={SelectedItem:{tag:{cl.bookSpellTaught:704}}}] run function classes:healer/system/learnspell/healing/mending
+execute if entity @s[tag=cl.knowsSpell.Mending,nbt={SelectedItem:{tag:{cl.bookSpellTaught:704}}}] run function classes:main/mana_system/knownspell
+execute if entity @s[tag=!cl.knowsSpell.Mending,nbt={SelectedItem:{tag:{cl.bookSpellTaught:704}}}] run function classes:healer/system/learnspell/healing/mending

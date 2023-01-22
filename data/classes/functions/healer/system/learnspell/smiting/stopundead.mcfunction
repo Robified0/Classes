@@ -1,5 +1,5 @@
-#Grant the spell
-advancement grant @s only classes:healer/learnspell/smiting/stopundead
+#Grant the spell and tag player
+tag @s add cl.knowsSpell.StopUndead
 
 #Playsound Effect
 playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 2 1.5

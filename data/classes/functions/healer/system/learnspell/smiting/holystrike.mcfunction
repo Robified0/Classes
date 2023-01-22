@@ -1,4 +1,5 @@
-#Grant the spell
+#Grant the spell and tag player
+tag @s add cl.knowsSpell.HolyStrike
 advancement grant @s only classes:healer/learnspell/smiting/holystrike
 
 #Playsound Effect

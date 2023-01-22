@@ -32,4 +32,4 @@ item replace entity @s inventory.26 with minecraft:black_stained_glass_pane{disp
 
 
 #Set navigation
-function classes:mage/system/spellequip/gui/hotbarnav
+function classes:healer/system/spellequip/gui/hotbarnav

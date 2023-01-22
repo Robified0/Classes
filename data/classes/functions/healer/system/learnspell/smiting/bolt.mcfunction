@@ -1,4 +1,5 @@
-#Grant the spell
+#Grant the spell and tag player
+tag @s add cl.knowsSpell.Bolt
 advancement grant @s only classes:healer/learnspell/smiting/bolt
 
 #Playsound Effect

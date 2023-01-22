@@ -1,4 +1,5 @@
-#Grant the spell
+#Grant the spell and tag player
+tag @s add cl.knowsSpell.Mending
 advancement grant @s only classes:healer/learnspell/healing/mending
 
 #Playsound Effect
