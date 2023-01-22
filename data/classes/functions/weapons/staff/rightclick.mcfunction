@@ -1,17 +1,8 @@
-#Fire Spells
-execute if entity @s[scores={cl.spell.selected=200..299},predicate=!classes:items/books/book,predicate=!classes:items/books/spellbook,predicate=!classes:items/spiritessence/spiritessence] run function classes:weapons/staff/castspell/firespell
+#Detect No Wand
+execute if entity @s[scores={cl.track.sneak=0},predicate=classes:checkwand/wandoffhand] run function classes:main/mana_system/equipwand
 
-#Water Spells
-execute if entity @s[scores={cl.spell.selected=300..399},predicate=!classes:items/books/book,predicate=!classes:items/books/spellbook,predicate=!classes:items/spiritessence/spiritessence] run function classes:weapons/staff/castspell/waterspell
+#Detect sneaking for changing Spells
+execute if entity @s[scores={cl.track.sneak=1..},predicate=classes:checkwand/wand] run function classes:weapons/staff/switch/switch
 
-#Air Spells
-execute if entity @s[scores={cl.spell.selected=400..499},predicate=!classes:items/books/book,predicate=!classes:items/books/spellbook,predicate=!classes:items/spiritessence/spiritessence] run function classes:weapons/staff/castspell/airspell
-
-#Earth Spells
-execute if entity @s[scores={cl.spell.selected=500..599},predicate=!classes:items/books/book,predicate=!classes:items/books/spellbook,predicate=!classes:items/spiritessence/spiritessence] run function classes:weapons/staff/castspell/earthspell
-
-#Generic Magic Spells
-execute if entity @s[scores={cl.spell.selected=600..699},predicate=!classes:items/books/book,predicate=!classes:items/books/spellbook,predicate=!classes:items/spiritessence/spiritessence] run function classes:weapons/staff/castspell/magicspell
-
-#Magic Essence
-execute if entity @s[predicate=classes:items/spiritessence/spiritessence,predicate=!classes:items/books/spellbook] run function classes:weapons/staff/castspell/magicessence
+#Cast Spells if not sneaking, and holding wand
+execute if entity @s[scores={cl.track.sneak=0,cl.Cooldown=0},predicate=classes:checkwand/wand] at @s run function classes:weapons/staff/castspell
