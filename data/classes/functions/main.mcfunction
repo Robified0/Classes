@@ -55,3 +55,18 @@ execute as @e[type=slime,scores={cl.spell.earthWall=0..}] at @s run function cla
 
 #Tag items
 execute as @e[type=item,tag=!cl.t.processed] run tag @s add cl.t.processed
+
+#Detect No Wand
+execute if entity @a[scores={cl.track.sneak=0,cl.Class=3,cl.rightClick=1..}] as @a[predicate=classes:checkwand/wandoffhand,scores={cl.rightClick=1..}] run function classes:main/mana_system/equipwand
+
+#Detect sneaking for changing Spells
+execute if entity @a[scores={cl.track.sneak=1..,cl.Class=3,cl.rightClick=1..}] as @a[predicate=classes:checkwand/wand,scores={cl.track.sneak=1..,cl.Class=3,cl.rightClick=1..}] run function classes:weapons/staff/switch/switch
+
+#Detect Wand
+execute if entity @a[scores={cl.track.sneak=0,cl.Class=3,cl.rightClick=1..}] as @a[predicate=classes:checkwand/wand,scores={cl.Cooldown=0,cl.Class=3,cl.rightClick=1..}] at @s run function classes:weapons/staff/rightclick
+
+#AOE Effect detection
+execute as @e[type=area_effect_cloud] at @s run function classes:abilities/effects/aoeeffects
+
+#Effect detection
+execute as @a run function classes:abilities/effects/main
