@@ -1,4 +1,4 @@
 ##Replaces the dropper
 
 setblock ~ ~ ~ air
-setblock ~ ~ ~ dropper[facing=up]{CustomName:'{"text":"Magic Table"}'} replace
+setblock ~ ~ ~ barrel[facing=up]{CustomName:'{"text":"\\uF808\\uEff0","color":"white"}'} replace

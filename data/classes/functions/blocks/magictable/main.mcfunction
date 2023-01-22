@@ -1,14 +1,10 @@
 ##Running through root/main
 
-# Summoning the Magic Table when block thrown on top of crafting table
-## Handled in root/operations/delay/10 for performance
-
-# Handle Recipes
-#Handled in (operations/delay/20). Small delay for performance gains.
-
-#Particles
-particle enchant ~ ~0.5 ~ 0 0 0 0.75 1 force
-particle reverse_portal ~ ~0.5 ~ 0 0 0 0.01 1 force
+#Mute barrel sounds
+function classes:blocks/barrelsound
 
 #Handle destruction
-execute unless block ~ ~ ~ dropper[facing=up] run function classes:blocks/magictable/destroy
+execute if block ~ ~ ~ barrel[open=true] run function classes:blocks/magictable/open
+
+#Handle destruction
+execute unless block ~ ~ ~ barrel[facing=up] run function classes:blocks/magictable/destroy

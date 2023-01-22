@@ -1,9 +1,6 @@
-## Split up for optimization.
-
-## Items ------------------------
-
-#Check for Sticks
-execute as @e[type=marker,tag=cl.magicTable] at @s if data block ~ ~ ~ Items[{id:"minecraft:stick"}] run function classes:blocks/magictable/check/items/wands
-
-#Check for Glass Bottle
-execute as @e[type=marker,tag=cl.magicTable] at @s if data block ~ ~ ~ Items[{id:"minecraft:glass_bottle"}] run function classes:blocks/magictable/check/items/potions
+#Mana Potion
+execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:lapis_lazuli"},{id:"minecraft:glass_bottle"},{id:"minecraft:blaze_powder"}]} run function classes:blocks/magictable/recipes/items/potions/manapotion
+#Wand
+execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:lapis_lazuli"},{id:"minecraft:stick"},{id:"minecraft:iron_ingot"}]} run function classes:blocks/magictable/recipes/items/wands/starterwand
+#Torch Rune
+execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:lapis_lazuli"},{id:"minecraft:structure_block",tag:{Fire:1b}},{id:"minecraft:stone"}]} run function classes:blocks/magictable/recipes/items/runes/fire/torch
