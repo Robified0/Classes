@@ -1,0 +1,9 @@
+execute as @s[scores={cl.spell.selected=300}] run function classes:abilities/spells/waterstrike/select
+execute as @s[scores={cl.spell.selected=301}] run function classes:abilities/spells/iceshard/select
+execute as @s[scores={cl.spell.selected=302}] run function classes:abilities/spells/deepfreeze/select
+execute as @s[scores={cl.spell.selected=303}] run function classes:abilities/spells/snowgolem/select
+execute as @s[scores={cl.spell.selected=304}] run function classes:abilities/spells/waterbreath/select
+execute as @s[scores={cl.spell.selected=305}] run function classes:abilities/spells/dolpgrace/select
+execute as @s[scores={cl.spell.selected=306}] run function classes:abilities/spells/icewalker/select
+execute as @s[scores={cl.spell.selected=307}] run function classes:abilities/spells/extinguish/select
+execute as @s[scores={cl.spell.selected=308}] run function classes:abilities/spells/blizzard/select
