@@ -33,7 +33,9 @@ scoreboard objectives add cl.EssenceSound dummy
 scoreboard objectives add cl.track.sneak minecraft.custom:minecraft.sneak_time
 scoreboard objectives add cl.rightClick minecraft.used:minecraft.warped_fungus_on_a_stick
 scoreboard objectives add cl.Mana dummy
+scoreboard objectives add cl.ManaMax dummy
 scoreboard objectives add cl.ManaRegenSec dummy
+scoreboard objectives add cl.ManaRegenMax dummy
 scoreboard objectives add cl.Cooldown dummy
 scoreboard objectives add cl.Mage.Armor dummy
 scoreboard objectives add cl.Healer.Armor dummy
@@ -98,6 +100,12 @@ execute unless score #cl.track.shulkerStorage cl.track.shulkerStorage matches 0.
 execute unless score #cl.track.shulkerStorage cl.track.shulkerStorage matches 0..51 run fill 0 -63 0 15 -62 15 minecraft:bedrock
 execute unless score #cl.track.shulkerStorage cl.track.shulkerStorage matches 0..51 run scoreboard players set #cl.track.shulkerStorage cl.track.shulkerStorage 1
 
+#Scoreboards for custom blocks
+scoreboard objectives add cl.RuneTable.StaffNumber dummy
+scoreboard objectives add cl.RuneTable.LastStaffNumber dummy
+scoreboard objectives add cl.RuneTable.Slots dummy
+scoreboard objectives add cl.MagicTable.Ingredients dummy
+execute unless score $cl.tracker cl.RuneTable.StaffNumber matches 1.. run scoreboard players set $cl.tracker cl.RuneTable.StaffNumber 1
 
 #Scoreboards for settings
 scoreboard objectives add cl.pref.setFire dummy

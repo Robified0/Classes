@@ -29,21 +29,6 @@ execute as @s[scores={cl.wand.slot1=603}] run function classes:abilities/spells/
 execute as @s[scores={cl.wand.slot1=604}] run function classes:abilities/spells/mend/select
 execute as @s[scores={cl.wand.slot1=605}] run function classes:abilities/spells/magearmor/select
 execute as @s[scores={cl.wand.slot1=606}] run function classes:abilities/spells/magicmissile/select
-execute as @s[scores={cl.wand.slot1=700}] run function classes:abilities/spells/heal/select
-execute as @s[scores={cl.wand.slot1=701}] run function classes:abilities/spells/healplosion/select
-execute as @s[scores={cl.wand.slot1=702}] run function classes:abilities/spells/purify/select
-execute as @s[scores={cl.wand.slot1=703}] run function classes:abilities/spells/prevention/select
-execute as @s[scores={cl.wand.slot1=704}] run function classes:abilities/spells/mending/select
-execute as @s[scores={cl.wand.slot1=800}] run function classes:abilities/spells/guard/select
-execute as @s[scores={cl.wand.slot1=801}] run function classes:abilities/spells/fireresist/select
-execute as @s[scores={cl.wand.slot1=802}] run function classes:abilities/spells/speedboost/select
-execute as @s[scores={cl.wand.slot1=803}] run function classes:abilities/spells/inspire/select
-execute as @s[scores={cl.wand.slot1=804}] run function classes:abilities/spells/vitality/select
-execute as @s[scores={cl.wand.slot1=805}] run function classes:abilities/spells/bless/select
-execute as @s[scores={cl.wand.slot1=900}] run function classes:abilities/spells/holystrike/select
-execute as @s[scores={cl.wand.slot1=901}] run function classes:abilities/spells/stopundead/select
-execute as @s[scores={cl.wand.slot1=902}] run function classes:abilities/spells/bolt/select
-execute as @s[scores={cl.wand.slot1=903}] run function classes:abilities/spells/light/select
 
 #Check for empty slot
 execute unless entity @s[scores={cl.wand.slot1=1..}] run title @s times 20 100 20

@@ -1,0 +1,17 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "chest": {
+        "items": [
+          "minecraft:iron_chestplate",
+          "minecraft:golden_chestplate",
+          "minecraft:diamond_chestplate",
+          "minecraft:netherite_chestplate",
+          "minecraft:chainmail_chestplate"
+        ]
+      }
+    }
+  }
+}

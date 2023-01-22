@@ -5,9 +5,6 @@
 #Handle custom spawning of mobs
 function classes:entities/custom/loopsummon
 
-#Handle logic for Magic table.
-execute as @e[type=marker,tag=cl.magicTable] at @s if entity @p[predicate=classes:checkclass/spellcaster,distance=..3] if data block ~ ~ ~ Items[0] run function classes:blocks/magictable/recipes/main
-
 #Stat handling
 execute as @a[scores={cl.Class=1}] run function classes:knight/stats/main
 execute as @a[scores={cl.Class=2}] run function classes:ranger/stats/main

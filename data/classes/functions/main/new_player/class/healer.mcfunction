@@ -12,6 +12,8 @@ scoreboard players set @s cl.Cooldown 0
 advancement grant @s only classes:healer/root
 advancement grant @s only classes:healer/learnspell/healing/heal
 advancement grant @s only classes:healer/learnspell/smiting/bolt
+tag @s add cl.knowsSpell.Heal
+tag @s add cl.knowsSpell.Bolt
 function classes:healer/stats/main
 
 #Set first slot spell as selected

@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Starter Wand\",\"color\":\"light_purple\"}'},Unbreakable:1b,CustomModelData:60000,cl.s.Wand:1b}"
+              "tag": "{display:{Name:'{\"text\":\"Starter Staff\",\"color\":\"light_purple\"}'},Unbreakable:1b,CustomModelData:60000,cl.isStaff:1b,cl.RuneSlots:1}"
             }
           ]
         }

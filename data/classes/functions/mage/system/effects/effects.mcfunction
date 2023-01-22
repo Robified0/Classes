@@ -29,6 +29,9 @@ execute if entity @s[scores={cl.e.FireShield=0..}] at @s run function classes:ma
 #Fireball
 execute as @e[type=marker,tag=cl.spell.Fireball.rider,predicate=classes:check/vehicle/fireball] at @s run function classes:mage/effects/fireball
 
+#Bed of Coals
+execute as @e[type=minecraft:area_effect_cloud,tag=cl.spell.bedofcoals] at @s as @e[tag=!cl.r.this,type=!#classes:nontarget,type=!#classes:fireproof,tag=!cl.t.summoned,tag=!cl.t.Owned,distance=..5] run function clases:mage/effects/bedofcoals
+
 #Slow Fall - (tag=SlowFall)
 execute if entity @s[scores={cl.e.SlowFall=0..}] at @s run function classes:mage/effects/slowfall
 
@@ -60,4 +63,4 @@ execute if entity @s[scores={cl.e.Shield=0..}] at @s run function classes:mage/e
 execute if entity @s[scores={cl.summonCount=0..}] as @e[type=snow_golem,tag=cl.t.summoned] at @s run function classes:mage/effects/snowgolem
 
 #Handle logic for summoned Iron Golem
-execute if entity @s[scores={cl.summonCount=0..}] as @e[type=iron_golem,tag=cl.t.summoned] at @s run function classes:mage/effects/
+execute if entity @s[scores={cl.summonCount=0..}] as @e[type=iron_golem,tag=cl.t.summoned] at @s run function classes:mage/effects/irongolem

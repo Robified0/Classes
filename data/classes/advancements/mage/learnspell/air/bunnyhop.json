@@ -5,12 +5,18 @@
       "nbt": "{CustomModelData:60403}"
     },
     "title": {
-      "text": "Bunny Hop",
+      "text": "Bunny Hop Rune          ",
       "color": "yellow"
     },
     "description": {
       "text": "Grants Jump II for 45 seconds.",
-      "color": "white"
+      "color": "white",
+      "extra": [
+        {
+          "text": "\n\nCraft: Place Air Soul, Lapis Lazuli, and Rabbit's Foot in the Magic Table.",
+          "color": "gold"
+        }
+      ]
     },
     "frame": "task",
     "show_toast": true,
