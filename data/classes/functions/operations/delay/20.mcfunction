@@ -35,9 +35,6 @@ execute as @e[type=#classes:illagers,tag=!cl.t.Raider,tag=!cl.t.NotRaider] run f
 #Handle Knight bonuses for Raids
 execute as @a[scores={cl.Class=1}] at @s if entity @e[type=#classes:illagers,tag=cl.t.Raider,distance=..10] run function classes:knight/system/raid/main
 
-#Mana Potion Use Check
-execute as @a run function classes:items/manapotion/checkuse
-
 #Remove score counting Magic Essence transform if they aren't holding spirit essence anymore.
 execute as @a[predicate=!classes:checkspell/mage/magicessence] run scoreboard players set @s cl.t.magic_essence 0
 
@@ -45,8 +42,6 @@ execute as @a[predicate=!classes:checkspell/mage/magicessence] run scoreboard pl
 execute as @e[type=#classes:fireballs,tag=cl.t.newFireball] at @s run function classes:operations/motion/killfireball
 
 #Clear Specific Items
-execute as @a unless entity @s[scores={cl.spellMenu=-10..}] run function classes:main/clearitems
-
 #Check the state of the Dropper
 execute as @a at @s as @e[type=marker,tag=cl.magicTable,distance=..5] at @s if block ~ ~ ~ dropper[facing=up] run function classes:blocks/magictable/check
 
