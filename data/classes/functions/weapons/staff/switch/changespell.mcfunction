@@ -10,6 +10,6 @@ execute as @s[scores={cl.spell.selected=900..999}] run function classes:weapons/
 
 
 #Check for empty slot
-execute unless entity @s[scores={cl.spell.selected=1..}] run title @s times 20 100 20
-execute unless entity @s[scores={cl.spell.selected=1..}] run title @s subtitle {"text":" ","color":"red"}
-execute unless entity @s[scores={cl.spell.selected=1..}] run title @s title {"text":"You have no spells equipped!","color":"red"}
+execute unless entity @s[scores={cl.spell.selected=1..}] if score @s cl.track.lastHotBarSlot = @s cl.track.currentHotBarSlot run title @s times 20 100 20
+execute unless entity @s[scores={cl.spell.selected=1..}] if score @s cl.track.lastHotBarSlot = @s cl.track.currentHotBarSlot run title @s subtitle {"text":" ","color":"red"}
+execute unless entity @s[scores={cl.spell.selected=1..}] if score @s cl.track.lastHotBarSlot = @s cl.track.currentHotBarSlot run title @s title {"text":"You have no spells equipped!","color":"red"}
