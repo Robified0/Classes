@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:structure_block",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Fire Rune\",\"color\":\"red\"}',Lore:['{\"text\":\"Fire Shield\",\"color\":\"red\",\"bold\":true,\"italic\":true}','{\"text\":\"Grants you immunity to fire for 5 seconds, and ignites mobs around you.\",\"color\":\"aqua\"}']},CustomModelData:201,cl.isRune:1b,cl.spellNumber:204,HideFlags:127}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

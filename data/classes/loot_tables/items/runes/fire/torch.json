@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Fire Rune\",\"color\":\"red\"}',Lore:['{\"text\":\"Torch\",\"color\":\"red\",\"bold\":true,\"italic\":true}','{\"text\":\"Shoots a ray of fire, dealing damage and lighting them ablaze.\",\"color\":\"aqua\"}']},CustomModelData:201,cl.isRune:1b,cl.spellNumber:200,HideFlags:127}"
+              "tag": "{display:{Name:'{\"text\":\"Fire Rune\",\"color\":\"red\"}',Lore:['[{\"text\":\"Torch\",\"color\":\"red\",\"bold\":true},{\"text\":\" - 1 \uE003\",\"color\":\"white\",\"italic\":true}]','{\"text\":\"Shoots a ray of fire, dealing damage and lighting them ablaze.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:201,cl.isRune:1b,cl.spellNumber:200}"
             }
           ]
         }
