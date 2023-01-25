@@ -48,5 +48,8 @@ execute as @a at @s as @e[type=marker,tag=cl.magicTable,distance=..5] at @s if b
 #Handle Slimes & Armor Stands for Earth wall
 execute as @e[type=#classes:mage/spell/earthwall,scores={cl.spell.earthWall=0..}] at @s run function classes:abilities/effects/earthwall
 
+#Reset spells when different wand selected
+execute as @a run function classes:main/hotbarswitch
+
 #Reset score
 scoreboard players set #cl.t.20Tick cl.t.Tick 0
