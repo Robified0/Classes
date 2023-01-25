@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Fire Rune\",\"color\":\"red\"}',Lore:['{\"text\":\"Fireball\",\"color\":\"red\",\"bold\":true,\"italic\":true}','{\"text\":\"Summons a Fireball to deal heavy damage and knockback enemies where it lands.\",\"color\":\"aqua\"}']},CustomModelData:201,cl.isRune:1b,cl.spellNumber:203,HideFlags:127}"
+              "tag": "{display:{Name:'{\"text\":\"Fire Rune\",\"color\":\"red\"}',Lore:['{\"text\":\"Fireball\",\"color\":\"red\",\"bold\":true,\"italic\":true}','{\"text\":\"Summons a Fireball to deal heavy damage and knockback enemies where it lands.\",\"color\":\"dark_aqua\"}']},CustomModelData:201,cl.isRune:1b,cl.spellNumber:203,HideFlags:127}"
             }
           ]
         }

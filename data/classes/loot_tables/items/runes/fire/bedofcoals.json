@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Fire Rune\",\"color\":\"red\"}',Lore:['{\"text\":\"Bed of Coals\",\"color\":\"red\",\"bold\":true,\"italic\":true}','{\"text\":\"Cast damaging flames on the ground. Lasts for 5 seconds.\",\"color\":\"aqua\"}']},CustomModelData:201,cl.isRune:1b,cl.spellNumber:201,HideFlags:127}"
+              "tag": "{display:{Name:'{\"text\":\"Fire Rune\",\"color\":\"red\"}',Lore:['{\"text\":\"Bed of Coals\",\"color\":\"red\",\"bold\":true,\"italic\":true}','{\"text\":\"Cast damaging flames on the ground. Lasts for 5 seconds.\",\"color\":\"dark_aqua\"}']},CustomModelData:201,cl.isRune:1b,cl.spellNumber:201,HideFlags:127}"
             }
           ]
         }
