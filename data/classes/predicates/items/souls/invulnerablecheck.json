@@ -6,7 +6,7 @@
       "entity": "this",
       "predicate": {
         "type": "minecraft:item",
-        "nbt": "{Item:{tag:{Fire:1b}}}"
+        "nbt": "{Item:{tag:{cl.SoulFire:1b}}}"
       }
     },
     {
@@ -14,7 +14,7 @@
       "entity": "this",
       "predicate": {
         "type": "minecraft:item",
-        "nbt": "{Item:{tag:{cl.SpiritEssence:1b}}}"
+        "nbt": "{Item:{tag:{cl.Soul:1b}}}"
       }
     }
   ]

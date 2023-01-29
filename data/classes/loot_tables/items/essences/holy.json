@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Holy Essence\",\"color\":\"white\",\"italic\":true}'},HideFlags:127,CustomModelData:105,Holy:1b,Enchantments:[{}]}"
+              "tag": "{display:{Name:'{\"text\":\"Holy Soul\",\"color\":\"white\",\"italic\":true}'},HideFlags:127,CustomModelData:105,cl.SoulHoly:1b,Enchantments:[{}]}"
             }
           ]
         }

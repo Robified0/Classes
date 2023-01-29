@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Magic Essence\",\"color\":\"light_purple\",\"italic\":true}'},HideFlags:127,CustomModelData:100,Magic:1b,Enchantments:[{}]}"
+              "tag": "{display:{Name:'{\"text\":\"Magic Soul\",\"color\":\"light_purple\",\"italic\":true}'},HideFlags:127,CustomModelData:100,cl.SoulMagic:1b,Enchantments:[{}]}"
             }
           ]
         }

@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Air Essence\",\"color\":\"yellow\",\"italic\":true}'},HideFlags:127,CustomModelData:103,Air:1b,Enchantments:[{}]}"
+              "tag": "{display:{Name:'{\"text\":\"Air Soul\",\"color\":\"yellow\",\"italic\":true}'},HideFlags:127,CustomModelData:103,cl.SoulAir:1b,Enchantments:[{}]}"
             }
           ]
         }

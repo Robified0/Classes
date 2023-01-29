@@ -7,7 +7,7 @@
         "items": [
           "minecraft:structure_block"
         ],
-        "nbt": "{cl.SpiritEssence:1b}"
+        "nbt": "{cl.Soul:1b}"
       }
     }
   }

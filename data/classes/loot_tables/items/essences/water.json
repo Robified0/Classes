@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Water Essence\",\"color\":\"blue\",\"italic\":true}'},HideFlags:127,CustomModelData:102,Water:1b,Enchantments:[{}]}"
+              "tag": "{display:{Name:'{\"text\":\"Water Soul\",\"color\":\"blue\",\"italic\":true}'},HideFlags:127,CustomModelData:102,cl.SoulWater:1b,Enchantments:[{}]}"
             }
           ]
         }
