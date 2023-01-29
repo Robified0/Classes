@@ -54,7 +54,7 @@ scoreboard objectives remove cl.o.knockBack
 scoreboard objectives remove cl.o.maxHealth
 scoreboard objectives remove cl.o.health
 scoreboard objectives setdisplay belowName
-scoreboard objectives remove cl.item.spiritessence
+scoreboard objectives remove cl.track.Soul.time
 scoreboard objectives remove cl.t.magic_essence
 scoreboard objectives remove cl.t.holy_essence
 scoreboard objectives remove cl.track.walk

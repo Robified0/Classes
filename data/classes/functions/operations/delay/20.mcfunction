@@ -2,6 +2,9 @@
 
 #Run function when #cl.t.20Tick score hits 20 (operations/delay/main)
 
+#Get time
+execute as @e[type=item,tag=cl.SoulExtract.Setup] at @s run function classes:blocks/soul_campfire/main
+
 #Handle custom spawning of mobs
 function classes:entities/custom/loopsummon
 
@@ -12,7 +15,7 @@ execute as @a[scores={cl.Class=3}] run function classes:mage/stats/main
 execute as @a[scores={cl.Class=4}] run function classes:healer/stats/main
 
 #Run turning Spirit Essences into Elemental Essences
-execute as @e[type=item,nbt={Item:{tag:{cl.SpiritEssence:1b}}}] at @s if data entity @s Thrower run function classes:items/spiritessence/main
+execute as @e[type=item,nbt={Item:{tag:{cl.Soul:1b}}}] at @s if data entity @s Thrower run function classes:items/spiritessence/main
 
 #Bless handling
 execute as @a[scores={cl.e.Bless=1..}] run function classes:operations/checks/bless
@@ -47,9 +50,6 @@ execute as @a at @s as @e[type=marker,tag=cl.magicTable,distance=..5] at @s if b
 
 #Handle Slimes & Armor Stands for Earth wall
 execute as @e[type=#classes:mage/spell/earthwall,scores={cl.spell.earthWall=0..}] at @s run function classes:abilities/effects/earthwall
-
-#Reset spells when different wand selected
-execute as @a run function classes:main/hotbarswitch
 
 #Reset score
 scoreboard players set #cl.t.20Tick cl.t.Tick 0

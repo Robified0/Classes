@@ -16,7 +16,7 @@ execute as @e[type=marker,tag=cl.r.slowcast] at @s run function classes:operatio
 
 #Magic table
 execute as @e[type=glow_item_frame,tag=cl.magicTable,tag=!cl.magicTablePlaced] at @s run function classes:blocks/magictable/placed
-execute as @a at @s as @e[type=marker,tag=cl.magicTable] at @s run function classes:blocks/magictable/main
+execute as @e[type=marker,tag=cl.magicTable] at @s run function classes:blocks/magictable/main
 
 #RUNE TABLE
 execute as @e[type=glow_item_frame,tag=cl.RuneTable,tag=!cl.RuneTablePlaced] at @s run function classes:blocks/runetable/placing/placed
@@ -28,7 +28,7 @@ execute as @e[type=marker,tag=cl.RuneTable] at @s run function classes:blocks/ru
 execute as @e[type=marker,tag=cl.SkillTable] at @s run function classes:blocks/skilltable/main
 
 # Stop SpiritEssence from burning
-execute as @e[type=item,tag=!cl.t.processed,predicate=classes:items/spiritessence/invulnerablecheck] run data merge entity @s {Invulnerable:1b}
+execute as @e[type=item,tag=!cl.t.processed,predicate=classes:items/souls/invulnerablecheck] run data merge entity @s {Invulnerable:1b}
 
 #Function for all new players, to ensure scoreboards are set up
 execute as @a unless score @s cl.Class matches 1.. at @s run function classes:main/new_player/main
