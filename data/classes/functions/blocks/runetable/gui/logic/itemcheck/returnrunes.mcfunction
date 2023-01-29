@@ -4,8 +4,6 @@ data modify storage classes:runetable KeepItems set value []
 #Save the wand slot and GUI overlay icons, always
 data modify storage classes:runetable KeepItems append from storage classes:runetable Items[{Slot:10b}]
 data remove storage classes:runetable Items[{Slot:10b}]
-data modify storage classes:runetable KeepItems append from storage classes:runetable Items[{Slot:26b}]
-data remove storage classes:runetable Items[{Slot:26b}]
 data modify storage classes:runetable KeepItems append from storage classes:runetable Items[{tag:{cl.gui:1b}}]
 data remove storage classes:runetable Items[{tag:{cl.gui:1b}}]
 
