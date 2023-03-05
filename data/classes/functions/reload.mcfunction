@@ -1,4 +1,6 @@
-#Forceload spawn chunk
+#Forceload spawn chunks
+forceload add 0 0
+forceload add -2 0
 
 ##################Set up scoreboards######################
 scoreboard objectives add cl.CurrentHealth dummy
@@ -27,6 +29,7 @@ scoreboard objectives add cl.wand.slot4 dummy
 scoreboard objectives add cl.wand.slot5 dummy
 scoreboard objectives add cl.detect.book dummy
 scoreboard objectives add cl.spell.equip.start dummy
+scoreboard objectives add cl.book.template dummy
 
 #Set up other scoreboards
 scoreboard objectives add cl.Class trigger
@@ -70,15 +73,24 @@ scoreboard objectives add cl.track.SoulExtract.time dummy
 scoreboard objectives add cl.track.CustomModelData dummy
 scoreboard objectives add cl.track.SlotNumber dummy
 
-# Sets up the shulker boxes.
-fill -1 -64 0 0 -64 0 minecraft:gray_shulker_box[facing=up]
+# Sets up the shulker boxes (and bedrock case)
+fill -2 -63 -1 2 -64 -1 minecraft:bedrock
+fill 2 -63 0 2 -64 1 minecraft:bedrock
+fill 1 -63 1 -2 -64 1 minecraft:bedrock
+fill -2 -63 0 -2 -64 0 minecraft:bedrock
+fill -1 -64 0 1 -64 0 minecraft:gray_shulker_box[facing=up]
 
 #Scoreboards for custom blocks
 scoreboard objectives add cl.RuneTable.StaffNumber dummy
 scoreboard objectives add cl.RuneTable.LastStaffNumber dummy
 scoreboard objectives add cl.RuneTable.Slots dummy
 scoreboard objectives add cl.MagicTable.Ingredients dummy
+scoreboard objectives add cl.track.Rune.Count dummy
 execute unless score $cl.tracker cl.RuneTable.StaffNumber matches 1.. run scoreboard players set $cl.tracker cl.RuneTable.StaffNumber 1
+
+#Rune Number Tracker
+scoreboard objectives add cl.track.RuneNumber dummy
+execute unless score $cl.tracker cl.track.RuneNumber matches 1.. run scoreboard players set $cl.tracker cl.track.RuneNumber 1
 
 #Scoreboards for settings
 scoreboard objectives add cl.pref.setFire dummy

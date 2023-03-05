@@ -1,16 +1,21 @@
+#Copy book ID to marker
+#execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:book",tag:{cl.book.template:1b}}]} unless block ~ ~ ~ barrel{Items:[{Slot:16b}]} store result score @s cl.book.template run data get block ~ ~ ~ Items[{tag:{cl.book.template:1b}}].tag."cl.book.craft"
+
+#Get number of souls in table (for correct detection/deductions)
+execute store result score @s cl.track.Rune.Count run data get block ~ ~ ~ Items[{id:"minecraft:structure_block",tag:{cl.isSoul:1b}}].Count
+
 #Mana Potion
 execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:lapis_lazuli"},{id:"minecraft:glass_bottle"},{id:"minecraft:blaze_powder"}]} run function classes:blocks/magictable/recipes/items/potions/manapotion
 #Wand
 execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:lapis_lazuli"},{id:"minecraft:stick"},{id:"minecraft:iron_ingot"}]} run function classes:blocks/magictable/recipes/items/staffs/ironstaff
-#Torch Rune
-execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:lapis_lazuli"},{id:"minecraft:structure_block",tag:{cl.SoulFire:1b}},{id:"minecraft:stone"}]} run function classes:blocks/magictable/recipes/items/runes/fire/torch
 
-#Bed Of Coals Rune
-execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:lapis_lazuli"},{id:"minecraft:structure_block",tag:{cl.SoulFire:1b}},{id:"minecraft:coal_block"}]} run function classes:blocks/magictable/recipes/items/runes/fire/bedofcoals
-
-#Fireball Rune
-execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:lapis_lazuli"},{id:"minecraft:structure_block",tag:{cl.SoulFire:1b}},{id:"minecraft:fire_charge"}]} run function classes:blocks/magictable/recipes/items/runes/fire/fireball
-
+#Rune crafting
+execute if entity @p[level=1..] if score @s cl.track.Rune.Count matches 5.. if block ~ ~ ~ barrel{Items:[{id:"minecraft:structure_block",tag:{cl.SoulFire:1b}},{id:"minecraft:lapis_lazuli"},{id:"minecraft:stone"}]} run function classes:blocks/magictable/recipes/items/runes/fire
+execute if entity @p[level=1..] if score @s cl.track.Rune.Count matches 5.. if block ~ ~ ~ barrel{Items:[{id:"minecraft:structure_block",tag:{cl.SoulWater:1b}},{id:"minecraft:lapis_lazuli"},{id:"minecraft:stone"}]} run function classes:blocks/magictable/recipes/items/runes/water
+execute if entity @p[level=1..] if score @s cl.track.Rune.Count matches 5.. if block ~ ~ ~ barrel{Items:[{id:"minecraft:structure_block",tag:{cl.SoulAir:1b}},{id:"minecraft:lapis_lazuli"},{id:"minecraft:stone"}]} run function classes:blocks/magictable/recipes/items/runes/air
+execute if entity @p[level=1..] if score @s cl.track.Rune.Count matches 5.. if block ~ ~ ~ barrel{Items:[{id:"minecraft:structure_block",tag:{cl.SoulEarth:1b}},{id:"minecraft:lapis_lazuli"},{id:"minecraft:stone"}]} run function classes:blocks/magictable/recipes/items/runes/earth
+execute if entity @p[level=1..] if score @s cl.track.Rune.Count matches 5.. if block ~ ~ ~ barrel{Items:[{id:"minecraft:structure_block",tag:{cl.SoulHoly:1b}},{id:"minecraft:lapis_lazuli"},{id:"minecraft:stone"}]} run function classes:blocks/magictable/recipes/items/runes/holy
 
 #Upgrade Wand
+execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:warped_fungus_on_a_stick",tag:{cl.RuneSlots:2}},{id:"minecraft:structure_block",tag:{cl.Soul:1b},Count:10b},{id:"minecraft:lapis_lazuli"}]} run function classes:blocks/magictable/recipes/items/staffs/upgrade/2slot
 execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:warped_fungus_on_a_stick",tag:{cl.RuneSlots:1}},{id:"minecraft:structure_block",tag:{cl.Soul:1b},Count:5b},{id:"minecraft:lapis_lazuli"}]} run function classes:blocks/magictable/recipes/items/staffs/upgrade/2slot

@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:structure_block",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Fire Rune\",\"color\":\"red\"}',Lore:['[{\"text\":\"Flame Burst\",\"color\":\"red\",\"bold\":true},{\"text\":\" - 2 \uE003\",\"color\":\"white\",\"italic\":true}]','{\"text\":\"Hits any mob within 6 blocks of you. Fire-based enemies are immune.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:202,cl.isRune:1b,cl.spellNumber:202}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

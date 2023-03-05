@@ -3,6 +3,9 @@
 #Mute barrel sounds
 function classes:blocks/barrelsound
 
+#Reset book template score
+scoreboard players reset @s cl.book.template
+
 #Handle destruction
 execute if block ~ ~ ~ barrel[open=true] run function classes:blocks/magictable/open
 

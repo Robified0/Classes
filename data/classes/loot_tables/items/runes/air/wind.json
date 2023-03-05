@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:structure_block",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Air Rune\",\"color\":\"gold\"}',Lore:['[{\"text\":\"Wind\",\"color\":\"gold\",\"bold\":true},{\"text\":\" - 1 \uE003\",\"color\":\"white\",\"italic\":true}]','{\"text\":\"Knocks enemies around you 5 blocks back.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:204,cl.isRune:1b,cl.spellNumber:404}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
