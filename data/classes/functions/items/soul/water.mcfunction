@@ -2,7 +2,7 @@
 particle minecraft:rain ~ ~ ~ 0.3 0.3 0.3 1 100
 
 #Prevent stacking
-function classes:items/spiritessence/preventstack
+function classes:items/soul/preventstack
 
 # Play sound as it works
 execute if entity @s[scores={cl.track.Soul.time=..8}] run playsound minecraft:entity.player.splash.high_speed player @a ~ ~ ~ 0.3 2
