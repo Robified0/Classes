@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:structure_block",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Water Rune\",\"color\":\"blue\"}',Lore:['[{\"text\":\"Ice Walker\",\"color\":\"blue\",\"bold\":true},{\"text\":\" - 2 \uE003\",\"color\":\"white\",\"italic\":true}]','{\"text\":\"Surface water will turn to ice as you walk over it.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:203,cl.isRune:1b,cl.spellNumber:306}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:structure_block",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Water Rune\",\"color\":\"blue\"}',Lore:['[{\"text\":\"Blizzard\",\"color\":\"blue\",\"bold\":true},{\"text\":\" - 1 \uE003/sec\",\"color\":\"white\",\"italic\":true}]','{\"text\":\"Hold to cast. Summons a blizzard that knocks enemies back, and damages them.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:203,cl.isRune:1b,cl.spellNumber:308}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
