@@ -7,7 +7,7 @@ data merge entity @s {NoAI:1b}
 scoreboard players set @s cl.e.StopUndead 200
 
 # Make mob AI trigger for combat/fleeing
-function classes:entities/vanilla/angry
+damage @s 0 minecraft:magic by @p
 
 #Particle effects
 particle minecraft:end_rod ~ ~ ~ 0.1 0.1 0.1 0.1 20 normal

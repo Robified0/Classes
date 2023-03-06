@@ -21,7 +21,7 @@ tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" c
 scoreboard players set @s cl.Cooldown 20
 
 #Mana Removal
-scoreboard players remove @s cl.Mana 8
+scoreboard players remove @s cl.Mana 2
 
 #Change base attribute
 execute as @s run attribute @s minecraft:generic.armor base set 4

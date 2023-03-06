@@ -22,9 +22,7 @@ execute if entity @s[scores={cl.e.Blizzard=1..}] run effect give @e[type=!#class
 execute if entity @s[scores={cl.e.Blizzard=1..}] as @e[type=!#classes:nontarget,type=!player,tag=!cl.t.summoned,tag=!cl.t.Owned,distance=..9] at @s run data merge entity @s {TicksFrozen:250}
 
 #Damage entities in range
-execute if entity @s[scores={cl.e.Blizzard=1..}] run effect give @e[type=!#classes:nontarget,tag=!cl.t.summoned,tag=!cl.t.Owned,distance=..10] minecraft:wither 1 1
-#Merge loot table for proper drops
-execute if entity @s[scores={cl.e.Blizzard=1..}] as @e[type=!#classes:nontarget,tag=!cl.t.summoned,tag=!cl.t.Owned,tag=!cl.LTAdjusted,distance=..10] run function classes:main/loot_table/main
+execute if entity @s[scores={cl.e.Blizzard=1..}] as @e[type=!#classes:nontarget,tag=!cl.t.summoned,tag=!cl.t.Owned,distance=..10] run damage @s 1 minecraft:freeze by @p[scores={cl.e.Blizzard=1..}]
 
 #Spell Handling
 scoreboard players set @s cl.e.Blizzard 10

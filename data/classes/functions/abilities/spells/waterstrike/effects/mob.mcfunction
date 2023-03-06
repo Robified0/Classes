@@ -8,7 +8,8 @@ function classes:entities/vanilla/angry
 data merge entity @s {Fire:-1}
 
 #Handle elemental weaknesses
-execute if entity @s[type=#classes:magic/elemental/weakness/water] run scoreboard players set @s cl.damageWeakness 1
+execute if entity @s[type=#classes:magic/elemental/weakness/water] run damage @s 8 minecraft:magic by @p
+execute unless entity @s[type=#classes:magic/elemental/weakness/water] run damage @s 4 minecraft:magic by @p
 
 # Calculate damage
 function classes:operations/damage/apply

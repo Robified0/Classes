@@ -1,11 +1,8 @@
 #Give ID of marker to avoid multiple hits
 scoreboard players operation @s cl.slo_id = @e[type=marker,tag=cl.r.magicmissile,sort=nearest,limit=1] cl.slo_id
 
-# Make mob AI trigger for combat/fleeing
-function classes:entities/vanilla/angry
-
-# Calculate damage
-function classes:operations/damage/apply
+#Deal damage
+damage @s 3 minecraft:magic by @p
 
 # Particle effect
 particle minecraft:firework ~ ~1 ~ 0.1 0.1 0.1 0.1 30 force

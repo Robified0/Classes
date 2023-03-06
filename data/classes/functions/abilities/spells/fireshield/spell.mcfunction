@@ -1,5 +1,11 @@
+#Kill any old block displays
+kill @e[type=block_display,tag=cl.e.FireShield,limit=1,sort=nearest,distance=..1]
+
 #Set scoreboard timer - must match effect time below multiplied by 20.
 scoreboard players set @s cl.e.FireShield 100
+
+#Summon visual fire effect
+summon block_display ~-0.5 ~ ~-0.5 {Tags:["cl.e.FireShield"],brightness:{sky:15,block:15},block_state:{Name:"minecraft:fire"}}
 
 #Give Effect
 effect give @s minecraft:fire_resistance 5 0 false

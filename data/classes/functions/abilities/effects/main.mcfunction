@@ -30,7 +30,7 @@ execute if entity @s[scores={cl.e.FireShield=0..}] at @s run function classes:ab
 execute as @e[type=marker,tag=cl.spell.Fireball.rider,predicate=classes:check/vehicle/fireball] at @s run function classes:abilities/effects/fireball
 
 #Bed of Coals
-execute as @e[type=minecraft:area_effect_cloud,tag=cl.spell.bedofcoals] at @s as @e[tag=!cl.r.this,type=!#classes:nontarget,type=!#classes:fireproof,tag=!cl.t.summoned,tag=!cl.t.Owned,distance=..5] run function clases:abilities/effects/bedofcoals
+execute as @e[type=minecraft:area_effect_cloud,tag=cl.spell.bedofcoals] at @s run function classes:abilities/effects/bedofcoals
 
 #Slow Fall - (tag=SlowFall)
 execute if entity @s[scores={cl.e.SlowFall=0..}] at @s run function classes:abilities/effects/slowfall

@@ -1,6 +1,9 @@
 #Make them face the player
 tp @s ~ ~ ~ facing entity @p
 
+#Fake damage them to trigger AI
+damage @s 0 minecraft:magic by @p
+
 #Facing east
 execute if entity @s[y_rotation=-135..-45] run data merge entity @s {Motion:[-1.0d, 0.7d, 0.0d]}
 #Facing west
