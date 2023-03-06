@@ -107,6 +107,7 @@ execute unless score #cl.pref cl.pref.wExtFire matches 0..1 run scoreboard playe
 #Scoreboards for time based spells
 scoreboard objectives add cl.summonCount dummy
 scoreboard objectives add cl.e.FireShield dummy
+scoreboard objectives add cl.e.BedofCoals dummy
 scoreboard objectives add cl.e.DeepFreeze dummy
 scoreboard objectives add cl.e.IceWalker dummy
 scoreboard objectives add cl.e.Blizzard.m dummy

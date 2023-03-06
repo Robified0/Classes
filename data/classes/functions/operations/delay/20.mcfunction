@@ -15,7 +15,7 @@ execute as @a[scores={cl.Class=3}] run function classes:mage/stats/main
 execute as @a[scores={cl.Class=4}] run function classes:healer/stats/main
 
 #Run turning Spirit Essences into Elemental Essences
-execute as @e[type=item,nbt={Item:{tag:{cl.Soul:1b}}}] at @s if data entity @s Thrower run function classes:items/spiritessence/main
+execute as @e[type=item,nbt={Item:{tag:{cl.Soul:1b}}}] at @s if data entity @s Thrower run function classes:items/soul/main
 
 #Bless handling
 execute as @a[scores={cl.e.Bless=1..}] run function classes:operations/checks/bless
@@ -38,7 +38,7 @@ execute as @e[type=#classes:illagers,tag=!cl.t.Raider,tag=!cl.t.NotRaider] run f
 #Handle Knight bonuses for Raids
 execute as @a[scores={cl.Class=1}] at @s if entity @e[type=#classes:illagers,tag=cl.t.Raider,distance=..10] run function classes:knight/system/raid/main
 
-#Remove score counting Magic Essence transform if they aren't holding spirit essence anymore.
+#Remove score counting Magic Essence transform if they aren't holding soul anymore.
 execute as @a[predicate=!classes:checkspell/mage/magicessence] run scoreboard players set @s cl.t.magic_essence 0
 
 #Kill fireballs that have been deflected
