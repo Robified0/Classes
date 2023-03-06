@@ -16,7 +16,7 @@
     "announce_to_chat": false,
     "hidden": false
   },
-  "parent": "classes:healer/essence/spiritessence",
+  "parent": "classes:healer/essence/soul",
   "criteria": {
     "holyessence": {
       "trigger": "minecraft:inventory_changed",
