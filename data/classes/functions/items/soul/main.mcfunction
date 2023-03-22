@@ -1,4 +1,4 @@
-## Running as item tagged as cl.SpiritEssence (operations/delay/20)
+## Running as item tagged as cl.SpiritEssence (main/delay/20)
 #Increase the item scoreboard
 scoreboard players add @s[predicate=classes:items/souls/locationcheck] cl.track.Soul.time 1
 

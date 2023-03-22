@@ -150,10 +150,6 @@ scoreboard objectives add cl.e.Shield.m dummy
 #Tick Tracking
 scoreboard objectives add cl.t.Tick dummy
 
-#Get gamerules
-scoreboard objectives add cl.track.commandFeedback dummy
-execute store result score #cl.pref cl.track.commandFeedback run gamerule sendCommandFeedback
-
 #Custom mob spawning scoreboard.
 scoreboard objectives add cl.customMob dummy
 

@@ -1,5 +1,5 @@
 #Handle Particles and sound
-execute as @e[type=minecraft:marker,tag=cl.t.GuardSphere] at @s positioned ~ ~ ~ run function classes:operations/particles/draw/guard/drawsphere
+execute as @e[type=minecraft:marker,tag=cl.t.GuardSphere] at @s positioned ~ ~ ~ run function classes:main/particles/draw/guard/drawsphere
 
 #Handle functionality
 execute if entity @e[type=#classes:guardprojectiles,distance=..4] as @e[type=#classes:guardprojectiles,distance=..4] at @s run function classes:abilities/effects/guard/effect

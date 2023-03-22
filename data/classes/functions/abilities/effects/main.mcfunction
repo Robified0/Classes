@@ -15,7 +15,7 @@ execute if entity @s[scores={cl.summonCount=0..}] run scoreboard players remove 
 scoreboard players remove @s[scores={cl.summonCount=0..}] cl.summonCount 1
 
 #Handle Motion
-execute if entity @s[scores={cl.e.Shield=1..}] as @e[type=#classes:motionaffected,tag=cl.t.motion_projectile,tag=!cl.t.motion_added] run function classes:operations/motion/motion
+execute if entity @s[scores={cl.e.Shield=1..}] as @e[type=#classes:motionaffected,tag=cl.t.motion_projectile,tag=!cl.t.motion_added] run function classes:main/motion/motion
 
 #Ice Walker (tag=IceWalker)
 execute if entity @s[scores={cl.e.IceWalker=0..}] at @s run function classes:abilities/effects/icewalker

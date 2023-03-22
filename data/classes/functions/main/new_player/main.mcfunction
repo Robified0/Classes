@@ -1,12 +1,8 @@
 ##Executing as player who has just joined (root/main)
 
-## Silence commandFeedback for the time being
-execute if score #cl.pref cl.track.commandFeedback matches 1 run gamerule sendCommandFeedback false
-
-#Enable Class trigger, to allow selecting of class
-scoreboard players enable @s cl.Class
-
-execute unless entity @s[tag=cl.o.Joined] run loot spawn ~ ~ ~ loot classes:items/books/classselect
+#Set Mana scores
+scoreboard players set @s cl.Mana 20
+scoreboard players set @s cl.ManaRegenSec 1
 
 #Tag player to avoid spam
 tag @s add cl.o.Joined

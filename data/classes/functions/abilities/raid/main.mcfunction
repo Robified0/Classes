@@ -1,6 +1,6 @@
 ### Give Knights bonuses if within 10 blocks of raiders
 ## As: Knight
-## From: operations/delay/20
+## From: main/delay/20
 
 #Give Knight effects
 effect give @s minecraft:strength 2 0 false

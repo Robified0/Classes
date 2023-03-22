@@ -12,7 +12,7 @@
 execute as @a[scores={cl.spell.equip.start=1..},predicate=classes:checkclass/spellcaster] at @s run function classes:operations/track/spellequip/main
 
 #Handle Raycasts
-execute as @e[type=marker,tag=cl.r.slowcast] at @s run function classes:operations/raycast/main
+execute as @e[type=marker,tag=cl.r.slowcast] at @s run function classes:main/raycast/main
 
 #Magic table
 execute as @e[type=glow_item_frame,tag=cl.magicTable,tag=!cl.magicTablePlaced] at @s run function classes:blocks/magictable/placed

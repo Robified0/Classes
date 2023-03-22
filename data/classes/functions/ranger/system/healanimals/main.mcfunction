@@ -1,4 +1,4 @@
-##Heals animals near Ranger through regen effect. (operations/delay/10s)
+##Heals animals near Ranger through regen effect. (main/delay/10s)
 
 #Heal animals if their owner is nearby
 effect give @e[type=#classes:ranger/canown,distance=..10] minecraft:regeneration 10 0 true

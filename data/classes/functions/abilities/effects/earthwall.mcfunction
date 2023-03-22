@@ -1,4 +1,4 @@
-#Running as all Earth Wall entities in operations/delay/20
+#Running as all Earth Wall entities in main/delay/20
 
 #Remove score
 scoreboard players remove @s cl.spell.earthWall 1

@@ -1,4 +1,4 @@
-#Executing as marker inside Rune Table (operations/delay/20)
+#Executing as marker inside Rune Table (main/delay/20)
 
 
 #Mute barrel sounds

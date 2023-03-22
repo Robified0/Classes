@@ -1,6 +1,6 @@
 #Add score for tracking
 summon marker ~ ~1 ~ {Tags:["cl.t.HealCircle","cl.t.summoned"]}
-execute as @e[type=marker,tag=cl.t.HealCircle,sort=nearest,limit=1] at @s run function classes:operations/particles/draw/healcircle/drawcircle
+execute as @e[type=marker,tag=cl.t.HealCircle,sort=nearest,limit=1] at @s run function classes:main/particles/draw/healcircle/drawcircle
 
 #Do the healing
 execute if entity @a[distance=..5] as @a[distance=..5] at @s run function classes:abilities/spells/healcircle/effects/player

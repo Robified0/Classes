@@ -1,7 +1,7 @@
 # Handle Recipes
 execute if score @s cl.MagicTable.Ingredients matches 4 unless block ~ ~ ~ barrel{Items:[{Slot:16b}]} run function classes:blocks/magictable/gui/logic/clearingredients
 execute if score @s cl.MagicTable.Ingredients matches 4 unless block ~ ~ ~ barrel{Items:[{Slot:10b},{Slot:12b},{Slot:14b}]} run item replace block ~ ~ ~ container.16 with minecraft:air
-#Handled in (operations/delay/20). Small delay for performance gains.
+#Handled in (main/delay/20). Small delay for performance gains.
 scoreboard players set @s cl.MagicTable.Ingredients 0
 execute if block ~ ~ ~ barrel{Items:[{Slot:10b}]} run scoreboard players add @s cl.MagicTable.Ingredients 1
 execute if block ~ ~ ~ barrel{Items:[{Slot:12b}]} run scoreboard players add @s cl.MagicTable.Ingredients 1
