@@ -3,7 +3,7 @@
 		"classes:main",
 		"classes:ranger/main",
 		"classes:items/manapotion/main",
-		"classes:operations/delay/main",
+		"classes:main/delay/main",
 		"classes:end"
 	]
 }

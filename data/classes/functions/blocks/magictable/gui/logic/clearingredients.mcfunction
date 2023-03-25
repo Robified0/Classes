@@ -4,7 +4,6 @@ execute store result block ~ ~ ~ Items[{Slot:12b}].Count int 1 run data get bloc
 execute store result block ~ ~ ~ Items[{Slot:14b}].Count int 1 run data get block ~ ~ ~ Items[{Slot:14b}].Count 0.9999999999
 execute store result score @s cl.track.Rune.Count run data get block ~ ~ ~ Items[{id:"minecraft:structure_block",tag:{cl.isSoul:1b}}].Count
 scoreboard players remove @s cl.track.Rune.Count 4
-item modify block ~ ~ ~ container.10 classes:items/runes/subtractcount
 
 #Play appropriate sound, based on what was flagged in the recipe.
 execute if data entity @s data.CraftSound.Anvil run playsound minecraft:block.anvil.use block @a ~ ~ ~ 1 1

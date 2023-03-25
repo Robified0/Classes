@@ -1,8 +1,7 @@
 #Slot 1
-item replace block ~ ~ ~ container.13 with minecraft:structure_block{HideFlags:127,cl.isRune:1b}
+item replace block ~ ~ ~ container.13 with minecraft:structure_block
 data modify block ~ ~ ~ Items[{Slot:13b}].tag."cl.spellNumber" set from block ~ ~ ~ Items[{Slot:10b}].tag."cl.slot2"[0]
 data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomModelData set from block ~ ~ ~ Items[{Slot:10b}].tag."cl.slot2"[1]
-data modify block ~ ~ ~ Items[{Slot:13b}].tag."cl.track.RuneNumber" set from block ~ ~ ~ Items[{Slot:10b}].tag."cl.slot2"[2]
 data modify block ~ ~ ~ Items[{Slot:13b}].tag.display.Lore insert 0 from block ~ ~ ~ Items[{Slot:10b}].tag.display.Lore[3]
 data modify block ~ ~ ~ Items[{Slot:13b}].tag.display.Lore insert 1 from block ~ ~ ~ Items[{Slot:10b}].tag.display.Lore[4]
 
@@ -13,3 +12,6 @@ execute if block ~ ~ ~ barrel{Items:[{Slot:13b,tag:{CustomModelData:203}}]} run 
 execute if block ~ ~ ~ barrel{Items:[{Slot:13b,tag:{CustomModelData:204}}]} run data modify block ~ ~ ~ Items[{Slot:13b}].tag.display.Name set value '{"text":"Air Rune","color":"gold"}'
 execute if block ~ ~ ~ barrel{Items:[{Slot:13b,tag:{CustomModelData:205}}]} run data modify block ~ ~ ~ Items[{Slot:13b}].tag.display.Name set value '{"text":"Earth Rune","color":"dark_green"}'
 execute if block ~ ~ ~ barrel{Items:[{Slot:13b,tag:{CustomModelData:206}}]} run data modify block ~ ~ ~ Items[{Slot:13b}].tag.display.Name set value '{"text":"Holy Rune","color":"green"}'
+
+data modify block ~ ~ ~ Items[{Slot:13b}].tag.HideFlags set value 127
+data modify block ~ ~ ~ Items[{Slot:13b}].tag."cl.isRune" set value 1b
