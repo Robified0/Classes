@@ -1,4 +1,4 @@
-scoreboard players set @s cl.e.Bless 12000
+scoreboard players set @s cl.e.Bless 600
 effect give @s minecraft:absorption 600 2 false
 
 #Edit comment/uncomment if you want it to continue/end when it hits a target

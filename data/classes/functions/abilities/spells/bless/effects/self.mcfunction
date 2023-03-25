@@ -1,7 +1,7 @@
 ### Cast Bless on player looking down
 ## Executing as player looking down, casting Bless
 
-scoreboard players set @s cl.e.Bless 12000
+scoreboard players set @s cl.e.Bless 600
 effect give @s minecraft:absorption 600 2 false
 
 #Cast Spell Sound Effect
