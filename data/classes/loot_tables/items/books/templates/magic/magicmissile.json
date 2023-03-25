@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Magic Missile Rune Template\",\"color\":\"light_purple\"}',Lore:['{\"text\":\"Book needed in the creation of a Magic Missile spell staff rune.\",\"color\":\"dark_aqua\",\"bold\":true,\"italic\":true}','{\"text\":\" \"}','{\"text\":\"Duplicate:\",\"color\":\"aqua\",\"bold\":true}','{\"text\":\"Create a copy in a Magic Table by placing in a Magic Table with a Book & Quill and Glow Ink Sac.\",\"color\":\"dark_aqua\",\"italic\":true}','{\"text\":\" \"}','{\"text\":\"Create Rune:\",\"color\":\"aqua\",\"bold\":true}','{\"text\":\"Place in Magic Table with a Magic Soul and Lapis Lazuli.\",\"color\":\"dark_aqua\",\"italic\":true}']},HideFlags:127,cl.book.template:1b,cl.book.craft:606,Enchantments:[{}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

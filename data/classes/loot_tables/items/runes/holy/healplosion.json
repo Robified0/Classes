@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:structure_block",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Holy Rune\",\"color\":\"green\"}',Lore:['[{\"text\":\"Healplosion\",\"color\":\"green\",\"bold\":true},{\"text\":\" - 3 \uE003\",\"color\":\"white\",\"italic\":true}]','{\"text\":\"Heals the target for 4 hearts. On hit, heals friendly mobs and damages undead mobs nearby.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:206,cl.isRune:1b,cl.spellNumber:701}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

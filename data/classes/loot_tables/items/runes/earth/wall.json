@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Earth Rune\",\"color\":\"dark_green\"}',Lore:['[{\"text\":\"Wall\",\"color\":\"dark_green\",\"bold\":true},{\"text\":\" - 3 \uE003\",\"color\":\"white\",\"italic\":true}]','{\"text\":\"Conjure up an Earth Wall to protect you for 15 seconds.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:205,cl.isRune:1b,cl.spellNumber:505}"
+              "tag": "{display:{Name:'{\"text\":\"Earth Rune\",\"color\":\"dark_green\"}',Lore:['[{\"text\":\"Earth Wall\",\"color\":\"dark_green\",\"bold\":true},{\"text\":\" - 3 \uE003\",\"color\":\"white\",\"italic\":true}]','{\"text\":\"Conjure up an Earth Wall to protect you for 15 seconds.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:205,cl.isRune:1b,cl.spellNumber:505}"
             }
           ]
         }

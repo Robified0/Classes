@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:structure_block",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Magic Rune\",\"color\":\"light_purple\"}',Lore:['[{\"text\":\"Invisibility\",\"color\":\"light_purple\",\"bold\":true},{\"text\":\" - 1 \uE003\",\"color\":\"white\",\"italic\":true}]','{\"text\":\"Turn yourself invisible for 20 seconds.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:201,cl.isRune:1b,cl.spellNumber:603}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
