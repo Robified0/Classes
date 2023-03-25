@@ -88,10 +88,6 @@ scoreboard objectives add cl.MagicTable.Ingredients dummy
 scoreboard objectives add cl.track.Rune.Count dummy
 execute unless score $cl.tracker cl.RuneTable.StaffNumber matches 1.. run scoreboard players set $cl.tracker cl.RuneTable.StaffNumber 1
 
-#Rune Number Tracker
-scoreboard objectives add cl.track.RuneNumber dummy
-execute unless score $cl.tracker cl.track.RuneNumber matches 1.. run scoreboard players set $cl.tracker cl.track.RuneNumber 1
-
 #Scoreboards for settings
 scoreboard objectives add cl.pref.setFire dummy
 scoreboard objectives add cl.pref.wPortal dummy
