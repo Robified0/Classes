@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'[{\"translate\":\"spell.classes.400.name\",\"color\":\"gold\"},{\"translate\":\"item.classes.runename\",\"color\":\"gray\"}]',Lore:['[{\"translate\":\"lang.classes.cost\",\"color\":\"white\",\"italic\":true},{\"translate\":\"spell.classes.400.cost\",\"color\":\"white\",\"italic\":true}]','{\"translate\":\"spell.classes.400.description\",\"color\":\"dark_aqua\"}']}HideFlags:127,CustomModelData:400,cl.isRune:1b}"
+              "tag": "{display:{Name:'[{\"translate\":\"spell.classes.400.name\",\"color\":\"gold\"},{\"translate\":\"item.classes.runename\",\"color\":\"gray\"}]',Lore:['[{\"translate\":\"lang.classes.cost\",\"color\":\"white\",\"italic\":true},{\"translate\":\"spell.classes.400.cost\",\"color\":\"white\",\"italic\":true}]','{\"translate\":\"spell.classes.400.description\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:400,cl.isRune:1b}"
             }
           ]
         }
