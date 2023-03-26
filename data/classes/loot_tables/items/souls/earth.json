@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Earth Soul\",\"color\":\"green\",\"italic\":true}'},HideFlags:127,CustomModelData:105,cl.isSoul:1b,cl.SoulEarth:1b,Enchantments:[{}]}"
+              "tag": "{display:{Name:'{\"translate\":\"item.classes.soul.earth\",\"color\":\"green\",\"italic\":true}'},HideFlags:127,CustomModelData:105,cl.isSoul:1b,cl.SoulEarth:1b,Enchantments:[{}]}"
             }
           ]
         }

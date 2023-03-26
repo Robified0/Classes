@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Soul Energy\",\"color\":\"aqua\",\"italic\":true}'},HideFlags:127,CustomModelData:111,cl.SoulEnergy:1b,Enchantments:[{}]}"
+              "tag": "{display:{Name:'{\"translate\":\"item.classes.soulenergy\",\"color\":\"aqua\",\"italic\":true}'},HideFlags:127,CustomModelData:111,cl.SoulEnergy:1b,Enchantments:[{}]}"
             }
           ]
         }

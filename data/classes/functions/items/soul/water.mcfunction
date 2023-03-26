@@ -14,4 +14,4 @@ execute if entity @s[scores={cl.track.Soul.time=8..}] run playsound minecraft:en
 execute if entity @s[scores={cl.track.Soul.time=8..}] run data remove entity @s Item.tag."cl.Soul"
 
 # Merge appropriate info to it
-execute if entity @s[scores={cl.track.Soul.time=8..}] run data merge entity @s {Item:{tag:{CustomModelData:102,cl.SoulWater:1b,display:{Name:'{"text":"Water Soul","color":"blue","italic":true}'}}}}
+execute if entity @s[scores={cl.track.Soul.time=8..}] run data merge entity @s {Item:{tag:{HideFlags:127,CustomModelData:103,cl.isSoul.1b,cl.SoulWater:1b,Enchantments:[{}],display:{Name:'{"translate":"item.classes.soul.water","color":"blue","italic":true}'}}}}

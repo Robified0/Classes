@@ -1,6 +1,6 @@
 [
   {
     "function": "minecraft:set_nbt",
-    "tag": "{display:{Name:'[{\"text\":\"Mana Potion (1/5)\",\"color\":\"light_purple\"}]',Lore:['{\"text\":\"Restore 4 Mana Points.\",\"color\":\"green\"}']},HideFlags:32,Enchantments:[{}],Potion:\"minecraft:thick\",CustomPotionColor:16777215,ManaPotion:1b,ManaPotionUses:1}"
+    "tag": "{display:{Name:'[{\"translate\":\"item.classes.manapotion.1\",\"color\":\"light_purple\"}]',Lore:['{\"translate\":\"item.classes.manapotion.desc\",\"color\":\"green\"}']},HideFlags:32,Enchantments:[{}],Potion:\"minecraft:thick\",CustomPotionColor:16777215,ManaPotion:1b,ManaPotionUses:1}"
   }
 ]
