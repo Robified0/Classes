@@ -24,7 +24,7 @@ data remove block ~ ~ ~ Items[{Slot:10b}].tag."cl.slot4"
 data remove block ~ ~ ~ Items[{Slot:10b}].tag."cl.slot5"
 
 #Set button to "Equip Runes"
-item replace block ~ ~ ~ container.19 with barrier{display:{Name:'{"text":"Equip Runes","color":"green"}',Lore:['{"text":"Equip Runes to Staff.","color":"dark_aqua","italic":true}']},HideFlags:127,CustomModelData:5,cl.gui:1b,cl.guiRuneEquip:1b} 1
+item replace block ~ ~ ~ container.19 with barrier{display:{Name:'{"translate":"block.classes.runetable.equip","color":"green"}',Lore:['{"translate":"block.classes.runetable.equip.desc","color":"dark_aqua","italic":true}']},HideFlags:127,CustomModelData:5,cl.gui:1b,cl.guiRuneEquip:1b} 1
 
 #Set LastStaffNumber
 execute store result score @s cl.RuneTable.LastStaffNumber run data get block ~ ~ ~ Items[{Slot:10b}].tag."cl.StaffNumber"

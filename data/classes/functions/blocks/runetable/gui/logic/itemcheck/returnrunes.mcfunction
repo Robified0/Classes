@@ -22,4 +22,4 @@ loot give @p mine 0 -64 0 minecraft:air{drop_contents:1b}
 #Set the Rune Table back with the items it should have
 data modify block ~ ~ ~ Items set from storage classes:runetable KeepItems
 
-item replace block ~ ~ ~ container.19 with barrier{display:{Name:'{"text":"Inspect Staff","color":"green"}',Lore:['{"text":"Inspect Staff, and view available slots and equipped runes.","color":"dark_aqua","italic":true}']},HideFlags:127,CustomModelData:4,cl.gui:1b,cl.guiRemove:1b} 1
+item replace block ~ ~ ~ container.19 with barrier{display:{Name:'{"translate":"block.classes.runetable.inspect","color":"green"}',Lore:['{"translate":"block.classes.runetable.inspect.desc","color":"dark_aqua","italic":true}']},HideFlags:127,CustomModelData:4,cl.gui:1b,cl.guiRemove:1b} 1

@@ -18,7 +18,7 @@ execute store result block ~ ~ ~ Items[{Slot:16b}].Count int 1 run data get bloc
 scoreboard players reset @s cl.RuneTable.Slots
 
 #Put icon back to inspect staff.
-item replace block ~ ~ ~ container.19 with barrier{display:{Name:'{"text":"Inspect Staff","color":"green"}',Lore:['{"text":"Inspect Staff, and view available slots and equipped runes.","color":"dark_aqua","italic":true}']},HideFlags:127,CustomModelData:4,cl.gui:1b,cl.guiRemove:1b} 1
+item replace block ~ ~ ~ container.19 with barrier{display:{Name:'{"translate":"block.classes.runetable.inspect","color":"green"}',Lore:['{"translate":"block.classes.runetable.inspect.desc","color":"dark_aqua","italic":true}']},HideFlags:127,CustomModelData:4,cl.gui:1b,cl.guiRemove:1b} 1
 
 #Replace GUI icon
 item replace block ~ ~ ~ container.26 with minecraft:barrier{display:{Name:'{"text":" "}'},HideFlags:127,CustomModelData:10,cl.gui:1b}
