@@ -1,3 +1,6 @@
+#Order runes
+#function classes:blocks/runetable/gui/logic/orderrunes
+
 #Play Sound Effect
 execute if block ~ ~ ~ barrel{Items:[{Slot:12b,tag:{cl.isRune:1b}}]} run playsound minecraft:entity.elder_guardian.curse block @a ~ ~ ~ 0.5 2
 

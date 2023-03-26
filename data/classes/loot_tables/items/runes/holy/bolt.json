@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Holy Rune\",\"color\":\"green\"}',Lore:['[{\"text\":\"Bolt\",\"color\":\"green\",\"bold\":true},{\"text\":\" - 1 \uE003\",\"color\":\"white\",\"italic\":true}]','{\"text\":\"Deals Holy damage to the target.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:206,cl.isRune:1b,cl.spellNumber:902}"
+              "tag": "{display:{Name:'{\"text\":\"Bolt (Spell Rune)\",\"color\":\"green\"}',Lore:['{\"text\":\"Cost: 1 \uE003\",\"color\":\"white\",\"italic\":true}','{\"text\":\"Deals Holy damage to the target.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:713,cl.isRune:1b}"
             }
           ]
         }

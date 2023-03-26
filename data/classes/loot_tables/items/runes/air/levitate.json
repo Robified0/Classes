@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Air Rune\",\"color\":\"gold\"}',Lore:['[{\"text\":\"Levitate\",\"color\":\"gold\",\"bold\":true},{\"text\":\" - 2 \uE003\",\"color\":\"white\",\"italic\":true}]','{\"text\":\"Throws hit target into air. When hitting players, gives slowfall briefly. Look directly down to cast it on yourself.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:204,cl.isRune:1b,cl.spellNumber:400}"
+              "tag": "{display:{Name:'[{\"translate\":\"item.classes.rune.400.name\",\"color\":\"gold\"},{\"translate\":\"item.classes.runename\",\"color\":\"gray\"}]',Lore:['[{\"translate\":\"item.classes.rune.cost\",\"color\":\"white\",\"italic\":true},{\"translate\":\"item.classes.rune.400.cost\",\"color\":\"white\",\"italic\":true}]','{\"translate\":\"item.classes.rune.400.description\",\"color\":\"dark_aqua\"}']}HideFlags:127,CustomModelData:400,cl.isRune:1b}"
             }
           ]
         }

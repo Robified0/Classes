@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Holy Rune\",\"color\":\"green\"}',Lore:['[{\"text\":\"Fire Resist\",\"color\":\"green\",\"bold\":true},{\"text\":\" - 3 \uE003\",\"color\":\"white\",\"italic\":true}]','{\"text\":\"Grants up to 5 players within 10 blocks Fire Resist for 60 seconds.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:206,cl.isRune:1b,cl.spellNumber:801}"
+              "tag": "{display:{Name:'{\"text\":\"Fire Resist (Spell Rune)\",\"color\":\"green\"}',Lore:['{\"text\":\"Cost: 3 \uE003\",\"color\":\"white\",\"italic\":true}','{\"text\":\"Grants up to 5 players within 10 blocks Fire Resist for 60 seconds.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:706,cl.isRune:1b}"
             }
           ]
         }

@@ -176,22 +176,22 @@
         {
           "type": "minecraft:loot_table",
           "weight": 3,
-          "name": "classes:items/books/templates/holy/cureeffects"
+          "name": "classes:items/books/templates/holy/purify"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "name": "classes:items/books/templates/holy/prevention"
         },
         {
           "type": "minecraft:loot_table",
           "weight": 10,
-          "name": "classes:items/books/templates/holy/healcircle"
+          "name": "classes:items/books/templates/holy/healplosion"
         },
         {
           "type": "minecraft:loot_table",
           "weight": 5,
           "name": "classes:items/books/templates/holy/mending"
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 10,
-          "name": "classes:items/books/templates/holy/satiate"
         },
         {
           "type": "minecraft:loot_table",

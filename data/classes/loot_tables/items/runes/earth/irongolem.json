@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Earth Rune\",\"color\":\"dark_green\"}',Lore:['[{\"text\":\"Summon Iron Golem\",\"color\":\"dark_green\",\"bold\":true},{\"text\":\" - 5 \uE003\",\"color\":\"white\",\"italic\":true}]','{\"text\":\"Summons an Iron Golem to aid you in battle. Lasts for 30 seconds, or until defeated.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:205,cl.isRune:1b,cl.spellNumber:504}"
+              "tag": "{display:{Name:'[{\"translate\":\"item.classes.rune.504.name\",\"color\":\"dark_green\"},{\"translate\":\"item.classes.runename\",\"color\":\"gray\"}]',Lore:['[{\"translate\":\"item.classes.rune.cost\",\"color\":\"white\",\"italic\":true},{\"translate\":\"item.classes.rune.504.cost\",\"color\":\"white\",\"italic\":true}]','{\"translate\":\"item.classes.rune.504.description\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:504,cl.isRune:1b}"
             }
           ]
         }

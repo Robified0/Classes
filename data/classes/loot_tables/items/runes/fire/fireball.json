@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Fire Rune\",\"color\":\"red\"}',Lore:['[{\"text\":\"Fireball\",\"color\":\"red\",\"bold\":true},{\"text\":\" - 3 \uE003\",\"color\":\"white\",\"italic\":true}]','{\"text\":\"Summons a Fireball to deal heavy damage and knockback enemies where it lands.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:202,cl.isRune:1b,cl.spellNumber:203}"
+              "tag": "{display:{Name:'[{\"translate\":\"item.classes.rune.203.name\",\"color\":\"red\"},{\"translate\":\"item.classes.runename\",\"color\":\"gray\"}]',Lore:['[{\"translate\":\"item.classes.rune.cost\",\"color\":\"white\",\"italic\":true},{\"translate\":\"item.classes.rune.203.cost\",\"color\":\"white\",\"italic\":true}]','{\"translate\":\"item.classes.rune.203.description\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:203,cl.isRune:1b}"
             }
           ]
         }

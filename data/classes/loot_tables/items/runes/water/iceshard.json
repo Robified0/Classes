@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Water Rune\",\"color\":\"blue\"}',Lore:['[{\"text\":\"Ice Shard\",\"color\":\"blue\",\"bold\":true},{\"text\":\" - 1 \uE003\",\"color\":\"white\",\"italic\":true}]','{\"text\":\"Shoots an ice shard at an enemy, damaging and slowing them down. Deals more damage to fire-based enemies.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:203,cl.isRune:1b,cl.spellNumber:301}"
+              "tag": "{display:{Name:'{\"text\":\"Ice Shard (Spell Rune)\",\"color\":\"blue\"}',Lore:['{\"text\":\"Cost: 1 \uE003\",\"color\":\"white\",\"italic\":true}','{\"text\":\"Shoots an ice shard at an enemy, damaging and slowing them down. Deals more damage to fire-based enemies.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:301,cl.isRune:1b}"
             }
           ]
         }

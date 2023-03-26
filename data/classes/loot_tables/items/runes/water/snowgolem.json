@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Water Rune\",\"color\":\"blue\"}',Lore:['[{\"text\":\"Snow Golem\",\"color\":\"blue\",\"bold\":true},{\"text\":\" - 2 \uE003\",\"color\":\"white\",\"italic\":true}]','{\"text\":\"Summon a Snow Golem to distract enemies.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:203,cl.isRune:1b,cl.spellNumber:303}"
+              "tag": "{display:{Name:'[{\"translate\":\"item.classes.rune.303.name\",\"color\":\"blue\"},{\"translate\":\"item.classes.runename\",\"color\":\"gray\"}]',Lore:['[{\"translate\":\"item.classes.rune.cost\",\"color\":\"white\",\"italic\":true},{\"translate\":\"item.classes.rune.303.cost\",\"color\":\"white\",\"italic\":true}]','{\"translate\":\"item.classes.rune.303.description\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:303,cl.isRune:1b}"
             }
           ]
         }

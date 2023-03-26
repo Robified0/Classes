@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Magic Rune\",\"color\":\"light_purple\"}',Lore:['[{\"text\":\"Mage Armor\",\"color\":\"light_purple\",\"bold\":true},{\"text\":\" - 1 \uE003\",\"color\":\"white\",\"italic\":true}]','{\"text\":\"Grants a very small armor bonus for 15 seconds.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:201,cl.isRune:1b,cl.spellNumber:605}"
+              "tag": "{display:{Name:'{\"text\":\"Mage Armor (Spell Rune)\",\"color\":\"light_purple\"}',Lore:['{\"text\":\"Cost: 1 \uE003\",\"color\":\"white\",\"italic\":true}','{\"text\":\"Grants a very small armor bonus for 15 seconds.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:605,cl.isRune:1b}"
             }
           ]
         }

@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Fire Rune\",\"color\":\"red\"}',Lore:['[{\"text\":\"Fire Shield\",\"color\":\"red\",\"bold\":true},{\"text\":\" - 2 \uE003\",\"color\":\"white\",\"italic\":true}]','{\"text\":\"Grants you immunity to fire for 5 seconds, and ignites mobs around you.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:202,cl.isRune:1b,cl.spellNumber:204}"
+              "tag": "{display:{Name:'[{\"translate\":\"item.classes.rune.204.name\",\"color\":\"red\"},{\"translate\":\"item.classes.runename\",\"color\":\"gray\"}]',Lore:['[{\"translate\":\"item.classes.rune.cost\",\"color\":\"white\",\"italic\":true},{\"translate\":\"item.classes.rune.204.cost\",\"color\":\"white\",\"italic\":true}]','{\"translate\":\"item.classes.rune.204.description\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:204,cl.isRune:1b}"
             }
           ]
         }

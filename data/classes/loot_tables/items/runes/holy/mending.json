@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Holy Rune\",\"color\":\"green\"}',Lore:['[{\"text\":\"Mending\",\"color\":\"green\",\"bold\":true},{\"text\":\" - 1 \uE003/1 sec\",\"color\":\"white\",\"italic\":true}]','{\"text\":\"Hold to cast. Heals you and nearby allies once every two seconds.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:206,cl.isRune:1b,cl.spellNumber:704}"
+              "tag": "{display:{Name:'{\"text\":\"Mending (Spell Rune)\",\"color\":\"green\"}',Lore:['{\"text\":\"Cost: 1 \uE003/1 sec\",\"color\":\"white\",\"italic\":true}','{\"text\":\"Hold to cast. Heals you and nearby allies once every two seconds.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:704,cl.isRune:1b}"
             }
           ]
         }

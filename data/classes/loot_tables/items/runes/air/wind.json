@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Air Rune\",\"color\":\"gold\"}',Lore:['[{\"text\":\"Wind\",\"color\":\"gold\",\"bold\":true},{\"text\":\" - 1 \uE003\",\"color\":\"white\",\"italic\":true}]','{\"text\":\"Knocks enemies around you 5 blocks back.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:204,cl.isRune:1b,cl.spellNumber:404}"
+              "tag": "{display:{Name:'[{\"translate\":\"item.classes.rune.404.name\",\"color\":\"gold\"},{\"translate\":\"item.classes.runename\",\"color\":\"gray\"}]',Lore:['[{\"translate\":\"item.classes.rune.cost\",\"color\":\"white\",\"italic\":true},{\"translate\":\"item.classes.rune.404.cost\",\"color\":\"white\",\"italic\":true}]','{\"translate\":\"item.classes.rune.404.description\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:404,cl.isRune:1b}"
             }
           ]
         }

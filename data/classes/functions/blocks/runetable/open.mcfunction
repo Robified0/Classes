@@ -20,7 +20,12 @@ execute unless score @s cl.RuneTable.Slots matches 1.. unless block ~ ~ ~ barrel
 execute if score @s cl.RuneTable.Slots matches 1.. unless block ~ ~ ~ barrel{Items:[{Slot:19b,tag:{cl.guiRuneEquip:1b}}]} if block ~ ~ ~ barrel{Items:[{Slot:10b,tag:{cl.isStaff:1b}}]} run function classes:blocks/runetable/gui/logic/equiprunes
 execute if score @s cl.RuneTable.Slots matches 1.. unless block ~ ~ ~ barrel{Items:[{Slot:19b,tag:{cl.guiRuneEquip:1b}}]} if block ~ ~ ~ barrel{Items:[{Slot:10b,tag:{cl.isStaff:1b}}]} run item replace block ~ ~ ~ container.19 with barrier{display:{Name:'{"text":"Equip Runes","color":"green"}',Lore:['{"text":"Equip Runes to Staff.","color":"dark_aqua","italic":true}']},HideFlags:127,CustomModelData:5,cl.gui:1b,cl.guiRuneEquip:1b} 1
 
-function classes:blocks/runetable/gui/logic/orderrunes
+execute if score @s cl.RuneTable.Slots matches 1 run item replace block ~ ~ ~ container.26 with minecraft:barrier{display:{Name:'{"text":" "}'},HideFlags:127,CustomModelData:11,cl.gui:1b}
+execute if score @s cl.RuneTable.Slots matches 2 run item replace block ~ ~ ~ container.26 with minecraft:barrier{display:{Name:'{"text":" "}'},HideFlags:127,CustomModelData:12,cl.gui:1b}
+execute if score @s cl.RuneTable.Slots matches 3 run item replace block ~ ~ ~ container.26 with minecraft:barrier{display:{Name:'{"text":" "}'},HideFlags:127,CustomModelData:13,cl.gui:1b}
+execute if score @s cl.RuneTable.Slots matches 4 run item replace block ~ ~ ~ container.26 with minecraft:barrier{display:{Name:'{"text":" "}'},HideFlags:127,CustomModelData:14,cl.gui:1b}
+execute if score @s cl.RuneTable.Slots matches 5 run item replace block ~ ~ ~ container.26 with minecraft:barrier{display:{Name:'{"text":" "}'},HideFlags:127,CustomModelData:15,cl.gui:1b}
+
 
 clear @a barrier{cl.gui:1b}
 

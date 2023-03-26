@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Air Rune\",\"color\":\"gold\"}',Lore:['[{\"text\":\"Slow Fall\",\"color\":\"gold\",\"bold\":true},{\"text\":\" - 2 \uE003\",\"color\":\"white\",\"italic\":true}]','{\"text\":\"Grants Slow Fall to caster and allies within 5 blocks for 10 seconds.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:204,cl.isRune:1b,cl.spellNumber:401}"
+              "tag": "{display:{Name:'[{\"translate\":\"item.classes.rune.401.name\",\"color\":\"gold\"},{\"translate\":\"item.classes.runename\",\"color\":\"gray\"}]',Lore:['[{\"translate\":\"item.classes.rune.cost\",\"color\":\"white\",\"italic\":true},{\"translate\":\"item.classes.rune.401.cost\",\"color\":\"white\",\"italic\":true}]','{\"translate\":\"item.classes.rune.401.description\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:401,cl.isRune:1b}"
             }
           ]
         }

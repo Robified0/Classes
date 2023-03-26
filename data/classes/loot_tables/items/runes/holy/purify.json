@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Holy Rune\",\"color\":\"green\"}',Lore:['[{\"text\":\"Purify\",\"color\":\"green\",\"bold\":true},{\"text\":\" - 1 \uE003\",\"color\":\"white\",\"italic\":true}]','{\"text\":\"Cleanses all negative effects from target. Look directly down to cast it on yourself.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:206,cl.isRune:1b,cl.spellNumber:702}"
+              "tag": "{display:{Name:'{\"text\":\"Purify (Spell Rune)\",\"color\":\"green\"}',Lore:['{\"text\":\"Cost: 1 \uE003\",\"color\":\"white\",\"italic\":true}','{\"text\":\"Cleanses all negative effects from target. Look directly down to cast it on yourself.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:702,cl.isRune:1b}"
             }
           ]
         }
