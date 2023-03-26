@@ -56,6 +56,8 @@ execute as @e[type=slime,scores={cl.spell.earthWall=0..}] at @s run function cla
 #Tag items
 execute as @e[type=item,tag=!cl.t.processed] run tag @s add cl.t.processed
 
+#Test durability
+execute as @a[tag=cl.Cooldown.20] run item modify entity @s weapon.mainhand classes:items/staff/cooldown20
 
 #Detect Right Click
 execute as @a[scores={cl.rightClick=1..}] at @s run function classes:weapons/staff/rightclick

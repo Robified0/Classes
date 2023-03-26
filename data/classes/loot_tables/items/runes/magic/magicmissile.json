@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Magic Missile (Spell Rune)\",\"color\":\"light_purple\"}',Lore:['{\"text\":\"Cost: 1 \uE004\",\"color\":\"white\",\"italic\":true}','{\"text\":\"Small non-elemental damage to whatever entity it hits.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:606,cl.isRune:1b}"
+              "tag": "{display:{Name:'[{\"translate\":\"spell.classes.606.name\",\"color\":\"light_purple\"},{\"translate\":\"item.classes.runename\",\"color\":\"gray\"}]',Lore:['[{\"translate\":\"lang.classes.cost\",\"color\":\"white\",\"italic\":true},{\"translate\":\"spell.classes.606.cost\",\"color\":\"white\",\"italic\":true}]','{\"translate\":\"spell.classes.606.description\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:606,cl.isRune:1b}"
             }
           ]
         }

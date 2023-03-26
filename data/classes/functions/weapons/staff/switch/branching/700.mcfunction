@@ -3,3 +3,13 @@ execute as @s[scores={cl.spell.selected=701}] run function classes:abilities/spe
 execute as @s[scores={cl.spell.selected=702}] run function classes:abilities/spells/purify/select
 execute as @s[scores={cl.spell.selected=703}] run function classes:abilities/spells/prevention/select
 execute as @s[scores={cl.spell.selected=704}] run function classes:abilities/spells/mending/select
+execute as @s[scores={cl.spell.selected=705}] run function classes:abilities/spells/guard/select
+execute as @s[scores={cl.spell.selected=706}] run function classes:abilities/spells/fireresist/select
+execute as @s[scores={cl.spell.selected=707}] run function classes:abilities/spells/speedboost/select
+execute as @s[scores={cl.spell.selected=708}] run function classes:abilities/spells/inspire/select
+execute as @s[scores={cl.spell.selected=709}] run function classes:abilities/spells/vitality/select
+execute as @s[scores={cl.spell.selected=710}] run function classes:abilities/spells/bless/select
+execute as @s[scores={cl.spell.selected=711}] run function classes:abilities/spells/holystrike/select
+execute as @s[scores={cl.spell.selected=712}] run function classes:abilities/spells/stopundead/select
+execute as @s[scores={cl.spell.selected=713}] run function classes:abilities/spells/bolt/select
+execute as @s[scores={cl.spell.selected=714}] run function classes:abilities/spells/light/select

@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'[{\"translate\":\"item.classes.rune.500.name\",\"color\":\"dark_green\"},{\"translate\":\"item.classes.runename\",\"color\":\"gray\"}]',Lore:['[{\"translate\":\"item.classes.rune.cost\",\"color\":\"white\",\"italic\":true},{\"translate\":\"item.classes.rune.500.cost\",\"color\":\"white\",\"italic\":true}]','{\"translate\":\"item.classes.rune.500.description\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:500,cl.isRune:1b}"
+              "tag": "{display:{Name:'[{\"translate\":\"spell.classes.500.name\",\"color\":\"dark_green\"},{\"translate\":\"item.classes.runename\",\"color\":\"gray\"}]',Lore:['[{\"translate\":\"lang.classes.cost\",\"color\":\"white\",\"italic\":true},{\"translate\":\"spell.classes.500.cost\",\"color\":\"white\",\"italic\":true}]','{\"translate\":\"spell.classes.500.description\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:500,cl.isRune:1b}"
             }
           ]
         }

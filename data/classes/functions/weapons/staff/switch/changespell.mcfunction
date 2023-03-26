@@ -5,9 +5,6 @@ execute as @s[scores={cl.spell.selected=400..499}] run function classes:weapons/
 execute as @s[scores={cl.spell.selected=500..599}] run function classes:weapons/staff/switch/branching/500
 execute as @s[scores={cl.spell.selected=600..699}] run function classes:weapons/staff/switch/branching/600
 execute as @s[scores={cl.spell.selected=700..799}] run function classes:weapons/staff/switch/branching/700
-execute as @s[scores={cl.spell.selected=800..899}] run function classes:weapons/staff/switch/branching/800
-execute as @s[scores={cl.spell.selected=900..999}] run function classes:weapons/staff/switch/branching/900
-
 
 #Check for empty slot
 execute unless entity @s[scores={cl.spell.selected=1..}] if score @s cl.track.lastHotBarSlot = @s cl.track.currentHotBarSlot run title @s times 20 100 20

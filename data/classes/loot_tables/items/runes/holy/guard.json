@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Guard (Spell Rune)\",\"color\":\"green\"}',Lore:['{\"text\":\"Cost: 3 \uE003\",\"color\":\"white\",\"italic\":true}','{\"text\":\"Casts a protective barrier that prevents arrows and fireballs from entering or exiting it.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:705,cl.isRune:1b}"
+              "tag": "{display:{Name:'[{\"translate\":\"spell.classes.705.name\",\"color\":\"green\"},{\"translate\":\"item.classes.runename\",\"color\":\"gray\"}]',Lore:['[{\"translate\":\"lang.classes.cost\",\"color\":\"white\",\"italic\":true},{\"translate\":\"spell.classes.705.cost\",\"color\":\"white\",\"italic\":true}]','{\"translate\":\"spell.classes.705.description\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:705,cl.isRune:1b}"
             }
           ]
         }

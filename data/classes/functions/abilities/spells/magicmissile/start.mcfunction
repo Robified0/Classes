@@ -13,7 +13,7 @@ playsound minecraft:entity.firework_rocket.launch player @a ~ ~ ~ 0.75 1
 scoreboard players set @s cl.Cooldown 20
 
 #Spell Cast Notification
-tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Magic Missile!","bold":true,"color":"light_purple"}]
+tellraw @a[tag=cl.SpellNotify,distance=..40] ["",{"selector":"@s"},{"translate":"chat.classes.spell.cast","color":"green"},{"translate":"spell.classes.606.name","bold":true,"color":"light_purple"},{"text":" !","color":"green"}]
 
 #Mana Depletion
 scoreboard players remove @s cl.Mana 1

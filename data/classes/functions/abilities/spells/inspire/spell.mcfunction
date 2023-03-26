@@ -1,5 +1,5 @@
 #Spell Cast Notification
-execute if entity @s[scores={cl.e.Inspire=0}] run tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" is casting","color":"green"},{"text":" Inspire!","bold":true,"color":"green"}]
+execute if entity @s[scores={cl.e.Inspire=0}] run tellraw @a[tag=cl.SpellNotify,distance=..40] ["",{"selector":"@s"},{"translate":"chat.classes.spell.casting","color":"green"},{"translate":"spell.classes.708.name","bold":true,"color":"green"},{"text":" !","color":"green"}]
 
 #Sound Effect
 execute if entity @s[scores={cl.e.Inspire=1..}] run playsound minecraft:block.beacon.activate player @a ~ ~ ~ 0.15 0.2 0.15

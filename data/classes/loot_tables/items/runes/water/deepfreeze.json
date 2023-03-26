@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Deep Freeze (Spell Rune)\",\"color\":\"blue\"}',Lore:['{\"text\":\"Cost: 2 \uE003\",\"color\":\"white\",\"italic\":true}','{\"text\":\"Freezes target in place for 10 seconds. They are unable to be hit while frozen.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:302,cl.isRune:1b}"
+              "tag": "{display:{Name:'[{\"translate\":\"spell.classes.302.name\",\"color\":\"blue\"},{\"translate\":\"item.classes.runename\",\"color\":\"gray\"}]',Lore:['[{\"translate\":\"lang.classes.cost\",\"color\":\"white\",\"italic\":true},{\"translate\":\"spell.classes.302.cost\",\"color\":\"white\",\"italic\":true}]','{\"translate\":\"spell.classes.302.description\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:302,cl.isRune:1b}"
             }
           ]
         }

@@ -22,7 +22,7 @@ function classes:main/mana_system/mage/cast
 playsound minecraft:entity.horse.breathe player @a ~ ~ ~ 1 1
 
 #Spell Cast Notification
-tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Wind!","bold":true,"color":"#FFFF80"}]
+tellraw @a[tag=cl.SpellNotify,distance=..40] ["",{"selector":"@s"},{"translate":"chat.classes.spell.cast","color":"green"},{"translate":"spell.classes.404.name","bold":true,"color":"gold"},{"text":" !","color":"green"}]
 
 #Cooldown
 scoreboard players set @s cl.Cooldown 20

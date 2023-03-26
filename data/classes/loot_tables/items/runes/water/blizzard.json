@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Blizzard (Spell Rune)\",\"color\":\"blue\"}',Lore:['{\"text\":\"Cost: 1 \uE003/sec\",\"color\":\"white\",\"italic\":true}','{\"text\":\"Hold to cast. Summons a blizzard that knocks enemies back, and damages them.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:308,cl.isRune:1b}"
+              "tag": "{display:{Name:'[{\"translate\":\"spell.classes.308.name\",\"color\":\"blue\"},{\"translate\":\"item.classes.runename\",\"color\":\"gray\"}]',Lore:['[{\"translate\":\"lang.classes.cost\",\"color\":\"white\",\"italic\":true},{\"translate\":\"spell.classes.308.cost\",\"color\":\"white\",\"italic\":true}]','{\"translate\":\"spell.classes.308.description\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:308,cl.isRune:1b}"
             }
           ]
         }

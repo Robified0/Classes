@@ -8,7 +8,7 @@ execute as @a[scores={cl.e.FireResist=6000},distance=..10,limit=5,sort=nearest] 
 function classes:main/mana_system/healer/cast
 
 #Spell Cast Notification
-tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Fire Resist!","bold":true,"color":"green"}]
+tellraw @a[tag=cl.SpellNotify,distance=..40] ["",{"selector":"@s"},{"translate":"chat.classes.spell.cast","color":"green"},{"translate":"spell.classes.706.name","bold":true,"color":"green"},{"text":" !","color":"green"}]
 
 #Cooldown
 scoreboard players set @s cl.Cooldown 20

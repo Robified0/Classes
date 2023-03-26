@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Prevention (Spell Rune)\",\"color\":\"green\"}',Lore:['{\"text\":\"Cost: 3 \uE003\",\"color\":\"white\",\"italic\":true}','{\"text\":\"Removes all negative effects from target for 10 seconds. Look directly down to cast it on yourself.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:703,cl.isRune:1b}"
+              "tag": "{display:{Name:'[{\"translate\":\"spell.classes.703.name\",\"color\":\"green\"},{\"translate\":\"item.classes.runename\",\"color\":\"gray\"}]',Lore:['[{\"translate\":\"lang.classes.cost\",\"color\":\"white\",\"italic\":true},{\"translate\":\"spell.classes.703.cost\",\"color\":\"white\",\"italic\":true}]','{\"translate\":\"spell.classes.703.description\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:703,cl.isRune:1b}"
             }
           ]
         }

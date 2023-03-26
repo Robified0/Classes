@@ -13,4 +13,4 @@ particle flame ~ ~0.3 ~ 0.1 0.5 0.1 0.1 100 force
 playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 0.5
 
 #Spell Cast Notification
-tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Flame Burst!","bold":true,"color":"#FF3034"}]
+tellraw @a[tag=cl.SpellNotify,distance=..40] ["",{"selector":"@s"},{"translate":"chat.classes.spell.cast","color":"green"},{"translate":"spell.classes.202.name","bold":true,"color":"#FF3034"},{"text":" !","color":"green"}]

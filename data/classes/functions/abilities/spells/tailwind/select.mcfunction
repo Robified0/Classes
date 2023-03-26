@@ -1,4 +1,4 @@
 #Title - Show spell name on select
 title @s times 20 100 20
-title @s title ["",{"text":"#","color":"gold"},{"score":{"name":"@s","objective":"cl.slot.selected"},"color":"gold"},{"text":" Tail Wind","color":"gold"}]
-title @s subtitle ["",{"text":"Cost: 2 x \uE003","color":"white"}]
+title @s title ["",{"text":"#","color":"gold"},{"score":{"name":"@s","objective":"cl.slot.selected"},"color":"gold"},{"text":" "},{"translate":"spell.classes.402.name","color":"gold"}]
+title @s subtitle ["",{"translate":"lang.classes.cost","color":"white"},{"translate":"spell.classes.402.cost","color":"white"}]

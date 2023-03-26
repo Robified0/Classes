@@ -14,7 +14,7 @@ playsound minecraft:entity.dolphin.play player @a ~ ~ ~ 1 1
 function classes:main/mana_system/mage/cast
 
 #Spell Cast Notification
-tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Dolphin's Grace!","bold":true,"color":"#0096FF"}]
+tellraw @a[tag=cl.SpellNotify,distance=..40] ["",{"selector":"@s"},{"translate":"chat.classes.spell.cast","color":"green"},{"translate":"spell.classes.305.name","bold":true,"color":"blue"},{"text":" !","color":"green"}]
 
 #Cooldown
 scoreboard players set @s cl.Cooldown 20

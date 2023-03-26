@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Stop Undead (Spell Rune)\",\"color\":\"green\"}',Lore:['{\"text\":\"Cost: 3 \uE003\",\"color\":\"white\",\"italic\":true}','{\"text\":\"Traps undead mobs where they stand for 10 seconds. They can still attack.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:712,cl.isRune:1b}"
+              "tag": "{display:{Name:'[{\"translate\":\"spell.classes.712.name\",\"color\":\"green\"},{\"translate\":\"item.classes.runename\",\"color\":\"gray\"}]',Lore:['[{\"translate\":\"lang.classes.cost\",\"color\":\"white\",\"italic\":true},{\"translate\":\"spell.classes.712.cost\",\"color\":\"white\",\"italic\":true}]','{\"translate\":\"spell.classes.712.description\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:712,cl.isRune:1b}"
             }
           ]
         }

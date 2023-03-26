@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Holy Strike (Spell Rune)\",\"color\":\"green\"}',Lore:['{\"text\":\"Cost: 1 \uE003\",\"color\":\"white\",\"italic\":true}','{\"text\":\"Deals heavy holy damage to undead.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:711,cl.isRune:1b}"
+              "tag": "{display:{Name:'[{\"translate\":\"spell.classes.711.name\",\"color\":\"green\"},{\"translate\":\"item.classes.runename\",\"color\":\"gray\"}]',Lore:['[{\"translate\":\"lang.classes.cost\",\"color\":\"white\",\"italic\":true},{\"translate\":\"spell.classes.711.cost\",\"color\":\"white\",\"italic\":true}]','{\"translate\":\"spell.classes.711.description\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:711,cl.isRune:1b}"
             }
           ]
         }

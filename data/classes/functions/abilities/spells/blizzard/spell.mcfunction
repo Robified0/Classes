@@ -3,7 +3,7 @@ execute if entity @s[scores={cl.e.Blizzard=10}] run tag @s add cl.s.Blizzard
 
 
 #Spell Cast Notification
-execute if entity @s[scores={cl.e.Blizzard=0}] run tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" is casting","color":"green"},{"text":" Blizzard!","bold":true,"color":"#0096FF"}]
+execute if entity @s[scores={cl.e.Blizzard=0}] run tellraw @a[tag=cl.SpellNotify,distance=..40] ["",{"selector":"@s"},{"translate":"chat.classes.spell.casting","color":"green"},{"translate":"spell.classes.308.name","bold":true,"color":"blue"},{"text":" !","color":"green"}]
 
 #levitate
 execute if entity @s[scores={cl.e.Blizzard=1..}] unless block ~ ~-1 ~ #classes:air run effect give @s minecraft:levitation 1 0 true

@@ -15,9 +15,10 @@ particle minecraft:small_flame ~ ~ ~ 0.3 0.75 0.3 0.08 50 force
 
 #Cooldown
 scoreboard players set @s cl.Cooldown 20
+tag @s add cl.Cooldown.20
 
 #Spell Cast Notification
-tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Torch!","bold":true,"color":"red"}]
+tellraw @a[tag=cl.SpellNotify,distance=..40] ["",{"selector":"@s"},{"translate":"chat.classes.spell.cast","color":"green"},{"translate":"spell.classes.200.name","bold":true,"color":"#FF3034"},{"text":" !","color":"green"}]
 
 #Mana Depletion
 scoreboard players remove @s cl.Mana 2

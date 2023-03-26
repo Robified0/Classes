@@ -19,7 +19,7 @@ tag @e[type=snowball,tag=cl.spell.Fireball] remove cl.spell.Fireball
 kill @e[tag=cl.Fireball.direction]
 
 #Spell Cast Notification
-tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Bed of Coals!","bold":true,"color":"#FF3034"}]
+tellraw @a[tag=cl.SpellNotify,distance=..40] ["",{"selector":"@s"},{"translate":"chat.classes.spell.cast","color":"green"},{"translate":"spell.classes.203.name","bold":true,"color":"#FF3034"},{"text":" !","color":"green"}]
 
 #Cooldown
 scoreboard players set @s cl.Cooldown 20

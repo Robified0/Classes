@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Healplosion (Spell Rune)\",\"color\":\"green\"}',Lore:['{\"text\":\"Cost: 3 \uE003\",\"color\":\"white\",\"italic\":true}','{\"text\":\"Heals the target for 4 hearts. On hit, heals friendly mobs and damages undead mobs nearby.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:701,cl.isRune:1b}"
+              "tag": "{display:{Name:'[{\"translate\":\"spell.classes.701.name\",\"color\":\"green\"},{\"translate\":\"item.classes.runename\",\"color\":\"gray\"}]',Lore:['[{\"translate\":\"lang.classes.cost\",\"color\":\"white\",\"italic\":true},{\"translate\":\"spell.classes.701.cost\",\"color\":\"white\",\"italic\":true}]','{\"translate\":\"spell.classes.701.description\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:701,cl.isRune:1b}"
             }
           ]
         }

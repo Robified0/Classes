@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Vitality (Spell Rune)\",\"color\":\"green\"}',Lore:['{\"text\":\"Cost: 3 \uE003\",\"color\":\"white\",\"italic\":true}','{\"text\":\"Target gains 4 additional hearts for 60 seconds. Look directly down to cast it on yourself.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:709,cl.isRune:1b}"
+              "tag": "{display:{Name:'[{\"translate\":\"spell.classes.709.name\",\"color\":\"green\"},{\"translate\":\"item.classes.runename\",\"color\":\"gray\"}]',Lore:['[{\"translate\":\"lang.classes.cost\",\"color\":\"white\",\"italic\":true},{\"translate\":\"spell.classes.709.cost\",\"color\":\"white\",\"italic\":true}]','{\"translate\":\"spell.classes.709.description\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:709,cl.isRune:1b}"
             }
           ]
         }

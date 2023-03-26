@@ -23,7 +23,7 @@ summon marker ~ ~ ~ {Tags:["cl.t.FireShield","cl.t.sphere","cl.t.ball1","cl.t.su
 scoreboard players set @e[type=marker,tag=cl.t.FireShield,limit=1,sort=nearest] cl.summonCount 100
 
 #Spell Cast Notification
-tellraw @a[tag=cl.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Fire Shield!","bold":true,"color":"#FF3034"}]
+tellraw @a[tag=cl.SpellNotify,distance=..40] ["",{"selector":"@s"},{"translate":"chat.classes.spell.cast","color":"green"},{"translate":"spell.classes.204.name","bold":true,"color":"#FF3034"},{"text":" !","color":"green"}]
 
 #Cooldown
 scoreboard players set @s cl.Cooldown 20

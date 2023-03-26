@@ -6,3 +6,6 @@ execute if entity @s[scores={cl.track.sneak=1..},predicate=classes:checkwand/wan
 
 #Cast Spells if not sneaking, and holding wand
 execute if entity @s[scores={cl.track.sneak=0,cl.Cooldown=0},predicate=classes:checkwand/wand] at @s run function classes:weapons/staff/castspell
+
+#Do damage
+execute if entity @s[scores={cl.track.sneak=0,cl.Cooldown=0},predicate=classes:checkwand/wand] at @s run item modify entity @s weapon.mainhand classes:items/staff/setdamage

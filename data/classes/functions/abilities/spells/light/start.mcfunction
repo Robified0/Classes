@@ -16,7 +16,7 @@ particle minecraft:end_rod ~ ~ ~ 0.3 0.5 0.3 0.03 25 force
 scoreboard players set @s cl.Cooldown 20
 
 #Spell Cast Notification
-tellraw @a[tag=SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Light!","bold":true,"color":"#FFFFFF"}]
+tellraw @a[tag=cl.SpellNotify,distance=..40] ["",{"selector":"@s"},{"translate":"chat.classes.spell.cast","color":"green"},{"translate":"spell.classes.714.name","bold":true,"color":"green"},{"text":" !","color":"green"}]
 
 #Mana Depletion
 scoreboard players remove @s cl.Mana 1

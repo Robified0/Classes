@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Water Rune\",\"color\":\"blue\"}',Lore:['[{\"text\":\"Water Strike\",\"color\":\"blue\",\"bold\":true},{\"text\":\" - 1 \uE003\",\"color\":\"white\",\"italic\":true}]','{\"text\":\"Blasts a jet of water in front of you. Deals more damage to fire-based enemies.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:300,cl.isRune:1b}"
+              "tag": "{display:{Name:'[{\"translate\":\"spell.classes.300.name\",\"color\":\"blue\"},{\"translate\":\"item.classes.runename\",\"color\":\"gray\"}]',Lore:['[{\"translate\":\"lang.classes.cost\",\"color\":\"white\",\"italic\":true},{\"translate\":\"spell.classes.300.cost\",\"color\":\"white\",\"italic\":true}]','{\"translate\":\"spell.classes.300.description\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:300,cl.isRune:1b}"
             }
           ]
         }

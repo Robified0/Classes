@@ -22,7 +22,7 @@ execute at @e[type=snow_golem,tag=cl.t.summoned,scores={cl.summonCount=600}] run
 execute at @e[type=snow_golem,tag=cl.t.summoned,scores={cl.summonCount=600}] run particle minecraft:enchant ~ ~ ~ 0.6 0.4 0.6 5 100 force
 
 #Spell Cast Notification
-tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Summon Snow Golem!","bold":true,"color":"#0096FF"}]
+tellraw @a[tag=cl.SpellNotify,distance=..40] ["",{"selector":"@s"},{"translate":"chat.classes.spell.cast","color":"green"},{"translate":"spell.classes.303.name","bold":true,"color":"blue"},{"text":" !","color":"green"}]
 
 #Cooldown
 scoreboard players set @s cl.Cooldown 20

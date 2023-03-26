@@ -1,7 +1,7 @@
 scoreboard players set @s ManaRegenSec 0
 
 #Spell Cast Notification
-execute if entity @s[scores={cl.Mana=1..,cl.e.Mending=0}] run tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" is casting","color":"green"},{"text":" Mending!","bold":true,"color":"green"}]
+execute if entity @s[scores={cl.Mana=1..,cl.e.Mending=0}] run tellraw @a[tag=cl.SpellNotify,distance=..40] ["",{"selector":"@s"},{"translate":"chat.classes.spell.casting","color":"green"},{"translate":"spell.classes.704.name","bold":true,"color":"green"},{"text":" !","color":"green"}]
 
 #Spell Handling
 scoreboard players set @s cl.e.Mending 10

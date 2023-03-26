@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Teleport (Spell Rune)\",\"color\":\"light_purple\"}',Lore:['{\"text\":\"Cost: 1 \uE003\",\"color\":\"white\",\"italic\":true}','{\"text\":\"Teleports the caster to where it lands. Must hit a block to work.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:601,cl.isRune:1b}"
+              "tag": "{display:{Name:'[{\"translate\":\"spell.classes.601.name\",\"color\":\"light_purple\"},{\"translate\":\"item.classes.runename\",\"color\":\"gray\"}]',Lore:['[{\"translate\":\"lang.classes.cost\",\"color\":\"white\",\"italic\":true},{\"translate\":\"spell.classes.601.cost\",\"color\":\"white\",\"italic\":true}]','{\"translate\":\"spell.classes.601.description\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:601,cl.isRune:1b}"
             }
           ]
         }

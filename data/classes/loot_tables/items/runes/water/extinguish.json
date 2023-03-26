@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Extinguish (Spell Rune)\",\"color\":\"blue\"}',Lore:['{\"text\":\"Cost: 2 \uE003\",\"color\":\"white\",\"italic\":true}','{\"text\":\"Extinguish all blocks on fire within 10 blocks of you.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:307,cl.isRune:1b}"
+              "tag": "{display:{Name:'[{\"translate\":\"spell.classes.307.name\",\"color\":\"blue\"},{\"translate\":\"item.classes.runename\",\"color\":\"gray\"}]',Lore:['[{\"translate\":\"lang.classes.cost\",\"color\":\"white\",\"italic\":true},{\"translate\":\"spell.classes.307.cost\",\"color\":\"white\",\"italic\":true}]','{\"translate\":\"spell.classes.307.description\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:307,cl.isRune:1b}"
             }
           ]
         }

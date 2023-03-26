@@ -14,7 +14,7 @@ function classes:main/mana_system/mage/cast
 fill ~-10 ~-10 ~-10 ~10 ~10 ~10 air replace fire
 
 #Spell Cast Notification
-tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Extinguish!","bold":true,"color":"#0096FF"}]
+tellraw @a[tag=cl.SpellNotify,distance=..40] ["",{"selector":"@s"},{"translate":"chat.classes.spell.cast","color":"green"},{"translate":"spell.classes.307.name","bold":true,"color":"blue"},{"text":" !","color":"green"}]
 
 #Cooldown
 scoreboard players set @s cl.Cooldown 20

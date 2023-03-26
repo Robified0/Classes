@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Water Rune\",\"color\":\"blue\"}',Lore:['[{\"text\":\"Water Breathing\",\"color\":\"blue\",\"bold\":true},{\"text\":\" - 2 \uE003\",\"color\":\"white\",\"italic\":true}]','{\"text\":\"Grants the ability to breathe underwater for 1 minute.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:304,cl.isRune:1b}"
+              "tag": "{display:{Name:'[{\"translate\":\"spell.classes.304.name\",\"color\":\"blue\"},{\"translate\":\"item.classes.runename\",\"color\":\"gray\"}]',Lore:['[{\"translate\":\"lang.classes.cost\",\"color\":\"white\",\"italic\":true},{\"translate\":\"spell.classes.304.cost\",\"color\":\"white\",\"italic\":true}]','{\"translate\":\"spell.classes.304.description\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:304,cl.isRune:1b}"
             }
           ]
         }

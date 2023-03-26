@@ -15,7 +15,7 @@ function classes:main/mana_system/healer/cast
 playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 0.6 1.5
 
 #Spell Cast Notification
-tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Guard!","bold":true,"color":"green"}]
+tellraw @a[tag=cl.SpellNotify,distance=..40] ["",{"selector":"@s"},{"translate":"chat.classes.spell.cast","color":"green"},{"translate":"spell.classes.705.name","bold":true,"color":"green"},{"text":" !","color":"green"}]
 
 #Cooldown
 scoreboard players set @s cl.Cooldown 20

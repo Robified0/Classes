@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Fire Resist (Spell Rune)\",\"color\":\"green\"}',Lore:['{\"text\":\"Cost: 3 \uE003\",\"color\":\"white\",\"italic\":true}','{\"text\":\"Grants up to 5 players within 10 blocks Fire Resist for 60 seconds.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:706,cl.isRune:1b}"
+              "tag": "{display:{Name:'[{\"translate\":\"spell.classes.706.name\",\"color\":\"green\"},{\"translate\":\"item.classes.runename\",\"color\":\"gray\"}]',Lore:['[{\"translate\":\"lang.classes.cost\",\"color\":\"white\",\"italic\":true},{\"translate\":\"spell.classes.706.cost\",\"color\":\"white\",\"italic\":true}]','{\"translate\":\"spell.classes.706.description\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:706,cl.isRune:1b}"
             }
           ]
         }

@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Invisibility (Spell Rune)\",\"color\":\"light_purple\"}',Lore:['{\"text\":\"Cost: 1 \uE003\",\"color\":\"white\",\"italic\":true}','{\"text\":\"Turn yourself invisible for 20 seconds.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:603,cl.isRune:1b}"
+              "tag": "{display:{Name:'[{\"translate\":\"spell.classes.603.name\",\"color\":\"light_purple\"},{\"translate\":\"item.classes.runename\",\"color\":\"gray\"}]',Lore:['[{\"translate\":\"lang.classes.cost\",\"color\":\"white\",\"italic\":true},{\"translate\":\"spell.classes.603.cost\",\"color\":\"white\",\"italic\":true}]','{\"translate\":\"spell.classes.603.description\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:603,cl.isRune:1b}"
             }
           ]
         }

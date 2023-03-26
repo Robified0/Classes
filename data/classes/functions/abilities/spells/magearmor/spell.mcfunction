@@ -15,7 +15,7 @@ playsound minecraft:block.respawn_anchor.set_spawn player @a ~ ~ ~ 0.5 1.2
 function classes:main/mana_system/mage/cast
 
 #Spell Cast Notification
-tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Mage Armor!","bold":true,"color":"light_purple"}]
+tellraw @a[tag=cl.SpellNotify,distance=..40] ["",{"selector":"@s"},{"translate":"chat.classes.spell.cast","color":"green"},{"translate":"spell.classes.605.name","bold":true,"color":"light_purple"},{"text":" !","color":"green"}]
 
 #Cooldown
 scoreboard players set @s cl.Cooldown 20

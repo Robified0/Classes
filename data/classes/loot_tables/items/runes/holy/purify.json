@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Purify (Spell Rune)\",\"color\":\"green\"}',Lore:['{\"text\":\"Cost: 1 \uE003\",\"color\":\"white\",\"italic\":true}','{\"text\":\"Cleanses all negative effects from target. Look directly down to cast it on yourself.\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:702,cl.isRune:1b}"
+              "tag": "{display:{Name:'[{\"translate\":\"spell.classes.702.name\",\"color\":\"green\"},{\"translate\":\"item.classes.runename\",\"color\":\"gray\"}]',Lore:['[{\"translate\":\"lang.classes.cost\",\"color\":\"white\",\"italic\":true},{\"translate\":\"spell.classes.702.cost\",\"color\":\"white\",\"italic\":true}]','{\"translate\":\"spell.classes.702.description\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:702,cl.isRune:1b}"
             }
           ]
         }
