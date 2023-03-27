@@ -10,7 +10,7 @@ execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:lapis_lazuli"},{id:"minecraf
 execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:lapis_lazuli"},{id:"minecraft:stick"},{id:"minecraft:iron_ingot"}]} run function classes:blocks/magictable/recipes/items/staffs/ironstaff
 
 #Rune crafting
-execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:structure_block",tag:{cl.isSoul:1b}},{id:"minecraft:lapis_lazuli"},{id:"minecraft:book",tag:{cl.book.template:1b}}]} run function classes:blocks/magictable/recipes/items/runes/branch
+execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:structure_block",tag:{cl.isSoul:1b}},{id:"minecraft:lapis_lazuli"},{id:"minecraft:book",tag:{cl.book.template:1b}}]} run function classes:blocks/magictable/recipes/items/runes/create
 
 #Upgrade Wand
 execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:warped_fungus_on_a_stick",tag:{cl.RuneSlots:2}},{id:"minecraft:structure_block",tag:{cl.Soul:1b},Count:10b},{id:"minecraft:lapis_lazuli"}]} run function classes:blocks/magictable/recipes/items/staffs/upgrade/2slot

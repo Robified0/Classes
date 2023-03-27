@@ -1,1 +1,0 @@
-execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:structure_block",tag:{cl.isSoul:1b}},{id:"minecraft:lapis_lazuli"},{id:"minecraft:book",tag:{cl.book.template:1b}}]} run function classes:blocks/magictable/recipes/items/runes/create

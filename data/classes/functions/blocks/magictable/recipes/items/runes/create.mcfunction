@@ -3,3 +3,6 @@ data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomModelData set from block ~ ~
 data modify block ~ ~ ~ Items[{Slot:16b}].tag.display.Name set from block ~ ~ ~ Items[{tag:{cl.book.template:1b}}].tag.display.Name
 data modify block ~ ~ ~ Items[{Slot:16b}].tag.display.Lore insert 1 from block ~ ~ ~ Items[{tag:{cl.book.template:1b}}].tag.display.Lore[9]
 data modify block ~ ~ ~ Items[{Slot:16b}].tag.display.Lore insert 2 from block ~ ~ ~ Items[{tag:{cl.book.template:1b}}].tag.display.Lore[10]
+
+#Run sound file
+function classes:blocks/magictable/gui/logic/sounds/magic
