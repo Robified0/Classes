@@ -29,6 +29,9 @@
   "minecraft:chest_minecart",
   "minecraft:leash_knot",
   "minecraft:end_crystal",
-  "minecraft:dragon_fireball"
+  "minecraft:dragon_fireball",
+  "minecraft:block_display",
+  "minecraft:item_display",
+  "minecraft:text_display"
   ]
 }
