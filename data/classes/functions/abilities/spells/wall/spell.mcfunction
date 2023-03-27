@@ -40,13 +40,11 @@ execute rotated ~ 0 positioned ^ ^-1 ^2.5 align xyz positioned ~.5 ~ ~.5 positio
 execute rotated ~ 0 positioned ^ ^-1 ^2.5 align xyz positioned ~.5 ~ ~.5 positioned ^-2 ^ ^ if block ~ ~-1 ~ #classes:mage/earthwall/gravel run function classes:abilities/spells/wall/place/gravel
 execute rotated ~ 0 positioned ^ ^-1 ^2.5 align xyz positioned ~.5 ~ ~.5 positioned ^-2 ^ ^ if block ~ ~-1 ~ #classes:mage/earthwall/soul_sand run function classes:abilities/spells/wall/place/soul_sand
 
-
-#Playsound Effect
-playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 0.2 1.5
-playsound minecraft:block.respawn_anchor.set_spawn player @a ~ ~ ~ 0.5 1.2
+#Tag spell type
+tag @s add cl.spell.casted.earth
 
 #Cast Spell Sound Effect
-function classes:main/mana_system/mage/cast
+function classes:main/mana_system/cast
 
 #Spell Cast Notification
 tellraw @a[tag=cl.SpellNotify,distance=..40] ["",{"selector":"@s"},{"translate":"chat.classes.spell.cast","color":"green"},{"translate":"spell.classes.505.name","bold":true,"color":"dark_green"},{"text":" !","color":"green"}]

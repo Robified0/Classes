@@ -9,7 +9,7 @@ execute as @e[type=#classes:passive,distance=..5,tag=cl.t.Owned] at @s run funct
 execute if entity @e[type=#classes:undead,distance=..5] as @e[type=#classes:undead,distance=..5] run function classes:abilities/spells/healcircle/effects/undead
 
 #Cast Spell Sound Effect
-function classes:main/mana_system/healer/cast
+function classes:main/mana_system/cast
 
 #Particles
 particle wax_off ~ ~ ~ 4 0.1 4 0.25 200 force

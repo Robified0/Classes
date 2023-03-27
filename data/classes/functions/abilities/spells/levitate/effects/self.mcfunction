@@ -5,12 +5,11 @@
 effect give @s minecraft:levitation 1 10 false
 effect give @s minecraft:slow_falling 3 0 false
 
-#Play sound effect
-playsound minecraft:entity.horse.breathe player @a ~ ~ ~ 1
+#Tag spell type
+tag @s add cl.spell.casted.air
 
-#Particles
-particle minecraft:cloud ~ ~ ~ 1 1 1 0.1 40 normal
-particle minecraft:witch ~ ~ ~ 0.5 1 0.5 1.2 40 force
+#Cast Spell Sound Effect
+function classes:main/mana_system/cast
 
 #Cooldown
 scoreboard players set @s cl.Cooldown 20

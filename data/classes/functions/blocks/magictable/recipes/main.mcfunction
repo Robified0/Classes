@@ -1,5 +1,5 @@
 #Copy book ID to marker
-execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:book",tag:{cl.book.template:1b}}]} unless block ~ ~ ~ barrel{Items:[{Slot:16b}]} store result score @s cl.book.template run data get block ~ ~ ~ Items[{tag:{cl.book.template:1b}}].tag."cl.book.craft"
+execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:book",tag:{cl.book.template:1b}}]} unless block ~ ~ ~ barrel{Items:[{Slot:16b}]} store result score @s cl.book.template run data get block ~ ~ ~ Items[{tag:{cl.book.template:1b}}].tag."cl.spell.craft"
 
 #Get number of souls in table (for correct detection/deductions)
 execute store result score @s cl.track.Rune.Count run data get block ~ ~ ~ Items[{id:"minecraft:structure_block",tag:{cl.isSoul:1b}}].Count

@@ -1,14 +1,13 @@
 ##Executing as player casting spell (abilities/spells/extinguish/cast)
 
-#Particle effect
-particle minecraft:falling_dripstone_water ~ ~2 ~ 10 3 10 0.01 2000 force
-
-#Playsound Effect
-playsound minecraft:entity.boat.paddle_water player @a ~ ~ ~ 10 0.4
-playsound minecraft:entity.boat.paddle_water player @a ~ ~ ~ 10 1.5
+#Tag spell type
+tag @s add cl.spell.casted.water
 
 #Cast Spell Sound Effect
-function classes:main/mana_system/mage/cast
+function classes:main/mana_system/cast
+
+#Extra Particle effect
+particle minecraft:falling_dripstone_water ~ ~2 ~ 10 3 10 0.01 2000 force
 
 #Effect
 fill ~-10 ~-10 ~-10 ~10 ~10 ~10 air replace fire

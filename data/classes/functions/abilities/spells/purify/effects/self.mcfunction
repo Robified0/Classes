@@ -1,17 +1,21 @@
 #If Player is looking at ground:
 #Cure negative effects
-effect clear @s blindness
-effect clear @s poison
-effect clear @s hunger
-effect clear @s levitation
-effect clear @s mining_fatigue
-effect clear @s nausea
-effect clear @s unluck
-effect clear @s wither
-effect clear @s slowness
+effect clear @s minecraft:blindness
+effect clear @s minecraft:poison
+effect clear @s minecraft:hunger
+effect clear @s minecraft:levitation
+effect clear @s minecraft:mining_fatigue
+effect clear @s minecraft:nausea
+effect clear @s minecraft:unluck
+effect clear @s minecraft:wither
+effect clear @s minecraft:weakness
+effect clear @s minecraft:slowness
+
+#Tag spell type
+tag @s add cl.spell.casted.holy
 
 #Cast Spell Sound Effect
-function classes:main/mana_system/healer/cast
+function classes:main/mana_system/cast
 
 #Add Cooldown
 scoreboard players set @s cl.Cooldown 20

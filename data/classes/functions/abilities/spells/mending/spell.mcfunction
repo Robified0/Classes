@@ -10,6 +10,7 @@ scoreboard players set @s cl.e.Mending 10
 execute if entity @s[scores={cl.e.Mending.t=5}] run playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 5 0.2
 execute if entity @s[scores={cl.e.Mending=1..}] run particle wax_off ~ ~ ~ 5 5 5 0.25 200 force
 execute if entity @s[scores={cl.e.Mending=1..}] run particle composter ~ ~ ~ 5 5 5 0.25 200 force
+execute if entity @s[scores={cl.e.Mending=1..}] run particle minecraft:end_rod ~ ~ ~ 0.3 0.75 0.3 0.08 10 force
 
 #Boost Strength of nearby allies
 execute if entity @s[scores={cl.e.Mending.t=5}] run effect give @e[type=#classes:healertargets,distance=..5,tag=cl.t.Owned] minecraft:instant_health 1 0

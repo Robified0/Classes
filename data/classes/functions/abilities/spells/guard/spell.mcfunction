@@ -10,8 +10,13 @@ scoreboard players set @s cl.summonCount 200
 scoreboard players set @e[type=marker,tag=cl.t.Guard,limit=1,sort=nearest] cl.summonCount 200
 scoreboard players set @e[type=marker,tag=cl.t.GuardSphere,limit=2,sort=nearest] cl.summonCount 200
 
+#Tag spell type
+tag @s add cl.spell.casted.holy
+
 #Cast Spell Sound Effect
-function classes:main/mana_system/healer/cast
+function classes:main/mana_system/cast
+
+#Extra sound effect
 playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 0.6 1.5
 
 #Spell Cast Notification

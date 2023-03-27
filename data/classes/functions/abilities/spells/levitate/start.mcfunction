@@ -8,12 +8,11 @@ tag @s remove cl.r.this
 #Cooldown
 scoreboard players set @s cl.Cooldown 20
 
-#Cast Spell Sound Effect
-function classes:main/mana_system/mage/cast
+#Tag spell type
+tag @s add cl.spell.casted.air
 
-#Particles
-particle minecraft:cloud ~ ~ ~ 1 1 1 0.1 40 normal
-particle minecraft:witch ~ ~ ~ 0.5 1 0.5 1.2 40 force
+#Cast Spell Sound Effect
+function classes:main/mana_system/cast
 
 #Spell Cast Notification
 tellraw @a[tag=cl.SpellNotify,distance=..40] ["",{"selector":"@s"},{"translate":"chat.classes.spell.cast","color":"green"},{"translate":"spell.classes.400.name","bold":true,"color":"gold"},{"text":" !","color":"green"}]

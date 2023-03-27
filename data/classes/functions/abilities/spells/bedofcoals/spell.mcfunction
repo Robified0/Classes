@@ -1,12 +1,11 @@
 #Summon AEC
 summon area_effect_cloud ~ ~ ~ {Particle:"flame",ReapplicationDelay:100,Radius:3f,Duration:100,Tags:["cl.spell.bedofcoals"]}
 
-#Cast Spell Sound Effect
-function classes:main/mana_system/mage/cast
+#Tag spell type
+tag @s add cl.spell.casted.fire
 
-#Particles
-particle minecraft:witch ~ ~ ~ 0.5 1 0.5 1.2 40 force
-particle minecraft:small_flame ~ ~ ~ 0.3 1 0.3 0.08 50 force
+#Cast Spell Sound Effect
+function classes:main/mana_system/cast
 
 #Spell Cast Notification
 tellraw @a[tag=cl.SpellNotify,distance=..40] ["",{"selector":"@s"},{"translate":"chat.classes.spell.cast","color":"green"},{"translate":"spell.classes.201.name","bold":true,"color":"#FF3034"},{"text":" !","color":"green"}]

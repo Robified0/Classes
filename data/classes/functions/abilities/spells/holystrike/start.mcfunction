@@ -5,8 +5,13 @@ summon minecraft:marker ~ ~ ~ {Age:-2147483648,Duration:-1,WaitTime:-2147483648,
 execute as @e[type=marker,tag=cl.r.slowcast,tag=cl.r.new,tag=cl.r.holystrike,limit=1] run function classes:abilities/spells/holystrike/zprivate/setup
 tag @s remove cl.r.this
 
+#Tag spell type
+tag @s add cl.spell.casted.holy
+
 #Cast Spell Sound Effect
-function classes:main/mana_system/healer/cast
+function classes:main/mana_system/cast
+
+#Extra sound effect
 playsound minecraft:entity.ghast.shoot player @a ~ ~ ~ 0.2 0.6
 
 #Cooldown

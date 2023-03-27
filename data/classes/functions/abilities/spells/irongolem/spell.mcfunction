@@ -6,14 +6,15 @@ summon iron_golem ~ ~ ~ {DeathLootTable:"none",PlayerCreated:1b,Tags:["cl.t.summ
 scoreboard players set @e[type=iron_golem,tag=cl.t.summoned,limit=1,sort=nearest] cl.summonCount 600
 scoreboard players set @s cl.summonCount 600
 
-#Cast Spell Sound Effect
-function classes:main/mana_system/mage/cast
-playsound minecraft:entity.evoker.prepare_summon player @a ~ ~ ~ 0.1 2
-playsound minecraft:entity.iron_golem.death player @a ~ ~ ~ 0.8 2
+#Tag spell type
+tag @s add cl.spell.casted.earth
 
-#Particles
+#Cast Spell Sound Effect
+function classes:main/mana_system/cast
+
+#Extra Particle effects
 particle minecraft:enchant ~ ~ ~ 1 1 1 1 40 normal
-particle minecraft:witch ~ ~ ~ 0.5 1 0.5 1.2 40 force
+
 execute at @e[type=iron_golem,tag=cl.t.summoned,scores={cl.summonCount=600}] run particle minecraft:witch ~ ~ ~ 0.1 1 0.1 0.1 100 force
 execute at @e[type=iron_golem,tag=cl.t.summoned,scores={cl.summonCount=600}] run particle minecraft:enchant ~ ~ ~ 0.6 0.4 0.6 5 100 force
 

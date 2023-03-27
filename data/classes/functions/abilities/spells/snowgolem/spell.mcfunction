@@ -6,18 +6,14 @@ summon snow_golem ~ ~ ~ {DeathLootTable:"none",Pumpkin:0b,Tags:["cl.t.summoned"]
 scoreboard players set @e[type=snow_golem,tag=cl.t.summoned,limit=1,sort=nearest] cl.summonCount 600
 scoreboard players set @s cl.summonCount 600
 
-#Play sound
-playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 0.2 2
-playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 10 1.5
+#Tag spell type
+tag @s add cl.spell.casted.ice
 
 #Cast Spell Sound Effect
-function classes:main/mana_system/mage/cast
-playsound minecraft:entity.evoker.prepare_summon player @a ~ ~ ~ 0.1 2
-execute at @e[type=snow_golem,tag=cl.t.summoned,scores={cl.summonCount=600}] run playsound minecraft:entity.snow_golem.death player @a ~ ~ ~ 0.3 2
+function classes:main/mana_system/cast
 
-#Particles
+#Extra Particles
 particle minecraft:enchant ~ ~ ~ 1 1 1 1 40 normal
-particle minecraft:witch ~ ~ ~ 0.5 1 0.5 1.2 40 force
 execute at @e[type=snow_golem,tag=cl.t.summoned,scores={cl.summonCount=600}] run particle minecraft:witch ~ ~ ~ 0.1 1 0.1 0.1 100 force
 execute at @e[type=snow_golem,tag=cl.t.summoned,scores={cl.summonCount=600}] run particle minecraft:enchant ~ ~ ~ 0.6 0.4 0.6 5 100 force
 

@@ -1,5 +1,1 @@
-execute if score @s cl.book.template matches 200..299 run function classes:blocks/magictable/recipes/items/runes/fire/main
-execute if score @s cl.book.template matches 300..399 run function classes:blocks/magictable/recipes/items/runes/water/main
-execute if score @s cl.book.template matches 400..499 run function classes:blocks/magictable/recipes/items/runes/air/main
-execute if score @s cl.book.template matches 500..599 run function classes:blocks/magictable/recipes/items/runes/earth/main
-execute if score @s cl.book.template matches 600..699 run function classes:blocks/magictable/recipes/items/runes/holy/main
+execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:structure_block",tag:{cl.isSoul:1b}},{id:"minecraft:lapis_lazuli"},{id:"minecraft:book",tag:{cl.book.template:1b}}]} run function classes:blocks/magictable/recipes/items/runes/create

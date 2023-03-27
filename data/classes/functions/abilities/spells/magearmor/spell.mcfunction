@@ -4,15 +4,15 @@ function classes:abilities/effects/armorspells
 #Give Player Tag for particle effect
 scoreboard players set @s cl.e.MageArmor 300
 
-#Particle effect
-particle witch ~ ~ ~ 1 1 1 10 40 normal
+#Tag spell type
+tag @s add cl.spell.casted.magic
 
-#Playsound Effect
+#Extra Sound Effect
 playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 0.2 1.5
 playsound minecraft:block.respawn_anchor.set_spawn player @a ~ ~ ~ 0.5 1.2
 
 #Cast Spell Sound Effect
-function classes:main/mana_system/mage/cast
+function classes:main/mana_system/cast
 
 #Spell Cast Notification
 tellraw @a[tag=cl.SpellNotify,distance=..40] ["",{"selector":"@s"},{"translate":"chat.classes.spell.cast","color":"green"},{"translate":"spell.classes.605.name","bold":true,"color":"light_purple"},{"text":" !","color":"green"}]

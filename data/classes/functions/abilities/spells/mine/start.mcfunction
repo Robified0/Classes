@@ -9,7 +9,7 @@ tag @s remove cl.r.this
 scoreboard players set @s cl.Cooldown 20
 
 #Cast Spell Sound Effect
-function classes:main/mana_system/mage/cast
+function classes:main/mana_system/cast
 
 #Spell Cast Notification
 tellraw @a[tag=cl.p.SpellNotify,distance=..40] ["",{"selector":"@s"},{"text":" cast","color":"green"},{"text":" Mine!","bold":true,"color":"#03800F"}]

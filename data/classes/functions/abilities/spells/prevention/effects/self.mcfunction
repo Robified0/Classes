@@ -1,8 +1,11 @@
 #If Player is looking at ground:
 scoreboard players set @s cl.e.CureEffects 200
 
+#Tag spell type
+tag @s add cl.spell.casted.holy
+
 #Cast Spell Sound Effect
-function classes:main/mana_system/healer/cast
+function classes:main/mana_system/cast
 
 #Add Cooldown
 scoreboard players set @s cl.Cooldown 20

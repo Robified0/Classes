@@ -5,8 +5,13 @@ summon minecraft:marker ~ ~ ~ {Age:-2147483648,Duration:-1,WaitTime:-2147483648,
 execute as @e[type=marker,tag=cl.r.slowcast,tag=cl.r.new,tag=cl.r.magicmissile,limit=1] run function classes:abilities/spells/magicmissile/zprivate/setup
 tag @s remove cl.r.this
 
+#Tag spell type
+tag @s add cl.spell.casted.magic
+
 #Cast Spell Sound Effect
-function classes:main/mana_system/mage/cast
+function classes:main/mana_system/cast
+
+#Extra Sound effects
 playsound minecraft:entity.firework_rocket.launch player @a ~ ~ ~ 0.75 1
 
 #Cooldown

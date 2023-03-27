@@ -3,8 +3,11 @@ effect give @s minecraft:health_boost 60 1 false
 effect give @s minecraft:instant_health 1 1 true
 scoreboard players set @s cl.e.Vitality 1200
 
+#Tag spell type
+tag @s add cl.spell.casted.holy
+
 #Cast Spell Sound Effect
-function classes:main/mana_system/healer/cast
+function classes:main/mana_system/cast
 
 #Add Cooldown
 scoreboard players set @s cl.Cooldown 20

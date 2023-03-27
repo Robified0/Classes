@@ -5,12 +5,11 @@ summon minecraft:marker ~ ~ ~ {Age:-2147483648,Duration:-1,WaitTime:-2147483648,
 execute as @e[type=marker,tag=cl.r.slowcast,tag=cl.r.new,tag=cl.r.light,limit=1] run function classes:abilities/spells/light/zprivate/setup
 tag @s remove cl.r.this
 
-#Cast Spell Sound Effect
-function classes:main/mana_system/mage/cast
+#Tag spell type
+tag @s add cl.spell.casted.magic
 
-#Particles
-particle minecraft:witch ~ ~ ~ 0.5 1 0.5 1.2 40 force
-particle minecraft:end_rod ~ ~ ~ 0.3 0.5 0.3 0.03 25 force
+#Cast Spell Sound Effect
+function classes:main/mana_system/cast
 
 #Cooldown
 scoreboard players set @s cl.Cooldown 20

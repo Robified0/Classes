@@ -10,9 +10,11 @@ summon block_display ~-0.5 ~ ~-0.5 {Tags:["cl.e.FireShield"],brightness:{sky:15,
 #Give Effect
 effect give @s minecraft:fire_resistance 5 0 false
 
-#Cast Spell Sound Effect
-function classes:main/mana_system/mage/cast
-playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 0.08
+#Tag spell type
+tag @s add cl.spell.casted.fire
+
+#Cast Spell Sound Effects
+function classes:main/mana_system/cast
 
 #Particle effect
 particle flame ~ ~ ~ 0.5 0.5 0.5 0.03 100 normal

@@ -1,14 +1,5 @@
-#Torch Rune
-execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:book",tag:{cl.book.craft:200}},{id:"minecraft:structure_block",tag:{cl.SoulFire:1b}},{id:"minecraft:lapis_lazuli"}]} run function classes:blocks/magictable/recipes/items/runes/fire/torch
-
-#Bed Of Coals Rune
-execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:book",tag:{cl.book.craft:201}},{id:"minecraft:structure_block",tag:{cl.SoulFire:1b}},{id:"minecraft:lapis_lazuli"}]} run function classes:blocks/magictable/recipes/items/runes/fire/bedofcoals
-
-#Flame Burst Rune
-execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:book",tag:{cl.book.craft:202}},{id:"minecraft:structure_block",tag:{cl.SoulFire:1b}},{id:"minecraft:lapis_lazuli"}]} run function classes:blocks/magictable/recipes/items/runes/fire/flameburst
-
-#Fireball Rune
-execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:book",tag:{cl.book.craft:203}},{id:"minecraft:structure_block",tag:{cl.SoulFire:1b}},{id:"minecraft:lapis_lazuli"}]} run function classes:blocks/magictable/recipes/items/runes/fire/fireball
-
-#Fire Shield Rune
-execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:book",tag:{cl.book.craft:204}},{id:"minecraft:structure_block",tag:{cl.SoulFire:1b}},{id:"minecraft:lapis_lazuli"}]} run function classes:blocks/magictable/recipes/items/runes/fire/fireshield
+item replace block ~ ~ ~ container.16 with minecraft:structure_block{display:{Lore:['{"translate":"item.classes.rune.desc","color":"gray"}']}HideFlags:127,cl.isRune:1b,cl.isStaffRune:1b}}
+data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomModelData set from block ~ ~ ~ Items[{tag:{cl.book.template:1b}}].tag."cl.spell.craft"[0]
+data modify block ~ ~ ~ Items[{Slot:16b}].tag.display.Name set from block ~ ~ ~ Items[{tag:{cl.book.template:1b}}].tag.display.Name[0]
+data modify block ~ ~ ~ Items[{Slot:16b}].tag.display.Lore insert 1 from block ~ ~ ~ Items[{tag:{cl.book.template:1b}}].tag.display.Lore[9]
+data modify block ~ ~ ~ Items[{Slot:16b}].tag.display.Lore insert 2 from block ~ ~ ~ Items[{tag:{cl.book.template:1b}}].tag.display.Lore[10]

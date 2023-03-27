@@ -4,8 +4,11 @@
 scoreboard players set @s cl.e.Bless 600
 effect give @s minecraft:absorption 600 2 false
 
+#Tag spell type
+tag @s add cl.spell.casted.holy
+
 #Cast Spell Sound Effect
-function classes:main/mana_system/healer/cast
+function classes:main/mana_system/cast
 
 #Add Cooldown
 scoreboard players set @s cl.Cooldown 20

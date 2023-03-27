@@ -13,13 +13,11 @@ execute as @e[type=!#classes:nontarget,sort=nearest,distance=..10] at @s run fun
 #Remove tag
 tag @s remove cl.e.Wind
 
-#Particles
-particle minecraft:cloud ~ ~ ~ 1 1 1 0.1 40 normal
-particle minecraft:witch ~ ~ ~ 0.5 1 0.5 1.2 40 force
+#Tag spell type
+tag @s add cl.spell.casted.air
 
 #Cast Spell Sound Effect
-function classes:main/mana_system/mage/cast
-playsound minecraft:entity.horse.breathe player @a ~ ~ ~ 1 1
+function classes:main/mana_system/cast
 
 #Spell Cast Notification
 tellraw @a[tag=cl.SpellNotify,distance=..40] ["",{"selector":"@s"},{"translate":"chat.classes.spell.cast","color":"green"},{"translate":"spell.classes.404.name","bold":true,"color":"gold"},{"text":" !","color":"green"}]

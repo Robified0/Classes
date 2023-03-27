@@ -9,14 +9,12 @@ attribute @s minecraft:generic.armor base set 16
 
 #Particle effect
 particle block diamond_block ~ ~ ~ 1 1 1 10 40 normal
-particle minecraft:witch ~ ~ ~ 0.5 1 0.5 1.2 40 force
 
-#Playsound Effect
-playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 0.2 1.5
-playsound minecraft:block.respawn_anchor.set_spawn player @a ~ ~ ~ 0.5 1.2
+#Tag spell type
+tag @s add cl.spell.casted.earth
 
 #Cast Spell Sound Effect
-function classes:main/mana_system/mage/cast
+function classes:main/mana_system/cast
 
 #Spell Cast Notification
 tellraw @a[tag=cl.SpellNotify,distance=..40] ["",{"selector":"@s"},{"translate":"chat.classes.spell.cast","color":"green"},{"translate":"spell.classes.503.name","bold":true,"color":"dark_green"},{"text":" !","color":"green"}]

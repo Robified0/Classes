@@ -13,7 +13,7 @@ execute if entity @s[scores={cl.e.Blizzard=1..}] run effect give @s minecraft:sl
 execute if entity @s[scores={cl.e.Blizzard=1..}] run playsound minecraft:entity.horse.breathe player @a[distance=..10] ~ ~ ~ 0.8 0.1 0.3
 execute if entity @s[scores={cl.e.Blizzard=1..}] run playsound minecraft:block.amethyst_block.chime player @a[distance=..10] ~ ~ ~ 0.8 0.1 0.3
 execute if entity @s[scores={cl.e.Blizzard=1..}] run particle minecraft:snowflake ~ ~ ~ 5 5 5 0.40 200 force
-execute if entity @s[scores={cl.e.Blizzard=1..}] run particle minecraft:white_ash ~ ~0.5 ~ 5 5 5 0.1 100 force
+execute if entity @s[scores={cl.e.Blizzard=1..}] run particle minecraft:white_ash ~ ~0.5 ~ 5 5 5 0.1 1000 force
 
 #Give Slowness
 execute if entity @s[scores={cl.e.Blizzard=1..}] run effect give @e[type=!#classes:nontarget,type=!player,tag=!cl.t.summoned,tag=!cl.t.Owned,distance=..10] minecraft:slowness 1 3

@@ -10,12 +10,11 @@ attribute @s minecraft:generic.armor base set 12
 #Particle effect
 particle block gold_block ~ ~ ~ 1 1 1 10 40 normal
 
-#Playsound Effect
-playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 0.2 1.5
-playsound minecraft:block.respawn_anchor.set_spawn player @a ~ ~ ~ 0.5 1.2
+#Tag spell type
+tag @s add cl.spell.casted.earth
 
 #Cast Spell Sound Effect
-function classes:main/mana_system/mage/cast
+function classes:main/mana_system/cast
 
 #Spell Cast Notification
 tellraw @a[tag=cl.SpellNotify,distance=..40] ["",{"selector":"@s"},{"translate":"chat.classes.spell.cast","color":"green"},{"translate":"spell.classes.502.name","bold":true,"color":"dark_green"},{"text":" !","color":"green"}]

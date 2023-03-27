@@ -5,8 +5,14 @@ summon minecraft:marker ~ ~ ~ {Age:-2147483648,Duration:-1,WaitTime:-2147483648,
 execute as @e[type=marker,tag=cl.r.slowcast,tag=cl.r.new,tag=cl.r.purify,limit=1] run function classes:abilities/spells/purify/zprivate/setup
 tag @s remove cl.r.this
 
+#Tag spell type
+tag @s add cl.spell.casted.holy
+
 #Cast Spell Sound Effect
-function classes:main/mana_system/healer/cast
+function classes:main/mana_system/cast
+
+#Particles
+particle minecraft:end_rod ~ ~ ~ 0.3 0.75 0.3 0.08 30 force
 
 #Cooldown
 scoreboard players set @s cl.Cooldown 20
