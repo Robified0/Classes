@@ -1,5 +1,5 @@
 #Slot 1
-item replace block ~ ~ ~ container.12 with minecraft:structure_block{HideFlags:127,cl.isRune:1b}
+item replace block ~ ~ ~ container.12 with minecraft:structure_block{HideFlags:127,cl.isRune:1b,cl.isStaffRune:1b}
 data modify block ~ ~ ~ Items[{Slot:12b}].tag.CustomModelData set from block ~ ~ ~ Items[{Slot:10b}].tag."cl.slot1"[0]
 data modify block ~ ~ ~ Items[{Slot:12b}].tag.display.Name set from block ~ ~ ~ Items[{Slot:10b}].tag.display.Lore[0]
 data modify block ~ ~ ~ Items[{Slot:12b}].tag.display.Lore insert 0 from block ~ ~ ~ Items[{Slot:10b}].tag.display.Lore[1]

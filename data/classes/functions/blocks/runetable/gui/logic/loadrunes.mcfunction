@@ -9,13 +9,9 @@ execute if score @s cl.RuneTable.Slots matches 4 run item replace block ~ ~ ~ co
 execute if score @s cl.RuneTable.Slots matches 5 run item replace block ~ ~ ~ container.26 with minecraft:barrier{display:{Name:'{"text":" "}'},HideFlags:127,CustomModelData:15,cl.gui:1b}
 
 #Handle setting all the slots
-execute if data block ~ ~ ~ Items[{Slot:10b}].tag."cl.slot1" run function classes:blocks/runetable/gui/logic/loadrunes/slot1
-execute if data block ~ ~ ~ Items[{Slot:10b}].tag."cl.slot2" run function classes:blocks/runetable/gui/logic/loadrunes/slot2
-execute if data block ~ ~ ~ Items[{Slot:10b}].tag."cl.slot3" run function classes:blocks/runetable/gui/logic/loadrunes/slot3
-execute if data block ~ ~ ~ Items[{Slot:10b}].tag."cl.slot4" run function classes:blocks/runetable/gui/logic/loadrunes/slot4
-execute if data block ~ ~ ~ Items[{Slot:10b}].tag."cl.slot5" run function classes:blocks/runetable/gui/logic/loadrunes/slot5
+execute if block ~ ~ ~ barrel{Items:[{Slot:10b,tag:{cl.isStaff:1b}}]} run function classes:blocks/runetable/gui/logic/loadrunes/staff/main
 
-#Remove data from wand
+#Remove data from equipment
 data remove block ~ ~ ~ Items[{Slot:10b}].tag.display.Lore
 data remove block ~ ~ ~ Items[{Slot:10b}].tag."cl.slot1"
 data remove block ~ ~ ~ Items[{Slot:10b}].tag."cl.slot2"
