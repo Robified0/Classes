@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:warped_fungus_on_a_stick",
+      "nbt": "{CustomModelData:60001}"
+    },
+    "title": {
+      "translate": "advancement.classes.recipe.upgradestaff.title"
+    },
+    "description": {
+      "translate": "advancement.classes.recipe.upgradestaff.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:adventure/craftstaff",
+  "criteria": {
+    "classes.upgradestaff1": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  }
+}

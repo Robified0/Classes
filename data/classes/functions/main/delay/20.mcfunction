@@ -2,17 +2,17 @@
 
 #Run function when #cl.t.20Tick score hits 20 (main/delay/main)
 
+#Get armor value (for subtracting from mana)
+execute as @a store result score @s cl.track.ArmorBonus run attribute @s minecraft:generic.armor get
+
+#Remove specific armor modifier from earlier versions
+#attribute @a minecraft:generic.armor modifier remove f836241b-d712-463d-b80f-77705fddad01
+
 #Get time
 execute as @e[type=item,tag=cl.SoulExtract.Setup] at @s run function classes:blocks/soul_campfire/main
 
 #Handle custom spawning of mobs
 function classes:entities/custom/loopsummon
-
-#Stat handling
-execute as @a[scores={cl.Class=1}] run function classes:knight/stats/main
-execute as @a[scores={cl.Class=2}] run function classes:ranger/stats/main
-execute as @a[scores={cl.Class=3}] run function classes:mage/stats/main
-execute as @a[scores={cl.Class=4}] run function classes:healer/stats/main
 
 #Run turning Spirit Essences into Elemental Essences
 execute as @e[type=item,nbt={Item:{tag:{cl.Soul:1b}}}] at @s if data entity @s Thrower run function classes:items/soul/main

@@ -72,6 +72,7 @@ scoreboard objectives add cl.track.lastHotBarSlot dummy
 scoreboard objectives add cl.track.SoulExtract.time dummy
 scoreboard objectives add cl.track.CustomModelData dummy
 scoreboard objectives add cl.track.SlotNumber dummy
+scoreboard objectives add cl.track.ArmorBonus dummy
 
 # Sets up the shulker boxes (and bedrock case)
 fill -2 -63 -1 2 -64 -1 minecraft:bedrock

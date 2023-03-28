@@ -1,5 +1,4 @@
 # Summon the item
-say running 2slot
 execute store result score @s cl.track.SlotNumber run data get block ~ ~ ~ Items.[{tag:{cl.isStaff:1b}}].tag."cl.RuneSlots"
 scoreboard players add @s cl.track.SlotNumber 1
 
@@ -18,3 +17,6 @@ scoreboard players reset @s cl.track.SlotNumber
 
 #Run sound file
 function classes:blocks/magictable/gui/logic/sounds/anviluse
+
+#Run advancement file
+function classes:blocks/magictable/gui/logic/advancements/upgradestaff

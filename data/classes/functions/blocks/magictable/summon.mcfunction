@@ -13,9 +13,8 @@ execute align xz positioned ~0.5 ~ ~0.5 run summon glow_item_frame ~ ~ ~ {Tags:[
 playsound minecraft:block.amethyst_cluster.hit block @a ~ ~ ~ 1 0.5
 particle minecraft:witch ~ ~-1 ~ 1 1 1 1 10 force
 
-#Give player advancement
-execute if score @p cl.Class matches 3 run advancement grant @p only classes:mage/magictable
-execute if score @p cl.Class matches 4 run advancement grant @p only classes:healer/magictable
+#Grant advancement to player
+advancement grant @p only minecraft:adventure/createmagictable
 
 #For killing the item if it was run from the item drop
 kill @s
