@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'[{\"translate\":\"spell.classes.707.name\",\"color\":\"green\"},{\"translate\":\"item.classes.runename\",\"color\":\"gray\"}]',Lore:['[{\"translate\":\"lang.classes.cost\",\"color\":\"white\",\"italic\":true},{\"translate\":\"spell.classes.707.cost\",\"color\":\"white\",\"italic\":true}]','{\"translate\":\"spell.classes.707.description\",\"color\":\"dark_aqua\"}']},HideFlags:127,CustomModelData:707,cl.isRune:1b,cl.isStaffRune:1b}"
+              "tag": "{display:{Name:'{\"translate\":\"spell.classes.707.name\",\"color\":\"green\"}',Lore:['{\"translate\":\"item.classes.rune.desc\",\"color\":\"gray\"}','[{\"translate\":\"lang.classes.cost\",\"color\":\"white\"},{\"translate\":\"spell.classes.707.cost\"}]','{\"translate\":\"spell.classes.707.description\",\"color\":\"dark_aqua\",\"italic\":true}']},HideFlags:127,CustomModelData:707,cl.isRune:1b,cl.isStaffRune:1b}"
             }
           ]
         }
