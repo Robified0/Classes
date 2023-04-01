@@ -13,3 +13,5 @@ item replace block ~ ~ ~ container.12 with minecraft:air
 item replace block ~ ~ ~ container.14 with minecraft:air
 
 data remove entity @s data.CraftSound
+
+scoreboard players reset @s cl.track.Rune.Count
