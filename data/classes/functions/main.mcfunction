@@ -8,6 +8,9 @@
 ###################################################################
 
 
+#Handle new players, and set them up
+execute as @a[tag=!cl.o.Joined] run function classes:main/new_player/main
+
 #Track activity of Spellcasters for Spell Equip system
 execute as @a[scores={cl.spell.equip.start=1..},predicate=classes:checkclass/spellcaster] at @s run function classes:operations/track/spellequip/main
 
