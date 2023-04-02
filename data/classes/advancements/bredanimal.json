@@ -43,6 +43,6 @@
     ]
   ],
   "rewards": {
-    "function": "classes:entities/taming/bred/delay"
+    "function": "classes:entities/vanilla/tamed"
   }
 }

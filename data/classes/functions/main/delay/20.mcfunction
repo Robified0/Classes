@@ -11,9 +11,6 @@ execute as @a store result score @s cl.track.ArmorBonus run attribute @s minecra
 #Get time
 execute as @e[type=item,tag=cl.SoulExtract.Setup] at @s run function classes:blocks/soul_campfire/main
 
-#Handle custom spawning of mobs
-function classes:entities/custom/loopsummon
-
 #Run turning Spirit Essences into Elemental Essences
 execute as @e[type=item,nbt={Item:{tag:{cl.Soul:1b}}}] at @s if data entity @s Thrower run function classes:items/soul/main
 
@@ -25,18 +22,6 @@ execute as @a[scores={cl.Class=2},predicate=classes:ranger/potion/check] at @s r
 
 #Check for Ranger holding bow/crossbow in mainhand
 execute as @a[scores={cl.Class=2}] run function classes:ranger/stats/bow
-
-#Check if Knight is holding up shield
-execute as @a[scores={cl.Class=1,cl.t.blocking=1..}] at @s run function classes:knight/system/blocking
-
-#Check if Knight is low on Health
-execute as @a[scores={cl.Class=1,cl.o.health=..6}] at @s run function classes:knight/system/lowhealth
-
-#Handle Knight bonuses for Raids
-execute as @a[scores={cl.Class=1}] at @s if entity @e[type=#classes:illagers,tag=cl.t.Raider,distance=..10] run function classes:knight/system/raid/main
-
-#Remove score counting Magic Essence transform if they aren't holding soul anymore.
-execute as @a[predicate=!classes:checkspell/mage/magicessence] run scoreboard players set @s cl.t.magic_essence 0
 
 #Kill fireballs that have been deflected
 execute as @e[type=#classes:fireballs,tag=cl.t.newFireball] at @s run function classes:main/motion/killfireball
