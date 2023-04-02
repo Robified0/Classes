@@ -50,8 +50,8 @@ scoreboard objectives add cl.i.usedPotion minecraft.used:minecraft.potion
 scoreboard objectives add cl.i.ManaPtnUse dummy
 scoreboard objectives add cl.i.ManaPtnUseOff dummy
 scoreboard objectives add cl.t.PotionEff dummy
-scoreboard objectives add cl.t.RangerID dummy
-execute unless score #cl.t.RangerID cl.t.RangerID matches 1.. run scoreboard players set #cl.t.RangerID cl.t.RangerID 1
+#scoreboard objectives add cl.t.RangerID dummy
+#execute unless score #cl.t.RangerID cl.t.RangerID matches 1.. run scoreboard players set #cl.t.RangerID cl.t.RangerID 1
 scoreboard objectives add cl.t.usedBow minecraft.used:minecraft.bow
 
 #Set up stat tracking
@@ -151,5 +151,5 @@ scoreboard objectives add cl.t.Tick dummy
 scoreboard objectives add cl.customMob dummy
 
 #Install announcement
-execute unless score #cl.pref cl.pref.setFire matches 0..1 run tellraw @a ["",{"text":"\u26a0 ClassesMC didn't install properly. For support, reach out on our ","color":"red"},{"text":"Discord","underlined":true,"color":"gold","clickEvent":{"action":"open_url","value":"https://discord.gg/dSbgxYRBTq"}},{"text":" server","color":"red"}]
-execute if score #cl.pref cl.pref.setFire matches 0..1 run tellraw @a ["",{"text":"[Classes]","bold":true,"color":"dark_aqua","clickEvent":{"action":"open_url","value":"https://github.com/KingArvis/Classes"},"hoverEvent":{"action":"show_text","contents":{"text":"An RPG datapack! Click for more!","color":"dark_aqua"}}},{"text":" by","color":"white","clickEvent":{"action":"open_url","value":"https://github.com/KingArvis/Classes"},"hoverEvent":{"action":"show_text","contents":{"text":"An RPG datapack! Click for more!","color":"dark_aqua"}}},{"text":" Robified","color":"green","clickEvent":{"action":"open_url","value":"https://github.com/KingArvis/Classes"},"hoverEvent":{"action":"show_text","contents":{"text":"An RPG datapack! Click for more!","color":"dark_aqua"}}},{"text":" \u27a1","color":"aqua","hoverEvent":{"action":"show_text","contents":{"text":"An RPG datapack! Click for more!","color":"dark_aqua"}}},{"text":" Successfully loaded!","color":"white","hoverEvent":{"action":"show_text","contents":{"text":"An RPG datapack! Click for more!","color":"dark_aqua"}}}]
+execute unless score #cl.pref cl.pref.setFire matches 0..1 run tellraw @a ["",{"text":"\u26a0 Runes Datapack didn't install properly. For support, reach out on our ","color":"red"},{"text":"Discord","underlined":true,"color":"gold","clickEvent":{"action":"open_url","value":"https://discord.gg/dSbgxYRBTq"}},{"text":" server","color":"red"}]
+execute if score #cl.pref cl.pref.setFire matches 0..1 run tellraw @a ["",{"text":"[Classes]","bold":true,"color":"dark_aqua","clickEvent":{"action":"open_url","value":"https://github.com/Robified0/Classes"},"hoverEvent":{"action":"show_text","contents":{"text":"An RPG datapack! Click for more!","color":"dark_aqua"}}},{"text":" by","color":"white","clickEvent":{"action":"open_url","value":"https://github.com/Robified0/Classes"},"hoverEvent":{"action":"show_text","contents":{"text":"An RPG-inspired datapack! Click for more!","color":"dark_aqua"}}},{"text":" Robified","color":"green","clickEvent":{"action":"open_url","value":"https://github.com/Robified0/Classes"},"hoverEvent":{"action":"show_text","contents":{"text":"An RPG-inspired datapack! Click for more!","color":"dark_aqua"}}},{"text":" \u27a1","color":"aqua","hoverEvent":{"action":"show_text","contents":{"text":"An RPG-inspired datapack! Click for more!","color":"dark_aqua"}}},{"text":" Successfully loaded!","color":"white","hoverEvent":{"action":"show_text","contents":{"text":"An RPG-inspired datapack! Click for more!","color":"dark_aqua"}}}]
