@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:structure_block",
+      "nbt": "{CustomModelData:110}"
+    },
+    "title": {
+      "translate": "advancement.classes.recipe.createsoul.title"
+    },
+    "description": {
+      "translate": "advancement.classes.recipe.createsoul.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:adventure/craftstaff",
+  "criteria": {
+    "classes.createsoul": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  }
+}

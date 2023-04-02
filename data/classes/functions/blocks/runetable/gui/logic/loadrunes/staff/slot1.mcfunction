@@ -4,3 +4,4 @@ data modify block ~ ~ ~ Items[{Slot:12b}].tag.CustomModelData set from block ~ ~
 data modify block ~ ~ ~ Items[{Slot:12b}].tag.display.Name set from block ~ ~ ~ Items[{Slot:10b}].tag.display.Lore[0]
 data modify block ~ ~ ~ Items[{Slot:12b}].tag.display.Lore insert 1 from block ~ ~ ~ Items[{Slot:10b}].tag.display.Lore[1]
 data modify block ~ ~ ~ Items[{Slot:12b}].tag.display.Lore insert 2 from block ~ ~ ~ Items[{Slot:10b}].tag.display.Lore[2]
+data modify block ~ ~ ~ Items[{Slot:12b}].tag.display.Lore insert 3 from block ~ ~ ~ Items[{Slot:10b}].tag.display.Lore[3]
