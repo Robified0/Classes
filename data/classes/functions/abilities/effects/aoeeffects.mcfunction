@@ -11,7 +11,7 @@
 ########################################
 
 #AEC - Angry At - (tag=cl.angry)
-execute if entity @s[tag=cl.angry] as @e[type=!#classes:nontarget,type=!minecraft:area_effect_cloud,distance=..3,sort=random,predicate=classes:entities/angry,tag=!summoned,tag=!cl.Owned] run function classes:entities/vanilla/angry
+execute if entity @s[tag=cl.angry] as @e[type=!#classes:nontarget,type=!minecraft:area_effect_cloud,distance=..3,sort=random,predicate=classes:entities/angry,tag=!summoned,tag=!cl.Owned] run damage @s 0 minecraft:magic
 
 #AEC - Wither - (tag=cl.wither)
 execute if entity @s[tag=cl.wither3] run effect give @e[type=!#classes:nontarget,type=!minecraft:area_effect_cloud,distance=..3,sort=nearest,tag=!summoned,tag=!cl.Owned] minecraft:wither 3 4 true
