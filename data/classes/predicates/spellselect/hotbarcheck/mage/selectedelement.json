@@ -1,7 +1,0 @@
-{
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
-  "predicate": {
-    "nbt": "{Inventory:[{Slot:20b,id:\"minecraft:structure_block\"},{Slot:20b,id:\"minecraft:structure_block\"},{Slot:21b,id:\"minecraft:structure_block\"},{Slot:22b,id:\"minecraft:structure_block\"},{Slot:23b,id:\"minecraft:structure_block\"},{Slot:24b,id:\"minecraft:structure_block\"}]}"
-  }
-}
