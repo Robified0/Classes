@@ -35,8 +35,8 @@ scoreboard objectives remove cl.book.template
 scoreboard objectives remove cl.Class
 scoreboard objectives remove cl.spellMenu
 scoreboard objectives remove cl.EssenceSound
-scoreboard objectives remove cl.track.sneak minecraft.custom:minecraft.sneak_time
-scoreboard objectives remove cl.rightClick minecraft.used:minecraft.warped_fungus_on_a_stick
+scoreboard objectives remove cl.track.sneak
+scoreboard objectives remove cl.rightClick
 scoreboard objectives remove cl.Mana
 scoreboard objectives remove cl.ManaMax
 scoreboard objectives remove cl.ManaRegenSec
@@ -46,11 +46,11 @@ scoreboard objectives remove cl.Mage.Armor
 scoreboard objectives remove cl.Healer.Armor
 scoreboard objectives remove cl.s.Teleport.t
 scoreboard objectives remove cl.i.ManaPotion
-scoreboard objectives remove cl.i.usedPotion minecraft.used:minecraft.potion
+scoreboard objectives remove cl.i.usedPotion
 scoreboard objectives remove cl.i.ManaPtnUse
 scoreboard objectives remove cl.i.ManaPtnUseOff
 scoreboard objectives remove cl.t.PotionEff
-scoreboard objectives remove cl.t.usedBow minecraft.used:minecraft.bow
+scoreboard objectives remove cl.t.usedBow
 
 #Set up stat tracking
 scoreboard objectives remove cl.o.statx100
@@ -59,7 +59,7 @@ scoreboard objectives remove cl.o.genAtkDmg
 scoreboard objectives remove cl.o.genAtkSpd
 scoreboard objectives remove cl.o.knockBack
 scoreboard objectives remove cl.o.maxHealth
-scoreboard objectives remove cl.o.health health {"text":"\u2764","color":"red"}
+scoreboard objectives remove cl.o.health
 scoreboard objectives setdisplay belowName
 scoreboard objectives remove cl.track.Soul.time
 scoreboard objectives remove cl.t.magic_essence
