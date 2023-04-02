@@ -4,7 +4,7 @@ A datapack for an RPG classes inspired system in Minecraft.
 ## !! Important Note !!
 This datapack is under heavy construction, and only the framework is being developed at this time.
 
-It is only being developed under Minecraft 1.19+. **Backporting will NOT happen, ever**. A lot of the functions used are only available in current versions, and I'll continue to add more features as Mojang adds even more. When that happens, *legacy versions will be unsupported*.
+It is only being developed under Minecraft 1.19.4+. **Backporting will NOT happen, ever**. A lot of the functions used are only available in current versions, and I'll continue to add more features as Mojang adds even more. When that happens, *legacy versions will be unsupported*.
 
 **The current build is *playable*, but it's being *actively* worked on, so expect bugs.
 
