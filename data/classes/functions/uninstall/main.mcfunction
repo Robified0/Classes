@@ -32,7 +32,7 @@ scoreboard objectives remove cl.spell.equip.start
 scoreboard objectives remove cl.book.template
 
 #Set up other scoreboards
-scoreboard objectives remove cl.Class trigger
+scoreboard objectives remove cl.Class
 scoreboard objectives remove cl.spellMenu
 scoreboard objectives remove cl.EssenceSound
 scoreboard objectives remove cl.track.sneak minecraft.custom:minecraft.sneak_time
