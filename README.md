@@ -1,44 +1,36 @@
 # Classes
-A datapack for an RPG classes system in Minecraft.
+A datapack for an RPG classes inspired system in Minecraft.
 
 ## !! Important Note !!
 This datapack is under heavy construction, and only the framework is being developed at this time.
 
-It is only being developed under Minecraft 1.18+. **Backporting will NOT happen, ever**. A lot of the functions used are only available in current versions, and I'll continue to add more features as Mojang adds even more. When that happens, *legacy versions will be unsupported*.
+It is only being developed under Minecraft 1.19+. **Backporting will NOT happen, ever**. A lot of the functions used are only available in current versions, and I'll continue to add more features as Mojang adds even more. When that happens, *legacy versions will be unsupported*.
 
 **The current build is *playable*, but it's being *actively* worked on, so expect bugs.
 
-This is also my first foray into GitHub, so I'm using this as my chance to experiment and get used to the workflows!
+## Updated Direction
+After a *lot* of iteration, I found that a lot of players were wanting more flexibility than being locked into a particular class.
+
+To overcome this, v0.7 and onwards has fundamentally changed the datapack. Abilities are now granted through equipable Runes. Currently, these only exist for the Staff, but will be updated to include Armor for more passive abilities, and Weapon-specific Runes.
+
+This will allow for a lot of flexibility. Want to be a Mage but able to heal nearby animals like the Ranger? Or maybe you want to wear full netherite armor, but also cast some spells? All of this, and more, will be possible.
+
+The pack is very much a work-in-progress, and balancing will come down the road later as I get more feedback. Please, give solid feedback on what you like/don't like. With all of the coding, I rarely have time to play it myself. So, I'm only going off of the context of how I *think* it would work.
+
+## Support/Suggestions
+Please file bug reports in the Issues page here on Github, or let me know in the Discord: discord.gg/dSbgxYRBTq
+
+## Old Minecraft Version Support
+I'll say it again here and elaborate further.
+
+Mojang constantly updates the game, and makes additional features that I may use. Which means the datapack won't work in older versions of Minecraft. I also don't have the time (or patience) to support 10 different versions of the game. So, the datapack will *always* be coded for the latest. I will *only* support the latest version of the datapack. If you experience bugs outside of the latest version, you will be asked to update, or to not use it at all.
 
 
-## Planned Classes:
-* *(Scope and actual Class perks are subject to change at any time during development!):*
+## But I have to use X Minecraft version because I use Y mod!
+**TL;DR:** I really don't give a shit. Use a different mod.
 
-**Mage:**
+**Long Version:** I know a lot of mods see an update cycle of once a decade, but I'm not beholden to them. And I'm not going to stress myself out by supporting 10 versions of Minecraft, because some mod author doesn't want to update their mod to the latest. This datapack will *always* target the latest version of Minecraft, and I will only care about if something doesn't work on the latest version of Minecraft.
 
-The mage commands the elements of earth, air, fire, and water. Using their magic, they are able to will the elements to do their bidding and do massive damage to enemies or give buffs to themselves. They have a lower attack speed and attack damage. Due to needing freedom to cast spell, they are unable to wear armor (though they have spells to replicate it!).
+If you use a mod that hasn't updated, don't bug other mod creators to provide a backported version (often impossible). Ask the mod author of the outdated mod to update. It's time.
 
-
-**Healer:**
-
-A potent user in healing magic, the Healer is able to heal allies, deal heavy damage to the undead, and grant wide area buffs to surrounding players. The Healer focuses on keeping those around them supported and alive.
-
-
-**Knight:**
-
-A warrior inside and out, the Knight has powerful attacks and a natural resistance to damage.
-
-Because they are skilled in physical combat, they are able to do more damage with melee weapons and attack faster. They also have natural knockback resistance, preventing them from being pushed around.
-
-Holding up a shield also protects your allies, within 10 blocks, by giving them resistance against damage.
-
-In addition, Illagers fear the noble Knight, and when they are raiding a village, they suffer from slowness and weakness when a Knight is near them. The Knight, enraged, gains strength and speed boosts when around raiding Illagers.
-
-
-**Ranger:**
-
-The Ranger has an particular affinity with nature. Any wolf they tame or breed gains higher attack, health, and gains natural armor. Any beneficial potion a Ranger drinks, confers the benefit to the wolves they have tamed/bred.
-
-They also channel natures energies around them, allowing them to passively heal nearby animals. This only applies to animals that will follow the Ranger naturally, or that the Ranger can ride.
-
-Rangers can salvage arrows in the ground when crouching, and can pierce multiple enemies with arrows.
+And if they don't/can't, then find a different mod.
