@@ -1,0 +1,10 @@
+{
+  "values":[
+	"#classes:earthwall/dirt",
+  "#classes:earthwall/gravel",
+  "#classes:earthwall/netherrack",
+  "#classes:earthwall/red_sand",
+  "#classes:earthwall/soul_sand",
+  "#classes:earthwall/sand"
+]
+}
