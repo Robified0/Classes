@@ -1,5 +1,5 @@
 ##Executing as undead enemy raycast has hit (abilities/spells/heal/raycast)
-damage @s 4 minecraft:magic by @p
+damage @s 5 minecraft:magic by @p
 
 particle minecraft:composter ~ ~1 ~ 0.5 1 0.5 0.1 30 normal
 particle minecraft:electric_spark ~ ~1 ~ 0.5 1 0.5 0.1 10 normal
