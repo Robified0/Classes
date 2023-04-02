@@ -17,12 +17,6 @@ execute as @e[type=item,nbt={Item:{tag:{cl.Soul:1b}}}] at @s if data entity @s T
 #Bless handling
 execute as @a[scores={cl.e.Bless=1..}] run function classes:abilities/effects/bless/bless
 
-#Check for Ranger potions, and set cl.t.PotionEff for tracking
-execute as @a[scores={cl.Class=2},predicate=classes:ranger/potion/check] at @s run function classes:ranger/system/potion/check/main
-
-#Check for Ranger holding bow/crossbow in mainhand
-execute as @a[scores={cl.Class=2}] run function classes:ranger/stats/bow
-
 #Kill fireballs that have been deflected
 execute as @e[type=#classes:fireballs,tag=cl.t.newFireball] at @s run function classes:main/motion/killfireball
 
