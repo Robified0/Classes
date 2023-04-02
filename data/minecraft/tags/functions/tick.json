@@ -1,7 +1,6 @@
 {
 	"values": [
 		"classes:main",
-		"classes:ranger/main",
 		"classes:items/manapotion/main",
 		"classes:main/delay/main",
 		"classes:end"
