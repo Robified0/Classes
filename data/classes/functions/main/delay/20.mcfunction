@@ -12,7 +12,7 @@ execute as @a store result score @s cl.track.ArmorBonus run attribute @s minecra
 execute as @e[type=item,tag=cl.SoulExtract.Setup] at @s run function classes:blocks/soul_campfire/main
 
 #Run turning Spirit Essences into Elemental Essences
-execute as @e[type=item,nbt={Item:{tag:{cl.Soul:1b}}}] at @s if data entity @s Thrower run function classes:items/soul/main
+#execute as @e[type=item,nbt={Item:{tag:{cl.Soul:1b}}}] at @s if data entity @s Thrower run function classes:items/soul/main
 
 #Bless handling
 execute as @a[scores={cl.e.Bless=1..}] run function classes:abilities/effects/bless/bless

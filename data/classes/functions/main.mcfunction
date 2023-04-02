@@ -11,9 +11,6 @@
 #Handle new players, and set them up
 execute as @a[tag=!cl.o.Joined] run function classes:main/new_player/main
 
-#Track activity of Spellcasters for Spell Equip system
-execute as @a[scores={cl.spell.equip.start=1..},predicate=classes:checkclass/spellcaster] at @s run function classes:operations/track/spellequip/main
-
 #Handle Raycasts
 execute as @e[type=marker,tag=cl.r.slowcast] at @s run function classes:main/raycast/main
 
@@ -36,14 +33,8 @@ execute as @e[type=item,tag=!cl.t.processed,predicate=classes:items/souls/invuln
 #Mana Regen
 execute as @a run function classes:main/mana_system/main
 
-#Display Mana bar to players who have Mana score set (spellcasters only)
+#Display Mana bar to players
 execute as @a run function classes:main/mana_system/mana
-
-#XP Handling for spells
-execute as @e[type=item,tag=!cl.t.processed,nbt={Item:{tag:{cl.Custom:1b}}}] run function classes:main/loot_table/acacia_button/main
-
-#Check for arrows shot
-execute as @a[scores={cl.t.usedBow=1..},predicate=classes:items/infinitybow] at @s run function classes:operations/items/infinitybow
 
 #TP Markers to Earth Wall falling blocks
 execute as @e[type=slime,scores={cl.spell.earthWall.move=1..}] at @s run function classes:abilities/spells/wall/place/move
