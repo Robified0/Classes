@@ -5,4 +5,7 @@ execute if score @s cl.slo_dst matches 1.. run function classes:abilities/spells
 scoreboard players operation @s cl.slo_dst -= @s cl.slo_dst_per
 execute if score @s cl.slo_dst matches ..0 at @s run function classes:abilities/spells/torch/zprivate/end
 
+#Randomize damage
+function classes:main/damage/randomize with storage runes:spells/torch damage
+
 tag @a[tag=cl.r.this] remove cl.r.this

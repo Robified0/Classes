@@ -11,6 +11,10 @@ data remove storage classes:magictable Items[{Slot:14b}]
 data modify storage classes:magictable KeepItems append from storage classes:magictable Items[{Slot:16b}]
 data remove storage classes:magictable Items[{Slot:16b}]
 
+#Make sure the gui items are saved.
+data modify storage classes:magictable KeepItems append from storage classes:magictable Items[{tag:{cl.gui:1b}}]
+data remove storage classes:magictable Items[{tag:{cl.gui:1b}}]
+
 #Modify the shulker_box
 data modify block -1 -64 0 Items set from storage classes:magictable Items
 

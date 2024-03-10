@@ -15,17 +15,14 @@ execute as @a[tag=!cl.o.Joined] run function classes:main/new_player/main
 execute as @e[type=marker,tag=cl.r.slowcast] at @s run function classes:main/raycast/main
 
 #Magic table
-execute as @e[type=glow_item_frame,tag=cl.magicTable,tag=!cl.magicTablePlaced] at @s run function classes:blocks/magictable/placed
-execute as @e[type=marker,tag=cl.magicTable] at @s run function classes:blocks/magictable/main
+#execute as @e[type=glow_item_frame,tag=cl.magicTable,tag=!cl.magicTablePlaced] at @s run function classes:blocks/magictable/placed
+execute as @e[type=item_display,tag=cl.magicTable] at @s run function classes:blocks/magictable/main
 
 #RUNE TABLE
 execute as @e[type=glow_item_frame,tag=cl.RuneTable,tag=!cl.RuneTablePlaced] at @s run function classes:blocks/runetable/placing/placed
 
 #Handle logic for Rune table.
 execute as @e[type=marker,tag=cl.RuneTable] at @s run function classes:blocks/runetable/main
-
-#Handle logic for Rune table.
-execute as @e[type=marker,tag=cl.SkillTable] at @s run function classes:blocks/skilltable/main
 
 # Stop SpiritEssence from burning
 execute as @e[type=item,tag=!cl.t.processed,predicate=classes:items/souls/invulnerablecheck] run data merge entity @s {Invulnerable:1b}

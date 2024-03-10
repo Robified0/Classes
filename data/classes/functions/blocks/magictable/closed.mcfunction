@@ -2,6 +2,9 @@ item replace block ~ ~ ~ container.16 with minecraft:air
 
 data modify storage classes:magictable Items set from block ~ ~ ~ Items
 
+#Remove anything used for the GUI
+data remove storage classes:magictable Items[{tag:{cl.gui:1b}}]
+
 #Modify the shulker_box
 data modify block -1 -64 0 Items set from storage classes:magictable Items
 
@@ -15,3 +18,4 @@ item replace block ~ ~ ~ container.14 with minecraft:air
 data remove entity @s data.CraftSound
 
 scoreboard players reset @s cl.track.Rune.Count
+scoreboard players reset @s cl.EnchantNumber

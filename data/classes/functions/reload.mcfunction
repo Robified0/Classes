@@ -34,6 +34,7 @@ scoreboard objectives add cl.book.template dummy
 #Set up other scoreboards
 scoreboard objectives add cl.Class trigger
 scoreboard objectives add cl.spellMenu dummy
+scoreboard objectives add cl.EnchantNumber dummy
 scoreboard objectives add cl.EssenceSound dummy
 scoreboard objectives add cl.track.sneak minecraft.custom:minecraft.sneak_time
 scoreboard objectives add cl.rightClick minecraft.used:minecraft.warped_fungus_on_a_stick
@@ -62,7 +63,6 @@ scoreboard objectives add cl.o.genAtkSpd dummy
 scoreboard objectives add cl.o.knockBack dummy
 scoreboard objectives add cl.o.maxHealth dummy
 scoreboard objectives add cl.o.health health {"text":"\u2764","color":"red"}
-scoreboard objectives setdisplay belowName cl.o.health
 scoreboard objectives add cl.track.Soul.time dummy
 scoreboard objectives add cl.t.magic_essence dummy
 scoreboard objectives add cl.t.holy_essence dummy

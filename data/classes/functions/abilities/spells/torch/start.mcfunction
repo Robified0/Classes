@@ -22,4 +22,4 @@ tag @s add cl.Cooldown.20
 tellraw @a[tag=cl.SpellNotify,distance=..40] ["",{"selector":"@s"},{"translate":"chat.classes.spell.cast","color":"green"},{"translate":"spell.classes.200.name","bold":true,"color":"#FF3034"},{"text":" !","color":"green"}]
 
 #Mana Depletion
-scoreboard players remove @s cl.Mana 2
+xp add @s -5 points
