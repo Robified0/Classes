@@ -147,6 +147,9 @@ scoreboard objectives add cl.e.Shield.m dummy
 #Tick Tracking
 scoreboard objectives add cl.t.Tick dummy
 
+# Set health to show below_name
+scoreboard objectives setdisplay below_name cl.o.health
+
 #Custom mob spawning scoreboard.
 scoreboard objectives add cl.customMob dummy
 

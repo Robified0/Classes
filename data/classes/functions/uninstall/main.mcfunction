@@ -60,7 +60,7 @@ scoreboard objectives remove cl.o.genAtkSpd
 scoreboard objectives remove cl.o.knockBack
 scoreboard objectives remove cl.o.maxHealth
 scoreboard objectives remove cl.o.health
-scoreboard objectives setdisplay belowName
+scoreboard objectives setdisplay below_name
 scoreboard objectives remove cl.track.Soul.time
 scoreboard objectives remove cl.t.magic_essence
 scoreboard objectives remove cl.t.holy_essence

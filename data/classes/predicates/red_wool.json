@@ -1,0 +1,13 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:item",
+    "nbt": "{\"id\":\"minecraft:red_wool\"}",
+    "stepping_on": {
+      "block": {
+        "blocks": "minecraft:bookshelf"
+      }
+    }
+  }
+}

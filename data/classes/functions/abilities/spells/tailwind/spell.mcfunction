@@ -2,7 +2,7 @@
 scoreboard players set @s cl.e.TailWind 200
 
 #Give Effect
-attribute @s minecraft:generic.movement_speed modifier add 02eaa265-68d9-4906-8095-6ea88b0e906d TailWind .01 add
+attribute @s minecraft:generic.movement_speed modifier add 02eaa265-68d9-4906-8095-6ea88b0e906d TailWind .01 add_value
 
 #Tag spell type
 tag @s add cl.spell.casted.air
