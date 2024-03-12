@@ -1,0 +1,19 @@
+{
+  "function": "minecraft:copy_custom_data",
+  "source": {
+    "type": "minecraft:storage",
+    "source": "classes:equipment_number"
+  },
+  "ops": [
+    {
+      "source": "value",
+      "target": "\"cl.EquipmentNumber\"",
+      "op": "replace"
+    },
+    {
+      "source": "hasNumber",
+      "target": "\"cl.HasNumber\"",
+      "op": "replace"
+    }
+  ]
+}

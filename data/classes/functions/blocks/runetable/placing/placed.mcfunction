@@ -17,7 +17,7 @@ execute align xyz run summon minecraft:marker ~0.5 ~0.5 ~0.5 {Tags:["cl.RuneTabl
 setblock ~ ~ ~ barrel[facing=up]{Items:[{Slot:26b,id:"minecraft:barrier",Count:1b,tag:{display:{Name:'{"text":" "}'},HideFlags:127,CustomModelData:10,cl.gui:1b}}]} replace
 
 #Summon the item frame with the custom Rune Table block inside.
-summon glow_item_frame ~ ~ ~ {Tags:["cl.RuneTable","cl.RuneTablePlaced"],Facing:1b,Invulnerable:1b,Invisible:0b,Fixed:1b,Item:{id:"minecraft:glow_item_frame",Count:1b,tag:{CustomModelData:59998}}}
+summon glow_item_frame ~ ~ ~ {Facing:1b,Invulnerable:1b,Invisible:0b,Fixed:1b,Item:{id:"minecraft:glow_item_frame",count:1,components:{"minecraft:custom_model_data":59999,"minecraft:custom_data":{cl.RuneTable:1b,clRuneTablePlaced:1b}}}}
 
 #Kill the original glowing item frame
 kill @s

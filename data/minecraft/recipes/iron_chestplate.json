@@ -19,7 +19,7 @@
         "{\"text\":\"Rune Slots: 1\",\"color\":\"green\"}"
       ],
       "minecraft:custom_data":{
-        "cl.RuneSlots":1
+        "cl.RuneSlots":3
       }
     }
   }

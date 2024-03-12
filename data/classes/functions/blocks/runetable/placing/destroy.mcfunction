@@ -1,7 +1,7 @@
 ##Executing as Magic Table marker if dropper isn't detected (crafting/magictable/main)
 
 #Summon the item to give to player
-summon item ~ ~ ~ {Facing:1b,Item:{id:"minecraft:glow_item_frame",Count:1b,tag:{display:{Name:'{"text":"Rune Table"}'},CustomModelData:59998,EntityTag:{Tags:["cl.RuneTable"]}}}}
+summon item ~ ~ ~ {Item:{id:"minecraft:glow_item_frame",count:1,components:{"minecraft:custom_name":'{"text":"Rune Table"}',"minecraft:custom_model_data":59999,"minecraft:custom_data":{cl.RuneTable:1b}}}}
 
 #Kill dropper and GUI Items
 execute as @e[type=item,nbt={Item:{id:"minecraft:barrel",Count:1b}},distance=..1] run kill @s
